@@ -1,6 +1,6 @@
-### Spring MVCÊ¹ÓÃ@ResponseBody·µ»ØJSONÊý¾Ý406ÒÔ¼°ÂÒÂëÎÊÌâ½â¾ö·½°¸
+### Spring MVCä½¿ç”¨@ResponseBodyè¿”å›žJSONæ•°æ®406ä»¥åŠä¹±ç é—®é¢˜è§£å†³æ–¹æ¡ˆ
 
-µÚÒ»²½£¬ÒýÈë°ü£º
+ç¬¬ä¸€æ­¥ï¼Œå¼•å…¥åŒ…ï¼š
 ```
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -20,13 +20,13 @@
 		
 ```
 
-µÚ¶þ²½£¬ÐÞ¸ÄSpring MVCµÄÅäÖÃÎÄ¼þ£¨¸ßÄÜÔ¤¾¯£ºÇÐ¼ÇÐèÒªÊ¹ÓÃ3.2¼°ÒÔÉÏxsd£©£¬Ôö¼ÓÈçÏÂ´úÂë£º
-ÐÞ¸ÄÓÚ2015-8-26 16:24:58  ½â¾öÁËÖ±½Ó·µ»ØStringÊ±ÂÒÂëµÄÎÊÌâ
+ç¬¬äºŒæ­¥ï¼Œä¿®æ”¹Spring MVCçš„é…ç½®æ–‡ä»¶ï¼ˆé«˜èƒ½é¢„è­¦ï¼šåˆ‡è®°éœ€è¦ä½¿ç”¨3.2åŠä»¥ä¸Šxsdï¼‰ï¼Œå¢žåŠ å¦‚ä¸‹ä»£ç ï¼š
+ä¿®æ”¹äºŽ2015-8-26 16:24:58  è§£å†³äº†ç›´æŽ¥è¿”å›žStringæ—¶ä¹±ç çš„é—®é¢˜
 
 ```
-<!-- Æô¶¯×¢½âÇý¶¯µÄSpring MVC¹¦ÄÜ£¬×¢²áÇëÇóurlºÍ×¢½âPOJOÀà·½·¨µÄÓ³Éä -->
-<!-- Í¨¹ý×¢½â£¬°ÑURLÓ³Éäµ½ControllerÉÏ£¬¸Ã±êÇ©Ä¬ÈÏ×¢²áRequestMappingHandlerMappingºÍRequestMappingHandlerAdapter -->
-<!-- ½â¾ö@ResponseBody×¢½âÖ±½Ó·µ»Ø¶ÔÏó²¢×ª»»³ÉJSONÊ±³öÏÖ406ÎÊÌâ£¬Í¬Ê±½â¾öÁË·µ»ØStringÀàÐÍÂÒÂëµÄÎÊÌâ -->
+<!-- å¯åŠ¨æ³¨è§£é©±åŠ¨çš„Spring MVCåŠŸèƒ½ï¼Œæ³¨å†Œè¯·æ±‚urlå’Œæ³¨è§£POJOç±»æ–¹æ³•çš„æ˜ å°„ -->
+<!-- é€šè¿‡æ³¨è§£ï¼ŒæŠŠURLæ˜ å°„åˆ°Controllerä¸Šï¼Œè¯¥æ ‡ç­¾é»˜è®¤æ³¨å†ŒRequestMappingHandlerMappingå’ŒRequestMappingHandlerAdapter -->
+<!-- è§£å†³@ResponseBodyæ³¨è§£ç›´æŽ¥è¿”å›žå¯¹è±¡å¹¶è½¬æ¢æˆJSONæ—¶å‡ºçŽ°406é—®é¢˜ï¼ŒåŒæ—¶è§£å†³äº†è¿”å›žStringç±»åž‹ä¹±ç çš„é—®é¢˜ -->
 	<mvc:annotation-driven>
 		<mvc:message-converters>
 			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
