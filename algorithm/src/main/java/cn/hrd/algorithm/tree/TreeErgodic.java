@@ -25,13 +25,13 @@ public class TreeErgodic {
         root.right.right = new TreeNode(9);
 
         TreeErgodic treeErgodic = new TreeErgodic();
-        treeErgodic.preOrderTraverse1(root);
+//        treeErgodic.preOrderTraverse1(root);
         System.out.println();
         treeErgodic.inOrderTraverse1(root);
         System.out.println();
-        treeErgodic.postOrderTraverse1(root);
-        System.out.println();
-        treeErgodic.levelTraverse(root);
+//        treeErgodic.postOrderTraverse1(root);
+//        System.out.println();
+//        treeErgodic.levelTraverse(root);
 
     }
 
