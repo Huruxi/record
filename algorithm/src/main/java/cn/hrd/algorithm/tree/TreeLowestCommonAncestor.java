@@ -53,7 +53,13 @@ public class TreeLowestCommonAncestor {
 
     }
 
-
+    /**
+     * 二叉树
+     * @param root
+     * @param p
+     * @param q
+     * @return
+     */
     public TreeNode lowestCommonAncestor(TreeNode root,TreeNode p,TreeNode q){
         // 如果树为空，直接返回null
         if(root == null){
@@ -85,6 +91,39 @@ public class TreeLowestCommonAncestor {
         return left;
     }
 
+
+    /**
+     * 搜索二叉树
+     * @param root
+     * @param p
+     * @param q
+     * @return
+     */
+    public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
+        if(root.val < p.val && root.val < q.val)
+            return lowestCommonAncestor2(root.right, p, q);
+        if(root.val > p.val && root.val > q.val)
+            return lowestCommonAncestor2(root.left, p, q);
+        return root;
+    }
+
+    /**
+     * 搜索二叉树
+     * @param root
+     * @param p
+     * @param q
+     * @return
+     */
+    public TreeNode lowestCommonAncestor3(TreeNode root, TreeNode p, TreeNode q) {
+        while(root != null) {
+            if(root.val < p.val && root.val < q.val) // p,q 都在 root 的右子树中
+                root = root.right; // 遍历至右子节点
+            else if(root.val > p.val && root.val > q.val) // p,q 都在 root 的左子树中
+                root = root.left; // 遍历至左子节点
+            else break;
+        }
+        return root;
+    }
 
 
 
