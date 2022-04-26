@@ -54,6 +54,7 @@ public class StreamDemo {
         students.add(new Student("赵六", 70));
         students.add(new Student("孙七", 90));
         students.add(new Student("周八", 30));
+        students.add(new Student("胡久", 20));
         return students;
     }
 }
