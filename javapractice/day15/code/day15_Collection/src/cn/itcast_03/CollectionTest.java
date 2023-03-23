@@ -4,37 +4,37 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /*
- * Object[] toArray():°Ñ¼¯ºÏ×ª³É¶ÔÏóÊý×é
- * 
- * Á·Ï°£ºÓÃ¼¯ºÏ´æ´¢Èý¸öÑ§Éú¶ÔÏó£¬²¢±éÀú¡£
- * 
- * ×Ü½á£º¼¯ºÏµÄÊ¹ÓÃ²½Öè
- * A:´´½¨¼¯ºÏ¶ÔÏó
- * B:´´½¨ÔªËØ¶ÔÏó
- * C:°ÑÔªËØÌí¼Óµ½¼¯ºÏ
- * D:±éÀú¼¯ºÏ
+ * Object[] toArray():ï¿½Ñ¼ï¿½ï¿½ï¿½×ªï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½Ï°ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½Ï´æ´¢ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½Ü½á£ºï¿½ï¿½ï¿½Ïµï¿½Ê¹ï¿½Ã²ï¿½ï¿½ï¿½
+ * A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+ * B:ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+ * C:ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+ * D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class CollectionTest {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Collection c = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Student s1 = new Student("ÁÖ÷ìÓñ", 18);
-		Student s2 = new Student("ÇØ¿ÉÇä", 20);
-		Student s3 = new Student("ÍõÎõ·ï", 22);
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 18);
+        Student s2 = new Student("ï¿½Ø¿ï¿½ï¿½ï¿½", 20);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 22);
 
-		// °ÑÑ§Éú¶ÔÏóÌí¼Óµ½¼¯ºÏ
-		c.add(s1);
-		c.add(s2);
-		c.add(s3);
-		// c.add(new Student("¼Ö±¦Óñ", 20));
+        // ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        c.add(s1);
+        c.add(s2);
+        c.add(s3);
+        // c.add(new Student("ï¿½Ö±ï¿½ï¿½ï¿½", 20));
 
-		// ±éÀú¼¯ºÏ
-		Object[] objs = c.toArray();
-		for (int x = 0; x < objs.length; x++) {
-			Student s = (Student) objs[x];
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Object[] objs = c.toArray();
+        for (int x = 0; x < objs.length; x++) {
+            Student s = (Student) objs[x];
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

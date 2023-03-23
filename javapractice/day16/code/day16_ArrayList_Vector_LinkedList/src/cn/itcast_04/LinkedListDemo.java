@@ -3,42 +3,42 @@ package cn.itcast_04;
 
 /*
  * LinkedList
- *		ÇëÓÃLinkedListÄ£ÄâÕ»Êý¾Ý½á¹¹µÄ¼¯ºÏ£¬²¢²âÊÔ
- *		ÌâÄ¿µÄÒâË¼ÊÇ£ºÄãÒª×Ô¼º×öÒ»¸ö¼¯ºÏÀà£¬Õâ¸ö¼¯ºÏÌá¹©Ìí¼ÓÔªËØºÍ»ñÈ¡ÔªËØµÄ¹¦ÄÜ£¬È»ºó²âÊÔÄãµÄ¼¯ºÏÀà¡£Ìá¹©ÁËLinkedList¹©ÄãÊ¹ÓÃ¡£
- * Õ»£ºÏÈ½øºó³ö
+ *		ï¿½ï¿½ï¿½ï¿½LinkedListÄ£ï¿½ï¿½Õ»ï¿½ï¿½ï¿½Ý½á¹¹ï¿½Ä¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½Ç£ï¿½ï¿½ï¿½Òªï¿½Ô¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½Ôªï¿½ØºÍ»ï¿½È¡Ôªï¿½ØµÄ¹ï¿½ï¿½Ü£ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½à¡£ï¿½á¹©ï¿½ï¿½LinkedListï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¡ï¿½
+ * Õ»ï¿½ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½
  */
 public class LinkedListDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		// LinkedList link = new LinkedList();
-		//
-		// // Ìí¼ÓÔªËØ
-		// link.addFirst("hello");
-		// link.addFirst("world");
-		// link.addFirst("java");
-		//
-		// Iterator it = link.iterator();
-		// while (it.hasNext()) {
-		// String s = (String) it.next();
-		// System.out.println(s);
-		// }
-		
-		//´´½¨¼¯ºÏ
-		MyStack my = new MyStack();
-		
-		//Ìí¼ÓÔªËØ
-		my.add("hello");
-		my.add("world");
-		my.add("java");
-		
-		//»ñÈ¡
-		// System.out.println(my.get());
-		// System.out.println(my.get());
-		// System.out.println(my.get());
-		// System.out.println(my.get());
-		
-		while(!my.isEmpty()){
-			System.out.println(my.get());
-		}
-	}
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        // LinkedList link = new LinkedList();
+        //
+        // // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        // link.addFirst("hello");
+        // link.addFirst("world");
+        // link.addFirst("java");
+        //
+        // Iterator it = link.iterator();
+        // while (it.hasNext()) {
+        // String s = (String) it.next();
+        // System.out.println(s);
+        // }
+
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        MyStack my = new MyStack();
+
+        //ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        my.add("hello");
+        my.add("world");
+        my.add("java");
+
+        //ï¿½ï¿½È¡
+        // System.out.println(my.get());
+        // System.out.println(my.get());
+        // System.out.println(my.get());
+        // System.out.println(my.get());
+
+        while (!my.isEmpty()) {
+            System.out.println(my.get());
+        }
+    }
 }

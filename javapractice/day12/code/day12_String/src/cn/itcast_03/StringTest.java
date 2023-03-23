@@ -3,42 +3,42 @@ package cn.itcast_03;
 import java.util.Scanner;
 
 /*
- * Ä£ÄâµÇÂ¼,¸øÈı´Î»ú»á,²¢ÌáÊ¾»¹ÓĞ¼¸´Î¡£
- * 
- * ·ÖÎö£º
- * 		A:¸ø³ö¹Ì¶¨µÄÓÃ»§ÃûºÍÃÜÂë
- * 		B:¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
- * 		C:±È½ÏÓÃ»§ÃûºÍÃÜÂë
- * 		D:¸ø³öÈı´Î»ú»á
+ * Ä£ï¿½ï¿½ï¿½Â¼,ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ğ¼ï¿½ï¿½Î¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		C:ï¿½È½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½
  */
 public class StringTest {
-	public static void main(String[] args) {
-		// ¸ø³ö¹Ì¶¨µÄÓÃ»§ÃûºÍÃÜÂë
-		// String username = "admin";
-		// String password = "admin";
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // String username = "admin";
+        // String password = "admin";
 
-		for (int x = 0; x < 3; x++) {
-			// x=0,1,2
+        for (int x = 0; x < 3; x++) {
+            // x=0,1,2
 
-			// ¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
-			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
-			String name = sc.nextLine();
-			System.out.println("ÇëÊäÈëÃÜÂë£º");
-			String pwd = sc.nextLine();
+            // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            Scanner sc = new Scanner(System.in);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½");
+            String name = sc.nextLine();
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£º");
+            String pwd = sc.nextLine();
 
-			// ±È½ÏÓÃ»§ÃûºÍÃÜÂë
-			if ("admin".equals(name) && "admin".equals(pwd)) {
-				System.out.println("µÇÂ¼³É¹¦");
-				break;
-			} else {
-				if (2 - x == 0) {
-					System.out.println("ÕÊºÅ±»Ëø¶¨£¬ÇëÓë°à³¤ÁªÏµ");
-				} else {
-					// 2,1,0
-					System.out.println("µÇÂ¼Ê§°Ü£¬Äã»¹ÓĞ" + (2 - x) + "´Î»ú»á");
-				}
-			}
-		}
-	}
+            // ï¿½È½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            if ("admin".equals(name) && "admin".equals(pwd)) {
+                System.out.println("ï¿½ï¿½Â¼ï¿½É¹ï¿½");
+                break;
+            } else {
+                if (2 - x == 0) {
+                    System.out.println("ï¿½ÊºÅ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à³¤ï¿½ï¿½Ïµ");
+                } else {
+                    // 2,1,0
+                    System.out.println("ï¿½ï¿½Â¼Ê§ï¿½Ü£ï¿½ï¿½ã»¹ï¿½ï¿½" + (2 - x) + "ï¿½Î»ï¿½ï¿½ï¿½");
+                }
+            }
+        }
+    }
 }

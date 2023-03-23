@@ -1,46 +1,46 @@
 /*
-	ÄÚ²¿Àà£º°ÑÀà¶¨ÒåÔÚÆäËûÀàµÄÄÚ²¿£¬Õâ¸öÀà¾Í±»³ÆÎªÄÚ²¿Àà¡£
-		¾ÙÀý£º°ÑÀàA¶¨ÒåÔÚÀàBµÄÄÚ²¿£¬A±»³ÆÎªÄÚ²¿Àà¡£
+	ï¿½Ú²ï¿½ï¿½à£ºï¿½ï¿½ï¿½à¶¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½Îªï¿½Ú²ï¿½ï¿½à¡£
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½Îªï¿½Ú²ï¿½ï¿½à¡£
 
-	ÄÚ²¿ÀàµÄ·ÃÎÊÌØµã£º
-		A:ÄÚ²¿Àà¿ÉÒÔÖ±½Ó·ÃÎÊÍâ²¿ÀàµÄ³ÉÔ±£¬°üÀ¨Ë½ÓÐ¡£
-		B:Íâ²¿ÀàÒª·ÃÎÊÄÚ²¿ÀàµÄ³ÉÔ±£¬±ØÐë´´½¨¶ÔÏó¡£
+	ï¿½Ú²ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½Øµã£º
+		A:ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½Ð¡ï¿½
+		B:ï¿½â²¿ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ë´´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	¸ù¾ÝÄÚ²¿ÀàÔÚÀàÖÐµÄÎ»ÖÃ²»Í¬£¬ÄÚ²¿Àà¿ÉÒÔ·ÖÎª£º
-		A:³ÉÔ±Î»ÖÃ
-			³ÉÔ±ÄÚ²¿Àà
-		B:¾Ö²¿Î»ÖÃ
-			¾Ö²¿ÄÚ²¿Àà
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Î»ï¿½Ã²ï¿½Í¬ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½Îªï¿½ï¿½
+		A:ï¿½ï¿½Ô±Î»ï¿½ï¿½
+			ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½ï¿½
+		B:ï¿½Ö²ï¿½Î»ï¿½ï¿½
+			ï¿½Ö²ï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 
-	³ÉÔ±ÄÚ²¿Àà£º
-		A:·ÃÎÊÄÚ²¿µÄ·½·¨
-			´´½¨ÄÚ²¿ÀàµÄ¶ÔÏó¼´¿É¡£
-			¸ñÊ½£ºÍâ²¿ÀàÃû.ÄÚ²¿ÀàÃû ¶ÔÏóÃû = Íâ²¿Àà¶ÔÏó.ÄÚ²¿Àà¶ÔÏó;
+	ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½à£º
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ó¼´¿É¡ï¿½
+			ï¿½ï¿½Ê½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½.ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 */
 class Outer {
-	private int num = 10;
+    private int num = 10;
 
-	//³ÉÔ±Î»ÖÃ
-	class Inner	{
-		public void show() {
-			System.out.println(num);
-		}
-	}
+    //ï¿½ï¿½Ô±Î»ï¿½ï¿½
+    class Inner {
+        public void show() {
+            System.out.println(num);
+        }
+    }
 
-	public void method() {
-		Inner i = new Inner();
-		i.show();
-	}
+    public void method() {
+        Inner i = new Inner();
+        i.show();
+    }
 }
 
 class InnerClassDemo {
-	public static void main(String[] args) {
-		//´íÎó
-		//Inner i = new Inner();
-		//i.show();
-	
-		//¸ñÊ½£ºÍâ²¿ÀàÃû.ÄÚ²¿ÀàÃû ¶ÔÏóÃû = Íâ²¿Àà¶ÔÏó.ÄÚ²¿Àà¶ÔÏó;
-		Outer.Inner oi = new Outer().new Inner();
-		oi.show();
-	}
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½
+        //Inner i = new Inner();
+        //i.show();
+
+        //ï¿½ï¿½Ê½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½ï¿½.ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = ï¿½â²¿ï¿½ï¿½ï¿½ï¿½ï¿½.ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
+        Outer.Inner oi = new Outer().new Inner();
+        oi.show();
+    }
 }

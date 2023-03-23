@@ -1,42 +1,42 @@
 package cn.itcast_01;
 
 /*
- * StringBuffer:Ïß³Ì°²È«µÄ¿É±ä×Ö·û´®¡£
- * Í¨¹ý²é¿´API£¬ÎÒÃÇÖªµÀÁË£¬ËüÊÇ¿ÉÒÔ¸Ä±äÄÚÈÝºÍ³¤¶ÈµÄ¡£
- * 
- * StringBufferºÍStringµÄÇø±ð?
- * A:StringBufferµÄ³¤¶È¿É±ä
- * B:StringµÄ³¤¶È¹Ì¶¨
- * 
- * ¹¹Ôì·½·¨£º
- * 		StringBuffer()£º ¹¹ÔìÒ»¸öÆäÖÐ²»´ø×Ö·ûµÄ×Ö·û´®»º³åÇø£¬Æä³õÊ¼ÈÝÁ¿Îª 16 ¸ö×Ö·û¡£
- * 		StringBuffer(int capacity)£º¹¹ÔìÒ»¸ö²»´ø×Ö·û£¬µ«¾ßÓÐÖ¸¶¨³õÊ¼ÈÝÁ¿µÄ×Ö·û´®»º³åÇø¡£
- * 		StringBuffer(String str):¹¹ÔìÒ»¸ö×Ö·û´®»º³åÇø£¬²¢½«ÆäÄÚÈÝ³õÊ¼»¯ÎªÖ¸¶¨µÄ×Ö·û´®ÄÚÈÝ¡£
- * 
- * ³ÉÔ±·½·¨£º
- * 		public int length():·µ»Ø³¤¶È£¨×Ö·ûÊý£©Êµ¼ÊÖµ
- * 		public int capacity():·µ»Øµ±Ç°ÈÝÁ¿	ÀíÂÛÖµ
+ * StringBuffer:ï¿½ß³Ì°ï¿½È«ï¿½Ä¿É±ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Í¨ï¿½ï¿½ï¿½é¿´APIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô¸Ä±ï¿½ï¿½ï¿½ï¿½ÝºÍ³ï¿½ï¿½ÈµÄ¡ï¿½
+ *
+ * StringBufferï¿½ï¿½Stringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * A:StringBufferï¿½Ä³ï¿½ï¿½È¿É±ï¿½
+ * B:Stringï¿½Ä³ï¿½ï¿½È¹Ì¶ï¿½
+ *
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * 		StringBuffer()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Îª 16 ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * 		StringBuffer(int capacity)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		StringBuffer(String str):ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê¼ï¿½ï¿½ÎªÖ¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+ *
+ * ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		public int length():ï¿½ï¿½ï¿½Ø³ï¿½ï¿½È£ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Öµ
+ * 		public int capacity():ï¿½ï¿½ï¿½Øµï¿½Ç°ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½ï¿½ï¿½Öµ
  */
 public class StringBufferDemo {
-	public static void main(String[] args) {
-		// StringBuffer()£º ¹¹ÔìÒ»¸öÆäÖÐ²»´ø×Ö·ûµÄ×Ö·û´®»º³åÇø£¬Æä³õÊ¼ÈÝÁ¿Îª 16 ¸ö×Ö·û¡£
-		StringBuffer sb = new StringBuffer();
-		System.out.println("sb:" + sb);
-		System.out.println("sb.length():" + sb.length());
-		System.out.println("sb.capacity():" + sb.capacity());
-		System.out.println("----------------------------");
+    public static void main(String[] args) {
+        // StringBuffer()ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Îª 16 ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        StringBuffer sb = new StringBuffer();
+        System.out.println("sb:" + sb);
+        System.out.println("sb.length():" + sb.length());
+        System.out.println("sb.capacity():" + sb.capacity());
+        System.out.println("----------------------------");
 
-		// StringBuffer(int capacity)£º¹¹ÔìÒ»¸ö²»´ø×Ö·û£¬µ«¾ßÓÐÖ¸¶¨³õÊ¼ÈÝÁ¿µÄ×Ö·û´®»º³åÇø¡£
-		StringBuffer sb2 = new StringBuffer(20);
-		System.out.println("sb2:" + sb2);
-		System.out.println("sb2.length():" + sb2.length());
-		System.out.println("sb2.capacity():" + sb2.capacity());
-		System.out.println("----------------------------");
+        // StringBuffer(int capacity)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        StringBuffer sb2 = new StringBuffer(20);
+        System.out.println("sb2:" + sb2);
+        System.out.println("sb2.length():" + sb2.length());
+        System.out.println("sb2.capacity():" + sb2.capacity());
+        System.out.println("----------------------------");
 
-		// StringBuffer(String str):¹¹ÔìÒ»¸ö×Ö·û´®»º³åÇø£¬²¢½«ÆäÄÚÈÝ³õÊ¼»¯ÎªÖ¸¶¨µÄ×Ö·û´®ÄÚÈÝ¡£
-		StringBuffer sb3 = new StringBuffer("helloworld");
-		System.out.println("sb3:" + sb3);
-		System.out.println("sb3.length():" + sb3.length());
-		System.out.println("sb3.capacity():" + sb3.capacity());
-	}
+        // StringBuffer(String str):ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý³ï¿½Ê¼ï¿½ï¿½ÎªÖ¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+        StringBuffer sb3 = new StringBuffer("helloworld");
+        System.out.println("sb3:" + sb3);
+        System.out.println("sb3.length():" + sb3.length());
+        System.out.println("sb3.capacity():" + sb3.capacity());
+    }
 }

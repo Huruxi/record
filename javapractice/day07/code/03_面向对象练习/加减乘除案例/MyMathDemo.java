@@ -1,31 +1,32 @@
 /*
-	¶¨ÒåÒ»¸öÀàMyMath,Ìá¹©»ù±¾µÄ¼Ó¼õ³Ë³ý¹¦ÄÜ£¬È»ºó½øÐÐ²âÊÔ¡£
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½MyMath,ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼Ó¼ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½Ü£ï¿½È»ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½Ô¡ï¿½
 */
 class MyMath {
-	public int add(int a,int b) {
-		return a + b;
-	}
+    public int add(int a, int b) {
+        return a + b;
+    }
 
-	public int subtract(int a,int b) {
-		return a - b;
-	}
+    public int subtract(int a, int b) {
+        return a - b;
+    }
 
-	public int multiply(int a,int b) {
-		return a * b;
-	}
+    public int multiply(int a, int b) {
+        return a * b;
+    }
 
-	public int divide(int a,int b) {
-		return a / b;
-	}
+    public int divide(int a, int b) {
+        return a / b;
+    }
 }
-class MyMathDemo {
-	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
-		MyMath my = new MyMath();
 
-		System.out.println("¼Ó·¨£º"+my.add(23,34));
-		System.out.println("¼õ·¨£º"+my.subtract(23,34));
-		System.out.println("³Ë·¨£º"+my.multiply(2,4));
-		System.out.println("³ý·¨£º"+my.divide(10,4));
-	}
+class MyMathDemo {
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        MyMath my = new MyMath();
+
+        System.out.println("ï¿½Ó·ï¿½ï¿½ï¿½" + my.add(23, 34));
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + my.subtract(23, 34));
+        System.out.println("ï¿½Ë·ï¿½ï¿½ï¿½" + my.multiply(2, 4));
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + my.divide(10, 4));
+    }
 }

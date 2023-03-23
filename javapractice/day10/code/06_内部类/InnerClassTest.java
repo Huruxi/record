@@ -1,26 +1,28 @@
 /*
-	ÃæÊÔÌâ£ºÇë²¹Æë´úÂë£¬Êä³ö30£¬20£¬10
+	ï¿½ï¿½ï¿½ï¿½ï¿½â£ºï¿½ë²¹ï¿½ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½ï¿½30ï¿½ï¿½20ï¿½ï¿½10
 
-	×¢Òâ£ºÄÚ²¿ÀàºÍËüËùÊôµÄÍâ²¿ÀàÃ»ÓĞ¼Ì³Ğ¹ØÏµ¡£
+	×¢ï¿½â£ºï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½Ã»ï¿½Ğ¼Ì³Ğ¹ï¿½Ïµï¿½ï¿½
 */
 class Outer {
-	public int num  = 10;
+    public int num = 10;
 
-	class Inner {
-		public int num = 20;
-		public void show() {
-			int num = 30;
-			System.out.println(num);
-			System.out.println(this.num);
-			//System.out.println(new Outer().num);
-			System.out.println(Outer.this.num);
-		}
-	}
+    class Inner {
+        public int num = 20;
+
+        public void show() {
+            int num = 30;
+            System.out.println(num);
+            System.out.println(this.num);
+            //System.out.println(new Outer().num);
+            System.out.println(Outer.this.num);
+        }
+    }
 
 }
+
 class InnerClassTest {
-	public static void main(String[] args) {
-		Outer.Inner oi = new Outer().new Inner();
-		oi.show();
-	}
+    public static void main(String[] args) {
+        Outer.Inner oi = new Outer().new Inner();
+        oi.show();
+    }
 }

@@ -1,29 +1,29 @@
 class PhoneDemo {
-	public static void main(String[] args) {
-		//创建对象
-		Phone p = new Phone();
+    public static void main(String[] args) {
+        //锟斤拷锟斤拷锟斤拷锟斤拷
+        Phone p = new Phone();
 
-		//使用成员变量
-		System.out.println("品牌是："+p.brand);
-		System.out.println("价格是："+p.price);
-		System.out.println("颜色是："+p.color);
-		System.out.println("----------------");
+        //使锟矫筹拷员锟斤拷锟斤拷
+        System.out.println("品锟斤拷锟角ｏ拷" + p.brand);
+        System.out.println("锟桔革拷锟角ｏ拷" + p.price);
+        System.out.println("锟斤拷色锟角ｏ拷" + p.color);
+        System.out.println("----------------");
 
-		//给成员变量赋值
-		p.brand = "三星";
-		p.price = 2999;
-		p.color = "蓝色";
+        //锟斤拷锟斤拷员锟斤拷锟斤拷锟斤拷值
+        p.brand = "锟斤拷锟斤拷";
+        p.price = 2999;
+        p.color = "锟斤拷色";
 
-		//再次使用成员变量
-		System.out.println("品牌是："+p.brand);
-		System.out.println("价格是："+p.price);
-		System.out.println("颜色是："+p.color);
-		System.out.println("----------------");
+        //锟劫达拷使锟矫筹拷员锟斤拷锟斤拷
+        System.out.println("品锟斤拷锟角ｏ拷" + p.brand);
+        System.out.println("锟桔革拷锟角ｏ拷" + p.price);
+        System.out.println("锟斤拷色锟角ｏ拷" + p.color);
+        System.out.println("----------------");
 
-		//调用成员方法
-		//String name = "林青霞";
-		//p.call(name);
-		p.call("林青霞");
-		p.sendMessage();
-	}
+        //锟斤拷锟矫筹拷员锟斤拷锟斤拷
+        //String name = "锟斤拷锟斤拷霞";
+        //p.call(name);
+        p.call("锟斤拷锟斤拷霞");
+        p.sendMessage();
+    }
 }

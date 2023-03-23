@@ -1,24 +1,24 @@
 /*
-	¹ØÏµÔËËã·û£º
+	ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		==,!=,>,>=,<,<=
 
-	ÌØµã£º
-		ÎÞÂÛ±í´ïÊ½ÊÇ¼òµ¥»¹ÊÇ¸´ÔÓ£¬½á¹û¿Ï¶¨ÊÇbooleanÀàÐÍ¡£
+	ï¿½Øµã£º
+		ï¿½ï¿½ï¿½Û±ï¿½ï¿½Ê½ï¿½Ç¼òµ¥»ï¿½ï¿½Ç¸ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½booleanï¿½ï¿½ï¿½Í¡ï¿½
 	
-	×¢ÒâÊÂÏî£º
-		¹ØÏµÔËËã·û¡°==¡±²»ÄÜÎóÐ´³É¡°=¡± ¡£
+	×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+		ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½==ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½É¡ï¿½=ï¿½ï¿½ ï¿½ï¿½
 */
 class OperatorDemo {
-	public static void main(String[] args) {
-		int a = 10;
-		int b = 10;
-		int c = 20;
-		System.out.println(a == b);
-		System.out.println(a == c);
-		System.out.println((a + b*c) == (a*b + c));
-		System.out.println("----------------");
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 10;
+        int c = 20;
+        System.out.println(a == b);
+        System.out.println(a == c);
+        System.out.println((a + b * c) == (a * b + c));
+        System.out.println("----------------");
 
-		System.out.println(a = b); //°ÑbµÄÖµ¸³Öµ¸øa£¬°ÑaµÄÖµ×÷Îª½á¹ûÁôÏÂÀ´
-		System.out.println(a = c);
-	}
+        System.out.println(a = b); //ï¿½ï¿½bï¿½ï¿½Öµï¿½ï¿½Öµï¿½ï¿½aï¿½ï¿½ï¿½ï¿½aï¿½ï¿½Öµï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println(a = c);
+    }
 }

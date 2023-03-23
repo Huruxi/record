@@ -1,12 +1,12 @@
 package cn.itcast_01;
 
 /*
- * ÐèÇó1£ºÎÒ¸ø³öÁËÒ»¸öÊý¾Ý£¬ÎÒÒªÅÐ¶ÏÕâ¸öÊý¾ÝÊÇ²»ÊÇÔÚint·¶Î§ÄØ?Ö×Ã´°ìÄØ?
- * ÐèÇó2£ºÎÒ¸ø³öÒ»¸öÊý¾Ý100£¬ÎÒÒªµÃµ½ËüµÄ¶þ½øÖÆ£¬°Ë½øÖÆ£¬Ê®Áù½øÖÆ? Èý½øÖÆ£¬Îå½øÖÆ£¬Æß½øÖÆ???
- * ÄÇÃ´£¬ÓÐÃ»ÓÐ±È½Ï¼òµ¥µÄ·½Ê½ÈÃÎÒÃÇÀ´ÊµÏÖÕâÑùµÄÐèÇóÄØ?ÓÐ¡£
- * ¶ø»ù±¾ÀàÐÍÊÇ×ö²»µ½µÄ£¬ÒòÎª»ù±¾ÀàÐÍÃ»ÓÐ¹¦ÄÜ¿ÉÒÔÊ¹ÓÃ¡£ËùÒÔ£¬ÕâÖÖµÄ²Ù×÷×îºÃÊÇÄÜÓÐ¹¦ÄÜÊµÏÖ¡£
- * È»ºóÎÒÃÇµ÷ÓÃ¹¦ÄÜ¼´¿É¡£
- * ÎªÁË¼ò»¯ÎÒÃÇÕë¶Ô»ù±¾ÀàÐÍÊý¾ÝµÄ¸ü¸´ÔÓµÄ²Ù×÷£¬java¾ÍÕë¶ÔÃ¿ÖÖ»ù±¾ÀàÐÍÌá¹©ÁËÒ»¸ö°ü×°ÀàÀàÐÍ£¬»ù±¾ÀàÐÍ°ü×°Àà¡£
+ * ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Òªï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½intï¿½ï¿½Î§ï¿½ï¿½?ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½?
+ * ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½ï¿½ï¿½Òªï¿½Ãµï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½Ë½ï¿½ï¿½Æ£ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ß½ï¿½ï¿½ï¿½???
+ * ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð±È½Ï¼òµ¥µÄ·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½Ð¡ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¹ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½Ê¹ï¿½Ã¡ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ÖµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½Êµï¿½Ö¡ï¿½
+ * È»ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½Ã¹ï¿½ï¿½Ü¼ï¿½ï¿½É¡ï¿½
+ * Îªï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ¸ï¿½ï¿½ï¿½ï¿½ÓµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½×°ï¿½à¡£
  * byte		Byte
  * short	Short
  * int		Integer
@@ -17,16 +17,16 @@ package cn.itcast_01;
  * boolean	Boolean
  */
 public class IntegerDemo {
-	public static void main(String[] args) {
-		// public static final int MAX_VALUE
-		// public static final int MIN_VALUE
-		// if(Êý¾Ý>=Integer.MIN_VALUE && Êý¾Ý<=Integer.MAX_VALUE){}
+    public static void main(String[] args) {
+        // public static final int MAX_VALUE
+        // public static final int MIN_VALUE
+        // if(ï¿½ï¿½ï¿½ï¿½>=Integer.MIN_VALUE && ï¿½ï¿½ï¿½ï¿½<=Integer.MAX_VALUE){}
 
-		// public static String toBinaryString(int i)
-		System.out.println(Integer.toBinaryString(100));
-		// public static String toOctalString(int i)
-		System.out.println(Integer.toOctalString(100));
-		// public static String toHexString(int i)
-		System.out.println(Integer.toHexString(100));
-	}
+        // public static String toBinaryString(int i)
+        System.out.println(Integer.toBinaryString(100));
+        // public static String toOctalString(int i)
+        System.out.println(Integer.toOctalString(100));
+        // public static String toHexString(int i)
+        System.out.println(Integer.toHexString(100));
+    }
 }

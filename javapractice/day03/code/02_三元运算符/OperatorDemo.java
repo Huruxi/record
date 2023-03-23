@@ -1,36 +1,36 @@
 /*
-	ÈýÔªÔËËã·û£º
-	¸ñÊ½
-		(¹ØÏµ±í´ïÊ½)?±í´ïÊ½1£º±í´ïÊ½2£»
+	ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½Ê½
+		(ï¿½ï¿½Ïµï¿½ï¿½ï¿½Ê½)?ï¿½ï¿½ï¿½Ê½1ï¿½ï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½
 
-	Ö´ÐÐÁ÷³Ì£º
-		¼ÆËã¹ØÏµ±í´ïÊ½£¬¿´Æä·µ»ØÖµ
-			true:±í´ïÊ½1¾ÍÊÇÕû¸ö±í´ïÊ½µÄÖµ
-			false:±í´ïÊ½2¾ÍÊÇÕû¸ö±í´ïÊ½µÄÖµ
+	Ö´ï¿½ï¿½ï¿½ï¿½ï¿½Ì£ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ä·µï¿½ï¿½Öµ
+			true:ï¿½ï¿½ï¿½Ê½1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Öµ
+			false:ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Öµ
 
 */
 class OperatorDemo {
-	public static void main(String[] args) {
-		//»ñÈ¡Á½¸öÊý¾ÝÖÐµÄ½Ï´óÖµ
-		int x = 3;
-		int y = 4;
-		int z = (x > y)? x : y;
-		System.out.println(z);
+    public static void main(String[] args) {
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ½Ï´ï¿½Öµ
+        int x = 3;
+        int y = 4;
+        int z = (x > y) ? x : y;
+        System.out.println(z);
 
-		//±È½ÏÁ½¸öÊýÊÇ·ñÏàµÈ
-		int a = 4;
-		int b = 4;
-		//boolean flag = (a==b)?true:false;
-		boolean flag = (a == b);
-		System.out.println(flag);
+        //ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+        int a = 4;
+        int b = 4;
+        //boolean flag = (a==b)?true:false;
+        boolean flag = (a == b);
+        System.out.println(flag);
 
-		//»ñÈ¡Èý¸öÊý¾ÝÖÐµÄ½Ï´óÖµ
-		int c = 30;
-		int d = 40;
-		int e = 50;
-		//int max = (c>d)?(c>e?c:e):(d>e?d:e);
-		int temp = (c>d)?c:d;
-		int max = (temp>e)?temp:e;
-		System.out.println(max);
-	}
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ½Ï´ï¿½Öµ
+        int c = 30;
+        int d = 40;
+        int e = 50;
+        //int max = (c>d)?(c>e?c:e):(d>e?d:e);
+        int temp = (c > d) ? c : d;
+        int max = (temp > e) ? temp : e;
+        System.out.println(max);
+    }
 }

@@ -1,66 +1,67 @@
 /*
-	¶¨ÒåÒ»¸öÔ±¹¤Àà,×Ô¼º·ÖÎö³ö¼¸¸ö³ÉÔ±£¬
-	È»ºó¸ø³ö³ÉÔ±±äÁ¿£¬¹¹Ôì·½·¨£¬getXxx()/setXxx()·½·¨£¬
-	ÒÔ¼°Ò»¸öÏÔÊ¾ËùÓÐ³ÉÔ±ÐÅÏ¢µÄ·½·¨¡£²¢²âÊÔ¡£
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½,ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½
+	È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½Ô¼ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ð³ï¿½Ô±ï¿½ï¿½Ï¢ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
 
-	Employee£º
-		³ÉÔ±±äÁ¿£ºÔ±¹¤±àºÅ,ÐÕÃû,Ö°Î»
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()·½·¨£¬show()
+	Employeeï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½,Ö°Î»
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½show()
 */
 class Employee {
-	private String eid;
-	private String name;
-	private String job;
+    private String eid;
+    private String name;
+    private String job;
 
-	public Employee() {}
+    public Employee() {
+    }
 
-	public Employee(String eid,String name,String job) {
-		this.eid = eid;
-		this.name = name;
-		this.job = job;
-	}
+    public Employee(String eid, String name, String job) {
+        this.eid = eid;
+        this.name = name;
+        this.job = job;
+    }
 
-	public void setEid(String eid) {
-		this.eid = eid;
-	}
+    public void setEid(String eid) {
+        this.eid = eid;
+    }
 
-	public String getEid() {
-		return eid;
-	}
+    public String getEid() {
+        return eid;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setJob(String job) {
-		this.job = job;
-	}
+    public void setJob(String job) {
+        this.job = job;
+    }
 
-	public String getJob() {
-		return job;
-	}
+    public String getJob() {
+        return job;
+    }
 
-	public void show() {
-		System.out.println("Ô±¹¤±àºÅÊÇ£º"+eid+",ÐÕÃûÊÇ£º"+name+",Ö°Î»ÊÇ£º"+job);
-	}
+    public void show() {
+        System.out.println("Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + eid + ",ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + name + ",Ö°Î»ï¿½Ç£ï¿½" + job);
+    }
 }
 
 class EmployeeDemo {
-	public static void main(String[] args) {
-		//ÎÞ²Î
-		Employee e = new Employee();
-		e.setEid("itcast007");
-		e.setName("ÖÜÐÇ³Û");
-		e.setJob("¸ß¼¶¹¤³ÌÊ¦");
-		e.show();
+    public static void main(String[] args) {
+        //ï¿½Þ²ï¿½
+        Employee e = new Employee();
+        e.setEid("itcast007");
+        e.setName("ï¿½ï¿½ï¿½Ç³ï¿½");
+        e.setJob("ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦");
+        e.show();
 
-		//´ø²Î
-		Employee e2 = new Employee("itcast003","ÁõµÂ»ª","ÍÚ¾ò»ú¹¤³ÌÊ¦");
-		e2.show();
-	}
+        //ï¿½ï¿½ï¿½ï¿½
+        Employee e2 = new Employee("itcast003", "ï¿½ï¿½ï¿½Â»ï¿½", "ï¿½Ú¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦");
+        e2.show();
+    }
 }

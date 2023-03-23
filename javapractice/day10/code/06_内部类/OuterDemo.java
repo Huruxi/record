@@ -1,33 +1,35 @@
 /*
-°´ÕÕÒªÇó£¬²¹Æë´úÂë
+ï¿½ï¿½ï¿½ï¿½Òªï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	interface Inter { void show(); }
-	class Outer { //²¹Æë´úÂë }
+	class Outer { //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ }
 	class OuterDemo {
 	    public static void main(String[] args) {
 		      Outer.method().show();
 		  }
 	}
-ÒªÇóÔÚ¿ØÖÆÌ¨Êä³ö¡±HelloWorld¡±
+Òªï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½HelloWorldï¿½ï¿½
 */
-interface Inter { void show(); }
+interface Inter {
+    void show();
+}
 
-class Outer { 
-	//²¹Æë´úÂë
-	public static Inter method() {
-		return new Inter() {
-			public void show() {
-				System.out.println("HelloWorld");
-			}
-		};
-	}
+class Outer {
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static Inter method() {
+        return new Inter() {
+            public void show() {
+                System.out.println("HelloWorld");
+            }
+        };
+    }
 }
 
 class OuterDemo {
-	public static void main(String[] args) {
-		Outer.method().show();
+    public static void main(String[] args) {
+        Outer.method().show();
 		/*
-			Outer.method():ÀàÃûÄÜ¹»Ö±½Óµ÷ÓÃ·½·¨£¬ËµÃ÷¸Ã·½·¨ÊÇ¾²Ì¬µÄ¡£
-			Outer.method().show():ÕâÖÖÓÃ·¨½ÐÁ´Ê½±à³Ì£¬µ÷ÓÃshow()·½·¨Ö®Ç°µÄÄÚÈÝÓ¦¸ÃÊÇÒ»¸ö¶ÔÏó
+			Outer.method():ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½Ö±ï¿½Óµï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½Ä¡ï¿½
+			Outer.method().show():ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ì£ï¿½ï¿½ï¿½ï¿½ï¿½show()ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		*/
-	}
+    }
 }

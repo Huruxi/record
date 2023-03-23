@@ -1,37 +1,37 @@
 /*
-	ÐèÇó£ºÍ³¼Æ¡±Ë®ÏÉ»¨Êý¡±¹²ÓÐ¶àÉÙ¸ö
+	ï¿½ï¿½ï¿½ï¿½Í³ï¿½Æ¡ï¿½Ë®ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ù¸ï¿½
 
-	·ÖÎö£º
-		A:ÎÒÃÇÒªÍ³¼ÆÓÐ¶àÉÙ¸öÂú×ãÌõ¼þµÄÊý¾Ý£¬¾ÍÒª¶¨ÒåÒ»¸öÍ³¼Æ±äÁ¿
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½ÒªÍ³ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ù¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½
 			int count = 0;
-		B:Ò»¸öÈýÎ»ÊýÆäÊµ¸æËßÎÒÃÇµÄÊÇ·¶Î§£¬Í¨¹ýforÑ­»·¾Í¿ÉÒÔ¸ã¶¨¡£
-		C:Æä¸÷Î»Êý×ÖµÄÁ¢·½ºÍµÈÓÚ¸ÃÊý±¾Éí¾ÍÊÇ¹æÔò
-			ÎÒÃÇÈçºÎÈ¡µÃÃ¿Ò»¸öÎ»ÉÏµÄÊý¾ÝÄØ?
+		B:Ò»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½Ç·ï¿½Î§ï¿½ï¿½Í¨ï¿½ï¿½forÑ­ï¿½ï¿½ï¿½Í¿ï¿½ï¿½Ô¸ã¶¨ï¿½ï¿½
+		C:ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¹ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ã¿Ò»ï¿½ï¿½Î»ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
 
-			¸øÁËÈÎÒâµÄÒ»¸öÊý¾Ýx 153
-			¸öÎ»£ºx%10
-			Ê®Î»£ºx/10%10
-			°ÙÎ»£ºx/10/10%10
-			Ç§Î»£ºx/10/10/10%10
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½x 153
+			ï¿½ï¿½Î»ï¿½ï¿½x%10
+			Ê®Î»ï¿½ï¿½x/10%10
+			ï¿½ï¿½Î»ï¿½ï¿½x/10/10%10
+			Ç§Î»ï¿½ï¿½x/10/10/10%10
 			...
 
-			x == (¸öÎ»*¸öÎ»*¸öÎ» + Ê®Î»*Ê®Î»*Ê®Î» + °ÙÎ»*°ÙÎ»*°ÙÎ»)
+			x == (ï¿½ï¿½Î»*ï¿½ï¿½Î»*ï¿½ï¿½Î» + Ê®Î»*Ê®Î»*Ê®Î» + ï¿½ï¿½Î»*ï¿½ï¿½Î»*ï¿½ï¿½Î»)
 */
 class ForDemo4 {
-	public static void main(String[] args) {
-		//¶¨ÒåÍ³¼Æ±äÁ¿
-		int count = 0;
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½
+        int count = 0;
 
-		for(int x=100; x<1000; x++) {
-			int ge = x%10;
-			int shi = x/10%10;
-			int bai = x/10/10%10;
+        for (int x = 100; x < 1000; x++) {
+            int ge = x % 10;
+            int shi = x / 10 % 10;
+            int bai = x / 10 / 10 % 10;
 
-			if(x == (ge*ge*ge + shi*shi*shi + bai*bai*bai)) {
-				count++;
-			}
-		}
+            if (x == (ge * ge * ge + shi * shi * shi + bai * bai * bai)) {
+                count++;
+            }
+        }
 
-		System.out.println("Ë®ÏÉ»¨Êý¹²ÓÐ£º"+count+"¸ö");
-	}
+        System.out.println("Ë®ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½" + count + "ï¿½ï¿½");
+    }
 }

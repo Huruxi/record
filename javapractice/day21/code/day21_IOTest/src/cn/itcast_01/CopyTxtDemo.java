@@ -7,107 +7,107 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * ¸´ÖÆÎÄ±¾ÎÄ¼þ(9ÖÖ£¬¶øÎÒÃÇÑ¡Ôñ×Ö·ûÁ÷£¬¾ÍÓÃ5ÖÖ·½Ê½ÊµÏÖ)
- * A:»ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
- * B:»ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊý×é
- * C:¸ßÐ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
- * D:¸ßÐ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊý×é
- * E:¸ßÐ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û´®
- * 
- * Êý¾ÝÔ´£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½(9ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½Ö·ï¿½Ê½Êµï¿½ï¿½)
+ * A:ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+ * B:ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * C:ï¿½ï¿½Ð§ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+ * D:ï¿½ï¿½Ð§ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * E:ï¿½ï¿½Ð§ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		c:\\a.txt
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		d:\\b.txt
  */
 public class CopyTxtDemo {
-	public static void main(String[] args) throws IOException {
-		String srcString = "c:\\a.txt";
-		String destString = "d:\\b.txt";
+    public static void main(String[] args) throws IOException {
+        String srcString = "c:\\a.txt";
+        String destString = "d:\\b.txt";
 
-		method1(srcString, destString);
-		// method2(srcString, destString);
-		// method3(srcString, destString);
-		// method4(srcString, destString);
-		// method5(srcString, destString);
-	}
+        method1(srcString, destString);
+        // method2(srcString, destString);
+        // method3(srcString, destString);
+        // method4(srcString, destString);
+        // method5(srcString, destString);
+    }
 
-	// ¸ßÐ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û´®
-	private static void method5(String srcString, String destString)
-			throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(srcString));
-		BufferedWriter bw = new BufferedWriter(new FileWriter(destString));
+    // ï¿½ï¿½Ð§ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+    private static void method5(String srcString, String destString)
+            throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(srcString));
+        BufferedWriter bw = new BufferedWriter(new FileWriter(destString));
 
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			bw.write(line);
-			bw.newLine();
-			bw.flush();
-		}
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            bw.write(line);
+            bw.newLine();
+            bw.flush();
+        }
 
-		bw.close();
-		br.close();
-	}
+        bw.close();
+        br.close();
+    }
 
-	// ¸ßÐ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊý×é
-	private static void method4(String srcString, String destString)
-			throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(srcString));
-		BufferedWriter bw = new BufferedWriter(new FileWriter(destString));
+    // ï¿½ï¿½Ð§ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+    private static void method4(String srcString, String destString)
+            throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(srcString));
+        BufferedWriter bw = new BufferedWriter(new FileWriter(destString));
 
-		char[] chs = new char[1024];
-		int len = 0;
-		while ((len = br.read(chs)) != -1) {
-			bw.write(chs, 0, len);
-		}
+        char[] chs = new char[1024];
+        int len = 0;
+        while ((len = br.read(chs)) != -1) {
+            bw.write(chs, 0, len);
+        }
 
-		bw.close();
-		br.close();
-	}
+        bw.close();
+        br.close();
+    }
 
-	// ¸ßÐ§×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
-	private static void method3(String srcString, String destString)
-			throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader(srcString));
-		BufferedWriter bw = new BufferedWriter(new FileWriter(destString));
+    // ï¿½ï¿½Ð§ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+    private static void method3(String srcString, String destString)
+            throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader(srcString));
+        BufferedWriter bw = new BufferedWriter(new FileWriter(destString));
 
-		int ch = 0;
-		while ((ch = br.read()) != -1) {
-			bw.write(ch);
-		}
+        int ch = 0;
+        while ((ch = br.read()) != -1) {
+            bw.write(ch);
+        }
 
-		bw.close();
-		br.close();
-	}
+        bw.close();
+        br.close();
+    }
 
-	// »ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·ûÊý×é
-	private static void method2(String srcString, String destString)
-			throws IOException {
-		FileReader fr = new FileReader(srcString);
-		FileWriter fw = new FileWriter(destString);
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+    private static void method2(String srcString, String destString)
+            throws IOException {
+        FileReader fr = new FileReader(srcString);
+        FileWriter fw = new FileWriter(destString);
 
-		char[] chs = new char[1024];
-		int len = 0;
-		while ((len = fr.read(chs)) != -1) {
-			fw.write(chs, 0, len);
-		}
+        char[] chs = new char[1024];
+        int len = 0;
+        while ((len = fr.read(chs)) != -1) {
+            fw.write(chs, 0, len);
+        }
 
-		fw.close();
-		fr.close();
-	}
+        fw.close();
+        fr.close();
+    }
 
-	// »ù±¾×Ö·ûÁ÷Ò»´ÎÒ»¸ö×Ö·û
-	private static void method1(String srcString, String destString)
-			throws IOException {
-		FileReader fr = new FileReader(srcString);
-		FileWriter fw = new FileWriter(destString);
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+    private static void method1(String srcString, String destString)
+            throws IOException {
+        FileReader fr = new FileReader(srcString);
+        FileWriter fw = new FileWriter(destString);
 
-		int ch = 0;
-		while ((ch = fr.read()) != -1) {
-			fw.write(ch);
-		}
+        int ch = 0;
+        while ((ch = fr.read()) != -1) {
+            fw.write(ch);
+        }
 
-		fw.close();
-		fr.close();
-	}
+        fw.close();
+        fr.close();
+    }
 
 }

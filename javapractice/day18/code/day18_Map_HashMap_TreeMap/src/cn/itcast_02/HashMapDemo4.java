@@ -5,40 +5,40 @@ import java.util.Set;
 
 /*
  * HashMap<Student,String>
- * ¼ü£ºStudent	Ñ§Éú¶ÔÏó (ÁÖÇàÏ¼,28)
+ * ï¿½ï¿½ï¿½ï¿½Student	Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½Ï¼,28)
  * 		name,age
- * Öµ£ºString		Ñ§ºÅ 	eg:it001
- * ÒªÇó´æ´¢Èý¸öÑ§Éú£¬²¢±éÀú¡£±éÀúµÄ½á¹ûÊÇ£º
- * 		ÁÖÇàÏ¼---28---it001
- * ÐèÇó£ºÈç¹ûÁ½¸öÑ§Éú¶ÔÏóµÄ³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒÃÇ¾ÍÈÏÎªÕâÊÇÍ¬Ò»¸ö¶ÔÏó£¬Ò²¾ÍÊÇËµÕâÊÇÖØ¸´µÄ¼ü¡£
+ * Öµï¿½ï¿½String		Ñ§ï¿½ï¿½ 	eg:it001
+ * Òªï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½Ç£ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½Ï¼---28---it001
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
  */
 public class HashMapDemo4 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
-		HashMap<Student, String> hm = new HashMap<Student, String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        HashMap<Student, String> hm = new HashMap<Student, String>();
 
-		// ´´½¨¶ÔÏó
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
-		Student s2 = new Student("·çÇåÑï", 31);
-		Student s3 = new Student("ÍõÖØÑô", 200);
-		Student s4 = new Student("ÁÖÇàÏ¼", 28);
-		Student s5 = new Student("·çÇåÑï", 20);
-		Student s6 = new Student("ÍõÑô", 100);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 31);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 200);
+        Student s4 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        Student s5 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20);
+        Student s6 = new Student("ï¿½ï¿½ï¿½ï¿½", 100);
 
-		// Ìí¼ÓÔªËØ
-		hm.put(s1, "it001");
-		hm.put(s2, "it002");
-		hm.put(s3, "it003");
-		hm.put(s4, "it004");
-		hm.put(s5, "it005");
-		hm.put(s6, "it006");
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        hm.put(s1, "it001");
+        hm.put(s2, "it002");
+        hm.put(s3, "it003");
+        hm.put(s4, "it004");
+        hm.put(s5, "it005");
+        hm.put(s6, "it006");
 
-		// ±éÀú¼¯ºÏ
-		Set<Student> set = hm.keySet();
-		for (Student key : set) {
-			String value = hm.get(key);
-			System.out.println(key.getName() + "---" + key.getAge() + "---"
-					+ value);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Set<Student> set = hm.keySet();
+        for (Student key : set) {
+            String value = hm.get(key);
+            System.out.println(key.getName() + "---" + key.getAge() + "---"
+                    + value);
+        }
+    }
 }

@@ -1,40 +1,41 @@
 /*
-	ĞèÇó£º¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬²¢¶ÔÕâÁ½¸öÊı¾İÇóºÍ£¬Êä³öÆä½á¹û
+	ï¿½ï¿½ï¿½ó£º¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÊı¾İ£¬Í¨¹ıScannerÊµÏÖ¡£
-			µ¼°ü	import java.util.Scanner;
-			´´½¨¶ÔÏó	Scanner sc = new Scanner(System.in);
-			»ñÈ¡Êı¾İ	int i = sc.nextInt();
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½Í¨ï¿½ï¿½ScannerÊµï¿½Ö¡ï¿½
+			ï¿½ï¿½ï¿½ï¿½	import java.util.Scanner;
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	Scanner sc = new Scanner(System.in);
+			ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½	int i = sc.nextInt();
 
-		B:Â¼ÈëÁ½¸öÊı¾İ
-			ËùÒÔ¾ÍÊÇint i = sc.nextInt();À´Á½´Î¡£·Ö±ğÓÃ²»Í¬µÄ±äÁ¿½ÓÊÜ
+		B:Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½Ô¾ï¿½ï¿½ï¿½int i = sc.nextInt();ï¿½ï¿½ï¿½ï¿½ï¿½Î¡ï¿½ï¿½Ö±ï¿½ï¿½Ã²ï¿½Í¬ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				int i = sc.nextInt();
 				int j = sc.nextInt();
 
-		C:ÇóÁ½¸öÊı¾İµÄºÍ
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµÄºï¿½
 			int sum = i + j;
 
-		D:Êä³ö½á¹û
+		D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			System.out.println(sum);
 */
+
 import java.util.Scanner;
 
 class OperatorTest {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//Â¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊı¾İ£º");
-		int firstNumber = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı¾İ£º");
-		int secondNumber = sc.nextInt();
+        //Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½");
+        int firstNumber = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½");
+        int secondNumber = sc.nextInt();
 
-		//×ö¼Ó·¨
-		int sum = firstNumber + secondNumber;
+        //ï¿½ï¿½ï¿½Ó·ï¿½
+        int sum = firstNumber + secondNumber;
 
-		//Êä³ö½á¹û
-		System.out.println("Êı¾İºÍÊÇ£º"+sum);
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½İºï¿½ï¿½Ç£ï¿½" + sum);
+    }
 }

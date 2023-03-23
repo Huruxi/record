@@ -2,36 +2,36 @@ package cn.itcast_05;
 
 public class GetThread implements Runnable {
 
-	private Student s;
+    private Student s;
 
-	public GetThread(Student s) {
-		this.s = s;
-	}
+    public GetThread(Student s) {
+        this.s = s;
+    }
 
-	@Override
-	public void run() {
-		while (true) {
-			synchronized (s) {
-				if (!s.flag) {
-					// Èç¹ûÃ»ÓÐÊý¾Ý£¬¾ÍµÈ´ý
-					try {
-						s.wait(); // t2¾ÍµÈ´ýÁË,ÊÍ·ÅÁËËø¶ÔÏó,´ÓÄÄÀïµøµ¹´ÓÄÄÀïÅÀÆð¡£
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
-				}
+    @Override
+    public void run() {
+        while (true) {
+            synchronized (s) {
+                if (!s.flag) {
+                    // ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ÍµÈ´ï¿½
+                    try {
+                        s.wait(); // t2ï¿½ÍµÈ´ï¿½ï¿½ï¿½,ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
 
-				System.out.println(s.name + "---" + s.age);
-				// ÁÖÇàÏ¼---28
-				// ÁõÒâ ---31
+                System.out.println(s.name + "---" + s.age);
+                // ï¿½ï¿½ï¿½ï¿½Ï¼---28
+                // ï¿½ï¿½ï¿½ï¿½ ---31
 
-				// ¸ø³öÌáÊ¾
-				s.flag = false;
-				s.notify();
-			}
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+                s.flag = false;
+                s.notify();
+            }
 
-			// t1,t2ÇÀ
-		}
-	}
+            // t1,t2ï¿½ï¿½
+        }
+    }
 
 }

@@ -4,108 +4,108 @@ class Demo {
 }
 
 public class MovieTicket implements Runnable {
-	// 定义100张票
-	private static int tickets = 100;
-	private Object obj = new Object();
-	private int x = 0;
+    // 锟斤拷锟斤拷100锟斤拷票
+    private static int tickets = 100;
+    private Object obj = new Object();
+    private int x = 0;
 
-	// 改进为if...else的实现
-	// @Override
-	// public void run() {
-	// while (true) {
-	// if (x % 2 == 0) {
-	// synchronized (obj) {
-	// if (tickets > 0) {
-	// try {
-	// Thread.sleep(100);
-	// } catch (InterruptedException e) {
-	// e.printStackTrace();
-	// }
-	//
-	// System.out.println(Thread.currentThread().getName()
-	// + "正在出售第" + (tickets--) + "张票");
-	// }
-	// }
-	// } else {
-	// synchronized (obj) {
-	// if (tickets > 0) {
-	// try {
-	// Thread.sleep(100);
-	// } catch (InterruptedException e) {
-	// e.printStackTrace();
-	// }
-	//
-	// System.out.println(Thread.currentThread().getName()
-	// + "正在出售第" + (tickets--) + "张票");
-	// }
-	// }
-	// }
-	// x++;
-	// }
-	// }
+    // 锟侥斤拷为if...else锟斤拷实锟斤拷
+    // @Override
+    // public void run() {
+    // while (true) {
+    // if (x % 2 == 0) {
+    // synchronized (obj) {
+    // if (tickets > 0) {
+    // try {
+    // Thread.sleep(100);
+    // } catch (InterruptedException e) {
+    // e.printStackTrace();
+    // }
+    //
+    // System.out.println(Thread.currentThread().getName()
+    // + "锟斤拷锟节筹拷锟桔碉拷" + (tickets--) + "锟斤拷票");
+    // }
+    // }
+    // } else {
+    // synchronized (obj) {
+    // if (tickets > 0) {
+    // try {
+    // Thread.sleep(100);
+    // } catch (InterruptedException e) {
+    // e.printStackTrace();
+    // }
+    //
+    // System.out.println(Thread.currentThread().getName()
+    // + "锟斤拷锟节筹拷锟桔碉拷" + (tickets--) + "锟斤拷票");
+    // }
+    // }
+    // }
+    // x++;
+    // }
+    // }
 
-	@Override
-	public void run() {
-		while (true) {
-			if (x % 2 == 0) {
-				synchronized (MovieTicket.class) {
-					if (tickets > 0) {
-						try {
-							Thread.sleep(100);
-						} catch (InterruptedException e) {
-							e.printStackTrace();
-						}
+    @Override
+    public void run() {
+        while (true) {
+            if (x % 2 == 0) {
+                synchronized (MovieTicket.class) {
+                    if (tickets > 0) {
+                        try {
+                            Thread.sleep(100);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
 
-						System.out.println(Thread.currentThread().getName()
-								+ "正在出售第" + (tickets--) + "张票");
-					}
-				}
-			} else {
-				sellTicket();
-			}
-			x++;
-		}
-	}
+                        System.out.println(Thread.currentThread().getName()
+                                + "锟斤拷锟节筹拷锟桔碉拷" + (tickets--) + "锟斤拷票");
+                    }
+                }
+            } else {
+                sellTicket();
+            }
+            x++;
+        }
+    }
 
-	// 改进为一个方法实现。
-	// private void sellTicket() {
-	// synchronized (obj) {
-	// if (tickets > 0) {
-	// try {
-	// Thread.sleep(100);
-	// } catch (InterruptedException e) {
-	// e.printStackTrace();
-	// }
-	//
-	// System.out.println(Thread.currentThread().getName() + "正在出售第"
-	// + (tickets--) + "张票");
-	// }
-	// }
-	// }
+    // 锟侥斤拷为一锟斤拷锟斤拷锟斤拷实锟街★拷
+    // private void sellTicket() {
+    // synchronized (obj) {
+    // if (tickets > 0) {
+    // try {
+    // Thread.sleep(100);
+    // } catch (InterruptedException e) {
+    // e.printStackTrace();
+    // }
+    //
+    // System.out.println(Thread.currentThread().getName() + "锟斤拷锟节筹拷锟桔碉拷"
+    // + (tickets--) + "锟斤拷票");
+    // }
+    // }
+    // }
 
-	// private synchronized void sellTicket() {
-	// if (tickets > 0) {
-	// try {
-	// Thread.sleep(100);
-	// } catch (InterruptedException e) {
-	// e.printStackTrace();
-	// }
-	//
-	// System.out.println(Thread.currentThread().getName() + "正在出售第"
-	// + (tickets--) + "张票");
-	// }
-	// }
+    // private synchronized void sellTicket() {
+    // if (tickets > 0) {
+    // try {
+    // Thread.sleep(100);
+    // } catch (InterruptedException e) {
+    // e.printStackTrace();
+    // }
+    //
+    // System.out.println(Thread.currentThread().getName() + "锟斤拷锟节筹拷锟桔碉拷"
+    // + (tickets--) + "锟斤拷票");
+    // }
+    // }
 
-	private static synchronized void sellTicket() {
-		if (tickets > 0) {
-			try {
-				Thread.sleep(100);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
+    private static synchronized void sellTicket() {
+        if (tickets > 0) {
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
-			System.out.println(Thread.currentThread().getName() + "正在出售第"
-					+ (tickets--) + "张票");
-		}
-	}
+            System.out.println(Thread.currentThread().getName() + "锟斤拷锟节筹拷锟桔碉拷"
+                    + (tickets--) + "锟斤拷票");
+        }
+    }
 }

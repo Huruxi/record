@@ -19,94 +19,94 @@ import java.io.IOException;
  * 				MenuItem
  */
 public class MenuDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("¶à¼¶²Ëµ¥");
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setBounds(500, 250, 400, 300);
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        final Frame f = new Frame("ï¿½à¼¶ï¿½Ëµï¿½");
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setBounds(500, 250, 400, 300);
 
-		// ´´½¨²Ëµ¥À¸
-		MenuBar mb = new MenuBar();
-		// ´´½¨²Ëµ¥
-		Menu m1 = new Menu("ÎÄ¼þ");
-		Menu m2 = new Menu("¸ü¸ÄÃû³Æ");
-		// ´´½¨²Ëµ¥Ïî
-		final MenuItem mi1 = new MenuItem("ºÃºÃÑ§Ï°");
-		final MenuItem mi2 = new MenuItem("ÌìÌìÏòÉÏ");
-		MenuItem mi3 = new MenuItem("»Ö¸´±êÌâ");
-		MenuItem mi4 = new MenuItem("´ò¿ª¼ÇÊÂ±¾");
-		MenuItem mi5 = new MenuItem("ÍË³öÏµÍ³");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+        MenuBar mb = new MenuBar();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+        Menu m1 = new Menu("ï¿½Ä¼ï¿½");
+        Menu m2 = new Menu("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+        final MenuItem mi1 = new MenuItem("ï¿½Ãºï¿½Ñ§Ï°");
+        final MenuItem mi2 = new MenuItem("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        MenuItem mi3 = new MenuItem("ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½");
+        MenuItem mi4 = new MenuItem("ï¿½ò¿ª¼ï¿½ï¿½Â±ï¿½");
+        MenuItem mi5 = new MenuItem("ï¿½Ë³ï¿½ÏµÍ³");
 
-		// ²Ëµ¥±¾Éí×éºÏ
-		m2.add(mi1);
-		m2.add(mi2);
-		m2.add(mi3);
+        // ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        m2.add(mi1);
+        m2.add(mi2);
+        m2.add(mi3);
 
-		m1.add(m2);
-		m1.add(mi4);
-		m1.add(mi5);
+        m1.add(m2);
+        m1.add(mi4);
+        m1.add(mi5);
 
-		mb.add(m1);
+        mb.add(m1);
 
-		// Ìí¼Óµ½´°Ìå
-		f.setMenuBar(mb);
+        // ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setMenuBar(mb);
 
-		// »ñÈ¡ÒÔÇ°µÄ±êÌâ
-		final String title = f.getTitle();
+        // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½Ä±ï¿½ï¿½ï¿½
+        final String title = f.getTitle();
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		mi5.addActionListener(new ActionListener() {
+        mi5.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
-		mi4.addActionListener(new ActionListener() {
+        mi4.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				Runtime r = Runtime.getRuntime();
-				try {
-					r.exec("notepad");
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-			}
-		});
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Runtime r = Runtime.getRuntime();
+                try {
+                    r.exec("notepad");
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        });
 
-		mi1.addActionListener(new ActionListener() {
+        mi1.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				f.setTitle(mi1.getLabel());
-			}
-		});
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                f.setTitle(mi1.getLabel());
+            }
+        });
 
-		mi2.addActionListener(new ActionListener() {
+        mi2.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				f.setTitle(mi2.getLabel());
-			}
-		});
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                f.setTitle(mi2.getLabel());
+            }
+        });
 
-		mi3.addActionListener(new ActionListener() {
+        mi3.addActionListener(new ActionListener() {
 
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				f.setTitle(title);
-			}
-		});
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                f.setTitle(title);
+            }
+        });
 
-		f.setVisible(true);
-	}
+        f.setVisible(true);
+    }
 }

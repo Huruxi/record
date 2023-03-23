@@ -1,39 +1,39 @@
 package cn.itcast_03;
 
 /*
- * intºÍStringÀàÐÍµÄÏà»¥×ª»»¼´¿É¡£
- * 
+ * intï¿½ï¿½Stringï¿½ï¿½ï¿½Íµï¿½ï¿½à»¥×ªï¿½ï¿½ï¿½ï¿½ï¿½É¡ï¿½
+ *
  * int -- String
  * 		String.valueOf(number)
  * 		Integer.toString(number)
- * 
+ *
  * String -- int
  * 		Integer.parseInt(s);
  */
 public class IntegerDemo {
-	public static void main(String[] args) {
-		// int -- String
-		int number = 100;
-		// ·½·¨1
-		String s1 = number + "";
-		//·½Ê½2
-		String s2 = String.valueOf(number);
-		//·½Ê½3
-		//int -- Integer -- String
-		Integer i = new Integer(number);
-		String s3 = i.toString();
-		//·½Ê½4
-		String s4 = Integer.toString(number);
-		System.out.println("--------------");
+    public static void main(String[] args) {
+        // int -- String
+        int number = 100;
+        // ï¿½ï¿½ï¿½ï¿½1
+        String s1 = number + "";
+        //ï¿½ï¿½Ê½2
+        String s2 = String.valueOf(number);
+        //ï¿½ï¿½Ê½3
+        //int -- Integer -- String
+        Integer i = new Integer(number);
+        String s3 = i.toString();
+        //ï¿½ï¿½Ê½4
+        String s4 = Integer.toString(number);
+        System.out.println("--------------");
 
-		String s = "100";
-		//·½Ê½1
-		//String -- Integer -- int
-		Integer ii = new Integer(s);
-		//public int intValue()
-		int num = ii.intValue();
-		//·½Ê½2
-		//public static int parseInt(String s)
-		int num2 = Integer.parseInt(s);
-	}
+        String s = "100";
+        //ï¿½ï¿½Ê½1
+        //String -- Integer -- int
+        Integer ii = new Integer(s);
+        //public int intValue()
+        int num = ii.intValue();
+        //ï¿½ï¿½Ê½2
+        //public static int parseInt(String s)
+        int num2 = Integer.parseInt(s);
+    }
 }

@@ -1,21 +1,21 @@
 package cn.itcast_02;
 
 /*
- * IntegerµÄ¹¹Ôì·½·¨£º
- * Integer(int value)£º °ÑintÀàÐÍµÄÖµ°ü×°³ÉIntegerÀàÐÍ
- * Integer(String s): °ÑÊý×ÖÀàÐÍµÄ×Ö·û´®×ª»»³ÉIntegerÀàÐÍ
+ * Integerï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * Integer(int value)ï¿½ï¿½ ï¿½ï¿½intï¿½ï¿½ï¿½Íµï¿½Öµï¿½ï¿½×°ï¿½ï¿½Integerï¿½ï¿½ï¿½ï¿½
+ * Integer(String s): ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Integerï¿½ï¿½ï¿½ï¿½
  */
 public class IntegerDemo {
-	public static void main(String[] args) {
-		// ·½Ê½1
-		int number = 100;
-		Integer i = new Integer(number);
-		System.out.println("i:" + i);
+    public static void main(String[] args) {
+        // ï¿½ï¿½Ê½1
+        int number = 100;
+        Integer i = new Integer(number);
+        System.out.println("i:" + i);
 
-		// ·½Ê½2
-		String s = "100";
-		// String s = "abc"; // NumberFormatException:ÒòÎªÄã¸ø¶¨µÄÊý¾Ý²»ÊÇÊý×ÖÐÎÊ½µÄ×Ö·û´®Êý¾Ý
-		Integer i2 = new Integer(s);
-		System.out.println("i2:" + i2);
-	}
+        // ï¿½ï¿½Ê½2
+        String s = "100";
+        // String s = "abc"; // NumberFormatException:ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Integer i2 = new Integer(s);
+        System.out.println("i2:" + i2);
+    }
 }

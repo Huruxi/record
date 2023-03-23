@@ -1,34 +1,34 @@
 package cn.itcast_02;
 
 /*
- * ÈçºÎ»ñÈ¡ºÍÉèÖÃÏß³ÌÃû³Æ?
+ * ï¿½ï¿½Î»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½?
  * public final String getName()
- * 		Èç¹ûÄãÃ»ÓĞÉèÖÃÃû³Æ£¬»áÓĞÒ»¸öÄ¬ÈÏÃû³Æ¡£Thread-±àºÅ
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½Thread-ï¿½ï¿½ï¿½
  * public final void setName(String name)
- * 
- * ÆäÊµÍ¨¹ı¹¹Ôì·½·¨Ò²¿ÉÒÔ¸øÏß³ÌÆğÃû×Ö?
- * 
- * ÇëÎÊmain·½·¨ÔÚÄÄ¸öÏß³ÌÖĞÄØ?
- * 		Ö÷Ïß³Ì
- * 		ÈçºÎ»ñÈ¡Ö÷Ïß³ÌµÄÃû³ÆÄØ?
- * 		public static Thread currentThread():ÕâÑù¾Í¿ÉÒÔ»ñÈ¡ÈÎÒâ·½·¨ËùÔÚµÄÏß³ÌÃû³Æ
+ *
+ * ï¿½ï¿½ÊµÍ¨ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ *
+ * ï¿½ï¿½ï¿½ï¿½mainï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 		ï¿½ï¿½ï¿½ß³ï¿½
+ * 		ï¿½ï¿½Î»ï¿½È¡ï¿½ï¿½ï¿½ß³Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 		public static Thread currentThread():ï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½Ô»ï¿½È¡ï¿½ï¿½ï¿½â·½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class MyThreadDemo {
-	public static void main(String[] args) {
-		// ÎŞ²Î+setXxx()
-		// MyThread mt1 = new MyThread();
-		// MyThread mt2 = new MyThread();
-		// mt1.setName("ÁÖÇàÏ¼");
-		// mt2.setName("ÁõÒâ");
+    public static void main(String[] args) {
+        // ï¿½Ş²ï¿½+setXxx()
+        // MyThread mt1 = new MyThread();
+        // MyThread mt2 = new MyThread();
+        // mt1.setName("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        // mt2.setName("ï¿½ï¿½ï¿½ï¿½");
 
-		// ´ø²Î
-		MyThread mt1 = new MyThread("Íõ×æÏÍ");
-		MyThread mt2 = new MyThread("Ñî¸Ú");
+        // ï¿½ï¿½ï¿½ï¿½
+        MyThread mt1 = new MyThread("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        MyThread mt2 = new MyThread("ï¿½ï¿½ï¿½");
 
-		mt1.start();
-		mt2.start();
+        mt1.start();
+        mt2.start();
 
-		System.out
-				.println(Thread.currentThread().getName() + "AAAAAAAAAAAAAAA");
-	}
+        System.out
+                .println(Thread.currentThread().getName() + "AAAAAAAAAAAAAAA");
+    }
 }

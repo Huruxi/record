@@ -1,35 +1,35 @@
 /*
-	¼Ì³Ð¼äµÄ³ÉÔ±±äÁ¿¹ØÏµ£º
-		Ãû×Ö²»Í¬£º·Ç³£µÄ¼òµ¥£¬Ò»¿´¾ÍÖªµÀÊ¹ÓÃµÄÊÇË­¡£
-		Ãû×ÖÏàÍ¬£º¾Í½üÔ­Ôò¡£
+	ï¿½Ì³Ð¼ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½
+		ï¿½ï¿½ï¿½Ö²ï¿½Í¬ï¿½ï¿½ï¿½Ç³ï¿½ï¿½Ä¼òµ¥£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½Ë­ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Í½ï¿½Ô­ï¿½ï¿½
 
-	Ê¹ÓÃ±äÁ¿µÄÊ±ºò£¬»áÏÈÕÒ¾Ö²¿·¶Î§¡£
-	Èç¹ûÏëÖ±½ÓÊ¹ÓÃ³ÉÔ±±äÁ¿£¬¼Ó¹Ø¼ü×Ö£ºthis¼´¿É¡£
-	Èç¹ûÏëÖ±½ÓÊ¹ÓÃ¸¸ÀàµÄ³ÉÔ±±äÁ¿£¬¼Ó¹Ø¼ü×Ö£ºsuper¼´¿É¡£
+	Ê¹ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ò£¬»ï¿½ï¿½ï¿½ï¿½Ò¾Ö²ï¿½ï¿½ï¿½Î§ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½Ã³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¹Ø¼ï¿½ï¿½Ö£ï¿½thisï¿½ï¿½ï¿½É¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½Ã¸ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¹Ø¼ï¿½ï¿½Ö£ï¿½superï¿½ï¿½ï¿½É¡ï¿½
 */
 class Father {
-	public int age = 40;
+    public int age = 40;
 }
 
 class Son extends Father {
-	public int num = 100;
-	public int age = 20;
+    public int num = 100;
+    public int age = 20;
 
-	public void show() {
-		int age = 60;
-		System.out.println(age); //¾Ö²¿·¶Î§
-		System.out.println(this.age); //±¾Àà³ÉÔ±·¶Î§
-		System.out.println(super.age); //¸¸Àà³ÉÔ±·¶Î§
-		System.out.println(num);
-	}
+    public void show() {
+        int age = 60;
+        System.out.println(age); //ï¿½Ö²ï¿½ï¿½ï¿½Î§
+        System.out.println(this.age); //ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Î§
+        System.out.println(super.age); //ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½Î§
+        System.out.println(num);
+    }
 }
 
 class ExtendsDemo3 {
-	public static void main(String[] args) {
-		Son s = new Son();
-		//System.out.println(s.age);
-		//System.out.println(s.num);
+    public static void main(String[] args) {
+        Son s = new Son();
+        //System.out.println(s.age);
+        //System.out.println(s.num);
 
-		s.show();
-	}
+        s.show();
+    }
 }

@@ -1,40 +1,41 @@
 /*
-	ĞèÇó£º¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬±È½ÏÕâÁ½¸öÊı¾İÊÇ·ñÏàµÈ
+	ï¿½ï¿½ï¿½ó£º¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
 
-	·ÖÎö£º
-		A:¼üÅÌÂ¼Èë£¬ÓÃScanner
-		B:±È½ÏÕâÁ½¸öÊı¾İ£¬ÓÃifÓï¾ä
-		C:Á½ÖÖĞÎÊ½Õ¹Ê¾½á¹û
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ë£¬ï¿½ï¿½Scanner
+		B:ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½ï¿½ifï¿½ï¿½ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Õ¹Ê¾ï¿½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
 class IfTest2 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊı¾İ£º");
-		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı¾İ£º");
-		int b = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½");
+        int a = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½");
+        int b = sc.nextInt();
 
-		//±È½ÏÊı¾İ
-		//·½Ê½1:°Ñ½á¹ûÖ±½ÓÊä³ö
-		if(a == b) {
-			System.out.println(true);
-		}else {
-			System.out.println(false);	
-		}
-		System.out.println("------------------");
+        //ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½Ê½1:ï¿½Ñ½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½
+        if (a == b) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
+        System.out.println("------------------");
 
-		//·½Ê½2:°Ñ½á¹û±£ÁôÏÂÀ´
-		boolean flag;
-		if(a == b) {
-			flag = true;
-		}else {
-			flag = false;
-		}
-		System.out.println(flag);
-	}
+        //ï¿½ï¿½Ê½2:ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        boolean flag;
+        if (a == b) {
+            flag = true;
+        } else {
+            flag = false;
+        }
+        System.out.println(flag);
+    }
 }

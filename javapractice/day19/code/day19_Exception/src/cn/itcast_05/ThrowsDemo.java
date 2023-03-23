@@ -5,27 +5,27 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- * throws:ÓÃÔÚ·½·¨ÉÏ£¬Å×³öÒì³££¬ÈÃµ÷ÓÃÕßÈ¥´¦Àí¡£
+ * throws:ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½×³ï¿½ï¿½ì³£ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½
  */
 public class ThrowsDemo {
-	public static void main(String[] args) {
-		// show();
-		try {
-			show2();
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-	}
+    public static void main(String[] args) {
+        // show();
+        try {
+            show2();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
 
-	public static void show() throws ArithmeticException {
-		int a = 10;
-		int b = 0;
-		System.out.println(a / b);
-	}
+    public static void show() throws ArithmeticException {
+        int a = 10;
+        int b = 0;
+        System.out.println(a / b);
+    }
 
-	public static void show2() throws ParseException {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-		Date d = sdf.parse("2012-03-04");
-		System.out.println(d);
-	}
+    public static void show2() throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date d = sdf.parse("2012-03-04");
+        System.out.println(d);
+    }
 }

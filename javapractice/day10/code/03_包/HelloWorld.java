@@ -1,13 +1,13 @@
 /*
-	°ü£ºÆäÊµ¾ÍÊÇÎÄ¼þ¼Ð
-	×÷ÓÃ£º¶ÔÀà½øÐÐ·ÖÀà¹ÜÀí
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+	ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	°üµÄ»®·Ö£º
-	¾ÙÀý£º
-		Ñ§ÉúµÄÔö¼Ó£¬É¾³ý£¬ÐÞ¸Ä£¬²éÑ¯
-		ÀÏÊ¦µÄÔö¼Ó£¬É¾³ý£¬ÐÞ¸Ä£¬²éÑ¯
-		¹¤ÈËµÄÔö¼Ó£¬É¾³ý£¬ÐÞ¸Ä£¬²éÑ¯
-	A:°´ÕÕ¹¦ÄÜ·Ö
+	ï¿½ï¿½ï¿½Ä»ï¿½ï¿½Ö£ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä£ï¿½ï¿½ï¿½Ñ¯
+		ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä£ï¿½ï¿½ï¿½Ñ¯
+		ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½Ó£ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä£ï¿½ï¿½ï¿½Ñ¯
+	A:ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½Ü·ï¿½
 		cn.itcast.add
 			AddStudent
 			AddTeacher
@@ -18,7 +18,7 @@
 			DeleteWorker
 		cn.itcast.update
 		cn.itcast.find
-	B:°´ÕÕÄ£¿é·Ö
+	B:ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½
 		cn.itcast.student
 			add
 			delete
@@ -35,31 +35,31 @@
 			update
 			find
 	
-	¶¨Òå°üµÄ¸ñÊ½:
-		package °üÃû;
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½:
+		package ï¿½ï¿½ï¿½ï¿½;
 
-	´ø°üµÄ±àÒëºÍÔËÐÐ£º
-		ÊÖ¶¯Ê½£º
-			A:±àÒë´ø°üµÄÀàÎÄ¼þ
-			B:×Ô¼ºÊÖ¶¯´´½¨°ü
-			C:°Ñ±àÒëÉú³ÉµÄclassÎÄ¼þ·Åµ½°üÀïÃæÈ¥
-			D:ÔËÐÐ¼´¿É£¬×¢ÒâÒª´ø°üÃû
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½
+		ï¿½Ö¶ï¿½Ê½ï¿½ï¿½
+			A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+			B:ï¿½Ô¼ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			C:ï¿½Ñ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Éµï¿½classï¿½Ä¼ï¿½ï¿½Åµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥
+			D:ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½É£ï¿½×¢ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				java cn.itcast.HelloWorld
-		×Ô¶¯Ê½£º
-			A:±àÒëµÄÊ±ºò´øÒ»¸ö²ÎÊý -d
+		ï¿½Ô¶ï¿½Ê½ï¿½ï¿½
+			A:ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -d
 				javac -d . HelloWorld.java
-			B:ÔËÐÐ¼´¿É£¬×¢ÒâÒª´ø°üÃû
+			B:ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½É£ï¿½×¢ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				java cn.itcast.HelloWorld
 
-		×¢ÒâÊÂÏî£º
-			packageÓï¾ä±ØÐëÊÇ³ÌÐòµÄµÚÒ»Ìõ¿ÉÖ´ÐÐµÄ´úÂë
-			packageÓï¾äÔÚÒ»¸öjavaÎÄ¼þÖÐÖ»ÄÜÓÐÒ»¸ö
-			Èç¹ûÃ»ÓÐpackage£¬Ä¬ÈÏ±íÊ¾ÎÞ°üÃû
+		×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+			packageï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ÐµÄ´ï¿½ï¿½ï¿½
+			packageï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½javaï¿½Ä¼ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
+			ï¿½ï¿½ï¿½Ã»ï¿½ï¿½packageï¿½ï¿½Ä¬ï¿½Ï±ï¿½Ê¾ï¿½Þ°ï¿½ï¿½ï¿½
 */
 package cn.itcast;
 
 class HelloWorld {
-	public static void main(String[] args) {
-		System.out.println("HelloWorld");
-	}
+    public static void main(String[] args) {
+        System.out.println("HelloWorld");
+    }
 }

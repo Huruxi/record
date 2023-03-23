@@ -3,33 +3,33 @@ package cn.itcast_05;
 import java.util.Scanner;
 
 /*
- * °ÑÒ»¸ö×Ö·û´®µÄÊ××ÖÄ¸×ª³É´óÐ´£¬ÆäÓàÎªÐ¡Ð´¡£(Ö»¿¼ÂÇÓ¢ÎÄ´óÐ¡Ð´×ÖÄ¸×Ö·û)
- * ¾ÙÀý£ºhelloWorldAbCde
- * ½á¹û£ºHelloworldabcde
- * 
- * ·ÖÎö£º
- * 		A:¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
- * 		B:½ØÈ¡Ê××ÖÄ¸µÃµ½s1
- * 		C:½ØÈ¡³ýÊ××ÖÄ¸ÒÔÍâµÄÆäËû×Ö·û´®µÃµ½s2
- * 		D:s1×ª´óÐ´+s2×ªÐ¡Ð´
+ * ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸×ªï¿½É´ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÐ¡Ð´ï¿½ï¿½(Ö»ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½Ä´ï¿½Ð¡Ð´ï¿½ï¿½Ä¸ï¿½Ö·ï¿½)
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½helloWorldAbCde
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Helloworldabcde
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ãµï¿½s1
+ * 		C:ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ãµï¿½s2
+ * 		D:s1×ªï¿½ï¿½Ð´+s2×ªÐ¡Ð´
  */
 public class StringTest {
-	public static void main(String[] args) {
-		// ¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
-		String s = sc.nextLine();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½");
+        String s = sc.nextLine();
 
-		// ½ØÈ¡Ê××ÖÄ¸µÃµ½s1
-		String s1 = s.substring(0, 1);
-		// ½ØÈ¡³ýÊ××ÖÄ¸ÒÔÍâµÄÆäËû×Ö·û´®µÃµ½s2
-		String s2 = s.substring(1);
-		// s1×ª´óÐ´+s2×ªÐ¡Ð´
-		String result = s1.toUpperCase().concat(s2.toLowerCase());
-		System.out.println(result);
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ãµï¿½s1
+        String s1 = s.substring(0, 1);
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ãµï¿½s2
+        String s2 = s.substring(1);
+        // s1×ªï¿½ï¿½Ð´+s2×ªÐ¡Ð´
+        String result = s1.toUpperCase().concat(s2.toLowerCase());
+        System.out.println(result);
 
-		// String result = s.substring(0, 1).toUpperCase()
-		// .concat(s.substring(1).toLowerCase());
-		// System.out.println(result);
-	}
+        // String result = s.substring(0, 1).toUpperCase()
+        // .concat(s.substring(1).toLowerCase());
+        // System.out.println(result);
+    }
 }

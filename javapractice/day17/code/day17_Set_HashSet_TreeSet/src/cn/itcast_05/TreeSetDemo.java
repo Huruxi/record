@@ -3,43 +3,43 @@ package cn.itcast_05;
 import java.util.TreeSet;
 
 /*
- * TreeSetÊÇÈçºÎ±£Ö¤ÔªËØÅÅÐòµÄÄØ?ÓÖÊÇÈçºÎ±£Ö¤ÔªËØÎ¨Ò»µÄÄØ?
- * 
- * ÐèÇó£ºÓÃTreeSet´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÒªÇóÅÅÐòºÍÈ¥µôÖØ¸´Öµ¡£
- * a:Èç¹û³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒ¾ÍÈÏÎªÊÇÖØ¸´ÔªËØ
- * b:Çë°´ÕÕÐÕÃûµÄ³¤¶È½øÐÐÅÅÐò¡£
+ * TreeSetï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½ï¿½Î¨Ò»ï¿½ï¿½ï¿½ï¿½?
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TreeSetï¿½æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ø¸ï¿½Öµï¿½ï¿½
+ * a:ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ò¾ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ø¸ï¿½Ôªï¿½ï¿½
+ * b:ï¿½ë°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class TreeSetDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		TreeSet<Person> ts = new TreeSet<Person>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        TreeSet<Person> ts = new TreeSet<Person>();
 
-		// ´´½¨ÈË¶ÔÏó
-		Person p1 = new Person("tangseng", 30);
-		Person p2 = new Person("jiapingwa", 25);
-		Person p3 = new Person("zhangyimou", 25);
-		Person p4 = new Person("xijinping", 26);
-		Person p5 = new Person("yanni", 27);
-		Person p6 = new Person("wenzhang", 30);
-		Person p7 = new Person("tianliang", 28);
-		Person p8 = new Person("xijinping", 26);
-		Person p9 = new Person("tianliang", 24);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½
+        Person p1 = new Person("tangseng", 30);
+        Person p2 = new Person("jiapingwa", 25);
+        Person p3 = new Person("zhangyimou", 25);
+        Person p4 = new Person("xijinping", 26);
+        Person p5 = new Person("yanni", 27);
+        Person p6 = new Person("wenzhang", 30);
+        Person p7 = new Person("tianliang", 28);
+        Person p8 = new Person("xijinping", 26);
+        Person p9 = new Person("tianliang", 24);
 
-		// Ìí¼ÓÔªËØ
-		ts.add(p1);
-		ts.add(p2);
-		ts.add(p3);
-		ts.add(p4);
-		ts.add(p5);
-		ts.add(p6);
-		ts.add(p7);
-		ts.add(p8);
-		ts.add(p9);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        ts.add(p1);
+        ts.add(p2);
+        ts.add(p3);
+        ts.add(p4);
+        ts.add(p5);
+        ts.add(p6);
+        ts.add(p7);
+        ts.add(p8);
+        ts.add(p9);
 
-		// ±éÀú¼¯ºÏ
-		for (Person p : ts) {
-			System.out.println(p.getName() + "---" + p.getAge());
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Person p : ts) {
+            System.out.println(p.getName() + "---" + p.getAge());
+        }
 
-	}
+    }
 }

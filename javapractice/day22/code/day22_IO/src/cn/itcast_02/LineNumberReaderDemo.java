@@ -5,24 +5,24 @@ import java.io.IOException;
 import java.io.LineNumberReader;
 
 /*
- * public int getLineNumber():»ñÈ¡µ±Ç°µÄÐÐºÅ
- * public void setLineNumber(int lineNumber):ÉèÖÃµ±Ç°µÄÐÐºÅ
+ * public int getLineNumber():ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ðºï¿½
+ * public void setLineNumber(int lineNumber):ï¿½ï¿½ï¿½Ãµï¿½Ç°ï¿½ï¿½ï¿½Ðºï¿½
  */
 public class LineNumberReaderDemo {
-	public static void main(String[] args) throws IOException {
-		LineNumberReader lnr = new LineNumberReader(new FileReader("my.txt"));
+    public static void main(String[] args) throws IOException {
+        LineNumberReader lnr = new LineNumberReader(new FileReader("my.txt"));
 
-		lnr.setLineNumber(100);
+        lnr.setLineNumber(100);
 
-		// System.out.println(lnr.getLineNumber());
-		// System.out.println(lnr.getLineNumber());
-		// System.out.println(lnr.getLineNumber());
+        // System.out.println(lnr.getLineNumber());
+        // System.out.println(lnr.getLineNumber());
+        // System.out.println(lnr.getLineNumber());
 
-		String line = null;
-		while ((line = lnr.readLine()) != null) {
-			System.out.println(lnr.getLineNumber() + ":" + line);
-		}
+        String line = null;
+        while ((line = lnr.readLine()) != null) {
+            System.out.println(lnr.getLineNumber() + ":" + line);
+        }
 
-		lnr.close();
-	}
+        lnr.close();
+    }
 }

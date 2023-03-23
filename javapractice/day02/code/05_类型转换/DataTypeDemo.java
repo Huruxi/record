@@ -1,29 +1,29 @@
 /*
-	+ÊÇÒ»¸öÔËËã·û, ÎÒÃÇÓ¦¸ÃÄÜ¹»¿´¶®£¬×öÊı¾İµÄ¼Ó·¨¡£
+	+ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµÄ¼Ó·ï¿½ï¿½ï¿½
 
-	²ÎÓëÔËËãµÄÊı¾İ£¬ÒªÇóÀàĞÍÒ»ÖÂ¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Â¡ï¿½
 
-	booleanÀàĞÍ²»ÄÜ×ª»»ÎªÆäËûµÄÊı¾İÀàĞÍ¡£
+	booleanï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
 
-	ÒşÊ½×ª»»£º
+	ï¿½ï¿½Ê½×ªï¿½ï¿½ï¿½ï¿½
 		A:byte,short,char-->int-->long-->float-->double
-		B:byte,short,charÏà»¥Ö®¼ä²»×ª»»£¬ËûÃÇ²ÎÓëÔËËãÊ×ÏÈ×ª»»ÎªintÀàĞÍ
+		B:byte,short,charï¿½à»¥Ö®ï¿½ä²»×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªintï¿½ï¿½ï¿½ï¿½
 */
 class DataTypeDemo {
-	public static void main(String[] args) {
-		//ÀàĞÍÒ»ÑùµÄÊı¾İ
-		int a = 10;
-		int b = 20;
-		System.out.println(a + b);
-		int c = a + b;
-		System.out.println(c);
-		System.out.println("--------------");
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int a = 10;
+        int b = 20;
+        System.out.println(a + b);
+        int c = a + b;
+        System.out.println(c);
+        System.out.println("--------------");
 
-		//¶¨Òå±äÁ¿
-		byte by = 3;
-		int i = 4;
-		System.out.println(by + i);
-		int j =	by + i;
-		System.out.println(j);
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        byte by = 3;
+        int i = 4;
+        System.out.println(by + i);
+        int j = by + i;
+        System.out.println(j);
+    }
 }

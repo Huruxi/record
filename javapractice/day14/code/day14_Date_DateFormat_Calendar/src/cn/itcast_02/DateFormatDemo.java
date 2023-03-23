@@ -5,37 +5,37 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- * DateFormat:ÊÇÕë¶ÔÈÕÆÚ½øÐÐ¸ñÊ½»¯ºÍ½âÎöµÄ³éÏóÀà¡£
- * ËùÒÔ£¬ÎÒÃÇÑ§Ï°Æä×ÓÀà²¢Ê¹ÓÃ¡£
- * SimpleDateForamt£º
- * ¸ñÊ½»¯£¨ÈÕÆÚ -> ÎÄ±¾£©
+ * DateFormat:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú½ï¿½ï¿½Ð¸ï¿½Ê½ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½à¡£
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§Ï°ï¿½ï¿½ï¿½ï¿½ï¿½à²¢Ê¹ï¿½Ã¡ï¿½
+ * SimpleDateForamtï¿½ï¿½
+ * ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ -> ï¿½Ä±ï¿½ï¿½ï¿½
  * 		Date	--	String
  * 				public final String format(Date date)
- * 				Ä£Ê½¶ÔÏóÄãÏëÒªÊ²Ã´¾ÍÐ´Ê²Ã´¡£
- * ½âÎö£¨ÎÄ±¾ -> ÈÕÆÚ£©
+ * 				Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ²Ã´ï¿½ï¿½Ð´Ê²Ã´ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ -> ï¿½ï¿½ï¿½Ú£ï¿½
  * 		String 	-- 	Date
  * 				public Date parse(String source)
- * 				Ä£Ê½¶ÔÏó±ØÐëºÍ¸ø¶¨µÄ×Ö·û´®Æ¥Åä¡£
+ * 				Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Æ¥ï¿½ä¡£
  */
 public class DateFormatDemo {
-	public static void main(String[] args) throws ParseException {
-		// Date -- String
-		Date d = new Date();
-		// public SimpleDateFormat()
-		// SimpleDateFormat sdf = new SimpleDateFormat();
-		// SimpleDateFormat(String pattern)
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ HH:mm:ss");
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ");
-		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-		// public final String format(Date date)
-		String result = sdf.format(d);
-		System.out.println(result);
-		System.out.println("-------------------------------------------------");
+    public static void main(String[] args) throws ParseException {
+        // Date -- String
+        Date d = new Date();
+        // public SimpleDateFormat()
+        // SimpleDateFormat sdf = new SimpleDateFormat();
+        // SimpleDateFormat(String pattern)
+        // SimpleDateFormat sdf = new SimpleDateFormat("yyyyï¿½ï¿½MMï¿½ï¿½ddï¿½ï¿½ HH:mm:ss");
+        // SimpleDateFormat sdf = new SimpleDateFormat("yyyyï¿½ï¿½MMï¿½ï¿½ddï¿½ï¿½");
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        // public final String format(Date date)
+        String result = sdf.format(d);
+        System.out.println(result);
+        System.out.println("-------------------------------------------------");
 
-		String s = "2008-08-08 12:23:34";
-		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		// public Date parse(String source)
-		Date dd = sdf2.parse(s);
-		System.out.println(dd);
-	}
+        String s = "2008-08-08 12:23:34";
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        // public Date parse(String source)
+        Date dd = sdf2.parse(s);
+        System.out.println(dd);
+    }
 }

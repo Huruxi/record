@@ -1,28 +1,28 @@
 package cn.itcast_02;
 
 public class DieLock extends Thread {
-	private boolean flag;
+    private boolean flag;
 
-	public DieLock(boolean flag) {
-		this.flag = flag;
-	}
+    public DieLock(boolean flag) {
+        this.flag = flag;
+    }
 
-	@Override
-	public void run() {
-		if (flag) {
-			synchronized (MyLock.objA) {
-				System.out.println("if objA"); // CPUµÄÖ´ÐÐÈ¨Ã»ÓÐÁË
-				synchronized (MyLock.objB) {
-					System.out.println("if objB");
-				}
-			}
-		} else {
-			synchronized (MyLock.objB) {
-				System.out.println("else objB");
-				synchronized (MyLock.objA) {
-					System.out.println("else objA");
-				}
-			}
-		}   
-	}
+    @Override
+    public void run() {
+        if (flag) {
+            synchronized (MyLock.objA) {
+                System.out.println("if objA"); // CPUï¿½ï¿½Ö´ï¿½ï¿½È¨Ã»ï¿½ï¿½ï¿½ï¿½
+                synchronized (MyLock.objB) {
+                    System.out.println("if objB");
+                }
+            }
+        } else {
+            synchronized (MyLock.objB) {
+                System.out.println("else objB");
+                synchronized (MyLock.objA) {
+                    System.out.println("else objA");
+                }
+            }
+        }
+    }
 }

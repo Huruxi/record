@@ -4,18 +4,18 @@ import java.util.Calendar;
 import java.util.Scanner;
 
 public class CalendarTest {
-	public static void main(String[] args) {
-		// »ñÈ¡ÈÎÒâÒ»ÄêµÄ¶şÔÂÓĞ¶àÉÙÌì?
-		Calendar c = Calendar.getInstance();
+    public static void main(String[] args) {
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½ï¿½ï¿½?
+        Calendar c = Calendar.getInstance();
 
-		// ÉèÖÃÄêÔÂÈÕ
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄãÒª»ñÈ¡ÄÄÒ»ÄêµÄ2ÔÂ·İ£º");
-		int year = sc.nextInt();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½2ï¿½Â·İ£ï¿½");
+        int year = sc.nextInt();
 
-		c.set(year, 2, 1); // ÈÎÒâÒ»ÄêµÄ3ÔÂ1ÈÕ
-		c.add(Calendar.DATE, -1); // ÈÎÒâÒ»ÄêµÄ2ÔÂ×îºóÒ»Ìì
+        c.set(year, 2, 1); // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½3ï¿½ï¿½1ï¿½ï¿½
+        c.add(Calendar.DATE, -1); // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
 
-		System.out.println(c.get(Calendar.DATE));
-	}
+        System.out.println(c.get(Calendar.DATE));
+    }
 }

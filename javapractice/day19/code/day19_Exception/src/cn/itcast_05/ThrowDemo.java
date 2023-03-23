@@ -4,32 +4,32 @@ import java.text.ParseException;
 import java.util.Arrays;
 
 /*
- * throw:ÓÃÔÚ·½·¨ÖÐ£¬ÈÃ³ÌÐòµ÷×ªµÄ¡£
+ * throw:ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½×ªï¿½Ä¡ï¿½
  */
 public class ThrowDemo {
-	public static void main(String[] args) {
-		// show(10, 0);
+    public static void main(String[] args) {
+        // show(10, 0);
 
-		// show();
-	}
+        // show();
+    }
 
-	public static void show() throws ParseException, ArithmeticException,
-			NullPointerException {
-		if ("hello".equals("world")) {
-			throw new ParseException(null, 0);
-		} else {
-			System.out.println("over");
-		}
-	}
+    public static void show() throws ParseException, ArithmeticException,
+            NullPointerException {
+        if ("hello".equals("world")) {
+            throw new ParseException(null, 0);
+        } else {
+            System.out.println("over");
+        }
+    }
 
-	public static void show(int a, int b) {
-		if (b == 0) {
-			// System.out.println("Êý¾ÝÓÐÎó");
-			throw new ArithmeticException();
-		} else {
-			System.out.println(a / b);
-		}
+    public static void show(int a, int b) {
+        if (b == 0) {
+            // System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+            throw new ArithmeticException();
+        } else {
+            System.out.println(a / b);
+        }
 
-		System.out.println("haha");
-	}
+        System.out.println("haha");
+    }
 }

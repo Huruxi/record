@@ -1,45 +1,45 @@
-//ÊÖ»úÀàµÄ¶¨Òå
+//ï¿½Ö»ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
 class Phone {
-	//Æ·ÅÆ
-	String brand;
-	//¼Û¸ñ
-	int price;
-	//ÑÕÉ«
-	String color;
+    //Æ·ï¿½ï¿½
+    String brand;
+    //ï¿½Û¸ï¿½
+    int price;
+    //ï¿½ï¿½É«
+    String color;
 
-	//´òµç»°µÄ·½·¨
-	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
-	}
+    //ï¿½ï¿½ç»°ï¿½Ä·ï¿½ï¿½ï¿½
+    public void call(String name) {
+        System.out.println("ï¿½ï¿½" + name + "ï¿½ï¿½ç»°");
+    }
 
-	//·¢¶ÌÐÅ
-	public void sendMessage() {
-		System.out.println("Èº·¢¶ÌÐÅ");
-	}
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public void sendMessage() {
+        System.out.println("Èºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class PhoneDemo2 {
-	public static void main(String[] args) {
-		Phone p = new Phone();
-		p.brand = "Åµ»ùÑÇ";
-		p.price = 299;
-		p.color = "ÍÁºÀ½ð";
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
-		p.call("ÁÖÇàÏ¼");
-		p.sendMessage();
+    public static void main(String[] args) {
+        Phone p = new Phone();
+        p.brand = "Åµï¿½ï¿½ï¿½ï¿½";
+        p.price = 299;
+        p.color = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+        //Ê¹ï¿½Ã³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+        System.out.println("Æ·ï¿½ï¿½ï¿½Ç£ï¿½" + p.brand);
+        System.out.println("ï¿½Û¸ï¿½ï¿½Ç£ï¿½" + p.price);
+        System.out.println("ï¿½ï¿½É«ï¿½Ç£ï¿½" + p.color);
+        p.call("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        p.sendMessage();
 
-		Phone p2 = new Phone();
-		p2.brand = "Ð¡Ã×";
-		p2.price = 699;
-		p2.color = "ºÚ°×";
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p2.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p2.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p2.color);
-		p2.call("ÁõÒà·Æ");
-		p2.sendMessage();
-	}
+        Phone p2 = new Phone();
+        p2.brand = "Ð¡ï¿½ï¿½";
+        p2.price = 699;
+        p2.color = "ï¿½Ú°ï¿½";
+        //Ê¹ï¿½Ã³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+        System.out.println("Æ·ï¿½ï¿½ï¿½Ç£ï¿½" + p2.brand);
+        System.out.println("ï¿½Û¸ï¿½ï¿½Ç£ï¿½" + p2.price);
+        System.out.println("ï¿½ï¿½É«ï¿½Ç£ï¿½" + p2.color);
+        p2.call("ï¿½ï¿½ï¿½ï¿½ï¿½");
+        p2.sendMessage();
+    }
 }

@@ -3,35 +3,35 @@ package cn.itcast_07;
 import java.util.HashSet;
 
 /*
- * Set¼¯ºÏÎÒÃÇ½²½âÁËÁ½¸ö×ÓÀà¡£Ò»°ãÎÒÃÇÊ¹ÓÃË­ÄØ?
- * 		ÒªÅÅÐòÂð?
- * 			Òª£ºTreeSet
- * 			²»Òª£ºHashSet
- * ÎÒÃÇÒ²²»ÖªµÀÊÇ²»ÊÇÒªÅÅÐò£¬ÓÃHashSet¡£
- * 
- * ±àÐ´Ò»¸ö³ÌÐò£¬»ñÈ¡10¸ö1ÖÁ20µÄËæ»úÊý£¬ÒªÇóËæ»úÊý²»ÄÜÖØ¸´¡£
- * 
- * ·ÖÎö£º
- * 		A:¶¨ÒåHashSet¼¯ºÏ£¬´æ´¢IntegerÀàÐÍµÄÊý¾Ý
- * 		B:Ö±½ÓÅÐ¶Ï¼¯ºÏµÄ³¤¶È
- * 			Ð¡ÓÚ10£¬¼ÌÐø²úÉúËæ»úÊý£¬´æ´¢
- * 		C:±éÀú¼¯ºÏ
+ * Setï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡£Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ë­ï¿½ï¿½?
+ * 		Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 			Òªï¿½ï¿½TreeSet
+ * 			ï¿½ï¿½Òªï¿½ï¿½HashSet
+ * ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½Öªï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½HashSetï¿½ï¿½
+ *
+ * ï¿½ï¿½Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ò£¬»ï¿½È¡10ï¿½ï¿½1ï¿½ï¿½20ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½HashSetï¿½ï¿½ï¿½Ï£ï¿½ï¿½æ´¢Integerï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:Ö±ï¿½ï¿½ï¿½Ð¶Ï¼ï¿½ï¿½ÏµÄ³ï¿½ï¿½ï¿½
+ * 			Ð¡ï¿½ï¿½10ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ´¢
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class GetRandomNumerDemo {
-	public static void main(String[] args) {
-		// ¶¨ÒåHashSet¼¯ºÏ£¬´æ´¢IntegerÀàÐÍµÄÊý¾Ý
-		HashSet<Integer> hs = new HashSet<Integer>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½HashSetï¿½ï¿½ï¿½Ï£ï¿½ï¿½æ´¢Integerï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½
+        HashSet<Integer> hs = new HashSet<Integer>();
 
-		// Ö±½ÓÅÐ¶Ï¼¯ºÏµÄ³¤¶È
-		while (hs.size() < 10) {
-			// ²úÉúËæ»úÊý
-			int number = (int) (Math.random() * 20) + 1;
-			hs.add(number);
-		}
+        // Ö±ï¿½ï¿½ï¿½Ð¶Ï¼ï¿½ï¿½ÏµÄ³ï¿½ï¿½ï¿½
+        while (hs.size() < 10) {
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            int number = (int) (Math.random() * 20) + 1;
+            hs.add(number);
+        }
 
-		// ±éÀú¼¯ºÏ
-		for (Integer i : hs) {
-			System.out.println(i);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Integer i : hs) {
+            System.out.println(i);
+        }
+    }
 }

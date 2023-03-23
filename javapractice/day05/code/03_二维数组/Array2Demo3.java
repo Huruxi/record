@@ -1,24 +1,24 @@
 /*
-	¶¨Òå¸ñÊ½2£º
-		Êý¾ÝÀàÐÍ[][] ±äÁ¿Ãû = new Êý¾ÝÀàÐÍ[][]{{ÔªËØ¡­},{ÔªËØ¡­},{ÔªËØ¡­}};
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[][] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = new ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[][]{{Ôªï¿½Ø¡ï¿½},{Ôªï¿½Ø¡ï¿½},{Ôªï¿½Ø¡ï¿½}};
 
-		±äÐÎ¸ñÊ½£º
-			Êý¾ÝÀàÐÍ[][] ±äÁ¿Ãû = {{ÔªËØ¡­},{ÔªËØ¡­},{ÔªËØ¡­}};
+		ï¿½ï¿½ï¿½Î¸ï¿½Ê½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[][] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = {{Ôªï¿½Ø¡ï¿½},{Ôªï¿½Ø¡ï¿½},{Ôªï¿½Ø¡ï¿½}};
 */
 class Array2Demo3 {
-	public static void main(String[] args) {
-		//¶¨ÒåÊý×é
-		//int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
-		int[][] arr = {{1,2,3},{4,5},{8}};
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
+        int[][] arr = {{1, 2, 3}, {4, 5}, {8}};
 
-		System.out.println(arr);
-		System.out.println(arr[0]);
-		System.out.println(arr[1]);
-		System.out.println(arr[2]);
+        System.out.println(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
 
-		System.out.println(arr[0][0]);
-		System.out.println(arr[0][1]);
-		System.out.println(arr[1][1]);
-		System.out.println(arr[2][1]);
-	}
+        System.out.println(arr[0][0]);
+        System.out.println(arr[0][1]);
+        System.out.println(arr[1][1]);
+        System.out.println(arr[2][1]);
+    }
 }

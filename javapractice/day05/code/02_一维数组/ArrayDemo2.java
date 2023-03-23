@@ -1,26 +1,26 @@
 /*
-	¶¨ÒåÒ»¸öÊı×é£¬Êä³öÊı×éÃû¼°ÔªËØ¡£È»ºó¸øÊı×éÖĞµÄÔªËØ¸³Öµ£¬ÔÙ´ÎÊä³öÊı×éÃû¼°ÔªËØ¡£
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¡ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ôªï¿½Ø¸ï¿½Öµï¿½ï¿½ï¿½Ù´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¡ï¿½
 */
 class ArrayDemo2 {
-	public static void main(String[] args) {
-		//¶¨ÒåÊı×é
-		int[] arr = new int[3];
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = new int[3];
 
-		//Êä³öÊı×éÃû³Æ¼°ÔªËØ
-		System.out.println(arr);
-		System.out.println(arr[0]);
-		System.out.println(arr[1]);
-		System.out.println(arr[2]);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½Ôªï¿½ï¿½
+        System.out.println(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
 
-		//¸øÊı×éÖĞµÄÔªËØ¸³Öµ
-		arr[0] = 10;
-		arr[1] = 20;
-		arr[2] = 30;
-		
-		//ÔÙ´ÎÊä³öÊı×éÃû³Æ¼°ÔªËØ
-		System.out.println(arr);
-		System.out.println(arr[0]);
-		System.out.println(arr[1]);
-		System.out.println(arr[2]);
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ôªï¿½Ø¸ï¿½Öµ
+        arr[0] = 10;
+        arr[1] = 20;
+        arr[2] = 30;
+
+        //ï¿½Ù´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½Ôªï¿½ï¿½
+        System.out.println(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+    }
 }

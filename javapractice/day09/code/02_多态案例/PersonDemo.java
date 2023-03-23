@@ -1,33 +1,33 @@
-//ÒûÊ³ÎÄ»¯
+//ï¿½ï¿½Ê³ï¿½Ä»ï¿½
 class Person {
-	public void eat() {
-		System.out.println("person eat");
-	}
+    public void eat() {
+        System.out.println("person eat");
+    }
 }
 
-class SouthPerson extends Person  {
-	public void eat() {
-		System.out.println("ÄÏ·½ÈËÏ²»¶³ÔÃ×·¹");
-	}
+class SouthPerson extends Person {
+    public void eat() {
+        System.out.println("ï¿½Ï·ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½×·ï¿½");
+    }
 }
 
 class NorthPerson extends Person {
-	public void eat() {
-		System.out.println("±±·½ÈËÏ²»¶³ÔÀ­Ìõ×Ó");
-	}
+    public void eat() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class PersonDemo {
-	public static void main(String[] args) {
-		Person p = new Person();
-		p.eat();
+    public static void main(String[] args) {
+        Person p = new Person();
+        p.eat();
 
-		SouthPerson sp = new SouthPerson();
-		sp.eat();
+        SouthPerson sp = new SouthPerson();
+        sp.eat();
 
-		//p = sp;
-		//p.eat();
-		Person pp = new SouthPerson();
-		pp.eat();
-	}
+        //p = sp;
+        //p.eat();
+        Person pp = new SouthPerson();
+        pp.eat();
+    }
 }

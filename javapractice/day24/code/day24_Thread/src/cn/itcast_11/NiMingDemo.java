@@ -1,54 +1,54 @@
 package cn.itcast_11;
 
 /*
- * ÄäÃûÄÚ²¿ÀàµÄ·½Ê½¿ªÆô¶àÏß³Ì³ÌÐò¡£
- * 
- * new ÀàÃû() {
- * 		ÖØÐ´·½·¨
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Ä·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì³ï¿½ï¿½ï¿½
+ *
+ * new ï¿½ï¿½ï¿½ï¿½() {
+ * 		ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½
  * };
  */
 public class NiMingDemo {
-	public static void main(String[] args) {
-		/*
-		 * new Thread() {
-		 * 
-		 * @Override public void run() { for (int x = 0; x < 100; x++) {
-		 * System.out.println("hello" + x); } } }.start();
-		 * 
-		 * new Thread() {
-		 * 
-		 * @Override public void run() { for (int x = 0; x < 100; x++) {
-		 * System.out.println("world" + x); } } }.start();
-		 */
+    public static void main(String[] args) {
+        /*
+         * new Thread() {
+         *
+         * @Override public void run() { for (int x = 0; x < 100; x++) {
+         * System.out.println("hello" + x); } } }.start();
+         *
+         * new Thread() {
+         *
+         * @Override public void run() { for (int x = 0; x < 100; x++) {
+         * System.out.println("world" + x); } } }.start();
+         */
 
-		/*
-		 * new Thread(new Runnable() {
-		 * 
-		 * @Override public void run() { for (int x = 0; x < 100; x++) {
-		 * System.out.println("javase" + x); } } }).start();
-		 * 
-		 * new Thread(new Runnable() {
-		 * 
-		 * @Override public void run() { for (int x = 0; x < 100; x++) {
-		 * System.out.println("javaee" + x); } } }).start();
-		 */
+        /*
+         * new Thread(new Runnable() {
+         *
+         * @Override public void run() { for (int x = 0; x < 100; x++) {
+         * System.out.println("javase" + x); } } }).start();
+         *
+         * new Thread(new Runnable() {
+         *
+         * @Override public void run() { for (int x = 0; x < 100; x++) {
+         * System.out.println("javaee" + x); } } }).start();
+         */
 
-		// ÃæÊÔ
-		new Thread(new Runnable() {
-			@Override
-			public void run() {
-				for (int x = 0; x < 100; x++) {
-					System.out.println("android" + x);
-				}
-			}
-		}) {
-			@Override
-			public void run() {
-				for (int x = 0; x < 100; x++) {
-					System.out.println("haha" + x);
-				}
-			}
-		}.start();
+        // ï¿½ï¿½ï¿½ï¿½
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                for (int x = 0; x < 100; x++) {
+                    System.out.println("android" + x);
+                }
+            }
+        }) {
+            @Override
+            public void run() {
+                for (int x = 0; x < 100; x++) {
+                    System.out.println("haha" + x);
+                }
+            }
+        }.start();
 
-	}
+    }
 }

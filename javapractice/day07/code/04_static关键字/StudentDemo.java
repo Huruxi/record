@@ -1,51 +1,51 @@
 /*
-	°à¼¶±àºÅÓ¦¸ÃÊÇ±»°à¼¶Ã¿¸öÈË¶¼¹²ÏíµÄ£¬ËùÒÔ¶¨ÒåÒ»¸ö¾ÍÓ¦¸Ã¿ÉÒÔÁË¡£
-	¶øĞÕÃûºÍÄêÁä£¬Ã¿¸öÈËÓ¦¸ÃÊÇ²»Ò»ÑùµÄ£¬ËùÒÔ£¬Ã¿¸ö¶ÔÏó£¬¶¼Ó¦¸Ã¶¨Òå×Ô¼ºµÄ¡£
+	ï¿½à¼¶ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ç±ï¿½ï¿½à¼¶Ã¿ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬Ã¿ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ç²ï¿½Ò»ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ô£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¶ï¿½Ó¦ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä¡ï¿½
 
-	ÔÚjavaÖĞ£¬ÓÃÊ²Ã´À´±íÊ¾³ÉÔ±±äÁ¿ÊÇ±»¹²ÏíµÄÄØ? static
+	ï¿½ï¿½javaï¿½Ğ£ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? static
 */
 class Student {
-	//ĞÕÃû
-	String name;
-	//ÄêÁä
-	int age;
-	//°à¼¶±àºÅ
-	//String classNumber;
-	static String classNumber;
+    //ï¿½ï¿½ï¿½ï¿½
+    String name;
+    //ï¿½ï¿½ï¿½ï¿½
+    int age;
+    //ï¿½à¼¶ï¿½ï¿½ï¿½
+    //String classNumber;
+    static String classNumber;
 
-	public Student(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public Student(String name,int age,String classNumber) {
-		this.name = name;
-		this.age = age;
-		this.classNumber = classNumber;
-	}
+    public Student(String name, int age, String classNumber) {
+        this.name = name;
+        this.age = age;
+        this.classNumber = classNumber;
+    }
 
-	public void show() {
-		System.out.println(name+"---"+age+"---"+classNumber);
-	}
+    public void show() {
+        System.out.println(name + "---" + age + "---" + classNumber);
+    }
 }
 
 class StudentDemo {
-	public static void main(String[] args) {
-		//´´½¨Ñ§Éú¶ÔÏó
-		Student s1 = new Student("ÁÖÇàÏ¼",28,"20150306");
-		s1.show();
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28, "20150306");
+        s1.show();
 
 		/*
-		Student s2 = new Student("ÂíÔÆ",35,"20150306");
+		Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½",35,"20150306");
 		s2.show();
 
-		Student s3 = new Student("Âí»¯ÌÚ",33,"20150306");
+		Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½",33,"20150306");
 		s3.show();
 		*/
-		Student s2 = new Student("ÂíÔÆ",35);
-		s2.show();
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½", 35);
+        s2.show();
 
-		Student s3 = new Student("Âí»¯ÌÚ",33);
-		s3.show();
-	}
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½", 33);
+        s3.show();
+    }
 }

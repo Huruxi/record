@@ -1,15 +1,15 @@
 /*
-	¾ÙÀı£ºÉíÌåºÍĞÄÔà¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡£
 
 	class Body {
 		private class Heart {
 			public void operator() {
-				System.out.println("ĞÄÔà´îÇÅ");
+				System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 			}
 		}
 
 		public void method() {
-			if(Èç¹ûÄãÊÇÒ½Éú){
+			if(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò½ï¿½ï¿½){
 				Heart h = new Heart();
 				h.operator();
 			}
@@ -19,17 +19,17 @@
 	Body.Heart bh = new Body().new Heart();
 	bh.operator();
 
-	ÎªÁË²»ÈÃÍâ½çÖ±½Ó·ÃÎÊĞÄÔà¶ÔÏó£¬ËùÒÔ£¬ÎÒÃÇ°ÑÄÚ²¿ÀàÓÃprivateĞŞÊÎ¡£
-	Õâ¸öÊ±ºò£¬ÓÖ²»ÄÜ×öÊÖÊõÁË£¬ÄÇÃ´£¬µ½µ×¸ÃÔõÃ´½â¾öÄØ?
-	ÎÒÃÇ¾Í¿ÉÒÔÔÚÍâ²¿ÀàÖĞ¶¨ÒåÒ»¸ö¹¦ÄÜ£º
-	ÏÖÔÚÈçºÎÊ¹ÓÃÄØ?
+	Îªï¿½Ë²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½privateï¿½ï¿½ï¿½Î¡ï¿½
+	ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½×¸ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½?
+	ï¿½ï¿½ï¿½Ç¾Í¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â²¿ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½?
 		Body b = new Body();
 		b.method();
 		
 
-	³ÉÔ±ÄÚ²¿Àà£º
-		private£ºÎªÁËÊı¾İµÄ°²È«ĞÔ
-		static£ºÎªÁËÈÃÊı¾İ·ÃÎÊ¸ü·½±ã
+	ï¿½ï¿½Ô±ï¿½Ú²ï¿½ï¿½à£º
+		privateï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½İµÄ°ï¿½È«ï¿½ï¿½
+		staticï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ·ï¿½ï¿½Ê¸ï¿½ï¿½ï¿½ï¿½ï¿½
 
 */
 /*
@@ -48,40 +48,40 @@ class Outer {
 */
 
 class Outer {
-	//int num  = 10;
-	//static int num2 = 20;
+    //int num  = 10;
+    //static int num2 = 20;
 
-	public static class Inner {
-		public void show() {
-			System.out.println("show");
-			//System.out.println(num);
-			//System.out.println(num2);
-		}
+    public static class Inner {
+        public void show() {
+            System.out.println("show");
+            //System.out.println(num);
+            //System.out.println(num2);
+        }
 
-		public static void show2() {
-			System.out.println("show2");
-			//System.out.println(num);
-			//System.out.println(num2);
-		}
-	}
+        public static void show2() {
+            System.out.println("show2");
+            //System.out.println(num);
+            //System.out.println(num2);
+        }
+    }
 }
 
 class InnerClassDemo2 {
-	public static void main(String[] args) {
-		//´íÎó
-		//Outer.Inner oi = new Outer().new Inner();
-	
-		//ÓÃprivateĞŞÊÎ
-		//Outer o = new Outer();
-		//o.method();
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½
+        //Outer.Inner oi = new Outer().new Inner();
 
-		//ÓÃstaticĞŞÊÎºó£¬ÕâÖÖĞ´·¨´íÎó
-		//Outer.Inner oi = new Outer().new Inner();
-		//ÓÃÀàÃûÏŞ¶¨
-		Outer.Inner oi = new Outer.Inner();
-		oi.show();
-		oi.show2();
+        //ï¿½ï¿½privateï¿½ï¿½ï¿½ï¿½
+        //Outer o = new Outer();
+        //o.method();
 
-		//Outer.Inner.show2();
-	}
+        //ï¿½ï¿½staticï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //Outer.Inner oi = new Outer().new Inner();
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş¶ï¿½
+        Outer.Inner oi = new Outer.Inner();
+        oi.show();
+        oi.show2();
+
+        //Outer.Inner.show2();
+    }
 }

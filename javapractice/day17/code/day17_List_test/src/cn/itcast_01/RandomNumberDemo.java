@@ -3,41 +3,41 @@ package cn.itcast_01;
 import java.util.ArrayList;
 
 /*
- * ÐèÇó£º»ñÈ¡10¸ö1-20Ö®¼äµÄËæ»úÊý£¬ÒªÇó²»ÄÜÖØ¸´
- * 
- * ·ÖÎö£º
- * 		A:¶¨ÒåÒ»¸ö¼¯ºÏ£¬ÓÃÓÚ´æ´¢²úÉúµÄËæ»úÊý
- * 		B:¶¨ÒåÒ»¸öÍ³¼Æ±äÁ¿£¬³õÊ¼ÖµÊÇ0
- * 		C:ÅÐ¶ÏÍ³¼Æ±äÁ¿ÊÇ·ñÐ¡ÓÚ10
- * 			ÊÇ£º
- * 				²úÉúÒ»¸öËæ»ú£¬È»ºóÅÐ¶ÏÊÇÔÚ¼¯ºÏÖÐ
- * 					ÊÇ£º²»Ìí¼Ó
- * 					·ñ£ºÌí¼Óµ½¼¯ºÏ
- * 			·ñ£º½áÊø
- * 		D:±éÀú¼¯ºÏ
+ * ï¿½ï¿½ï¿½ó£º»ï¿½È¡10ï¿½ï¿½1-20Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ú´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼Öµï¿½ï¿½0
+ * 		C:ï¿½Ð¶ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ð¡ï¿½ï¿½10
+ * 			ï¿½Ç£ï¿½
+ * 				ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 					ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 					ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ñ£º½ï¿½ï¿½ï¿½
+ * 		D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class RandomNumberDemo {
-	public static void main(String[] args) {
-		// ¶¨ÒåÒ»¸ö¼¯ºÏ£¬ÓÃÓÚ´æ´¢²úÉúµÄËæ»úÊý
-		ArrayList<Integer> array = new ArrayList<Integer>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ú´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ArrayList<Integer> array = new ArrayList<Integer>();
 
-		// ¶¨ÒåÒ»¸öÍ³¼Æ±äÁ¿£¬³õÊ¼ÖµÊÇ0
-		int count = 0;
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼Öµï¿½ï¿½0
+        int count = 0;
 
-		// ÅÐ¶ÏÍ³¼Æ±éÀúÊÇ·ñÐ¡ÓÚ10
-		while (count < 10) {
-			// ²úÉúÒ»¸öËæ»ú£¬È»ºóÅÐ¶ÏÊÇÔÚ¼¯ºÏÖÐ
-			int randomNumber = (int) (Math.random() * 20) + 1;
+        // ï¿½Ð¶ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Ð¡ï¿½ï¿½10
+        while (count < 10) {
+            // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½
+            int randomNumber = (int) (Math.random() * 20) + 1;
 
-			if (!array.contains(randomNumber)) {
-				array.add(randomNumber);
-				count++;
-			}
-		}
+            if (!array.contains(randomNumber)) {
+                array.add(randomNumber);
+                count++;
+            }
+        }
 
-		// ±éÀú¼¯ºÏ
-		for (Integer i : array) {
-			System.out.println(i);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Integer i : array) {
+            System.out.println(i);
+        }
+    }
 }

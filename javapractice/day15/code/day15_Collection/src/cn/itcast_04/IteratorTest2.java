@@ -5,31 +5,31 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /*
- * ×¢Òâ£ºnext()Ã»Ò»´Îµ÷ÓÃ£¬¶¼»á»ñÈ¡Ò»¸ö¶ÔÏó£¬²¢ÒÆ¶¯µ½ÏÂÒ»¸öÎ»ÖÃµÈ´ý¡£
+ * ×¢ï¿½â£ºnext()Ã»Ò»ï¿½Îµï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½ÃµÈ´ï¿½ï¿½ï¿½
  */
 public class IteratorTest2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Collection c = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Student s1 = new Student("ËïÎò¿Õ", 30);
-		Student s2 = new Student("×ÏÏ¼ÏÉ×Ó", 26);
-		Student s3 = new Student("æÏ¶ð", 22);
-		Student s4 = new Student("Öí°Ë½ä", 18);
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½", 30);
+        Student s2 = new Student("ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½ï¿½", 26);
+        Student s3 = new Student("ï¿½Ï¶ï¿½", 22);
+        Student s4 = new Student("ï¿½ï¿½Ë½ï¿½", 18);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		c.add(s1); // Object obj = s1; ÏòÉÏ×ªÐÍ
-		c.add(s2);
-		c.add(s3);
-		c.add(s4);
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        c.add(s1); // Object obj = s1; ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
+        c.add(s2);
+        c.add(s3);
+        c.add(s4);
 
-		Iterator it = c.iterator();
-		while (it.hasNext()) {
-			// System.out.println(((Student) (it.next())).getName() + "---"
-			// + ((Student) (it.next())).getAge());
-			Student s = (Student) it.next();
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        Iterator it = c.iterator();
+        while (it.hasNext()) {
+            // System.out.println(((Student) (it.next())).getName() + "---"
+            // + ((Student) (it.next())).getAge());
+            Student s = (Student) it.next();
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

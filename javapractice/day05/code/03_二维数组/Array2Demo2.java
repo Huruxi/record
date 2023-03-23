@@ -1,31 +1,31 @@
 /*
-	¶¨Òå¸ñÊ½2£º
-		Êý¾ÝÀàÐÍ[][] ±äÁ¿Ãû = new Êý¾ÝÀàÐÍ[m][];
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ê½2ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[][] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = new ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[m][];
 		
-		m:m±íÊ¾Õâ¸ö¶þÎ¬Êý×éÓÐ¶àÉÙ¸öÒ»Î¬Êý×é
+		m:mï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ù¸ï¿½Ò»Î¬ï¿½ï¿½ï¿½ï¿½
 */
 class Array2Demo2 {
-	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÊý×é
-		int[][] arr = new int[3][];
-		//ÕâÀïÎÒÃÇ½ö½öÖªµÀÕâ¸ö¶þÎ¬Êý×éÓÐ3¸öÒ»Î¬Êý×é
-		//µ«ÊÇ£¬Ã¿¸öÒ»Î¬Êý×éÓÐ¼¸¸öÔªËØ£¬ÎÒÃÇÊÇ²»ÖªµÀµÄ
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[][] arr = new int[3][];
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½Ò»Î¬ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½Ç£ï¿½Ã¿ï¿½ï¿½Ò»Î¬ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½Öªï¿½ï¿½ï¿½ï¿½
 
-		System.out.println(arr); //[[I@7d3598c3
-		System.out.println(arr[0]); //null
-		System.out.println(arr[1]); //null
-		System.out.println(arr[2]); //null
-
-
-		arr[0] = new int[3];
-		arr[1] = new int[1];
-		arr[2] = new int[2];
-		System.out.println(arr[0]); //
-		System.out.println(arr[1]); //
-		System.out.println(arr[2]); //
+        System.out.println(arr); //[[I@7d3598c3
+        System.out.println(arr[0]); //null
+        System.out.println(arr[1]); //null
+        System.out.println(arr[2]); //null
 
 
-		arr[2][1] = 100;
-		arr[1][3] = 200;
-	}
+        arr[0] = new int[3];
+        arr[1] = new int[1];
+        arr[2] = new int[2];
+        System.out.println(arr[0]); //
+        System.out.println(arr[1]); //
+        System.out.println(arr[2]); //
+
+
+        arr[2][1] = 100;
+        arr[1][3] = 200;
+    }
 }

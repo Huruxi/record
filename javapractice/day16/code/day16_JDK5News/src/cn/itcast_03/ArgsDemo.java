@@ -1,61 +1,61 @@
 package cn.itcast_03;
 
 /*
- * ¿É±ä²ÎÊý£º¶¨Òå·½·¨µÄÊ±ºò²»ÖªµÀ¸Ã¶¨Òå¶àÉÙ¸ö²ÎÊý
- * ¸ñÊ½£º
- * 		ÐÞÊÎ·û ·µ»ØÖµÀàÐÍ ·½·¨Ãû(Êý¾ÝÀàÐÍ¡­  ±äÁ¿Ãû){
- * 
+ * ï¿½É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å·½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Öªï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Ê½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½Î·ï¿½ ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½){
+ *
  * 		}
- * ×¢ÒâÊÂÏî£º
- * 		A:ÕâÀïµÄ±äÁ¿ÆäÊµÊÇÒ»¸öÊý×é¡£Ëü»á×Ô¶¯°Ñ²ÎÊý×é×°³ÉÒ»¸öÊý×éÀïÃæÈ¥¡£
- * 		B:Ò»¸ö·½·¨ÖÐµÄ¿É±ä²ÎÊýÖ»ÄÜ³öÏÖÔÚÐÎÊ½²ÎÊýµÄ×îºó¡£
+ * ×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+ * 		A:ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½é¡£ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Ñ²ï¿½ï¿½ï¿½ï¿½ï¿½×°ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½
+ * 		B:Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¿É±ï¿½ï¿½ï¿½ï¿½Ö»ï¿½Ü³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ArgsDemo {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 //		System.out.println(sum());
 
-		int a = 10;
-		int b = 20;
-		int result = sum(a, b);
-		System.out.println(result);
+        int a = 10;
+        int b = 20;
+        int result = sum(a, b);
+        System.out.println(result);
 
-		int c = 30;
-		result = sum(a, b, c);
-		System.out.println(result);
+        int c = 30;
+        result = sum(a, b, c);
+        System.out.println(result);
 
-		int d = 40;
-		result = sum(a, b, c, d);
-		System.out.println(result);
+        int d = 40;
+        result = sum(a, b, c, d);
+        System.out.println(result);
 
-		// ÐèÇó£ºÎÒÒª¼ÆËã³öÇóºÍ¹¦ÄÜ£¬²ÎÊýÊÇ2-100¸ö£¬Ä¿Ç°ÎÒÒ²²»ÖªµÀ¶àÉÙ¸ö?µ÷ÓÃµÄÊ±ºòÎÒ¾ÍÖªµÀÁË£¬ÇëÄãÌá¹©¹¦ÄÜ?
-		// ÔõÃ´°ì?´Ó2¸ö¿ªÊ¼£¬Ò»Ö±µ½100¸ö¡£¿ÉÒÔ£¬µ«ÊÇÌ«Âé·³ÁË
-		// ÓÐÃ»ÓÐ¸üºÃµÄ·½°¸ÄØ?ÓÐ¡£Õë¶Ô²ÎÊý¸öÊý²»Ã÷È·µÄÇé¿ö£¬java¾ÍÌá¹©ÁËÒ»¸ö¼¼Êõ£º¿É±ä²ÎÊýµÄÓÃ·¨¡£
-		result = sum(10, 20, 30, 40, 50);
-		System.out.println(result);
-		result = sum(10, 20, 30, 40, 50, 60, 70, 80, 90);
-		System.out.println(result);
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¹ï¿½ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2-100ï¿½ï¿½ï¿½ï¿½Ä¿Ç°ï¿½ï¿½Ò²ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½Ù¸ï¿½?ï¿½ï¿½ï¿½Ãµï¿½Ê±ï¿½ï¿½ï¿½Ò¾ï¿½Öªï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½ï¿½ï¿½?
+        // ï¿½ï¿½Ã´ï¿½ï¿½?ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Ò»Ö±ï¿½ï¿½100ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Ì«ï¿½é·³ï¿½ï¿½
+        // ï¿½ï¿½Ã»ï¿½Ð¸ï¿½ï¿½ÃµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½Ð¡ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½ï¿½ï¿½á¹©ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
+        result = sum(10, 20, 30, 40, 50);
+        System.out.println(result);
+        result = sum(10, 20, 30, 40, 50, 60, 70, 80, 90);
+        System.out.println(result);
+    }
 
-	public static int sum(int b,int... a) {
-		// [I@7821f46a
-		// System.out.println(a);
-		int result = 0;
-		for (int i : a) {
-			result += i;
-		}
-		return result;
-	}
+    public static int sum(int b, int... a) {
+        // [I@7821f46a
+        // System.out.println(a);
+        int result = 0;
+        for (int i : a) {
+            result += i;
+        }
+        return result;
+    }
 
-	// public static int sum(int a, int b) {
-	// return a + b;
-	// }
-	//
-	// public static int sum(int a, int b, int c) {
-	// return a + b + c;
-	// }
-	//
-	// public static int sum(int a, int b, int c, int d) {
-	// return a + b + c + d;
-	// }
+    // public static int sum(int a, int b) {
+    // return a + b;
+    // }
+    //
+    // public static int sum(int a, int b, int c) {
+    // return a + b + c;
+    // }
+    //
+    // public static int sum(int a, int b, int c, int d) {
+    // return a + b + c + d;
+    // }
 
 }

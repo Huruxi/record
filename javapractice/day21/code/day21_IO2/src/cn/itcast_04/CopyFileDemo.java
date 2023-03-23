@@ -7,33 +7,33 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * Êý¾ÝÔ´£º
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		InputStreamReaderDemo.java
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		Deom.java
  */
 public class CopyFileDemo {
-	public static void main(String[] args) throws IOException {
-		// ÓÃ×Ö·û»º³åÁ÷µÄÌØÓÐ¹¦ÄÜÊµÏÖ
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½ï¿½Êµï¿½ï¿½
 
-		// Ò»´Î¶ÁÈ¡Ò»ÐÐ
+        // Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½
 
-		// ·â×°Êý¾ÝÔ´
-		BufferedReader br = new BufferedReader(new FileReader(
-				"InputStreamReaderDemo.java"));
-		// ·â×°Ä¿µÄµØ
-		BufferedWriter bw = new BufferedWriter(new FileWriter("Demo.java"));
+        // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        BufferedReader br = new BufferedReader(new FileReader(
+                "InputStreamReaderDemo.java"));
+        // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        BufferedWriter bw = new BufferedWriter(new FileWriter("Demo.java"));
 
-		// ¶ÁÐ´Ò»ÐÐ
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			bw.write(line);
-			bw.newLine();
-			bw.flush();
-		}
+        // ï¿½ï¿½Ð´Ò»ï¿½ï¿½
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            bw.write(line);
+            bw.newLine();
+            bw.flush();
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		bw.close();
-		br.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        bw.close();
+        br.close();
+    }
 }

@@ -1,19 +1,19 @@
 package cn.itcast_04;
 
 /*
- * Ìæ»»¹¦ÄÜ
- *		StringÀàµÄ¹¦ÄÜ£º
+ * ï¿½æ»»ï¿½ï¿½ï¿½ï¿½
+ *		Stringï¿½ï¿½Ä¹ï¿½ï¿½Ü£ï¿½
  *			public String replaceAll(String regex,String replacement)
  */
 public class RegexDemo {
-	public static void main(String[] args) {
-		// ÐèÇó£ºÂÛÌ³ÖÐ²»ÄÜ³öÏÖÊý×Ö×Ö·û£¬ÓÃ*Ìæ»»
-		String s = "hellowodekahaoshi62212934564347892nikyidaqiangeiwoxiexie13212345678gaowoyishen";
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½Ð²ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½*ï¿½æ»»
+        String s = "hellowodekahaoshi62212934564347892nikyidaqiangeiwoxiexie13212345678gaowoyishen";
 
-		// String ss = s.replaceAll("\\d", "*");
-		// String ss = s.replaceAll("\\d", "");
-		String ss = s.replaceAll("\\d+", "***");
+        // String ss = s.replaceAll("\\d", "*");
+        // String ss = s.replaceAll("\\d", "");
+        String ss = s.replaceAll("\\d+", "***");
 
-		System.out.println(ss);
-	}
+        System.out.println(ss);
+    }
 }

@@ -1,35 +1,35 @@
 /*
-	¶¨ÒåÁ½¸öÊý×é£¬ÏÈ¶¨ÒåÒ»¸öÊý×é£¬¸³Öµ£¬Êä³ö¡£
-	È»ºó¶¨ÒåµÚ¶þ¸öÊý×éµÄÊ±ºò°ÑµÚÒ»¸öÊý×éµÄµØÖ·¸³Öµ¸øµÚ¶þ¸öÊý×é¡£
-	È»ºó¸øµÚ¶þ¸öÊý×é¸³Öµ£¬ÔÙ´ÎÊä³öÁ½¸öÊý×éµÄÃû¼°ÔªËØ¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½È¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	È»ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ñµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Ö·ï¿½ï¿½Öµï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é¡£
+	È»ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é¸³Öµï¿½ï¿½ï¿½Ù´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¡ï¿½
 */
 class ArrayDemo4 {
-	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÊý×é
-		int[] arr = new int[3];
-		
-		//¸³Öµ£¬Êä³ö¡£
-		arr[0] = 11;
-		arr[1] = 22;
-		arr[2] = 33;
-		System.out.println(arr);
-		System.out.println(arr[0]);
-		System.out.println(arr[1]);
-		System.out.println(arr[2]);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = new int[3];
 
-		//¶¨ÒåµÚ¶þ¸öÊý×é
-		int[] arr2 =  arr;
+        //ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        arr[0] = 11;
+        arr[1] = 22;
+        arr[2] = 33;
+        System.out.println(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
 
-		arr2[1] = 100;
+        //ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr2 = arr;
 
-		System.out.println(arr);
-		System.out.println(arr[0]);
-		System.out.println(arr[1]); //???
-		System.out.println(arr[2]);
+        arr2[1] = 100;
 
-		System.out.println(arr2);
-		System.out.println(arr2[0]);
-		System.out.println(arr2[1]);
-		System.out.println(arr2[2]);
-	}
+        System.out.println(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]); //???
+        System.out.println(arr[2]);
+
+        System.out.println(arr2);
+        System.out.println(arr2[0]);
+        System.out.println(arr2[1]);
+        System.out.println(arr2[2]);
+    }
 }

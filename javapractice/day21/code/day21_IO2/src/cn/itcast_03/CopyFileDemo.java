@@ -6,40 +6,40 @@ import java.io.IOException;
 
 /*
  * Writer:
- * 		OutputStreamWriter °Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷,²¢¿ÉÒÔÖ¸¶¨±àÂë
+ * 		OutputStreamWriter ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 			FileWriter
  * Reader:
- * 		InputStreamReader °Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷,²¢¿ÉÒÔÖ¸¶¨±àÂë
+ * 		InputStreamReader ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 			FileReader
- * 
- * Êý¾ÝÔ´£º
+ *
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		a.txt
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		b.txt
  */
 public class CopyFileDemo {
-	public static void main(String[] args) throws IOException {
-		// ·â×°Êý¾ÝÔ´
-		FileReader fr = new FileReader("a.txt");
-		// ·â×°Ä¿µÄµØ
-		FileWriter fw = new FileWriter("b.txt");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        FileReader fr = new FileReader("a.txt");
+        // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        FileWriter fw = new FileWriter("b.txt");
 
-		// ¶ÁÐ´
-		// ·½Ê½1
-		// int ch = 0;
-		// while ((ch = fr.read()) != -1) {
-		// fw.write(ch);
-		// }
+        // ï¿½ï¿½Ð´
+        // ï¿½ï¿½Ê½1
+        // int ch = 0;
+        // while ((ch = fr.read()) != -1) {
+        // fw.write(ch);
+        // }
 
-		// ·½Ê½2
-		char[] chs = new char[1024];
-		int len = 0;
-		while ((len = fr.read(chs)) != -1) {
-			fw.write(chs, 0, len);
-		}
+        // ï¿½ï¿½Ê½2
+        char[] chs = new char[1024];
+        int len = 0;
+        while ((len = fr.read(chs)) != -1) {
+            fw.write(chs, 0, len);
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		fw.close();
-		fr.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        fw.close();
+        fr.close();
+    }
 }

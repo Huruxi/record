@@ -7,36 +7,36 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /*
- * ÓÃOutputStreamWriterºÍInputStreamReader¸´ÖÆjavaÎÄ¼þ
- * Êý¾ÝÔ´£º
+ * ï¿½ï¿½OutputStreamWriterï¿½ï¿½InputStreamReaderï¿½ï¿½ï¿½ï¿½javaï¿½Ä¼ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		InputStreamReaderDemo.java
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		Copy.java
  */
 public class CopyFileDemo {
-	public static void main(String[] args) throws IOException {
-		// ·â×°Êý¾ÝÔ´
-		InputStreamReader isr = new InputStreamReader(new FileInputStream(
-				"InputStreamReaderDemo.java"));
-		// ·â×°Ä¿µÄµØ
-		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
-				"Copy.java"));
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        InputStreamReader isr = new InputStreamReader(new FileInputStream(
+                "InputStreamReaderDemo.java"));
+        // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
+                "Copy.java"));
 
-		// ·½Ê½1
-		// int ch = 0;
-		// while ((ch = isr.read()) != -1) {
-		// osw.write(ch);
-		// }
+        // ï¿½ï¿½Ê½1
+        // int ch = 0;
+        // while ((ch = isr.read()) != -1) {
+        // osw.write(ch);
+        // }
 
-		// ·½Ê½2
-		char[] chs = new char[1024];
-		int len = 0;
-		while ((len = isr.read(chs)) != -1) {
-			osw.write(chs, 0, len);
-		}
+        // ï¿½ï¿½Ê½2
+        char[] chs = new char[1024];
+        int len = 0;
+        while ((len = isr.read(chs)) != -1) {
+            osw.write(chs, 0, len);
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		osw.close();
-		isr.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        osw.close();
+        isr.close();
+    }
 }

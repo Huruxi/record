@@ -1,6 +1,6 @@
 package cn.itcast_03;
 
 public class Student {
-	String name;
-	int age;
+    String name;
+    int age;
 }

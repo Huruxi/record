@@ -1,29 +1,30 @@
 package cn.itcast_02;
 
 /*
- * ¾²Ì¬µ¼Èë£º
- * 		¸ñÊ½£ºimport static xxx.xxx.xxx.ÀàÃû.·½·¨Ãû;
- * 
- * ×¢Òâ£º		
- * 		A:·½·¨±ØÐëÊÇ¾²Ì¬µÄ
- * 		B:Èç¹ûÓÐ¶à¸öÍ¬ÃûµÄ¾²Ì¬·½·¨£¬ÈÝÒ×²»ÖªµÀÊ¹ÓÃË­?Õâ¸öÊ±ºòÒªÊ¹ÓÃ£¬±ØÐë¼ÓÇ°×º¡£ÓÉ´Ë¿É¼û£¬ÒâÒå²»´ó£¬ËùÒÔÒ»°ã²»ÓÃ£¬µ«ÊÇÒªÄÜ¿´¶®¡£
+ * ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ë£º
+ * 		ï¿½ï¿½Ê½ï¿½ï¿½import static xxx.xxx.xxx.ï¿½ï¿½ï¿½ï¿½.ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
+ *
+ * ×¢ï¿½â£º
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ä¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½Öªï¿½ï¿½Ê¹ï¿½ï¿½Ë­?ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ÒªÊ¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°×ºï¿½ï¿½ï¿½É´Ë¿É¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ã²»ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ü¿ï¿½ï¿½ï¿½ï¿½ï¿½
  */
+
 import static java.lang.Math.abs;
 import static java.lang.Math.max;
 
 public class StaticImportDemo {
-	public static void main(String[] args) {
-		// System.out.println(java.lang.Math.abs(-12));
-		// System.out.println(java.lang.Math.max(12, 23));
+    public static void main(String[] args) {
+        // System.out.println(java.lang.Math.abs(-12));
+        // System.out.println(java.lang.Math.max(12, 23));
 
-		// System.out.println(Math.abs(-12));
-		// System.out.println(Math.max(12, 23));
+        // System.out.println(Math.abs(-12));
+        // System.out.println(Math.max(12, 23));
 
-		System.out.println(abs(-12));
-		System.out.println(java.lang.Math.max(12, 23));
-	}
+        System.out.println(abs(-12));
+        System.out.println(java.lang.Math.max(12, 23));
+    }
 
-	public static boolean max(int a, int b) {
-		return a == b;
-	}
+    public static boolean max(int a, int b) {
+        return a == b;
+    }
 }

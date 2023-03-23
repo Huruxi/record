@@ -1,86 +1,88 @@
 /*
-	ÀÏÊ¦°¸Àý
-		¾ßÌåÊÂÎï£º»ù´¡°àÀÏÊ¦£¬¾ÍÒµ°àÀÏÊ¦
-		¹²ÐÔ£ºÐÕÃû£¬ÄêÁä£¬½²¿Î¡£
+	ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ê¦
+		ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½Î¡ï¿½
 */
 abstract class Teacher {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Teacher(){}
+    public Teacher() {
+    }
 
-	public Teacher(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Teacher(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	//³éÏó·½·¨
-	public abstract void teach();
+    //ï¿½ï¿½ï¿½ó·½·ï¿½
+    public abstract void teach();
 }
 
 class BasicTeacher extends Teacher {
-	public BasicTeacher(){}
+    public BasicTeacher() {
+    }
 
-	public BasicTeacher(String name,int age) {
-		super(name,age);
-	}
+    public BasicTeacher(String name, int age) {
+        super(name, age);
+    }
 
-	public void teach() {
-		System.out.println("»ù´¡°àÀÏÊ¦½²½âJavaSE");
-	}
+    public void teach() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½JavaSE");
+    }
 }
 
-//Á·Ï°1£º¾ÍÒµ°àÀÏÊ¦µÄ´úÂë
+//ï¿½ï¿½Ï°1ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ê¦ï¿½Ä´ï¿½ï¿½ï¿½
 
 class TeacherDemo {
-	public static void main(String[] args) {
-		//²âÊÔ»ù´¡°àÀÏÊ¦
-		BasicTeacher bt = new BasicTeacher();
-		bt.setName("ÁÖÇàÏ¼");
-		bt.setAge(28);
-		System.out.println(bt.getName()+"---"+bt.getAge());
-		bt.teach();
-		System.out.println("----------------------------");
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦
+        BasicTeacher bt = new BasicTeacher();
+        bt.setName("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        bt.setAge(28);
+        System.out.println(bt.getName() + "---" + bt.getAge());
+        bt.teach();
+        System.out.println("----------------------------");
 
-		BasicTeacher bt2 = new BasicTeacher("ÁÖÇàÏ¼",28);
-		System.out.println(bt2.getName()+"---"+bt2.getAge());
-		bt2.teach();
-		System.out.println("----------------------------");
+        BasicTeacher bt2 = new BasicTeacher("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        System.out.println(bt2.getName() + "---" + bt2.getAge());
+        bt2.teach();
+        System.out.println("----------------------------");
 
-		//¶àÌ¬²âÊÔ
-		Teacher t = new BasicTeacher();
-		t.setName("ÁÖÇàÏ¼");
-		t.setAge(28);
-		System.out.println(t.getName()+"---"+t.getAge());
-		t.teach();
-		System.out.println("----------------------------");
+        //ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
+        Teacher t = new BasicTeacher();
+        t.setName("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        t.setAge(28);
+        System.out.println(t.getName() + "---" + t.getAge());
+        t.teach();
+        System.out.println("----------------------------");
 
-		Teacher t2 = new BasicTeacher("ÁÖÇàÏ¼",28);
-		System.out.println(t2.getName()+"---"+t2.getAge());
-		t2.teach();
-		System.out.println("----------------------------");
+        Teacher t2 = new BasicTeacher("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        System.out.println(t2.getName() + "---" + t2.getAge());
+        t2.teach();
+        System.out.println("----------------------------");
 
-		//Á·Ï°2£º¾ÍÒµ°àÀÏÊ¦²âÊÔ£¬¶àÌ¬²âÊÔ
-	}
+        //ï¿½ï¿½Ï°2ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
+    }
 }
 
-//Á·Ï°3£ºÑ§Éú°¸Àý
-//¾ßÌåÊÂÎñ£º»ù´¡°àÑ§Ô±£¬¾ÍÒµ°àÑ§Ô±
-//¹²ÐÔ£ºÐÕÃû£¬ÄêÁä£¬°à¼¶£¬Ñ§Ï°£¬³Ô·¹
-//×Ô¼º·ÖÎö£¬×Ô¼ºÐ´´úÂë£¬×Ô¼º²âÊÔ
+//ï¿½ï¿½Ï°3ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ñ£º»ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§Ô±ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½Ñ§Ô±
+//ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½à¼¶ï¿½ï¿½Ñ§Ï°ï¿½ï¿½ï¿½Ô·ï¿½
+//ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½Ð´ï¿½ï¿½ï¿½ë£¬ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½

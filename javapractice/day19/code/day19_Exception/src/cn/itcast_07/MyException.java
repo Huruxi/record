@@ -1,19 +1,19 @@
 package cn.itcast_07;
 
 /*
- * java API虽然提供了大多数的异常类，但是他不可能考虑到所有的情况。
- * 所以呢，针对我们自己的特殊需求的异常，我们需要自己定义异常。
- * 而我们要自己定义一个类，让他成为异常类，那么，它必须要继承自异常类。
- * 继承自哪个呢?
- * 		继承自Exception
- *		继承自RuntimeException
+ * java API锟斤拷然锟结供锟剿达拷锟斤拷锟斤拷锟斤拷斐ｏ拷啵拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷芸锟斤拷堑锟斤拷锟斤拷械锟斤拷锟斤拷锟斤拷
+ * 锟斤拷锟斤拷锟截ｏ拷锟斤拷锟斤拷锟斤拷锟斤拷约锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟届常锟斤拷锟斤拷锟斤拷锟斤拷要锟皆硷拷锟斤拷锟斤拷锟届常锟斤拷
+ * 锟斤拷锟斤拷锟斤拷要锟皆硷拷锟斤拷锟斤拷一锟斤拷锟洁，锟斤拷锟斤拷锟斤拷为锟届常锟洁，锟斤拷么锟斤拷锟斤拷锟斤拷锟斤拷要锟教筹拷锟斤拷锟届常锟洁。
+ * 锟教筹拷锟斤拷锟侥革拷锟斤拷?
+ * 		锟教筹拷锟斤拷Exception
+ *		锟教筹拷锟斤拷RuntimeException
  */
 public class MyException extends Exception {
-	public MyException() {
-		super();
-	}
+    public MyException() {
+        super();
+    }
 
-	public MyException(String message) {
-		super(message);
-	}
+    public MyException(String message) {
+        super(message);
+    }
 }

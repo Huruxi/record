@@ -3,30 +3,30 @@ package cn.itcast_02;
 import java.util.Random;
 
 /*
- * Random:²úÉúËæ»úÊýµÄÀà
- * 
- * ¹¹Ôì·½·¨£º
- * 		public Random()£ºÓÐÄ¬ÈÏÖÖ×Ó£¬²¢ÇÒºÍ·µ»Ø×î×¼È·µÄ¿ÉÓÃÏµÍ³¼ÆÊ±Æ÷µÄµ±Ç°Öµ£¬ÒÔºÁÎ¢ÃëÎªµ¥Î»×öÁËÒì»ò¡£
- *		public Random(long seed)£ºÖ¸¶¨ÖÖ×Ó
+ * Random:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *
- * ³ÉÔ±·½·¨£º
- * 		public int nextInt()£ºint·¶Î§ÄÚµÄÊý¾Ý
- *		public int nextInt(int n)£º[0,n)µÄÊý¾Ý
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * 		public Random()ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ÒºÍ·ï¿½ï¿½ï¿½ï¿½ï¿½×¼È·ï¿½Ä¿ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Äµï¿½Ç°Öµï¿½ï¿½ï¿½Ôºï¿½Î¢ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		public Random(long seed)ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *
- * ÃæÊÔÌâ£º
- * 		¹¹Ôì·½·¨¸ø²»¸øÖÖ×ÓµÄÇø±ð?
- * 			Èç¹ûÖÖ×Ó²»Í¬£¬Ëæ»úÊý²»Í¬¡£
- * 			Èç¹ûÖÖ×ÓÏàÍ¬£¬Ëæ»úÊýÏàÍ¬¡£
+ * ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		public int nextInt()ï¿½ï¿½intï¿½ï¿½Î§ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½
+ *		public int nextInt(int n)ï¿½ï¿½[0,n)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+ * 		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
  */
 public class RandomDemo {
-	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		// Random r = new Random();
-		Random r = new Random(17);
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // Random r = new Random();
+        Random r = new Random(17);
 
-		for (int x = 0; x < 10; x++) {
-			// System.out.println(r.nextInt());
-			System.out.println(r.nextInt(100));
-		}
-	}
+        for (int x = 0; x < 10; x++) {
+            // System.out.println(r.nextInt());
+            System.out.println(r.nextInt(100));
+        }
+    }
 }

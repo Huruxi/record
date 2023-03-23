@@ -9,10 +9,10 @@ package cn.itcast.dao;
 import cn.itcast.pojo.User;
 
 /**
- *
  * @author fqy
  */
 public interface UserDao {
-    public abstract  boolean isLogin(String username,String password);
-    public abstract  void regist(User user);
+    public abstract boolean isLogin(String username, String password);
+
+    public abstract void regist(User user);
 }

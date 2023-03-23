@@ -3,59 +3,59 @@ package cn.itcast_02;
 import java.util.HashSet;
 
 /*
- * ÐèÇó£º´æ´¢×Ô¶¨Òå¶ÔÏó²¢±éÀú¡£(Èç¹û¶ÔÏóµÄ³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒÃÇ¾ÍÈÏÎªÕâÁ½¸ö¶ÔÏóÊÇÍ¬Ò»¸ö¶ÔÏó£¬Ò²¾ÍÊÇÖØ¸´µÄÔªËØ)
- * ÎÒÃÇ´æ´¢ÍêÔªËØºó£¬·¢ÏÖÃ»ÓÐ´ïµ½ÎÒÃÇÏëÒªµÄÐ§¹û¡£
- * ½Ó×ÅÎÒÃÇÖØÐ´ÁËequals()·½·¨£¬·¢ÏÖ»¹ÊÇ²»ÐÐ¡£
- * ÔõÃ´°ìÄØ?ÎÒÃÇ¾ÍÓ¦¸ÃË¼¿¼¿´ÄÄÀï»á³öÏÖÎÊÌâ?
- * Í¨¹ý¼òµ¥µÄ·ÖÎö£¬ÎÒÃÇÖªµÀ¿Ï¶¨ÊÇadd()ÄÇÀï³öÎÊÌâÁË
- * ËùÒÔ£¬ÎÒÃÇÒªÏëÖªµÀ³öÊ²Ã´ÎÊÌâÁË,ÎÒÃÇ¾ÍÓ¦¸Ã¿´add()·½·¨µÄÔ´Âë
- * Í¨¹ý²é¿´Ô´Âë£¬ÎÒÃÇ¿´µ½ÁËÈçÏÂµÄÒ»¸öÅÐ¶Ï£º
+ * ï¿½ï¿½ï¿½ó£º´æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó²¢±ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½Ôªï¿½ï¿½)
+ * ï¿½ï¿½ï¿½Ç´æ´¢ï¿½ï¿½Ôªï¿½Øºó£¬·ï¿½ï¿½ï¿½Ã»ï¿½Ð´ïµ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ç²ï¿½ï¿½Ð¡ï¿½
+ * ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½Ç¾ï¿½Ó¦ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * Í¨ï¿½ï¿½ï¿½òµ¥µÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½add()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ç¾ï¿½Ó¦ï¿½Ã¿ï¿½add()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
+ * Í¨ï¿½ï¿½ï¿½é¿´Ô´ï¿½ë£¬ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½Ò»ï¿½ï¿½ï¿½Ð¶Ï£ï¿½
  * 		if (e.hash == hash && ((k = e.key) == key || key.equals(k))){}
  * 			A:e.hash == hash
- * 				±È½ÏµÄÊÇ¶ÔÏóµÄ¹þÏ£ÖµÊÇ·ñÏàÍ¬
+ * 				ï¿½È½Ïµï¿½ï¿½Ç¶ï¿½ï¿½ï¿½Ä¹ï¿½Ï£Öµï¿½Ç·ï¿½ï¿½ï¿½Í¬
  * 			B:((k = e.key) == key || key.equals(k))
- * 				×ó±ß±È½ÏµÄÊÇµØÖ·ÊÇ·ñÏàÍ¬
- * 				ÓÒ±ß±È½ÏµÄÊÇÄÚÈÝÊÇ·ñÏàÍ¬
- * HashSet¼¯ºÏµ×²ãÊý¾Ý½á¹¹ÊÇ¹þÏ£±í£¬¹þÏ£±íÓÉhashCode()ºÍequals()·½·¨À´±£Ö¤ÔªËØµÄÎ¨Ò»ÐÔ¡£
- * 		±È½Ï¶ÔÏóµÄhashCode()ÖµÊÇ·ñÏàÍ¬
- * 			ÊÇ£º¼ÌÐø±È½Ïequals()·½·¨£¬¿´ÄÚÈÝÊÇ·ñÏàÍ¬
- * 				·µ»Øtrue£º¾Í²»Ìí¼Óµ½¼¯ºÏ
- * 				·µ»Øfalse£º¾ÍÌí¼Óµ½¼¯ºÏ
- * 			·ñ£ºÖ±½ÓÌí¼Óµ½¼¯ºÏ
- * 
- * Ñ§Ï°Íê±Ïºó£¬ÎÒÃÇÖ»ÒªÖªµÀHashSetÊÇÈçºÎ±£Ö¤ÔªËØµÄÎ¨Ò»ÐÔµÄ¡£
- * ÔÚÊµ¼Ê¿ª·¢ÖÐ£¬ÎÒÃÇ¿´µ½ÕâÖÖ½á¹¹µÄ¼¯ºÏ£¬¾ÍÒªÖØÐ´Á½¸ö·½·¨£ºhashCode()ºÍequals()¡£
- * µ«ÊÇ´ó¼Ò²»ÓÃµ£ÐÄ£¬ÒòÎªÕâÁ½¸ö·½·¨¶¼ÊÇ×Ô¶¯Éú³É¡£
+ * 				ï¿½ï¿½ß±È½Ïµï¿½ï¿½Çµï¿½Ö·ï¿½Ç·ï¿½ï¿½ï¿½Í¬
+ * 				ï¿½Ò±ß±È½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬
+ * HashSetï¿½ï¿½ï¿½Ïµ×²ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½Ç¹ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½hashCode()ï¿½ï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤Ôªï¿½Øµï¿½Î¨Ò»ï¿½Ô¡ï¿½
+ * 		ï¿½È½Ï¶ï¿½ï¿½ï¿½ï¿½hashCode()Öµï¿½Ç·ï¿½ï¿½ï¿½Í¬
+ * 			ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬
+ * 				ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 				ï¿½ï¿½ï¿½ï¿½falseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * Ñ§Ï°ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½ï¿½Ö»ÒªÖªï¿½ï¿½HashSetï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½Øµï¿½Î¨Ò»ï¿½ÔµÄ¡ï¿½
+ * ï¿½ï¿½Êµï¿½Ê¿ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½á¹¹ï¿½Ä¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Òªï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hashCode()ï¿½ï¿½equals()ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ç´ï¿½Ò²ï¿½ï¿½Ãµï¿½ï¿½Ä£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½É¡ï¿½
  */
 public class HashSetDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		HashSet<Person> hs = new HashSet<Person>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        HashSet<Person> hs = new HashSet<Person>();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Person p1 = new Person("ÂÀ¶´±ö", 30);
-		Person p2 = new Person("ºÎÏÉ¹Ã", 22);
-		Person p3 = new Person("²Ü¹ú¾Ë", 25);
-		Person p4 = new Person("Ìú¹ÕÀî", 35);
-		Person p5 = new Person("ÕÅ¹ûÀÏ", 33);
-		Person p6 = new Person("À¶²ÉºÍ", 22);
-		Person p7 = new Person("ºÎÏÉ¹Ã", 22);
-		Person p8 = new Person("Ìú¹ÕÀî", 18);
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+        Person p1 = new Person("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 30);
+        Person p2 = new Person("ï¿½ï¿½ï¿½É¹ï¿½", 22);
+        Person p3 = new Person("ï¿½Ü¹ï¿½ï¿½ï¿½", 25);
+        Person p4 = new Person("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 35);
+        Person p5 = new Person("ï¿½Å¹ï¿½ï¿½ï¿½", 33);
+        Person p6 = new Person("ï¿½ï¿½ï¿½Éºï¿½", 22);
+        Person p7 = new Person("ï¿½ï¿½ï¿½É¹ï¿½", 22);
+        Person p8 = new Person("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 18);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		hs.add(p1);
-		// hs.add(p1);
-		hs.add(p2);
-		hs.add(p3);
-		hs.add(p4);
-		hs.add(p5);
-		hs.add(p6);
-		hs.add(p7);
-		hs.add(p8);
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        hs.add(p1);
+        // hs.add(p1);
+        hs.add(p2);
+        hs.add(p3);
+        hs.add(p4);
+        hs.add(p5);
+        hs.add(p6);
+        hs.add(p7);
+        hs.add(p8);
 
-		// ±éÀú¼¯ºÏ
-		for (Person p : hs) {
-			System.out.println(p.getName() + "---" + p.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Person p : hs) {
+            System.out.println(p.getName() + "---" + p.getAge());
+        }
+    }
 }

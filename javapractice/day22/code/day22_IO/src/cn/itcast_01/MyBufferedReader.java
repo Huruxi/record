@@ -4,60 +4,60 @@ import java.io.IOException;
 import java.io.Reader;
 
 public class MyBufferedReader {
-	private Reader r;
+    private Reader r;
 
-	public MyBufferedReader(Reader r) { // Reader r = new FileReader("my.txt");
-		this.r = r;
-	}
+    public MyBufferedReader(Reader r) { // Reader r = new FileReader("my.txt");
+        this.r = r;
+    }
 
-	public String readLine() throws IOException {
-		/*
-		 * ÎÒÃÇÏÖÔÚÒÑÖªµÄÊÇr¶ÔÏó£¬r¶ÔÏó¶ÁÈ¡Êý¾ÝÓÐÁ½ÖÖ·½Ê½£ºÒ»´Î¶ÁÈ¡Ò»¸ö×Ö·û£¬Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·ûÊý×é
-		 * ÎÒÃÇ×¼±¸ÓÃÄÄ¸öÄØ?Èç¹ûÓÃÊý×éµÄ·½Ê½£¬³¤¶È²»ºÃÈ·¶¨£¬ËùÒÔ£¬×îÖÕÈ·¶¨Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·û¡£
-		 * ÎÒÃÇÃ¿´Î¶ÁÈ¡Ò»¸ö×Ö·û£¬µ±¶ÁÈ¡µÚ¶þ¸ö×Ö·ûµÄÊ±ºò£¬Ç°Ò»¸ö¾Í»á¶ªÊ§£¬ËùÒÔ£¬ÎÒÃÇÒªÏë°ì·¨°Ñ¶ÁÈ¡¹ýµÄ×Ö·û±£´æÆðÀ´¡£
-		 * ÓÃÊ²Ã´ÄØ?Í¨¹ý¼òµ¥µÄ·ÖÎö£¬ÎÒÃÇ×îÖÕÈ·¶¨ÁËStringBuilder
-		 */
-		StringBuilder sb = new StringBuilder();
+    public String readLine() throws IOException {
+        /*
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½rï¿½ï¿½ï¿½ï¿½rï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½È²ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ç°Ò»ï¿½ï¿½ï¿½Í»á¶ªÊ§ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ì·¨ï¿½Ñ¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         * ï¿½ï¿½Ê²Ã´ï¿½ï¿½?Í¨ï¿½ï¿½ï¿½òµ¥µÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½StringBuilder
+         */
+        StringBuilder sb = new StringBuilder();
 
-		// while (true) {
-		// // Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·û
-		// int ch = r.read();
-		// if (ch == '\r') {
-		// continue;
-		// }
-		// if (ch == '\n') {
-		// // return sb.toString();
-		// break;
-		// } else {
-		// sb.append((char) ch);
-		// }
-		// }
-		// return sb.toString();
+        // while (true) {
+        // // Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+        // int ch = r.read();
+        // if (ch == '\r') {
+        // continue;
+        // }
+        // if (ch == '\n') {
+        // // return sb.toString();
+        // break;
+        // } else {
+        // sb.append((char) ch);
+        // }
+        // }
+        // return sb.toString();
 
-		// ÈçºÎ½â¾öËÀÑ­»·ÎÊÌâÄØ?
+        // ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
 
-		int ch = 0;
-		while ((ch = r.read()) != -1) {
-			if (ch == '\r') {
-				continue;
-			}
-			if (ch == '\n') {
-				return sb.toString();
-			} else {
-				sb.append((char) ch);
-			}
-		}
+        int ch = 0;
+        while ((ch = r.read()) != -1) {
+            if (ch == '\r') {
+                continue;
+            }
+            if (ch == '\n') {
+                return sb.toString();
+            } else {
+                sb.append((char) ch);
+            }
+        }
 
-		// ·ÀÖ¹Êý¾Ý¶ªÊ§
-		if (sb.length() > 0) {
-			return sb.toString();
-		}
+        // ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½Ý¶ï¿½Ê§
+        if (sb.length() > 0) {
+            return sb.toString();
+        }
 
-		return null;
+        return null;
 
-	}
+    }
 
-	public void close() throws IOException {
-		r.close();
-	}
+    public void close() throws IOException {
+        r.close();
+    }
 }

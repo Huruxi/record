@@ -5,27 +5,27 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * °Ñe:\\DOSÃüÁî.avi¸´ÖÆµ½µ±Ç°ÏîÄ¿Ä¿Â¼ÏÂµÄcopy.aviÖÐ
- * Êý¾ÝÔ´£º
- * 		e:\\DOSÃüÁî.avi
- * Ä¿µÄµØ£º
+ * ï¿½ï¿½e:\\DOSï¿½ï¿½ï¿½ï¿½.aviï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ä¿Ä¿Â¼ï¿½Âµï¿½copy.aviï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
+ * 		e:\\DOSï¿½ï¿½ï¿½ï¿½.avi
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		copy.avi
  */
 public class CopyAviDemo {
-	public static void main(String[] args) throws IOException {
-		// ·â×°Êý¾ÝÔ´
-		FileInputStream fis = new FileInputStream("e:\\DOSÃüÁî.avi");
-		// ·â×°Ä¿µÄµØ
-		FileOutputStream fos = new FileOutputStream("copy.avi");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        FileInputStream fis = new FileInputStream("e:\\DOSï¿½ï¿½ï¿½ï¿½.avi");
+        // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        FileOutputStream fos = new FileOutputStream("copy.avi");
 
-		// ¶ÁÐ´Êý¾Ý
-		int by = 0;
-		while ((by = fis.read()) != -1) {
-			fos.write(by);
-		}
+        // ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½
+        int by = 0;
+        while ((by = fis.read()) != -1) {
+            fos.write(by);
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		fos.close();
-		fis.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        fos.close();
+        fis.close();
+    }
 }

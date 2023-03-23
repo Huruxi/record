@@ -1,47 +1,47 @@
 package cn.itcast_03;
 
 /*
- * StringÀàµÄÅÐ¶Ï¹¦ÄÜ£º
- * boolean equals(Object obj):±È½Ï×Ö·û´®µÄÄÚÈÝÊÇ·ñÏàÍ¬£¬ÑÏ¸ñÇø·Ö´óÐ¡Ð´
- * boolean equalsIgnoreCase(String str):±È½Ï×Ö·û´®µÄÄÚÈÝÊÇ·ñÏàÍ¬£¬²»¿¼ÂÇ´óÐ¡Ð´
- * boolean contains(String str):ÅÐ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄÐ¡´®
- * boolean startsWith(String str):ÅÐ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®¿ªÍ·
- * boolean endsWith(String str):ÅÐ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®½áÎ²
- * boolean isEmpty():ÅÐ¶Ï×Ö·û´®µÄÄÚÈÝÊÇ·ñÎª¿Õ
+ * Stringï¿½ï¿½ï¿½ï¿½Ð¶Ï¹ï¿½ï¿½Ü£ï¿½
+ * boolean equals(Object obj):ï¿½È½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð¡Ð´
+ * boolean equalsIgnoreCase(String str):ï¿½È½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½Ð¡Ð´
+ * boolean contains(String str):ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½
+ * boolean startsWith(String str):ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Í·
+ * boolean endsWith(String str):ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Î²
+ * boolean isEmpty():ï¿½Ð¶ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
  */
 public class StringDemo {
-	public static void main(String[] args) {
-		String s = "helloworld";
+    public static void main(String[] args) {
+        String s = "helloworld";
 
-		// boolean equals(Object obj):±È½Ï×Ö·û´®µÄÄÚÈÝÊÇ·ñÏàÍ¬£¬ÑÏ¸ñÇø·Ö´óÐ¡Ð´
-		System.out.println("equals():" + s.equals("helloworld"));
-		System.out.println("equals():" + s.equals("HelloWorld"));
-		System.out.println("----------------------------------");
+        // boolean equals(Object obj):ï¿½È½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð¡Ð´
+        System.out.println("equals():" + s.equals("helloworld"));
+        System.out.println("equals():" + s.equals("HelloWorld"));
+        System.out.println("----------------------------------");
 
-		// boolean equalsIgnoreCase(String str):±È½Ï×Ö·û´®µÄÄÚÈÝÊÇ·ñÏàÍ¬£¬²»¿¼ÂÇ´óÐ¡Ð´
-		System.out.println("equalsIgnoreCase():"
-				+ s.equalsIgnoreCase("helloworld"));
-		System.out.println("equalsIgnoreCase():"
-				+ s.equalsIgnoreCase("HelloWorld"));
-		System.out.println("----------------------------------");
+        // boolean equalsIgnoreCase(String str):ï¿½È½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½Ð¡Ð´
+        System.out.println("equalsIgnoreCase():"
+                + s.equalsIgnoreCase("helloworld"));
+        System.out.println("equalsIgnoreCase():"
+                + s.equalsIgnoreCase("HelloWorld"));
+        System.out.println("----------------------------------");
 
-		// boolean contains(String str):ÅÐ¶ÏÊÇ·ñ°üº¬Ö¸¶¨µÄÐ¡´®
-		System.out.println("contains():" + s.contains("owo"));
-		System.out.println("contains():" + s.contains("hw"));
-		System.out.println("----------------------------------");
+        // boolean contains(String str):ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½
+        System.out.println("contains():" + s.contains("owo"));
+        System.out.println("contains():" + s.contains("hw"));
+        System.out.println("----------------------------------");
 
-		// boolean startsWith(String str):ÅÐ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®¿ªÍ·
-		System.out.println("startsWith():" + s.startsWith("hw"));
-		System.out.println("startsWith():" + s.startsWith("owo"));
-		System.out.println("startsWith():" + s.startsWith("h"));
-		System.out.println("----------------------------------");
+        // boolean startsWith(String str):ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Í·
+        System.out.println("startsWith():" + s.startsWith("hw"));
+        System.out.println("startsWith():" + s.startsWith("owo"));
+        System.out.println("startsWith():" + s.startsWith("h"));
+        System.out.println("----------------------------------");
 
-		// boolean endsWith(String str):ÅÐ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄ×Ö·û´®½áÎ²:×Ô¼ºÁ·Ï°
+        // boolean endsWith(String str):ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Î²:ï¿½Ô¼ï¿½ï¿½ï¿½Ï°
 
-		// boolean isEmpty():ÅÐ¶Ï×Ö·û´®µÄÄÚÈÝÊÇ·ñÎª¿Õ
-		System.out.println("isEmpty():" + s.isEmpty());
-		// System.out.println("isEmpty():"+null.isEmpty());
-		// //´íÎó£¬¶ÔÏóÎªnull£¬ËµÃ÷¶ÔÏó²»´æÔÚ£¬¶ÔÏó²»´æÔÚ£¬¾Í²»ÄÜµ÷ÓÃ·½·¨
-		System.out.println("isEmpty():" + "".isEmpty());
-	}
+        // boolean isEmpty():ï¿½Ð¶ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ï¿½
+        System.out.println("isEmpty():" + s.isEmpty());
+        // System.out.println("isEmpty():"+null.isEmpty());
+        // //ï¿½ï¿½ï¿½ó£¬¶ï¿½ï¿½ï¿½Îªnullï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ó²»´ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ó²»´ï¿½ï¿½Ú£ï¿½ï¿½Í²ï¿½ï¿½Üµï¿½ï¿½Ã·ï¿½ï¿½ï¿½
+        System.out.println("isEmpty():" + "".isEmpty());
+    }
 }

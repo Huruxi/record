@@ -23,7 +23,8 @@ public class Student {
      */
     List<String> course;
 
-    public Student() {}
+    public Student() {
+    }
 
     public Student(String name, double score) {
         this.name = name;

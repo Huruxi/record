@@ -4,62 +4,62 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
- * ×Ö½ÚÊäÈëÁ÷¶ÁÊý¾Ý²½Öè£º
- * A:´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
- * B:µ÷ÓÃ·½·¨£¬¶ÁÈ¡Êý¾Ý
- * C:ÊÍ·Å×ÊÔ´
- * 
- * ×Ö½ÚÊäÈëÁ÷¶ÁÈ¡Êý¾ÝÓÐÁ½ÖÖ·½Ê½:
- * A:Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½Ú
- * B:Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½ÚÊý×é
- * 
- * Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½Ú£ºpublic int read()
+ * ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý²ï¿½ï¿½è£º
+ * A:ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * B:ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+ * C:ï¿½Í·ï¿½ï¿½ï¿½Ô´
+ *
+ * ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½:
+ * A:Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+ * B:Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö½Ú£ï¿½public int read()
  */
 public class FileInputStreamDemo {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-		// FileInputStream fis = new FileInputStream("fis.txt");
-		FileInputStream fis = new FileInputStream("FileOutputStreamDemo.java");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // FileInputStream fis = new FileInputStream("fis.txt");
+        FileInputStream fis = new FileInputStream("FileOutputStreamDemo.java");
 
-		// µ÷ÓÃ·½·¨£¬¶ÁÈ¡Êý¾Ý
-		// µÚÒ»´Î¶ÁÈ¡
-		// int by = fis.read();
-		// System.out.println(by);
-		// System.out.println((char) by);
-		//
-		// // µÚ¶þ´Î¶ÁÈ¡
-		// by = fis.read();
-		// System.out.println(by);
-		// System.out.println((char) by);
-		//
-		// // µÚÈý´Î¶ÁÈ¡
-		// by = fis.read();
-		// System.out.println(by);
-		// System.out.println((char) by);
-		// ÎÒÃÇ·¢ÏÖÉÏÃæµÄ´úÂëÊÇÒ»ÑùµÄ£¬ËùÒÔ£¬ÎÒÃÇ¿¼ÂÇÒªÓÃÑ­»·¸Ä½ø
-		// ÈçºÎÓÃÑ­»·¸Ä½øÄØ?
-		// ÖØµãÀ´ÁË
-		// ¾ÍÊÇÈçºÎÅÐ¶ÏÑ­»·Ê²Ã´Ê±ºò½áÊø
-		// by = fis.read();
-		// System.out.println(by);
-		// by = fis.read();
-		// System.out.println(by);
-		// Í¨¹ý²âÊÔÎÒÃÇ·¢ÏÖ£¬Õâ¸öÅÐ¶ÏÌõ¼þÖµÊÇ-1
+        // ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½Ò»ï¿½Î¶ï¿½È¡
+        // int by = fis.read();
+        // System.out.println(by);
+        // System.out.println((char) by);
+        //
+        // // ï¿½Ú¶ï¿½ï¿½Î¶ï¿½È¡
+        // by = fis.read();
+        // System.out.println(by);
+        // System.out.println((char) by);
+        //
+        // // ï¿½ï¿½ï¿½ï¿½ï¿½Î¶ï¿½È¡
+        // by = fis.read();
+        // System.out.println(by);
+        // System.out.println((char) by);
+        // ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½Òªï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ä½ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½?
+        // ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½Ñ­ï¿½ï¿½Ê²Ã´Ê±ï¿½ï¿½ï¿½ï¿½ï¿½
+        // by = fis.read();
+        // System.out.println(by);
+        // by = fis.read();
+        // System.out.println(by);
+        // Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½-1
 
-		// int by = fis.read();
-		// while (by != -1) {
-		// System.out.print((char) by);
-		// by = fis.read();
-		// }
+        // int by = fis.read();
+        // while (by != -1) {
+        // System.out.print((char) by);
+        // by = fis.read();
+        // }
 
-		// ×îÖÕ´úÂë
-		int by = 0;
-		// ¶ÁÈ¡Êý¾Ý£¬¸³Öµ£¬ÅÐ¶Ï
-		while ((by = fis.read()) != -1) {
-			System.out.print((char) by);
-		}
+        // ï¿½ï¿½ï¿½Õ´ï¿½ï¿½ï¿½
+        int by = 0;
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ð¶ï¿½
+        while ((by = fis.read()) != -1) {
+            System.out.print((char) by);
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		fis.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        fis.close();
+    }
 }

@@ -8,40 +8,40 @@ import java.io.Writer;
 import java.util.Properties;
 
 /*
- * PropertiesºÍIOÁ÷µÄ½áºÏÊ¹ÓÃ¡£
- * A:°ÑÎÄ±¾ÎÄ¼þÖÐµÄÊý¾Ý¶ÁÈ¡µ½¼¯ºÏÖÐ
- * 		Êý¾ÝÔ´£ºÎÄ±¾ÎÄ¼þ
- * 		Ä¿µÄµØ£º¼¯ºÏ
- * 
+ * Propertiesï¿½ï¿½IOï¿½ï¿½ï¿½Ä½ï¿½ï¿½Ê¹ï¿½Ã¡ï¿½
+ * A:ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+ * 		Ä¿ï¿½ÄµØ£ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
  * 		public void load(InputStream inStream)
  *		public void load(Reader reader)
- * B:°Ñ¼¯ºÏÖÐµÄÊý¾Ý´æ´¢µ½ÎÄ±¾ÎÄ¼þ
- * 		Êý¾ÝÔ´£º¼¯ºÏ
- * 		Ä¿µÄµØ£ºÎÄ±¾ÎÄ¼þ
- * 
+ * B:ï¿½Ñ¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		Ä¿ï¿½ÄµØ£ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+ *
  * 		public void store(OutputStream out,String comments)
  * 		public void store(Writer writer,String comments)
  */
 public class PropertiesDemo3 {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Properties prop = new Properties();
-		// public void load(Reader reader)
-		Reader r = new FileReader("prop.txt");
-		prop.load(r);
-		r.close();
-		System.out.println("prop:" + prop);
-		System.out.println("---------------------");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Properties prop = new Properties();
+        // public void load(Reader reader)
+        Reader r = new FileReader("prop.txt");
+        prop.load(r);
+        r.close();
+        System.out.println("prop:" + prop);
+        System.out.println("---------------------");
 
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Properties prop2 = new Properties();
-		prop2.setProperty("001", "hello");
-		prop2.setProperty("002", "world");
-		prop2.setProperty("003", "java");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Properties prop2 = new Properties();
+        prop2.setProperty("001", "hello");
+        prop2.setProperty("002", "world");
+        prop2.setProperty("003", "java");
 
-		// public void store(Writer writer,String comments)
-		Writer w = new FileWriter("w.txt");
-		prop2.store(w, null);
-		w.close();
-	}
+        // public void store(Writer writer,String comments)
+        Writer w = new FileWriter("w.txt");
+        prop2.store(w, null);
+        w.close();
+    }
 }

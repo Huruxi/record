@@ -1,54 +1,55 @@
 /*
-	¶¨ÒåÒ»¸ö³¤·½ÐÎÀà,¶¨ÒåÇóÖÜ³¤ºÍÃæ»ýµÄ·½·¨£¬È»ºó¶¨ÒåÒ»¸ö²âÊÔÁËTest£¬½øÐÐ²âÊÔ¡£
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Testï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½Ô¡ï¿½
 */
 class ChangFangXing {
-	private int length;
-	private int width;
+    private int length;
+    private int width;
 
-	public ChangFangXing() {}
+    public ChangFangXing() {
+    }
 
-	public ChangFangXing(int length,int width) {
-		this.length = length;
-		this.width = width;
-	}
+    public ChangFangXing(int length, int width) {
+        this.length = length;
+        this.width = width;
+    }
 
-	public void setLength(int length) {
-		this.length = length;
-	}
+    public void setLength(int length) {
+        this.length = length;
+    }
 
-	public int getLength() {
-		return length;
-	}
+    public int getLength() {
+        return length;
+    }
 
-	public void setWidth(int width) {
-		this.width = width;
-	}
+    public void setWidth(int width) {
+        this.width = width;
+    }
 
-	public int getWidth() {
-		return width;
-	}
+    public int getWidth() {
+        return width;
+    }
 
-	public int zhouChang() {
-		return (length+width)*2;
-	}
+    public int zhouChang() {
+        return (length + width) * 2;
+    }
 
-	public int area() {
-		return length*width;
-	}
+    public int area() {
+        return length * width;
+    }
 }
 
 class Test {
-	public static void main(String[] args) {
-		//ÎÞ²Î
-		ChangFangXing cfx = new ChangFangXing();
-		cfx.setLength(100);
-		cfx.setWidth(50);
-		System.out.println("ÖÜ³¤ÊÇ£º"+cfx.zhouChang());
-		System.out.println("Ãæ»ýÊÇ£º"+cfx.area());
+    public static void main(String[] args) {
+        //ï¿½Þ²ï¿½
+        ChangFangXing cfx = new ChangFangXing();
+        cfx.setLength(100);
+        cfx.setWidth(50);
+        System.out.println("ï¿½Ü³ï¿½ï¿½Ç£ï¿½" + cfx.zhouChang());
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + cfx.area());
 
-		//´ø²Î
-		ChangFangXing cfx2 = new ChangFangXing(100,50);
-		System.out.println("ÖÜ³¤ÊÇ£º"+cfx2.zhouChang());
-		System.out.println("Ãæ»ýÊÇ£º"+cfx2.area());
-	}
+        //ï¿½ï¿½ï¿½ï¿½
+        ChangFangXing cfx2 = new ChangFangXing(100, 50);
+        System.out.println("ï¿½Ü³ï¿½ï¿½Ç£ï¿½" + cfx2.zhouChang());
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + cfx2.area());
+    }
 }

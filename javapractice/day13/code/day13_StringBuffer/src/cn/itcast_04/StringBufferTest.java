@@ -1,29 +1,29 @@
 package cn.itcast_04;
 
 /*
- * °ÑÊý×éÆ´½Ó³ÉÒ»¸ö×Ö·û´®
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ´ï¿½Ó³ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
  */
 public class StringBufferTest {
-	public static void main(String[] args) {
-		int[] arr = { 11, 22, 33, 44, 55 };
-		
-		String result = arrayToString(arr);
-		System.out.println(result);
-	}
+    public static void main(String[] args) {
+        int[] arr = {11, 22, 33, 44, 55};
 
-	public static String arrayToString(int[] arr) {
-		StringBuffer sb = new StringBuffer();
+        String result = arrayToString(arr);
+        System.out.println(result);
+    }
 
-		sb.append("[");
-		for (int x = 0; x < arr.length; x++) {
-			if (x == arr.length - 1) {
-				sb.append(arr[x]);
-			} else {
-				sb.append(arr[x]).append(", ");
-			}
-		}
-		sb.append("]");
+    public static String arrayToString(int[] arr) {
+        StringBuffer sb = new StringBuffer();
 
-		return new String(sb);
-	}
+        sb.append("[");
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
+                sb.append(arr[x]);
+            } else {
+                sb.append(arr[x]).append(", ");
+            }
+        }
+        sb.append("]");
+
+        return new String(sb);
+    }
 }

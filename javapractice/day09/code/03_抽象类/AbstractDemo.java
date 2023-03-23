@@ -1,57 +1,57 @@
 /*
-	³éÏóÀà¸ÅÊö£º¶¯Îï²»ÊÇÒ»¸ö¾ßÌåµÄÊÂÎï£¬Ö»ÓÐÃ¨£¬¹·²ÅÊÇ¾ßÌåµÄ¸öÌå¡£
-				²¢ÇÒ£¬ÔÚ¶¯ÎïÖÐÎÒÃÇÕë¶Ô³ÔµÄ¹¦ÄÜ£¬Ò²²»Ó¦¸Ã¸ø³ö¾ßÌåµÄÌåÏÖ£¬
-				ÒòÎª²»Í¬µÄ¶¯Îï³ÔµÄÄÚÈÝÊÇ²»Ò»ÑùµÄ£¬ÎÒÃÇÓ¦¸ÃÈÃ¾ßÌåµÄ¶¯Îï×Ô¼ºÈ¥ÊµÏÖ×Ô¼º³ÔµÄ¹¦ÄÜ¡£
-				¶øÒ»¸ö¹¦ÄÜÈç¹ûÃ»ÓÐ¾ßÌåµÄÌåÏÖ£¬¾ÍÊÇÒ»¸ö³éÏóµÄÄÚÈÝ¡£ÈçºÎ±íÊ¾ÄØ?
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï²»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£¬Ö»ï¿½ï¿½Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½å¡£
+				ï¿½ï¿½ï¿½Ò£ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô³ÔµÄ¹ï¿½ï¿½Ü£ï¿½Ò²ï¿½ï¿½Ó¦ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½
+				ï¿½ï¿½Îªï¿½ï¿½Í¬ï¿½Ä¶ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½Ò»ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ã¾ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½È¥Êµï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ÔµÄ¹ï¿½ï¿½Ü¡ï¿½
+				ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½ï¿½ï¿½Î±ï¿½Ê¾ï¿½ï¿½?
 
-				¸ñÊ½£º
-					ÐÞÊÎ·û ·µ»ØÖµÀàÐÍ ·½·¨Ãû(²ÎÊýÁÐ±í...);
+				ï¿½ï¿½Ê½ï¿½ï¿½
+					ï¿½ï¿½ï¿½Î·ï¿½ ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½...);
 
-				ÎªÁË±íÊ¾ÕâÊÇÒ»¸ö³éÏóµÄ¶«Î÷£¬javaÌá¹©ÁËÒ»¸ö±êÊ¶µÄ¹Ø¼ü×Ö£ºabstract
-				¸ñÊ½£º
-					ÐÞÊÎ·û abstract ·µ»ØÖµÀàÐÍ ·½·¨Ãû(²ÎÊýÁÐ±í...);
-				¶øÒ»¸öÀàÖÐµÄ·½·¨Èç¹ûÊÇ³éÏóµÄÀà£¬ÄÇÃ´£¬¸ÃÀà¾Í±ØÐë¶¨ÒåÎª³éÏóÀà¡£
-	³éÏóÀàµÄÌØµã£º
-		A:³éÏóÀàºÍ³éÏó·½·¨±ØÐëÓÃabstract¹Ø¼ü×ÖÐÞÊÎ
-		B:³éÏóÀàµÄ×ÓÀà
-			a:ÒªÃ´ÊÇ³éÏóÀà
-			b:ÒªÃ´ÖØÐ´³éÏóÀàÖÐµÄËùÓÐ³éÏó·½·¨
-		C:³éÏóÀà²»Ò»¶¨ÓÐ³éÏó·½·¨£¬ÓÐ³éÏó·½·¨µÄÀàÒ»¶¨ÊÇ³éÏóÀà
-		D:³éÏóÀà²»ÄÜÊµÀý»¯
-			ÄÇÃ´ÈçºÎÊ¹ÓÃ³éÏóÀàµÄ¹¦ÄÜÄØ?
-			°´ÕÕ¶àÌ¬µÄ·½Ê½Ê¹ÓÃ¡£³éÏóÀà¶àÌ¬¡£
+				Îªï¿½Ë±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½javaï¿½á¹©ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½Ä¹Ø¼ï¿½ï¿½Ö£ï¿½abstract
+				ï¿½ï¿½Ê½ï¿½ï¿½
+					ï¿½ï¿½ï¿½Î·ï¿½ abstract ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½...);
+				ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½ë¶¨ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½à¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµã£º
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½abstractï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			a:ÒªÃ´ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½
+			b:ÒªÃ´ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ó·½·ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½à²»Ò»ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½
+		D:ï¿½ï¿½ï¿½ï¿½ï¿½à²»ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½?
+			ï¿½ï¿½ï¿½Õ¶ï¿½Ì¬ï¿½Ä·ï¿½Ê½Ê¹ï¿½Ã¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½
 
-	»Ø¹Ë£º
-		¶àÌ¬Ç°ÌáÎªÊ²Ã´ÒªÓÐ·½·¨ÖØÐ´ÄØ?
-			ÒòÎª¸¸ÀàµÄ·½·¨¿ÉÄÜÊÇ³éÏóµÄ¡£
+	ï¿½Ø¹Ë£ï¿½
+		ï¿½ï¿½Ì¬Ç°ï¿½ï¿½ÎªÊ²Ã´Òªï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½?
+			ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½Ä¡ï¿½
 */
 abstract class Animal {
-	//Õâ¸ö·½·¨ÊÇÓÐ·½·¨ÌåµÄ£¬Ö»²»¹ýÄÚÈÝÎª¿Õ
-	//public void eat() {}
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½
+    //public void eat() {}
 
-	//³éÏó·½·¨
-	public abstract void eat();
+    //ï¿½ï¿½ï¿½ó·½·ï¿½
+    public abstract void eat();
 }
 
 abstract class Dog extends Animal {
 }
 
 class Cat extends Animal {
-	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
-	}
+    public void eat() {
+        System.out.println("Ã¨ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class AbstractDemo {
-	public static void main(String[] args) {
-		//Animal a = new Animal(); //ÎÞ·¨ÊµÀý»¯
+    public static void main(String[] args) {
+        //Animal a = new Animal(); //ï¿½Þ·ï¿½Êµï¿½ï¿½ï¿½ï¿½
 
-		//Dog d = new Dog();  //ÎÞ·¨ÊµÀý»¯
+        //Dog d = new Dog();  //ï¿½Þ·ï¿½Êµï¿½ï¿½ï¿½ï¿½
 
-		//Cat c = new Cat();
+        //Cat c = new Cat();
 
-		//¶àÌ¬
-		Animal a = new Cat();
-		a.eat();
-	}
+        //ï¿½ï¿½Ì¬
+        Animal a = new Cat();
+        a.eat();
+    }
 }

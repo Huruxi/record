@@ -1,39 +1,39 @@
 package cn.itcast_04;
 
 /*
- * ³£ÓÃµÄ»ù±¾½øÖÆ×ª»»
+ * ï¿½ï¿½ï¿½ÃµÄ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
  *		public static String toBinaryString(int i)
  *		public static String toOctalString(int i)
  *		public static String toHexString(int i)
- * Ê®½øÖÆµ½ÆäËû½øÖÆ
+ * Ê®ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *		public static String toString(int i,int radix)
- *ÆäËû½øÖÆµ½Ê®½øÖÆ
+ *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê®ï¿½ï¿½ï¿½ï¿½
  *		public static int parseInt(String s,int radix)
  */
 public class IntegerDemo {
-	public static void main(String[] args) {
-		// public static String toString(int i,int radix):
-		// Í¨¹ý¼òµ¥µÄ²âÊÔ£¬ÎÒÃÇÖªµÀÁË½øÖÆµÄ·¶Î§ÊÇ2-36
-		System.out.println(Integer.toString(100, 2));
-		System.out.println(Integer.toString(100, 8));
-		System.out.println(Integer.toString(100, 16));
-		System.out.println(Integer.toString(100, 1));
-		System.out.println(Integer.toString(100, 100));
-		System.out.println(Integer.toString(100, 50));
-		System.out.println(Integer.toString(100, 25));
-		System.out.println(Integer.toString(100, 37));
-		System.out.println(Integer.toString(100, 32));
-		System.out.println(Integer.toString(100, 35));
-		System.out.println(Integer.toString(100, 36));
-		System.out.println(Integer.toString(100, 7));
-		System.out.println("----------------------");
+    public static void main(String[] args) {
+        // public static String toString(int i,int radix):
+        // Í¨ï¿½ï¿½ï¿½òµ¥µÄ²ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½Ë½ï¿½ï¿½ÆµÄ·ï¿½Î§ï¿½ï¿½2-36
+        System.out.println(Integer.toString(100, 2));
+        System.out.println(Integer.toString(100, 8));
+        System.out.println(Integer.toString(100, 16));
+        System.out.println(Integer.toString(100, 1));
+        System.out.println(Integer.toString(100, 100));
+        System.out.println(Integer.toString(100, 50));
+        System.out.println(Integer.toString(100, 25));
+        System.out.println(Integer.toString(100, 37));
+        System.out.println(Integer.toString(100, 32));
+        System.out.println(Integer.toString(100, 35));
+        System.out.println(Integer.toString(100, 36));
+        System.out.println(Integer.toString(100, 7));
+        System.out.println("----------------------");
 
-		// ÆäËû½øÖÆµ½Ê®½øÖÆ
-		// public static int parseInt(String s,int radix)
-		System.out.println(Integer.parseInt("100", 2));
-		System.out.println(Integer.parseInt("100", 8));
-		System.out.println(Integer.parseInt("100", 16));
-		System.out.println(Integer.parseInt("300", 12));
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê®ï¿½ï¿½ï¿½ï¿½
+        // public static int parseInt(String s,int radix)
+        System.out.println(Integer.parseInt("100", 2));
+        System.out.println(Integer.parseInt("100", 8));
+        System.out.println(Integer.parseInt("100", 16));
+        System.out.println(Integer.parseInt("300", 12));
 
-	}
+    }
 }

@@ -1,35 +1,36 @@
 /*
-	Ö´ÐÐ¹ý³Ì£º¾²Ì¬´úÂë¿â --> ¹¹Ôì´úÂë¿é --> ¹¹Ôì·½·¨ --> ¾Ö²¿´úÂë¿é
+	Ö´ï¿½Ð¹ï¿½ï¿½Ì£ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ --> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ --> ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ --> ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	¾²Ì¬´úÂë¿é£ºÖ»Ö´ÐÐÒ»´Î¡£
-	¹¹Ôì´úÂë¿â£ºÃ¿´Î´´½¨¶ÔÏó¶¼Ö´ÐÐ¡£
+	ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½é£ºÖ»Ö´ï¿½ï¿½Ò»ï¿½Î¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£ºÃ¿ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð¡ï¿½
 */
 class Student {
-	static {
-		System.out.println("AAAAA");
-	}
+    static {
+        System.out.println("AAAAA");
+    }
 
-	{
-		System.out.println("BBBBB");
-	}
+    {
+        System.out.println("BBBBB");
+    }
 
-	public Student() {
-		{
-			System.out.println("CCCCC");
-		}
-	}
+    public Student() {
+        {
+            System.out.println("CCCCC");
+        }
+    }
 
-	static {
-		System.out.println("DDDDD");
-	}
+    static {
+        System.out.println("DDDDD");
+    }
 
-	{
-		System.out.println("EEEEE");
-	}
+    {
+        System.out.println("EEEEE");
+    }
 }
+
 class CodeTest {
-	public static void main(String[] args) {
-		Student s = new Student();
-		Student ss = new Student();
-	}
+    public static void main(String[] args) {
+        Student s = new Student();
+        Student ss = new Student();
+    }
 }

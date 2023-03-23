@@ -1,21 +1,21 @@
 package cn.itcast_02;
 
 /*
- * ¿´³ÌÐòÐ´½á¹û
- * ×Ö·û´®±äÁ¿Ïà¼Ó£ºÏÈ¿ª¿Õ¼ä£¬ÔÙ¼ÓÄÚÈÝ
- * ×Ö·û´®³£Á¿Ïà¼Ó£ºÏÈ¼Ó£¬ÔÙÕÒ£¬Ã»ÓÐÔÙ¿ª¿Õ¼ä
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½È¿ï¿½ï¿½Õ¼ä£¬ï¿½Ù¼ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½ï¿½È¼Ó£ï¿½ï¿½ï¿½ï¿½Ò£ï¿½Ã»ï¿½ï¿½ï¿½Ù¿ï¿½ï¿½Õ¼ï¿½
  */
 public class StringDemo4 {
-	public static void main(String[] args) {
-		String s1 = "hello";
-		String s2 = "world";
-		String s3 = "helloworld";
-		String s4 = s1 + s2;
-		String s5 = "hello"+"world";
-		System.out.println(s4);
-		System.out.println(s5);
+    public static void main(String[] args) {
+        String s1 = "hello";
+        String s2 = "world";
+        String s3 = "helloworld";
+        String s4 = s1 + s2;
+        String s5 = "hello" + "world";
+        System.out.println(s4);
+        System.out.println(s5);
 //		System.out.println(s3 == s1 + s2);// false
 //		System.out.println(s3.equals(s1 + s2));// true
 //		System.out.println(s3 == "hello" + "world");// true
-	}
+    }
 }

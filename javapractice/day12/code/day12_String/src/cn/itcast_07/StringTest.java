@@ -1,36 +1,36 @@
 package cn.itcast_07;
 
 /*
- * 把数组中的数据按照指定格式拼接成一个字符串
- * 举例：int[] arr = {1,2,3};	
- * 输出结果：[1, 2, 3] 
+ * 锟斤拷锟斤拷锟斤拷锟叫碉拷锟斤拷锟捷帮拷锟斤拷指锟斤拷锟斤拷式拼锟接筹拷一锟斤拷锟街凤拷锟斤拷
+ * 锟斤拷锟斤拷锟斤拷int[] arr = {1,2,3};
+ * 锟斤拷锟斤拷锟斤拷锟斤拷[1, 2, 3]
  */
 public class StringTest {
-	public static void main(String[] args) {
-		// 定义一个数组
-		int[] arr = { 1, 2, 3 };
-		
-		String result = arrayToString(arr);
-		System.out.println(result);
-	}
+    public static void main(String[] args) {
+        // 锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷
+        int[] arr = {1, 2, 3};
 
-	// 写功能实现
-	// 形式参数：数组
-	// 返回值类型：String
-	public static String arrayToString(int[] arr) {
-		String s = "";
+        String result = arrayToString(arr);
+        System.out.println(result);
+    }
 
-		s += "[";
-		for (int x = 0; x < arr.length; x++) {
-			if (x == arr.length - 1) {
-				s += arr[x];
-			} else {
-				s += arr[x];
-				s += ", ";
-			}
-		}
-		s += "]";
+    // 写锟斤拷锟斤拷实锟斤拷
+    // 锟斤拷式锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+    // 锟斤拷锟斤拷值锟斤拷锟酵ｏ拷String
+    public static String arrayToString(int[] arr) {
+        String s = "";
 
-		return s;
-	}
+        s += "[";
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
+                s += arr[x];
+            } else {
+                s += arr[x];
+                s += ", ";
+            }
+        }
+        s += "]";
+
+        return s;
+    }
 }

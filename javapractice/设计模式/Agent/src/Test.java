@@ -9,15 +9,15 @@ import java.lang.reflect.Proxy;
 public class Test {
 
     public static void main(String[] args) {
-        //´´½¨ÖĞ½éÀàÊµÀı
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ğ½ï¿½ï¿½ï¿½Êµï¿½ï¿½
         DynamicProxy inter = new DynamicProxy(new Vendor());
-        //¼ÓÉÏÕâ¾ä½«»á²úÉúÒ»¸ö$Proxy0.classÎÄ¼ş£¬Õâ¸öÎÄ¼ş¼´Îª¶¯Ì¬Éú³ÉµÄ´úÀíÀàÎÄ¼ş
-        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles","true");
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä½«ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½$Proxy0.classï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Îªï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ÉµÄ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
-        //»ñÈ¡´úÀíÀàÊµÀısell
-        Sell sell = (Sell)(Proxy.newProxyInstance(Sell.class.getClassLoader(), new Class[] {Sell.class}, inter));
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½sell
+        Sell sell = (Sell) (Proxy.newProxyInstance(Sell.class.getClassLoader(), new Class[]{Sell.class}, inter));
 
-        //Í¨¹ı´úÀíÀà¶ÔÏóµ÷ÓÃ´úÀíÀà·½·¨£¬Êµ¼ÊÉÏ»á×ªµ½invoke·½·¨µ÷ÓÃ
+        //Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½à·½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ï»ï¿½×ªï¿½ï¿½invokeï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         sell.sell();
         sell.ad();
 

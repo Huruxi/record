@@ -4,56 +4,56 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
- * ÎªÁËÌá¸ß¶ÁÈ¡Êý¾ÝµÄÐ§ÂÊ£¬¾ÍÓÐÁËµÚ¶þÖÖ·½°¸¡£
- * Ò»´Î¶ÁÈ¡Ò»¸ö×Ö½ÚÊý×é£ºpublic int read(byte[] b):·µ»ØµÄÊÇÊµ¼ÊµÄ¶ÁÈ¡³¤¶È£¬°ÑÊý¾Ý¶ÁÈ¡µ½×Ö½ÚÊý×éÖÐ
+ * Îªï¿½ï¿½ï¿½ï¿½ß¶ï¿½È¡ï¿½ï¿½ï¿½Ýµï¿½Ð§ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ËµÚ¶ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½é£ºpublic int read(byte[] b):ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Êµï¿½ÊµÄ¶ï¿½È¡ï¿½ï¿½ï¿½È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¶ï¿½È¡ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class FileInputStreamDemo2 {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨×Ö½ÚÊäÈëÁ÷¶ÔÏó
-		FileInputStream fis = new FileInputStream("a.txt");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        FileInputStream fis = new FileInputStream("a.txt");
 
-		// ¶ÁÈ¡Êý¾Ý
-		// public int read(byte[] b)
-		// byte[] bys = new byte[5];
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+        // public int read(byte[] b)
+        // byte[] bys = new byte[5];
 
-		// // µÚÒ»´Î¶ÁÈ¡
-		// int len = fis.read(bys);
-		// System.out.println(len);
-		// // System.out.println(new String(bys));
-		// System.out.println(new String(bys, 0, len));
-		//
-		// // µÚ¶þ´Î¶ÁÈ¡
-		// len = fis.read(bys);
-		// System.out.println(len);
-		// // System.out.println(new String(bys));
-		// System.out.println(new String(bys, 0, len));
-		//
-		// // µÚÈý´Î¶ÁÈ¡
-		// len = fis.read(bys);
-		// System.out.println(len);
-		// // System.out.println(new String(bys));
-		// System.out.println(new String(bys, 0, len));
-		//
-		// // µÚËÄ´Î¶ÁÈ¡
-		// len = fis.read(bys);
-		// System.out.println(len);
-		// // System.out.println(new String(bys));
-		// System.out.println(new String(bys, 0, len));
-		//
-		// // ÓÃÑ­»·¸Ä£¬¾ÍÓ¦¸ÃÖªµÀÅÐ¶Ï½áÊøµÄÌõ¼þ
-		// len = fis.read(bys);
-		// len = fis.read(bys);
-		// System.out.println(len);
-		// System.out.println(len);
+        // // ï¿½ï¿½Ò»ï¿½Î¶ï¿½È¡
+        // int len = fis.read(bys);
+        // System.out.println(len);
+        // // System.out.println(new String(bys));
+        // System.out.println(new String(bys, 0, len));
+        //
+        // // ï¿½Ú¶ï¿½ï¿½Î¶ï¿½È¡
+        // len = fis.read(bys);
+        // System.out.println(len);
+        // // System.out.println(new String(bys));
+        // System.out.println(new String(bys, 0, len));
+        //
+        // // ï¿½ï¿½ï¿½ï¿½ï¿½Î¶ï¿½È¡
+        // len = fis.read(bys);
+        // System.out.println(len);
+        // // System.out.println(new String(bys));
+        // System.out.println(new String(bys, 0, len));
+        //
+        // // ï¿½ï¿½ï¿½Ä´Î¶ï¿½È¡
+        // len = fis.read(bys);
+        // System.out.println(len);
+        // // System.out.println(new String(bys));
+        // System.out.println(new String(bys, 0, len));
+        //
+        // // ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½Öªï¿½ï¿½ï¿½Ð¶Ï½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // len = fis.read(bys);
+        // len = fis.read(bys);
+        // System.out.println(len);
+        // System.out.println(len);
 
-		// byte[] bys = new byte[5];
-		byte[] bys = new byte[1024 * 1024]; // ÕâÀïµÄÊý¾ÝÒ»°ãÊÇ1024»òÕßÆäÕûÊý±¶
-		int len = 0;
-		while ((len = fis.read(bys)) != -1) {
-			System.out.print(new String(bys, 0, len));
-		}
+        // byte[] bys = new byte[5];
+        byte[] bys = new byte[1024 * 1024]; // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½1024ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int len = 0;
+        while ((len = fis.read(bys)) != -1) {
+            System.out.print(new String(bys, 0, len));
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		fis.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        fis.close();
+    }
 }

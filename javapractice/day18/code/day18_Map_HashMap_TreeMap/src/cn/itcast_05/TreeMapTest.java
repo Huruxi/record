@@ -5,51 +5,51 @@ import java.util.Set;
 import java.util.TreeMap;
 
 /*
- * "dabcdababcabcea",»ñÈ¡×Ö·û´®ÖÐÃ¿Ò»¸ö×ÖÄ¸³öÏÖµÄ´ÎÊýÒªÇó½á¹û:a(5)b(4)c(3)d(2)e(1)
- * 
- * ×÷Òµ£º×Ô¼º¶ÏµãÒ»´Î
+ * "dabcdababcabcea",ï¿½ï¿½È¡ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½:a(5)b(4)c(3)d(2)e(1)
+ *
+ * ï¿½ï¿½Òµï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ïµï¿½Ò»ï¿½ï¿½
  */
 public class TreeMapTest {
-	public static void main(String[] args) {
-		// ¼üÅÌÈÎÒâÂ¼ÈëÒ»¸ö×Ö·û´®
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
-		String s = sc.nextLine();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½");
+        String s = sc.nextLine();
 
-		// ¶¨ÒåÒ»¸öMap¼¯ºÏ£¬¼üÊÇCharacter£¬ÖµÊÇInteger£¬²¢ÇÒÊÇTreeMap
-		TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Mapï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½Characterï¿½ï¿½Öµï¿½ï¿½Integerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TreeMap
+        TreeMap<Character, Integer> tm = new TreeMap<Character, Integer>();
 
-		// °Ñ×Ö·û´®×ª³É×Ö·ûÊý×é
-		char[] chs = s.toCharArray();
+        // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        char[] chs = s.toCharArray();
 
-		// ±éÀú×Ö·û´®£¬µÃµ½Ã¿Ò»¸ö×Ö·û
-		for (char ch : chs) {
-			// ÄÃÕâ¸ö×Ö·û×÷Îª¼üµ½mapÀïÃæÕÒÖµ
-			Integer i = tm.get(ch);
-			// ·µ»Ønull
-			if (i == null) {
-				// ´æ´¢
-				tm.put(ch, 1);
-			} else {
-				// °ÑÖµ++£¬ÖØÐÂ´æ´¢
-				i++;
-				tm.put(ch, i);
-			}
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+        for (char ch : chs) {
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½mapï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+            Integer i = tm.get(ch);
+            // ï¿½ï¿½ï¿½ï¿½null
+            if (i == null) {
+                // ï¿½æ´¢
+                tm.put(ch, 1);
+            } else {
+                // ï¿½ï¿½Öµ++ï¿½ï¿½ï¿½ï¿½ï¿½Â´æ´¢
+                i++;
+                tm.put(ch, i);
+            }
+        }
 
-		// ¶¨ÒåÒ»¸öStringBuilder×Ö·û´®
-		StringBuilder sb = new StringBuilder();
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½StringBuilderï¿½Ö·ï¿½ï¿½ï¿½
+        StringBuilder sb = new StringBuilder();
 
-		// ±éÀúTreeMap¼¯ºÏ
-		Set<Character> set = tm.keySet();
-		for (Character key : set) {
-			Integer value = tm.get(key);
-			sb.append(key).append("(").append(value).append(")");
-		}
+        // ï¿½ï¿½ï¿½ï¿½TreeMapï¿½ï¿½ï¿½ï¿½
+        Set<Character> set = tm.keySet();
+        for (Character key : set) {
+            Integer value = tm.get(key);
+            sb.append(key).append("(").append(value).append(")");
+        }
 
-		// °ÑStringBuilder×ª»»Îª×Ö·û´®
-		String result = sb.toString();
+        // ï¿½ï¿½StringBuilder×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½
+        String result = sb.toString();
 
-		System.out.println(result);
-	}
+        System.out.println(result);
+    }
 }

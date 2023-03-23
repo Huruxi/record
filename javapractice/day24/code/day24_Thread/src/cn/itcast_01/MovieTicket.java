@@ -5,52 +5,52 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class MovieTicket implements Runnable {
 
-	private int tickets = 100;
-	private Object obj = new Object();
+    private int tickets = 100;
+    private Object obj = new Object();
 
-	// ÔìËø
-	// private ReentrantLock lock = new ReentrantLock();
-	private Lock lock = new ReentrantLock();
+    // ï¿½ï¿½ï¿½ï¿½
+    // private ReentrantLock lock = new ReentrantLock();
+    private Lock lock = new ReentrantLock();
 
-	// @Override
-	// public void run() {
-	// while (true) {
-	// synchronized (obj) {
-	// if (tickets > 0) {
-	// try {
-	// Thread.sleep(100);
-	// } catch (InterruptedException e) {
-	// e.printStackTrace();
-	// }
-	//
-	// System.out.println(Thread.currentThread().getName()
-	// + "ÕýÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
-	// }
-	// }
-	// }
-	// }
+    // @Override
+    // public void run() {
+    // while (true) {
+    // synchronized (obj) {
+    // if (tickets > 0) {
+    // try {
+    // Thread.sleep(100);
+    // } catch (InterruptedException e) {
+    // e.printStackTrace();
+    // }
+    //
+    // System.out.println(Thread.currentThread().getName()
+    // + "ï¿½ï¿½ï¿½Ú³ï¿½ï¿½Ûµï¿½" + (tickets--) + "ï¿½ï¿½Æ±");
+    // }
+    // }
+    // }
+    // }
 
-	@Override
-	public void run() {
-		while (true) {
-			try {
-				// ¼ÓËø
-				lock.lock();
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                // ï¿½ï¿½ï¿½ï¿½
+                lock.lock();
 
-				if (tickets > 0) {
-					try {
-						Thread.sleep(100);
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+                if (tickets > 0) {
+                    try {
+                        Thread.sleep(100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
-					System.out.println(Thread.currentThread().getName()
-							+ "ÕýÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
-				}
-			} finally {
-				// ÊÍ·ÅËø
-				lock.unlock();
-			}
-		}
-	}
+                    System.out.println(Thread.currentThread().getName()
+                            + "ï¿½ï¿½ï¿½Ú³ï¿½ï¿½Ûµï¿½" + (tickets--) + "ï¿½ï¿½Æ±");
+                }
+            } finally {
+                // ï¿½Í·ï¿½ï¿½ï¿½
+                lock.unlock();
+            }
+        }
+    }
 }

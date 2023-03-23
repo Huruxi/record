@@ -4,51 +4,51 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * ÕâÊÇ²Ù×÷ÈÕÆÚµÄ¹¤¾ßÀà
- * 
+ * ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÚµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
  * @author fqy
  * @version V1.0
  */
 public class DateTool {
-	private DateTool() {
-	}
+    private DateTool() {
+    }
 
-	/**
-	 * ÕâÊÇ»ñÈ¡ÄêÔÂÈÕÊ±·ÖÃëµÄ·½·¨ ¸ñÊ½£º1997-06-01 12:23:34
-	 * 
-	 * @param d
-	 * @return
-	 */
-	public static String getRiQi(Date d) {
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		// String s = sdf.format(d);
-		// return s;
-		return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(d);
-	}
+    /**
+     * ï¿½ï¿½ï¿½Ç»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ ï¿½ï¿½Ê½ï¿½ï¿½1997-06-01 12:23:34
+     *
+     * @param d
+     * @return
+     */
+    public static String getRiQi(Date d) {
+        // SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        // String s = sdf.format(d);
+        // return s;
+        return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(d);
+    }
 
-	/**
-	 * ÕâÊÇ»ñÈ¡ÄêÔÂÈÕµÄ·½·¨ ¸ñÊ½£º1997-06-01
-	 * 
-	 * @param d
-	 * @return
-	 */
-	public static String getNYR(Date d) {
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		// String s = sdf.format(d);
-		// return s;
-		return new SimpleDateFormat("yyyy-MM-dd").format(d);
-	}
+    /**
+     * ï¿½ï¿½ï¿½Ç»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ÕµÄ·ï¿½ï¿½ï¿½ ï¿½ï¿½Ê½ï¿½ï¿½1997-06-01
+     *
+     * @param d
+     * @return
+     */
+    public static String getNYR(Date d) {
+        // SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        // String s = sdf.format(d);
+        // return s;
+        return new SimpleDateFormat("yyyy-MM-dd").format(d);
+    }
 
-	/**
-	 * ÕâÊÇ»ñÈ¡Ê±·ÖÃëµÄ·½·¨ ¸ñÊ½£º12:23:34
-	 * 
-	 * @param d
-	 * @return
-	 */
-	public static String getSFM(Date d) {
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		// String s = sdf.format(d);
-		// return s;
-		return new SimpleDateFormat("HH:mm:ss").format(d);
-	}
+    /**
+     * ï¿½ï¿½ï¿½Ç»ï¿½È¡Ê±ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ ï¿½ï¿½Ê½ï¿½ï¿½12:23:34
+     *
+     * @param d
+     * @return
+     */
+    public static String getSFM(Date d) {
+        // SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        // String s = sdf.format(d);
+        // return s;
+        return new SimpleDateFormat("HH:mm:ss").format(d);
+    }
 }

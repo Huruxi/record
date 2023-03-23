@@ -1,35 +1,35 @@
 /*
-	ÐèÇó£ºÎÒÒªÍê³ÉHelloWorld°¸Àý
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½HelloWorldï¿½ï¿½ï¿½ï¿½
 
-	·ÖÎö£º
-		A:javaÓïÑÔ×î»ù±¾µÄµ¥Î»ÊÇÀà£¬ËùÒÔÎÒÃÇÊ×ÏÈÒª¶¨ÒåÒ»¸öÀà
-		B:java³ÌÐòÒªÏëÄÜ¹»¶ÀÁ¢ÔËÐÐ£¬±ØÐëÓÐÖ÷·½·¨
-		C:Èç¹ûÏëÒª³ÌÐòÓÐÊä³ö£¬±ØÐëÓÐÊä³öÓï¾ä
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½Î»ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+		B:javaï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	²½Öè£º
-		A:¶¨ÒåÀàµÄ¸ñÊ½
-			class ÀàÃû {
-				//ÀàÌå
+	ï¿½ï¿½ï¿½è£º
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½
+			class ï¿½ï¿½ï¿½ï¿½ {
+				//ï¿½ï¿½ï¿½ï¿½
 			}
-		B:Ö÷·½·¨µÄ¸ñÊ½
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½
 			public static void main(String[] args) {
-				//·½·¨Ìå
+				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			}
-		C:Êä³öÓï¾äµÄ¸ñÊ½
-			System.out.println("ÕâÀïµÄÄÚÈÝÊÇ¿ÉÒÔ¸Ä");
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô¸ï¿½");
 
-	×îºó°ÑÎÒÃÇµÄË¼ÏëÓÃ´úÂë¸øÌåÏÖ³öÀ´
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Ë¼ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö³ï¿½ï¿½ï¿½
 */
-//ÕâÊÇÎÒµÄ´ø×¢ÊÍµÄHelloWorld°¸Àý
-//classÓÃÀ´¶¨ÒåÀà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ÒµÄ´ï¿½×¢ï¿½Íµï¿½HelloWorldï¿½ï¿½ï¿½ï¿½
+//classï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class HelloWorld {
-	/*
-		ÕâÊÇmain·½·¨
-		main·½·¨ÊÇ³ÌÐòµÄÈë¿Ú
-		jvm»á×Ô¶¯µ÷ÓÃmain·½·¨
-	*/
-	public static void main(String[] args) {
-		//ÕâÊÇÊä³öÓï¾ä
-		System.out.println("HelloWorld");
-	}
+    /*
+        ï¿½ï¿½ï¿½ï¿½mainï¿½ï¿½ï¿½ï¿½
+        mainï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        jvmï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½mainï¿½ï¿½ï¿½ï¿½
+    */
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("HelloWorld");
+    }
 }

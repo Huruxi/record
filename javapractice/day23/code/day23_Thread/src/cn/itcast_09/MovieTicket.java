@@ -4,33 +4,33 @@ class Demo {
 }
 
 public class MovieTicket implements Runnable {
-	// ¶¨Òå100ÕÅÆ±
-	private int tickets = 100;
+    // ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½Æ±
+    private int tickets = 100;
 
-	// private Object obj = new Object();
-	private Demo d = new Demo();
+    // private Object obj = new Object();
+    private Demo d = new Demo();
 
-	@Override
-	public void run() {
-		while (true) {
-			// t1,t2,t3
-			// t1¹ýÀ´ÁË£¬¿´µ½ÁËÍ¬²½´úÂë¿éµÄËø±ê¼Ç£¬ÂÌÉ«±ê¼Ç(»ð³µÉÏ²ÞËù£¬¹ýÂíÂ·µÄºìÂÌµÆ)
-			// t2,t3¶¼Ö»ÄÜÔÚÕâÀïÉµÉµµÄµÈ´ý
-			synchronized (this) {
-				// t1¾Í½øÀ´ÁË£¬Á¢ÂíÐÞ¸Ä±ê¼ÇÎªºìÉ«±ê¼Ç
-				if (tickets > 0) {
-					// ¸ü·ûºÏÏÖÊµÇé¿ö
-					try {
-						Thread.sleep(100); // t1ÐÝÏ¢»á
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}
+    @Override
+    public void run() {
+        while (true) {
+            // t1,t2,t3
+            // t1ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½Äºï¿½ï¿½Ìµï¿½)
+            // t2,t3ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÉµÉµï¿½ÄµÈ´ï¿½
+            synchronized (this) {
+                // t1ï¿½Í½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä±ï¿½ï¿½Îªï¿½ï¿½É«ï¿½ï¿½ï¿½
+                if (tickets > 0) {
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½
+                    try {
+                        Thread.sleep(100); // t1ï¿½ï¿½Ï¢ï¿½ï¿½
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
 
-					System.out.println(Thread.currentThread().getName()
-							+ "ÕýÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
-				}
-			}
-			// t1³öÀ´ÁË£¬Á¢ÂíÐÞ¸Ä±ê¼ÇÎªÂÌÉ«±ê¼Ç
-		}
-	}
+                    System.out.println(Thread.currentThread().getName()
+                            + "ï¿½ï¿½ï¿½Ú³ï¿½ï¿½Ûµï¿½" + (tickets--) + "ï¿½ï¿½Æ±");
+                }
+            }
+            // t1ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸Ä±ï¿½ï¿½Îªï¿½ï¿½É«ï¿½ï¿½ï¿½
+        }
+    }
 }

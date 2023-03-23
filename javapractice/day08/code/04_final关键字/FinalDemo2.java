@@ -1,50 +1,50 @@
 /*
-	finalÐÞÊÎ¾Ö²¿±äÁ¿
-		»ù±¾ÀàÐÍ£º»ù±¾ÀàÐÍµÄÖµ²»ÄÜ±äÁ¿
-		ÒýÓÃÀàÐÍ£ºÒýÓÃÀàÐÍµÄµØÖ·Öµ²»ÄÜ¸Ä±ä
+	finalï¿½ï¿½ï¿½Î¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Öµï¿½ï¿½ï¿½Ü±ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍµÄµï¿½Ö·Öµï¿½ï¿½ï¿½Ü¸Ä±ï¿½
 */
 class Person {
-	public void show() {
-		//¾Ö²¿±äÁ¿
-		int num  = 10;
-		System.out.println(num);
-		num = 100;
-		System.out.println(num);
+    public void show() {
+        //ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
+        int num = 10;
+        System.out.println(num);
+        num = 100;
+        System.out.println(num);
 
-		//finalÐÞÊÎ¾Ö²¿±äÁ¿
-		final int num2 = 20;
-		System.out.println(num2);
-		//num2 = 200;
-		System.out.println(num2);
-	}
+        //finalï¿½ï¿½ï¿½Î¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
+        final int num2 = 20;
+        System.out.println(num2);
+        //num2 = 200;
+        System.out.println(num2);
+    }
 
-	public void method() {
-		//¾Ö²¿±äÁ¿
-		Student s1 = new Student();
-		System.out.println(s1.age);
-		s1.age = 100;
-		System.out.println(s1.age);
+    public void method() {
+        //ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student();
+        System.out.println(s1.age);
+        s1.age = 100;
+        System.out.println(s1.age);
 
-		//s1 = new Student();
+        //s1 = new Student();
 
-		//finalÐÞÊÎ¾Ö²¿±äÁ¿
-		final Student s2 = new Student();
-		System.out.println(s2.age);
-		s2.age = 100;
-		System.out.println(s2.age);
+        //finalï¿½ï¿½ï¿½Î¾Ö²ï¿½ï¿½ï¿½ï¿½ï¿½
+        final Student s2 = new Student();
+        System.out.println(s2.age);
+        s2.age = 100;
+        System.out.println(s2.age);
 
-		//s2 = new Student();
-	}
+        //s2 = new Student();
+    }
 }
 
 class Student {
-	int age = 10;
+    int age = 10;
 }
 
 class FinalDemo2 {
-	public static void main(String[] args) {
-		Person p = new Person();
-		//p.show();
-		p.method();
-	}
+    public static void main(String[] args) {
+        Person p = new Person();
+        //p.show();
+        p.method();
+    }
 }

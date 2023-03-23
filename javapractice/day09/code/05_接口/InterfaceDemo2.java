@@ -1,29 +1,29 @@
 /*
-	接口的成员特点：
-		A:成员变量
-			是常量，并且是静态的修饰的。
-			默认的修饰符：public static final
-		B:构造方法
-			没有构造方法
-		C:成员方法
-			只能是抽象方法。
-			默认的修饰符：public abstract
+	锟接口的筹拷员锟截点：
+		A:锟斤拷员锟斤拷锟斤拷
+			锟角筹拷锟斤拷锟斤拷锟斤拷锟斤拷锟角撅拷态锟斤拷锟斤拷锟轿的★拷
+			默锟较碉拷锟斤拷锟轿凤拷锟斤拷public static final
+		B:锟斤拷锟届方锟斤拷
+			没锟叫癸拷锟届方锟斤拷
+		C:锟斤拷员锟斤拷锟斤拷
+			只锟斤拷锟角筹拷锟襟方凤拷锟斤拷
+			默锟较碉拷锟斤拷锟轿凤拷锟斤拷public abstract
 
-		建议：
-			自己写接口的内容的时候，把这些默认修饰符加上。
+		锟斤拷锟介：
+			锟皆硷拷写锟接口碉拷锟斤拷锟捷碉拷时锟津，帮拷锟斤拷些默锟斤拷锟斤拷锟轿凤拷锟斤拷锟较★拷
 */
 interface Animal {
-	//int num = 10;
-	//final int num2 = 20;
-	public static final int num = 10;
+    //int num = 10;
+    //final int num2 = 20;
+    public static final int num = 10;
 
-	//public Animal() {}
+    //public Animal() {}
 
-	public abstract void show();
+    public abstract void show();
 
-	//public void method() {}
+    //public void method() {}
 
-	//void method();
+    //void method();
 }
 
 class Dog implements Animal {
@@ -39,12 +39,13 @@ class Dog implements Animal {
 	}
 	*/
 
-	public void show() {}
+    public void show() {
+    }
 }
 
 class InterfaceDemo2 {
-	public static void main(String[] args) {
-		Dog d = new Dog();
-		//d.show();
-	}
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        //d.show();
+    }
 }

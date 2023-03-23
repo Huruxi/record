@@ -3,33 +3,33 @@ package cn.itcast_05;
 import java.util.Arrays;
 
 /*
- * Arrays:Õë¶ÔÊý×é½øÐÐ²Ù×÷µÄ¹¤¾ßÀà¡£Ìá¹©ÁËÅÅÐò£¬²éÕÒµÈ¹¦ÄÜ¡£
- * 
- * ³ÉÔ±·½·¨£º
- * 		public static String toString(int[] a):°ÑÊý×é×ª³É×Ö·û´®
- *		public static void sort(int[] a):ÅÅÐò(¿ìËÙÅÅÐò)
- *		public static int binarySearch(int[] a,int key):¶þ·Ö²éÕÒ
+ * Arrays:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½à¡£ï¿½á¹©ï¿½ï¿½ï¿½ï¿½ï¿½ò£¬²ï¿½ï¿½ÒµÈ¹ï¿½ï¿½Ü¡ï¿½
  *
- * ×¢Òâ£º
- * 		Èç¹ûÊý×é±¾ÉíÊÇÎÞÐòµÄ£¬²»ÄÜÖ±½ÓÊ¹ÓÃ¶þ·Ö²éÕÒ¡£
- * 		²¢ÇÒ£¬ÏÈÅÅÐò£¬ÔÙ¶þ·ÖÒ²ÊÇÓÐÎÊÌâµÄ£¬ÒòÎªÕâÑù¾Í¸Ä±äÁËÊý×éÖÐÔªËØÔ­Ê¼µÄË÷ÒýÎ»ÖÃ¡£
+ * ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		public static String toString(int[] a):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ *		public static void sort(int[] a):ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+ *		public static int binarySearch(int[] a,int key):ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
+ *
+ * ×¢ï¿½â£º
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½Ã¶ï¿½ï¿½Ö²ï¿½ï¿½Ò¡ï¿½
+ * 		ï¿½ï¿½ï¿½Ò£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Í¸Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Ô­Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ã¡ï¿½
  */
 public class ArraysDemo {
-	public static void main(String[] args) {
-		int[] arr = { 24, 13, 69, 80, 57 };
+    public static void main(String[] args) {
+        int[] arr = {24, 13, 69, 80, 57};
 
-		// System.out.println(arr);// [I@a0834e7
+        // System.out.println(arr);// [I@a0834e7
 
-		// public static String toString(int[] a):°ÑÊý×é×ª³É×Ö·û´®
-		System.out.println(Arrays.toString(arr)); // [24, 13, 69, 80, 57]
+        // public static String toString(int[] a):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        System.out.println(Arrays.toString(arr)); // [24, 13, 69, 80, 57]
 
-		// public static void sort(int[] a):ÅÅÐò(¿ìËÙÅÅÐò)
-		Arrays.sort(arr);
-		System.out.println(Arrays.toString(arr)); // [13, 24, 57, 69, 80]
+        // public static void sort(int[] a):ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr)); // [13, 24, 57, 69, 80]
 
-		// public static int binarySearch(int[] a,int key):¶þ·Ö²éÕÒ
-		// [13, 24, 57, 69, 80]
-		System.out.println(Arrays.binarySearch(arr, 24));
-		System.out.println(Arrays.binarySearch(arr, 244)); // ??? -6
-	}
+        // public static int binarySearch(int[] a,int key):ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
+        // [13, 24, 57, 69, 80]
+        System.out.println(Arrays.binarySearch(arr, 24));
+        System.out.println(Arrays.binarySearch(arr, 244)); // ??? -6
+    }
 }

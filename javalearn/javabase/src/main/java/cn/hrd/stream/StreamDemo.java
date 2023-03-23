@@ -13,16 +13,16 @@ public class StreamDemo {
 
     public static void main(String[] args) {
 
-        List< String> createStream = new ArrayList< String>();
+        List<String> createStream = new ArrayList<String>();
 
         // 顺序流
-        Stream< String> stream = createStream.stream();
+        Stream<String> stream = createStream.stream();
 
         // 并行流
-        Stream< String> parallelStream = createStream.parallelStream();
+        Stream<String> parallelStream = createStream.parallelStream();
 
         // of()方法创建
-        Stream< String> stringStream = Stream.of(
+        Stream<String> stringStream = Stream.of(
                 createStream.toArray(new String[createStream.size()]));
 
         streamImpl(initData());

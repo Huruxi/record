@@ -1,21 +1,21 @@
 /*
-	¾²Ì¬³õÊ¼»¯¸ñÊ½£º
-		Êý¾ÝÀàÐÍ[] Êý×éÃû = new Êý¾ÝÀàÐÍ[]{ÔªËØ1,ÔªËØ2,¡­};
+	ï¿½ï¿½Ì¬ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = new ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[]{Ôªï¿½ï¿½1,Ôªï¿½ï¿½2,ï¿½ï¿½};
 
-		¼ò»¯°æ£º
-		Êý¾ÝÀàÐÍ[] Êý×éÃû =	{ÔªËØ1,ÔªËØ2,¡­};
+		ï¿½ò»¯°æ£º
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ =	{Ôªï¿½ï¿½1,Ôªï¿½ï¿½2,ï¿½ï¿½};
 */
 class ArrayDemo5 {
-	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÊý×é
-		//int[] arr = new int[]{1,2,3};
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //int[] arr = new int[]{1,2,3};
 
-		//¼ò»¯ºó
-		int[] arr = {1,2,3};
+        //ï¿½ò»¯ºï¿½
+        int[] arr = {1, 2, 3};
 
-		System.out.println(arr);
-		System.out.println(arr[0]);
-		System.out.println(arr[1]);
-		System.out.println(arr[2]);
-	}
+        System.out.println(arr);
+        System.out.println(arr[0]);
+        System.out.println(arr[1]);
+        System.out.println(arr[2]);
+    }
 }

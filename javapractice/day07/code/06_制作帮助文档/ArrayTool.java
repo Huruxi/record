@@ -1,46 +1,51 @@
 /**
-* ÕâÊÇÕë¶ÔÊý×é½øÐÐ²Ù×÷µÄ¹¤¾ßÀà
-* @author fqy
-* @version V1.0
-*/
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * @author fqy
+ * @version V1.0
+ */
 public class ArrayTool {
 
-	//°Ñ¹¹Ôì·½·¨Ë½ÓÐ
-	/**
-	* ÕâÊÇË½ÓÐ¹¹Ôì·½·¨
-	*/
-	private ArrayTool(){}
+    //ï¿½Ñ¹ï¿½ï¿½ì·½ï¿½ï¿½Ë½ï¿½ï¿½
 
-	/**
-	* ±éÀúÊý×é£¬¸ñÊ½ÊÇ£º[ÔªËØ1, ÔªËØ2, ...]
-	* @param arr ÐèÒª±»±éÀúµÄÊý×é
-	*/
-	public static void printArray(int[] arr) {
-		System.out.print("[");
-		for(int x=0; x<arr.length; x++) {
-			if(x == arr.length-1) {
-				System.out.print(arr[x]);
-			}else {
-				System.out.print(arr[x]+", ");
-			}
-		}
-		System.out.println("]");
-	}
+    /**
+     * ï¿½ï¿½ï¿½ï¿½Ë½ï¿½Ð¹ï¿½ï¿½ì·½ï¿½ï¿½
+     */
+    private ArrayTool() {
+    }
 
-	/**
-	* »ñÈ¡Êý×éÖÐµÄ×î´óÖµ
-	* @param arr ±»»ñÈ¡×î´óÖµµÄÊý×é
-	* @return int ·µ»ØÊý×éÖÐµÄ×î´óÖµ
-	*/
-	public static int getMax(int[] arr) {
-		int max = arr[0];
+    /**
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ê½ï¿½Ç£ï¿½[Ôªï¿½ï¿½1, Ôªï¿½ï¿½2, ...]
+     *
+     * @param arr ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     */
+    public static void printArray(int[] arr) {
+        System.out.print("[");
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
+                System.out.print(arr[x]);
+            } else {
+                System.out.print(arr[x] + ", ");
+            }
+        }
+        System.out.println("]");
+    }
 
-		for(int x=1; x<arr.length; x++) {
-			if(arr[x] > max) {
-				max = arr[x];
-			}
-		}
+    /**
+     * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Öµ
+     *
+     * @param arr ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @return int ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Öµ
+     */
+    public static int getMax(int[] arr) {
+        int max = arr[0];
 
-		return max;
-	}
+        for (int x = 1; x < arr.length; x++) {
+            if (arr[x] > max) {
+                max = arr[x];
+            }
+        }
+
+        return max;
+    }
 }

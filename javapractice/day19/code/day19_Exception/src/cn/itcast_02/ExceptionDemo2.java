@@ -1,75 +1,75 @@
 package cn.itcast_02;
 
 /*
- * ¶à¸öÒì³£µÄÇé¿ö£º
- * A:Õë¶ÔÃ¿¸öÒì³££¬¸ø³öÒ»¸ö´¦Àí
+ * ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * A:ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * B:try...catch...catch...catch...
- * 		×¢Òâ£º
- * 			a:Ò»µ©tryÀïÃæµÄ´úÂëÓÐÎÊÌâ£¬¾Í²»ÔÚÖ´ÐÐtryÀïÃæµÄÄÚÈÝ£¬ºÍcatchÀïÃæµÄÄÚÈÝÒÀ´ÎµÄÆ¥Åä£¬Ò»µ©ÓÐÒ»¸öÆ¥Åä£¬ÆäËûµÄ²»Ö´ÐÐ¡£
- * 			b:Èç¹ûÒì³£ÊÇÆ½¼¶¹ØÏµ£¬Ë­ÏÈË­ºóÎÞËùÎ½¡£
- *            Èç¹ûÒì³£²»ÊÇÆ½¼¶¹ØÏµ£¬×ÓÏÈ¸¸ºó¡£
- *            
- * JDK7µÄÐÂÌØÐÔ£ºÕë¶ÔÆ½¼¶¹ØÏµµÄ
- * 		catch(Òì³£1 | Òì³£2 | Òì³£3 ... e) {}
+ * 		×¢ï¿½â£º
+ * 			a:Ò»ï¿½ï¿½tryï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½Í²ï¿½ï¿½ï¿½Ö´ï¿½ï¿½tryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½catchï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½Æ¥ï¿½ä£¬Ò»ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Æ¥ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½Ö´ï¿½Ð¡ï¿½
+ * 			b:ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ë­ï¿½ï¿½Ë­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ï¿½
+ *            ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½ï¿½È¸ï¿½ï¿½ï¿½
+ *
+ * JDK7ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½
+ * 		catch(ï¿½ì³£1 | ï¿½ì³£2 | ï¿½ì³£3 ... e) {}
  */
 public class ExceptionDemo2 {
-	public static void main(String[] args) {
-		// method1();
+    public static void main(String[] args) {
+        // method1();
 
-		// method2();
+        // method2();
 
-		method3();
-	}
+        method3();
+    }
 
-	public static void method3() {
-		int a = 10;
-		int b = 0;
-		int[] arr = { 1, 2, 3 };
+    public static void method3() {
+        int a = 10;
+        int b = 0;
+        int[] arr = {1, 2, 3};
 
-		try {
-			System.out.println(a / b);
-			System.out.println(arr[3]);
-		} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
-			System.out.println("³ÌÐò³öÎÊÌâÁË");
-		}
-		System.out.println("over");
-	}
+        try {
+            System.out.println(a / b);
+            System.out.println(arr[3]);
+        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        }
+        System.out.println("over");
+    }
 
-	public static void method2() {
-		int a = 10;
-		int b = 0;
-		int[] arr = { 1, 2, 3 };
+    public static void method2() {
+        int a = 10;
+        int b = 0;
+        int[] arr = {1, 2, 3};
 
-		try {
-			System.out.println(a / b);
-			System.out.println(arr[3]);
-		} catch (ArithmeticException e) {
-			System.out.println("³ýÊý²»ÄÜÎª0");
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Ë÷ÒýÔ½½çÒì³£");
-		} catch (Exception e) {
-			System.out.println("³ÌÐò³öÎÊÌâÁË");
-		}
+        try {
+            System.out.println(a / b);
+            System.out.println(arr[3]);
+        } catch (ArithmeticException e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ì³£");
+        } catch (Exception e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        }
 
-		System.out.println("over");
-	}
+        System.out.println("over");
+    }
 
-	public static void method1() {
-		int a = 10;
-		int b = 0;
-		try {
-			System.out.println(a / b); // ArithmeticException: / by zero
-		} catch (ArithmeticException e) {
-			System.out.println("³ýÊý²»ÄÜÎª0");
-		}
+    public static void method1() {
+        int a = 10;
+        int b = 0;
+        try {
+            System.out.println(a / b); // ArithmeticException: / by zero
+        } catch (ArithmeticException e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0");
+        }
 
-		int[] arr = { 1, 2, 3 };
-		try {
-			System.out.println(arr[3]); // ArrayIndexOutOfBoundsException: 3
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Ë÷ÒýÔ½½çÒì³£");
-		}
+        int[] arr = {1, 2, 3};
+        try {
+            System.out.println(arr[3]); // ArrayIndexOutOfBoundsException: 3
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ì³£");
+        }
 
-		System.out.println("over");
-	}
+        System.out.println("over");
+    }
 }

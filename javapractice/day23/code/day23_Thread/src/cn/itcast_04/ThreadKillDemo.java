@@ -1,22 +1,22 @@
 package cn.itcast_04;
 
 /*
- * ÖĞ¶ÏÏß³Ì
- *		public final void stop():Ö±½ÓËÀ
- *		public void interrupt():ËÀºó»¹¿ÉÒÔĞ´ÒÅÖö
+ * ï¿½Ğ¶ï¿½ï¿½ß³ï¿½
+ *		public final void stop():Ö±ï¿½ï¿½ï¿½ï¿½
+ *		public void interrupt():ï¿½ï¿½ï¿½ó»¹¿ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½
  */
 public class ThreadKillDemo {
-	public static void main(String[] args) {
-		ThreadKill tk = new ThreadKill();
-		tk.start();
+    public static void main(String[] args) {
+        ThreadKill tk = new ThreadKill();
+        tk.start();
 
-		// ¼ÙÉèÎÒÈıÃë¾Í²»ÈÃÈÃÄãÔÙÖ´ĞĞÁË£¬±ØĞëÈÃÄãËÀÈ¥
-		try {
-			Thread.sleep(3000);
-			// tk.stop();
-			tk.interrupt();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥
+        try {
+            Thread.sleep(3000);
+//			 tk.stop();
+            tk.interrupt();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }

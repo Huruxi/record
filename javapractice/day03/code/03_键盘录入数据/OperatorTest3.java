@@ -1,27 +1,28 @@
 /*
-	¼üÅÌÂ¼ÈëÈý¸öÊý¾Ý£¬»ñÈ¡ÕâÈý¸öÊý¾ÝÖÐµÄ×î´óÖµ
+	ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Öµ
 */
+
 import java.util.Scanner;
 
 class OperatorTest3 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//»ñÈ¡¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
-		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
-		int b = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚÈý¸öÊý¾Ý£º");
-		int c = sc.nextInt();
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int a = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int b = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int c = sc.nextInt();
 
-		//»ñÈ¡Èý¸öÊý¾ÝµÄ×î´óÖµ
-		int temp = (a>b)?a:b;
-		int max = (temp>c)?temp:c;
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½ï¿½Öµ
+        int temp = (a > b) ? a : b;
+        int max = (temp > c) ? temp : c;
 
-		//Êä³ö½á¹û
-		System.out.println("×î´óÖµÊÇ£º"+max);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½Öµï¿½Ç£ï¿½" + max);
 
-	}
+    }
 }

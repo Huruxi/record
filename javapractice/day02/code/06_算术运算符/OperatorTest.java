@@ -1,5 +1,5 @@
 /*
-	第一题：
+	锟斤拷一锟解：
 		int a = 10;
 		int b = 10;
 		int c = 10;
@@ -8,15 +8,15 @@
 		c = --a;
 		b = ++a;
 		a = c--;
-		请分别计算出a,b,c的值
+		锟斤拷直锟斤拷锟斤拷锟絘,b,c锟斤拷值
 
-	第二题：
+	锟节讹拷锟解：
 		int a = 4;
 		int b = (a++)+(++a)+(a*10);
 
 */
 class OperatorTest {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
 		int a = 10;
 		int b = 10;
@@ -41,14 +41,14 @@ class OperatorTest {
 		System.out.println(b);
 		*/
 
-		//int i = 1;
-		//System.out.println(i+++i+++i+++i++);
-		//i++ + i++ + i++ + i++
-		//1	+ 2	  + 3	+ 4
+        //int i = 1;
+        //System.out.println(i+++i+++i+++i++);
+        //i++ + i++ + i++ + i++
+        //1	+ 2	  + 3	+ 4
 
-		int i = 1;
-		System.out.println(i++ + ++i + i++ + ++i);//1+3+3+5
-		//i++ + ++i + i++ + ++i
-		//1 + 3 + 3 + 5
-	}
+        int i = 1;
+        System.out.println(i++ + ++i + i++ + ++i);//1+3+3+5
+        //i++ + ++i + i++ + ++i
+        //1 + 3 + 3 + 5
+    }
 }

@@ -1,89 +1,89 @@
 /*
-	¹¹Ôì·½·¨£º¸ø¶ÔÏóµÄÊı¾İ½øĞĞ³õÊ¼»¯
+	ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½Ğ³ï¿½Ê¼ï¿½ï¿½
 
-	ÌØµã£º
-		A:·½·¨ÃûÓëÀàÃûÏàÍ¬
-		B:Ã»ÓĞ·µ»ØÖµÀàĞÍ£¬Á¬void¶¼Ã»ÓĞ
-		C:Ã»ÓĞ¾ßÌåµÄ·µ»ØÖµ
+	ï¿½Øµã£º
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬
+		B:Ã»ï¿½Ğ·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½voidï¿½ï¿½Ã»ï¿½ï¿½
+		C:Ã»ï¿½Ğ¾ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Öµ
 
-	¹¹Ôì·½·¨µÄ¸ñÊ½£º
-		ĞŞÊÎ·û ÀàÃû(...) {
+	ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½
+		ï¿½ï¿½ï¿½Î·ï¿½ ï¿½ï¿½ï¿½ï¿½(...) {
 		
 		}
 
-	¹¹Ôì·½·¨µÄ×¢ÒâÊÂÏî£º
-		A:Èç¹ûÄã²»Ìá¹©¹¹Ôì·½·¨£¬ÏµÍ³»á¸ø³öÄ¬ÈÏÎŞ²Î¹¹Ôì·½·¨
-		B:Èç¹ûÄãÌá¹©ÁË¹¹Ôì·½·¨£¬ÏµÍ³½«²»ÔÙÌá¹©Ä¬ÈÏÎŞ²Î¹¹Ôì·½·¨
-			Õâ¸öÊ±ºò£¬Èç¹ûÄã»¹Ïë¼ÌĞøÊ¹ÓÃÎŞ²Î¹¹Ôì·½·¨£¬Ö»ÄÜ×Ô¼º¸ø³ö¡£
-			ÍÆ¼ö£ºÓÀÔ¶×Ô¼º¸ø³öÎŞ²Î¹¹Ôì·½·¨¡£
-		C:¹¹Ôì·½·¨Ò²ÊÇ¿ÉÒÔÖØÔØµÄ
-		D:¹¹Ôì·½·¨ÖĞ¿ÉÒÔÓĞreturnÓï¾äÂğ?
-			¿ÉÒÔ¡£Ö»²»¹ıÊÇreturn;
+	ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+		A:ï¿½ï¿½ï¿½ï¿½ã²»ï¿½á¹©ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½Ş²Î¹ï¿½ï¿½ì·½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½Ë¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©Ä¬ï¿½ï¿½ï¿½Ş²Î¹ï¿½ï¿½ì·½ï¿½ï¿½
+			ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã»¹ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½Ş²Î¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½Æ¼ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş²Î¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+		C:ï¿½ï¿½ï¿½ì·½ï¿½ï¿½Ò²ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½
+		D:ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½Ğ¿ï¿½ï¿½ï¿½ï¿½ï¿½returnï¿½ï¿½ï¿½ï¿½ï¿½?
+			ï¿½ï¿½ï¿½Ô¡ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½return;
 
 */
 class Student {
-	//³ÉÔ±±äÁ¿
-	private String name;
-	private int age;
+    //ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+    private String name;
+    private int age;
 
-	//¹¹Ôì·½·¨
-	public Student() {
-		System.out.println("ÎÒÊÇÎŞ²Î¹¹Ôì·½·¨");
-		//return;
-	}
+    //ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
+    public Student() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ş²Î¹ï¿½ï¿½ì·½ï¿½ï¿½");
+        //return;
+    }
 
-	public Student(String name) {
-		this.name = name;
-	}
+    public Student(String name) {
+        this.name = name;
+    }
 
-	public Student(int age) {
-		this.age = age;
-	}
+    public Student(int age) {
+        this.age = age;
+    }
 
-	public Student(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	//getXxx()/setXxx()·½·¨
-	public void setName(String name) {
-		this.name = name;
-	}
+    //getXxx()/setXxx()ï¿½ï¿½ï¿½ï¿½
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	//ÏÔÊ¾ËùÓĞ³ÉÔ±±äÁ¿µÄ·½·¨
-	public void show() {
-		System.out.println("ĞÕÃûÊÇ£º"+name+",ÄêÁäÊÇ£º"+age);
-	}
+    //ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½Ğ³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+    public void show() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + name + ",ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + age);
+    }
 }
 
 class StudentDemo {
-	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
-		Student s = new Student();
-		s.show();
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s = new Student();
+        s.show();
 
-		//´´½¨¶ÔÏó
-		Student s2 = new Student("ÁÖÇàÏ¼");
-		s2.show();
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        s2.show();
 
-		//´´½¨¶ÔÏó
-		Student s3 = new Student(28);
-		s3.show();
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s3 = new Student(28);
+        s3.show();
 
-		//´´½¨¶ÔÏó
-		Student s4 = new Student("ÁÖÇàÏ¼",28);
-		s4.show();
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s4 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        s4.show();
+    }
 }

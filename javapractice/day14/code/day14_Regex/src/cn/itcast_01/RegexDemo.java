@@ -3,65 +3,65 @@ package cn.itcast_01;
 import java.util.Scanner;
 
 /*
- * ÕýÔò±í´ïÊ½£º·ûºÏÒ»¶¨¹æÔòµÄ×Ö·û´®¡£
- * 
- * Á·Ï°£º
- * 		Ð£ÑéqqºÅÂë.
- *			1:ÒªÇó±ØÐëÊÇ5-15Î»Êý×Ö
- *			2:0²»ÄÜ¿ªÍ·
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½Ï°ï¿½ï¿½
+ * 		Ð£ï¿½ï¿½qqï¿½ï¿½ï¿½ï¿½.
+ *			1:Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5-15Î»ï¿½ï¿½ï¿½ï¿½
+ *			2:0ï¿½ï¿½ï¿½Ü¿ï¿½Í·
  */
 public class RegexDemo {
-	public static void main(String[] args) {
-		//¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëÄãµÄqqºÅÂë£º");
-		String qq = sc.nextLine();
-		
-		boolean flag = checkQQ(qq);
-		System.out.println("flag:"+flag);
-		
-		//Ê¹ÓÃÕýÔò±í´ïÊ½À´ÊµÏÖ
-		boolean flag2 = checkQQ2(qq);
-		System.out.println("flag2:"+flag2);
-	}
-	
-	public static boolean checkQQ2(String qq){
-		//ÕýÔò±í´ïÊ½
-		// String regex = "[1-9][0-9]{4,14}";
-		// //public boolean matches(String regex)
-		// boolean flag = qq.matches(regex);
-		// return flag;
-		
-		return qq.matches("[1-9][0-9]{4,14}");
-	}
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½qqï¿½ï¿½ï¿½ë£º");
+        String qq = sc.nextLine();
 
-	/*
-	 * ·µ»ØÖµÀàÐÍ£ºboolean ²ÎÊýÁÐ±í£ºString qq
-	 */
-	public static boolean checkQQ(String qq) {
-		boolean flag = true;
+        boolean flag = checkQQ(qq);
+        System.out.println("flag:" + flag);
 
-		// Ð£Ñé³¤¶È
-		if (qq.length() >= 5 && qq.length() <= 15) {
-			// 0²»ÄÜ¿ªÍ·
-			if (!qq.startsWith("0")) {
-				// ÊÇ·ñ¶¼ÊÇÊý×Ö×Ö·û
-				char[] chs = qq.toCharArray();
-				for (int x = 0; x < chs.length; x++) {
-					char ch = chs[x];
-					if (!Character.isDigit(ch)) {
-						flag = false;
-						break;
-					}
-				}
-			} else {
-				flag = false;
-			}
-		} else {
-			flag = false;
-		}
+        //Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Êµï¿½ï¿½
+        boolean flag2 = checkQQ2(qq);
+        System.out.println("flag2:" + flag2);
+    }
 
-		return flag;
-	}
+    public static boolean checkQQ2(String qq) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+        // String regex = "[1-9][0-9]{4,14}";
+        // //public boolean matches(String regex)
+        // boolean flag = qq.matches(regex);
+        // return flag;
+
+        return qq.matches("[1-9][0-9]{4,14}");
+    }
+
+    /*
+     * ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Í£ï¿½boolean ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½String qq
+     */
+    public static boolean checkQQ(String qq) {
+        boolean flag = true;
+
+        // Ð£ï¿½é³¤ï¿½ï¿½
+        if (qq.length() >= 5 && qq.length() <= 15) {
+            // 0ï¿½ï¿½ï¿½Ü¿ï¿½Í·
+            if (!qq.startsWith("0")) {
+                // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½
+                char[] chs = qq.toCharArray();
+                for (int x = 0; x < chs.length; x++) {
+                    char ch = chs[x];
+                    if (!Character.isDigit(ch)) {
+                        flag = false;
+                        break;
+                    }
+                }
+            } else {
+                flag = false;
+            }
+        } else {
+            flag = false;
+        }
+
+        return flag;
+    }
 }

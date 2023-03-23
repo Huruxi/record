@@ -1,50 +1,51 @@
 package cn.itcast_02;
 
 /*
- * public boolean equals(Object obj):±È½Ï¶ÔÏóÊÇ·ñÏàµÈ
- * 
- * ÎÒÃÇ·¢ÏÖÕâ¸ö½á¹ûºÍÎÒÃÇÏëµÄ²»Ì«Ò»Ñù£¬ÄÇÃ´£¬ÕâÊÇÎªÊ²Ã´ÄØ?
- * Õâ¸öÊ±ºò£¬ÎÒÃÇÒªÏëÖªµÀÎªÊ²Ã´£¬¾Í±ØÐëÈ¥¿´Ô´Âë¡£
- * ObjectÀàÖÐµÄequals()·½·¨µÄÊµÏÖ¡£
- * ¿´µ½Ô´ÂëÊÇÕâ¸öÑù×ÓµÄ£º
+ * public boolean equals(Object obj):ï¿½È½Ï¶ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½Ì«Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎªÊ²Ã´ï¿½ï¿½?
+ * ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Öªï¿½ï¿½ÎªÊ²Ã´ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½È¥ï¿½ï¿½Ô´ï¿½ë¡£
+ * Objectï¿½ï¿½ï¿½Ðµï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¡ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÓµÄ£ï¿½
  * 		 public boolean equals(Object obj) {
  *			return (this == obj);  //(s1 == s2);
  *		 }
- * 
- * 
- * ÃæÊÔÌâ£º
- * 		==ºÍequals()µÄÇø±ð?
- * 		==:
- * 			»ù±¾ÀàÐÍ£º±È½ÏµÄÊÇ»ù±¾ÀàÐÍµÄÖµÊÇ·ñÏàÍ¬
- * 			ÒýÓÃÀàÐÍ£º±È½ÏµÄÊÇÒýÓÃÀàÐÍµÄµØÖ·ÖµÊÇ·ñÏàÍ¬
- *		equals():
- *			ÒýÓÃÀàÐÍ¡£Ä¬ÈÏÇé¿öÏÂ£¬±È½ÏµÄÊÇÒýÓÃÀàÐÍµÄµØÖ·ÊÇ·ñÏàÍ¬¡£
  *
- * Ò»°ãÀ´Ëµ£¬±È½ÏµØÖ·µÄÒâÒå²»´ó£¬ËùÒÔÎÒÃÇ»áÖØÐ´¸Ã·½·¨¡£
- * Èç¹ûÖØÐ´ÄØ?
- * 		ÎÒÃÇÖØÐ´µÄ»ù±¾Ë¼Ïë¾ÍÊÇÈÃ¶ÔÏó±È½Ï³ÉÔ±±äÁ¿µÄÖµÊÇ·ñÏàÍ¬¡£
- * 		Êµ¼Ê¿ª·¢ÖÐ£¬ÎÒÃÇ¶¼ÊÇ×Ô¶¯Éú³É¡£
- * 
- * ×Ö·û´®µÄ±È½Ï£º
- * 		×Ö·û´®±¾ÉíÒ²ÊÇÒ»¸öÀà£¬ÊÇÒýÓÃÀàÐÍ¡£
- * 		ËûÃÇµÄ±È½ÏÓÃµÄÊÇequals()·½·¨£¬×Ö·û´®ÀàÖØÐ´ÁË¸Ã·½·¨£¬±È½ÏµÄÊÇ×Ö·û´®µÄÄÚÈÝÊÇ·ñÏàÍ¬¡£
- * 
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+ * 		==ï¿½ï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 		==:
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½È½Ïµï¿½ï¿½Ç»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Öµï¿½Ç·ï¿½ï¿½ï¿½Í¬
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½È½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍµÄµï¿½Ö·Öµï¿½Ç·ï¿½ï¿½ï¿½Í¬
+ *		equals():
+ *			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½È½Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍµÄµï¿½Ö·ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+ *
+ * Ò»ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½È½Ïµï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½å²»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç»ï¿½ï¿½ï¿½Ð´ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½?
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ä»ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½È½Ï³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+ * 		Êµï¿½Ê¿ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½É¡ï¿½
+ *
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä±È½Ï£ï¿½
+ * 		ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½Ò»ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
+ * 		ï¿½ï¿½ï¿½ÇµÄ±È½ï¿½ï¿½Ãµï¿½ï¿½ï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ë¸Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½Ïµï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½
+ *
  */
 public class StudentDemo {
-	public static void main(String[] args) {
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
-		Student s2 = new Student("ÁÖÇàÏ¼", 28);
-		Student s3 = new Student("ÁÖÇàÏ¼", 29);
+    public static void main(String[] args) {
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 29);
 
-		// System.out.println(s1 == s1);
-		// System.out.println(s1 == s2);
-		System.out.println(s1.equals(s2));
-		System.out.println(s1.equals(s3));
-		System.out.println(s1.equals(s1));
-		
-		Demo d =  new Demo();
-		System.out.println(s1.equals(d)); //ClassCastException
-	}
+        // System.out.println(s1 == s1);
+        // System.out.println(s1 == s2);
+        System.out.println(s1.equals(s2));
+        System.out.println(s1.equals(s3));
+        System.out.println(s1.equals(s1));
+
+        Demo d = new Demo();
+        System.out.println(s1.equals(d)); //ClassCastException
+    }
 }
 
-class Demo{}
+class Demo {
+}

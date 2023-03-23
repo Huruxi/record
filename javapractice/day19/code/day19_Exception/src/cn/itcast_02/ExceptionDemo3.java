@@ -1,28 +1,28 @@
 package cn.itcast_02;
 
 /*
- * throws£ºËü¾ÍÊÇÔÚ·½·¨ÉÏÉùÃ÷Òì³££¬¸æËßÄã£¬ÎÒÕâ¸ö·½·¨ÓÐÎÊÌâ¡£ÄãÊ¹ÓÃµÄÊ±ºòÒª×¢ÒâÁË¡£
+ * throwsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¡£ï¿½ï¿½Ê¹ï¿½Ãµï¿½Ê±ï¿½ï¿½Òª×¢ï¿½ï¿½ï¿½Ë¡ï¿½
  */
 public class ExceptionDemo3 {
-	public static void main(String[] args) {
-		// try {
-		// method();
-		// } catch (ArithmeticException e) {
-		// System.out.println("³ýÊý²»ÄÜÎª0");
-		// }
-		method();
+    public static void main(String[] args) {
+        // try {
+        // method();
+        // } catch (ArithmeticException e) {
+        // System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0");
+        // }
+        method();
 
-		System.out.println("haha");
-	}
+        System.out.println("haha");
+    }
 
-	public static void method() throws ArithmeticException {
-		System.out.println("hello");
+    public static void method() throws ArithmeticException {
+        System.out.println("hello");
 
-		int a = 10;
-		int b = 0;
-		System.out.println(a / b);
+        int a = 10;
+        int b = 0;
+        System.out.println(a / b);
 
-		System.out.println("world");
-	}
+        System.out.println("world");
+    }
 
 }

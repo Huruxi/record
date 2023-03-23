@@ -1,17 +1,17 @@
 package cn.itcast_04;
 
 /*
- * public static void yield():ÀñÈÃÏß³Ì,ÔÝÍ£µ±Ç°ÕýÔÚÖ´ÐÐµÄÏß³Ì¶ÔÏó£¬²¢Ö´ÐÐÆäËûÏß³Ì¡£ 
+ * public static void yield():ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½,ï¿½ï¿½Í£ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ðµï¿½ï¿½ß³Ì¶ï¿½ï¿½ó£¬²ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì¡ï¿½
  */
 public class ThreadYieldDemo {
-	public static void main(String[] args) {
-		ThreadYield ty1 = new ThreadYield();
-		ThreadYield ty2 = new ThreadYield();
+    public static void main(String[] args) {
+        ThreadYield ty1 = new ThreadYield();
+        ThreadYield ty2 = new ThreadYield();
 
-		ty1.setName("¿×ÈÚ");
-		ty2.setName("Àæ");
+        ty1.setName("ï¿½ï¿½ï¿½ï¿½");
+        ty2.setName("ï¿½ï¿½");
 
-		ty1.start();
-		ty2.start();
-	}
+        ty1.start();
+        ty2.start();
+    }
 }

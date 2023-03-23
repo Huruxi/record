@@ -1,61 +1,61 @@
 package cn.itcast_03;
 
 /*
- * ²éÕÒÔªËØ£º
- * 		»ù±¾²éÕÒ  Êý×éÔªËØÎÞÐò
- *		¶þ·Ö²éÕÒ  Êý×éÔªËØÓÐÐò(ÕÛ°ë²éÕÒ)
+ * ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Û°ï¿½ï¿½ï¿½ï¿½)
  */
 public class ArrayDemo {
-	public static void main(String[] args) {
-		// int[] arr = { 24, 69, 80, 57, 13 };
-		// ÐèÇó£ºÎÒÒª²éÕÒ80ÔÚÕâ¸öÊý×éÖÐµÄË÷Òý
+    public static void main(String[] args) {
+        // int[] arr = { 24, 69, 80, 57, 13 };
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½80ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 
-		// ÐÂµÄÊý×é
-		int[] arr = { 13, 24, 57, 69, 80 };
-		// ÐèÇó£ºÎÒÒª²éÕÒ80ÔÚÕâ¸öÊý×éÖÐµÄË÷Òý
-		int index = getIndex(arr, 57);
-		System.out.println(index);
+        // ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = {13, 24, 57, 69, 80};
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½80ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
+        int index = getIndex(arr, 57);
+        System.out.println(index);
 
-		index = getIndex(arr, 88);
-		System.out.println(index);
+        index = getIndex(arr, 88);
+        System.out.println(index);
 
-	}
+    }
 
-	public static int getIndex(int[] arr, int value) {
-		int minIndex = 0;
-		int maxIndex = arr.length - 1;
-		int middleIndex = (minIndex + maxIndex) / 2;
+    public static int getIndex(int[] arr, int value) {
+        int minIndex = 0;
+        int maxIndex = arr.length - 1;
+        int middleIndex = (minIndex + maxIndex) / 2;
 
-		while (value != arr[middleIndex]) {
-			if (value > arr[middleIndex]) {
-				minIndex = middleIndex + 1;
-			} else if (value < arr[middleIndex]) {
-				maxIndex = middleIndex - 1;
-			}
+        while (value != arr[middleIndex]) {
+            if (value > arr[middleIndex]) {
+                minIndex = middleIndex + 1;
+            } else if (value < arr[middleIndex]) {
+                maxIndex = middleIndex - 1;
+            }
 
-			// ¼ÓÒ»¸öÅÐ¶Ï
-			if (maxIndex < minIndex) {
-				return -1;
-			}
+            // ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð¶ï¿½
+            if (maxIndex < minIndex) {
+                return -1;
+            }
 
-			// ÖØÐ´¼ÆËãÖÐ¼äË÷ÒýÖµ
-			middleIndex = (minIndex + maxIndex) / 2;
-		}
+            // ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+            middleIndex = (minIndex + maxIndex) / 2;
+        }
 
-		return middleIndex;
-	}
+        return middleIndex;
+    }
 
-	// ÆÕÍ¨²éÕÒ
-	// public static int getIndex(int[] arr, int value) {
-	// int index = -1;
-	//
-	// for (int x = 0; x < arr.length; x++) {
-	// if (arr[x] == value) {
-	// index = x;
-	// break;
-	// }
-	// }
-	//
-	// return index;
-	// }
+    // ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½
+    // public static int getIndex(int[] arr, int value) {
+    // int index = -1;
+    //
+    // for (int x = 0; x < arr.length; x++) {
+    // if (arr[x] == value) {
+    // index = x;
+    // break;
+    // }
+    // }
+    //
+    // return index;
+    // }
 }

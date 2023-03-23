@@ -4,23 +4,23 @@ package cn.itcast_03;
  * protected Object clone()
  */
 public class StudentDemo {
-	public static void main(String[] args) throws CloneNotSupportedException {
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
+    public static void main(String[] args) throws CloneNotSupportedException {
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
 
-		Object obj = s1.clone();
-		Student s2 = (Student) obj;
+        Object obj = s1.clone();
+        Student s2 = (Student) obj;
 
-		System.out.println(s1.getName() + "---" + s1.getAge());
-		System.out.println(s2.getName() + "---" + s2.getAge());
+        System.out.println(s1.getName() + "---" + s1.getAge());
+        System.out.println(s2.getName() + "---" + s2.getAge());
 
-		Student s3 = s1;
-		System.out.println(s3.getName() + "---" + s3.getAge());
-		System.out.println("--------------------------------");
+        Student s3 = s1;
+        System.out.println(s3.getName() + "---" + s3.getAge());
+        System.out.println("--------------------------------");
 
-		s1.setName("ÕÅÂüÓñ");
+        s1.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
-		System.out.println(s1.getName() + "---" + s1.getAge());
-		System.out.println(s2.getName() + "---" + s2.getAge());
-		System.out.println(s3.getName() + "---" + s3.getAge());
-	}
+        System.out.println(s1.getName() + "---" + s1.getAge());
+        System.out.println(s2.getName() + "---" + s2.getAge());
+        System.out.println(s3.getName() + "---" + s3.getAge());
+    }
 }

@@ -1,53 +1,53 @@
 package cn.itcast_01;
 
 /*
- * Object:ÊÇÀà²ã´Î½á¹¹µÄ¸ùÀà£¬ËùÓÐÀà¶¼Ö±½Ó»òÕß¼ä½ÓµÄ¼Ì³Ð×Ô¸ÃÀà¡£
- * 
- * ObjectÀàµÄ·½·¨£º
- * public int hashCode():·µ»Ø¸Ã¶ÔÏóµÄ¹þÏ£ÂëÖµ¡£
- * 		¹þÏ£Öµ²»ÊÇÊµ¼ÊµÄµØÖ·Öµ£¬Ò»°ãÎÒÃÇ°ÑËüÀí½âÎªµØÖ·Öµ¡£ÒòÎªËüÊÇ¸ù¾ÝµØÖ·Öµ»»Ëã³öÀ´µÄÒ»¸öÖµ¡£
- * 		¾ÙÀý£º401£¬401
- * public final Class<?> getClass():·µ»Ø´Ë Object µÄÔËÐÐÊ±Àà¡£
- * 		public String getName():·µ»Ø¸Ã¶ÔÏó¶ÔÓ¦µÄÀà/³éÏóÀà/½Ó¿ÚµÄÃû³Æ¡£
- * public String toString():·µ»Ø¸Ã¶ÔÏóµÄ×Ö·û´®±íÊ¾¡£
+ * Object:ï¿½ï¿½ï¿½ï¿½ï¿½Î½á¹¹ï¿½Ä¸ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½à¶¼Ö±ï¿½Ó»ï¿½ï¿½ß¼ï¿½ÓµÄ¼Ì³ï¿½ï¿½Ô¸ï¿½ï¿½à¡£
+ *
+ * Objectï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * public int hashCode():ï¿½ï¿½ï¿½Ø¸Ã¶ï¿½ï¿½ï¿½Ä¹ï¿½Ï£ï¿½ï¿½Öµï¿½ï¿½
+ * 		ï¿½ï¿½Ï£Öµï¿½ï¿½ï¿½ï¿½Êµï¿½ÊµÄµï¿½Ö·Öµï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ö·Öµï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ç¸ï¿½ï¿½Ýµï¿½Ö·Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Öµï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½401ï¿½ï¿½401
+ * public final Class<?> getClass():ï¿½ï¿½ï¿½Ø´ï¿½ Object ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½à¡£
+ * 		public String getName():ï¿½ï¿½ï¿½Ø¸Ã¶ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½/ï¿½Ó¿Úµï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
+ * public String toString():ï¿½ï¿½ï¿½Ø¸Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½
  * 		getClass().getName() + '@' + Integer.toHexString(hashCode())
- * 
+ *
  * 		Integer
- * 			public static String toHexString(int i):·µ»ØÒ»¸öÕûÊýµÄÊ®Áù½øÖÆµÄ×Ö·û´®±íÊ¾ÐÎÊ½
- * 
- * 		Õâ¸ö·½·¨ÊÇÃ»ÓÐÈÎºÎÒâÒåµÄ£¬½¨ÒéÖØÐ´´Ë·½·¨¡£
- * 			A:×Ô¼ºÊÖ¶¯Ð´£¬µ«ÊÇÐ§¹û²»ºÃ¿´£¬ËùÒÔ²»×Ô¼ºÐ´¡£
- * 			B:×Ô¶¯Éú³É£¬Ð§¹û»¹ÐÐ£¬ÍÆ¼ö·½Ê½¡£
- * 
+ * 			public static String toHexString(int i):ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
+ *
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			A:ï¿½Ô¼ï¿½ï¿½Ö¶ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ô¼ï¿½Ð´ï¿½ï¿½
+ * 			B:ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½É£ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½Æ¼ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
+ *
  * public boolean equals(Object obj)
  * protected void finalize()
  * protected Object clone()
  */
 public class StudentDemo {
-	public static void main(String[] args) {
-		Student s1 = new Student();
-		System.out.println(s1.hashCode()); // 2100664515
-		Student s2 = new Student();
-		System.out.println(s2.hashCode()); // 1237346925
-		System.out.println("------------");
+    public static void main(String[] args) {
+        Student s1 = new Student();
+        System.out.println(s1.hashCode()); // 2100664515
+        Student s2 = new Student();
+        System.out.println(s2.hashCode()); // 1237346925
+        System.out.println("------------");
 
-		Student s3 = new Student();
-		Class c = s3.getClass();
-		String name = c.getName();
-		System.out.println(name); // cn.itcast_01.Student
-		System.out.println("------------");
+        Student s3 = new Student();
+        Class c = s3.getClass();
+        String name = c.getName();
+        System.out.println(name); // cn.itcast_01.Student
+        System.out.println("------------");
 
-		Student s4 = new Student();
-		// Èç¹ûÄãÖ±½ÓÊä³öÒ»¸ö¶ÔÏóµÄÃû³Æ£¬ÆäÊµÊä³öµÄÊÇ¸Ã¶ÔÏóµ÷ÓÃµÄtoString()·½·¨ºóµÄ×Ö·û´®
-		System.out.println(s4); // cn.itcast_01.Student@79f1d448
-		// System.out.println(s4.toString()); // cn.itcast_01.Student@79f1d448
+        Student s4 = new Student();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        System.out.println(s4); // cn.itcast_01.Student@79f1d448
+        // System.out.println(s4.toString()); // cn.itcast_01.Student@79f1d448
 
-		// cn.itcast_01.Student@79f1d448
-		// String s = s4.getClass().getName() +"@"+
-		// Integer.toHexString(s4.hashCode());
-		// System.out.println(s);
-		
-		Student s5 = new Student("ÁÖÇàÏ¼",28);
-		System.out.println(s5);
-	}
+        // cn.itcast_01.Student@79f1d448
+        // String s = s4.getClass().getName() +"@"+
+        // Integer.toHexString(s4.hashCode());
+        // System.out.println(s);
+
+        Student s5 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        System.out.println(s5);
+    }
 }

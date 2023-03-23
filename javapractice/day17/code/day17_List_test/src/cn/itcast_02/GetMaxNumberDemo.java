@@ -5,46 +5,46 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
- * ¼üÅÌÂ¼Èë¶à¸öÊý¾Ý£¬ÒÔ0½áÊø£¬ÒªÇóÔÚ¿ØÖÆÌ¨Êä³öÕâ¶à¸öÊý¾ÝÖÐµÄ×î´óÖµ
- * 
- * ·ÖÎö£º
- * 		A:¶¨Òå¼¯ºÏ£¬ÓÃÓÚ´æ´¢¶à¸öÊý¾Ý
- * 		B:Ñ­»·¼üÅÌÂ¼ÈëÊý¾Ý£¬ÓÃwhile(true){}
- * 		C:ÅÐ¶Ï¼üÅÌÂ¼ÈëµÄÊý¾ÝÊÇ·ñÊÇ0
- * 			ÊÇ£ºbreak
- * 			·ñ£ºÌí¼Óµ½¼¯ºÏ
- * 		D:°Ñ¼¯ºÏ×ª³ÉÊý×é
- * 		E:¶ÔÊý×é½øÐÐÅÅÐò(ÉýÐò)
- * 		F:»ñÈ¡Êý×éÖÐµÄ×îºóÒ»¸öÔªËØ¼´¿É
- * 		
+ * ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Öµ
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½å¼¯ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ú´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½while(true){}
+ * 		C:ï¿½Ð¶Ï¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½0
+ * 			ï¿½Ç£ï¿½break
+ * 			ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		D:ï¿½Ñ¼ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		E:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½)
+ * 		F:ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½Ø¼ï¿½ï¿½ï¿½
+ *
  */
 public class GetMaxNumberDemo {
-	public static void main(String[] args) {
-		// ¶¨Òå¼¯ºÏ£¬ÓÃÓÚ´æ´¢¶à¸öÊý¾Ý
-		ArrayList<Integer> array = new ArrayList<Integer>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½å¼¯ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ú´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ArrayList<Integer> array = new ArrayList<Integer>();
 
-		// Ñ­»·¼üÅÌÂ¼ÈëÊý¾Ý£¬ÓÃwhile(true){}
-		Scanner sc = new Scanner(System.in);
-		while (true) {
-			int number = sc.nextInt();
+        // Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½while(true){}
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            int number = sc.nextInt();
 
-			// ÅÐ¶Ï¼üÅÌÂ¼ÈëµÄÊý¾ÝÊÇ·ñÊÇ0
-			if (number == 0) {
-				break;
-			} else {
-				array.add(number);
-			}
-		}
+            // ï¿½Ð¶Ï¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½0
+            if (number == 0) {
+                break;
+            } else {
+                array.add(number);
+            }
+        }
 
-		// °Ñ¼¯ºÏ×ª³ÉÊý×é
-		// <T> T[] toArray(T[] a)
-		Integer[] i = new Integer[array.size()];
-		Integer[] iArray = array.toArray(i);
+        // ï¿½Ñ¼ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // <T> T[] toArray(T[] a)
+        Integer[] i = new Integer[array.size()];
+        Integer[] iArray = array.toArray(i);
 
-		// ¶ÔÊý×é½øÐÐÅÅÐò(ÉýÐò)
-		Arrays.sort(iArray);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½)
+        Arrays.sort(iArray);
 
-		// »ñÈ¡Êý×éÖÐµÄ×îºóÒ»¸öÔªËØ¼´¿É
-		System.out.println("×î´óÖµÊÇ£º" + iArray[iArray.length - 1]);
-	}
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½Ø¼ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½Öµï¿½Ç£ï¿½" + iArray[iArray.length - 1]);
+    }
 }

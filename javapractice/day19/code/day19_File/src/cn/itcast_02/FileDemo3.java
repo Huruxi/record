@@ -3,22 +3,22 @@ package cn.itcast_02;
 import java.io.File;
 
 /*
- * 重命名功能:public boolean renameTo(File dest)
- * 路径相同：改名
- * 路径不同：剪切并改名
+ * 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷:public boolean renameTo(File dest)
+ * 路锟斤拷锟斤拷同锟斤拷锟斤拷锟斤拷
+ * 路锟斤拷锟斤拷同锟斤拷锟斤拷锟叫诧拷锟斤拷锟斤拷
  */
 public class FileDemo3 {
-	public static void main(String[] args) {
-		// 需求：我要把a.txt的文件名称改为b.txt
-		// 创建对象
-		// File file = new File("a.txt");
-		// // 目标
-		// File dest = new File("b.txt");
-		// // 调用方法
-		// System.out.println("renameTo:" + file.renameTo(dest));
+    public static void main(String[] args) {
+        // 锟斤拷锟斤拷锟斤拷要锟斤拷a.txt锟斤拷锟侥硷拷锟斤拷锟狡革拷为b.txt
+        // 锟斤拷锟斤拷锟斤拷锟斤拷
+        // File file = new File("a.txt");
+        // // 目锟斤拷
+        // File dest = new File("b.txt");
+        // // 锟斤拷锟矫凤拷锟斤拷
+        // System.out.println("renameTo:" + file.renameTo(dest));
 
-		File file = new File("b.txt");
-		File dest = new File("e:\\a.txt");
-		System.out.println("renameTo:" + file.renameTo(dest));
-	}
+        File file = new File("b.txt");
+        File dest = new File("e:\\a.txt");
+        System.out.println("renameTo:" + file.renameTo(dest));
+    }
 }

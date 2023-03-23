@@ -8,70 +8,70 @@ import java.util.Scanner;
 import java.util.TreeSet;
 
 /*
- * ¼üÅÌÂ¼Èë5¸öÑ§ÉúĞÅÏ¢(ĞÕÃû,ÓïÎÄ³É¼¨,ÊıÑ§³É¼¨,Ó¢Óï³É¼¨),°´ÕÕ×Ü·Ö´Ó¸ßµ½µÍ´æÈëÎÄ±¾ÎÄ¼ş
- * 
- * ·ÖÎö£º
- * 		A:´´½¨Ñ§ÉúÀà
- * 		B:Ê¹ÓÃTreeSet¼¯ºÏ´æ´¢Ñ§ÉúĞÅÏ¢£¬²¢°´ÕÕ×Ü·ÖÅÅĞò£¬ÓÃ±È½ÏÆ÷ÊµÏÖ
- * 		C:¼üÅÌÂ¼ÈëÑ§ÉúĞÅÏ¢
- * 		D:±éÀúSet¼¯ºÏ£¬°ÑÑ§ÉúĞÅÏ¢´æ´¢µ½ÎÄ±¾ÎÄ¼ş
+ * ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½5ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢(ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ä³É¼ï¿½,ï¿½ï¿½Ñ§ï¿½É¼ï¿½,Ó¢ï¿½ï¿½É¼ï¿½),ï¿½ï¿½ï¿½ï¿½ï¿½Ü·Ö´Ó¸ßµï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½
+ * 		B:Ê¹ï¿½ï¿½TreeSetï¿½ï¿½ï¿½Ï´æ´¢Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±È½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+ * 		C:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢
+ * 		D:ï¿½ï¿½ï¿½ï¿½Setï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½æ´¢ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
  */
 public class StudentDemo {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨Set¼¯ºÏ
-		TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() {
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½Setï¿½ï¿½ï¿½ï¿½
+        TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() {
 
-			@Override
-			public int compare(Student s1, Student s2) {
-				int num = s2.getSum() - s1.getSum();
-				int num2 = num == 0 ? s1.getName().compareTo(s2.getName())
-						: num;
-				return num2;
-			}
-		});
+            @Override
+            public int compare(Student s1, Student s2) {
+                int num = s2.getSum() - s1.getSum();
+                int num2 = num == 0 ? s1.getName().compareTo(s2.getName())
+                        : num;
+                return num2;
+            }
+        });
 
-		System.out.println("Ñ§ÉúÂ¼Èë¿ªÊ¼----------------------");
-		// ¼üÅÌÂ¼ÈëÊı¾İ
-		for (int x = 1; x <= 5; x++) {
-			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄĞÕÃû£º");
-			String name = sc.nextLine();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÓïÎÄ³É¼¨£º");
-			int chinese = sc.nextInt();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÊıÑ§³É¼¨£º");
-			int math = sc.nextInt();
-			System.out.println("ÇëÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÓ¢Óï³É¼¨£º");
-			int english = sc.nextInt();
+        System.out.println("Ñ§ï¿½ï¿½Â¼ï¿½ë¿ªÊ¼----------------------");
+        // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (int x = 1; x <= 5; x++) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + x + "ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+            String name = sc.nextLine();
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + x + "ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³É¼ï¿½ï¿½ï¿½");
+            int chinese = sc.nextInt();
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + x + "ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½É¼ï¿½ï¿½ï¿½");
+            int math = sc.nextInt();
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½" + x + "ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ó¢ï¿½ï¿½É¼ï¿½ï¿½ï¿½");
+            int english = sc.nextInt();
 
-			// ´´½¨Ñ§Éú¶ÔÏó
-			Student s = new Student();
-			s.setName(name);
-			s.setChinese(chinese);
-			s.setMath(math);
-			s.setEnglish(english);
+            // ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            Student s = new Student();
+            s.setName(name);
+            s.setChinese(chinese);
+            s.setMath(math);
+            s.setEnglish(english);
 
-			// °ÑÑ§ÉúÌí¼Óµ½¼¯ºÏ
-			ts.add(s);
-		}
-		System.out.println("Ñ§ÉúÂ¼Èë½áÊø----------------------");
+            // ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+            ts.add(s);
+        }
+        System.out.println("Ñ§ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½----------------------");
 
-		// °ÑÑ§ÉúĞÅÏ¢´æ´¢µ½ÎÄ±¾ÎÄ¼ş
-		BufferedWriter bw = new BufferedWriter(new FileWriter("students.txt"));
-		bw.write("ĞÕÃû,ÓïÎÄ³É¼¨,ÊıÑ§³É¼¨,Ó¢Óï³É¼¨");
-		bw.newLine();
-		bw.flush();
+        // ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½æ´¢ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+        BufferedWriter bw = new BufferedWriter(new FileWriter("students.txt"));
+        bw.write("ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ä³É¼ï¿½,ï¿½ï¿½Ñ§ï¿½É¼ï¿½,Ó¢ï¿½ï¿½É¼ï¿½");
+        bw.newLine();
+        bw.flush();
 
-		for (Student s : ts) {
-			StringBuilder sb = new StringBuilder();
-			sb.append(s.getName()).append(",").append(s.getChinese())
-					.append(",").append(s.getMath()).append(",")
-					.append(s.getEnglish());
-			bw.write(sb.toString());
-			bw.newLine();
-			bw.flush();
-		}
+        for (Student s : ts) {
+            StringBuilder sb = new StringBuilder();
+            sb.append(s.getName()).append(",").append(s.getChinese())
+                    .append(",").append(s.getMath()).append(",")
+                    .append(s.getEnglish());
+            bw.write(sb.toString());
+            bw.newLine();
+            bw.flush();
+        }
 
-		bw.close();
-		System.out.println("Êı¾İ³É¹¦Ğ´ÈëÎÄ¼ş");
-	}
+        bw.close();
+        System.out.println("ï¿½ï¿½ï¿½İ³É¹ï¿½Ğ´ï¿½ï¿½ï¿½Ä¼ï¿½");
+    }
 }

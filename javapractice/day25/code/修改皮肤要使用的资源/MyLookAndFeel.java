@@ -1,31 +1,32 @@
 package cn.itcast_01;
-//ÕâÀïÃæ¶¨ÒåÁË³£¼ûµÄÒªÊ¹ÓÃµÄÆ¤·ôµÄ×Ö·û´®Â·¾¶¡£
+
+//ï¿½ï¿½ï¿½ï¿½ï¿½æ¶¨ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ¹ï¿½Ãµï¿½Æ¤ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½
 public abstract class MyLookAndFeel {
-	// ÏµÍ³×Ô´øÆ¤·ô,5ÖÖ¶¼ÄÜÓÃ
-	public static String SYS_METAL = "javax.swing.plaf.metal.MetalLookAndFeel";
-	public static String SYS_NIMBUS = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel";
-	// ÓÐ¸öÐÔ
-	public static String SYS_CDE_MOTIF = "com.sun.java.swing.plaf.motif.MotifLookAndFeel";
-	public static String SYS_WINDOWS = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
-	public static String SYS_WINDOWS_CLASSIC = "com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel";
-	// JIattoo jar°ü×ÊÔ´
-	public static String JTATTOO_ACRYL = "com.jtattoo.plaf.acryl.AcrylLookAndFeel";
-	public static String JTATTOO_AERO = "com.jtattoo.plaf.aero.AeroLookAndFeel";
-	// »¹¿ÉÒÔ
-	public static String JTATTOO_ALUMINUM = "com.jtattoo.plaf.aluminium.AluminiumLookAndFeel";
-	// ºÜÏ²»¶
-	public static String JTATTOO_BERNSTEIN = "com.jtattoo.plaf.bernstein.BernsteinLookAndFeel";
-	public static String JTATTOO_FAST = "com.jtattoo.plaf.fast.FastLookAndFeel";
-	// ÓÐ¸öÐÔ
-	public static String JTATTOO_HIFI = "com.jtattoo.plaf.hifi.HiFiLookAndFeel";
-	public static String JTATTOO_LUNA = "com.jtattoo.plaf.luna.LunaLookAndFeel";
-	// ºÜÏ²»¶
-	public static String JTATTOO_MCWIN = "com.jtattoo.plaf.mcwin.McWinLookAndFeel";
-	public static String JTATTOO_MINT = "com.jtattoo.plaf.mint.MintLookAndFeel";
-	// ÓÐ¸öÐÔ
-	public static String JTATTOO_NOIRE = "com.jtattoo.plaf.noire.NoireLookAndFeel";
-	public static String JTATTOO_SMART = "com.jtattoo.plaf.smart.SmartLookAndFeel";
-	// liquidlnf.jar°ü×ÊÔ´
-	// ºÜÏ²»¶
-	public static String LIQUIDINF = "com.birosoft.liquid.LiquidLookAndFeel";
+    // ÏµÍ³ï¿½Ô´ï¿½Æ¤ï¿½ï¿½,5ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static String SYS_METAL = "javax.swing.plaf.metal.MetalLookAndFeel";
+    public static String SYS_NIMBUS = "com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel";
+    // ï¿½Ð¸ï¿½ï¿½ï¿½
+    public static String SYS_CDE_MOTIF = "com.sun.java.swing.plaf.motif.MotifLookAndFeel";
+    public static String SYS_WINDOWS = "com.sun.java.swing.plaf.windows.WindowsLookAndFeel";
+    public static String SYS_WINDOWS_CLASSIC = "com.sun.java.swing.plaf.windows.WindowsClassicLookAndFeel";
+    // JIattoo jarï¿½ï¿½ï¿½ï¿½Ô´
+    public static String JTATTOO_ACRYL = "com.jtattoo.plaf.acryl.AcrylLookAndFeel";
+    public static String JTATTOO_AERO = "com.jtattoo.plaf.aero.AeroLookAndFeel";
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static String JTATTOO_ALUMINUM = "com.jtattoo.plaf.aluminium.AluminiumLookAndFeel";
+    // ï¿½ï¿½Ï²ï¿½ï¿½
+    public static String JTATTOO_BERNSTEIN = "com.jtattoo.plaf.bernstein.BernsteinLookAndFeel";
+    public static String JTATTOO_FAST = "com.jtattoo.plaf.fast.FastLookAndFeel";
+    // ï¿½Ð¸ï¿½ï¿½ï¿½
+    public static String JTATTOO_HIFI = "com.jtattoo.plaf.hifi.HiFiLookAndFeel";
+    public static String JTATTOO_LUNA = "com.jtattoo.plaf.luna.LunaLookAndFeel";
+    // ï¿½ï¿½Ï²ï¿½ï¿½
+    public static String JTATTOO_MCWIN = "com.jtattoo.plaf.mcwin.McWinLookAndFeel";
+    public static String JTATTOO_MINT = "com.jtattoo.plaf.mint.MintLookAndFeel";
+    // ï¿½Ð¸ï¿½ï¿½ï¿½
+    public static String JTATTOO_NOIRE = "com.jtattoo.plaf.noire.NoireLookAndFeel";
+    public static String JTATTOO_SMART = "com.jtattoo.plaf.smart.SmartLookAndFeel";
+    // liquidlnf.jarï¿½ï¿½ï¿½ï¿½Ô´
+    // ï¿½ï¿½Ï²ï¿½ï¿½
+    public static String LIQUIDINF = "com.birosoft.liquid.LiquidLookAndFeel";
 }

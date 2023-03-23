@@ -3,42 +3,42 @@ package cn.itcast_03;
 import java.util.LinkedList;
 
 /*
- * LinkedListµÄÌØÓÐ¹¦ÄÜ£º
- * 		A:Ìí¼Ó¹¦ÄÜ
+ * LinkedListï¿½ï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½Ü£ï¿½
+ * 		A:ï¿½ï¿½Ó¹ï¿½ï¿½ï¿½
  * 			void addFirst()
  * 			void addLast()
- * 		B:ÒÆ³ý¹¦ÄÜ
+ * 		B:ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½
  * 			Object removeFirst()
  * 			Object removeLast()
- * 		C:»ñÈ¡¹¦ÄÜ
+ * 		C:ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
  * 			Object getFirst()
  * 			Object getLast()
  */
 public class LinkedListDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		LinkedList link = new LinkedList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        LinkedList link = new LinkedList();
 
-		// Ìí¼ÓÔªËØ
-		link.add("hello");
-		link.add("world");
-		link.add("java");
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        link.add("hello");
+        link.add("world");
+        link.add("java");
 
-		// void addFirst()
-		// void addLast()
-		// link.addFirst("android");
-		// link.addLast("javaee");
+        // void addFirst()
+        // void addLast()
+        // link.addFirst("android");
+        // link.addLast("javaee");
 
-		// Object removeFirst()
-		// Object removeLast()
-		// System.out.println("removeFirst:" + link.removeFirst());
-		// System.out.println("removeLast:" + link.removeLast());
+        // Object removeFirst()
+        // Object removeLast()
+        // System.out.println("removeFirst:" + link.removeFirst());
+        // System.out.println("removeLast:" + link.removeLast());
 
-		// Object getFirst()
-		// Object getLast()
-		System.out.println("getFirst:" + link.getFirst());
-		System.out.println("getLast:" + link.getLast());
+        // Object getFirst()
+        // Object getLast()
+        System.out.println("getFirst:" + link.getFirst());
+        System.out.println("getLast:" + link.getLast());
 
-		System.out.println("link:" + link);
-	}
+        System.out.println("link:" + link);
+    }
 }

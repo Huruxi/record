@@ -4,62 +4,62 @@ import java.util.Comparator;
 import java.util.TreeSet;
 
 /*
- * TreeSetÊÇÈçºÎ±£Ö¤ÔªËØÅÅÐòµÄÄØ?ÓÖÊÇÈçºÎ±£Ö¤ÔªËØÎ¨Ò»µÄÄØ?
- * 
- * ÐèÇó£ºÓÃTreeSet´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÒªÇóÅÅÐòºÍÈ¥µôÖØ¸´Öµ¡£
- * a:Èç¹û³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒ¾ÍÈÏÎªÊÇÖØ¸´ÔªËØ
- * b:Çë°´ÕÕÄêÁäµÄ´ÓÐ¡µ½´ó½øÐÐÅÅÐò
- * 
- * ×Ü½á£ºTreeSet±£Ö¤ÔªËØÎ¨Ò»ºÍÅÅÐò 
- * Î¨Ò»ÐÔ£º¸ù¾Ý±È½ÏµÄ·µ»ØÖµÊÇ·ñÊÇ0À´ÅÐ¶ÏÔªËØÊÇ·ñÊÇÎ¨Ò»µÄ
- * ÅÅÐò£ºÁ½ÖÖ·½Ê½
- * 		A:×ÔÈ»ÅÅÐò	(ÔªËØ¾ß±¸±È½ÏÐÔ)
- * 			ÈÃ¶ÔÏóËùÊôµÄÀàÊµÏÖComparable½Ó¿Ú
- * 		B:±È½ÏÆ÷ÅÅÐò (¼¯ºÏ¾ß±¸±È½ÏÐÔ)
- * 			´´½¨¼¯ºÏ¶ÔÏóµÄÊ±ºò£¬½ÓÊÜComparator½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó¡£Ò»°ãÎÒÃÇÊ¹ÓÃµÄÊÇÄäÃûÄÚ²¿ÀàÊµÏÖ¡£
+ * TreeSetï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½ï¿½Î¨Ò»ï¿½ï¿½ï¿½ï¿½?
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TreeSetï¿½æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ø¸ï¿½Öµï¿½ï¿½
+ * a:ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ò¾ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ø¸ï¿½Ôªï¿½ï¿½
+ * b:ï¿½ë°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½Ü½á£ºTreeSetï¿½ï¿½Ö¤Ôªï¿½ï¿½Î¨Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Î¨Ò»ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ý±È½ÏµÄ·ï¿½ï¿½ï¿½Öµï¿½Ç·ï¿½ï¿½ï¿½0ï¿½ï¿½ï¿½Ð¶ï¿½Ôªï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Î¨Ò»ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½
+ * 		A:ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½	(Ôªï¿½Ø¾ß±ï¿½ï¿½È½ï¿½ï¿½ï¿½)
+ * 			ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Comparableï¿½Ó¿ï¿½
+ * 		B:ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½Ï¾ß±ï¿½ï¿½È½ï¿½ï¿½ï¿½)
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ò£¬½ï¿½ï¿½ï¿½Comparatorï¿½Ó¿Úµï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Êµï¿½Ö¡ï¿½
  */
 public class TreeSetDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		// TreeSet<Person> ts = new TreeSet<Person>();
-		// TreeSet(Comparator comparator)
-		// ¹¹ÔìÒ»¸öÐÂµÄ¿Õ TreeSet£¬Ëü¸ù¾ÝÖ¸¶¨±È½ÏÆ÷½øÐÐÅÅÐò¡£
-		TreeSet<Person> ts = new TreeSet<Person>(new Comparator<Person>() {
-			@Override
-			public int compare(Person p1, Person p2) {
-				// this -- p1
-				// p -- p2
-				int num = p1.getAge() - p2.getAge();
-				int num2 = num == 0 ? p1.getName().compareTo(p2.getName())
-						: num;
-				return num2;
-			}
-		});
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        // TreeSet<Person> ts = new TreeSet<Person>();
+        // TreeSet(Comparator comparator)
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ÂµÄ¿ï¿½ TreeSetï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        TreeSet<Person> ts = new TreeSet<Person>(new Comparator<Person>() {
+            @Override
+            public int compare(Person p1, Person p2) {
+                // this -- p1
+                // p -- p2
+                int num = p1.getAge() - p2.getAge();
+                int num2 = num == 0 ? p1.getName().compareTo(p2.getName())
+                        : num;
+                return num2;
+            }
+        });
 
-		// ´´½¨ÈË¶ÔÏó
-		Person p1 = new Person("tangseng", 30);
-		Person p2 = new Person("jiapingwa", 25);
-		Person p3 = new Person("zhangyimou", 25);
-		Person p4 = new Person("xijinping", 26);
-		Person p5 = new Person("yanni", 27);
-		Person p6 = new Person("wenzhang", 30);
-		Person p7 = new Person("tianliang", 28);
-		Person p8 = new Person("xijinping", 26);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½
+        Person p1 = new Person("tangseng", 30);
+        Person p2 = new Person("jiapingwa", 25);
+        Person p3 = new Person("zhangyimou", 25);
+        Person p4 = new Person("xijinping", 26);
+        Person p5 = new Person("yanni", 27);
+        Person p6 = new Person("wenzhang", 30);
+        Person p7 = new Person("tianliang", 28);
+        Person p8 = new Person("xijinping", 26);
 
-		// Ìí¼ÓÔªËØ
-		ts.add(p1);
-		ts.add(p2);
-		ts.add(p3);
-		ts.add(p4);
-		ts.add(p5);
-		ts.add(p6);
-		ts.add(p7);
-		ts.add(p8);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        ts.add(p1);
+        ts.add(p2);
+        ts.add(p3);
+        ts.add(p4);
+        ts.add(p5);
+        ts.add(p6);
+        ts.add(p7);
+        ts.add(p8);
 
-		// ±éÀú¼¯ºÏ
-		for (Person p : ts) {
-			System.out.println(p.getName() + "---" + p.getAge());
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Person p : ts) {
+            System.out.println(p.getName() + "---" + p.getAge());
+        }
 
-	}
+    }
 }

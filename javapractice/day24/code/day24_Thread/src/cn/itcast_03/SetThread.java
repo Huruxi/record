@@ -2,17 +2,17 @@ package cn.itcast_03;
 
 public class SetThread implements Runnable {
 
-	private Student s;
+    private Student s;
 
-	public SetThread(Student s) {
-		this.s = s;
-	}
+    public SetThread(Student s) {
+        this.s = s;
+    }
 
-	@Override
-	public void run() {
-		// Student s = new Student();
-		s.name = "ÁÖÇàÏ¼";
-		s.age = 28;
-	}
+    @Override
+    public void run() {
+        // Student s = new Student();
+        s.name = "ï¿½ï¿½ï¿½ï¿½Ï¼";
+        s.age = 28;
+    }
 
 }

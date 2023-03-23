@@ -1,17 +1,17 @@
 /*
-	finalµÄ³õÊ¼»¯Ê±»ú£º
-		A:ÔÚ¶¨ÒåµÄÊ±ºòÁ¢¼´¸øÖµ¡£ÒÔºóÔÚÒ²²»ÄÜ¸ÄÁË¡£
-		B:ÔÚ¶¨Òåºó£¬¹¹Ôì·½·¨½áÊøÇ°¸³Öµ¶¼¿ÉÒÔ¡£
+	finalï¿½Ä³ï¿½Ê¼ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Ü¸ï¿½ï¿½Ë¡ï¿½
+		B:ï¿½Ú¶ï¿½ï¿½ï¿½ó£¬¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
 */
 class Demo {
-	int num;
-	//final int num2 = 0;
-	final int num2 = 0;
+    int num;
+    //final int num2 = 0;
+    final int num2 = 0;
 
-	
-	static {
-		num2 = 10;
-	}
+
+    static {
+        num2 = 10;
+    }
 	
 
 	/*
@@ -20,15 +20,15 @@ class Demo {
 	}
 	*/
 
-	public Demo() {
-		//num2 = 100;
-	}
+    public Demo() {
+        //num2 = 100;
+    }
 }
 
 class FinalDemo3 {
-	public static void main(String[] args) {
-		Demo d =  new Demo();
-		System.out.println(d.num);
-		System.out.println(d.num2);
-	}
+    public static void main(String[] args) {
+        Demo d = new Demo();
+        System.out.println(d.num);
+        System.out.println(d.num2);
+    }
 }

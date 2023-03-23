@@ -1,82 +1,84 @@
 /*
-	Ã¨¹·°¸Àý
-		¾ßÌåÊÂÎï£ºÃ¨£¬¹·
-		¹²ÐÔ£ºÐÕÃû£¬ÄêÁä£¬³Ô·¹
+	Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£ºÃ¨ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½Ô·ï¿½
 */
 abstract class Animal {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Animal(){}
+    public Animal() {
+    }
 
-	public Animal(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
-		
-	//³éÏó·½·¨
-	public abstract void eat();
+    public int getAge() {
+        return age;
+    }
+
+    //ï¿½ï¿½ï¿½ó·½·ï¿½
+    public abstract void eat();
 }
 
-//¹·µÄÊµÏÖ
+//ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
 class Dog extends Animal {
-	public Dog(){}
+    public Dog() {
+    }
 
-	public Dog(String name,int age) {
-		super(name,age);
-	}
+    public Dog(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("¹·³ÔÈâ");
-	}
+    public void eat() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
-//Á·Ï°1£ºÃ¨µÄÊµÏÖ£º×Ô¼ºÁ·Ï°
+//ï¿½ï¿½Ï°1ï¿½ï¿½Ã¨ï¿½ï¿½Êµï¿½Ö£ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ï°
 
 class AnimalDemo {
-	public static void main(String[] args) {
-		//²âÊÔ¹·
-		Dog d = new Dog();
-		d.setName("´ó»Æ");
-		d.setAge(3);
-		System.out.println(d.getName()+"---"+d.getAge());
-		d.eat();
-		System.out.println("--------------------------");
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½Ô¹ï¿½
+        Dog d = new Dog();
+        d.setName("ï¿½ï¿½ï¿½");
+        d.setAge(3);
+        System.out.println(d.getName() + "---" + d.getAge());
+        d.eat();
+        System.out.println("--------------------------");
 
-		Dog d2 = new Dog("´ó»Æ",3);
-		System.out.println(d2.getName()+"---"+d2.getAge());
-		d2.eat();
-		System.out.println("--------------------------");
+        Dog d2 = new Dog("ï¿½ï¿½ï¿½", 3);
+        System.out.println(d2.getName() + "---" + d2.getAge());
+        d2.eat();
+        System.out.println("--------------------------");
 
-		//¶àÌ¬²âÊÔ
-		Animal a = new Dog();
-		a.setName("´ó»Æ");
-		a.setAge(3);
-		System.out.println(a.getName()+"---"+a.getAge());
-		a.eat();
-		System.out.println("--------------------------");
+        //ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
+        Animal a = new Dog();
+        a.setName("ï¿½ï¿½ï¿½");
+        a.setAge(3);
+        System.out.println(a.getName() + "---" + a.getAge());
+        a.eat();
+        System.out.println("--------------------------");
 
-		Animal a2 = new Dog("´ó»Æ",3);
-		System.out.println(a2.getName()+"---"+a2.getAge());
-		a2.eat();
-		System.out.println("--------------------------");
+        Animal a2 = new Dog("ï¿½ï¿½ï¿½", 3);
+        System.out.println(a2.getName() + "---" + a2.getAge());
+        a2.eat();
+        System.out.println("--------------------------");
 
-		//Á·Ï°2£ºÃ¨µÄ²âÊÔ£¬¶àÌ¬µÄ²âÊÔ
-	}
+        //ï¿½ï¿½Ï°2ï¿½ï¿½Ã¨ï¿½Ä²ï¿½ï¿½Ô£ï¿½ï¿½ï¿½Ì¬ï¿½Ä²ï¿½ï¿½ï¿½
+    }
 }

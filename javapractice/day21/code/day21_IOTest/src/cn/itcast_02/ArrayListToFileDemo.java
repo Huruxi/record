@@ -6,32 +6,32 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /*
- * °ÑArrayList¼¯ºÏÖÐµÄ×Ö·û´®Êý¾Ý´æ´¢µ½ÎÄ±¾ÎÄ¼þ
- * 
- * Êý¾ÝÔ´£º
+ * ï¿½ï¿½ArrayListï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		ArrayList
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		array.txt
  */
 public class ArrayListToFileDemo {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		// ·â×°Êý¾ÝÔ´
-		ArrayList<String> array = new ArrayList<String>();
-		array.add("hello");
-		array.add("world");
-		array.add("java");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        ArrayList<String> array = new ArrayList<String>();
+        array.add("hello");
+        array.add("world");
+        array.add("java");
 
-		// ·â×°Ä¿µÄµØ
-		BufferedWriter bw = new BufferedWriter(new FileWriter("array.txt"));
+        // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        BufferedWriter bw = new BufferedWriter(new FileWriter("array.txt"));
 
-		for (String line : array) {
-			bw.write(line);
-			bw.newLine();
-			bw.flush();
-		}
+        for (String line : array) {
+            bw.write(line);
+            bw.newLine();
+            bw.flush();
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		bw.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        bw.close();
+    }
 }

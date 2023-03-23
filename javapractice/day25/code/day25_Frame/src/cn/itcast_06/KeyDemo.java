@@ -10,47 +10,47 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * Ò»¸ö´°Ìå£¬Ò»¸ö±êÇ©£¬Ò»¸öÎÄ±¾¿ò
+ * Ò»ï¿½ï¿½ï¿½ï¿½ï¿½å£¬Ò»ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
  */
 public class KeyDemo {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("¼üÅÌÊÂ¼þ");
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setBounds(500, 250, 400, 300);
-		// ÉèÖÃ²¼¾Ö
-		f.setLayout(new FlowLayout());
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        final Frame f = new Frame("ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½");
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setBounds(500, 250, 400, 300);
+        // ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+        f.setLayout(new FlowLayout());
 
-		// ´´½¨±êÇ©¶ÔÏó
-		Label label = new Label("ÇëÊäÈëÄãµÄqqºÅÂë£¬Ö»ÄÜÊäÈëÊý×Ö,²»ÐÅÄãÊÔÊÔ:");
-		// ´´½¨ÎÄ±¾¿ò
-		TextField tf = new TextField(20);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ï¿½
+        Label label = new Label("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½qqï¿½ï¿½ï¿½ë£¬Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+        TextField tf = new TextField(20);
 
-		// Ìí¼Óµ½´°Ìå
-		f.add(label);
-		f.add(tf);
+        // ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        f.add(label);
+        f.add(tf);
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		tf.addKeyListener(new KeyAdapter() {
-			@Override
-			public void keyPressed(KeyEvent e) {
-				// public char getKeyChar()
-				char ch = e.getKeyChar();
-				if (!(ch >= KeyEvent.VK_0 && ch <= KeyEvent.VK_9)) {
-					System.out.println("ÄãÊäÈëµÄÊÇ£º" + ch);
-					e.consume();
-				}
-			}
-		});
+        tf.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                // public char getKeyChar()
+                char ch = e.getKeyChar();
+                if (!(ch >= KeyEvent.VK_0 && ch <= KeyEvent.VK_9)) {
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + ch);
+                    e.consume();
+                }
+            }
+        });
 
-		// ÉèÖÃ¿É¼û
-		f.setVisible(true);
-	}
+        // ï¿½ï¿½ï¿½Ã¿É¼ï¿½
+        f.setVisible(true);
+    }
 }

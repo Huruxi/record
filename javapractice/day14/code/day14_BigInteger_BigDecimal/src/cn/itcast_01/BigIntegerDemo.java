@@ -3,17 +3,17 @@ package cn.itcast_01;
 import java.math.BigInteger;
 
 /*
- * BigInteger:¿ÉÒÔÊµÏÖ´óÕûÊýµÄ¼ÆËã
- * ¹¹Ôì·½·¨£ºBigInteger(String val)
+ * BigInteger:ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½BigInteger(String val)
  */
 public class BigIntegerDemo {
-	public static void main(String[] args) {
-		// System.out.println(Integer.MAX_VALUE); // 2147483647
+    public static void main(String[] args) {
+        // System.out.println(Integer.MAX_VALUE); // 2147483647
 
-		// Integer i = new Integer("2147483648"); // NumberFormatException
-		// System.out.println(i);
+        // Integer i = new Integer("2147483648"); // NumberFormatException
+        // System.out.println(i);
 
-		BigInteger bi = new BigInteger("2147483648");
-		System.out.println(bi);
-	}
+        BigInteger bi = new BigInteger("2147483648");
+        System.out.println(bi);
+    }
 }

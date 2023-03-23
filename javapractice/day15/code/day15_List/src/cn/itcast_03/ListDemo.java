@@ -4,31 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * Á·Ï°£ºÓÃList¼¯ºÏ´æ´¢×Ô¶¨Òå²¢±éÀú¡£
+ * ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½Ï´æ´¢ï¿½Ô¶ï¿½ï¿½å²¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * Student:name,age
- * ±éÀúÊ¹ÓÃÆÕÍ¨forÑ­»·
+ * ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Í¨forÑ­ï¿½ï¿½
  */
 public class ListDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		List list = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        List list = new ArrayList();
 
-		// ´´½¨Ñ§Éú¶ÔÏó
-		Student s1 = new Student("ÍõÕÑ¾ý", 18);
-		Student s2 = new Student("Î÷Ê©", 19);
-		Student s3 = new Student("ÑîÓñ»·", 20);
-		Student s4 = new Student("õõ²õ", 17);
+        // ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½Ñ¾ï¿½", 18);
+        Student s2 = new Student("ï¿½ï¿½Ê©", 19);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½", 20);
+        Student s4 = new Student("ï¿½ï¿½ï¿½ï¿½", 17);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		list.add(s1);
-		list.add(s2);
-		list.add(s3);
-		list.add(s4);
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        list.add(s1);
+        list.add(s2);
+        list.add(s3);
+        list.add(s4);
 
-		// ±éÀú
-		for (int x = 0; x < list.size(); x++) {
-			Student s = (Student) list.get(x);
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½
+        for (int x = 0; x < list.size(); x++) {
+            Student s = (Student) list.get(x);
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

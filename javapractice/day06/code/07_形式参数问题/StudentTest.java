@@ -1,23 +1,23 @@
-//ÒıÓÃÀàĞÍ×÷Îª²ÎÊı´«µİ£¬ĞèÒª´«µİÊÇ¶ÔÏó¡£(µØÖ·Öµ)
-//¶¨ÒåÑ§ÉúÀà£¬²¢¶¨ÒåÑ§Ï°¹¦ÄÜ
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½(ï¿½ï¿½Ö·Öµ)
+//ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§Ï°ï¿½ï¿½ï¿½ï¿½
 class Student {
-	public void study() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
-	}
+    public void study() {
+        System.out.println("Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§Ï°");
+    }
 }
 
 class StudentDemo {
-	//StudentÊÇÀà£¬ÀàÊÇÒıÓÃÊı¾İÀàĞÍ¡£
-	public void test(Student s) {
-		s.study();
-	}
+    //Studentï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
+    public void test(Student s) {
+        s.study();
+    }
 }
 
 class StudentTest {
-	public static void main(String[] args) {
-		//ÈçºÎµ÷ÓÃÄØ?
-		StudentDemo sd = new StudentDemo();
-		Student s = new Student();
-		sd.test(s);
-	}
+    public static void main(String[] args) {
+        //ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½?
+        StudentDemo sd = new StudentDemo();
+        Student s = new Student();
+        sd.test(s);
+    }
 }

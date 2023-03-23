@@ -3,63 +3,63 @@ package cn.itcast_05;
 import java.util.ArrayList;
 
 /*
- * ÐèÇó£ºËÄ´óÃûÖø
- * Èý¹úÑÝÒå
- * 		ÂÀ²¼£¬µäÎ¤£¬ÕÔÔÆ
- * ºìÂ¥ÃÎ
- * 		¼Ö±¦Óñ£¬ÁÖ÷ìÓñ£¬ÍõÎõ·ï£¬ÇØ¿ÉÇä
- * Ë®ä°´«
- * 		ÎäËÉ£¬Â³ÖÇÉî£¬ÀîåÓ£¬Â¬¿¡Òå£¬Ë÷³¬£¬ÎâÓÃ
- * Î÷ÓÎ¼Ç
- * 		°×¹Ç¾«£¬¹ÛÒô½ã½ã£¬ËïÎò¿Õ£¬Å£Ä§Íõ£¬ºìº¢¶ù
- * 
- * ÎÒ¹úÓÐËÄ´óÃûÖø£¬Ã¿²¿ÃûÖøÀïÓÐºÜ¶à´ú±íÐÔ½ÇÉ«¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Â¥ï¿½ï¿½
+ * 		ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£¬ï¿½Ø¿ï¿½ï¿½ï¿½
+ * Ë®ä°´ï¿½
+ * 		ï¿½ï¿½ï¿½É£ï¿½Â³ï¿½ï¿½ï¿½î£¬ï¿½ï¿½ï¿½Ó£ï¿½Â¬ï¿½ï¿½ï¿½å£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Î¼ï¿½
+ * 		ï¿½×¹Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½Õ£ï¿½Å£Ä§ï¿½ï¿½ï¿½ï¿½ï¿½ìº¢ï¿½ï¿½
+ *
+ * ï¿½Ò¹ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐºÜ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½É«ï¿½ï¿½
  */
 public class ArrayListDemo {
-	public static void main(String[] args) {
-		// Èý¹úÑÝÒåÐ¡¼¯ºÏ
-		ArrayList<String> sgyy = new ArrayList<String>();
-		sgyy.add("ÂÀ²¼");
-		sgyy.add("µäÎ¤");
-		sgyy.add("ÕÔÔÆ");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+        ArrayList<String> sgyy = new ArrayList<String>();
+        sgyy.add("ï¿½ï¿½ï¿½ï¿½");
+        sgyy.add("ï¿½ï¿½Î¤");
+        sgyy.add("ï¿½ï¿½ï¿½ï¿½");
 
-		// ºìÂ¥ÃÎÐ¡¼¯ºÏ
-		ArrayList<String> hlm = new ArrayList<String>();
-		hlm.add("¼Ö±¦Óñ");
-		hlm.add("ÁÖ÷ìÓñ");
-		hlm.add("ÍõÎõ·ï");
-		hlm.add("ÇØ¿ÉÇä");
+        // ï¿½ï¿½Â¥ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+        ArrayList<String> hlm = new ArrayList<String>();
+        hlm.add("ï¿½Ö±ï¿½ï¿½ï¿½");
+        hlm.add("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        hlm.add("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        hlm.add("ï¿½Ø¿ï¿½ï¿½ï¿½");
 
-		// Ë®ä°´«Ð¡¼¯ºÏ
-		ArrayList<String> shz = new ArrayList<String>();
-		shz.add("ÎäËÉ");
-		shz.add("Â³ÖÇÉî");
-		shz.add("ÀîåÓ");
-		shz.add("Â¬¿¡Òå");
-		shz.add("Ë÷³¬");
-		shz.add("ÎâÓÃ");
+        // Ë®ä°´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+        ArrayList<String> shz = new ArrayList<String>();
+        shz.add("ï¿½ï¿½ï¿½ï¿½");
+        shz.add("Â³ï¿½ï¿½ï¿½ï¿½");
+        shz.add("ï¿½ï¿½ï¿½ï¿½");
+        shz.add("Â¬ï¿½ï¿½ï¿½ï¿½");
+        shz.add("ï¿½ï¿½ï¿½ï¿½");
+        shz.add("ï¿½ï¿½ï¿½ï¿½");
 
-		// Î÷ÓÎ¼ÇÐ¡¼¯ºÏ
-		ArrayList<String> xyj = new ArrayList<String>();
-		xyj.add("°×¹Ç¾«");
-		xyj.add("¹ÛÒô½ã½ã");
-		xyj.add("ËïÎò¿Õ");
-		xyj.add("Å£Ä§Íõ");
-		xyj.add("ºìº¢¶ù");
+        // ï¿½ï¿½ï¿½Î¼ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+        ArrayList<String> xyj = new ArrayList<String>();
+        xyj.add("ï¿½×¹Ç¾ï¿½");
+        xyj.add("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        xyj.add("ï¿½ï¿½ï¿½ï¿½ï¿½");
+        xyj.add("Å£Ä§ï¿½ï¿½");
+        xyj.add("ï¿½ìº¢ï¿½ï¿½");
 
-		// ´ú±íÃûÖøµÄ´ó¼¯ºÏ
-		ArrayList<ArrayList<String>> sdmz = new ArrayList<ArrayList<String>>();
-		sdmz.add(sgyy);
-		sdmz.add(hlm);
-		sdmz.add(shz);
-		sdmz.add(xyj);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ó¼¯ºï¿½
+        ArrayList<ArrayList<String>> sdmz = new ArrayList<ArrayList<String>>();
+        sdmz.add(sgyy);
+        sdmz.add(hlm);
+        sdmz.add(shz);
+        sdmz.add(xyj);
 
-		// ±éÀú¼¯ºÏ
-		for (ArrayList<String> array : sdmz) {
-			for (String s : array) {
-				System.out.print(s + " ");
-			}
-			System.out.println();
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (ArrayList<String> array : sdmz) {
+            for (String s : array) {
+                System.out.print(s + " ");
+            }
+            System.out.println();
+        }
+    }
 }

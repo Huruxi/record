@@ -1,11 +1,11 @@
 package cn.itcast_02;
 
 /*
- * 泛型接口：把泛型定义在接口上
- * 
- * 格式：
- * 		interface 接口名<泛型类型,...>
+ * 锟斤拷锟酵接口ｏ拷锟窖凤拷锟酵讹拷锟斤拷锟节接匡拷锟斤拷
+ *
+ * 锟斤拷式锟斤拷
+ * 		interface 锟接匡拷锟斤拷<锟斤拷锟斤拷锟斤拷锟斤拷,...>
  */
 public interface Inter<YY> {
-	public abstract void show(YY yy);
+    public abstract void show(YY yy);
 }

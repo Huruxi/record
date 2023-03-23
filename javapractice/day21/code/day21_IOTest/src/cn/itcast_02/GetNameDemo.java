@@ -9,43 +9,43 @@ import java.util.ArrayList;
 import java.util.Random;
 
 /*
- * ÐèÇó£ºnames.txtÖÐ´æ´¢µÄÊÇÎÒÃÇ°àËùÓÐÍ¬Ñ§µÄÃû³Æ¡£
- * ÇëÐ´Ò»¸ö¹¦ÄÜ£¬Ã¿´ÎÔËÐÐ³ÌÐò£¬Ëæ»ú²úÉúÒ»¸öÃû³Æ³öÀ´¡£
- * 
- * ·ÖÎö£º
- * 		A:Êý¾ÝÀ´×ÔÓÚÎÄ±¾ÎÄ¼þ,ËùÒÔÎÒÃÇÒª¶ÁÈ¡Êý¾Ý
- * 		B:°Ñ¶ÁÈ¡µ½µÄÊý¾Ý´æ´¢µ½¼¯ºÏÖÐ
- * 		C:Ëæ»ú²úÉúÒ»¸öË÷Òý
- * 		D:´Ó¼¯ºÏÖÐ¸ù¾ÝËæ»ú²úÉúµÄË÷Òý»ñÈ¡Ò»¸öÖµ¾Í¿ÉÒÔÁË
+ * ï¿½ï¿½ï¿½ï¿½names.txtï¿½Ð´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
+ * ï¿½ï¿½Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½Ñ¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		D:ï¿½Ó¼ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡Ò»ï¿½ï¿½Öµï¿½Í¿ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class GetNameDemo {
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader("names.txt"));
-		ArrayList<String> array = new ArrayList<String>();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new FileReader("names.txt"));
+        ArrayList<String> array = new ArrayList<String>();
 
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			array.add(line);
-		}
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            array.add(line);
+        }
 
-		br.close();
+        br.close();
 
-		// Ëæ»ú²úÉúÒ»¸öË÷Òý
-		// int index = (int) (Math.random() * array.size()); //
-		// [0,array.size()-1)
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // int index = (int) (Math.random() * array.size()); //
+        // [0,array.size()-1)
 
-		Random r = new Random();
-		int index = r.nextInt(array.size());
-		System.out.println("ÐÒÔËÕßÊÇ£º" + array.get(index));
+        Random r = new Random();
+        int index = r.nextInt(array.size());
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + array.get(index));
 
-		// ÒÔÏÂÎªÀ©Õ¹ÄÚÈÝ
-		array.remove(index);
-		BufferedWriter bw = new BufferedWriter(new FileWriter("names.txt"));
-		for (String name : array) {
-			bw.write(name);
-			bw.newLine();
-			bw.flush();
-		}
-		bw.close();
-	}
+        // ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½
+        array.remove(index);
+        BufferedWriter bw = new BufferedWriter(new FileWriter("names.txt"));
+        for (String name : array) {
+            bw.write(name);
+            bw.newLine();
+            bw.flush();
+        }
+        bw.close();
+    }
 }

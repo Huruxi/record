@@ -1,23 +1,23 @@
 package cn.itcast_01;
 
 /*
- * ÎªÁË¸üÇå³şµÄÈÃÎÒÃÇÖªµÀÊÇÈçºÎ¼ÓËøºÍÊÍ·ÅËøµÄ£¬JDK5ÒÔºó¾ÍÌá¹©ÁËÒ»¸ö½Ó¿Ú£ºLockËø¡£
+ * Îªï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½Ä£ï¿½JDK5ï¿½Ôºï¿½ï¿½ï¿½á¹©ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ó¿Ú£ï¿½Lockï¿½ï¿½ï¿½ï¿½
  * Lock
- * 		public void lock():¼ÓËø
- * 		public void unlock():ÊÍ·ÅËø
- * ÊµÏÖÀà¶ÔÏó
+ * 		public void lock():ï¿½ï¿½ï¿½ï¿½
+ * 		public void unlock():ï¿½Í·ï¿½ï¿½ï¿½
+ * Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		public ReentrantLock()
  */
 public class MovieTicketDemo {
-	public static void main(String[] args) {
-		MovieTicket mt = new MovieTicket();
+    public static void main(String[] args) {
+        MovieTicket mt = new MovieTicket();
 
-		Thread t1 = new Thread(mt, "´°¿Ú1");
-		Thread t2 = new Thread(mt, "´°¿Ú2");
-		Thread t3 = new Thread(mt, "´°¿Ú3");
+        Thread t1 = new Thread(mt, "ï¿½ï¿½ï¿½ï¿½1");
+        Thread t2 = new Thread(mt, "ï¿½ï¿½ï¿½ï¿½2");
+        Thread t3 = new Thread(mt, "ï¿½ï¿½ï¿½ï¿½3");
 
-		t1.start();
-		t2.start();
-		t3.start();
-	}
+        t1.start();
+        t2.start();
+        t3.start();
+    }
 }

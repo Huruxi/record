@@ -1,33 +1,33 @@
 package cn.itcast_06;
 
-//¿´³ÌÐòÐ´½á¹û:byte·¶Î§µÄ»º´æ³Ø
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½:byteï¿½ï¿½Î§ï¿½Ä»ï¿½ï¿½ï¿½ï¿½
 public class IntegerDemo {
-	public static void main(String[] args) {
-		Integer i1 = new Integer(127);
-		Integer i2 = new Integer(127);
-		System.out.println(i1 == i2);// false
-		System.out.println(i1.equals(i2));// true
+    public static void main(String[] args) {
+        Integer i1 = new Integer(127);
+        Integer i2 = new Integer(127);
+        System.out.println(i1 == i2);// false
+        System.out.println(i1.equals(i2));// true
 
-		Integer i3 = new Integer(128);
-		Integer i4 = new Integer(128);
-		System.out.println(i3 == i4);// false
-		System.out.println(i3.equals(i4));// true
+        Integer i3 = new Integer(128);
+        Integer i4 = new Integer(128);
+        System.out.println(i3 == i4);// false
+        System.out.println(i3.equals(i4));// true
 
-		Integer i5 = 127;
-		Integer i6 = 127;
-		System.out.println(i5 == i6);// true
-		System.out.println(i5.equals(i6));// true
+        Integer i5 = 127;
+        Integer i6 = 127;
+        System.out.println(i5 == i6);// true
+        System.out.println(i5.equals(i6));// true
 
-		Integer i7 = 128;
-		Integer i8 = 128;
-		System.out.println(i7 == i8);// false
-		System.out.println(i7.equals(i8));// true
+        Integer i7 = 128;
+        Integer i8 = 128;
+        System.out.println(i7 == i8);// false
+        System.out.println(i7.equals(i8));// true
 
-		// ÒªÏëÖªµÀÎªÊ²Ã´£¬¾Í±ØÐë¿´Ô´Âë¡£
-		// public static Integer valueOf(int i)
-		//char ch = 127;
-		//Integer i = Integer.valueOf(ch);
-		// Í¨¹ý²é¿´Ô´ÂëÎÒÃÇÖªµÀÈç¹ûÊý¾ÝÔÚ-128µ½127Ö®¼ä£¬ÊÇ´ÓÒ»¸ö»º´æÊý×éÖÐ·µ»ØµÄ¡£
-		// Èç¹û²»ÔÚÕâ¸ö·¶Î§ÄÚ£¬¾ÍÊÇÖØÐÂ´´½¨µÄnew³öÀ´µÄ¶ÔÏó¡£
-	}
+        // Òªï¿½ï¿½Öªï¿½ï¿½ÎªÊ²Ã´ï¿½ï¿½ï¿½Í±ï¿½ï¿½ë¿´Ô´ï¿½ë¡£
+        // public static Integer valueOf(int i)
+        //char ch = 127;
+        //Integer i = Integer.valueOf(ch);
+        // Í¨ï¿½ï¿½ï¿½é¿´Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½-128ï¿½ï¿½127Ö®ï¿½ä£¬ï¿½Ç´ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ØµÄ¡ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î§ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½newï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+    }
 }

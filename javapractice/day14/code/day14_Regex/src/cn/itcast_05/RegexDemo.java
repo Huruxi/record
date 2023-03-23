@@ -4,53 +4,53 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /*
- * »ñÈ¡¹¦ÄÜ
- * 		PatternºÍMatcherÀàµÄÊ¹ÓÃ
- * 
+ * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+ * 		Patternï¿½ï¿½Matcherï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+ *
  */
 public class RegexDemo {
-	public static void main(String[] args) {
-		// Ä£Ê½¶ÔÏóºÍÆ¥ÅäÆ÷¶ÔÏóµÄ»ù±¾Ê¹ÓÃ
-		// // °Ñ¹æÔò×ª»»ÎªÄ£Ê½¶ÔÏó
-		// Pattern p = Pattern.compile("a*b");
-		// // Í¨¹ýÄ£Ê½¶ÔÏóµÃµ½Æ¥ÅäÆ÷¶ÔÏó
-		// Matcher m = p.matcher("aaaaab");
-		// // Í¨¹ýÆ¥ÅäÆ÷¶ÔÏóµ÷ÓÃ¹¦ÄÜ
-		// boolean b = m.matches();
-		// System.out.println(b);
+    public static void main(String[] args) {
+        // Ä£Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+        // // ï¿½Ñ¹ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªÄ£Ê½ï¿½ï¿½ï¿½ï¿½
+        // Pattern p = Pattern.compile("a*b");
+        // // Í¨ï¿½ï¿½Ä£Ê½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // Matcher m = p.matcher("aaaaab");
+        // // Í¨ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½
+        // boolean b = m.matches();
+        // System.out.println(b);
 
-		// ×÷ÎªÅÐ¶ÏÀ´Ëµ
-		// String s = "aaaaab";
-		// String regex = "a*b";
-		// boolean flag = s.matches(regex);
-		// System.out.println(flag);
+        // ï¿½ï¿½Îªï¿½Ð¶ï¿½ï¿½ï¿½Ëµ
+        // String s = "aaaaab";
+        // String regex = "a*b";
+        // boolean flag = s.matches(regex);
+        // System.out.println(flag);
 
-		// ÐèÇó£º»ñÈ¡¹¦ÄÜ
-		// »ñÈ¡ÓÉÈý¸ö×Ö·û×é³ÉµÄµ¥´Ê
-		String s = "da jia hao,wo men dou hen ai java.";
-		// ¶¨Òå¹æÔò
-		String regex = "\\b[a-z]{3}\\b";
+        // ï¿½ï¿½ï¿½ó£º»ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ÉµÄµï¿½ï¿½ï¿½
+        String s = "da jia hao,wo men dou hen ai java.";
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        String regex = "\\b[a-z]{3}\\b";
 
-		Pattern p = Pattern.compile(regex);
-		Matcher m = p.matcher(s);
+        Pattern p = Pattern.compile(regex);
+        Matcher m = p.matcher(s);
 
-		// public boolean find():ÎÊÊÇ·ñÓÐÆ¥ÅäµÄ
-		// boolean b = m.find();
-		// System.out.println(b);
-		// ÎÒÃÇµÃÄÃ³öÀ´
-		// public String group()
-		// String ss = m.group();
-		// System.out.println(ss);
+        // public boolean find():ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½
+        // boolean b = m.find();
+        // System.out.println(b);
+        // ï¿½ï¿½ï¿½Çµï¿½ï¿½Ã³ï¿½ï¿½ï¿½
+        // public String group()
+        // String ss = m.group();
+        // System.out.println(ss);
 
-		// b = m.find();
-		// System.out.println(b);
-		// // ÎÒÃÇµÃÄÃ³öÀ´
-		// // public String group()
-		// ss = m.group();
-		// System.out.println(ss);
+        // b = m.find();
+        // System.out.println(b);
+        // // ï¿½ï¿½ï¿½Çµï¿½ï¿½Ã³ï¿½ï¿½ï¿½
+        // // public String group()
+        // ss = m.group();
+        // System.out.println(ss);
 
-		while (m.find()) {
-			System.out.println(m.group());
-		}
-	}
+        while (m.find()) {
+            System.out.println(m.group());
+        }
+    }
 }

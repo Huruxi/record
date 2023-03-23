@@ -6,51 +6,51 @@ import java.util.Iterator;
 /*
  * List:
  * 		ArrayList:
- * 			µ×²ãÊý¾Ý½á¹¹ÊÇÊý×é£¬²éÑ¯¿ì£¬ÔöÉ¾Âý
- * 			Ïß³Ì²»°²È«£¬Ð§ÂÊ¸ß
+ * 			ï¿½×²ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ñ¯ï¿½ì£¬ï¿½ï¿½É¾ï¿½ï¿½
+ * 			ï¿½ß³Ì²ï¿½ï¿½ï¿½È«ï¿½ï¿½Ð§ï¿½Ê¸ï¿½
  * 		Vector:
- * 			µ×²ãÊý¾Ý½á¹¹ÊÇÊý×é£¬²éÑ¯¿ì£¬ÔöÉ¾Âý
- * 			Ïß³Ì°²È«£¬Ð§ÂÊµÍ
+ * 			ï¿½×²ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ñ¯ï¿½ì£¬ï¿½ï¿½É¾ï¿½ï¿½
+ * 			ï¿½ß³Ì°ï¿½È«ï¿½ï¿½Ð§ï¿½Êµï¿½
  * 		LinkedList:
- * 			µ×²ãÊý¾Ý½á¹¹ÊÇÁ´±í£¬²éÑ¯Âý£¬ÔöÉ¾¿ì
- * 			Ïß³Ì²»°²È«£¬Ð§ÂÊ¸ß
- * 
- * ÃæÊÔÌâ£ºArrayList£¬VectorºÍLinkedListµÄ¸÷×ÔÌØµã?
- * 
- * Ë¼¿¼Ìâ£ºArrayList£¬VectorºÍLinkedListÎÒÃÇµ½µ×Ê¹ÓÃË­ÄØ?
- * 			¿´Çé¿ö
- * 			
- * 			Òª°²È«Âð?
- * 				Òª£ºVector(Õâ¸öÏÖÔÚÒ²²»³£ÓÃ£¬ÔÚCollectionsÀïÃæÓÐÐÂµÄ·½Ê½)
- * 				²»Òª£ºArrayListºÍLinkedList
- * 					²éÑ¯¶à£ºArrayList
- * 					ÔöÉ¾¶à£ºLinkedList
- * 
- * 		²»ÖªµÀÓÃÄÄ¸ö£¬¾ÍÓÃArrayList¡£
- * 
- * ÐèÇó£ºÓÃArrayList´æ´¢×Ö·û´®²¢±éÀú
+ * 			ï¿½×²ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½
+ * 			ï¿½ß³Ì²ï¿½ï¿½ï¿½È«ï¿½ï¿½Ð§ï¿½Ê¸ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½â£ºArrayListï¿½ï¿½Vectorï¿½ï¿½LinkedListï¿½Ä¸ï¿½ï¿½ï¿½ï¿½Øµï¿½?
+ *
+ * Ë¼ï¿½ï¿½ï¿½â£ºArrayListï¿½ï¿½Vectorï¿½ï¿½LinkedListï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ë­ï¿½ï¿½?
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * 			Òªï¿½ï¿½È«ï¿½ï¿½?
+ * 				Òªï¿½ï¿½Vector(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½Collectionsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ·ï¿½Ê½)
+ * 				ï¿½ï¿½Òªï¿½ï¿½ArrayListï¿½ï¿½LinkedList
+ * 					ï¿½ï¿½Ñ¯ï¿½à£ºArrayList
+ * 					ï¿½ï¿½É¾ï¿½à£ºLinkedList
+ *
+ * 		ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ArrayListï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ArrayListï¿½æ´¢ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ArrayListDemo {
-	public static void main(String[] args) {
-		ArrayList array = new ArrayList();
+    public static void main(String[] args) {
+        ArrayList array = new ArrayList();
 
-		array.add("hello");
-		array.add("world");
-		array.add("java");
+        array.add("hello");
+        array.add("world");
+        array.add("java");
 
-		// µü´úÆ÷
-		Iterator it = array.iterator();
-		while (it.hasNext()) {
-			String s = (String) it.next();
-			System.out.println(s);
-		}
-		System.out.println("--------------");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Iterator it = array.iterator();
+        while (it.hasNext()) {
+            String s = (String) it.next();
+            System.out.println(s);
+        }
+        System.out.println("--------------");
 
-		// ÆÕÍ¨for
-		for (int x = 0; x < array.size(); x++) {
-			String s = (String) array.get(x);
-			System.out.println(s);
-		}
+        // ï¿½ï¿½Í¨for
+        for (int x = 0; x < array.size(); x++) {
+            String s = (String) array.get(x);
+            System.out.println(s);
+        }
 
-	}
+    }
 }

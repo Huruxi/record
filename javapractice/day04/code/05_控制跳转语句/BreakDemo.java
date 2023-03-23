@@ -1,36 +1,38 @@
 /*
-	break:╓╨╢╧
+	break:я┐╜╨╢я┐╜
 
-	break╡─╩╣╙├│б╛░г║
-		A:╘┌╤б╘ё╜с╣╣switch╙я╛ф╓╨
-		B:╘┌╤н╗╖╙я╛ф╓╨
-		└ы┐к╩╣╙├│б╛░╡─┤ц╘┌╩╟├╗╙╨╥т╥х╡─
+	breakя┐╜я┐╜╩╣я┐╜├│я┐╜я┐╜я┐╜я┐╜я┐╜
+		A:я┐╜я┐╜╤бя┐╜я┐╜с╣╣switchя┐╜я┐╜я┐╜я┐╜я┐╜
+		B:я┐╜я┐╜╤ня┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜
+		я┐╜ы┐к╩╣я┐╜├│я┐╜я┐╜я┐╜я┐╜─┤я┐╜я┐╜я┐╜я┐╜я┐╜├╗я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜
 
 	break:
-		A:╠°│Ў╡е▓у╤н╗╖
-		B:╠°│Ў╢р▓у╤н╗╖(┴╦╜т)
-			┤°▒ъ╟й╡─╙├╖и
+		A:я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜╤ня┐╜я┐╜
+		B:я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜╤ня┐╜я┐╜(я┐╜╦╜я┐╜)
+			я┐╜я┐╜я┐╜я┐╜╟йя┐╜я┐╜я┐╜├╖я┐╜
 */
 class BreakDemo {
-	public static void main(String[] args) {
-		for(int x=0; x<10; x++) {
-			//System.out.println(x);
-			if(x%2==0) {
-				break;
-				//break║є├ц╩╟▓╗─▄╙╨╢л╬ў╡─
-				//System.out.println(x);
-			}
+    public static void main(String[] args) {
+        for (int x = 0; x < 10; x++) {
+            //System.out.println(x);
+            if (x % 2 == 0) {
+                break;
+                //breakя┐╜я┐╜я┐╜я┐╜я┐╜╟▓я┐╜я┐╜я┐╜я┐╜╨╢я┐╜я┐╜я┐╜я┐╜я┐╜
+                //System.out.println(x);
+            }
 
-			System.out.println(x);
-		}
-		System.out.println("-------------");
+            System.out.println(x);
+        }
+        System.out.println("-------------");
 
-		wc:for(int x=0; x<3; x++) {
-			nc:for(int y=0; y<4; y++) {
-				System.out.print("*");
-				break;
-			}
-			System.out.println();
-		}
-	}
+        wc:
+        for (int x = 0; x < 3; x++) {
+            nc:
+            for (int y = 0; y < 4; y++) {
+                System.out.print("*");
+                break;
+            }
+            System.out.println();
+        }
+    }
 }

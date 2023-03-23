@@ -9,50 +9,50 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * ÐèÇó£ºÔÚ´°ÌåÖÐÌí¼ÓÒ»¸ö°´Å¥¡£²¢¶Ô°´Å¥Ìí¼ÓÊÂ¼þ£¬Ã»µã»÷Ò»´Î°´Å¥£¬¿ØÖÆÌ¨Êä³ö£ºÄãÔÙµãÊÔÊÔ
- * 
- * ·ÖÎö£º
- * 		A:´´½¨´°Ìå¶ÔÏó
- * 		B:´´½¨°´Å¥¶ÔÏó
- * 		C:°Ñ°´Å¥¶ÔÏóÌí¼Óµ½´°Ìå¶ÔÏó
- * 		D:ÈÃ´°ÌåÏÔÊ¾
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½Ô°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Ò»ï¿½Î°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ùµï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½
+ * 		C:ï¿½Ñ°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		D:ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
  */
 public class ButtonDemo {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		Frame f = new Frame();
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setTitle("°´Å¥ÊÂ¼þ");
-		f.setBounds(500, 250, 400, 300);
-		// ÉèÖÃ²¼¾Ö
-		f.setLayout(new FlowLayout());
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Frame f = new Frame();
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setTitle("ï¿½ï¿½Å¥ï¿½Â¼ï¿½");
+        f.setBounds(500, 250, 400, 300);
+        // ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+        f.setLayout(new FlowLayout());
 
-		// ´´½¨°´Å¥¶ÔÏó
-		Button bu = new Button("µãÎÒ°¡");
-		// bu.setSize(20, 10);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥ï¿½ï¿½ï¿½ï¿½
+        Button bu = new Button("ï¿½ï¿½ï¿½Ò°ï¿½");
+        // bu.setSize(20, 10);
 
-		// °Ñ°´Å¥Ìí¼Óµ½´°Ìå
-		f.add(bu);
+        // ï¿½Ñ°ï¿½Å¥ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        f.add(bu);
 
-		// ×¢²áÊÂ¼þ
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
 
-		// ×¢²á°´Å¥µã»÷ÊÂ¼þ
-		bu.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				System.out.println("ÄãÔÙµãÊÔÊÔ");
-			}
-		});
+        // ×¢ï¿½á°´Å¥ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
+        bu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("ï¿½ï¿½ï¿½Ùµï¿½ï¿½ï¿½ï¿½ï¿½");
+            }
+        });
 
-		// ´°Ìå¹Ø±ÕÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		// ÉèÖÃ´°ÌåÏÔÊ¾
-		f.setVisible(true);
-	}
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+        f.setVisible(true);
+    }
 }

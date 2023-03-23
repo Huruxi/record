@@ -3,33 +3,33 @@ package cn.itcast_02;
 import java.util.Scanner;
 
 /*
- * ÅÐ¶Ï¹¦ÄÜ
- * StringÀàµÄ·½·¨£º
+ * ï¿½Ð¶Ï¹ï¿½ï¿½ï¿½
+ * Stringï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		public boolean matches(String regex)
  */
 public class RegexDemo {
-	public static void main(String[] args) {
-		/*
-		 * ÐèÇó£ºÐ£Ñéµç»°ºÅÂë
-		 * 		
-		 * ·ÖÎö£º
-		 * 		µç»°ºÅÂëµÄ×é³É
-		 *		13812345678
-		 *		13999998888
-		 *		13123456789
-		 *		18912345678
-		 *		18811112222
-		 */
-		//¶¨Òå¹æÔò
-		String regex = "1[38][0-9]{9}";
-		
-		//¼üÅÌÂ¼ÈëÊÖ»úºÅÂë
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÊÖ»úºÅÂë£º");
-		String phone = sc.nextLine();
-		
-		//µ÷ÓÃÅÐ¶Ï¹¦ÄÜ
-		boolean flag = phone.matches(regex);
-		System.out.println(flag);
-	}
+    public static void main(String[] args) {
+        /*
+         * ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ç»°ï¿½ï¿½ï¿½ï¿½
+         *
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         * 		ï¿½ç»°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         *		13812345678
+         *		13999998888
+         *		13123456789
+         *		18912345678
+         *		18811112222
+         */
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        String regex = "1[38][0-9]{9}";
+
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ë£º");
+        String phone = sc.nextLine();
+
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶Ï¹ï¿½ï¿½ï¿½
+        boolean flag = phone.matches(regex);
+        System.out.println(flag);
+    }
 }

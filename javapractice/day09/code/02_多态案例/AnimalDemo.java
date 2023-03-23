@@ -1,150 +1,153 @@
-//Ã¨¹·°¸Àý
+//Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class Animal {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Animal() {}
+    public Animal() {
+    }
 
-	public Animal(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void show() {
-		System.out.println("name:"+name+",age:"+age);
-	}
+    public void show() {
+        System.out.println("name:" + name + ",age:" + age);
+    }
 
-	public void sleep() {
-		System.out.println("sleep");
-	}
+    public void sleep() {
+        System.out.println("sleep");
+    }
 
-	public void eat() {
-		System.out.println("eat");
-	}
+    public void eat() {
+        System.out.println("eat");
+    }
 }
 
 class Dog extends Animal {
-	public Dog() {}
+    public Dog() {
+    }
 
-	public Dog(String name,int age) {
-		super(name,age);
-	}
+    public Dog(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("dog eat");
-	}
+    public void eat() {
+        System.out.println("dog eat");
+    }
 
-	public void sleep() {
-		System.out.println("dog sleep");
-	}
+    public void sleep() {
+        System.out.println("dog sleep");
+    }
 }
 
 class Cat extends Animal {
-	public Cat() {}
+    public Cat() {
+    }
 
-	public Cat(String name,int age) {
-		super(name,age);
-	}
+    public Cat(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("cat eat");
-	}
+    public void eat() {
+        System.out.println("cat eat");
+    }
 
-	public void sleep() {
-		System.out.println("cat sleep");
-	}
+    public void sleep() {
+        System.out.println("cat sleep");
+    }
 }
 
 class AnimalDemo {
-	public static void main(String[] args) {
-		//²âÊÔAnimal
-		Animal a = new Animal();
-		a.setName("¶¯Îï");
-		a.setAge(10);
-		a.eat();
-		a.sleep();
-		a.show();
-		System.out.println("------------");
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Animal
+        Animal a = new Animal();
+        a.setName("ï¿½ï¿½ï¿½ï¿½");
+        a.setAge(10);
+        a.eat();
+        a.sleep();
+        a.show();
+        System.out.println("------------");
 
-		Animal a2 = new Animal("¶¯Îï",10);
-		a2.eat();
-		a2.sleep();
-		a2.show();
-		System.out.println("------------");
+        Animal a2 = new Animal("ï¿½ï¿½ï¿½ï¿½", 10);
+        a2.eat();
+        a2.sleep();
+        a2.show();
+        System.out.println("------------");
 
-		//²âÊÔDog
-		Dog d = new Dog();
-		d.setName("´ó»Æ");
-		d.setAge(5);
-		d.eat();
-		d.sleep();
-		d.show();
-		System.out.println("------------");
+        //ï¿½ï¿½ï¿½ï¿½Dog
+        Dog d = new Dog();
+        d.setName("ï¿½ï¿½ï¿½");
+        d.setAge(5);
+        d.eat();
+        d.sleep();
+        d.show();
+        System.out.println("------------");
 
-		Dog d2 = new Dog("´ó»Æ",5);
-		d2.eat();
-		d2.sleep();
-		d2.show();
-		System.out.println("------------");
+        Dog d2 = new Dog("ï¿½ï¿½ï¿½", 5);
+        d2.eat();
+        d2.sleep();
+        d2.show();
+        System.out.println("------------");
 
-		//Á·Ï°1£º²âÊÔCatÄãÃÇ×Ô¼ºÁ·Ï°
-		Cat c = new Cat();
-		c.setName("´ó»¨Ã¨");
-		c.setAge(2);
-		c.eat();
-		c.sleep();
-		c.show();
-		System.out.println("------------");
+        //ï¿½ï¿½Ï°1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Catï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ï°
+        Cat c = new Cat();
+        c.setName("ï¿½ï¿½Ã¨");
+        c.setAge(2);
+        c.eat();
+        c.sleep();
+        c.show();
+        System.out.println("------------");
 
-		Cat c2 = new Cat("´ó»¨Ã¨",2);
-		c2.eat();
-		c2.sleep();
-		c2.show();
-		System.out.println("------------");
+        Cat c2 = new Cat("ï¿½ï¿½Ã¨", 2);
+        c2.eat();
+        c2.sleep();
+        c2.show();
+        System.out.println("------------");
 
-		//Í¨¹ýDog²âÊÔ¶àÌ¬
-		Animal aa = new Dog();
-		aa.setName("Ð¡»Æ");
-		aa.setAge(3);
-		aa.eat();
-		aa.sleep();
-		aa.show();
-		System.out.println("------------");
+        //Í¨ï¿½ï¿½Dogï¿½ï¿½ï¿½Ô¶ï¿½Ì¬
+        Animal aa = new Dog();
+        aa.setName("Ð¡ï¿½ï¿½");
+        aa.setAge(3);
+        aa.eat();
+        aa.sleep();
+        aa.show();
+        System.out.println("------------");
 
-		Animal aa2 = new Dog("Ð¡»Æ",3);
-		aa2.eat();
-		aa2.sleep();
-		aa2.show();
-		System.out.println("------------");
+        Animal aa2 = new Dog("Ð¡ï¿½ï¿½", 3);
+        aa2.eat();
+        aa2.sleep();
+        aa2.show();
+        System.out.println("------------");
 
-		//Á·Ï°2£ºÍ¨¹ýCat²âÊÔ¶àÌ¬ÄãÃÇ×Ô¼ºÁ·Ï°
-		Animal aa3 = new Cat("Ð¡»¨Ã¨",1);
-		aa3.eat();
-		aa3.sleep();
-		aa3.show();
-		System.out.println("------------");
+        //ï¿½ï¿½Ï°2ï¿½ï¿½Í¨ï¿½ï¿½Catï¿½ï¿½ï¿½Ô¶ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ï°
+        Animal aa3 = new Cat("Ð¡ï¿½ï¿½Ã¨", 1);
+        aa3.eat();
+        aa3.sleep();
+        aa3.show();
+        System.out.println("------------");
 
-		Animal aa4 = new Cat();
-		aa4.setName("Ð¡»¨Ã¨");
-		aa4.setAge(1);
-		aa4.eat();
-		aa4.sleep();
-		aa4.show();
-	}
+        Animal aa4 = new Cat();
+        aa4.setName("Ð¡ï¿½ï¿½Ã¨");
+        aa4.setAge(1);
+        aa4.eat();
+        aa4.sleep();
+        aa4.show();
+    }
 }

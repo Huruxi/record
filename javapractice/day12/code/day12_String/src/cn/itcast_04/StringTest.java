@@ -1,30 +1,30 @@
 package cn.itcast_04;
 
 /*
- * ×Ö·û´®µÄ±éÀú:±éÀú»ñÈ¡×Ö·û´®ÖÐµÄÃ¿Ò»¸ö×Ö·û
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ã¿Ò»ï¿½ï¿½ï¿½Ö·ï¿½
  */
 public class StringTest {
-	public static void main(String[] args) {
-		String s = "java";
+    public static void main(String[] args) {
+        String s = "java";
 
-		// Í¨¹ýcharAt()·½·¨ÒÀ´Î»ñÈ¡×Ö·û
-		// System.out.println(s.charAt(0));
-		// System.out.println(s.charAt(1));
-		// System.out.println(s.charAt(2));
-		// System.out.println(s.charAt(3));
+        // Í¨ï¿½ï¿½charAt()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½È¡ï¿½Ö·ï¿½
+        // System.out.println(s.charAt(0));
+        // System.out.println(s.charAt(1));
+        // System.out.println(s.charAt(2));
+        // System.out.println(s.charAt(3));
 
-		// µ«ÊÇ£¬Èç¹û×Ö·û´®µÄ¸öÊý±È½Ï¶à£¬´úÂë¾Í»áºÜÂé·³£¬¶øÇÒÖØ¸´¶ÈºÜ¸ß
-		// for (int x = 0; x < 4; x++) {
-		// System.out.println(s.charAt(x));
-		// }
+        // ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½È½Ï¶à£¬ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½ï¿½é·³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ÈºÜ¸ï¿½
+        // for (int x = 0; x < 4; x++) {
+        // System.out.println(s.charAt(x));
+        // }
 
-		// Èç¹û×Ö·ûÊý¾Ý½Ï¶à£¬²»¿ÉÄÜÊý£¬ËùÒÔ£¬ÎÒÃÇÒªÓÃÒ»¸ö»ñÈ¡×Ö·û¸öÊýµÄ·½·¨
-		// length();
-		for (int x = 0; x < s.length(); x++) {
-			// System.out.println(s.charAt(x));
-			
-			char ch = s.charAt(x);
-			System.out.println(ch);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ý½Ï¶à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+        // length();
+        for (int x = 0; x < s.length(); x++) {
+            // System.out.println(s.charAt(x));
+
+            char ch = s.charAt(x);
+            System.out.println(ch);
+        }
+    }
 }

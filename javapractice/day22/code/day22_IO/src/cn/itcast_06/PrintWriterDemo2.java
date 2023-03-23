@@ -9,30 +9,30 @@ import java.io.PrintWriter;
  * println:
  */
 public class PrintWriterDemo2 {
-	public static void main(String[] args) throws IOException {
-		// PrintWriter(OutputStream out, boolean autoFlush)
-		// PrintWriter(Writer out, boolean autoFlush)
+    public static void main(String[] args) throws IOException {
+        // PrintWriter(OutputStream out, boolean autoFlush)
+        // PrintWriter(Writer out, boolean autoFlush)
 
-		// PrintWriter pw = new PrintWriter("pw2.txt");
+        // PrintWriter pw = new PrintWriter("pw2.txt");
 
-		// PrintWriter pw = new PrintWriter(new FileWriter("pw2.txt"), true);
-		// pw.print(100);
-		// pw.print(true);
-		// pw.print("hello");
+        // PrintWriter pw = new PrintWriter(new FileWriter("pw2.txt"), true);
+        // pw.print(100);
+        // pw.print(true);
+        // pw.print("hello");
 
-		// pw.flush();
+        // pw.flush();
 
-		// println()
-		PrintWriter pw = new PrintWriter(new FileWriter("pw2.txt"), true);
+        // println()
+        PrintWriter pw = new PrintWriter(new FileWriter("pw2.txt"), true);
 
-		// ²»µ«ÄÜË¢ÐÂ£¬»¹ÄÜ¹»ÊµÏÖ»»ÐÐ
-		pw.println("hello");
-		pw.println("world");
-		pw.println("java");
-		
-		// write,newLine,flush
-		
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¢ï¿½Â£ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½Êµï¿½Ö»ï¿½ï¿½ï¿½
+        pw.println("hello");
+        pw.println("world");
+        pw.println("java");
 
-		pw.close();
-	}
+        // write,newLine,flush
+
+
+        pw.close();
+    }
 }

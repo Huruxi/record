@@ -5,48 +5,48 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 public class FrameDemo {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå
-		Frame f = new Frame();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Frame f = new Frame();
 
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setTitle("´°Ìå¹Ø±Õ");
-		f.setSize(400, 200);
-		f.setLocation(500, 250);
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setTitle("ï¿½ï¿½ï¿½ï¿½Ø±ï¿½");
+        f.setSize(400, 200);
+        f.setLocation(500, 250);
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowListener() {
-			@Override
-			public void windowOpened(WindowEvent e) {
-			}
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowListener() {
+            @Override
+            public void windowOpened(WindowEvent e) {
+            }
 
-			@Override
-			public void windowIconified(WindowEvent e) {
-			}
+            @Override
+            public void windowIconified(WindowEvent e) {
+            }
 
-			@Override
-			public void windowDeiconified(WindowEvent e) {
-			}
+            @Override
+            public void windowDeiconified(WindowEvent e) {
+            }
 
-			@Override
-			public void windowDeactivated(WindowEvent e) {
-			}
+            @Override
+            public void windowDeactivated(WindowEvent e) {
+            }
 
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
 
-			@Override
-			public void windowClosed(WindowEvent e) {
-			}
+            @Override
+            public void windowClosed(WindowEvent e) {
+            }
 
-			@Override
-			public void windowActivated(WindowEvent e) {
-			}
-		});
+            @Override
+            public void windowActivated(WindowEvent e) {
+            }
+        });
 
-		// ÉèÖÃ´°Ìå¿É¼û
-		f.setVisible(true);
-	}
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½É¼ï¿½
+        f.setVisible(true);
+    }
 }

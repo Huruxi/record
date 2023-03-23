@@ -3,26 +3,26 @@ package cn.itcast_02;
 import java.util.Scanner;
 
 /*
- * 成员方法：
- * 		hasNextXxx():判断下一个输入项是不是指定的数据类型
- * 		nextXxx():获取该类型的数据
- * 
- * 注意：
- * 		键盘录入数据，需要的是int类型，我却给了一个字符串。
- * 		在控制台就提示：InputMismatchException	输入不匹配异常。
- * 		
+ * 锟斤拷员锟斤拷锟斤拷锟斤拷
+ * 		hasNextXxx():锟叫讹拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷锟角诧拷锟斤拷指锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+ * 		nextXxx():锟斤拷取锟斤拷锟斤拷锟酵碉拷锟斤拷锟斤拷
+ *
+ * 注锟解：
+ * 		锟斤拷锟斤拷录锟斤拷锟斤拷锟捷ｏ拷锟斤拷要锟斤拷锟斤拷int锟斤拷锟酵ｏ拷锟斤拷却锟斤拷锟斤拷一锟斤拷锟街凤拷锟斤拷锟斤拷
+ * 		锟节匡拷锟斤拷台锟斤拷锟斤拷示锟斤拷InputMismatchException	锟斤拷锟诫不匹锟斤拷锟届常锟斤拷
+ *
  */
 public class ScannerDemo {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-		System.out.println("请输入一个整数：");
+        System.out.println("锟斤拷锟斤拷锟斤拷一锟斤拷锟斤拷锟斤拷锟斤拷");
 
-		if (sc.hasNextInt()) {
-			int number = sc.nextInt();
-			System.out.println(number);
-		}
+        if (sc.hasNextInt()) {
+            int number = sc.nextInt();
+            System.out.println(number);
+        }
 
-		System.out.println("over");
-	}
+        System.out.println("over");
+    }
 }

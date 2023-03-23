@@ -1,43 +1,43 @@
 /*
-	±êÊ¶·û£º¾ÍÊÇ¸øÀà,½Ó¿Ú,·½·¨,±äÁ¿µÈÆðÃû×ÖÊ±Ê¹ÓÃµÄ×Ö·ûÐòÁÐ(×Ö·û´®)
+	ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½,ï¿½Ó¿ï¿½,ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Ê¹ï¿½Ãµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Ö·ï¿½ï¿½ï¿½)
 
-	×é³É¹æÔò£º
-		A:Ó¢ÎÄ×ÖÄ¸´óÐ¡Ð´
-		B:Êý×Ö
-		C:_ºÍ$
+	ï¿½ï¿½É¹ï¿½ï¿½ï¿½
+		A:Ó¢ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ð¡Ð´
+		B:ï¿½ï¿½ï¿½ï¿½
+		C:_ï¿½ï¿½$
 
-	×¢ÒâÊÂÏî£º
-		A:²»ÄÜÒÔÊý×Ö¿ªÍ·
-		B:²»ÄÜÊÇJavaÖÐµÄ¹Ø¼ü×Ö
-		C:Çø·Ö´óÐ¡Ð´
-			Student,student ÕâÊÇÁ½¸öÃû³Æ
+	×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¿ï¿½Í·
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Javaï¿½ÐµÄ¹Ø¼ï¿½ï¿½ï¿½
+		C:ï¿½ï¿½ï¿½Ö´ï¿½Ð¡Ð´
+			Student,student ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	³£¼ûµÄÃüÃû¹æÔò£º¼ûÃûÖªÒâ
-		A:°ü ÆäÊµ¾ÍÊÇÎÄ¼þ¼Ð,ÓÃÓÚ½â¾öÏàÍ¬ÀàÃûÎÊÌâ
-			È«²¿Ð¡Ð´
-			µ¥¼¶£ºcom
-			¶à¼¶£ºcn.itcast
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò£º¼ï¿½ï¿½ï¿½Öªï¿½ï¿½
+		A:ï¿½ï¿½ ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			È«ï¿½ï¿½Ð¡Ð´
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½com
+			ï¿½à¼¶ï¿½ï¿½cn.itcast
 
-		B:Àà»òÕß½Ó¿Ú
-			Ò»¸öµ¥´Ê£ºÊ××ÖÄ¸´óÐ´
+		B:ï¿½ï¿½ï¿½ï¿½ß½Ó¿ï¿½
+			Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ð´
 				Student,Person,Teacher
-			¶à¸öµ¥´Ê£ºÃ¿¸öµ¥´ÊµÄÊ××ÖÄ¸´óÐ´
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ð´
 				HelloWorld,MyName,NameDemo
 
-		C:·½·¨»òÕß±äÁ¿
-			Ò»¸öµ¥´Ê£ºÈ«²¿Ð¡Ð´
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½ï¿½
+			Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½È«ï¿½ï¿½Ð¡Ð´
 				name,age,show()
-			¶à¸öµ¥´Ê£º´ÓµÚ¶þ¸öµ¥´Ê¿ªÊ¼£¬Ã¿¸öµ¥´ÊÊ××ÖÄ¸´óÐ´
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ÓµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¿ï¿½Ê¼ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ð´
 				myName,showAllStudentNames()
 
-		D:³£Á¿
-			Ò»¸öµ¥´Ê£ºÈ«²¿´óÐ´
+		D:ï¿½ï¿½ï¿½ï¿½
+			Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½È«ï¿½ï¿½ï¿½ï¿½Ð´
 				AGE
-			¶à¸öµ¥´Ê£ºÃ¿¸öµ¥´Ê¶¼´óÐ´£¬ÓÃ_Á¬½Ó
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê£ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½
 				STUDENT_MAX_AGE
 */
 class NameDemo {
-	public static void main(String[] args) {
-		System.out.println("Hello World!");
-	}
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
 }

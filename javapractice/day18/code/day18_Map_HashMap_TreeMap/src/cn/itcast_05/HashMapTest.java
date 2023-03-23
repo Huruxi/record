@@ -4,56 +4,56 @@ import java.util.HashMap;
 import java.util.Set;
 
 /*
- * HashMapÇ¶Ì×HashMap
- * 
- * Î÷°²Ð£Çø£º
- * 	jc	»ù´¡°à
- * 			·çÇåÑï	31
- * 			É³Ê«²©	18
- * 	jy	¾ÍÒµ°à
- * 			¼±ÏÈ·æ	30
- * 			Óñ÷è÷ë	29
- * 	dsj	´óÊý¾Ý
- * 			½¹Äþ²¨	30
- * 			ÕÅè¤		22
+ * HashMapÇ¶ï¿½ï¿½HashMap
+ *
+ * ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½
+ * 	jc	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	31
+ * 			É³Ê«ï¿½ï¿½	18
+ * 	jy	ï¿½ï¿½Òµï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½È·ï¿½	30
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	29
+ * 	dsj	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	30
+ * 			ï¿½ï¿½ï¿½		22
  */
 public class HashMapTest {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		HashMap<String, HashMap<String, Integer>> xaxq = new HashMap<String, HashMap<String, Integer>>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        HashMap<String, HashMap<String, Integer>> xaxq = new HashMap<String, HashMap<String, Integer>>();
 
-		// »ù´¡°àÊý¾Ý
-		HashMap<String, Integer> jc = new HashMap<String, Integer>();
-		jc.put("·çÇåÑï", 31);
-		jc.put("É³Ê«²©", 18);
-		// °ÑÊý¾ÝÌí¼Óµ½¼¯ºÏ
-		xaxq.put("»ù´¡°à", jc);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        HashMap<String, Integer> jc = new HashMap<String, Integer>();
+        jc.put("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 31);
+        jc.put("É³Ê«ï¿½ï¿½", 18);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        xaxq.put("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", jc);
 
-		// ¾ÍÒµ°àÊý¾Ý
-		HashMap<String, Integer> jy = new HashMap<String, Integer>();
-		jy.put("¼±ÏÈ·æ", 30);
-		jy.put("Óñ÷è÷ë", 29);
-		// °ÑÊý¾ÝÌí¼Óµ½¼¯ºÏ
-		xaxq.put("¾ÍÒµ°à", jy);
+        // ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        HashMap<String, Integer> jy = new HashMap<String, Integer>();
+        jy.put("ï¿½ï¿½ï¿½È·ï¿½", 30);
+        jy.put("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 29);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        xaxq.put("ï¿½ï¿½Òµï¿½ï¿½", jy);
 
-		// ´óÊý¾Ý°à
-		HashMap<String, Integer> dsj = new HashMap<String, Integer>();
-		dsj.put("½¹Äþ²¨", 30);
-		dsj.put("ÕÅè¤", 22);
-		// °ÑÊý¾ÝÌí¼Óµ½¼¯ºÏ
-		xaxq.put("´óÊý¾Ý°à", dsj);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ý°ï¿½
+        HashMap<String, Integer> dsj = new HashMap<String, Integer>();
+        dsj.put("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 30);
+        dsj.put("ï¿½ï¿½ï¿½", 22);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        xaxq.put("ï¿½ï¿½ï¿½ï¿½ï¿½Ý°ï¿½", dsj);
 
-		// ±éÀúxaxq
-		Set<String> xaxqSet = xaxq.keySet();
-		for (String xaxqKey : xaxqSet) {
-			System.out.println(xaxqKey);
-			HashMap<String, Integer> xaxqValue = xaxq.get(xaxqKey);
-			Set<String> xaxqValueSet = xaxqValue.keySet();
-			for (String xaxqValuekey : xaxqValueSet) {
-				Integer xaxqValueValue = xaxqValue.get(xaxqValuekey);
-				System.out
-						.println("\t" + xaxqValuekey + "---" + xaxqValueValue);
-			}
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½xaxq
+        Set<String> xaxqSet = xaxq.keySet();
+        for (String xaxqKey : xaxqSet) {
+            System.out.println(xaxqKey);
+            HashMap<String, Integer> xaxqValue = xaxq.get(xaxqKey);
+            Set<String> xaxqValueSet = xaxqValue.keySet();
+            for (String xaxqValuekey : xaxqValueSet) {
+                Integer xaxqValueValue = xaxqValue.get(xaxqValuekey);
+                System.out
+                        .println("\t" + xaxqValuekey + "---" + xaxqValueValue);
+            }
+        }
+    }
 }

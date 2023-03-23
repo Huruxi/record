@@ -1,21 +1,21 @@
 package cn.itcast_06;
 
 /*
- * finally:±»finally¿ØÖÆµÄÓï¾äÌåÒ»¶¨»áÖ´ÐÐ¡£
- * Ó¦ÓÃ£ºÊý¾Ý¿âµÄÁ¬½Ó£¬IO²Ù×÷µÄÊ±ºò¡£
- * ×¢ÒâÊÂÏî£º
- * 		ÔÚÖ´ÐÐµ½finallyÖ®Ç°jvmÍË³öÁË
+ * finally:ï¿½ï¿½finallyï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð¡ï¿½
+ * Ó¦ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½Ó£ï¿½IOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+ * ×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+ * 		ï¿½ï¿½Ö´ï¿½Ðµï¿½finallyÖ®Ç°jvmï¿½Ë³ï¿½ï¿½ï¿½
  */
 public class FinallyDemo {
-	public static void main(String[] args) {
-		try {
-			System.out.println(10 / 0);
-		} catch (ArithmeticException e) {
-			e.printStackTrace();
-			System.exit(0);
-		} finally {
-			// ÊÍ·Å×ÊÔ´µÄ²Ù×÷
-			System.out.println("over");
-		}
-	}
+    public static void main(String[] args) {
+        try {
+            System.out.println(10 / 0);
+        } catch (ArithmeticException e) {
+            e.printStackTrace();
+            System.exit(0);
+        } finally {
+            // ï¿½Í·ï¿½ï¿½ï¿½Ô´ï¿½Ä²ï¿½ï¿½ï¿½
+            System.out.println("over");
+        }
+    }
 }

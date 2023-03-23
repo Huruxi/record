@@ -1,46 +1,46 @@
 package cn.itcast_05;
 
 /*
- * 1:String,StringBuffer,StringBuilderµÄÇø±ð?
- * A:String³¤¶È¹Ì¶¨£¬StringBufferºÍStringBuilderµÄ³¤¶È¿É±ä¡£
- * B:StringBufferÏß³Ì°²È«£¬Ð§ÂÊµÍ¡£StringBuilderÏß³Ì²»°²È«£¬Ð§ÂÊ¸ß¡£
- * 
- * 2:StringBufferºÍÊý×éµÄÇø±ð
- * A:StringBufferµÄ³¤¶È¿É±ä£¬¿ÉÒÔ´æ´¢ÈÎÒâÊý¾ÝÀàÐÍ£¬×îÖÕ½á¹ûÆäÊµÊÇÒ»¸ö×Ö·û´®¡£
- * B:Êý×é³¤¶È¹Ì¶¨£¬´æ´¢Í¬Ò»ÖÖÊý¾ÝÀàÐÍµÄÔªËØ¡£
- * 
- * 3:¿´³ÌÐòÐ´½á¹û£º
- * 		String×÷Îª²ÎÊý´«µÝ£¬StringBuffer×÷Îª²ÎÊý´«µÝ
- * 
- * 		StringÊÇÒ»ÖÖÌØÊâµÄÒýÓÃÀàÐÍ£¬ÔÚ×÷Îª²ÎÊý´«µÝµÄÊ±ºò£¬¿ÉÒÔµ±×÷»ù±¾ÀàÐÍÀ´¿´¡£ÒòÎªËü´«µÝµÄÒ²ÊÇ³£Á¿Öµ¡£
- * 		
+ * 1:String,StringBuffer,StringBuilderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * A:Stringï¿½ï¿½ï¿½È¹Ì¶ï¿½ï¿½ï¿½StringBufferï¿½ï¿½StringBuilderï¿½Ä³ï¿½ï¿½È¿É±ä¡£
+ * B:StringBufferï¿½ß³Ì°ï¿½È«ï¿½ï¿½Ð§ï¿½ÊµÍ¡ï¿½StringBuilderï¿½ß³Ì²ï¿½ï¿½ï¿½È«ï¿½ï¿½Ð§ï¿½Ê¸ß¡ï¿½
+ *
+ * 2:StringBufferï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * A:StringBufferï¿½Ä³ï¿½ï¿½È¿É±ä£¬ï¿½ï¿½ï¿½Ô´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Õ½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * B:ï¿½ï¿½ï¿½é³¤ï¿½È¹Ì¶ï¿½ï¿½ï¿½ï¿½æ´¢Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Ôªï¿½Ø¡ï¿½
+ *
+ * 3:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		Stringï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½StringBufferï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * 		Stringï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Ê±ï¿½ò£¬¿ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Ò²ï¿½Ç³ï¿½ï¿½ï¿½Öµï¿½ï¿½
+ *
  */
 public class StringBufferDemo {
-	public static void main(String[] args) {
-		String s1 = "hello";
-		String s2 = "world";
-		System.out.println(s1 + "---" + s2); // hello---world
-		change(s1, s2);
-		System.out.println(s1 + "---" + s2);// world---worldworld???
+    public static void main(String[] args) {
+        String s1 = "hello";
+        String s2 = "world";
+        System.out.println(s1 + "---" + s2); // hello---world
+        change(s1, s2);
+        System.out.println(s1 + "---" + s2);// world---worldworld???
 
-		StringBuffer sb1 = new StringBuffer("hello");
-		StringBuffer sb2 = new StringBuffer("world");
-		System.out.println(sb1 + "---" + sb2);// hello---world
-		change(sb1, sb2);
-		System.out.println(sb1 + "---" + sb2); // world---worldworld???
-	}
+        StringBuffer sb1 = new StringBuffer("hello");
+        StringBuffer sb2 = new StringBuffer("world");
+        System.out.println(sb1 + "---" + sb2);// hello---world
+        change(sb1, sb2);
+        System.out.println(sb1 + "---" + sb2); // world---worldworld???
+    }
 
-	public static void change(StringBuffer sb1, StringBuffer sb2) {
-		System.out.println(sb1 + "---" + sb2);// hello---world
-		sb1 = sb2;// sb1="world"
-		sb2 = sb1.append(sb2); // sb2=worldworld
-		System.out.println(sb1 + "---" + sb2);// world---worldworld ???
-	}
+    public static void change(StringBuffer sb1, StringBuffer sb2) {
+        System.out.println(sb1 + "---" + sb2);// hello---world
+        sb1 = sb2;// sb1="world"
+        sb2 = sb1.append(sb2); // sb2=worldworld
+        System.out.println(sb1 + "---" + sb2);// world---worldworld ???
+    }
 
-	public static void change(String s1, String s2) {
-		System.out.println(s1 + "---" + s2);// hello---world
-		s1 = s2; // s1=world
-		s2 = s1 + s2; // s2=worldworld
-		System.out.println(s1 + "---" + s2); // world---worldworld
-	}
+    public static void change(String s1, String s2) {
+        System.out.println(s1 + "---" + s2);// hello---world
+        s1 = s2; // s1=world
+        s2 = s1 + s2; // s2=worldworld
+        System.out.println(s1 + "---" + s2); // world---worldworld
+    }
 }

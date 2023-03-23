@@ -1,13 +1,13 @@
-//ĞÎÊ½²ÎÊıÈç¹ûÊÇÒıÓÃÀàĞÍ£º
-//¾ßÌåÀà£º¸ÃÀàµÄ¶ÔÏó¡£
-//³éÏóÀà£º¸ÃÀàµÄ×ÓÀà¶ÔÏó¡£
-//½Ó¿Ú£º¸Ã½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó¡£
-//Êı×é£ºÊı×éµÄµØÖ·Öµ¡£ÆäÊµ¾ÍÊÇÒ»¸öÊı×é¶ÔÏó¡£
+//ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½à£ºï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½à£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½Ó¿Ú£ï¿½ï¿½Ã½Ó¿Úµï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½é£ºï¿½ï¿½ï¿½ï¿½Äµï¿½Ö·Öµï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 /*
 class Student {
 	public void study() {
-		System.out.println("ºÃºÃÑ§Ï°,ÌìÌìÏòÉÏ");
+		System.out.println("ï¿½Ãºï¿½Ñ§Ï°,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 }
 
@@ -39,7 +39,7 @@ class PersonDemo {
 
 class Student extends Person {
 	public void study() {
-		System.out.println("ºÃºÃÑ§Ï°,ÌìÌìÏòÉÏ");
+		System.out.println("ï¿½Ãºï¿½Ñ§Ï°,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 }
 
@@ -52,25 +52,25 @@ class ArgsDemo2 {
 }
 */
 interface Person {
-	public abstract void study();
+    public abstract void study();
 }
 
 class PersonDemo {
-	public void method(Person p) {
-		p.study();
-	}
+    public void method(Person p) {
+        p.study();
+    }
 }
 
 class Student implements Person {
-	public void study() {
-		System.out.println("ºÃºÃÑ§Ï°,ÌìÌìÏòÉÏ");
-	}
+    public void study() {
+        System.out.println("ï¿½Ãºï¿½Ñ§Ï°,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class ArgsDemo2 {
-	public static void main(String[] args) {
-		PersonDemo pd = new PersonDemo();
-		Person p = new Student();
-		pd.method(p);
-	}
+    public static void main(String[] args) {
+        PersonDemo pd = new PersonDemo();
+        Person p = new Student();
+        pd.method(p);
+    }
 }

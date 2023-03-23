@@ -1,40 +1,40 @@
 package cn.itcast_07;
 
 /*
- * Í³¼Æ´ó´®ÖĞĞ¡´®³öÏÖµÄ´ÎÊı
- * ¾ÙÀı£ºÔÚ×Ö·û´®¡± woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun¡±ÖĞjava³öÏÖÁË5´Î
+ * Í³ï¿½Æ´ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagunï¿½ï¿½ï¿½ï¿½javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½
  */
 public class StringTest3 {
-	public static void main(String[] args) {
-		String maxString = "woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun";
-		String minString = "java";
+    public static void main(String[] args) {
+        String maxString = "woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun";
+        String minString = "java";
 
-		int count = getCount(maxString, minString);
-		System.out.println(count);
-	}
+        int count = getCount(maxString, minString);
+        System.out.println(count);
+    }
 
-	// Ğ´¹¦ÄÜÊµÏÖ£º
-	// ĞÎÊ½²ÎÊı:String maxString,String minString;
-	// ·µ»ØÖµÀàĞÍ:int
-	public static int getCount(String maxString, String minString) {
-		// ¶¨ÒåÍ³¼Æ±äÁ¿
-		int count = 0;
+    // Ğ´ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½
+    // ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½:String maxString,String minString;
+    // ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½:int
+    public static int getCount(String maxString, String minString) {
+        // ï¿½ï¿½ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½
+        int count = 0;
 
-		// ÏÈ²éÕÒÒ»´Î
-		int index = maxString.indexOf(minString);
-		// ¶¨ÒåÒ»¸ö±äÁ¿£¬ÓÃÓÚ¼ÇÂ¼Ã¿´Î×îĞÂµÄ²éÕÒÎ»ÖÃ
-		int startIndex = 0;
+        // ï¿½È²ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
+        int index = maxString.indexOf(minString);
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½Â¼Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ²ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+        int startIndex = 0;
 
-		// ÅĞ¶ÏÎ»ÖÃÊÇ²»ÊÇ-1£¬Èç¹ûÊÇ£¬¾Í²»¼ÌĞøÁË
-		while (index != -1) {
-			// Í³¼Æ±äÁ¿¼Ó1
-			count++;
-			// ¼ÆËã×îĞÂµÄ²éÕÒÎ»ÖÃ
-			startIndex = index + minString.length();
-			// ´Ó×îĞÂµÄ²éÕÒÎ»ÖÃ£¬ÔÙ²éÒ»´ÎĞ¡´®ÔÚ´ó´®ÖĞ³öÏÖµÄÎ»ÖÃ
-			index = maxString.indexOf(minString, startIndex);
-		}
+        // ï¿½Ğ¶ï¿½Î»ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½-1ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        while (index != -1) {
+            // Í³ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½1
+            count++;
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ²ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+            startIndex = index + minString.length();
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ²ï¿½ï¿½ï¿½Î»ï¿½Ã£ï¿½ï¿½Ù²ï¿½Ò»ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Ğ³ï¿½ï¿½Öµï¿½Î»ï¿½ï¿½
+            index = maxString.indexOf(minString, startIndex);
+        }
 
-		return count;
-	}
+        return count;
+    }
 }

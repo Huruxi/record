@@ -1,35 +1,35 @@
 /*
-	È¨ÏÞÐÞÊÎ·û£º
-				±¾Àà	Í¬Ò»¸ö°üÏÂµÄ×ÓÀà»òÆäËûÀà	²»Í¬°üÏÂµÄ×ÓÀà		²»Í¬°üÏÂÆäËûÀà
+	È¨ï¿½ï¿½ï¿½ï¿½ï¿½Î·ï¿½ï¿½ï¿½
+				ï¿½ï¿½ï¿½ï¿½	Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½		ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private		Y		
-	Ä¬ÈÏ		Y		Y
+	Ä¬ï¿½ï¿½		Y		Y
 	protected	Y		Y							Y
 	public		Y		Y							Y					Y
 */
 package cn.itcast;
 
 public class Father {
-	private void show() {
-		System.out.println("show");
-	}
+    private void show() {
+        System.out.println("show");
+    }
 
-	void show2() {
-		System.out.println("show2");
-	}
+    void show2() {
+        System.out.println("show2");
+    }
 
-	protected void show3() {
-		System.out.println("show3");
-	}
+    protected void show3() {
+        System.out.println("show3");
+    }
 
-	public void show4() {
-		System.out.println("show4");
-	}
+    public void show4() {
+        System.out.println("show4");
+    }
 
-	public static void main(String[] args) {
-		Father f = new Father();
-		f.show();
-		f.show2();
-		f.show3();
-		f.show4();
-	}
+    public static void main(String[] args) {
+        Father f = new Father();
+        f.show();
+        f.show2();
+        f.show3();
+        f.show4();
+    }
 }

@@ -3,16 +3,16 @@ package cn.itcast_06;
 import java.util.Hashtable;
 
 /*
- * ÃæÊÔÌâ£º
- * 1:HashMapºÍHashtableµÄÇø±ð?
- * A:HashMapÊÇÏß³Ì²»°²È«µÄ£¬Ð§ÂÊ¸ß¡£ÔÊÐíÊ¹ÓÃ null ÖµºÍ null ¼ü¡£
- * B:HashtableÊÇÏß³Ì°²È«µÄ£¬Ð§ÂÊµÍ¡£²»ÔÊÐíÊ¹ÓÃ null ÖµºÍ null ¼ü¡£
- * 
- * 2:List,Set,MapµÈ½Ó¿ÚÊÇ·ñ¶¼¼Ì³Ð×ÔMap½Ó¿Ú
- * List,Set¶¼¼Ì³Ð×ÔCollection½Ó¿Ú¡£
- * Map±¾Éí¾ÍÊÇ¶¥²ã½Ó¿Ú
- * 
- * 3:Äã³£¼ûµÄ¼¯ºÏÀàÓÐÄÄÐ©£¬¶¼ÓÐÊ²Ã´·½·¨?
+ * ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+ * 1:HashMapï¿½ï¿½Hashtableï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * A:HashMapï¿½ï¿½ï¿½ß³Ì²ï¿½ï¿½ï¿½È«ï¿½Ä£ï¿½Ð§ï¿½Ê¸ß¡ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ null Öµï¿½ï¿½ null ï¿½ï¿½ï¿½ï¿½
+ * B:Hashtableï¿½ï¿½ï¿½ß³Ì°ï¿½È«ï¿½Ä£ï¿½Ð§ï¿½ÊµÍ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ null Öµï¿½ï¿½ null ï¿½ï¿½ï¿½ï¿½
+ *
+ * 2:List,Set,Mapï¿½È½Ó¿ï¿½ï¿½Ç·ñ¶¼¼Ì³ï¿½ï¿½ï¿½Mapï¿½Ó¿ï¿½
+ * List,Setï¿½ï¿½ï¿½Ì³ï¿½ï¿½ï¿½Collectionï¿½Ó¿Ú¡ï¿½
+ * Mapï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½Ó¿ï¿½
+ *
+ * 3:ï¿½ã³£ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½?
  * 		Collection
  * 			|--List
  * 				|--ArrayList
@@ -27,24 +27,24 @@ import java.util.Hashtable;
  * 				|--LinkedHashMap
  * 			|--Hashtable
  * 			|--TreeMap
- * 
+ *
  * 		ArrayList
- * 			Ìí¼Ó¹¦ÄÜ£¬ÒÆ³ý¹¦ÄÜ£¬ÅÐ¶Ï¹¦ÄÜ£¬»ñÈ¡£¬³¤¶È
+ * 			ï¿½ï¿½Ó¹ï¿½ï¿½Ü£ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½Ü£ï¿½ï¿½Ð¶Ï¹ï¿½ï¿½Ü£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		HashSet
- * 			Ìí¼Ó¹¦ÄÜ£¬ÒÆ³ý¹¦ÄÜ£¬ÅÐ¶Ï¹¦ÄÜ£¬»ñÈ¡£¬³¤¶È
+ * 			ï¿½ï¿½Ó¹ï¿½ï¿½Ü£ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½Ü£ï¿½ï¿½Ð¶Ï¹ï¿½ï¿½Ü£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		HashMap
- * 			Ìí¼Ó¹¦ÄÜ£¬ÒÆ³ý¹¦ÄÜ£¬ÅÐ¶Ï¹¦ÄÜ£¬»ñÈ¡£¬³¤¶È
+ * 			ï¿½ï¿½Ó¹ï¿½ï¿½Ü£ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½Ü£ï¿½ï¿½Ð¶Ï¹ï¿½ï¿½Ü£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class HashtableDemo {
-	public static void main(String[] args) {
-		// HashMap<String, String> hm = new HashMap<String, String>();
-		Hashtable<String, String> hm = new Hashtable<String, String>();
+    public static void main(String[] args) {
+        // HashMap<String, String> hm = new HashMap<String, String>();
+        Hashtable<String, String> hm = new Hashtable<String, String>();
 
-		hm.put("007", "ÖÜÐÇ³Û");
-		// hm.put(null, "³ÉÁú"); // NullPointerException
-		// hm.put(null, "ÖÜÈó·¢");
-		// hm.put("9527", null); // NullPointerException
+        hm.put("007", "ï¿½ï¿½ï¿½Ç³ï¿½");
+        // hm.put(null, "ï¿½ï¿½ï¿½ï¿½"); // NullPointerException
+        // hm.put(null, "ï¿½ï¿½ï¿½ï¿½");
+        // hm.put("9527", null); // NullPointerException
 
-		System.out.println(hm);
-	}
+        System.out.println(hm);
+    }
 }

@@ -4,43 +4,43 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * ÐèÇó£º´æ´¢Èý¸öÑ§Éú¶ÔÏó£¬²¢±éÀú¡£ÓÃÁ½ÖÖ·½Ê½±éÀú
- * 
- * Á·Ï°£º
- * 		VectorºÍLinkedList¡£
- * 		´æ´¢×Ö·û´®²¢±éÀú
- * 		´æ´¢×Ô¶¨Òå¶ÔÏó²¢±éÀú
+ * ï¿½ï¿½ï¿½ó£º´æ´¢ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½Ï°ï¿½ï¿½
+ * 		Vectorï¿½ï¿½LinkedListï¿½ï¿½
+ * 		ï¿½æ´¢ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó²¢±ï¿½ï¿½ï¿½
  */
 public class ArrayListTest {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		ArrayList array = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        ArrayList array = new ArrayList();
 
-		// ´´½¨ÔªËØ¶ÔÏó
-		Student s1 = new Student("ÖìÔªè°", 50);
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½Ôªï¿½", 50);
 
-		Student s2 = new Student();
-		s2.setName("ÀîÊÀÃñ");
-		s2.setAge(60);
+        Student s2 = new Student();
+        s2.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        s2.setAge(60);
 
-		Student s3 = new Student("ÇØÊ¼»Ê", 40);
+        Student s3 = new Student("ï¿½ï¿½Ê¼ï¿½ï¿½", 40);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		array.add(s1);
-		array.add(s2);
-		array.add(s3);
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        array.add(s1);
+        array.add(s2);
+        array.add(s3);
 
-		// ±éÀú¼¯ºÏ
-		Iterator it = array.iterator();
-		while (it.hasNext()) {
-			Student s = (Student) it.next();
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-		System.out.println("-----------------");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Iterator it = array.iterator();
+        while (it.hasNext()) {
+            Student s = (Student) it.next();
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+        System.out.println("-----------------");
 
-		for (int x = 0; x < array.size(); x++) {
-			Student s = (Student) array.get(x);
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        for (int x = 0; x < array.size(); x++) {
+            Student s = (Student) array.get(x);
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

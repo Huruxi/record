@@ -1,24 +1,24 @@
 package cn.itcast_07;
 
 /*
- * CÓïÑÔµÄÊä³öÓï¾ä£ºprintf(...)
+ * Cï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£ºprintf(...)
  */
 public class PrintfDemo {
-	public static void main(String[] args) {
-		// ¹Ì¶¨ÎÄ±¾
-		// System.out.printf("hellworld\n");
-		// System.out.printf("hellworld\n");
+    public static void main(String[] args) {
+        // ï¿½Ì¶ï¿½ï¿½Ä±ï¿½
+        // System.out.printf("hellworld\n");
+        // System.out.printf("hellworld\n");
 
-		// ´øÖ¸Ê¾µÄÎÄ±¾
-		// System.out.printf("%d\n", 100, 200);
-		// System.out.printf("%d<%d\n", 100, 200);
-		// System.out.printf("%d<%d\n", 100);
+        // ï¿½ï¿½Ö¸Ê¾ï¿½ï¿½ï¿½Ä±ï¿½
+        // System.out.printf("%d\n", 100, 200);
+        // System.out.printf("%d<%d\n", 100, 200);
+        // System.out.printf("%d<%d\n", 100);
 
-		// System.out.printf("%d+%d=%d\n", 10, 20, 30);
-		// System.out.println(10 + "+" + 20 + "=" + 30);
+        // System.out.printf("%d+%d=%d\n", 10, 20, 30);
+        // System.out.println(10 + "+" + 20 + "=" + 30);
 
-		System.out.printf("%.1f\n", 12.345);
-		System.out.printf("%.2f\n", 12.567);
-		System.out.printf("%.2f\n", 12.564);
-	}
+        System.out.printf("%.1f\n", 12.345);
+        System.out.printf("%.2f\n", 12.567);
+        System.out.printf("%.2f\n", 12.564);
+    }
 }

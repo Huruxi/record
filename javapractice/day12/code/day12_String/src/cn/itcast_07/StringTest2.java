@@ -3,28 +3,28 @@ package cn.itcast_07;
 import java.util.Scanner;
 
 /*
- * ×Ö·û´®·´×ª
- * ¾ÙÀı£º¼üÅÌÂ¼Èë¡±abc¡±		Êä³ö½á¹û£º¡±cba¡±
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ª
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ë¡±abcï¿½ï¿½		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½cbaï¿½ï¿½
  */
 public class StringTest2 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
-		String s = sc.nextLine();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½");
+        String s = sc.nextLine();
 
-		String result = reverse(s);
-		System.out.println(result);
-	}
+        String result = reverse(s);
+        System.out.println(result);
+    }
 
-	// Ğ´¹¦ÄÜÊµÏÖ
-	public static String reverse(String s) {
-		String result = "";
+    // Ğ´ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+    public static String reverse(String s) {
+        String result = "";
 
-		char[] chs = s.toCharArray();
-		for (int x = chs.length - 1; x >= 0; x--) {
-			result += chs[x];
-		}
+        char[] chs = s.toCharArray();
+        for (int x = chs.length - 1; x >= 0; x--) {
+            result += chs[x];
+        }
 
-		return result;
-	}
+        return result;
+    }
 }

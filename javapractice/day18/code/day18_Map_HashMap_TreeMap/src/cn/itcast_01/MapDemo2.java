@@ -11,32 +11,32 @@ import java.util.Set;
  * Collection<V> values()
  */
 public class MapDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Map<String, String> map = new HashMap<String, String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Map<String, String> map = new HashMap<String, String>();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		map.put("ÎÄÕÂ", "ÂíÒÁÀþ");
-		map.put("Ð»öª·æ", "ÕÅ°ØÖ¥");
-		map.put("ÌïÁÁ", "Ò¶Ò»Üç");
-		map.put("Íô·å", "ÕÂ×Óâù");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        map.put("ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        map.put("Ð»ï¿½ï¿½ï¿½ï¿½", "ï¿½Å°ï¿½Ö¥");
+        map.put("ï¿½ï¿½ï¿½ï¿½", "Ò¶Ò»ï¿½ï¿½");
+        map.put("ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
-		// V get(Object key)
-		System.out.println("get:" + map.get("ÎÄÕÂ"));
-		System.out.println("get:" + map.get("ÌïÁÁ"));
-		System.out.println("---------------------");
+        // V get(Object key)
+        System.out.println("get:" + map.get("ï¿½ï¿½ï¿½ï¿½"));
+        System.out.println("get:" + map.get("ï¿½ï¿½ï¿½ï¿½"));
+        System.out.println("---------------------");
 
-		// Set<K> keySet()
-		Set<String> set = map.keySet();
-		for (String key : set) {
-			System.out.println(key);
-		}
-		System.out.println("---------------------");
+        // Set<K> keySet()
+        Set<String> set = map.keySet();
+        for (String key : set) {
+            System.out.println(key);
+        }
+        System.out.println("---------------------");
 
-		// Collection<V> values()
-		Collection<String> cons = map.values();
-		for (String value : cons) {
-			System.out.println(value);
-		}
-	}
+        // Collection<V> values()
+        Collection<String> cons = map.values();
+        for (String value : cons) {
+            System.out.println(value);
+        }
+    }
 }

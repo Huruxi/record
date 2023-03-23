@@ -3,44 +3,44 @@ package cn.itcast_03;
 import java.util.Scanner;
 
 /*
- * ÎÊÌâ£º
+ * ï¿½ï¿½ï¿½â£º
  * 		int--int
  * 		String--String
  * 		String--int
- * 
- * 		int--StringÓÐÎÊÌâ£¬»á°Ñ»Ø³µ»»ÐÐ¸øÁËString¡£
- * 
- * ÈçºÎ½â¾öÄØ?
- * 		A:ÖØÐÂ´´½¨Ò»¸öÐÂµÄ¼üÅÌÂ¼Èë¶ÔÏó¡£
- * 		B:°Ñ¼üÅÌËùÓÐÂ¼ÈëÊý¾ÝÈ«²¿µ±×÷StringÀàÐÍ½ÓÊÜ¡£
- * 		      ÐèÒªÊ²Ã´ÀàÐÍ£¬¾Í°ÑString×ª»»Îª¸ÃÀàÐÍ¡£
- * 		      ÖÁÓÚÔõÃ´×ª£¬Ã÷Ìì½²¡£
+ *
+ * 		int--Stringï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½Ñ»Ø³ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½Stringï¿½ï¿½
+ *
+ * ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½?
+ * 		A:ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ÂµÄ¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½Ñ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½Í½ï¿½ï¿½Ü¡ï¿½
+ * 		      ï¿½ï¿½ÒªÊ²Ã´ï¿½ï¿½ï¿½Í£ï¿½ï¿½Í°ï¿½String×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
+ * 		      ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´×ªï¿½ï¿½ï¿½ï¿½ï¿½ì½²ï¿½ï¿½
  */
 public class ScannerDemo2 {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-		// int x = sc.nextInt();
-		// int y = sc.nextInt();
-		// System.out.println(x);
-		// System.out.println(y);
+        // int x = sc.nextInt();
+        // int y = sc.nextInt();
+        // System.out.println(x);
+        // System.out.println(y);
 
-		// String x = sc.nextLine();
-		// String y = sc.nextLine();
-		// System.out.println(x);
-		// System.out.println(y);
+        // String x = sc.nextLine();
+        // String y = sc.nextLine();
+        // System.out.println(x);
+        // System.out.println(y);
 
-		// String x = sc.nextLine();
-		// int y = sc.nextInt();
-		// System.out.println(x);
-		// System.out.println(y);
+        // String x = sc.nextLine();
+        // int y = sc.nextInt();
+        // System.out.println(x);
+        // System.out.println(y);
 
-		int x = sc.nextInt();
-		
-		sc = new Scanner(System.in);
-		
-		String y = sc.nextLine(); // °Ñ»Ø³µ»»ÐÐ¸øÁËÕâÀï
-		System.out.println(x);
-		System.out.println(y);
-	}
+        int x = sc.nextInt();
+
+        sc = new Scanner(System.in);
+
+        String y = sc.nextLine(); // ï¿½Ñ»Ø³ï¿½ï¿½ï¿½ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println(x);
+        System.out.println(y);
+    }
 }

@@ -1,44 +1,44 @@
 package cn.itcast_01;
 
 /*
- * MathÊÇÓÃÓÚÊýÑ§²Ù×÷µÄÀà¡£·½·¨¶¼ÊÇ¾²Ì¬µÄ
+ * Mathï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½ï¿½
  */
 public class MathDemo {
-	public static void main(String[] args) {
-		// public static int abs(int a):¾ø¶ÔÖµ
-		System.out.println("abs:" + Math.abs(12));
-		System.out.println("abs:" + Math.abs(-12));
-		System.out.println("--------------------");
+    public static void main(String[] args) {
+        // public static int abs(int a):ï¿½ï¿½ï¿½ï¿½Öµ
+        System.out.println("abs:" + Math.abs(12));
+        System.out.println("abs:" + Math.abs(-12));
+        System.out.println("--------------------");
 
-		// public static double ceil(double a):´óÓÚµÈÓÚ²ÎÊýµÄ×îÐ¡ÕûÊýÖµ
-		System.out.println("ceil:" + Math.ceil(12.34));
-		System.out.println("ceil:" + Math.ceil(12.56));
-		System.out.println("--------------------");
+        // public static double ceil(double a):ï¿½ï¿½ï¿½Úµï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Öµ
+        System.out.println("ceil:" + Math.ceil(12.34));
+        System.out.println("ceil:" + Math.ceil(12.56));
+        System.out.println("--------------------");
 
-		// public static double floor(double a):Ð¡ÓÚµÈÓÚ²ÎÊýµÄ×î´óÕûÊýÖµ
-		System.out.println("floor:" + Math.floor(12.34));
-		System.out.println("floor:" + Math.floor(12.56));
-		System.out.println("--------------------");
+        // public static double floor(double a):Ð¡ï¿½Úµï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        System.out.println("floor:" + Math.floor(12.34));
+        System.out.println("floor:" + Math.floor(12.56));
+        System.out.println("--------------------");
 
-		// public static int max(int a,int b) min×ÔÑ§
-		System.out.println("max:" + Math.max(12, 23));
-		// ·½·¨µÄÇ¶Ì×µ÷ÓÃ
-		System.out.println("max:" + Math.max(Math.max(24, 47), 23));
-		System.out.println("--------------------");
+        // public static int max(int a,int b) minï¿½ï¿½Ñ§
+        System.out.println("max:" + Math.max(12, 23));
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½×µï¿½ï¿½ï¿½
+        System.out.println("max:" + Math.max(Math.max(24, 47), 23));
+        System.out.println("--------------------");
 
-		// public static double pow(double a,double b)
-		System.out.println("pow:" + Math.pow(2, 3));
-		System.out.println("pow:" + Math.pow(5, 5));
-		System.out.println("--------------------");
+        // public static double pow(double a,double b)
+        System.out.println("pow:" + Math.pow(2, 3));
+        System.out.println("pow:" + Math.pow(5, 5));
+        System.out.println("--------------------");
 
-		// public static double random():²úÉúËæ»úÊý¡£[0.0,1.0)
+        // public static double random():ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½[0.0,1.0)
 
-		// public static int round(float a) ²ÎÊýÎªdoubleµÄ×ÔÑ§
-		System.out.println("round:" + Math.round(12.34f));
-		System.out.println("round:" + Math.round(12.56f));
-		System.out.println("--------------------");
+        // public static int round(float a) ï¿½ï¿½ï¿½ï¿½Îªdoubleï¿½ï¿½ï¿½ï¿½Ñ§
+        System.out.println("round:" + Math.round(12.34f));
+        System.out.println("round:" + Math.round(12.56f));
+        System.out.println("--------------------");
 
-		// public static double sqrt(double a):ÕýÆ½·½¸ù
-		System.out.println("sqrt:" + Math.sqrt(16));
-	}
+        // public static double sqrt(double a):ï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("sqrt:" + Math.sqrt(16));
+    }
 }

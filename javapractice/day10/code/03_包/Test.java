@@ -1,18 +1,19 @@
 package cn.itcast;
 
 /*
-	µ¼°ü¸ñÊ½
-		import °üÃû..ÀàÃû;
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½
+		import ï¿½ï¿½ï¿½ï¿½..ï¿½ï¿½ï¿½ï¿½;
 
-	package,import,classÓÐÃ»ÓÐË³Ðò¹ØÏµ(ÃæÊÔÌâ)
-		ÓÐ¡£
+	package,import,classï¿½ï¿½Ã»ï¿½ï¿½Ë³ï¿½ï¿½ï¿½Ïµ(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+		ï¿½Ð¡ï¿½
 		package --> import --> class
-		Î¨Ò»		¶à¸ö		¶à¸ö
+		Î¨Ò»		ï¿½ï¿½ï¿½		ï¿½ï¿½ï¿½
 */
+
 import com.liuyi.Demo;
 
 public class Test {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
 		com.liuyi.Demo d = new com.liuyi.Demo();
 		int result = d.sum(10,20);
@@ -27,8 +28,8 @@ public class Test {
 		System.out.println(result3);
 		*/
 
-		Demo d = new Demo();
-		int result = d.sum(10,20);
-		System.out.println(result);
-	}
+        Demo d = new Demo();
+        int result = d.sum(10, 20);
+        System.out.println(result);
+    }
 }

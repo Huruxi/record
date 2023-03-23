@@ -1,36 +1,36 @@
 package cn.itcast_04;
 
 /*
- * °Ñ×Ö·û´®ÖÐµÄ×Ö·û½øÐÐÅÅÐò¡£
- *¾ÙÀý£º¡±dacgebf¡±
- *½á¹û£º¡±abcdefg¡±
+ * ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½dacgebfï¿½ï¿½
+ *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½abcdefgï¿½ï¿½
  */
 public class ArrayDemo {
-	public static void main(String[] args) {
-		// ¶¨Òå×Ö·û´®
-		String s = "dacgebf";
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        String s = "dacgebf";
 
-		// °Ñ×Ö·û´®×ª³É×Ö·ûÊý×é
-		char[] chs = s.toCharArray();
+        // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        char[] chs = s.toCharArray();
 
-		// ¶Ô×Ö·ûÊý×é½øÐÐÅÅÐò
-		bubbleSort(chs);
+        // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bubbleSort(chs);
 
-		// °ÑÅÅÐòºóµÄ×Ö·ûÊý×é×ª³É×Ö·û´®
-		String result = String.valueOf(chs);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        String result = String.valueOf(chs);
 
-		System.out.println(result);
-	}
+        System.out.println(result);
+    }
 
-	public static void bubbleSort(char[] chs) {
-		for (int x = 0; x < chs.length - 1; x++) {
-			for (int y = 0; y < chs.length - 1 - x; y++) {
-				if (chs[y] > chs[y + 1]) {
-					char temp = chs[y];
-					chs[y] = chs[y + 1];
-					chs[y + 1] = temp;
-				}
-			}
-		}
-	}
+    public static void bubbleSort(char[] chs) {
+        for (int x = 0; x < chs.length - 1; x++) {
+            for (int y = 0; y < chs.length - 1 - x; y++) {
+                if (chs[y] > chs[y + 1]) {
+                    char temp = chs[y];
+                    chs[y] = chs[y + 1];
+                    chs[y + 1] = temp;
+                }
+            }
+        }
+    }
 }

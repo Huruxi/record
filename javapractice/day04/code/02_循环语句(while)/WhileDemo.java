@@ -1,24 +1,24 @@
 /*
-	whileÑ­»·µÄ¸ñÊ½£º
-		while(Ìõ¼þ±í´ïÊ½) {
-			Óï¾äÌå;
+	whileÑ­ï¿½ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½
+		while(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½) {
+			ï¿½ï¿½ï¿½ï¿½ï¿½;
 		}
 
-	±äÐÎ¸ñÊ½£º
-		³õÊ¼»¯Óï¾ä;
-		while(ÅÐ¶ÏÌõ¼þÓï¾ä) {
-			Ñ­»·ÌåÓï¾ä;
-			¿ØÖÆÌõ¼þÓï¾ä;
+	ï¿½ï¿½ï¿½Î¸ï¿½Ê½ï¿½ï¿½
+		ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½;
+		while(ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) {
+			Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 		}
 
-		for(³õÊ¼»¯Óï¾ä;ÅÐ¶ÏÌõ¼þÓï¾ä;¿ØÖÆÌõ¼þÓï¾ä) {
-			 Ñ­»·ÌåÓï¾ä;
+		for(ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½;ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) {
+			 Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 		}
-	ÓÉ´Ë¿É¼ûwhileÑ­»·ºÍforÑ­»·ÊÇ¿ÉÒÔµÈ¼Û×ª»»µÄ¡£
+	ï¿½É´Ë¿É¼ï¿½whileÑ­ï¿½ï¿½ï¿½ï¿½forÑ­ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ÔµÈ¼ï¿½×ªï¿½ï¿½ï¿½Ä¡ï¿½
 */
 class WhileDemo {
-	public static void main(String[] args) {
-		//for
+    public static void main(String[] args) {
+        //for
 		/*
 		for(int x=0; x<10; x++) {
 			System.out.println("HelloWorld");
@@ -26,7 +26,7 @@ class WhileDemo {
 		System.out.println("--------------");
 		*/
 
-		//while
+        //while
 		/*
 		int x=0;
 		while(x<10) {
@@ -35,17 +35,17 @@ class WhileDemo {
 		}
 		*/
 
-		//ÇóºÍ
-		//for
+        //ï¿½ï¿½ï¿½
+        //for
 		/*
 		int sum = 0;
 		for(int x=1; x<=100; x++) {
 			sum+=x;
 		}
-		System.out.println("1-100Ö®ºÍÊÇ£º"+sum);
+		System.out.println("1-100Ö®ï¿½ï¿½ï¿½Ç£ï¿½"+sum);
 		*/
 
-		//while
+        //while
 		/*
 		int sum = 0;
 		int x = 1;
@@ -53,11 +53,11 @@ class WhileDemo {
 			sum += x;
 			x++;
 		}
-		System.out.println("1-100Ö®ºÍÊÇ£º"+sum);
+		System.out.println("1-100Ö®ï¿½ï¿½ï¿½Ç£ï¿½"+sum);
 		*/
 
-		//Ë®ÏÉ»¨
-		//for
+        //Ë®ï¿½É»ï¿½
+        //for
 		/*
 		for(int x=100; x<1000; x++) {
 			int ge = x%10;
@@ -70,18 +70,18 @@ class WhileDemo {
 		}
 		*/
 
-		//while
-		int x = 100;
-		while(x<1000) {
-			int ge = x%10;
-			int shi = x/10%10;
-			int bai = x/10/10%10;
+        //while
+        int x = 100;
+        while (x < 1000) {
+            int ge = x % 10;
+            int shi = x / 10 % 10;
+            int bai = x / 10 / 10 % 10;
 
-			if(x == (ge*ge*ge + shi*shi*shi + bai*bai*bai)) {
-				System.out.println(x);
-			}
+            if (x == (ge * ge * ge + shi * shi * shi + bai * bai * bai)) {
+                System.out.println(x);
+            }
 
-			x++;
-		}
-	}
+            x++;
+        }
+    }
 }

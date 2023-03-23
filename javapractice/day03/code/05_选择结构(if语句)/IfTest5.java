@@ -1,43 +1,44 @@
 /*
-	ÐèÇó£º»ñÈ¡Èý¸öÊý¾ÝÖÐµÄ×î´óÖµ
+	ï¿½ï¿½ï¿½ó£º»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Öµ
 */
+
 import java.util.Scanner;
 
 class IfTest5 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
-		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
-		int b = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚÈý¸öÊý¾Ý£º");
-		int c = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int a = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int b = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int c = sc.nextInt();
 
-		//ÈýÔªÔËËã·ûÊµÏÖ
-		//int max  = (a>b)?(a>c?a:c):(b>c?b:c);
-		int temp = a>b?a:b;
-		int max = temp>c?temp:c;
-		System.out.println("×î´óÖµÊÇ£º"+max);
+        //ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+        //int max  = (a>b)?(a>c?a:c):(b>c?b:c);
+        int temp = a > b ? a : b;
+        int max = temp > c ? temp : c;
+        System.out.println("ï¿½ï¿½ï¿½Öµï¿½Ç£ï¿½" + max);
 
 
-		//ifÓï¾äÊµÏÖ(ifÓï¾äµÄÇ¶Ì×Ê¹ÓÃ)
-		int max2;
-		if(a > b) {
-			if(a > c) {
-				max2 = a;
-			}else {
-				max2 = c;
-			}
-		}else {
-			if(b > c) {
-				max2 = b;
-			}else {
-				max2 = c;
-			}
-		}
-		System.out.println("×î´óÖµÊÇ£º"+max2);
-	}
+        //ifï¿½ï¿½ï¿½Êµï¿½ï¿½(ifï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½Ê¹ï¿½ï¿½)
+        int max2;
+        if (a > b) {
+            if (a > c) {
+                max2 = a;
+            } else {
+                max2 = c;
+            }
+        } else {
+            if (b > c) {
+                max2 = b;
+            } else {
+                max2 = c;
+            }
+        }
+        System.out.println("ï¿½ï¿½ï¿½Öµï¿½Ç£ï¿½" + max2);
+    }
 }

@@ -1,7 +1,7 @@
 /*
-	javaÖÐµÄ¼Ì³ÐÌØµã£º
-		A:JavaÖ»Ö§³Öµ¥¼Ì³Ð£¬²»Ö§³Ö¶à¼Ì³Ð¡£
-		B:JavaÖ§³Ö¶à²ã¼Ì³Ð(¼Ì³ÐÌåÏµ)
+	javaï¿½ÐµÄ¼Ì³ï¿½ï¿½Øµã£º
+		A:JavaÖ»Ö§ï¿½Öµï¿½ï¿½Ì³Ð£ï¿½ï¿½ï¿½Ö§ï¿½Ö¶ï¿½Ì³Ð¡ï¿½
+		B:JavaÖ§ï¿½Ö¶ï¿½ï¿½Ì³ï¿½(ï¿½Ì³ï¿½ï¿½ï¿½Ïµ)
 */
 class A {
 }
@@ -17,7 +17,7 @@ class C extends B {
 }
 
 class ExtendsDemo {
-	public static void main(String[] args) {
-		
-	}
+    public static void main(String[] args) {
+
+    }
 }

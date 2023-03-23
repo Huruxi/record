@@ -1,48 +1,48 @@
 /*
-	ÄäÃû¶ÔÏó£ºÃ»ÓÐÃû×ÖµÄ¶ÔÏó¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÄ¶ï¿½ï¿½ï¿½
 
-	Ê¹ÓÃ³¡¾°£º
-		A:µ÷ÓÃ·½·¨,¸Ã·½·¨½ö½ö±»Ê¹ÓÃÒ»´ÎµÄÊ±ºòÊÊÓÃ¡£
-		B:×÷ÎªÊµ¼Ê²ÎÊý´«µÝ
+	Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½,ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ò»ï¿½Îµï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ã¡ï¿½
+		B:ï¿½ï¿½ÎªÊµï¿½Ê²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 
-//¶¨ÒåÑ§ÉúÀà£¬Ð´Ò»¸ölove·½·¨
-class Student  {
-	public void love() {
-		System.out.println("Ñ§ÉúÏ²»¶·Å¼Ù");
-	}
+//ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½à£¬Ð´Ò»ï¿½ï¿½loveï¿½ï¿½ï¿½ï¿½
+class Student {
+    public void love() {
+        System.out.println("Ñ§ï¿½ï¿½Ï²ï¿½ï¿½ï¿½Å¼ï¿½");
+    }
 }
 
 class StudentDemo {
-	public void test(Student s) {
-		s.love();
-	}
+    public void test(Student s) {
+        s.love();
+    }
 }
 
-//²âÊÔÀà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class NoNameObject {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
-		//´´½¨¶ÔÏó
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Student s = new Student();
 		s.love();
 		s.love();
 
-		//ÄäÃû¶ÔÏó
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		new Student().love();
 		new Student().love();
 		*/
 
-		//ÓÐÃû×ÖµÄÇé¿ö
-		//StudentDemo sd = new StudentDemo();
-		//Student s = new Student();
-		//sd.test(s);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+        //StudentDemo sd = new StudentDemo();
+        //Student s = new Student();
+        //sd.test(s);
 
-		//Ã»ÓÐÃû×ÖµÄÇé¿ö
-		//StudentDemo sd = new StudentDemo();
-		//sd.test(new Student());
+        //Ã»ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+        //StudentDemo sd = new StudentDemo();
+        //sd.test(new Student());
 
-		//²»·ÁÔÚÀ´Ò»²½
-		new StudentDemo().test(new Student());
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
+        new StudentDemo().test(new Student());
+    }
 }

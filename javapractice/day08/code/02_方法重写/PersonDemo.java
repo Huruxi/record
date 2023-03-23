@@ -1,52 +1,52 @@
 /*
-	·½·¨ÖØÐ´×¢ÒâÊÂÏî£º
-		A:¸¸ÀàÖÐË½ÓÐ·½·¨²»ÄÜ±»ÖØÐ´
-		B:×ÓÀàÖØÐ´¸¸Àà·½·¨Ê±£¬·ÃÎÊÈ¨ÏÞ²»ÄÜ¸üµÍ
-			½¨ÒéÒ»Ñù¼´¿É¡£
-		C:¸¸Àà¾²Ì¬·½·¨£¬×ÓÀàÒ²±ØÐëÍ¨¹ý¾²Ì¬·½·¨½øÐÐÖØÐ´¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü±ï¿½ï¿½ï¿½Ð´
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½à·½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½Þ²ï¿½ï¿½Ü¸ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½É¡ï¿½
+		C:ï¿½ï¿½ï¿½à¾²Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½
 */
 class Person {
-	public void show() {
-		System.out.println("show person");
-	}	
+    public void show() {
+        System.out.println("show person");
+    }
 
-	private void show2() {
-		System.out.println("show2 person");
-	}
+    private void show2() {
+        System.out.println("show2 person");
+    }
 
-	public void show3() {
-		System.out.println("show3 person");
-	}
+    public void show3() {
+        System.out.println("show3 person");
+    }
 
-	public static void show4() {
-		System.out.println("show4 person");
-	}
+    public static void show4() {
+        System.out.println("show4 person");
+    }
 }
 
 class Student extends Person {
-	public void show() {
-		System.out.println("show student");
-	}
+    public void show() {
+        System.out.println("show student");
+    }
 
-	private void show2() {
-		System.out.println("show2 student");
-	}
+    private void show2() {
+        System.out.println("show2 student");
+    }
 
-	public void show3() {
-		System.out.println("show3 student");
-	}
+    public void show3() {
+        System.out.println("show3 student");
+    }
 
-	public static void show4() {
-		System.out.println("show4 student");
-	}
+    public static void show4() {
+        System.out.println("show4 student");
+    }
 }
 
 class PersonDemo {
-	public static void main(String[] args) {
-		Student s = new Student();
-		s.show();
-		//s.show2();
-		s.show3();
-		s.show4();
-	}
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.show();
+        //s.show2();
+        s.show3();
+        s.show4();
+    }
 }

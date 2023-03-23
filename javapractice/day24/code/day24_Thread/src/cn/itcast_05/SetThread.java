@@ -2,41 +2,41 @@ package cn.itcast_05;
 
 public class SetThread implements Runnable {
 
-	private Student s;
-	private int x = 0;
+    private Student s;
+    private int x = 0;
 
-	public SetThread(Student s) {
-		this.s = s;
-	}
+    public SetThread(Student s) {
+        this.s = s;
+    }
 
-	@Override
-	public void run() {
-		while (true) {
-			synchronized (s) {
-				if (s.flag) {
-					// Õâ¾Í±íÊ¾ÓÐÊý¾Ý
-					try {
-						s.wait(); // t1¾ÍµÈ´ýÁË
-					} catch (InterruptedException e) {
-						e.printStackTrace();
-					}// ¾ÍÔÚÕâÀïµÈ´ý
-				}
+    @Override
+    public void run() {
+        while (true) {
+            synchronized (s) {
+                if (s.flag) {
+                    // ï¿½ï¿½Í±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    try {
+                        s.wait(); // t1ï¿½ÍµÈ´ï¿½ï¿½ï¿½
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È´ï¿½
+                }
 
-				if (x % 2 == 0) {
-					s.name = "ÁÖÇàÏ¼";
-					s.age = 28;
-				} else {
-					s.name = "ÁõÒâ";
-					s.age = 31;
-				}
-				x++; // x=1,x=2
+                if (x % 2 == 0) {
+                    s.name = "ï¿½ï¿½ï¿½ï¿½Ï¼";
+                    s.age = 28;
+                } else {
+                    s.name = "ï¿½ï¿½ï¿½ï¿½";
+                    s.age = 31;
+                }
+                x++; // x=1,x=2
 
-				// ¸ø³öÌáÊ¾
-				s.flag = true;
-				s.notify(); // »½ÐÑµÈ´ýµÄÏß³Ì£¬²¢²»´ú±í¸ÃÏß³ÌÄÜ¹»Á¢¼´»ñÈ¡CPUµÄÖ´ÐÐÈ¨
-			}
-			// t1,t2ÇÀ
-		}
-	}
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾
+                s.flag = true;
+                s.notify(); // ï¿½ï¿½ï¿½ÑµÈ´ï¿½ï¿½ï¿½ï¿½ß³Ì£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡CPUï¿½ï¿½Ö´ï¿½ï¿½È¨
+            }
+            // t1,t2ï¿½ï¿½
+        }
+    }
 
 }

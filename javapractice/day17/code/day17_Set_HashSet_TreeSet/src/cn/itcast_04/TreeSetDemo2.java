@@ -3,47 +3,47 @@ package cn.itcast_04;
 import java.util.TreeSet;
 
 /*
- * TreeSetÊÇÈçºÎ±£Ö¤ÔªËØÅÅÐòµÄÄØ?ÓÖÊÇÈçºÎ±£Ö¤ÔªËØÎ¨Ò»µÄÄØ?
- * 
- * ÐèÇó£ºÓÃTreeSet´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÒªÇóÅÅÐòºÍÈ¥µôÖØ¸´Öµ¡£
- * a:Èç¹û³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬£¬ÎÒ¾ÍÈÏÎªÊÇÖØ¸´ÔªËØ
- * b:Çë°´ÕÕÄêÁäµÄ´ÓÐ¡µ½´ó½øÐÐÅÅÐò
- * 
- * Í¨¹ý¹Û²ìµÄÏÖÏó£¬ÎÒÃÇ´óÌåÃ÷°×ÁËÕâÑùµÄÒ»¸öÒâË¼£º
- * ´ÓµÚ¶þ¸öÔªËØ¿ªÊ¼£¬ÔÚÌí¼ÓµÄÊ±ºò£¬»áºÍÇ°ÃæµÄÔªËØ½øÐÐ±È½Ï£¬×ßµÄÊÇcompareTo()·½·¨
- * 		Èç¹û·µ»ØµÄÊÇÕýÊý£º´ó£¬Íùºó·Å
- * 		Èç¹û·µ»ØµÄÊÇ¸ºÊý£ºÐ¡£¬ÍùÇ°·Å
- * 		Èç¹û·µ»ØµÄÊÇ0£ºËµÃ÷ÖØ¸´¡£²»·Å¡£
+ * TreeSetï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î±ï¿½Ö¤Ôªï¿½ï¿½Î¨Ò»ï¿½ï¿½ï¿½ï¿½?
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½TreeSetï¿½æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ø¸ï¿½Öµï¿½ï¿½
+ * a:ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ò¾ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ø¸ï¿½Ôªï¿½ï¿½
+ * b:ï¿½ë°´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * Í¨ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½
+ * ï¿½ÓµÚ¶ï¿½ï¿½ï¿½Ôªï¿½Ø¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Ê±ï¿½ò£¬»ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ôªï¿½Ø½ï¿½ï¿½Ð±È½Ï£ï¿½ï¿½ßµï¿½ï¿½ï¿½compareTo()ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½0ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¡ï¿½
  */
 public class TreeSetDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		TreeSet<Person> ts = new TreeSet<Person>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        TreeSet<Person> ts = new TreeSet<Person>();
 
-		// ´´½¨ÈË¶ÔÏó
-		Person p1 = new Person("tangseng", 30);
-		Person p2 = new Person("jiapingwa", 25);
-		Person p3 = new Person("zhangyimou", 25);
-		Person p4 = new Person("xijinping", 26);
-		Person p5 = new Person("yanni", 27);
-		Person p6 = new Person("wenzhang", 30);
-		Person p7 = new Person("tianliang", 28);
-		Person p8 = new Person("xijinping", 26);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½ï¿½
+        Person p1 = new Person("tangseng", 30);
+        Person p2 = new Person("jiapingwa", 25);
+        Person p3 = new Person("zhangyimou", 25);
+        Person p4 = new Person("xijinping", 26);
+        Person p5 = new Person("yanni", 27);
+        Person p6 = new Person("wenzhang", 30);
+        Person p7 = new Person("tianliang", 28);
+        Person p8 = new Person("xijinping", 26);
 
-		// Ìí¼ÓÔªËØ
-		ts.add(p1);
-		ts.add(p2);
-		ts.add(p3);
-		ts.add(p4);
-		ts.add(p5);
-		ts.add(p6);
-		ts.add(p7);
-		ts.add(p8);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        ts.add(p1);
+        ts.add(p2);
+        ts.add(p3);
+        ts.add(p4);
+        ts.add(p5);
+        ts.add(p6);
+        ts.add(p7);
+        ts.add(p8);
 
-		// ±éÀú¼¯ºÏ
-		for (Person p : ts) {
-			System.out.println(p.getName() + "---" + p.getAge());
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Person p : ts) {
+            System.out.println(p.getName() + "---" + p.getAge());
+        }
 
-	}
+    }
 }

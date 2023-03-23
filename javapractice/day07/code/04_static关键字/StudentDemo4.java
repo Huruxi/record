@@ -1,40 +1,40 @@
-//¾²Ì¬µÄÄÚÈÝÊÇ±»ËùÓÐ¶ÔÏó¹²ÏíµÄ£¬·Ç¾²Ì¬µÄÊÇÃ¿¸ö¶ÔÏóÌØÓÐµÄ¡£
+//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ¡ï¿½
 class Student {
-	String name;
-	int age;
-	static String classNumber;
+    String name;
+    int age;
+    static String classNumber;
 
-	public Student(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public Student(String name,int age,String classNumber) {
-		this.name = name;
-		this.age = age;
-		this.classNumber = classNumber;
-	}
+    public Student(String name, int age, String classNumber) {
+        this.name = name;
+        this.age = age;
+        this.classNumber = classNumber;
+    }
 
-	public void show() {
-		System.out.println(name+"---"+age+"---"+classNumber);
-	}
+    public void show() {
+        System.out.println(name + "---" + age + "---" + classNumber);
+    }
 }
 
 class StudentDemo4 {
-	public static void main(String[] args) {
-		Student s1 = new Student("´óÇÇ",28,"sgyy001");
-		Student s2 = new Student("Ð¡ÇÇ",20);
-		Student s3 = new Student("õõ²õ",18);
+    public static void main(String[] args) {
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½", 28, "sgyy001");
+        Student s2 = new Student("Ð¡ï¿½ï¿½", 20);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½", 18);
 
-		s1.show();
-		s2.show();
-		s3.show();
+        s1.show();
+        s2.show();
+        s3.show();
 
-		s2.name = "²Ü²Ù";
-		s2.classNumber = "sgyy007";
+        s2.name = "ï¿½Ü²ï¿½";
+        s2.classNumber = "sgyy007";
 
-		s1.show();
-		s2.show();
-		s3.show();
-	}
+        s1.show();
+        s2.show();
+        s3.show();
+    }
 }

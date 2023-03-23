@@ -5,28 +5,28 @@ import java.util.Set;
 
 /*
  * HashMap<Integer,String>
- * ¼ü£ºInteger	Ñ§ºÅ
- * Öµ£ºString		ÐÕÃû
+ * ï¿½ï¿½ï¿½ï¿½Integer	Ñ§ï¿½ï¿½
+ * Öµï¿½ï¿½String		ï¿½ï¿½ï¿½ï¿½
  */
 public class HashMapDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		HashMap<Integer, String> hm = new HashMap<Integer, String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        HashMap<Integer, String> hm = new HashMap<Integer, String>();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		// Integer i1 = 1;
-		// String s1 = "ÕÅÈý";
-		// hm.put(i1, s1);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        // Integer i1 = 1;
+        // String s1 = "ï¿½ï¿½ï¿½ï¿½";
+        // hm.put(i1, s1);
 
-		hm.put(1, "ÕÅÈý");
-		hm.put(2, "ÀîËÄ");
-		hm.put(3, "ÍõÎä");
+        hm.put(1, "ï¿½ï¿½ï¿½ï¿½");
+        hm.put(2, "ï¿½ï¿½ï¿½ï¿½");
+        hm.put(3, "ï¿½ï¿½ï¿½ï¿½");
 
-		// ±éÀú
-		Set<Integer> set = hm.keySet();
-		for (Integer key : set) {
-			String value = hm.get(key);
-			System.out.println(key + "---" + value);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½
+        Set<Integer> set = hm.keySet();
+        for (Integer key : set) {
+            String value = hm.get(key);
+            System.out.println(key + "---" + value);
+        }
+    }
 }

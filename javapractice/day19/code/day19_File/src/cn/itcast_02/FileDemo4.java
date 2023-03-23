@@ -3,22 +3,22 @@ package cn.itcast_02;
 import java.io.File;
 
 /*
- *public boolean isDirectory():ÊÇ·ñÊÇÎÄ¼þ¼Ð
- *public boolean isFile():ÊÇ·ñÊÇÎÄ¼þ
- *public boolean exists():ÊÇ·ñ´æÔÚ
- *public boolean canRead():ÊÇ·ñ¿É¶Á
- *public boolean canWrite():ÊÇ·ñ¿ÉÐ´
- *public boolean isHidden():ÊÇ·ñÒþ²Ø
+ *public boolean isDirectory():ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+ *public boolean isFile():ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½
+ *public boolean exists():ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+ *public boolean canRead():ï¿½Ç·ï¿½É¶ï¿½
+ *public boolean canWrite():ï¿½Ç·ï¿½ï¿½Ð´
+ *public boolean isHidden():ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class FileDemo4 {
-	public static void main(String[] args) {
-		File file = new File("demo.txt");
+    public static void main(String[] args) {
+        File file = new File("demo.txt");
 
-		System.out.println("isDirectory:" + file.isDirectory());
-		System.out.println("isFile:" + file.isFile());
-		System.out.println("exists:" + file.exists());
-		System.out.println("canRead:" + file.canRead());
-		System.out.println("canWrite:" + file.canWrite());
-		System.out.println("isHidden:" + file.isHidden());
-	}
+        System.out.println("isDirectory:" + file.isDirectory());
+        System.out.println("isFile:" + file.isFile());
+        System.out.println("exists:" + file.exists());
+        System.out.println("canRead:" + file.canRead());
+        System.out.println("canWrite:" + file.canWrite());
+        System.out.println("isHidden:" + file.isHidden());
+    }
 }

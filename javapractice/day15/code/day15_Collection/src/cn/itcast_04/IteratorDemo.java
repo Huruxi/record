@@ -6,34 +6,34 @@ import java.util.Iterator;
 
 /*
  * Iterator iterator()
- * 		boolean hasNext():ÊÇ·ñÓÐÏÂÒ»¸öÔªËØ
- * 		Object next():»ñÈ¡ÏÂÒ»¸öÔªËØ,²¢×Ô¶¯ÒÆ¶¯µ½ÏÂÒ»¸öÎ»ÖÃµÈ´ý
- * 
- * 		NoSuchElementException:Ã»ÓÐÕâÑùµÄÔªËØÒì³£¡£
- * 		Ô­ÒòÊÇ£ºÄãÒÑ¾­»ñÈ¡µ½ÔªËØµÄÄ©Î²ÁË£¬Äã»¹Òª»ñÈ¡ÔªËØ£¬ÒÑ¾­Ã»ÓÐÔªËØÁË£¬ËùÒÔ±¨´í¡£
+ * 		boolean hasNext():ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
+ * 		Object next():ï¿½ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½,ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Î»ï¿½ÃµÈ´ï¿½
+ *
+ * 		NoSuchElementException:Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ì³£ï¿½ï¿½
+ * 		Ô­ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ôªï¿½Øµï¿½Ä©Î²ï¿½Ë£ï¿½ï¿½ã»¹Òªï¿½ï¿½È¡Ôªï¿½Ø£ï¿½ï¿½Ñ¾ï¿½Ã»ï¿½ï¿½Ôªï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½
  */
 public class IteratorDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Collection c = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ²¢Ìí¼ÓÔªËØ
-		c.add("hello");
-		c.add("world");
-		c.add("java");
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø²ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        c.add("hello");
+        c.add("world");
+        c.add("java");
 
-		// ¼¯ºÏÖÐµÄ·½·¨£ºIterator iterator()
-		Iterator it = c.iterator();// ÓÒ±ßÆäÊµÊÇ½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó£¬ÕâÊÇ¶àÌ¬µÄÓ¦ÓÃ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½Iterator iterator()
+        Iterator it = c.iterator();// ï¿½Ò±ï¿½ï¿½ï¿½Êµï¿½Ç½Ó¿Úµï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½Ì¬ï¿½ï¿½Ó¦ï¿½ï¿½
 
-		// System.out.println(it.next());
-		// System.out.println(it.next());
-		// System.out.println(it.next());
-		// System.out.println(it.next());
-		// ´úÂëÒ»Ñù£¬ÓÃÑ­»·ÊµÏÖ
-		while (it.hasNext()) {
-			// System.out.println(it.next());
-			String s = (String) it.next();
-			System.out.println(s);
-		}
-	}
+        // System.out.println(it.next());
+        // System.out.println(it.next());
+        // System.out.println(it.next());
+        // System.out.println(it.next());
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½Êµï¿½ï¿½
+        while (it.hasNext()) {
+            // System.out.println(it.next());
+            String s = (String) it.next();
+            System.out.println(s);
+        }
+    }
 }

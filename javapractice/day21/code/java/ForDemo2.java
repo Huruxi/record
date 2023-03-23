@@ -1,37 +1,37 @@
 /*
-	forÑ­»·µÄ¸ñÊ½£º
-		for(³õÊ¼»¯Óï¾ä;ÅÐ¶ÏÌõ¼þÓï¾ä;¿ØÖÆÌõ¼þÓï¾ä) {
-			Ñ­»·ÌåÓï¾ä;
+	forÑ­ï¿½ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½
+		for(ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½;ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½) {
+			Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
 		}
 
-		Ö´ÐÐÁ÷³Ì£º
-		A:Ê×ÏÈÖ´ÐÐ³õÊ¼»¯Óï¾ä
-		B:Æä´ÎÖ´ÐÐÅÐ¶ÏÌõ¼þÓï¾ä£¬¿´Æä·µ»ØÖµ
-			Èç¹ûÊÇtrue£¬¾Í¼ÌÐø
-			Èç¹ûÊÇfalse£¬Ñ­»·½áÊø
-		C:Ö´ÐÐÑ­»·ÌåÓï¾ä
-		D:Ö´ÐÐ¿ØÖÆÌõ¼þÓï¾ä
-		E:»Øµ½B
+		Ö´ï¿½ï¿½ï¿½ï¿½ï¿½Ì£ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½ä·µï¿½ï¿½Öµ
+			ï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½falseï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		C:Ö´ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		D:Ö´ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		E:ï¿½Øµï¿½B
 */
 class ForDemo2 {
-	public static void main(String[] args) {
-		//ÔÚ¿ØÖÆÌ¨Êä³ö10´ÎHelloWorld
-		for(int x=0; x<10; x++) {
-			System.out.println("HelloWorld");
-		}	
-		System.out.println("--------------");
-		
-		//³õÊ¼»¯²»´Ó0¿ªÊ¼
-		for(int x=1; x<=10; x++) {
-			System.out.println("HelloWorld");
-		}	
+    public static void main(String[] args) {
+        //ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½10ï¿½ï¿½HelloWorld
+        for (int x = 0; x < 10; x++) {
+            System.out.println("HelloWorld");
+        }
+        System.out.println("--------------");
 
-		for(int x=1; x<11; x++) {
-			System.out.println("HelloWorld");
-		}
+        //ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Ê¼
+        for (int x = 1; x <= 10; x++) {
+            System.out.println("HelloWorld");
+        }
 
-		for(int x=10; x>0; x--) {
-			System.out.println("HelloWorld");
-		}
-	}
+        for (int x = 1; x < 11; x++) {
+            System.out.println("HelloWorld");
+        }
+
+        for (int x = 10; x > 0; x--) {
+            System.out.println("HelloWorld");
+        }
+    }
 }

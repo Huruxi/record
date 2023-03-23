@@ -3,20 +3,20 @@ package cn.itcast_04;
 import java.util.Arrays;
 
 /*
- * Ëü¿ÉÒÔ×Ô¼º°ÑÁ½¸ö×Ö½ÚÆ´³ÉÒ»¸öºº×Ö
- * µÚÒ»¸ö×Ö½Ú¿Ï¶¨ÊÇ¸ºÊý¡£µÚ¶þ¸ö¿ÉÄÜÊÇÕýÊý£¬´ó²¿·ÖÊÇ¸ºÊý¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½Æ´ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö½Ú¿Ï¶ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó²¿·ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class StringDemo {
-	public static void main(String[] args) {
-		// helloÄãºÃ
-		// String s = "hello";
-		// byte[] bys = s.getBytes();
-		// // [104, 101, 108, 108, 111]
-		// System.out.println(Arrays.toString(bys));
+    public static void main(String[] args) {
+        // helloï¿½ï¿½ï¿½
+        // String s = "hello";
+        // byte[] bys = s.getBytes();
+        // // [104, 101, 108, 108, 111]
+        // System.out.println(Arrays.toString(bys));
 
-		String ss = "ÎÒ°®ÄãÁÖÇàÏ¼";
-		byte[] bys = ss.getBytes();
-		// [-50, -46, -80, -82, -60, -29, -63, -42, -57, -32, -49, -68]
-		System.out.println(Arrays.toString(bys));
-	}
+        String ss = "ï¿½Ò°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼";
+        byte[] bys = ss.getBytes();
+        // [-50, -46, -80, -82, -60, -29, -63, -42, -57, -32, -49, -68]
+        System.out.println(Arrays.toString(bys));
+    }
 }

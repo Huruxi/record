@@ -4,55 +4,55 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * È¥³ý¼¯ºÏÖÐ×Ö·û´®µÄÖØ¸´Öµ(×Ö·û´®µÄÄÚÈÝÏàÍ¬)
- * ¾ÙÀý£º
+ * È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Öµ(ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬)
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		hello,world,java,android,world,java,javaee,java,java,java,android
- * ½á¹û£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		hello,world,java,android,javaee
- * 
- * ´´½¨ÐÂ¼¯ºÏµÄ·½Ê½£º
- * 		A:¶¨Òå¼¯ºÏ£¬´æ´¢´øÖØ¸´µÄÔªËØ
- * 		B:´´½¨ÐÂ¼¯ºÏ
- * 		C:±éÀú¾É¼¯ºÏ£¬»ñÈ¡µ½¾É¼¯ºÏÖÐµÄÃ¿Ò»¸öÔªËØ
- * 		D:ÄÇ¾É¼¯ºÏµÄÃ¿Ò»¸öÔªËØµ½ÐÂ¼¯ºÏÖÐÈ¥ÕÒ£¬¿´ÓÐÃ»ÓÐ
- * 			ÓÐ£º¾Í²»Ìí¼Ó(²»´îÀíËü)
- * 			Ä¾ÓÐ£º¾ÍÌí¼Ó
- * 		E:±éÀúÐÂ¼¯ºÏ
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ÏµÄ·ï¿½Ê½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½å¼¯ï¿½Ï£ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½ï¿½
+ * 		D:ï¿½Ç¾É¼ï¿½ï¿½Ïµï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½Ò£ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½
+ * 			ï¿½Ð£ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+ * 			Ä¾ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		E:ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
  */
 public class ArrayListTest {
-	public static void main(String[] args) {
-		// ¶¨Òå¼¯ºÏ£¬´æ´¢´øÖØ¸´µÄÔªËØ
-		ArrayList array = new ArrayList();
-		array.add("hello");
-		array.add("world");
-		array.add("java");
-		array.add("android");
-		array.add("world");
-		array.add("java");
-		array.add("javaee");
-		array.add("java");
-		array.add("java");
-		array.add("java");
-		array.add("android");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½å¼¯ï¿½Ï£ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        ArrayList array = new ArrayList();
+        array.add("hello");
+        array.add("world");
+        array.add("java");
+        array.add("android");
+        array.add("world");
+        array.add("java");
+        array.add("javaee");
+        array.add("java");
+        array.add("java");
+        array.add("java");
+        array.add("android");
 
-		// ´´½¨ÐÂ¼¯ºÏ
-		ArrayList newArrayList = new ArrayList();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
+        ArrayList newArrayList = new ArrayList();
 
-		// ±éÀú¾É¼¯ºÏ£¬»ñÈ¡µ½¾É¼¯ºÏÖÐµÄÃ¿Ò»¸öÔªËØ
-		for (int x = 0; x < array.size(); x++) {
-			String s = (String) array.get(x);
-			// ÄÇ¾É¼¯ºÏµÄÃ¿Ò»¸öÔªËØµ½ÐÂ¼¯ºÏÖÐÈ¥ÕÒ£¬¿´ÓÐÃ»ÓÐ
-			if (!newArrayList.contains(s)) {
-				// Ä¾ÓÐ£º¾ÍÌí¼Ó
-				newArrayList.add(s);
-			}
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½ï¿½
+        for (int x = 0; x < array.size(); x++) {
+            String s = (String) array.get(x);
+            // ï¿½Ç¾É¼ï¿½ï¿½Ïµï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½Ò£ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½
+            if (!newArrayList.contains(s)) {
+                // Ä¾ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                newArrayList.add(s);
+            }
+        }
 
-		// ±éÀúÐÂ¼¯ºÏ
-		Iterator it = newArrayList.iterator();
-		while (it.hasNext()) {
-			String s = (String) it.next();
-			System.out.println(s);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
+        Iterator it = newArrayList.iterator();
+        while (it.hasNext()) {
+            String s = (String) it.next();
+            System.out.println(s);
+        }
+    }
 }

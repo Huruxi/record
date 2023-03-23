@@ -1,23 +1,23 @@
 /*
-Á½¸öÐ¡ÎÊÌâ£º
-	1£ºÒ»¸öÀàÈç¹ûÃ»ÓÐ³éÏó·½·¨£¬¿É²»¿ÉÒÔ¶¨ÒåÎª³éÏóÀà?Èç¹û¿ÉÒÔ£¬ÓÐÊ²Ã´ÒâÒå?
-		¿ÉÒÔ¡£
-		ÎªÁË²»ÈÃ±ðÈË´´½¨¶ÔÏó¡£
-	2£ºabstract²»ÄÜºÍÄÄÐ©¹Ø¼ü×Ö¹²´æ
-		final: finalÐÞÊÎµÄ·½·¨²»ÄÜ±»ÖØÐ´£¬¶øabstractÐÞÊÎµÄ·½·¨ÒªÇó±ØÐë±»ÖØÐ´¡£
-		private£ºprivateÐÞÊÎµÄ·½·¨²»ÄÜ±»ÖØÐ´£¬¶øabstractÐÞÊÎµÄ·½·¨ÒªÇó±ØÐë±»ÖØÐ´¡£
+ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½â£º
+	1ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½ï¿½É²ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½?
+		ï¿½ï¿½ï¿½Ô¡ï¿½
+		Îªï¿½Ë²ï¿½ï¿½Ã±ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	2ï¿½ï¿½abstractï¿½ï¿½ï¿½Üºï¿½ï¿½ï¿½Ð©ï¿½Ø¼ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½
+		final: finalï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü±ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½abstractï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ë±»ï¿½ï¿½Ð´ï¿½ï¿½
+		privateï¿½ï¿½privateï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü±ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½abstractï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ë±»ï¿½ï¿½Ð´ï¿½ï¿½
 	
-		static£ºstaticÐÞÊÎµÄ·½·¨¿ÉÒÔÍ¨¹ýÀàÃûµ÷ÓÃ£¬¶øabstractÐÞÊÎµÄ·½·¨ÊÇÃ»ÓÐ·½·¨ÌåµÄ£¬
-				µ÷ÓÃÒ»¸öÃ»ÓÐ·½·¨ÌåµÄ·½·¨ÊÇÃ»ÓÐÈÎºÎÒâÒåµÄ£¬ËùÒÔ²»ÄÜ¹²´æ¡£
+		staticï¿½ï¿½staticï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½abstractï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
+				ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ã»ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ü¹ï¿½ï¿½æ¡£
 */
 abstract class Student {
-	//public final abstract void show();
-	//private abstract void show();
-	//public static abstract void show();
+    //public final abstract void show();
+    //private abstract void show();
+    //public static abstract void show();
 }
 
 class AbstractTest {
-	public static void main(String[] args) {
-	
-	}
+    public static void main(String[] args) {
+
+    }
 }

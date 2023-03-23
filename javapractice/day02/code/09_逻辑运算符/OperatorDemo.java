@@ -1,45 +1,45 @@
 /*
-	Âß¼­ÔËËã·û£º
+	ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		&,|,!,^
 		&&,||
 
-	×¢Òâ£º
-		Âß¼­ÔËËã·ûÁ¬½ÓµÄÓ¦¸ÃÊÇÒ»¸ö²¼¶û±í´ïÊ½¡£
+	×¢ï¿½â£º
+		ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
 */
 class OperatorDemo {
-	public static void main(String[] args) {
-		//&,|,!,^
-		int a = 10;
-		int b = 20;
-		int c = 30;
+    public static void main(String[] args) {
+        //&,|,!,^
+        int a = 10;
+        int b = 20;
+        int c = 30;
 
-		//&:Âß¼­Óë	ÓĞfalseÔòfalse
-		System.out.println(a>b & a>c); //false & false = false
-		System.out.println(a>b & a<c); //false & true = false
-		System.out.println(a<b & a>c); //true & false = false
-		System.out.println(a<b & a<c); //true & true = true
-		System.out.println("--------");
+        //&:ï¿½ß¼ï¿½ï¿½ï¿½	ï¿½ï¿½falseï¿½ï¿½false
+        System.out.println(a > b & a > c); //false & false = false
+        System.out.println(a > b & a < c); //false & true = false
+        System.out.println(a < b & a > c); //true & false = false
+        System.out.println(a < b & a < c); //true & true = true
+        System.out.println("--------");
 
-		//|:Âß¼­»ò	ÓĞtrueÔòtrue
-		System.out.println(a>b | a>c); //false | false = false
-		System.out.println(a>b | a<c); //false | true = true
-		System.out.println(a<b | a>c); //true | false = true
-		System.out.println(a<b | a<c); //true | true = true
-		System.out.println("--------");
+        //|:ï¿½ß¼ï¿½ï¿½ï¿½	ï¿½ï¿½trueï¿½ï¿½true
+        System.out.println(a > b | a > c); //false | false = false
+        System.out.println(a > b | a < c); //false | true = true
+        System.out.println(a < b | a > c); //true | false = true
+        System.out.println(a < b | a < c); //true | true = true
+        System.out.println("--------");
 
-		//^:Âß¼­Òì»ò ÏàÍ¬false£¬²»Í¬true¡£
-		//ÇéÂÂ£ºÄĞÄĞ£¬ÄĞÅ®£¬Å®ÄĞ£¬Å®Å®
-		System.out.println(a>b ^ a>c); //false ^ false = false
-		System.out.println(a>b ^ a<c); //false ^ true = true
-		System.out.println(a<b ^ a>c); //true ^ false = true
-		System.out.println(a<b ^ a<c); //true ^ true = false
-		System.out.println("--------");
+        //^:ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Í¬falseï¿½ï¿½ï¿½ï¿½Í¬trueï¿½ï¿½
+        //ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½Å®ï¿½ï¿½Å®ï¿½Ğ£ï¿½Å®Å®
+        System.out.println(a > b ^ a > c); //false ^ false = false
+        System.out.println(a > b ^ a < c); //false ^ true = true
+        System.out.println(a < b ^ a > c); //true ^ false = true
+        System.out.println(a < b ^ a < c); //true ^ true = false
+        System.out.println("--------");
 
-		//!:Âß¼­·Ç
-		System.out.println((a>b));//false
-		System.out.println(!(a>b));//true
-		System.out.println(!!(a>b));//false
-		System.out.println(!!!(a>b));//true
-		System.out.println(!!!!(a>b));//false
-	}
+        //!:ï¿½ß¼ï¿½ï¿½ï¿½
+        System.out.println((a > b));//false
+        System.out.println(!(a > b));//true
+        System.out.println(!!(a > b));//false
+        System.out.println(!!!(a > b));//true
+        System.out.println(!!!!(a > b));//false
+    }
 }

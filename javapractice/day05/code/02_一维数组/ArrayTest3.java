@@ -1,16 +1,16 @@
 /*
-	Êý×éÔªËØ·´×ª (¾ÍÊÇ°ÑÔªËØ¶Ôµ÷)
+	ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø·ï¿½×ª (ï¿½ï¿½ï¿½Ç°ï¿½Ôªï¿½Ø¶Ôµï¿½)
 
-	·ÖÎö£º
-		ÈçºÎ×ö·´×ªÄØ?
-			°ÑµÚÒ»¸öºÍ×îºóÒ»¸ö½»»»
-			°ÑµÚ¶þ¸öºÍµ¹ÊýµÚ¶þ¸ö½»»»
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½?
+			ï¿½Ñµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½ÑµÚ¶ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			...
 */
 class ArrayTest3 {
-	public static void main(String[] args) {
-		//¶¨ÒåÊý×é
-		int[] arr = {12,86,79,43,50};
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = {12, 86, 79, 43, 50};
 
 		/*
 		for(int x=0; x<arr.length; x++) {
@@ -18,18 +18,18 @@ class ArrayTest3 {
 		}
 		*/
 
-		//Ð´Ò»¸ö¹¦ÄÜ±éÀúÊý×é
-		printArray(arr);
+        //Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ü±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        printArray(arr);
 
-		//½á¹û£º{50,43,79,86,12}
-		//¹¦ÄÜÐ´ºÃÁË£¬ÈçºÎµ÷ÓÃÄØ?
-		reverse(arr);
-		printArray(arr);
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½{50,43,79,86,12}
+        //ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½Îµï¿½ï¿½ï¿½ï¿½ï¿½?
+        reverse(arr);
+        printArray(arr);
+    }
 
 	/*
-		·µ»ØÖµÀàÐÍ£ºvoid
-		²ÎÊýÁÐ±í£ºint[] arr
+		ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Í£ï¿½void
+		ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½int[] arr
 	*/
 	/*
 	public static void printArray(int[] arr) {
@@ -39,29 +39,29 @@ class ArrayTest3 {
 	}
 	*/
 
-	//Ð§¹û²»ºÃ¿´
-	public static void printArray(int[] arr) {
-		System.out.print("[");
-		for(int x=0; x<arr.length; x++) {
-			if(x == arr.length - 1) {
-				System.out.print(arr[x]);
-			} else {
-				System.out.print(arr[x]+", ");
-			}
-		}
-		System.out.println("]");
-	}
+    //Ð§ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½
+    public static void printArray(int[] arr) {
+        System.out.print("[");
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
+                System.out.print(arr[x]);
+            } else {
+                System.out.print(arr[x] + ", ");
+            }
+        }
+        System.out.println("]");
+    }
 
-	/*
-		Ð´¹¦ÄÜÊµÏÖ£º
-			·µ»ØÖµÀàÐÍ£ºvoid
-			²ÎÊýÁÐ±í£ºint[]
-	*/
-	public static void reverse(int[] arr) {
-		for(int start=0,end=arr.length-1; start<=end; start++,end--) {
-			int temp = arr[start];
-			arr[start] = arr[end];
-			arr[end] = temp;
-		}
-	}
+    /*
+        Ð´ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½
+            ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Í£ï¿½void
+            ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½int[]
+    */
+    public static void reverse(int[] arr) {
+        for (int start = 0, end = arr.length - 1; start <= end; start++, end--) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+        }
+    }
 }

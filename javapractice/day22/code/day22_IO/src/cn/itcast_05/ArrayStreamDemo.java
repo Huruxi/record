@@ -5,28 +5,28 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /*
- * ÄÚ´æ²Ù×÷Á÷£ºÊý¾ÝÔÚÄÚ´æÖÐ×ªÒ»È¦
+ * ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½×ªÒ»È¦
  * ByteArrayInputStream
  * ByteArrayOutputStream
  */
 public class ArrayStreamDemo {
-	public static void main(String[] args) throws IOException {
-		// public ByteArrayOutputStream()
-		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		baos.write("helloworld".getBytes());
-		baos.write("javajava".getBytes());
-		baos.write("android".getBytes());
-		baos.close();
+    public static void main(String[] args) throws IOException {
+        // public ByteArrayOutputStream()
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        baos.write("helloworld".getBytes());
+        baos.write("javajava".getBytes());
+        baos.write("android".getBytes());
+        baos.close();
 
-		// public byte[] toByteArray()
-		byte[] bys = baos.toByteArray();
+        // public byte[] toByteArray()
+        byte[] bys = baos.toByteArray();
 
-		// public ByteArrayInputStream(byte[] buf)
-		ByteArrayInputStream bais = new ByteArrayInputStream(bys);
-		int by = 0;
-		while ((by = bais.read()) != -1) {
-			System.out.print((char) by);
-		}
-		bais.close();
-	}
+        // public ByteArrayInputStream(byte[] buf)
+        ByteArrayInputStream bais = new ByteArrayInputStream(bys);
+        int by = 0;
+        while ((by = bais.read()) != -1) {
+            System.out.print((char) by);
+        }
+        bais.close();
+    }
 }

@@ -1,8 +1,8 @@
 /*
-	javaÖĞµÄ¼Ì³Ğ×¢ÒâÊÂÏî£º
-		A:×ÓÀàÖ»ÄÜ¼Ì³Ğ¸¸ÀàËùÓĞ·ÇË½ÓĞµÄ³ÉÔ±(³ÉÔ±·½·¨ºÍ³ÉÔ±±äÁ¿)
-		B:×ÓÀà²»ÄÜ¼Ì³Ğ¸¸ÀàµÄ¹¹Ôì·½·¨£¬µ«ÊÇ¿ÉÒÔÍ¨¹ısuper(ºóÃæ½²)¹Ø¼ü×ÖÈ¥·ÃÎÊ¸¸Àà¹¹Ôì·½·¨¡£
-		C:²»ÒªÎªÁË²¿·Ö¹¦ÄÜ¶øÈ¥¼Ì³Ğ
+	javaï¿½ĞµÄ¼Ì³ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+		A:ï¿½ï¿½ï¿½ï¿½Ö»ï¿½Ü¼Ì³Ğ¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ·ï¿½Ë½ï¿½ĞµÄ³ï¿½Ô±(ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½)
+		B:ï¿½ï¿½ï¿½à²»ï¿½Ü¼Ì³Ğ¸ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½Í¨ï¿½ï¿½super(ï¿½ï¿½ï¿½æ½²)ï¿½Ø¼ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ê¸ï¿½ï¿½à¹¹ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+		C:ï¿½ï¿½ÒªÎªï¿½Ë²ï¿½ï¿½Ö¹ï¿½ï¿½Ü¶ï¿½È¥ï¿½Ì³ï¿½
 			class A {
 				public void show(){}
 				public void show2(){}
@@ -13,44 +13,44 @@
 				public void show3(){}
 			}
 
-	ÄÇÃ´£¬ÎÒÃÇÊ²Ã´Ê±ºò¿¼ÂÇÊ¹ÓÃ¼Ì³ĞÄØ?
-		¼Ì³ĞÖĞÀàÖ®¼äÌåÏÖµÄÊÇ£º¡±is a¡±µÄ¹ØÏµ¡£
-		Èç¹ûÁ½¸öÀàÂú×ãÕâ¸ö¹ØÏµ£ºxxx is a yyy£¬ÄÇÃ´ËûÃÇ¾Í¿ÉÒÔÊ¹ÓÃ¼Ì³Ğ¡£
-		¾ÙÀı£ºÀàAºÍÀàB£¬Èç¹ûÀàA is a ÀàB»òÕßÀàB is a ÀàA ÄÜÄîÍ¨¹ı£¬¾Í¿ÉÒÔ¿¼ÂÇÊ¹ÓÃ¼Ì³Ğ¡£
-		      ·ñÔò²»¿ÉÒÔ¡£
+	ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´Ê±ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¼Ì³ï¿½ï¿½ï¿½?
+		ï¿½Ì³ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ç£ï¿½ï¿½ï¿½is aï¿½ï¿½ï¿½Ä¹ï¿½Ïµï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½xxx is a yyyï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½Ç¾Í¿ï¿½ï¿½ï¿½Ê¹ï¿½Ã¼Ì³Ğ¡ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½A is a ï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½B is a ï¿½ï¿½A ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Ê¹ï¿½Ã¼Ì³Ğ¡ï¿½
+		      ï¿½ï¿½ï¿½ò²»¿ï¿½ï¿½Ô¡ï¿½
 
 		Student,Person
 		Dog,Animal
 		Dog,Pig
 */
 class Fu {
-	private int num = 100;
-	public int num2 = 200;
+    private int num = 100;
+    public int num2 = 200;
 
-	private void show() {
-		System.out.println("show");
-	}
+    private void show() {
+        System.out.println("show");
+    }
 
-	public void show2() {
-		System.out.println("show2");
-	}
+    public void show2() {
+        System.out.println("show2");
+    }
 }
 
 class Zi extends Fu {
 }
 
 class ExtendsDemo2 {
-	public static void main(String[] args) {
-		//´´½¨×ÓÀà¶ÔÏó
-		Zi z = new Zi();
-		//System.out.println(z.num);
-		System.out.println(z.num2);
-		//z.show();
-		z.show2();
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Zi z = new Zi();
+        //System.out.println(z.num);
+        System.out.println(z.num2);
+        //z.show();
+        z.show2();
 
-		//¿´FuĞĞ²»ĞĞ
-		//Fu f = new Fu();
-		//System.out.println(f.num);
-		//System.out.println(f.num2);
-	}
+        //ï¿½ï¿½Fuï¿½Ğ²ï¿½ï¿½ï¿½
+        //Fu f = new Fu();
+        //System.out.println(f.num);
+        //System.out.println(f.num2);
+    }
 }

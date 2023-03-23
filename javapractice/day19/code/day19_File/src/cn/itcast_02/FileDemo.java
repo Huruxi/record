@@ -4,45 +4,45 @@ import java.io.File;
 import java.io.IOException;
 
 /*
- * ´´½¨¹¦ÄÜ£º
- * A:´´½¨ÎÄ¼þ,Èç¹ûÎÄ¼þ²»´æÔÚ£¬¾Í´´½¨¡£´æÔÚ£¬¾Í²»´´½¨¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½
+ * A:ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½,ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		public boolean createNewFile() throws IOException
- * 		
- * B:´´½¨ÎÄ¼þ¼Ð£¬Èç¹ûÎÄ¼þ¼Ð²»´æÔÚ£¬¾Í´´½¨¡£´æÔÚ£¬¾Í²»´´½¨¡£
- * 	 public boolean mkdir() µ¥¼¶ÎÄ¼þ¼Ð
- *   public boolean mkdirs() ¶à¼¶ÎÄ¼þ¼Ð
- *   
- * µ½µ×´´½¨µÄÊÇÎÄ¼þ»¹ÊÇÎÄ¼þ¼Ð£¬È¡¾öÓÚÄãÊ¹ÓÃµÄ·½·¨¡£²»È¡¾öÓÚºó×ºÃû¡£
- * Æï°×ÂíµÄ²»Ò»¶¨ÊÇ°à³¤£¬¿ÉÄÜÊÇ×é³¤¡£
+ *
+ * B:ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Í´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 	 public boolean mkdir() ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+ *   public boolean mkdirs() ï¿½à¼¶ï¿½Ä¼ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½×´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ÃµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Úºï¿½×ºï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½Ò»ï¿½ï¿½ï¿½Ç°à³¤ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é³¤ï¿½ï¿½
  */
 public class FileDemo {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨FileÎÄ¼þ
-		File file = new File("d:\\a.txt");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½Fileï¿½Ä¼ï¿½
+        File file = new File("d:\\a.txt");
 
-		// public boolean createNewFile() throws IOException
-		System.out.println("createNewFile:" + file.createNewFile());
+        // public boolean createNewFile() throws IOException
+        System.out.println("createNewFile:" + file.createNewFile());
 
-		// ´´½¨ÎÄ¼þ¼Ð
-		File file2 = new File("d:\\demo");
-		System.out.println("mkdir:" + file2.mkdir());
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+        File file2 = new File("d:\\demo");
+        System.out.println("mkdir:" + file2.mkdir());
 
-		// ´´½¨¶à¼¶ÎÄ¼þ¼Ð
-		// File file3 = new File("d:\\aaa\\bbb");
-		// System.out.println("mkdir:" + file3.mkdir());
+        // ï¿½ï¿½ï¿½ï¿½ï¿½à¼¶ï¿½Ä¼ï¿½ï¿½ï¿½
+        // File file3 = new File("d:\\aaa\\bbb");
+        // System.out.println("mkdir:" + file3.mkdir());
 
-		File file4 = new File("d:\\aaa");
-		File file5 = new File("d:\\aaa\\bbb");
-		// File file5 = new File(file4,"bbb");
-		System.out.println("mkdir:" + file4.mkdir());
-		System.out.println("mkdir:" + file5.mkdir());
-		// ÕâÖÖ·½Ê½ËäÈ»¿ÉÒÔ£¬µ«ÊÇ±È½ÏÂé·³
-		// ÔõÃ´°ìÄØ,ÓÐÒ»ÖÖ¸ü¼òµ¥µÄ·½Ê½
-		File file6 = new File("d:\\ccc\\dddd\\eee\\fff");
-		System.out.println("mkdirs:" + file6.mkdirs());
+        File file4 = new File("d:\\aaa");
+        File file5 = new File("d:\\aaa\\bbb");
+        // File file5 = new File(file4,"bbb");
+        System.out.println("mkdir:" + file4.mkdir());
+        System.out.println("mkdir:" + file5.mkdir());
+        // ï¿½ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½È»ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ç±È½ï¿½ï¿½é·³
+        // ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Ò»ï¿½Ö¸ï¿½ï¿½òµ¥µÄ·ï¿½Ê½
+        File file6 = new File("d:\\ccc\\dddd\\eee\\fff");
+        System.out.println("mkdirs:" + file6.mkdirs());
 
-		// ÏÂÃæÕâ¸öÎÒµ½µ×´´½¨µÄÊÇÊ²Ã´ÄØ?
-		File file7 = new File("d:\\aaa\\bbb\\ccc.txt");
-		System.out.println("mkdir:" + file7.mkdir());
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½×´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½?
+        File file7 = new File("d:\\aaa\\bbb\\ccc.txt");
+        System.out.println("mkdir:" + file7.mkdir());
+    }
 }

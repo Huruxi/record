@@ -1,34 +1,34 @@
 package cn.itcast_02;
 
 /*
- * ÐèÇó£ºÇó5µÄ½×³Ë
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½Ä½×³ï¿½
  */
 public class DiGuiDemo {
-	public static void main(String[] args) {
-		// ÓÃÑ­»·ÊµÏÖ½×³Ë
-		int jc = 1;
-		for (int x = 1; x <= 5; x++) {
-			jc *= x;
-		}
-		System.out.println("5µÄ½×³ËÊÇ£º" + jc);
+    public static void main(String[] args) {
+        // ï¿½ï¿½Ñ­ï¿½ï¿½Êµï¿½Ö½×³ï¿½
+        int jc = 1;
+        for (int x = 1; x <= 5; x++) {
+            jc *= x;
+        }
+        System.out.println("5ï¿½Ä½×³ï¿½ï¿½Ç£ï¿½" + jc);
 
-		// ÓÃµÝ¹éÊµÏÖÇó½×³Ë
-		System.out.println("5µÄ½×³ËÊÇ£º"+jc(5));
-		
-	}
-	
-	/*¶¨ÒåÒ»¸ö·½·¨jc(int n),
-	 *¼ÙÈçjc(n)±íÊ¾nµÄ½×³Ë£¬ÇëÎÊ
-	 *n-1µÄ½×³ËÈçºÎ±íÊ¾ÄØ?
-	 *jc(n-1)
-	 *
-	 *³ö¿ÚÊÇ1£¡= 1
-	 */
-	public static int jc(int n){
-		if(n==1){
-			return 1;
-		}else {
-			return n*jc(n-1);
-		}
-	}
+        // ï¿½ÃµÝ¹ï¿½Êµï¿½ï¿½ï¿½ï¿½×³ï¿½
+        System.out.println("5ï¿½Ä½×³ï¿½ï¿½Ç£ï¿½" + jc(5));
+
+    }
+
+    /*ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jc(int n),
+     *ï¿½ï¿½ï¿½ï¿½jc(n)ï¿½ï¿½Ê¾nï¿½Ä½×³Ë£ï¿½ï¿½ï¿½ï¿½ï¿½
+     *n-1ï¿½Ä½×³ï¿½ï¿½ï¿½Î±ï¿½Ê¾ï¿½ï¿½?
+     *jc(n-1)
+     *
+     *ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½= 1
+     */
+    public static int jc(int n) {
+        if (n == 1) {
+            return 1;
+        } else {
+            return n * jc(n - 1);
+        }
+    }
 }

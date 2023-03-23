@@ -1,31 +1,34 @@
-class A{
-	public void show(){	
-		show2();
-	}
-	public void show2(){
-		System.out.println("ÎÒ");
-	}
+class A {
+    public void show() {
+        show2();
+    }
+
+    public void show2() {
+        System.out.println("ï¿½ï¿½");
+    }
 }
+
 class B extends A {
-	public void show2(){
-		System.out.println("°®");
-	}
+    public void show2() {
+        System.out.println("ï¿½ï¿½");
+    }
 }
+
 class C extends B {
-	public void show(){
-		super.show();
-	}
-	
-	public void show2(){
-		System.out.println("Äã");
-	}
+    public void show() {
+        super.show();
+    }
+
+    public void show2() {
+        System.out.println("ï¿½ï¿½");
+    }
 }
 
 class DuoTaiTest2 {
-	public static void main(String[] args) {
-		A a = new B();
-		a.show();
-		B b = new C();
-		b.show();
-	}
+    public static void main(String[] args) {
+        A a = new B();
+        a.show();
+        B b = new C();
+        b.show();
+    }
 }

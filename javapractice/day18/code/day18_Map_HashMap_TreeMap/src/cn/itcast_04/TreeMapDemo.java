@@ -7,23 +7,23 @@ import java.util.TreeMap;
  * TreeMap<String,String>
  */
 public class TreeMapDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		TreeMap<String, String> tm = new TreeMap<String, String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        TreeMap<String, String> tm = new TreeMap<String, String>();
 
-		// Ìí¼ÓÔªËØ
-		tm.put("zhangsan", "±±¾©");
-		tm.put("lisi", "Ìì½ò");
-		tm.put("wangwu", "ÉÏº£");
-		tm.put("zhaoliu", "ÖØÇì");
-		tm.put("tianqi", "Î÷°²");
-		tm.put("lisi", "Îäºº");
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        tm.put("zhangsan", "ï¿½ï¿½ï¿½ï¿½");
+        tm.put("lisi", "ï¿½ï¿½ï¿½");
+        tm.put("wangwu", "ï¿½Ïºï¿½");
+        tm.put("zhaoliu", "ï¿½ï¿½ï¿½ï¿½");
+        tm.put("tianqi", "ï¿½ï¿½ï¿½ï¿½");
+        tm.put("lisi", "ï¿½äºº");
 
-		// ±éÀú
-		Set<String> set = tm.keySet();
-		for (String key : set) {
-			String value = tm.get(key);
-			System.out.println(key + "---" + value);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½
+        Set<String> set = tm.keySet();
+        for (String key : set) {
+            String value = tm.get(key);
+            System.out.println(key + "---" + value);
+        }
+    }
 }

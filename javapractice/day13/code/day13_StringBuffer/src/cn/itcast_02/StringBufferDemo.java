@@ -1,32 +1,32 @@
 package cn.itcast_02;
 
 /*
- * Ìí¼Ó¹¦ÄÜ£º
- * public StringBuffer append(String str)£º×·¼ÓÊý¾Ý£¬ÍùÒÑÓÐÊý¾ÝµÄºóÃæ¡£
- * public StringBuffer insert(int offset,String str):²åÈëÊý¾Ý£¬ÍùÖ¸¶¨Î»ÖÃÌí¼ÓÊý¾Ý¡£
+ * ï¿½ï¿½Ó¹ï¿½ï¿½Ü£ï¿½
+ * public StringBuffer append(String str)ï¿½ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½æ¡£
+ * public StringBuffer insert(int offset,String str):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
  */
 public class StringBufferDemo {
-	public static void main(String[] args) {
-		// ´´½¨×Ö·û´®»º³åÇø¶ÔÏó
-		StringBuffer sb = new StringBuffer();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        StringBuffer sb = new StringBuffer();
 
-		// µ÷ÓÃ
-		// public StringBuffer append(String str)£º×·¼ÓÊý¾Ý£¬ÍùÒÑÓÐÊý¾ÝµÄºóÃæ¡£
-		// StringBuffer sb2 = sb.append("hello");
-		// System.out.println(sb == sb2); // true
-		// System.out.println("sb:" + sb);
-		// System.out.println("sb2:" + sb2);
+        // ï¿½ï¿½ï¿½ï¿½
+        // public StringBuffer append(String str)ï¿½ï¿½×·ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄºï¿½ï¿½æ¡£
+        // StringBuffer sb2 = sb.append("hello");
+        // System.out.println(sb == sb2); // true
+        // System.out.println("sb:" + sb);
+        // System.out.println("sb2:" + sb2);
 
-		// sb.append("hello");
-		// sb.append("world");
-		// sb.append("java");
+        // sb.append("hello");
+        // sb.append("world");
+        // sb.append("java");
 
-		// Á´Ê½±à³Ì
-		sb.append("hello").append("world").append("java");
+        // ï¿½ï¿½Ê½ï¿½ï¿½ï¿½
+        sb.append("hello").append("world").append("java");
 
-		// public StringBuffer insert(int offset,String str):²åÈëÊý¾Ý£¬ÍùÖ¸¶¨Î»ÖÃÌí¼ÓÊý¾Ý¡£
-		sb.insert(5, "ak47");
+        // public StringBuffer insert(int offset,String str):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+        sb.insert(5, "ak47");
 
-		System.out.println("sb:" + sb);
-	}
+        System.out.println("sb:" + sb);
+    }
 }

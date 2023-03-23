@@ -1,24 +1,24 @@
 class Student {
-	//Ñ§ºÅ
-	String sid;
-	//ÐÕÃû
-	String name;
-	//ÄêÁä
-	int age;
+    //Ñ§ï¿½ï¿½
+    String sid;
+    //ï¿½ï¿½ï¿½ï¿½
+    String name;
+    //ï¿½ï¿½ï¿½ï¿½
+    int age;
 
-	//Ñ§Ï°µÄ·½·¨
-	//Ñ§Ï°µÄ·½·¨
-	public void study() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
-	}
+    //Ñ§Ï°ï¿½Ä·ï¿½ï¿½ï¿½
+    //Ñ§Ï°ï¿½Ä·ï¿½ï¿½ï¿½
+    public void study() {
+        System.out.println("Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§Ï°");
+    }
 
-	//³Ô·¹µÄ·½·¨
-	public void eat() {
-		System.out.println("Ñ§ÉúÒª³Ô·¹");
-	}
+    //ï¿½Ô·ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+    public void eat() {
+        System.out.println("Ñ§ï¿½ï¿½Òªï¿½Ô·ï¿½");
+    }
 
-	//Ë¯¾õµÄ·½·¨
-	public void sleep() {
-		System.out.println("Ñ§ÉúÏëË¯¾õ");
-	}
+    //Ë¯ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
+    public void sleep() {
+        System.out.println("Ñ§ï¿½ï¿½ï¿½ï¿½Ë¯ï¿½ï¿½");
+    }
 }

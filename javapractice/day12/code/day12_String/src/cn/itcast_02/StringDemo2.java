@@ -1,17 +1,17 @@
 package cn.itcast_02;
 
 /*
- * String s = new String(“hello”)和String s = “hello”;的区别
- * 
- * ==:比较引用类型，比较的是地址值
- * equal():默认比较的是地址值。String类重写了equals()方法，该方法的作用是比较字符串的内容是否相同
+ * String s = new String(锟斤拷hello锟斤拷)锟斤拷String s = 锟斤拷hello锟斤拷;锟斤拷锟斤拷锟斤拷
+ *
+ * ==:锟饺斤拷锟斤拷锟斤拷锟斤拷锟酵ｏ拷锟饺较碉拷锟角碉拷址值
+ * equal():默锟较比较碉拷锟角碉拷址值锟斤拷String锟斤拷锟斤拷写锟斤拷equals()锟斤拷锟斤拷锟斤拷锟矫凤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角比斤拷锟街凤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角凤拷锟斤拷同
  */
 public class StringDemo2 {
-	public static void main(String[] args) {
-		String s1 = new String("hello");
-		String s2 = "hello";
+    public static void main(String[] args) {
+        String s1 = new String("hello");
+        String s2 = "hello";
 
-		System.out.println(s1 == s2); // false
-		System.out.println(s1.equals(s2)); // true
-	}
+        System.out.println(s1 == s2); // false
+        System.out.println(s1.equals(s2)); // true
+    }
 }

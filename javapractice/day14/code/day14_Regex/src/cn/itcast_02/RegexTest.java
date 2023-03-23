@@ -3,8 +3,8 @@ package cn.itcast_02;
 import java.util.Scanner;
 
 /*
- * Ğ£ÑéÓÊÏä
- * 
+ * Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
  * liuyi@163.com
  * linqingxia@126.com
  * 123456@qq.com
@@ -13,18 +13,18 @@ import java.util.Scanner;
  * fqy@itcast.cn
  */
 public class RegexTest {
-	public static void main(String[] args) {
-		//¶¨Òå¹æÔò
-		//String regex = "[a-zA-Z_0-9]+@[a-zA-Z_0-9]{2,8}(\\.[a-z]{2,3})+";
-		String regex = "\\w+@\\w{2,8}(\\.[a-z]{2,3})+";
-		
-		//¼üÅÌÂ¼ÈëÓÊÏä
-		Scanner sc=  new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÓÊÏä£º");
-		String email = sc.nextLine();
-		
-		//Ğ£Ñé
-		boolean flag = email.matches(regex);
-		System.out.println(flag);
-	}
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //String regex = "[a-zA-Z_0-9]+@[a-zA-Z_0-9]{2,8}(\\.[a-z]{2,3})+";
+        String regex = "\\w+@\\w{2,8}(\\.[a-z]{2,3})+";
+
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ä£º");
+        String email = sc.nextLine();
+
+        //Ğ£ï¿½ï¿½
+        boolean flag = email.matches(regex);
+        System.out.println(flag);
+    }
 }

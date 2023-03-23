@@ -1,24 +1,24 @@
 package cn.itcast_05;
 
 /*
- * JDK5µÄÐÂÌØÐÔ£º
- * 		×Ô¶¯×°Ïä:int -- Integer
- * 				µ×²ã·½·¨£ºpublic static Integer valueOf(int i)
- * 		×Ô¶¯²ðÏä£ºInteger -- int
- * 				µ×²ã·½·¨£ºpublic int intValue()
- * 
- * ×¢Òâ£º¶ÔÏó²»ÄÜÎªnull¡£
- * ¿ª·¢Ô­Ôò£ºÖ»ÒªÊÇ¶ÔÏó£¬×ö²Ù×÷£¬¿Ï¶¨ÏÈÅÐ¶Ï¶ÔÏóÊÇ·ñÎªnull£¬Èç¹û²»Îªnull£¬²Å¼ÌÐø²Ù×÷¡£
+ * JDK5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½
+ * 		ï¿½Ô¶ï¿½×°ï¿½ï¿½:int -- Integer
+ * 				ï¿½×²ã·½ï¿½ï¿½ï¿½ï¿½public static Integer valueOf(int i)
+ * 		ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ä£ºInteger -- int
+ * 				ï¿½×²ã·½ï¿½ï¿½ï¿½ï¿½public int intValue()
+ *
+ * ×¢ï¿½â£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªnullï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½Ö»Òªï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½Ð¶Ï¶ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªnullï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªnullï¿½ï¿½ï¿½Å¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class IntegerDemo {
-	public static void main(String[] args) {
-		// Integer i = new Integer(100);
-		Integer i = 100; // ×Ô¶¯×°Ïä
-		// Integer i = Integer.valueOf(100);
+    public static void main(String[] args) {
+        // Integer i = new Integer(100);
+        Integer i = 100; // ï¿½Ô¶ï¿½×°ï¿½ï¿½
+        // Integer i = Integer.valueOf(100);
 
-		i += 200; // i = i + 200
-		// i = Integer.valueOf(i.intValue() + 200);
+        i += 200; // i = i + 200
+        // i = Integer.valueOf(i.intValue() + 200);
 
-		System.out.println(i);
-	}
+        System.out.println(i);
+    }
 }

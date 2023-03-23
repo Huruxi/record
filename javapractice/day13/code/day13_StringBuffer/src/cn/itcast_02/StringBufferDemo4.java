@@ -1,16 +1,16 @@
 package cn.itcast_02;
 
 /*
- * ·´×ª¹¦ÄÜ	 public StringBuffer reverse()
+ * ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½	 public StringBuffer reverse()
  */
 public class StringBufferDemo4 {
-	public static void main(String[] args) {
-		StringBuffer buffer = new StringBuffer();
+    public static void main(String[] args) {
+        StringBuffer buffer = new StringBuffer();
 
-		buffer.append("java").append("Ï¼ÇàÁÖ°®ÎÒ");
+        buffer.append("java").append("Ï¼ï¿½ï¿½ï¿½Ö°ï¿½ï¿½ï¿½");
 
-		buffer.reverse();
+        buffer.reverse();
 
-		System.out.println("buffer:" + buffer);
-	}
+        System.out.println("buffer:" + buffer);
+    }
 }

@@ -3,13 +3,13 @@ package cn.itcast_03;
 import java.util.Scanner;
 
 /*
- * public int nextInt():»ñÈ¡Ò»¸öintÀàÐÍµÄÊý¾Ý
- * public String nextLine():»ñÈ¡Ò»¸ö×Ö·û´®ÀàÐÍµÄÊý¾Ý
+ * public int nextInt():ï¿½ï¿½È¡Ò»ï¿½ï¿½intï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½
+ * public String nextLine():ï¿½ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ScannerDemo {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String s = sc.nextLine();
-		System.out.println(s);
-	}
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(s);
+    }
 }

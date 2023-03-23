@@ -1,13 +1,13 @@
-//Èç¹û·µ»ØÖµÊÇÒ»¸ö»ù±¾Êý¾ÝÀàÐÍ£¬ÄÇÃ´£¬·µ»ØµÄ¾ÍÊÇ¸Ã»ù±¾ÀàÐÍµÄÖµ¡£
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ØµÄ¾ï¿½ï¿½Ç¸Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Öµï¿½ï¿½
 class Demo {
-	public int sum(int a,int b) {
-		return a + b;
-	}
+    public int sum(int a, int b) {
+        return a + b;
+    }
 }
 
 class ReturnDemo {
-	public static void main(String[] args) {
-		int x = new Demo().sum(10,20);
-		System.out.println(x);
-	}
+    public static void main(String[] args) {
+        int x = new Demo().sum(10, 20);
+        System.out.println(x);
+    }
 }

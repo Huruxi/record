@@ -1,19 +1,19 @@
 package cn.itcast_02;
 
 /*
- * public StringBuffer replace(int start,int end,String str):ÓÃ¸ø¶¨µÄ×Ö·û´®Ìæ»»´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÊý¾Ý
+ * public StringBuffer replace(int start,int end,String str):ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½æ»»ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã¿ï¿½Ê¼ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class StringBufferDemo3 {
-	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		StringBuffer buffer = new StringBuffer();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        StringBuffer buffer = new StringBuffer();
 
-		buffer.append("hello").append("world").append("java");
+        buffer.append("hello").append("world").append("java");
 
-		// public StringBuffer replace(int start,int end,String
-		// str):ÓÃ¸ø¶¨µÄ×Ö·û´®Ìæ»»´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÊý¾Ý
-		buffer.replace(3, 8, "haha");
+        // public StringBuffer replace(int start,int end,String
+        // str):ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½æ»»ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã¿ï¿½Ê¼ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        buffer.replace(3, 8, "haha");
 
-		System.out.println("buffer:" + buffer);
-	}
+        System.out.println("buffer:" + buffer);
+    }
 }

@@ -1,40 +1,40 @@
 package cn.itcast.pojo;
 
 /**
- * ÓÃ»§ÃèÊöÀà
- * 
+ * ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
  * @author fqy
  * @version V1.0
  */
 public class User {
-	// ÓÃ»§Ãû
-	private String username;
-	// ÃÜÂë
-	private String password;
+    // ï¿½Ã»ï¿½ï¿½ï¿½
+    private String username;
+    // ï¿½ï¿½ï¿½ï¿½
+    private String password;
 
-	public User() {
-		super();
-	}
+    public User() {
+        super();
+    }
 
-	public User(String username, String password) {
-		super();
-		this.username = username;
-		this.password = password;
-	}
+    public User(String username, String password) {
+        super();
+        this.username = username;
+        this.password = password;
+    }
 
-	public String getUsername() {
-		return username;
-	}
+    public String getUsername() {
+        return username;
+    }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

@@ -3,56 +3,56 @@ package cn.itcast_01;
 import java.util.ArrayList;
 
 /*
- * ÔöÇ¿for£ºÊÇforÑ­»·µÄÒ»ÖÖ¸ñÊ½¡£
- * ¸ñÊ½£º
- * 		for(ÔªËØÊý¾ÝÀàÐÍ ±äÁ¿Ãû : Êý×éÃû»òÕßCollection¼¯ºÏ) {
- * 			Ö±½ÓÊ¹ÓÃ±äÁ¿Ãû¾Í¿ÉÒÔÁË£¬ÕâÀïµÄ±äÁ¿ÃûÆäÊµ¾ÍÊÇÊý×é»òÕß¼¯ºÏÖÐµÄÔªËØ¡£
+ * ï¿½ï¿½Ç¿forï¿½ï¿½ï¿½ï¿½forÑ­ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ö¸ï¿½Ê½ï¿½ï¿½
+ * ï¿½ï¿½Ê½ï¿½ï¿½
+ * 		for(Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Collectionï¿½ï¿½ï¿½ï¿½) {
+ * 			Ö±ï¿½ï¿½Ê¹ï¿½Ã±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¿ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ôªï¿½Ø¡ï¿½
  * 		}
- * ºÃ´¦£º
- * 		¼ò»¯ÁËÊý×éºÍCollection¼¯ºÏµÄ±éÀú¡£
- * 
- * ×¢ÒâÊÂÏî£ºÔöÇ¿forµÄÄ¿±êÒªÅÐ¶ÏÊÇ·ñÎªnull
- * ÔöÇ¿for±éÀú¼¯ºÏ£¬ÆäÊµÊÇÓÃÀ´Ìæ´úµü´úÆ÷¡£
- * 
- * Collection£ºµü´úÆ÷£¬ÔöÇ¿for
- * List¼°Æä×ÓÀà£ºµü´úÆ÷£¬ÔöÇ¿for£¬ÆÕÍ¨for
+ * ï¿½Ã´ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Collectionï¿½ï¿½ï¿½ÏµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£ºï¿½ï¿½Ç¿forï¿½ï¿½Ä¿ï¿½ï¿½Òªï¿½Ð¶ï¿½ï¿½Ç·ï¿½Îªnull
+ * ï¿½ï¿½Ç¿forï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * Collectionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿for
+ * Listï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿forï¿½ï¿½ï¿½ï¿½Í¨for
  */
 public class ForDemo {
-	public static void main(String[] args) {
-		// intÊý×é
-		int[] arr = { 1, 2, 3, 4, 5 };
-		// ÔöÇ¿for
-		for (int x : arr) {
-			System.out.println(x);
-		}
-		System.out.println("-----------------");
+    public static void main(String[] args) {
+        // intï¿½ï¿½ï¿½ï¿½
+        int[] arr = {1, 2, 3, 4, 5};
+        // ï¿½ï¿½Ç¿for
+        for (int x : arr) {
+            System.out.println(x);
+        }
+        System.out.println("-----------------");
 
-		String[] strArray = { "hello", "world", "java" };
-		// ÔöÇ¿for
-		for (String str : strArray) {
-			System.out.println(str);
-		}
-		System.out.println("-----------------");
+        String[] strArray = {"hello", "world", "java"};
+        // ï¿½ï¿½Ç¿for
+        for (String str : strArray) {
+            System.out.println(str);
+        }
+        System.out.println("-----------------");
 
-		ArrayList<String> array = new ArrayList<String>();
-		array.add("hello");
-		array.add("world");
-		array.add("java");
-		// ÔöÇ¿for
-		for (String s : array) {
-			System.out.println(s);
-		}
-		
-		//NullPointerException
-		// array = null;
-		// for (String s : array) {
-		// System.out.println(s);
-		// }
-		
-		
-		// for (String s : array) {
-		// //ConcurrentModificationException
-		// array.add("hello");
-		// }
-	}
+        ArrayList<String> array = new ArrayList<String>();
+        array.add("hello");
+        array.add("world");
+        array.add("java");
+        // ï¿½ï¿½Ç¿for
+        for (String s : array) {
+            System.out.println(s);
+        }
+
+        //NullPointerException
+        // array = null;
+        // for (String s : array) {
+        // System.out.println(s);
+        // }
+
+
+        // for (String s : array) {
+        // //ConcurrentModificationException
+        // array.add("hello");
+        // }
+    }
 }

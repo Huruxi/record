@@ -4,35 +4,35 @@ import java.io.File;
 import java.io.IOException;
 
 /*
- * É¾³ý¹¦ÄÜ£ºpublic boolean delete() ¼È¿ÉÒÔÉ¾³ýÎÄ¼þ£¬Ò²¿ÉÒÔÉ¾³ýÎÄ¼þ¼Ð¡£
- * 
- * Ïà¶ÔÂ·¾¶£º²»ÒÔÅÌ·û¿ªÊ¼µÄÂ·¾¶
- * ¾ø¶ÔÂ·¾¶£ºÒÔÅÌ·û¿ªÊ¼µÄÂ·¾¶
- * 
- * ×¢ÒâÊÂÏî£º
- * 		A:Èç¹ûÒ»¸öÎÄ¼þ¼ÐÄÚÓÐÄÚÈÝ£¬ÊÇ²»ÄÜÖ±½ÓÉ¾³ýµÄ¡£
- * 		B:Java³ÌÐòµÄÉ¾³ý²»×ß»ØÊÕÕ¾£¬Ö±½ÓÉ¾³ý¡£
+ * É¾ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½public boolean delete() ï¿½È¿ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì·ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Â·ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì·ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½Â·ï¿½ï¿½
+ *
+ * ×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+ * 		A:ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½Ç²ï¿½ï¿½ï¿½Ö±ï¿½ï¿½É¾ï¿½ï¿½ï¿½Ä¡ï¿½
+ * 		B:Javaï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ß»ï¿½ï¿½ï¿½Õ¾ï¿½ï¿½Ö±ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½
  */
 public class FileDemo2 {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨File¶ÔÏó
-		File file = new File("a.txt");
-		System.out.println("createNewFile:" + file.createNewFile());
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+        File file = new File("a.txt");
+        System.out.println("createNewFile:" + file.createNewFile());
 
-		File file2 = new File("aaa\\bbb");
-		System.out.println("mkdirs:" + file2.mkdirs());
+        File file2 = new File("aaa\\bbb");
+        System.out.println("mkdirs:" + file2.mkdirs());
 
-		File file3 = new File(file2, "b.txt");
-		System.out.println("createNewFile:" + file3.createNewFile());
+        File file3 = new File(file2, "b.txt");
+        System.out.println("createNewFile:" + file3.createNewFile());
 
-		// É¾³ýÎÄ¼þ
-		System.out.println("delete:" + file.delete());
+        // É¾ï¿½ï¿½ï¿½Ä¼ï¿½
+        System.out.println("delete:" + file.delete());
 
-		// É¾³ýÎÄ¼þ¼Ð
-		File file4 = new File("aaa\\bbb\\ccc");
-		System.out.println("delete:" + file4.delete());
+        // É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+        File file4 = new File("aaa\\bbb\\ccc");
+        System.out.println("delete:" + file4.delete());
 
-		File file5 = new File("aaa");
-		System.out.println("delete:" + file5.delete());
-	}
+        File file5 = new File("aaa");
+        System.out.println("delete:" + file5.delete());
+    }
 }

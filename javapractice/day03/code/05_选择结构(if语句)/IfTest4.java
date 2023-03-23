@@ -1,88 +1,89 @@
 /*
-	ĞèÇó£º¼üÅÌÂ¼ÈëÔÂ·İµÄÖµ£¬Êä³ö¶ÔÓ¦µÄ¼¾½Ú¡£
-		´º 3,4,5
-		ÏÄ 6,7,8
-		Çï 9,10,11
-		¶¬ 12,1,2
+	ï¿½ï¿½ï¿½ó£º¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Â·İµï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä¼ï¿½ï¿½Ú¡ï¿½
+		ï¿½ï¿½ 3,4,5
+		ï¿½ï¿½ 6,7,8
+		ï¿½ï¿½ 9,10,11
+		ï¿½ï¿½ 12,1,2
 
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÔÂ·İ£¬ÓÃScannerÊµÏÖ¡£
-		B:ÓÃifÓï¾äÊµÏÖÅĞ¶Ï
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Â·İ£ï¿½ï¿½ï¿½ScannerÊµï¿½Ö¡ï¿½
+		B:ï¿½ï¿½ifï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Ğ¶ï¿½
 */
+
 import java.util.Scanner;
 
 class IfTest4 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÔÂ·İ
-		System.out.println("ÇëÊäÈëÔÂ·İ£º");
-		int month = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Â·ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·İ£ï¿½");
+        int month = sc.nextInt();
 		
 		/*
 		if(month<1 || month>12) {
-			System.out.println("ÔÂ·İÊäÈëÓĞÎó");
+			System.out.println("ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}else if(month == 1) {
-			System.out.println("¶¬¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}else if(month == 2) {
-			System.out.println("¶¬¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}else if(month == 3) {
-			System.out.println("´º¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}else if(month == 4) {
-			System.out.println("´º¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}else if(month == 5) {
-			System.out.println("´º¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}else if(month == 6) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("ï¿½Ä¼ï¿½");
 		}else if(month == 7) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("ï¿½Ä¼ï¿½");
 		}else if(month == 8) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("ï¿½Ä¼ï¿½");
 		}else if(month == 9) {
-			System.out.println("Çï¼¾");
+			System.out.println("ï¿½ï¼¾");
 		}else if(month == 10) {
-			System.out.println("Çï¼¾");
+			System.out.println("ï¿½ï¼¾");
 		}else if(month == 11) {
-			System.out.println("Çï¼¾");
+			System.out.println("ï¿½ï¼¾");
 		}else {
-			System.out.println("¶¬¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}
 		*/
 
-		//ËäÈ»ÏÖÔÚ¿ÉÒÔÊµÏÖ£¬µ«ÊÇ¸Ğ¾õÓĞĞ©Âé·³
-		//ËùÒÔÎÒÃÇÒª¶Ô³ÌĞò½øĞĞ¸Ä½ø
-		//ÈçºÎ¸ÄÄØ?
-		//month==3 || month==4 || month==5
+        //ï¿½ï¿½È»ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½ï¿½ï¿½ï¿½Ç¸Ğ¾ï¿½ï¿½ï¿½Ğ©ï¿½é·³
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ô³ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¸Ä½ï¿½
+        //ï¿½ï¿½Î¸ï¿½ï¿½ï¿½?
+        //month==3 || month==4 || month==5
 		/*
 		if(month<1 || month>12) {
-			System.out.println("ÔÂ·İÊäÈëÓĞÎó");
+			System.out.println("ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		}else if(month==3 || month==4 || month==5) {
-			System.out.println("´º¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}else if(month==6 || month==7 || month==8) {
-			System.out.println("ÏÄ¼¾");
+			System.out.println("ï¿½Ä¼ï¿½");
 		}else if(month==9 || month==10 || month==11) {
-			System.out.println("Çï¼¾");
+			System.out.println("ï¿½ï¼¾");
 		}else {
-			System.out.println("¶¬¼¾");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½");
 		}
 		*/
 
-		//Õâ¸öÊ±ºò£¬ÒÑ¾­¿ÉÒÔÁË¡£
-		//µ«ÊÇ£¬¼ÓÈëÅĞ¶ÏµÄÌõ¼ş½Ï¶à£¬±ÈÈçËµ£¬ÉÏ°ëÄêºÍÏÂ°ëÄê¡£
-		//ÅĞ¶ÏµÄÌõ¼ş±È½Ï¶àµÄ»°£¬ÎÒÃÇÆäÊµ»¹¿ÉÒÔ¿¼ÂÇÍ¨¹ıÁíÍâµÄÒ»ÖÖĞÎÊ½½øĞĞ±í´ï
-		//(month>=3 && month<=5)
-		//Õë¶ÔÒ»¸ö·¶Î§µÄÅĞ¶Ï
-		if(month<1 || month>12) {
-			System.out.println("ÔÂ·İÊäÈëÓĞÎó");
-		}else if(month>=3 && month<=5) {
-			System.out.println("´º¼¾");
-		}else if(month>=6 && month<=8) {
-			System.out.println("ÏÄ¼¾");
-		}else if(month>=9 && month<=11) {
-			System.out.println("Çï¼¾");
-		}else {
-			System.out.println("¶¬¼¾");
-		}
-	}
+        //ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¡ï¿½
+        //ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶à£¬ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ï¿½ï¿½Â°ï¿½ï¿½ê¡£
+        //ï¿½Ğ¶Ïµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½Ï¶ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½
+        //(month>=3 && month<=5)
+        //ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î§ï¿½ï¿½ï¿½Ğ¶ï¿½
+        if (month < 1 || month > 12) {
+            System.out.println("ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        } else if (month >= 3 && month <= 5) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½");
+        } else if (month >= 6 && month <= 8) {
+            System.out.println("ï¿½Ä¼ï¿½");
+        } else if (month >= 9 && month <= 11) {
+            System.out.println("ï¿½ï¼¾");
+        } else {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½");
+        }
+    }
 }

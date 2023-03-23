@@ -1,70 +1,73 @@
 /*
-	Ñ§ÉúÀàºÍÀÏÊ¦¡£¶¨ÒåÁ½¸ö¹¦ÄÜ(³Ô·¹£¬Ë¯¾õ)
+	Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½Ô·ï¿½ï¿½ï¿½Ë¯ï¿½ï¿½)
 
-	Ñ§ÉúÀà£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),eat(),sleep()
-	ÀÏÊ¦Àà£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),eat(),sleep()
+	Ñ§ï¿½ï¿½ï¿½à£º
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),eat(),sleep()
+	ï¿½ï¿½Ê¦ï¿½à£º
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),eat(),sleep()
 
-	ÌáÈ¡³ö¹²ĞÔµÄ¶«Î÷¶¨Òåµ½Ò»¸öÀàÖĞ£º
-	ÈËÀà£º
-		³ÉÔ±±äÁ¿£ºĞÕÃû£¬ÄêÁä
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),eat(),sleep()
+	ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ÔµÄ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½åµ½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½
+	ï¿½ï¿½ï¿½à£º
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),eat(),sleep()
 
-	Ñ§ÉúÀà ¼Ì³Ğ ÈËÀà
-	ÀÏÊ¦Àà ¼Ì³Ğ ÈËÀà
+	Ñ§ï¿½ï¿½ï¿½ï¿½ ï¿½Ì³ï¿½ ï¿½ï¿½ï¿½ï¿½
+	ï¿½ï¿½Ê¦ï¿½ï¿½ ï¿½Ì³ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	¼Ì³ĞµÄºÃ´¦£º
-		A:Ìá¸ßÁË´úÂëµÄ¸´ÓÃĞÔ
-		B:Ìá¸ßÁË´úÂëµÄÎ¬»¤ĞÔ
-		C:ÈÃÀàÓëÀàÖ®¼ä²úÉúÁË¹ØÏµ£¬ÊÇ¶àÌ¬µÄÇ°Ìá
+	ï¿½Ì³ĞµÄºÃ´ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¹ï¿½Ïµï¿½ï¿½ï¿½Ç¶ï¿½Ì¬ï¿½ï¿½Ç°ï¿½ï¿½
 
-	¼Ì³ĞµÄ±×¶Ë£ºÀàµÄñîºÏĞÔºÜÇ¿
-		Éè¼ÆÔ­Ôò£ºµÍñîºÏ£¬¸ßÄÚ¾Û¡£
-		ñîºÏ£ºÀàÓëÀàµÄ¹ØÏµ¡£
-		ÄÚ¾Û£º×Ô¼ºÍê³ÉÊÂÇéµÄÄÜÁ¦¡£
+	ï¿½Ì³ĞµÄ±×¶Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½Ç¿
+		ï¿½ï¿½ï¿½Ô­ï¿½ò£ºµï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½Ú¾Û¡ï¿½
+		ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½Ïµï¿½ï¿½
+		ï¿½Ú¾Û£ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
-//ÈËÀà
+//ï¿½ï¿½ï¿½ï¿½
 class Person {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Person() {}
+    public Person() {
+    }
 
-	public Person(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void eat() {
-		System.out.println("³Ô·¹");
-	}
+    public void eat() {
+        System.out.println("ï¿½Ô·ï¿½");
+    }
 
-	public void sleep() {
-		System.out.println("Ë¯¾õ");
-	}
+    public void sleep() {
+        System.out.println("Ë¯ï¿½ï¿½");
+    }
 }
-//Ñ§ÉúÀà
-class Student extends Person  {
-	public Student() {}
+
+//Ñ§ï¿½ï¿½ï¿½ï¿½
+class Student extends Person {
+    public Student() {
+    }
 
 	/*
 	public Student(String name,int age) {
@@ -74,27 +77,27 @@ class Student extends Person  {
 	*/
 }
 
-//ÀÏÊ¦Àà
+//ï¿½ï¿½Ê¦ï¿½ï¿½
 class Teacher extends Person {
 }
 
 class PersonDemo {
-	public static void main(String[] args) {
-		//Ñ§ÉúÀà
-		Student s = new Student();
-		s.setName("Íõ×æÏÍ");
-		s.setAge(27);
-		System.out.println(s.getName()+"---"+s.getAge());
-		s.eat();
-		s.sleep();
-		System.out.println("--------------------------");
+    public static void main(String[] args) {
+        //Ñ§ï¿½ï¿½ï¿½ï¿½
+        Student s = new Student();
+        s.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        s.setAge(27);
+        System.out.println(s.getName() + "---" + s.getAge());
+        s.eat();
+        s.sleep();
+        System.out.println("--------------------------");
 
-		//ÀÏÊ¦Àà
-		Teacher t = new Teacher();
-		t.setName("Íõ×æÀ¶");
-		t.setAge(25);
-		System.out.println(t.getName()+"---"+t.getAge());
-		t.eat();
-		t.sleep();
-	}
+        //ï¿½ï¿½Ê¦ï¿½ï¿½
+        Teacher t = new Teacher();
+        t.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        t.setAge(25);
+        System.out.println(t.getName() + "---" + t.getAge());
+        t.eat();
+        t.sleep();
+    }
 }

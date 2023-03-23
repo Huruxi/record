@@ -1,16 +1,16 @@
 /*
-	¶¨Òå±äÁ¿µÄÊ±ºò£¬·¶Î§Ô½Ð¡Ô½ºÃ¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ò£¬·ï¿½Î§Ô½Ð¡Ô½ï¿½Ã¡ï¿½
 */
 class Demo {
-	public int sum(int x,int y) {
-		return x + y;
-	}
+    public int sum(int x, int y) {
+        return x + y;
+    }
 }
 
 class Test2 {
-	public static void main(String[] args) {
-		Demo d = new Demo();
-		int result = d.sum(10,20);
-		System.out.println(result);
-	}
+    public static void main(String[] args) {
+        Demo d = new Demo();
+        int result = d.sum(10, 20);
+        System.out.println(result);
+    }
 }

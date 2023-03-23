@@ -5,36 +5,36 @@ import java.util.Collections;
 import java.util.Comparator;
 
 /*
- * ÓÃArrayList´æ´¢×Ô¶¨Òå¶ÔÏó£¬²¢°´ÕÕÄêÁä½øÐÐÅÅÐò
+ * ï¿½ï¿½ArrayListï¿½æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ArrayListDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		ArrayList<Person> array = new ArrayList<Person>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        ArrayList<Person> array = new ArrayList<Person>();
 
-		// ´´½¨ÔªËØ¶ÔÏó(½¯¸ÉµÁÊé)
-		Person p1 = new Person("²Ü²Ù", 35);// ºóÖªºó¾õ
-		Person p2 = new Person("½¯¸É", 33);// ²»Öª²»¾õ
-		Person p3 = new Person("Öî¸ðÁÁ", 34); // ÏÈÖªÏÈ¾õ
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½Éµï¿½ï¿½ï¿½)
+        Person p1 = new Person("ï¿½Ü²ï¿½", 35);// ï¿½ï¿½Öªï¿½ï¿½ï¿½
+        Person p2 = new Person("ï¿½ï¿½ï¿½ï¿½", 33);// ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½
+        Person p3 = new Person("ï¿½ï¿½ï¿½ï¿½ï¿½", 34); // ï¿½ï¿½Öªï¿½È¾ï¿½
 
-		// Ìí¼ÓÔªËØ
-		array.add(p1);
-		array.add(p2);
-		array.add(p3);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        array.add(p1);
+        array.add(p2);
+        array.add(p3);
 
-		// ÅÅÐò
-		// Collections.sort(array);
-		Collections.sort(array, new Comparator<Person>() {
-			@Override
-			public int compare(Person p1, Person p2) {
-				return p2.getAge() - p1.getAge();
-			}
+        // ï¿½ï¿½ï¿½ï¿½
+        // Collections.sort(array);
+        Collections.sort(array, new Comparator<Person>() {
+            @Override
+            public int compare(Person p1, Person p2) {
+                return p2.getAge() - p1.getAge();
+            }
 
-		});
+        });
 
-		// ±éÀú¼¯ºÏ
-		for (Person p : array) {
-			System.out.println(p.getName() + "---" + p.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (Person p : array) {
+            System.out.println(p.getName() + "---" + p.getAge());
+        }
+    }
 }

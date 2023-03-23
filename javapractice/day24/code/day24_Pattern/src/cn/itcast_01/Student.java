@@ -1,18 +1,18 @@
 package cn.itcast_01;
 
 public class Student {
-	// 构造私有
-	private Student() {
-	}
+    // 锟斤拷锟斤拷私锟斤拷
+    private Student() {
+    }
 
-	// 本身创建
-	// 静态只能访问静态,加static
-	// 为了不让外加访问，加private
-	private static Student s = new Student();
+    // 锟斤拷锟斤拷锟斤拷
+    // 锟斤拷态只锟杰凤拷锟绞撅拷态,锟斤拷static
+    // 为锟剿诧拷锟斤拷锟斤拷臃锟斤拷剩锟斤拷锟絧rivate
+    private static Student s = new Student();
 
-	// 提供公共访问
-	// 为了让外界可以直接访问，加static
-	public static Student getStudent() {
-		return s;
-	}
+    // 锟结供锟斤拷锟斤拷锟斤拷锟斤拷
+    // 为锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷直锟接凤拷锟绞ｏ拷锟斤拷static
+    public static Student getStudent() {
+        return s;
+    }
 }

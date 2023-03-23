@@ -1,47 +1,48 @@
 /*
-	A:°ÑÊµÏÖµÄ´úÂë¸Ä½øÎª¹¦ÄÜÊµÏÖ
-	B:¼üÅÌÂ¼Èë°æ
+	A:ï¿½ï¿½Êµï¿½ÖµÄ´ï¿½ï¿½ï¿½Ä½ï¿½Îªï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+	B:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
 class JiaMiDemo2 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëÊı¾İ(Ğ¡ÓÚ8Î»µÄÕûÊı)£º");
-		int number = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(Ğ¡ï¿½ï¿½8Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½");
+        int number = sc.nextInt();
 
-		jiaMi(number);
-	}
+        jiaMi(number);
+    }
 
-	public static void jiaMi(int number) {
-		int[] arr = new int[8];
+    public static void jiaMi(int number) {
+        int[] arr = new int[8];
 
-		//µÚÒ»²½
-		int index = 0;
+        //ï¿½ï¿½Ò»ï¿½ï¿½
+        int index = 0;
 
-		while(number>0) {
-			arr[index++] = number%10;
-			number /= 10;
-		}
+        while (number > 0) {
+            arr[index++] = number % 10;
+            number /= 10;
+        }
 
-		//µÚ¶ş²½
-		for(int x=0; x<index; x++) {
-			arr[x] += 5;
-			arr[x] %= 10;
-		}
+        //ï¿½Ú¶ï¿½ï¿½ï¿½
+        for (int x = 0; x < index; x++) {
+            arr[x] += 5;
+            arr[x] %= 10;
+        }
 
-		//µÚÈı²½
-		int temp = arr[0];
-		arr[0] = arr[index-1];
-		arr[index-1] = temp;
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int temp = arr[0];
+        arr[0] = arr[index - 1];
+        arr[index - 1] = temp;
 
-		//Êä³ö
-		for(int x=0; x<index; x++) {
-			System.out.print(arr[x]);
-		}
-		System.out.println();
-	}
+        //ï¿½ï¿½ï¿½
+        for (int x = 0; x < index; x++) {
+            System.out.print(arr[x]);
+        }
+        System.out.println();
+    }
 }

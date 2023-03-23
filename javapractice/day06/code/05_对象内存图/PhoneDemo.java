@@ -1,49 +1,49 @@
-//ÊÖ»úÀàµÄ¶¨Òå
+//ï¿½Ö»ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
 class Phone {
-	//Æ·ÅÆ
-	String brand;
-	//¼Û¸ñ
-	int price;
-	//ÑÕÉ«
-	String color;
+    //Æ·ï¿½ï¿½
+    String brand;
+    //ï¿½Û¸ï¿½
+    int price;
+    //ï¿½ï¿½É«
+    String color;
 
-	//´òµç»°µÄ·½·¨
-	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
-	}
+    //ï¿½ï¿½ç»°ï¿½Ä·ï¿½ï¿½ï¿½
+    public void call(String name) {
+        System.out.println("ï¿½ï¿½" + name + "ï¿½ï¿½ç»°");
+    }
 
-	//·¢¶ÌÐÅ
-	public void sendMessage() {
-		System.out.println("Èº·¢¶ÌÐÅ");
-	}
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public void sendMessage() {
+        System.out.println("Èºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class PhoneDemo {
-	public static void main(String[] args) {
-		//´´½¨¶ÔÏó
-		Phone p = new Phone();
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Phone p = new Phone();
 
-		//Ê¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
-		System.out.println("----------------");
+        //Ê¹ï¿½Ã³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+        System.out.println("Æ·ï¿½ï¿½ï¿½Ç£ï¿½" + p.brand);
+        System.out.println("ï¿½Û¸ï¿½ï¿½Ç£ï¿½" + p.price);
+        System.out.println("ï¿½ï¿½É«ï¿½Ç£ï¿½" + p.color);
+        System.out.println("----------------");
 
-		//¸ø³ÉÔ±±äÁ¿¸³Öµ
-		p.brand = "ÈýÐÇ";
-		p.price = 2999;
-		p.color = "À¶É«";
+        //ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        p.brand = "ï¿½ï¿½ï¿½ï¿½";
+        p.price = 2999;
+        p.color = "ï¿½ï¿½É«";
 
-		//ÔÙ´ÎÊ¹ÓÃ³ÉÔ±±äÁ¿
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
-		System.out.println("----------------");
+        //ï¿½Ù´ï¿½Ê¹ï¿½Ã³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+        System.out.println("Æ·ï¿½ï¿½ï¿½Ç£ï¿½" + p.brand);
+        System.out.println("ï¿½Û¸ï¿½ï¿½Ç£ï¿½" + p.price);
+        System.out.println("ï¿½ï¿½É«ï¿½Ç£ï¿½" + p.color);
+        System.out.println("----------------");
 
-		//µ÷ÓÃ³ÉÔ±·½·¨
-		//String name = "ÁÖÇàÏ¼";
-		//p.call(name);
-		p.call("ÁÖÇàÏ¼");
-		p.sendMessage();
-	}
+        //ï¿½ï¿½ï¿½Ã³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+        //String name = "ï¿½ï¿½ï¿½ï¿½Ï¼";
+        //p.call(name);
+        p.call("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        p.sendMessage();
+    }
 }

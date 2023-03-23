@@ -1,85 +1,86 @@
 /*
-	switchÓï¾ä¸ñÊ½£º
-		switch(±í´ïÊ½) {
-			case Öµ1£º
-				Óï¾äÌå1;
+	switchï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
+		switch(ï¿½ï¿½ï¿½Ê½) {
+			case Öµ1ï¿½ï¿½
+				ï¿½ï¿½ï¿½ï¿½ï¿½1;
 				break;
-		    case Öµ2£º
-				Óï¾äÌå2;
+		    case Öµ2ï¿½ï¿½
+				ï¿½ï¿½ï¿½ï¿½ï¿½2;
 				break;
-				¡­
-		    default£º	
-				Óï¾äÌån+1;
+				ï¿½ï¿½
+		    defaultï¿½ï¿½	
+				ï¿½ï¿½ï¿½ï¿½ï¿½n+1;
 				break;
 		}
 
-		¸ñÊ½½âÊÍ£º
-			A:switch±íÊ¾ÕâÊÇswitchÓï¾ä
-			B:±í´ïÊ½µÄÈ¡Öµ
+		ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Í£ï¿½
+			A:switchï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½switchï¿½ï¿½ï¿½
+			B:ï¿½ï¿½ï¿½Ê½ï¿½ï¿½È¡Öµ
 				byte,short,int,char
-				JDK5ÒÔºó¿ÉÒÔÊÇÃ¶¾ÙÀàÐÍ¡£(enum)
-				JDK7ÒÔºó¿ÉÒÔÊÇ×Ö·û´®¡£(String)
-			C:caseºóÃæ¸úµÄÊÇÒªºÍ±í´ïÊ½½øÐÐ±È½ÏµÄÖµ
-			D:Óï¾äÌå¿ÉÒÔÊÇ¶àÌõÓï¾ä
-			E:break±íÊ¾ÖÐ¶Ï£¬½áÊøµÄÒâË¼£¬¿ÉÒÔ½áÊøswitchÓï¾ä
-			F:defaultÓï¾ä±íÊ¾ËùÓÐÇé¿ö¶¼²»Æ¥ÅäµÄÊ±ºò£¬¾ÍÖ´ÐÐ¸Ã´¦µÄÄÚÈÝ£¬ºÍifÓï¾äµÄelseÏàËÆ¡£
+				JDK5ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½(enum)
+				JDK7ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½(String)
+			C:caseï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Í±ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ð±È½Ïµï¿½Öµ
+			D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			E:breakï¿½ï¿½Ê¾ï¿½Ð¶Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½switchï¿½ï¿½ï¿½
+			F:defaultï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½ï¿½ï¿½Ê±ï¿½ò£¬¾ï¿½Ö´ï¿½Ð¸Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ifï¿½ï¿½ï¿½ï¿½elseï¿½ï¿½ï¿½Æ¡ï¿½
 		
-		ÃæÊÔÌâ£º
-			switchµÄ±í´ïÊ½¿ÉÒÔÊÇbyteÀàÐÍÂð?¿ÉÒÔÊÇlongÀàÐÍÂð?¿ÉÒÔÊÇStringÀàÐÍÂð?
-				¿ÉÒÔ¡£
-				²»¿ÉÒÔ¡£
-				JDK7ÒÔºó¿ÉÒÔ¡£
+		ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+			switchï¿½Ä±ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½byteï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½longï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+				ï¿½ï¿½ï¿½Ô¡ï¿½
+				ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+				JDK7ï¿½Ôºï¿½ï¿½ï¿½Ô¡ï¿½
 
-		Ö´ÐÐÁ÷³Ì£º
-			A:Ê×ÏÈ¼ÆËã³ö±í´ïÊ½µÄÖµ
-			B:Æä´Î£¬ºÍcaseÒÀ´Î±È½Ï£¬Ò»µ©ÓÐ¶ÔÓ¦µÄÖµ£¬¾Í»áÖ´ÐÐÏàÓ¦µÄÓï¾ä£¬
-			  ÔÚÖ´ÐÐµÄ¹ý³ÌÖÐ£¬Óöµ½break¾Í»á½áÊø¡£
-			C:×îºó£¬Èç¹ûËùÓÐµÄcase¶¼ºÍ±í´ïÊ½µÄÖµ²»Æ¥Åä£¬¾Í»áÖ´ÐÐdefaultÓï¾äÌå²¿·Ö£¬È»ºó³ÌÐò½áÊøµô¡£
+		Ö´ï¿½ï¿½ï¿½ï¿½ï¿½Ì£ï¿½
+			A:ï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Öµ
+			B:ï¿½ï¿½Î£ï¿½ï¿½ï¿½caseï¿½ï¿½ï¿½Î±È½Ï£ï¿½Ò»ï¿½ï¿½ï¿½Ð¶ï¿½Ó¦ï¿½ï¿½Öµï¿½ï¿½ï¿½Í»ï¿½Ö´ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ä£¬
+			  ï¿½ï¿½Ö´ï¿½ÐµÄ¹ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½breakï¿½Í»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½caseï¿½ï¿½ï¿½Í±ï¿½ï¿½Ê½ï¿½ï¿½Öµï¿½ï¿½Æ¥ï¿½ä£¬ï¿½Í»ï¿½Ö´ï¿½ï¿½defaultï¿½ï¿½ï¿½ï¿½å²¿ï¿½Ö£ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		ÐèÇó£º¸ù¾Ý¼üÅÌÂ¼ÈëµÄÊýÖµ1£¬2£¬3£¬¡­7Êä³ö¶ÔÓ¦µÄÐÇÆÚÒ»£¬ÐÇÆÚ¶þ£¬ÐÇÆÚÈý¡­ÐÇÆÚÈÕ¡£
+		ï¿½ï¿½ï¿½ó£º¸ï¿½ï¿½Ý¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Öµ1ï¿½ï¿½2ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½7ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¡ï¿½
 
-		·ÖÎö£º
-			A:¼üÅÌÂ¼ÈëÊý¾Ý£¬ÓÃScannerÊµÏÖ
-			B:¶ÔÂ¼ÈëµÄÊý¾Ý½øÐÐÅÐ¶Ï£¬ÓÃswitchÊµÏÖ
-			C:Êä³ö¶ÔÓ¦µÄ½á¹û
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ScannerÊµï¿½ï¿½
+			B:ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½Ð¶Ï£ï¿½ï¿½ï¿½switchÊµï¿½ï¿½
+			C:ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
 class SwitchDemo {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëÒ»¸öÊý¾Ý(1-7)£º");
-		int week = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(1-7)ï¿½ï¿½");
+        int week = sc.nextInt();
 
-		//ÓÃswitchÓï¾äÊµÏÖ
-		switch(week) {
-			case 1:
-				System.out.println("ÐÇÆÚÒ»");
-				break;
-			case 2:
-				System.out.println("ÐÇÆÚ¶þ");
-				break;
-			case 3:
-				System.out.println("ÐÇÆÚÈý");
-				break;
-			case 4:
-				System.out.println("ÐÇÆÚËÄ");
-				break;
-			case 5:
-				System.out.println("ÐÇÆÚÎå");
-				break;
-			case 6:
-				System.out.println("ÐÇÆÚÁù");
-				break;
-			case 7:
-				System.out.println("ÐÇÆÚÈÕ");
-				break;
-			default:
-				System.out.println("ÄãÊäÈëµÄÊý¾ÝÓÐÎó");
-				break;
-		}
-	}
+        //ï¿½ï¿½switchï¿½ï¿½ï¿½Êµï¿½ï¿½
+        switch (week) {
+            case 1:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½Ò»");
+                break;
+            case 2:
+                System.out.println("ï¿½ï¿½ï¿½Ú¶ï¿½");
+                break;
+            case 3:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            case 4:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            case 5:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            case 6:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            case 7:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            default:
+                System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+        }
+    }
 }

@@ -1,75 +1,75 @@
 package cn.itcast_01;
 
 /*
- * Ã°ÅÝÅÅÐò£º
+ * Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ArrayDemo {
-	public static void main(String[] args) {
-		// ¶¨ÒåÊý×é
-		int[] arr = { 24, 69, 80, 57, 13 };
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = {24, 69, 80, 57, 13};
 
-		/*
-		 * // µÚÒ»´Î±È½Ï // ¼õ1ÊÇÎªÁË·ÀÖ¹Ô½½ç for (int x = 0; x < arr.length - 1 - 0; x++) {
-		 * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
-		 * arr[x + 1] = temp; } } // ±éÀúÊý×é System.out.println("µÚÒ»´ÎÅÅÐòºó£º");
-		 * printArray(arr);
-		 * 
-		 * // µÚ¶þ´Î±È½Ï // ¼õ1ÊÇÎªÁË·ÀÖ¹Ô½½ç for (int x = 0; x < arr.length - 1 - 1; x++) {
-		 * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
-		 * arr[x + 1] = temp; } } // ±éÀúÊý×é System.out.println("µÚ¶þ´ÎÅÅÐòºó£º");
-		 * printArray(arr);
-		 * 
-		 * // µÚÈý´Î±È½Ï // ¼õ1ÊÇÎªÁË·ÀÖ¹Ô½½ç for (int x = 0; x < arr.length - 1 - 2; x++) {
-		 * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
-		 * arr[x + 1] = temp; } } // ±éÀúÊý×é System.out.println("µÚÈý´ÎÅÅÐòºó£º");
-		 * printArray(arr);
-		 * 
-		 * // µÚËÄ´Î±È½Ï // ¼õ1ÊÇÎªÁË·ÀÖ¹Ô½½ç for (int x = 0; x < arr.length - 1 - 3; x++) {
-		 * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
-		 * arr[x + 1] = temp; } } // ±éÀúÊý×é System.out.println("µÚËÄ´ÎÅÅÐòºó£º");
-		 * printArray(arr);
-		 */
+        /*
+         * // ï¿½ï¿½Ò»ï¿½Î±È½ï¿½ // ï¿½ï¿½1ï¿½ï¿½Îªï¿½Ë·ï¿½Ö¹Ô½ï¿½ï¿½ for (int x = 0; x < arr.length - 1 - 0; x++) {
+         * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
+         * arr[x + 1] = temp; } } // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ System.out.println("ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+         * printArray(arr);
+         *
+         * // ï¿½Ú¶ï¿½ï¿½Î±È½ï¿½ // ï¿½ï¿½1ï¿½ï¿½Îªï¿½Ë·ï¿½Ö¹Ô½ï¿½ï¿½ for (int x = 0; x < arr.length - 1 - 1; x++) {
+         * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
+         * arr[x + 1] = temp; } } // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ System.out.println("ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+         * printArray(arr);
+         *
+         * // ï¿½ï¿½ï¿½ï¿½ï¿½Î±È½ï¿½ // ï¿½ï¿½1ï¿½ï¿½Îªï¿½Ë·ï¿½Ö¹Ô½ï¿½ï¿½ for (int x = 0; x < arr.length - 1 - 2; x++) {
+         * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
+         * arr[x + 1] = temp; } } // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+         * printArray(arr);
+         *
+         * // ï¿½ï¿½ï¿½Ä´Î±È½ï¿½ // ï¿½ï¿½1ï¿½ï¿½Îªï¿½Ë·ï¿½Ö¹Ô½ï¿½ï¿½ for (int x = 0; x < arr.length - 1 - 3; x++) {
+         * if (arr[x] > arr[x + 1]) { int temp = arr[x]; arr[x] = arr[x + 1];
+         * arr[x + 1] = temp; } } // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ System.out.println("ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+         * printArray(arr);
+         */
 
-		// for (int y = 0; y < arr.length - 1; y++) {
-		// // ? 0,1,2,3
-		// for (int x = 0; x < arr.length - 1 - y; x++) {
-		// if (arr[x] > arr[x + 1]) {
-		// int temp = arr[x];
-		// arr[x] = arr[x + 1];
-		// arr[x + 1] = temp;
-		// }
-		// }
-		// }
+        // for (int y = 0; y < arr.length - 1; y++) {
+        // // ? 0,1,2,3
+        // for (int x = 0; x < arr.length - 1 - y; x++) {
+        // if (arr[x] > arr[x + 1]) {
+        // int temp = arr[x];
+        // arr[x] = arr[x + 1];
+        // arr[x + 1] = temp;
+        // }
+        // }
+        // }
 
-		// Ã°ÅÝÅÅÐò
-		bubbleSort(arr);
-		// ±éÀúÊý×é
-		printArray(arr);
-	}
+        // Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        bubbleSort(arr);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        printArray(arr);
+    }
 
-	// ±éÀúÊý×é
-	public static void printArray(int[] arr) {
-		System.out.print("[");
-		for (int x = 0; x < arr.length; x++) {
-			if (x == arr.length - 1) {
-				System.out.print(arr[x]);
-			} else {
-				System.out.print(arr[x] + ", ");
-			}
-		}
-		System.out.println("]");
-	}
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void printArray(int[] arr) {
+        System.out.print("[");
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
+                System.out.print(arr[x]);
+            } else {
+                System.out.print(arr[x] + ", ");
+            }
+        }
+        System.out.println("]");
+    }
 
-	// ÅÅÐò
-	public static void bubbleSort(int[] arr) {
-		for (int x = 0; x < arr.length - 1; x++) {
-			for (int y = 0; y < arr.length - 1 - x; y++) {
-				if (arr[y] > arr[y + 1]) {
-					int temp = arr[y];
-					arr[y] = arr[y + 1];
-					arr[y + 1] = temp;
-				}
-			}
-		}
-	}
+    // ï¿½ï¿½ï¿½ï¿½
+    public static void bubbleSort(int[] arr) {
+        for (int x = 0; x < arr.length - 1; x++) {
+            for (int y = 0; y < arr.length - 1 - x; y++) {
+                if (arr[y] > arr[y + 1]) {
+                    int temp = arr[y];
+                    arr[y] = arr[y + 1];
+                    arr[y + 1] = temp;
+                }
+            }
+        }
+    }
 }

@@ -5,53 +5,53 @@ import java.util.HashMap;
 import java.util.Set;
 
 /*
- ÐèÇó£º
- ¼ÙÉèArrayList¼¯ºÏµÄÔªËØÊÇHashMap¡£ÓÐ3¸ö¡£
- Ã¿Ò»¸öHashMap¼¯ºÏµÄ¼üºÍÖµ¶¼ÊÇ×Ö·û´®¡£
+ ï¿½ï¿½ï¿½ï¿½
+ ï¿½ï¿½ï¿½ï¿½ArrayListï¿½ï¿½ï¿½Ïµï¿½Ôªï¿½ï¿½ï¿½ï¿½HashMapï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½
+ Ã¿Ò»ï¿½ï¿½HashMapï¿½ï¿½ï¿½ÏµÄ¼ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
 
- ÔªËØÎÒÒÑ¾­Íê³É£¬Çë±éÀú¡£
- ½á¹û£º
- ÖÜè¤---Ð¡ÇÇ
- ÂÀ²¼---õõ²õ
+ Ôªï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½É£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ ï¿½ï¿½ï¿½ï¿½ï¿½
+ ï¿½ï¿½ï¿½---Ð¡ï¿½ï¿½
+ ï¿½ï¿½ï¿½ï¿½---ï¿½ï¿½ï¿½ï¿½
 
- ¹ù¾¸---»ÆÈØ
- Ñî¹ý---Ð¡ÁúÅ®
+ ï¿½ï¿½ï¿½ï¿½---ï¿½ï¿½ï¿½ï¿½
+ ï¿½ï¿½ï¿½---Ð¡ï¿½ï¿½Å®
 
- Áîºü³å---ÈÎÓ¯Ó¯
- ÁÖÆ½Ö®---ÔÀÁéÉº
+ ï¿½ï¿½ï¿½ï¿½ï¿½---ï¿½ï¿½Ó¯Ó¯
+ ï¿½ï¿½Æ½Ö®---ï¿½ï¿½ï¿½ï¿½Éº
  */
 public class ArrayListAndHashMapTest {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
-		ArrayList<HashMap<String, String>> array = new ArrayList<HashMap<String, String>>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ArrayList<HashMap<String, String>> array = new ArrayList<HashMap<String, String>>();
 
-		// ´´½¨ÔªËØ
-		HashMap<String, String> sgyy = new HashMap<String, String>();
-		sgyy.put("ÖÜè¤", "Ð¡ÇÇ");
-		sgyy.put("ÂÀ²¼", "õõ²õ");
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        HashMap<String, String> sgyy = new HashMap<String, String>();
+        sgyy.put("ï¿½ï¿½ï¿½", "Ð¡ï¿½ï¿½");
+        sgyy.put("ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½");
 
-		// ´´½¨ÔªËØ
-		HashMap<String, String> sdxl = new HashMap<String, String>();
-		sdxl.put("¹ù¾¸", "»ÆÈØ");
-		sdxl.put("Ñî¹ý", "Ð¡ÁúÅ®");
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        HashMap<String, String> sdxl = new HashMap<String, String>();
+        sdxl.put("ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½");
+        sdxl.put("ï¿½ï¿½ï¿½", "Ð¡ï¿½ï¿½Å®");
 
-		// ´´½¨ÔªËØ
-		HashMap<String, String> xajh = new HashMap<String, String>();
-		xajh.put("Áîºü³å", "ÈÎÓ¯Ó¯");
-		xajh.put("ÁÖÆ½Ö®", "ÔÀÁéÉº");
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        HashMap<String, String> xajh = new HashMap<String, String>();
+        xajh.put("ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½Ó¯Ó¯");
+        xajh.put("ï¿½ï¿½Æ½Ö®", "ï¿½ï¿½ï¿½ï¿½Éº");
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		array.add(sgyy);
-		array.add(sdxl);
-		array.add(xajh);
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        array.add(sgyy);
+        array.add(sdxl);
+        array.add(xajh);
 
-		// ±éÀú¼¯ºÏ
-		for (HashMap<String, String> hm : array) {
-			Set<String> set = hm.keySet();
-			for (String key : set) {
-				String value = hm.get(key);
-				System.out.println(key + "---" + value);
-			}
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (HashMap<String, String> hm : array) {
+            Set<String> set = hm.keySet();
+            for (String key : set) {
+                String value = hm.get(key);
+                System.out.println(key + "---" + value);
+            }
+        }
+    }
 }

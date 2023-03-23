@@ -1,27 +1,27 @@
 /*
-	forºÍwhileµÄÇø±ð£º
-	Ê¹ÓÃÇø±ð£º¿ØÖÆÌõ¼þÓï¾äËù¿ØÖÆµÄÄÇ¸ö±äÁ¿£¬ÔÚforÑ­»·½áÊøºó£¬¾Í²»ÄÜÔÙ±»·ÃÎÊµ½ÁË£¬
-			  ¶øwhileÑ­»·½áÊø»¹¿ÉÒÔ¼ÌÐøÊ¹ÓÃ£¬Èç¹ûÄãÏë¼ÌÐøÊ¹ÓÃ£¬¾ÍÓÃwhile£¬·ñÔòÍÆ¼öÊ¹ÓÃfor¡£
-			  Ô­ÒòÊÇforÑ­»·½áÊø£¬¸Ã±äÁ¿¾Í´ÓÄÚ´æÖÐÏûÊ§£¬ÄÜ¹»Ìá¸ßÄÚ´æµÄÊ¹ÓÃÐ§ÂÊ¡£
-	³¡¾°Çø±ð£º
-			forÑ­»·ÊÊºÏÕë¶ÔÒ»¸ö·¶Î§ÅÐ¶Ï½øÐÐ²Ù×÷
-				Ë®ÏÉ»¨
-			whileÑ­»·ÊÊºÏÅÐ¶Ï´ÎÊý²»Ã÷È·²Ù×÷
-				³ÔÆÏÌÑ
+	forï¿½ï¿½whileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½ð£º¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½forÑ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¾Í²ï¿½ï¿½ï¿½ï¿½Ù±ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ë£ï¿½
+			  ï¿½ï¿½whileÑ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½whileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¼ï¿½Ê¹ï¿½ï¿½forï¿½ï¿½
+			  Ô­ï¿½ï¿½ï¿½ï¿½forÑ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½ï¿½Í´ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Ê¹ï¿½ï¿½Ð§ï¿½Ê¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			forÑ­ï¿½ï¿½ï¿½Êºï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Î§ï¿½Ð¶Ï½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½
+				Ë®ï¿½É»ï¿½
+			whileÑ­ï¿½ï¿½ï¿½Êºï¿½ï¿½Ð¶Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½
+				ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class WhileDemo2 {
-	public static void main(String[] args) {
-		int x = 0;
-		while(x<10) {
-			System.out.println(x);
-			x++;
-		}
-		System.out.println(x+"---");
-		System.out.println("-----------");
+    public static void main(String[] args) {
+        int x = 0;
+        while (x < 10) {
+            System.out.println(x);
+            x++;
+        }
+        System.out.println(x + "---");
+        System.out.println("-----------");
 
-		for(int y=0; y<10; y++) {
-			System.out.println(y);
-		}
-		//System.out.println(y+"---");
-	}
+        for (int y = 0; y < 10; y++) {
+            System.out.println(y);
+        }
+        //System.out.println(y+"---");
+    }
 }

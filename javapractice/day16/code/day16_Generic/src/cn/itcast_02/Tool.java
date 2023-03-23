@@ -8,29 +8,29 @@ public class Tool {
 //	public void setStudent(Student student) {
 //		this.student = student;
 //	}
-	
-	//Èç¹ûÕâ¹¤¾ß£¬ÎÒÒªÏë»ñµÃTeacher£¬ÎÒÃÇÖ»ĞèÒª°ÑStudent¸ÄÎªTeacher¾Í¿ÉÒÔÁË
-	//µ«ÊÇ£¬¼ÙÈçÎÒÃÇ¼ÈÒªTeacher£¬ÓÖÒªStudent£¬Õâ¸ö¸ÃÔõÃ´°ëÄØ?
-	
-	private Object obj;
 
-	public Object getObj() {
-		return obj;
-	}
+    //ï¿½ï¿½ï¿½ï¿½â¹¤ï¿½ß£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Teacherï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Òªï¿½ï¿½Studentï¿½ï¿½ÎªTeacherï¿½Í¿ï¿½ï¿½ï¿½ï¿½ï¿½
+    //ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¼ï¿½ÒªTeacherï¿½ï¿½ï¿½ï¿½ÒªStudentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½?
 
-	public void setObj(Object obj) {
-		this.obj = obj;
-	}
+    private Object obj;
+
+    public Object getObj() {
+        return obj;
+    }
+
+    public void setObj(Object obj) {
+        this.obj = obj;
+    }
 }
 
 class Student {
-	public void love() {
-		System.out.println("Ñ§Éú°®Ñ§Ï°");
-	}
+    public void love() {
+        System.out.println("Ñ§ï¿½ï¿½ï¿½ï¿½Ñ§Ï°");
+    }
 }
 
 class Teacher {
-	public void love() {
-		System.out.println("ÀÏÊ¦°®ÁÖÇàÏ¼");
-	}
+    public void love() {
+        System.out.println("ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼");
+    }
 }

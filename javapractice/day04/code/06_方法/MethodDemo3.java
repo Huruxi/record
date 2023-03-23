@@ -1,11 +1,11 @@
 /*
-	Ã»ÓÐÃ÷È··µ»ØÖµµÄ·½·¨µ÷ÓÃ£ºvoidÐÞÊÎµÄ·½·¨
-		µ¥¶Àµ÷ÓÃ
+	Ã»ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½Öµï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½voidï¿½ï¿½ï¿½ÎµÄ·ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class MethodDemo3 {
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 		/*
-		//ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÒ»¸ö3ÐÐ4ÁÐµÄÐÇÐÎ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½Ò»ï¿½ï¿½3ï¿½ï¿½4ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int x=0; x<3; x++){
 			for(int y=0; y<4; y++) {
 				System.out.print("*");
@@ -13,7 +13,7 @@ class MethodDemo3 {
 			System.out.println();
 		}
 		System.out.println("--------");
-		//ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÒ»¸ö5ÐÐ6ÁÐµÄÐÇÐÎ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½Ò»ï¿½ï¿½5ï¿½ï¿½6ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int x=0; x<5; x++){
 			for(int y=0; y<6; y++) {
 				System.out.print("*");
@@ -21,7 +21,7 @@ class MethodDemo3 {
 			System.out.println();
 		}
 		System.out.println("--------");
-		//ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÒ»¸ö7ÐÐ8ÁÐµÄÐÇÐÎ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½Ò»ï¿½ï¿½7ï¿½ï¿½8ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int x=0; x<7; x++){
 			for(int y=0; y<8; y++) {
 				System.out.print("*");
@@ -31,24 +31,24 @@ class MethodDemo3 {
 		System.out.println("--------");
 		*/
 
-		//µ¥¶Àµ÷ÓÃ
-		//printXing(3,4);
-		//printXing(7,8);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //printXing(3,4);
+        //printXing(7,8);
 
-		//Êä³öµ÷ÓÃ
-		//System.out.println(printXing(7,8));
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //System.out.println(printXing(7,8));
 
-		//¸³Öµµ÷ÓÃ
-		//void v = printXing(7,8);
-		//System.out.println(v);
-	}
+        //ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+        //void v = printXing(7,8);
+        //System.out.println(v);
+    }
 
-	public static void printXing(int a,int b) {
-		for(int x=0; x<a; x++){
-			for(int y=0; y<b; y++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
-	}
+    public static void printXing(int a, int b) {
+        for (int x = 0; x < a; x++) {
+            for (int y = 0; y < b; y++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }

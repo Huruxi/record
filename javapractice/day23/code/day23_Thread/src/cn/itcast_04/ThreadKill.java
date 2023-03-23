@@ -4,22 +4,22 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ThreadKill extends Thread {
-	@Override
-	public void run() {
-		System.out.println("¿ªÊ¼Ö´ÐÐ£º"
-				+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-						.format(new Date()));
+    @Override
+    public void run() {
+        System.out.println("ï¿½ï¿½Ê¼Ö´ï¿½Ð£ï¿½"
+                + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                .format(new Date()));
 
-		try {
-			// Ç×£¬²»Òª´òÈÅÎÒ£¬ÎÒÒªÐÝÏ¢10Ãë
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// e.printStackTrace();
-			System.out.println("ÎÒ±»É±ËÀÁË");
-		}
+        try {
+            // ï¿½×£ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ò£ï¿½ï¿½ï¿½Òªï¿½ï¿½Ï¢10ï¿½ï¿½
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            // e.printStackTrace();
+            System.out.println("ï¿½Ò±ï¿½É±ï¿½ï¿½ï¿½ï¿½");
+        }
 
-		System.out.println("½áÊøÖ´ÐÐ£º"
-				+ new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
-						.format(new Date()));
-	}
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ö´ï¿½Ð£ï¿½"
+                + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                .format(new Date()));
+    }
 }

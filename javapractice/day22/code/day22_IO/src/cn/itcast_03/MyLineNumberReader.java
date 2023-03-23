@@ -4,22 +4,22 @@ import java.io.IOException;
 import java.io.Reader;
 
 public class MyLineNumberReader extends MyBufferedReader {
-	private int lineNumber;
+    private int lineNumber;
 
-	public int getLineNumber() {
-		return lineNumber;
-	}
+    public int getLineNumber() {
+        return lineNumber;
+    }
 
-	public void setLineNumber(int lineNumber) {
-		this.lineNumber = lineNumber;
-	}
+    public void setLineNumber(int lineNumber) {
+        this.lineNumber = lineNumber;
+    }
 
-	public MyLineNumberReader(Reader r) {
-		super(r);
-	}
+    public MyLineNumberReader(Reader r) {
+        super(r);
+    }
 
-	public String readLine() throws IOException {
-		lineNumber++;
-		return super.readLine();
-	}
+    public String readLine() throws IOException {
+        lineNumber++;
+        return super.readLine();
+    }
 }

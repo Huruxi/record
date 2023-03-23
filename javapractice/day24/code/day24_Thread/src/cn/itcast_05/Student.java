@@ -1,7 +1,7 @@
 package cn.itcast_05;
 
 public class Student {
-	String name;
-	int age;
-	boolean flag = false; // ±íÊ¾ÊÇ·ñÓÐÊý¾Ý
+    String name;
+    int age;
+    boolean flag = false; // ï¿½ï¿½Ê¾ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 }

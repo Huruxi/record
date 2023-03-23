@@ -1,59 +1,59 @@
 /*
-	·½·¨ÖØÐ´£º×ÓÀàÖÐ³öÏÖÁËºÍ¸¸ÀàÖÐÒ»Ä£Ò»ÑùµÄ·½·¨ÉùÃ÷£¬Ò²±»³ÆÎª·½·¨¸²¸Ç£¬·½·¨¸´Ð´
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½ï¿½ï¿½ËºÍ¸ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ä£Ò»ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
 */
-//ÊÖ»ú
+//ï¿½Ö»ï¿½
 /*
 class Phone {
 	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("ï¿½ï¿½"+name+"ï¿½ï¿½ç»°");
 	}
 }
 
-//ÐÂ¿îÊÖ»ú
+//ï¿½Â¿ï¿½ï¿½Ö»ï¿½
 class NewPhone {
 	public void call(String name) {
-		System.out.println("Ìý²ÊÁå");
-		System.out.println("¸ø"+name+"´òµç»°");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+		System.out.println("ï¿½ï¿½"+name+"ï¿½ï¿½ç»°");
 	}
 }
 
 class PhoneDemo {
 	public static void main(String[] args) {
-		//ÊÖ»ú
+		//ï¿½Ö»ï¿½
 		Phone p = new Phone();
-		p.call("ÁÖÇàÏ¼");
+		p.call("ï¿½ï¿½ï¿½ï¿½Ï¼");
 		System.out.println("-----------");
 	
-		//ÐÂÊÖ»ú
+		//ï¿½ï¿½ï¿½Ö»ï¿½
 		NewPhone np = new NewPhone();
-		np.call("ÁÖÇàÏ¼");
+		np.call("ï¿½ï¿½ï¿½ï¿½Ï¼");
 	}
 }
 */
 
 class Phone {
-	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
-	}
+    public void call(String name) {
+        System.out.println("ï¿½ï¿½" + name + "ï¿½ï¿½ç»°");
+    }
 }
 
 class NewPhone extends Phone {
-	public void call(String name) {
-		System.out.println("Ìý²ÊÁå");
-		//System.out.println("¸ø"+name+"´òµç»°");
-		super.call(name);
-	}
+    public void call(String name) {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        //System.out.println("ï¿½ï¿½"+name+"ï¿½ï¿½ç»°");
+        super.call(name);
+    }
 }
 
 class PhoneDemo {
-	public static void main(String[] args) {
-		//ÊÖ»ú
-		Phone p = new Phone();
-		p.call("ÁÖÇàÏ¼");
-		System.out.println("-----------");
-	
-		//ÐÂÊÖ»ú
-		NewPhone np = new NewPhone();
-		np.call("ÁÖÇàÏ¼");
-	}
+    public static void main(String[] args) {
+        //ï¿½Ö»ï¿½
+        Phone p = new Phone();
+        p.call("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        System.out.println("-----------");
+
+        //ï¿½ï¿½ï¿½Ö»ï¿½
+        NewPhone np = new NewPhone();
+        np.call("ï¿½ï¿½ï¿½ï¿½Ï¼");
+    }
 }

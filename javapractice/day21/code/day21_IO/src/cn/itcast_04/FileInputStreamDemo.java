@@ -4,25 +4,25 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 /*
- * ×Ö½ÚÁ÷²Ù×÷ÖÐÎÄ£¬²»ÊÇÌØ±ðµÄ·½±ã£¬ËùÒÔÎÒÃÇÒªÏë°ì·¨¸Ä½ø¡£Õâ¸öÊ±ºò¾ÍÒý³öÁË×ª»»Á÷¡£
- * ¿ÉÒÔ°Ñ×Ö½ÚÁ÷×ª»»Îª×Ö·ûÁ÷¡£
- * ×Ö·ûÁ÷ = ×Ö½ÚÁ÷+±àÂë±í
+ * ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½Ä·ï¿½ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ì·¨ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ô°ï¿½ï¿½Ö½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½Ö·ï¿½ï¿½ï¿½ = ï¿½Ö½ï¿½ï¿½ï¿½+ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class FileInputStreamDemo {
-	public static void main(String[] args) throws IOException {
-		FileInputStream fis = new FileInputStream("a.txt");
+    public static void main(String[] args) throws IOException {
+        FileInputStream fis = new FileInputStream("a.txt");
 
-		// int by = 0;
-		// while ((by = fis.read()) != -1) {
-		// System.out.print((char) by);
-		// }
+        // int by = 0;
+        // while ((by = fis.read()) != -1) {
+        // System.out.print((char) by);
+        // }
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = fis.read(bys)) != -1) {
-			System.out.print(new String(bys, 0, len));
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = fis.read(bys)) != -1) {
+            System.out.print(new String(bys, 0, len));
+        }
 
-		fis.close();
-	}
+        fis.close();
+    }
 }

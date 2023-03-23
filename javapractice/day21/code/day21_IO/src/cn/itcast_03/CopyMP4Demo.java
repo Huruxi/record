@@ -7,87 +7,87 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * Êý¾ÝÔ´£º
- * 		d:\\¸çÓÐÀÏÆÅ.mp4
- * Ä¿µÄµØ£º
- * 		ÏîÄ¿Â·¾¶ÏÂcopy.mp4
- * 
- * ËÄÖÖ·½Ê½£º
- * A:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú	67023ºÁÃë
- * B:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é	¹²ºÄÊ±£º102ºÁÃë
- * C:¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú	¹²ºÄÊ±£º650ºÁÃë
- * D:¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é	¹²ºÄÊ±£º36ºÁÃë
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
+ * 		d:\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.mp4
+ * Ä¿ï¿½ÄµØ£ï¿½
+ * 		ï¿½ï¿½Ä¿Â·ï¿½ï¿½ï¿½ï¿½copy.mp4
+ *
+ * ï¿½ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½
+ * A:ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½	67023ï¿½ï¿½ï¿½ï¿½
+ * B:ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½102ï¿½ï¿½ï¿½ï¿½
+ * C:ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½	ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½650ï¿½ï¿½ï¿½ï¿½
+ * D:ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½36ï¿½ï¿½ï¿½ï¿½
  */
 public class CopyMP4Demo {
-	public static void main(String[] args) throws IOException {
-		long start = System.currentTimeMillis();
-		// method1();
-		// method2();
-		// method3();
-		method4();
-		long end = System.currentTimeMillis();
-		System.out.println("¹²ºÄÊ±£º" + (end - start) + "ºÁÃë");
-	}
+    public static void main(String[] args) throws IOException {
+        long start = System.currentTimeMillis();
+        // method1();
+        // method2();
+        // method3();
+        method4();
+        long end = System.currentTimeMillis();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½" + (end - start) + "ï¿½ï¿½ï¿½ï¿½");
+    }
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú
-	public static void method1() throws IOException {
-		FileInputStream fis = new FileInputStream("d:\\¸çÓÐÀÏÆÅ.mp4");
-		FileOutputStream fos = new FileOutputStream("copy1.mp4");
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+    public static void method1() throws IOException {
+        FileInputStream fis = new FileInputStream("d:\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.mp4");
+        FileOutputStream fos = new FileOutputStream("copy1.mp4");
 
-		int by = 0;
-		while ((by = fis.read()) != -1) {
-			fos.write(by);
-		}
+        int by = 0;
+        while ((by = fis.read()) != -1) {
+            fos.write(by);
+        }
 
-		fos.close();
-		fis.close();
-	}
+        fos.close();
+        fis.close();
+    }
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é
-	public static void method2() throws IOException {
-		FileInputStream fis = new FileInputStream("d:\\¸çÓÐÀÏÆÅ.mp4");
-		FileOutputStream fos = new FileOutputStream("copy2.mp4");
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void method2() throws IOException {
+        FileInputStream fis = new FileInputStream("d:\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.mp4");
+        FileOutputStream fos = new FileOutputStream("copy2.mp4");
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = fis.read(bys)) != -1) {
-			fos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = fis.read(bys)) != -1) {
+            fos.write(bys, 0, len);
+        }
 
-		fos.close();
-		fis.close();
-	}
+        fos.close();
+        fis.close();
+    }
 
-	// ¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú
-	public static void method3() throws IOException {
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				"d:\\¸çÓÐÀÏÆÅ.mp4"));
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream("copy3.mp4"));
+    // ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+    public static void method3() throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                "d:\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.mp4"));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream("copy3.mp4"));
 
-		int by = 0;
-		while ((by = bis.read()) != -1) {
-			bos.write(by);
-		}
+        int by = 0;
+        while ((by = bis.read()) != -1) {
+            bos.write(by);
+        }
 
-		bos.close();
-		bis.close();
-	}
+        bos.close();
+        bis.close();
+    }
 
-	// ¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é
-	public static void method4() throws IOException {
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				"d:\\¸çÓÐÀÏÆÅ.mp4"));
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream("copy4.mp4"));
+    // ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void method4() throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                "d:\\ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.mp4"));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream("copy4.mp4"));
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = bis.read(bys)) != -1) {
-			bos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = bis.read(bys)) != -1) {
+            bos.write(bys, 0, len);
+        }
 
-		bos.close();
-		bis.close();
-	}
+        bos.close();
+        bis.close();
+    }
 }

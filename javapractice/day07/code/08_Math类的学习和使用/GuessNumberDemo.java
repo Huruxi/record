@@ -1,39 +1,40 @@
 /*
-	ĞèÇó£º²ÂÊı×ÖĞ¡ÓÎÏ·
+	ï¿½ï¿½ï¿½ó£º²ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½Ï·
 	
-	·ÖÎö£º
-		A:ÏµÍ³²úÉúÒ»¸ö1-100Ö®¼äµÄËæ»úÊı¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½1-100Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			int number = (int)(Math.random()*100)+1;
-		B:¼üÅÌÂ¼ÈëÊı¾İ,ÓÃScannerÊµÏÖ
-		C:ÓÃÕâÁ½¸öÊı¾İ½øĞĞ±È½Ï
-			´ó	ÌáÊ¾´óÁË
-			Ğ¡	ÌáÊ¾Ğ¡ÁË
-			µÈ	¹§Ï²Äã£¬²ÂÖĞÁË
-		D:ÎªÁË±£Ö¤ÎÒÃÇÄÜ¹»²ÂÖĞ£¬ÎÒÃÇ¾Í¼ÓÈëÑ­»·£¬ÊµÏÖ¶à´Î²Â¡£Ö±µ½²ÂÖĞ¡£
+		B:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ScannerÊµï¿½ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½Ğ±È½ï¿½
+			ï¿½ï¿½	ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½
+			Ğ¡	ï¿½ï¿½Ê¾Ğ¡ï¿½ï¿½
+			ï¿½ï¿½	ï¿½ï¿½Ï²ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		D:Îªï¿½Ë±ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½Ç¾Í¼ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¶ï¿½Î²Â¡ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¡ï¿½
 */
+
 import java.util.Scanner;
 
 class GuessNumberDemo {
-	public static void main(String[] args) {
-		//ÏµÍ³²úÉúÒ»¸ö1-100Ö®¼äµÄËæ»úÊı¡£
-		int number = (int)(Math.random()*100)+1;
+    public static void main(String[] args) {
+        //ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½1-100Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int number = (int) (Math.random() * 100) + 1;
 
-		while(true) {
-			//¼üÅÌÂ¼ÈëÊı¾İ,ÓÃScannerÊµÏÖ
-			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëÒ»¸öÊı¾İ£º(1-100)");
-			int guessNumber = sc.nextInt();
+        while (true) {
+            //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ScannerÊµï¿½ï¿½
+            Scanner sc = new Scanner(System.in);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½(1-100)");
+            int guessNumber = sc.nextInt();
 
-			//ÓÃÕâÁ½¸öÊı¾İ½øĞĞ±È½Ï
-			if(guessNumber > number) {
-				System.out.println("Äã²ÂµÄÊı¾İ"+guessNumber+"´óÁË");
-			}else if(guessNumber < number) {
-				System.out.println("Äã²ÂµÄÊı¾İ"+guessNumber+"Ğ¡ÁË");
-			}else {
-				System.out.println("¹§Ï²Äã£¬²ÂÖĞÁË");
-				break;
-			}
-		}
-		
-	}
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ½ï¿½ï¿½Ğ±È½ï¿½
+            if (guessNumber > number) {
+                System.out.println("ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½" + guessNumber + "ï¿½ï¿½ï¿½ï¿½");
+            } else if (guessNumber < number) {
+                System.out.println("ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½" + guessNumber + "Ğ¡ï¿½ï¿½");
+            } else {
+                System.out.println("ï¿½ï¿½Ï²ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            }
+        }
+
+    }
 }

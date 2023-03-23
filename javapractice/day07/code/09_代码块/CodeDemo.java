@@ -1,42 +1,42 @@
 /*
-	´úÂë¿é£ºÔÚJavaÖÐ£¬Ê¹ÓÃ{}À¨ÆðÀ´µÄ´úÂë±»³ÆÎª´úÂë¿é¡£
+	ï¿½ï¿½ï¿½ï¿½é£ºï¿½ï¿½Javaï¿½Ð£ï¿½Ê¹ï¿½ï¿½{}ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ë±»ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½é¡£
 
-	¸ù¾ÝÆäÎ»ÖÃºÍÉùÃ÷µÄ²»Í¬£¬¿ÉÒÔ·ÖÎª
-		¾Ö²¿´úÂë¿é£ºÔÚ·½·¨ÖÐ³öÏÖ£»ÏÞ¶¨±äÁ¿ÉúÃüÖÜÆÚ£¬¼°ÔçÊÍ·Å£¬Ìá¸ßÄÚ´æÀûÓÃÂÊ
-		¹¹Ôì´úÂë¿é£ºÔÚÀàÖÐ·½·¨Íâ³öÏÖ£»
-					¶à¸ö¹¹Ôì·½·¨·½·¨ÖÐÏàÍ¬µÄ´úÂë´æ·Åµ½Ò»Æð£¬Ã¿´Îµ÷ÓÃ¹¹Ôì¶¼Ö´ÐÐ£¬²¢ÇÒÔÚ¹¹Ôì·½·¨Ç°Ö´ÐÐ
-		¾²Ì¬´úÂë¿é£ºÔÚÀàÖÐ·½·¨Íâ³öÏÖ£¬¼ÓÁËstaticÐÞÊÎ¡£
-					ÓÃÓÚ¸øÀà½øÐÐ³õÊ¼»¯£¬ÔÚ¼ÓÔØµÄÊ±ºò¾ÍÖ´ÐÐ£¬²¢ÇÒÖ»Ö´ÐÐÒ»´Î¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ãºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½Îª
+		ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½é£ºï¿½Ú·ï¿½ï¿½ï¿½ï¿½Ð³ï¿½ï¿½Ö£ï¿½ï¿½Þ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·Å£ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£ºï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½
+					ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½Ä´ï¿½ï¿½ï¿½ï¿½Åµï¿½Ò»ï¿½ï¿½Ã¿ï¿½Îµï¿½ï¿½Ã¹ï¿½ï¿½ì¶¼Ö´ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¹ï¿½ï¿½ì·½ï¿½ï¿½Ç°Ö´ï¿½ï¿½
+		ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½é£ºï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½staticï¿½ï¿½ï¿½Î¡ï¿½
+					ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½Øµï¿½Ê±ï¿½ï¿½ï¿½Ö´ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ö»Ö´ï¿½ï¿½Ò»ï¿½Î¡ï¿½
 */
-//¾Ö²¿´úÂë¿é
+//ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 /*
 class Code {
 	public void show() {
-		//¾Ö²¿´úÂë¿é
+		//ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		{
 			int x = 10;
 			System.out.println(x);
 		}
 
 		//System.out.println(x);
-		//... 1000ÐÐ,xÔÚÕâ1000ÐÐ´úÂëÖÐÃ»ÓÐ±»Ê¹ÓÃ
+		//... 1000ï¿½ï¿½,xï¿½ï¿½ï¿½ï¿½1000ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð±ï¿½Ê¹ï¿½ï¿½
 		int y = 100;
 		System.out.println(y);
 	}
 }
 */
 
-//¹¹Ôì´úÂë¿é
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 /*
 class Code {
 
-	//¹¹Ôì´úÂë¿é
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		System.out.println("AAAAA"); 
 	}
 
 	public Code() {
-		//System.out.println("AAAAA"); //¼ÙÈçÕâ¸ö´úÂëµÄÄÚÈÝ±È½Ï¶à£¬²¢ÇÒÔÚÃ¿¸ö¹¹ÔìÖÐ¶¼»á³öÏÖ
+		//System.out.println("AAAAA"); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý±È½Ï¶à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	}
 
 	public Code(String s) {
@@ -46,12 +46,12 @@ class Code {
 }
 */
 
-//¾²Ì¬´úÂë¿é
+//ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½
 class Code {
-	//¾²Ì¬´úÂë¿é
-	static {
-		System.out.println("AAAAA"); 
-	}
+    //ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½
+    static {
+        System.out.println("AAAAA");
+    }
 
 	/*
 	public Code() {
@@ -64,15 +64,15 @@ class Code {
 }
 
 class CodeDemo {
-	static {
-		System.out.println("BBBBB"); 
-	}
+    static {
+        System.out.println("BBBBB");
+    }
 
-	public static void main(String[] args) {
-		Code c = new Code();
-		//c.show();
+    public static void main(String[] args) {
+        Code c = new Code();
+        //c.show();
 
-		//Code c2 = new Code("hello");
-		System.out.println("CCCCC");
-	}
+        //Code c2 = new Code("hello");
+        System.out.println("CCCCC");
+    }
 }

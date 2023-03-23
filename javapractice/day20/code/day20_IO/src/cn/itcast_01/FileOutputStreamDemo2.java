@@ -4,33 +4,33 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * Á½¸öÐ¡ÎÊÌâ£º
- * A:ÊµÏÖÊý¾ÝµÄ»»ÐÐ?
- * 		²»Í¬µÄÏµÍ³£¬Õë¶Ô»»ÐÐ·ûºÅµÄÊ¶±ðÊÇ²»Ò»ÑùµÄ¡£
+ * ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½â£º
+ * A:Êµï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ»ï¿½ï¿½ï¿½?
+ * 		ï¿½ï¿½Í¬ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½Ð·ï¿½ï¿½Åµï¿½Ê¶ï¿½ï¿½ï¿½Ç²ï¿½Ò»ï¿½ï¿½ï¿½Ä¡ï¿½
  * 		Mac:		\r
  * 		linux:		\n
  * 		windows:	\r\n
- * 		ÏµÍ³×Ô´øµÄ¼ÇÊÂ±¾Èí¼þ£¬Ö»ÄÜÊ¶±ð¸ÃÏµÍ³ÄÜ¹»Ê¶±ðµÄ»»ÐÐ¡£
- * 		¶øEclipse×Ô´øµÄ¼ÇÊÂ±¾£¬ÒÔ¼°EditplusÈ´¿ÉÒÔÊ¶±ðÈÎÒâµÄ»»ÐÐ·û¡£
- * 
- * B:ÊµÏÖÊý¾ÝµÄ×·¼ÓÐ´Èë? 
+ * 		ÏµÍ³ï¿½Ô´ï¿½ï¿½Ä¼ï¿½ï¿½Â±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ü¹ï¿½Ê¶ï¿½ï¿½Ä»ï¿½ï¿½Ð¡ï¿½
+ * 		ï¿½ï¿½Eclipseï¿½Ô´ï¿½ï¿½Ä¼ï¿½ï¿½Â±ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½EditplusÈ´ï¿½ï¿½ï¿½ï¿½Ê¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½Ð·ï¿½ï¿½ï¿½
+ *
+ * B:Êµï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½×·ï¿½ï¿½Ð´ï¿½ï¿½?
  * 		public FileOutputStream(String name,boolean append)
- * 		Èç¹ûµÚ¶þ¸ö²ÎÊýÎª true£¬Ôò½«×Ö½ÚÐ´ÈëÎÄ¼þÄ©Î²´¦£¬¶ø²»ÊÇÐ´ÈëÎÄ¼þ¿ªÊ¼´¦¡£
+ * 		ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª trueï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½Ð´ï¿½ï¿½ï¿½Ä¼ï¿½Ä©Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
  */
 public class FileOutputStreamDemo2 {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨×Ö½ÚÊä³öÁ÷¶ÔÏó
-		FileOutputStream fos = new FileOutputStream("b.txt",true);
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        FileOutputStream fos = new FileOutputStream("b.txt", true);
 
-		// Ð´Êý¾Ý
-		for (int x = 0; x < 10; x++) {
-			// // fos.write(("hello" + x).getBytes());
-			// fos.write(("hello" + x + "\n").getBytes());
-			// fos.write(("hello" + x + "\r").getBytes());
-			fos.write(("hello" + x + "\r\n").getBytes());
-		}
+        // Ð´ï¿½ï¿½ï¿½ï¿½
+        for (int x = 0; x < 10; x++) {
+            // // fos.write(("hello" + x).getBytes());
+            // fos.write(("hello" + x + "\n").getBytes());
+            // fos.write(("hello" + x + "\r").getBytes());
+            fos.write(("hello" + x + "\r\n").getBytes());
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		fos.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        fos.close();
+    }
 }

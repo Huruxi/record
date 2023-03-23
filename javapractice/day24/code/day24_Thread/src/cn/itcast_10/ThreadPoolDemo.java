@@ -6,27 +6,27 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
 /*
- * ÇóºÍ°¸Àý
+ * ï¿½ï¿½Í°ï¿½ï¿½ï¿½
  */
 public class ThreadPoolDemo {
-	public static void main(String[] args) throws InterruptedException,
-			ExecutionException {
-		// ´´½¨Ïß³Ì³Ø¶ÔÏó
-		ExecutorService pool = Executors.newFixedThreadPool(3);
+    public static void main(String[] args) throws InterruptedException,
+            ExecutionException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì³Ø¶ï¿½ï¿½ï¿½
+        ExecutorService pool = Executors.newFixedThreadPool(3);
 
-		// Ìá½»Êý¾Ý
-		Future<Integer> f1 = pool.submit(new MyCallable(10));
-		Future<Integer> f2 = pool.submit(new MyCallable(50));
-		Future<Integer> f3 = pool.submit(new MyCallable(100));
+        // ï¿½á½»ï¿½ï¿½ï¿½ï¿½
+        Future<Integer> f1 = pool.submit(new MyCallable(10));
+        Future<Integer> f2 = pool.submit(new MyCallable(50));
+        Future<Integer> f3 = pool.submit(new MyCallable(100));
 
-		Integer i1 = f1.get();
-		Integer i2 = f2.get();
-		Integer i3 = f3.get();
+        Integer i1 = f1.get();
+        Integer i2 = f2.get();
+        Integer i3 = f3.get();
 
-		System.out.println(i1);
-		System.out.println(i2);
-		System.out.println(i3);
+        System.out.println(i1);
+        System.out.println(i2);
+        System.out.println(i3);
 
-		pool.shutdown();
-	}
+        pool.shutdown();
+    }
 }

@@ -6,7 +6,6 @@
 package cn.itcast.pojo;
 
 /**
- *
  * @author fqy
  */
 public class User {

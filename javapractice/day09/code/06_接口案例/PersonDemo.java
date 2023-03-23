@@ -1,148 +1,153 @@
 /*
-	ÀÏÊ¦ºÍÑ§Éú°¸Àý,¼ÓÈë³éÑÌµÄ¶îÍâ¹¦ÄÜ
+	ï¿½ï¿½Ê¦ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌµÄ¶ï¿½ï¿½â¹¦ï¿½ï¿½
 
 	Smoking:
-		³éÑÌµÄ¹¦ÄÜ
+		ï¿½ï¿½ï¿½ÌµÄ¹ï¿½ï¿½ï¿½
 
-	ÀÏÊ¦£º
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°£¬Ë¯¾õ
-	Ñ§Éú£º
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°£¬Ë¯¾õ
+	ï¿½ï¿½Ê¦ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),Ñ§Ï°ï¿½ï¿½Ë¯ï¿½ï¿½
+	Ñ§ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),Ñ§Ï°ï¿½ï¿½Ë¯ï¿½ï¿½
 
-	Í¨¹ýÀÏÊ¦ºÍÑ§ÉúÎÒÃÇ¿ÉÒÔ·ÖÎö³öÈËÀà£º
+	Í¨ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£º
 		
-	ÈË£º
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°()£¬Ë¯¾õ(){}
+	ï¿½Ë£ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),Ñ§Ï°()ï¿½ï¿½Ë¯ï¿½ï¿½(){}
 
-	×îÖÕµÄ·ÖÎö£º
-	ÈË£º³éÏóÀà
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx(),Ñ§Ï°()£¬Ë¯¾õ(){}
-			ÀÏÊ¦
-				²¿·ÖÀÏÊ¦³éÑÌ
-			Ñ§Éú
-				²¿·ÖÑ§Éú³éÑÌ
-	Smoking:½Ó¿Ú
-		³éÑÌµÄ¹¦ÄÜ
+	ï¿½ï¿½ï¿½ÕµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx(),Ñ§Ï°()ï¿½ï¿½Ë¯ï¿½ï¿½(){}
+			ï¿½ï¿½Ê¦
+				ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦ï¿½ï¿½ï¿½ï¿½
+			Ñ§ï¿½ï¿½
+				ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	Smoking:ï¿½Ó¿ï¿½
+		ï¿½ï¿½ï¿½ÌµÄ¹ï¿½ï¿½ï¿½
 */
-//³éÑÌ½Ó¿Ú
+//ï¿½ï¿½ï¿½Ì½Ó¿ï¿½
 interface Smoking {
-	public abstract void smoke();
+    public abstract void smoke();
 }
 
-//ÈË³éÏóÀà
+//ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½
 abstract class Person {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Person(){}
+    public Person() {
+    }
 
-	public Person(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	//Ë¯¾õ
-	public void sleep() {
-		System.out.println("Ë¯¾õ");
-	}
+    //Ë¯ï¿½ï¿½
+    public void sleep() {
+        System.out.println("Ë¯ï¿½ï¿½");
+    }
 
-	//Ñ§Ï°
-	public abstract void study();
+    //Ñ§Ï°
+    public abstract void study();
 }
 
-//ÀÏÊ¦
+//ï¿½ï¿½Ê¦
 class Teacher extends Person {
-	public Teacher(){}
+    public Teacher() {
+    }
 
-	public Teacher(String name,int age) {
-		super(name,age);
-	}
+    public Teacher(String name, int age) {
+        super(name, age);
+    }
 
-	public void study() {
-		System.out.println("ÀÏÊ¦ÒªÑ§Ï°ÈçºÎ°ÑÖªÊ¶½²Ã÷°×");
-	}
+    public void study() {
+        System.out.println("ï¿½ï¿½Ê¦ÒªÑ§Ï°ï¿½ï¿½Î°ï¿½ÖªÊ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
-//²¿·Ö³éÑÌÀÏÊ¦
+//ï¿½ï¿½ï¿½Ö³ï¿½ï¿½ï¿½ï¿½ï¿½Ê¦
 class SmokeTeacher extends Teacher implements Smoking {
-	public SmokeTeacher(){}
+    public SmokeTeacher() {
+    }
 
-	public SmokeTeacher(String name,int age) {
-		super(name,age);
-	}
+    public SmokeTeacher(String name, int age) {
+        super(name, age);
+    }
 
-	public void smoke() {
-		System.out.println("°®³éÑÌµÄÀÏÊ¦");
-	}
+    public void smoke() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½Ê¦");
+    }
 }
 
-//Ñ§Éú
+//Ñ§ï¿½ï¿½
 class Student extends Person {
-	public Student(){}
+    public Student() {
+    }
 
-	public Student(String name,int age) {
-		super(name,age);
-	}
+    public Student(String name, int age) {
+        super(name, age);
+    }
 
-	public void study() {
-		System.out.println("Ñ§ÉúÒªºÃºÃÑ§Ï°£¬ÌìÌìÏòÉÏ");
-	}
+    public void study() {
+        System.out.println("Ñ§ï¿½ï¿½Òªï¿½Ãºï¿½Ñ§Ï°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
-//²¿·Ö³éÑÌÑ§Éú
+//ï¿½ï¿½ï¿½Ö³ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½
 class SmokeStudent extends Student implements Smoking {
-	public SmokeStudent(){}
+    public SmokeStudent() {
+    }
 
-	public SmokeStudent(String name,int age) {
-		super(name,age);
-	}
+    public SmokeStudent(String name, int age) {
+        super(name, age);
+    }
 
-	public void smoke() {
-		System.out.println("°®³éÑÌµÄÑ§Éú");
-	}
+    public void smoke() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½Ñ§ï¿½ï¿½");
+    }
 }
 
-//²âÊÔÀà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class PersonDemo {
-	public static void main(String[] args) {
-		//SmokeTeacher
-		SmokeTeacher st = new SmokeTeacher();
-		st.setName("±ÏÀÑÒ¯");
-		st.setAge(35);
-		System.out.println(st.getName()+"---"+st.getAge());
-		st.sleep();
-		st.study();
-		st.smoke();
-		System.out.println("--------------------------");
+    public static void main(String[] args) {
+        //SmokeTeacher
+        SmokeTeacher st = new SmokeTeacher();
+        st.setName("ï¿½ï¿½ï¿½ï¿½Ò¯");
+        st.setAge(35);
+        System.out.println(st.getName() + "---" + st.getAge());
+        st.sleep();
+        st.study();
+        st.smoke();
+        System.out.println("--------------------------");
 
-		SmokeTeacher st2 = new SmokeTeacher("´«ÖÇ¼±ÏÈ·æ",30);
-		System.out.println(st2.getName()+"---"+st2.getAge());
-		st2.sleep();
-		st2.study();
-		st2.smoke();
-	}
+        SmokeTeacher st2 = new SmokeTeacher("ï¿½ï¿½ï¿½Ç¼ï¿½ï¿½È·ï¿½", 30);
+        System.out.println(st2.getName() + "---" + st2.getAge());
+        st2.sleep();
+        st2.study();
+        st2.smoke();
+    }
 }

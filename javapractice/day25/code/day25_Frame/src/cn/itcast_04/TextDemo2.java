@@ -16,98 +16,98 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * Í¨¹ý¹Û²ìÍ¼£¬ÎÒÃÇ·ÖÎöÖªµÀÓ¦¸ÃÓÐÈçÏÂµÄ¼¸¸ö×é¼þ£º
- * ´°Ìå£¬ÎÄ±¾¿ò£¬°´Å¥£¬ÎÄ±¾Óò
- * ²¢ÇÒ¶Ô´°ÌåºÍ°´Å¥Ìí¼ÓÊÂ¼þ
+ * Í¨ï¿½ï¿½ï¿½Û²ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Öªï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÂµÄ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½å£¬ï¿½Ä±ï¿½ï¿½ò£¬°ï¿½Å¥ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ò¶Ô´ï¿½ï¿½ï¿½Í°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
  */
 public class TextDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		Frame f = new Frame("Êý¾Ý×ªÒÆ");
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setBounds(500, 250, 400, 300);
-		// ÉèÖÃ²¼¾Ö
-		f.setLayout(new FlowLayout());
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Frame f = new Frame("ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½");
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setBounds(500, 250, 400, 300);
+        // ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+        f.setLayout(new FlowLayout());
 
-		// ´´½¨ÎÄ±¾¿ò
-		final TextField tf = new TextField(20);
-		// ´´½¨°´Å¥
-		Button bu = new Button("Ð´µ½ÎÄ±¾ÎÄ¼þ");
-		Button bu2 = new Button("¶ÁÈ¡ÎÄ±¾ÎÄ¼þ");
-		// ´´½¨ÎÄ±¾Óò
-		final TextArea ta = new TextArea(10, 40);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+        final TextField tf = new TextField(20);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
+        Button bu = new Button("Ð´ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½");
+        Button bu2 = new Button("ï¿½ï¿½È¡ï¿½Ä±ï¿½ï¿½Ä¼ï¿½");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+        final TextArea ta = new TextArea(10, 40);
 
-		// Ìí¼Óµ½´°Ìå
-		f.add(tf);
-		f.add(bu);
-		f.add(bu2);
-		f.add(ta);
+        // ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        f.add(tf);
+        f.add(bu);
+        f.add(bu2);
+        f.add(ta);
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		// ¶ÔbuÌí¼ÓÊÂ¼þ
-		bu.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// »ñÈ¡ÎÄ±¾¿òµÄÖµ£¬¸³Öµ¸øÎÄ±¾Óò
-				String tf_str = tf.getText();
-				// Çå¿ÕÊý¾Ý
-				tf.setText("");
+        // ï¿½ï¿½buï¿½ï¿½ï¿½ï¿½Â¼ï¿½
+        bu.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // ï¿½ï¿½È¡ï¿½Ä±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½
+                String tf_str = tf.getText();
+                // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                tf.setText("");
 
-				// Ð´µ½ÎÄ±¾ÎÄ¼þ
-				BufferedWriter bw = null;
-				try {
-					bw = new BufferedWriter(new FileWriter("bw.txt", true));
-					bw.write(tf_str);
-					bw.newLine();
-					bw.flush();
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				} finally {
-					if (bw != null) {
-						try {
-							bw.close();
-						} catch (IOException e1) {
-							e1.printStackTrace();
-						}
-					}
-				}
-			}
-		});
+                // Ð´ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½
+                BufferedWriter bw = null;
+                try {
+                    bw = new BufferedWriter(new FileWriter("bw.txt", true));
+                    bw.write(tf_str);
+                    bw.newLine();
+                    bw.flush();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                } finally {
+                    if (bw != null) {
+                        try {
+                            bw.close();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                }
+            }
+        });
 
-		bu2.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				ta.setText("");
+        bu2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ta.setText("");
 
-				BufferedReader br = null;
-				try {
-					br = new BufferedReader(new FileReader("bw.txt"));
-					String line = null;
-					while ((line = br.readLine()) != null) {
-						ta.append(line + "\n");
-					}
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				} finally {
-					if (br != null) {
-						try {
-							br.close();
-						} catch (IOException e1) {
-							e1.printStackTrace();
-						}
-					}
-				}
-			}
-		});
+                BufferedReader br = null;
+                try {
+                    br = new BufferedReader(new FileReader("bw.txt"));
+                    String line = null;
+                    while ((line = br.readLine()) != null) {
+                        ta.append(line + "\n");
+                    }
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                } finally {
+                    if (br != null) {
+                        try {
+                            br.close();
+                        } catch (IOException e1) {
+                            e1.printStackTrace();
+                        }
+                    }
+                }
+            }
+        });
 
-		// ÉèÖÃ´°Ìå¿É¼û
-		f.setVisible(true);
-	}
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½É¼ï¿½
+        f.setVisible(true);
+    }
 }

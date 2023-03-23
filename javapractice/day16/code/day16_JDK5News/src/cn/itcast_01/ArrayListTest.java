@@ -3,27 +3,27 @@ package cn.itcast_01;
 import java.util.ArrayList;
 
 /*
- * ÓÃArrayList´æ´¢×Ô¶¨Òå¶ÔÏó²¢±éÀú¡£ÒªÇó¼ÓÈë·ºĞÍ£¬±éÀúÊ¹ÓÃÈıÖÖ·½Ê½
+ * ï¿½ï¿½ArrayListï¿½æ´¢ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ó²¢±ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ë·ºï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½Ê½
  */
 public class ArrayListTest {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		ArrayList<Student> array = new ArrayList<Student>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        ArrayList<Student> array = new ArrayList<Student>();
 
-		// ´´½¨ÔªËØ
-		Student s1 = new Student("ÂíËÕ", 18);
-		Student s2 = new Student("Ù¡Àöæ«", 20);
-		Student s3 = new Student("Íõ´ó´¸", 19);
-		Student s4 = new Student("ÂŞÈıÅÚ", 21);
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½", 18);
+        Student s2 = new Student("Ù¡ï¿½ï¿½ï¿½", 20);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½", 19);
+        Student s4 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 21);
 
-		// Ìí¼ÓÔªËØ
-		array.add(s1);
-		array.add(s2);
-		array.add(s3);
-		array.add(s4);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        array.add(s1);
+        array.add(s2);
+        array.add(s3);
+        array.add(s4);
 
-		for (Student s : array) {
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        for (Student s : array) {
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

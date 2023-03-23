@@ -13,72 +13,72 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 
 /*
- * Í¨¹ý¹Û²ìÎÒÃÇÖªµÀÎÒÃÇÒª×öµÄ¶«Î÷ÊÇ1¸ö´°Ìå£¬4¸ö°´Å¥
+ * Í¨ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½ï¿½å£¬4ï¿½ï¿½ï¿½ï¿½Å¥
  */
 public class MouseDemo {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("¸ü¸Ä±³¾°É«");
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setBounds(500, 250, 400, 300);
-		// ÉèÖÃ²¼¾Ö
-		f.setLayout(new FlowLayout());
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        final Frame f = new Frame("ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½É«");
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setBounds(500, 250, 400, 300);
+        // ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½
+        f.setLayout(new FlowLayout());
 
-		// ´´½¨°´Å¥
-		Button redButton = new Button("ºìÉ«");
-		Button greenButton = new Button("ÂÌÉ«");
-		Button blueButton = new Button("À¶É«");
-		Button whiteButton = new Button("¸´Ô­");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¥
+        Button redButton = new Button("ï¿½ï¿½É«");
+        Button greenButton = new Button("ï¿½ï¿½É«");
+        Button blueButton = new Button("ï¿½ï¿½É«");
+        Button whiteButton = new Button("ï¿½ï¿½Ô­");
 
-		// Ìí¼Óµ½´°Ìå
-		f.add(redButton);
-		f.add(greenButton);
-		f.add(blueButton);
-		f.add(whiteButton);
+        // ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        f.add(redButton);
+        f.add(greenButton);
+        f.add(blueButton);
+        f.add(whiteButton);
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		// redButton
+        // redButton
 
-		// ¶¯×÷ÊÂ¼þ
-		// redButton.addActionListener(new ActionListener() {
-		// @Override
-		// public void actionPerformed(ActionEvent e) {
-		// // public void setBackground(Color c)
-		// f.setBackground(Color.RED);
-		// }
-		// });
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
+        // redButton.addActionListener(new ActionListener() {
+        // @Override
+        // public void actionPerformed(ActionEvent e) {
+        // // public void setBackground(Color c)
+        // f.setBackground(Color.RED);
+        // }
+        // });
 
-		// µã»÷ÊÂ¼þ
-		// redButton.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseClicked(MouseEvent e) {
-		// f.setBackground(Color.RED);
-		// }
-		// });
+        // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½
+        // redButton.addMouseListener(new MouseAdapter() {
+        // @Override
+        // public void mouseClicked(MouseEvent e) {
+        // f.setBackground(Color.RED);
+        // }
+        // });
 
-		redButton.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseEntered(MouseEvent e) {
-				f.setBackground(Color.RED);
-			}
-		});
+        redButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                f.setBackground(Color.RED);
+            }
+        });
 
-		redButton.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseExited(MouseEvent e) {
-				f.setBackground(Color.WHITE);
-			}
-		});
+        redButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseExited(MouseEvent e) {
+                f.setBackground(Color.WHITE);
+            }
+        });
 
-		// ÉèÖÃ´°Ìå¿É¼û
-		f.setVisible(true);
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½É¼ï¿½
+        f.setVisible(true);
 
-	}
+    }
 }

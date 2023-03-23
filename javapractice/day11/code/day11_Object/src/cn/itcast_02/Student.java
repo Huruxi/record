@@ -1,88 +1,88 @@
 package cn.itcast_02;
 
 public class Student {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Student() {
-		super();
-	}
+    public Student() {
+        super();
+    }
 
-	public Student(String name, int age) {
-		super();
-		this.name = name;
-		this.age = age;
-	}
+    public Student(String name, int age) {
+        super();
+        this.name = name;
+        this.age = age;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		
-		if (obj == null)
-			return false;
-		
-		if (getClass() != obj.getClass())
-			return false;
-		
-		Student other = (Student) obj;
-		if (age != other.age)
-			return false;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
-			return false;
-		return true;
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
 
-	// @Override
-	// public boolean equals(Object obj) { // Object obj = s2;
-	// // return true;
-	// // obj -- s2
-	// // this -- s1
-	// // Student s = (Student) obj;
-	// // if (this.name.equals(s.name) && this.age == s.age) {
-	// // return true;
-	// // } else {
-	// // return false;
-	// // }
-	//
-	// // ÒòÎª×Ô¼ººÍ×Ô¼º±È£¬ÊÇÃ»ÓÐ±ØÒª½øÐÐ×ª»»µÄ£¬ËùÒÔ£¬ÎªÁËÌá¸ß³ÌÐòµÄÐ§ÂÊ£¬ÎÒÃÇ¼ÓÈëÒ»¸öÅÐ¶Ï
-	// if (this == obj) {
-	// return true;
-	// }
-	//
-	// // ÎªÁËÈÃ³ÌÐò¸ü½¡×³Ò»Ð©£¬¼ÓÈëÒ»¸öÅÐ¶Ï
-	// // Õâ¸öÅÐ¶ÏÆäÊµÊÇÔÚÅÐ¶ÏÄ³¸ö¶ÔÏóÊÇ·ñÊÇÄ³¸öÀàµÄ¶ÔÏó
-	// // ÓÃµ½ÁËÒ»¸öÅÐ¶Ï·ûºÅ£ºinstanceof
-	// // ¸ñÊ½£º¶ÔÏóÃû instanceof ÀàÃû
-	// if (!(obj instanceof Student)) {
-	// return false;
-	// }
-	//
-	// // ifÓï¾äµÄµÚ¶þÖÖ¸ñÊ½¿ÉÒÔÊ¹ÓÃÈýÔªÔËËã·ûÌæ»»
-	// Student s = (Student) obj;
-	// // System.out.println("AAAAAA");
-	// return this.name.equals(s.name) && this.age == s.age;
-	// }
-	
-	
+        if (obj == null)
+            return false;
+
+        if (getClass() != obj.getClass())
+            return false;
+
+        Student other = (Student) obj;
+        if (age != other.age)
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        return true;
+    }
+
+    // @Override
+    // public boolean equals(Object obj) { // Object obj = s2;
+    // // return true;
+    // // obj -- s2
+    // // this -- s1
+    // // Student s = (Student) obj;
+    // // if (this.name.equals(s.name) && this.age == s.age) {
+    // // return true;
+    // // } else {
+    // // return false;
+    // // }
+    //
+    // // ï¿½ï¿½Îªï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½È£ï¿½ï¿½ï¿½Ã»ï¿½Ð±ï¿½Òªï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½Ô£ï¿½Îªï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½Ð§ï¿½Ê£ï¿½ï¿½ï¿½ï¿½Ç¼ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð¶ï¿½
+    // if (this == obj) {
+    // return true;
+    // }
+    //
+    // // Îªï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×³Ò»Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð¶ï¿½
+    // // ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+    // // ï¿½Ãµï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ð¶Ï·ï¿½ï¿½Å£ï¿½instanceof
+    // // ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ instanceof ï¿½ï¿½ï¿½ï¿½
+    // if (!(obj instanceof Student)) {
+    // return false;
+    // }
+    //
+    // // ifï¿½ï¿½ï¿½ÄµÚ¶ï¿½ï¿½Ö¸ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ»»
+    // Student s = (Student) obj;
+    // // System.out.println("AAAAAA");
+    // return this.name.equals(s.name) && this.age == s.age;
+    // }
+
+
 }

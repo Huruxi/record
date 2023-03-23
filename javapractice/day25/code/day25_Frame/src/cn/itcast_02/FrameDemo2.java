@@ -3,32 +3,33 @@ package cn.itcast_02;
 import java.awt.Frame;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+
 /*
- * ÓÃÊÊÅäÆ÷Àà¸Ä½ø³ÌÐò¡£
- * 
- * ³¡¾°£º
- * 		 ²»ÊÇËùÓÐµÄÊÂ¼þ¶¼ÐèÒªÊÊÅäÆ÷Àà¡£
- * 		¾ÙÀý£ºÒ»¸öÊÂ¼þ½Ó¿ÚÖÐÖ»ÓÐÒ»¸ö·½·¨¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¡£
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½Ö»ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class FrameDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå
-		Frame f = new Frame();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Frame f = new Frame();
 
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setTitle("´°Ìå¹Ø±Õ");
-		f.setSize(400, 200);
-		f.setLocation(500, 250);
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setTitle("ï¿½ï¿½ï¿½ï¿½Ø±ï¿½");
+        f.setSize(400, 200);
+        f.setLocation(500, 250);
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		// ÉèÖÃ´°Ìå¿É¼û
-		f.setVisible(true);
-	}
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½É¼ï¿½
+        f.setVisible(true);
+    }
 }

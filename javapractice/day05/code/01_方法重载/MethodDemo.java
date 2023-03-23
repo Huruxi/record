@@ -1,40 +1,40 @@
 /*
-	·½·¨ÖØÔØ£º
-		ÔÚÍ¬Ò»¸öÀàÖĞ£¬ÔÊĞí´æÔÚÒ»¸öÒÔÉÏµÄÍ¬Ãû·½·¨£¬Ö»ÒªËüÃÇµÄ²ÎÊı¸öÊı»òÕß²ÎÊıÀàĞÍ²»Í¬¼´¿É¡£
-		ºÍ·µ»ØÖµÀàĞÍÎŞ¹Ø¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø£ï¿½
+		ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö»Òªï¿½ï¿½ï¿½ÇµÄ²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½Í¬ï¿½ï¿½ï¿½É¡ï¿½
+		ï¿½Í·ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ş¹Ø¡ï¿½
 */
 class MethodDemo {
-	public static void main(String[] args) {
-		//ĞèÇó£ºÇëĞ´Ò»¸ö¹¦ÄÜ£¬ÊµÏÖÁ½¸öÊı¾İµÄÇóºÍ
-		System.out.println(sum(10,20));
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ï¿½ï¿½
+        System.out.println(sum(10, 20));
 
-		//ĞèÇó£ºÇëĞ´Ò»¸ö¹¦ÄÜ£¬ÊµÏÖÈı¸öÊı¾İµÄÇóºÍ
-		//System.out.println(sum2(10,20,30));
-		System.out.println(sum(10,20,30));
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ï¿½ï¿½
+        //System.out.println(sum2(10,20,30));
+        System.out.println(sum(10, 20, 30));
 
-		System.out.println(sum(1.5,2.5));
-	}
+        System.out.println(sum(1.5, 2.5));
+    }
 
-	public static int sum(int a,int b) {
-		return a + b;
-	}
+    public static int sum(int a, int b) {
+        return a + b;
+    }
 
 	/*
 	public static int sum2(int a,int b,int c) {
 		return a + b + c;
 
-		//·½·¨µÄÇ¶Ì×µ÷ÓÃ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½×µï¿½ï¿½ï¿½
 		//return sum(sum(a,b),c);
 	}
 	*/
 
-	//ÓÉÓÚ·½·¨ÃûÒª±í´ïµÄÆäÊµÊÇ¸Ã·½·¨µÄ×÷ÓÃ
-	//ËùÒÔ£¬sum2Õâ¸öÃû×Ö²»ºÃ£¬»¹ÊÇÒªÓÃsum ±È½ÏºÃ
-	public static int sum(int a,int b,int c) {
-		return a + b + c;
-	}
+    //ï¿½ï¿½ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ç¸Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    //ï¿½ï¿½ï¿½Ô£ï¿½sum2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½sum ï¿½È½Ïºï¿½
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
 
-	public static double sum(double a,double b) {
-		return a + b;
-	}
+    public static double sum(double a, double b) {
+        return a + b;
+    }
 }

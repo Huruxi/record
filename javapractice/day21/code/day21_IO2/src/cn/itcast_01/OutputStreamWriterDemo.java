@@ -5,46 +5,46 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 /*
- * ×Ö·ûÁ÷ = ×Ö½ÚÁ÷ +±àÂë±í
- * OutputStreamWriter:°Ñ×Ö½ÚÁ÷×ª»»³É×Ö·ûÁ÷¡£
- * OutputStreamWriter(OutputStream out):Ä¬ÈÏ×Ö·û¼¯
- * OutputStreamWriter(OutputStream out, String charsetName):Ö¸¶¨×Ö·û¼¯ 
- * 
- * flush()ºÍclose()µÄÇø±ð?
- * A:flush Ë¢ÐÂÁ÷£¬Á÷¶ÔÏó»¹¿ÉÒÔ¼ÌÐøÊ¹ÓÃ
- * B:close ¹Ø±ÕÁ÷£¬Á÷¶ÔÏó²»¿ÉÒÔ¼ÌÐøÊ¹ÓÃ
+ * ï¿½Ö·ï¿½ï¿½ï¿½ = ï¿½Ö½ï¿½ï¿½ï¿½ +ï¿½ï¿½ï¿½ï¿½ï¿½
+ * OutputStreamWriter:ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * OutputStreamWriter(OutputStream out):Ä¬ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * OutputStreamWriter(OutputStream out, String charsetName):Ö¸ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ *
+ * flush()ï¿½ï¿½close()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * A:flush Ë¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó»¹¿ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+ * B:close ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó²»¿ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
  */
 public class OutputStreamWriterDemo {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨¶ÔÏó
-		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
-				"osw.txt"));
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
+                "osw.txt"));
 
-		// Ð´Êý¾ÝµÄ·½·¨
-		// Ð´Ò»¸ö×Ö·û
-		// osw.write('ÖÐ');
-		/*
-		 * Õâ¸öÊ±ºò£¬ÎªÊ²Ã´Ã»ÓÐÊý¾ÝÄØ? ×Ö·û = 2×Ö½Ú
-		 */
-		// Ð´Ò»¸ö×Ö·ûÊý×é
-		// char[] chs = { 'a', 'b', 'c', 'ÁÖ', 'Çà', 'Ï¼' };
-		// osw.write(chs);
+        // Ð´ï¿½ï¿½ï¿½ÝµÄ·ï¿½ï¿½ï¿½
+        // Ð´Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+        // osw.write('ï¿½ï¿½');
+        /*
+         * ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ÎªÊ²Ã´Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? ï¿½Ö·ï¿½ = 2ï¿½Ö½ï¿½
+         */
+        // Ð´Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        // char[] chs = { 'a', 'b', 'c', 'ï¿½ï¿½', 'ï¿½ï¿½', 'Ï¼' };
+        // osw.write(chs);
 
-		// Ð´Ò»¸ö×Ö·ûÊý×éµÄÒ»²¿·Ö
-		// osw.write(chs, 0, 3);
+        // Ð´Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+        // osw.write(chs, 0, 3);
 
-		// Ð´Ò»¸ö×Ö·û´®
-		// osw.write("helloworld");
+        // Ð´Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        // osw.write("helloworld");
 
-		// Ð´Ò»¸ö×Ö·û´®µÄÒ»²¿·Ö
-		String s = "hello";
-		osw.write(s, 0, s.length());
+        // Ð´Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
+        String s = "hello";
+        osw.write(s, 0, s.length());
 
-		osw.flush();
-		// 10M-20M
+        osw.flush();
+        // 10M-20M
 
-		// ÊÍ·Å×ÊÔ´
-		osw.close();// ¹Ø±Õ´ËÁ÷£¬µ«ÒªÏÈË¢ÐÂËü
-		// osw.write("haha"); //java.io.IOException: Stream closed
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        osw.close();// ï¿½Ø±Õ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½Ë¢ï¿½ï¿½ï¿½ï¿½
+        // osw.write("haha"); //java.io.IOException: Stream closed
+    }
 }

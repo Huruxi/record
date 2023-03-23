@@ -4,52 +4,52 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /*
- * Collections£ºÊÇÕë¶Ô¼¯ºÏ½øÐÐ²Ù×÷µÄ¹¤¾ßÀà¡£ÀïÃæ°üº¬ÁËÅÅÐòºÍ²éÕÒµÈ·½·¨¡£
- * ÃæÊÔÌâ?
- * 		CollectionsºÍCollectionµÄÇø±ð?
- * 		Collections:ÊÇÕë¶Ô¼¯ºÏ½øÐÐ²Ù×÷µÄ¹¤¾ßÀà£¬°üº¬ÁËÅÅÐòºÍ²éÕÒµÈ¹¦ÄÜ¡£
- * 		Collection:ÊÇµ¥ÁÐ¼¯ºÏµÄ¶¥²ã½Ó¿Ú£¬¶¨ÒåÁËµ¥ÁÐ¼¯ºÏµÄ¹²ÐÔ¹¦ÄÜ¡£
- * 
- * ÕÆÎÕµÄ¹¦ÄÜ£º
- * 		public static <T> void sort(List<T> list):ÅÅÐò
- *		public static <T> int binarySearch(List<?> list,T key):¶þ·Ö²éÕÒ
- *		public static <T> T max(Collection<?> coll):×î´óÖµ
- *		public static void reverse(List<?> list):·´×ª
- *		public static void shuffle(List<?> list):Ëæ»úÖÃ»»
+ * Collectionsï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ï½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½à¡£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ÒµÈ·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 		Collectionsï¿½ï¿½Collectionï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 		Collections:ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ï½ï¿½ï¿½Ð²ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ÒµÈ¹ï¿½ï¿½Ü¡ï¿½
+ * 		Collection:ï¿½Çµï¿½ï¿½Ð¼ï¿½ï¿½ÏµÄ¶ï¿½ï¿½ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½Ð¼ï¿½ï¿½ÏµÄ¹ï¿½ï¿½Ô¹ï¿½ï¿½Ü¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ÕµÄ¹ï¿½ï¿½Ü£ï¿½
+ * 		public static <T> void sort(List<T> list):ï¿½ï¿½ï¿½ï¿½
+ *		public static <T> int binarySearch(List<?> list,T key):ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
+ *		public static <T> T max(Collection<?> coll):ï¿½ï¿½ï¿½Öµ
+ *		public static void reverse(List<?> list):ï¿½ï¿½×ª
+ *		public static void shuffle(List<?> list):ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
  */
 public class CollectionsDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		ArrayList<Integer> array = new ArrayList<Integer>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        ArrayList<Integer> array = new ArrayList<Integer>();
 
-		// Ìí¼ÓÔªËØ
-		array.add(30);
-		array.add(20);
-		array.add(50);
-		array.add(10);
-		array.add(40);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        array.add(30);
+        array.add(20);
+        array.add(50);
+        array.add(10);
+        array.add(40);
 
-		System.out.println("array:" + array);
+        System.out.println("array:" + array);
 
-		// public static <T> void sort(List<T> list):ÅÅÐò
-		// Collections.sort(array);
-		// System.out.println("array:" + array);
-		// [10, 20, 30, 40, 50]
+        // public static <T> void sort(List<T> list):ï¿½ï¿½ï¿½ï¿½
+        // Collections.sort(array);
+        // System.out.println("array:" + array);
+        // [10, 20, 30, 40, 50]
 
-		// public static <T> int binarySearch(List<?> list,T key):¶þ·Ö²éÕÒ
-		// int index = Collections.binarySearch(array, 30);
-		// System.out.println(index);
+        // public static <T> int binarySearch(List<?> list,T key):ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
+        // int index = Collections.binarySearch(array, 30);
+        // System.out.println(index);
 
-		// public static <T> T max(Collection<?> coll):×î´óÖµ
-		// Integer max = Collections.max(array);
-		// System.out.println(max);
+        // public static <T> T max(Collection<?> coll):ï¿½ï¿½ï¿½Öµ
+        // Integer max = Collections.max(array);
+        // System.out.println(max);
 
-		// public static void reverse(List<?> list):·´×ª
-		// Collections.reverse(array);
-		// System.out.println("array:" + array);
+        // public static void reverse(List<?> list):ï¿½ï¿½×ª
+        // Collections.reverse(array);
+        // System.out.println("array:" + array);
 
-		// public static void shuffle(List<?> list):Ëæ»úÖÃ»»
-		Collections.shuffle(array);
-		System.out.println("array:" + array);
-	}
+        // public static void shuffle(List<?> list):ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
+        Collections.shuffle(array);
+        System.out.println("array:" + array);
+    }
 }

@@ -7,35 +7,35 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /*
- * IOÁ÷ÖÐµÄ±àÂë½âÂëÎÊÌâ£ºÒªÏëÔÚIOÁ÷ÖÐ¶ÔÊý¾Ý½øÐÐ±àÂëÎÊÌâ£¬±ØÐëÊ¹ÓÃ×ª»»Á÷¡£
+ * IOï¿½ï¿½ï¿½ÐµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£ºÒªï¿½ï¿½ï¿½ï¿½IOï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class IOEncodeDemo {
-	public static void main(String[] args) throws IOException {
-		// Ð´Êý¾Ý
-		// Ä¬ÈÏGBK
-		// OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
-		// "osw.txt"));
-		// Ö¸¶¨GBK
-		// OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
-		// "osw.txt"), "GBK");
-		// OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
-		// "osw.txt"), "UTF-8");
-		// osw.write("ÖÐ¹ú");
-		// osw.close();
+    public static void main(String[] args) throws IOException {
+        // Ð´ï¿½ï¿½ï¿½ï¿½
+        // Ä¬ï¿½ï¿½GBK
+        // OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
+        // "osw.txt"));
+        // Ö¸ï¿½ï¿½GBK
+        // OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
+        // "osw.txt"), "GBK");
+        // OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(
+        // "osw.txt"), "UTF-8");
+        // osw.write("ï¿½Ð¹ï¿½");
+        // osw.close();
 
-		// ¶ÁÊý¾Ý
-		// InputStreamReader isr = new InputStreamReader(new FileInputStream(
-		// "osw.txt"));
-		// InputStreamReader isr = new InputStreamReader(new FileInputStream(
-		// "osw.txt"), "GBK");
-		InputStreamReader isr = new InputStreamReader(new FileInputStream(
-				"osw.txt"), "UTF-8");
-		char[] chs = new char[1024];
-		int len = 0;
-		while ((len = isr.read(chs)) != -1) {
-			System.out.print(new String(chs, 0, len));
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // InputStreamReader isr = new InputStreamReader(new FileInputStream(
+        // "osw.txt"));
+        // InputStreamReader isr = new InputStreamReader(new FileInputStream(
+        // "osw.txt"), "GBK");
+        InputStreamReader isr = new InputStreamReader(new FileInputStream(
+                "osw.txt"), "UTF-8");
+        char[] chs = new char[1024];
+        int len = 0;
+        while ((len = isr.read(chs)) != -1) {
+            System.out.print(new String(chs, 0, len));
+        }
 
-		isr.close();
-	}
+        isr.close();
+    }
 }

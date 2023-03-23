@@ -8,43 +8,43 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * ÔÚ4µãÕûÉ¾³ýd:\\helloÎÄ¼þ¼Ð
+ * ï¿½ï¿½4ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½d:\\helloï¿½Ä¼ï¿½ï¿½ï¿½
  */
 public class TimerTest {
-	public static void main(String[] args) throws ParseException {
-		Timer t = new Timer();
+    public static void main(String[] args) throws ParseException {
+        Timer t = new Timer();
 
-		String s = "2015-04-12 15:55:30";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		Date d = sdf.parse(s);
+        String s = "2015-04-12 15:55:30";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date d = sdf.parse(s);
 
-		t.schedule(new DeleteFolder(new File("d:\\hello")), d);
-	}
+        t.schedule(new DeleteFolder(new File("d:\\hello")), d);
+    }
 }
 
 class DeleteFolder extends TimerTask {
-	private File folder;
+    private File folder;
 
-	public DeleteFolder(File folder) {
-		this.folder = folder;
-	}
+    public DeleteFolder(File folder) {
+        this.folder = folder;
+    }
 
-	@Override
-	public void run() {
-		deleteFolder(folder);
-	}
+    @Override
+    public void run() {
+        deleteFolder(folder);
+    }
 
-	private void deleteFolder(File folder) {
-		File[] fileArray = folder.listFiles();
-		if (fileArray != null) {
-			for (File file : fileArray) {
-				if (file.isDirectory()) {
-					deleteFolder(file);
-				} else {
-					file.delete();
-				}
-			}
-			folder.delete();
-		}
-	}
+    private void deleteFolder(File folder) {
+        File[] fileArray = folder.listFiles();
+        if (fileArray != null) {
+            for (File file : fileArray) {
+                if (file.isDirectory()) {
+                    deleteFolder(file);
+                } else {
+                    file.delete();
+                }
+            }
+            folder.delete();
+        }
+    }
 }

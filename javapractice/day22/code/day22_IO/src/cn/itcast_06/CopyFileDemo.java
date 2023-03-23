@@ -8,40 +8,40 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /*
- * Êý¾ÝÔ´£º
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		MyBufferedReader.java	--	Reader	--	FileReader --	BufferedReader
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		Copy.java	--	Writer -- FileWriter -- BufferedWriter -- PrintWriter
  */
 public class CopyFileDemo {
-	public static void main(String[] args) throws IOException {
-		// // ·â×°Êý¾ÝÔ´
-		// BufferedReader br = new BufferedReader(new FileReader(
-		// "MyBufferedReader.java"));
-		// // ·â×°Ä¿µÄµØ
-		// BufferedWriter bw = new BufferedWriter(new FileWriter("Copy.java"));
-		// // ¶ÁÐ´Êý¾Ý
-		// String line = null;
-		// while ((line = br.readLine()) != null) {
-		// bw.write(line);
-		// bw.newLine();
-		// bw.flush();
-		// }
-		// // ÊÍ·Å×ÊÔ´
-		// bw.close();
-		// br.close();
+    public static void main(String[] args) throws IOException {
+        // // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        // BufferedReader br = new BufferedReader(new FileReader(
+        // "MyBufferedReader.java"));
+        // // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        // BufferedWriter bw = new BufferedWriter(new FileWriter("Copy.java"));
+        // // ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½
+        // String line = null;
+        // while ((line = br.readLine()) != null) {
+        // bw.write(line);
+        // bw.newLine();
+        // bw.flush();
+        // }
+        // // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        // bw.close();
+        // br.close();
 
-		// ÓÃPrintWriter¸Ä½ø°æ
-		BufferedReader br = new BufferedReader(new FileReader(
-				"MyBufferedReader.java"));
-		PrintWriter pw = new PrintWriter(new FileWriter("Copy.java"), true);
+        // ï¿½ï¿½PrintWriterï¿½Ä½ï¿½ï¿½ï¿½
+        BufferedReader br = new BufferedReader(new FileReader(
+                "MyBufferedReader.java"));
+        PrintWriter pw = new PrintWriter(new FileWriter("Copy.java"), true);
 
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			pw.println(line);
-		}
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            pw.println(line);
+        }
 
-		pw.close();
-		br.close();
-	}
+        pw.close();
+        br.close();
+    }
 }

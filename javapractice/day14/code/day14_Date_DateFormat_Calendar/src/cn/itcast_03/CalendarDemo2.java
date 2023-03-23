@@ -3,24 +3,24 @@ package cn.itcast_03;
 import java.util.Calendar;
 
 /*
- * public void add(int field,int amount):¸ù¾Ý¸ø¶¨µÄÈÕÀú×Ô¶¯ºÍÖµ£¬¸Ä±äÊ±¼ä
- * public final void set(int year,int month,int date):ÉèÖÃÄêÔÂÈÕ
+ * public void add(int field,int amount):ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ä±ï¿½Ê±ï¿½ï¿½
+ * public final void set(int year,int month,int date):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class CalendarDemo2 {
-	public static void main(String[] args) {
-		// »ñÈ¡ÈÕÀúÀà¶ÔÏó
-		Calendar c = Calendar.getInstance();
-		System.out.println(c.get(Calendar.YEAR) + "---"
-				+ (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
-		c.add(Calendar.YEAR, -3);
-		c.add(Calendar.MONTH, 2);
-		c.add(Calendar.DATE, -12);
-		System.out.println(c.get(Calendar.YEAR) + "---"
-				+ (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
+    public static void main(String[] args) {
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Calendar c = Calendar.getInstance();
+        System.out.println(c.get(Calendar.YEAR) + "---"
+                + (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
+        c.add(Calendar.YEAR, -3);
+        c.add(Calendar.MONTH, 2);
+        c.add(Calendar.DATE, -12);
+        System.out.println(c.get(Calendar.YEAR) + "---"
+                + (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
 
-		// ÖØÐ´¸øc¶ÔÏó¸³Öµ
-		c.set(2012, 3, 4);
-		System.out.println(c.get(Calendar.YEAR) + "---"
-				+ (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
-	}
+        // ï¿½ï¿½Ð´ï¿½ï¿½cï¿½ï¿½ï¿½ï¿½Öµ
+        c.set(2012, 3, 4);
+        System.out.println(c.get(Calendar.YEAR) + "---"
+                + (c.get(Calendar.MONTH) + 1) + "---" + c.get(Calendar.DATE));
+    }
 }

@@ -1,50 +1,50 @@
 /*
-	¶àÌ¬µÄ³ÉÔ±·ÃÎÊÌØµã£º
-		A:³ÉÔ±±äÁ¿
-			±àÒë¿´×ó±ß£¬ÔËÐÐ¿´×ó±ß¡£
-		B:³ÉÔ±·½·¨
-			±àÒë¿´×ó±ß£¬ÔËÐÐ¿´ÓÒ±ß¡£
+	ï¿½ï¿½Ì¬ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Øµã£º
+		A:ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ë¿´ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ß¡ï¿½
+		B:ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ë¿´ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½Ò±ß¡ï¿½
 
-			ÎªÊ²Ã´ÄØ?
-				ÒòÎª³ÉÔ±·½·¨ÓÐÖØÐ´£¬¶ø±äÁ¿Ã»ÓÐ¡£
-		C:¾²Ì¬·½·¨
-			±àÒë¿´×ó±ß£¬ÔËÐÐ¿´×ó±ß¡£
+			ÎªÊ²Ã´ï¿½ï¿½?
+				ï¿½ï¿½Îªï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¡ï¿½
+		C:ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ë¿´ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½Ð¿ï¿½ï¿½ï¿½ß¡ï¿½
 
-			¾²Ì¬·½·¨ÆäÊµÃ»ÓÐÖØÐ´ÕâÒ»Ëµ¡£ÒòÎªËüÊÇ¸úÀàÏà¹Ø¡£
+			ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÊµÃ»ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½Ò»Ëµï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ï¿½Ø¡ï¿½
 */
 class Animal {
-	public int age = 40;
+    public int age = 40;
 
-	
-	public void show() {
-		System.out.println("show animal");
-	}
-	
-	public static void method() {
-		System.out.println("method animal");
-	}
+
+    public void show() {
+        System.out.println("show animal");
+    }
+
+    public static void method() {
+        System.out.println("method animal");
+    }
 }
 
 class Dog extends Animal {
-	public int age = 20;
+    public int age = 20;
 
-	public void show() {
-		System.out.println("show dog");
-	}
+    public void show() {
+        System.out.println("show dog");
+    }
 
-	public static void method() {
-		System.out.println("method dog");
-	}
+    public static void method() {
+        System.out.println("method dog");
+    }
 }
 
 class DuoTaiDemo2 {
-	public static void main(String[] args) {
-		//¶àÌ¬
-		Animal a = new Dog();
-		System.out.println(a.age);
-		//System.out.println(a.num);
-		a.show();
+    public static void main(String[] args) {
+        //ï¿½ï¿½Ì¬
+        Animal a = new Dog();
+        System.out.println(a.age);
+        //System.out.println(a.num);
+        a.show();
 
-		a.method();
-	}
+        a.method();
+    }
 }

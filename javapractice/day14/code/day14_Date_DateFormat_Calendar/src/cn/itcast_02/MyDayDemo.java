@@ -6,38 +6,38 @@ import java.util.Date;
 import java.util.Scanner;
 
 /*
- * ËãÒ»ÏÂÄãÀ´µ½Õâ¸öÊÀ½ç¶àÉÙÌì?
- * ·ÖÎö£º
- * 		A:¼üÅÌÂ¼ÈëÄãµÄ³öÉúÄêÔÂÈÕ
- * 		B:°ÑÕâ¸ö×Ö·û´®×ª»»ÎªÒ»¸öÈÕÆÚ
- * 		C:Í¨¹ıÈÕÆÚ»ñÈ¡µ½Ò»¸öºÁÃëÖµ
- * 		D:»ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
- * 		E:ÓÃD-CµÃµ½Ò»¸öºÁÃëÖµ
- * 		F:°ÑEµÃµ½µÄºÁÃëÖµ¼ÆËã³ÉÒ»¸öÌì¼´¿É
+ * ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªÒ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		C:Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+ * 		D:ï¿½ï¿½È¡ï¿½ï¿½Ç°Ê±ï¿½ï¿½Äºï¿½ï¿½ï¿½Öµ
+ * 		E:ï¿½ï¿½D-Cï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+ * 		F:ï¿½ï¿½Eï¿½Ãµï¿½ï¿½Äºï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ì¼´ï¿½ï¿½
  */
 
 public class MyDayDemo {
-	public static void main(String[] args) throws ParseException {
-		// ¼üÅÌÂ¼ÈëÄãµÄ³öÉúÄêÔÂÈÕ
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÄãµÄ³öÉúÈÕÆÚ£º(yyyy-mm-dd)");
-		String s = sc.nextLine();
+    public static void main(String[] args) throws ParseException {
+        // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½(yyyy-mm-dd)");
+        String s = sc.nextLine();
 
-		// °ÑÕâ¸ö×Ö·û´®×ª»»ÎªÒ»¸öÈÕÆÚ
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
-		Date d = sdf.parse(s);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ÎªÒ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+        Date d = sdf.parse(s);
 
-		// Í¨¹ıÈÕÆÚ»ñÈ¡µ½Ò»¸öºÁÃëÖµ
-		long myTime = d.getTime();
+        // Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        long myTime = d.getTime();
 
-		// »ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
-		long time = System.currentTimeMillis();
+        // ï¿½ï¿½È¡ï¿½ï¿½Ç°Ê±ï¿½ï¿½Äºï¿½ï¿½ï¿½Öµ
+        long time = System.currentTimeMillis();
 
-		// ÓÃD-CµÃµ½Ò»¸öºÁÃëÖµ
-		long dateTime = time - myTime;
+        // ï¿½ï¿½D-Cï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
+        long dateTime = time - myTime;
 
-		// °ÑµÃµ½µÄºÁÃëÖµ¼ÆËã³ÉÒ»¸öÌì¼´¿É
-		System.out.println("ÄãÀ´µ½Õâ¸öÊÀ½çÒÑ¾­£º" + (dateTime / 1000 / 60 / 60 / 24)
-				+ "ÌìÁË");
-	}
+        // ï¿½ÑµÃµï¿½ï¿½Äºï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ì¼´ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½" + (dateTime / 1000 / 60 / 60 / 24)
+                + "ï¿½ï¿½ï¿½ï¿½");
+    }
 }

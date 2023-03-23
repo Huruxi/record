@@ -1,41 +1,42 @@
 /*
-	¼üÅÌÂ¼ÈëÁ½¸öÊý¾Ý£¬»ñÈ¡ÕâÁ½¸öÊý¾ÝÖÐµÄ×î´óÖµ
+	ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½Öµ
 
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÊý¾Ý
-		B:ÅÐ¶Ï£¬ÓÃifÓï¾äÊµÏÖ
-		C:Êä³ö½á¹û
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		B:ï¿½Ð¶Ï£ï¿½ï¿½ï¿½ifï¿½ï¿½ï¿½Êµï¿½ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	Á·Ï°£º
-		¼üÅÌÂ¼ÈëÁ½¸öÊý¾Ý£¬±È½ÏÕâÁ½¸öÊý¾ÝÊÇ·ñÏàµÈ
-		ÓÃifÓï¾äÊµÏÖ¡£
+	ï¿½ï¿½Ï°ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ifï¿½ï¿½ï¿½Êµï¿½Ö¡ï¿½
 */
+
 import java.util.Scanner;
 
 class IfTest {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
-		int firstNumber = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
-		int secondNumber = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int firstNumber = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int secondNumber = sc.nextInt();
 
-		//ÓÃifÓï¾äÊµÏÖ
+        //ï¿½ï¿½ifï¿½ï¿½ï¿½Êµï¿½ï¿½
 
-		//·½Ê½1£ºÖ±½Ó°Ñ½á¹ûÊä³ö
-		if(firstNumber > secondNumber) {
-			System.out.println("½Ï´óµÄÖµÊÇ£º"+firstNumber);
-		}else {
-			System.out.println("½Ï´óµÄÖµÊÇ£º"+secondNumber);
-		}
-		System.out.println("-----------------------------");
+        //ï¿½ï¿½Ê½1ï¿½ï¿½Ö±ï¿½Ó°Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½
+        if (firstNumber > secondNumber) {
+            System.out.println("ï¿½Ï´ï¿½ï¿½Öµï¿½Ç£ï¿½" + firstNumber);
+        } else {
+            System.out.println("ï¿½Ï´ï¿½ï¿½Öµï¿½Ç£ï¿½" + secondNumber);
+        }
+        System.out.println("-----------------------------");
 
-		//·½Ê½2£º°Ñ½á¹û±£´æÏÂÀ´
+        //ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½Ñ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		/*
-		±äÁ¿µÄÉúÃüÖÜÆÚÎÊÌâ,×÷ÓÃÓòÎÊÌâ
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if(firstNumber > secondNumber) {
 			int max = firstNumber;
 		}else {
@@ -43,12 +44,12 @@ class IfTest {
 		}
 		*/
 
-		int max;
-		if(firstNumber > secondNumber) {
-			max = firstNumber;
-		}else {
-			max = secondNumber;
-		}
-		System.out.println("½Ï´óµÄÖµÊÇ£º"+max);
-	}
+        int max;
+        if (firstNumber > secondNumber) {
+            max = firstNumber;
+        } else {
+            max = secondNumber;
+        }
+        System.out.println("ï¿½Ï´ï¿½ï¿½Öµï¿½Ç£ï¿½" + max);
+    }
 }

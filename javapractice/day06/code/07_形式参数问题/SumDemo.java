@@ -1,22 +1,22 @@
-//»ù±¾ÀàÐÍ×÷ÎªÐÎÊ½²ÎÊý´«µÝ£¬Ö±½Ó´«µÝ»ù±¾ÀàÐÍµÄÖµ¼´¿É¡£
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½Ö±ï¿½Ó´ï¿½ï¿½Ý»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Öµï¿½ï¿½ï¿½É¡ï¿½
 
-//¶¨ÒåDemoÀà£¬Ð´Ò»¸ö¹¦ÄÜÊµÏÖÇóºÍ
+//ï¿½ï¿½ï¿½ï¿½Demoï¿½à£¬Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½
 class Demo {
-	public int sum(int a,int b) {
-		return a + b;
-	}
+    public int sum(int a, int b) {
+        return a + b;
+    }
 }
 
-//²âÊÔÀà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class SumDemo {
-	public static void main(String[] args) {
-		//¶¨Òå±äÁ¿
-		int a = 10;
-		int b = 20;
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int a = 10;
+        int b = 20;
 
-		//´´½¨¶ÔÏó
-		Demo d = new Demo();
-		int result = d.sum(a,b);
-		System.out.println("½á¹ûÊÇ£º"+result);
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Demo d = new Demo();
+        int result = d.sum(a, b);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + result);
+    }
 }

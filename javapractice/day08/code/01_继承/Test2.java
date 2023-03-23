@@ -1,37 +1,42 @@
 /*
-	»ù´¡ÖªÊ¶£º
-		A:¼Ì³Ð¼äµÄ¹¹Ôì·½·¨¹ØÏµ
-			´´½¨×ÓÀà¶ÔÏó£¬»áÏÈÈ¥·ÃÎÊ¸¸ÀàµÄ¹¹Ôì·½·¨¡£¶Ô¸¸ÀàµÄÊý¾Ý½øÐÐ³õÊ¼»¯¡£
-		B:¼Ì³Ð¼äµÄ³ÉÔ±±äÁ¿¹ØÏµ
-			¾Í½üÔ­Ôò
-		C:thisºÍsuperµÄÊ¹ÓÃ
-		D:Ò»¸öÀàµÄ³õÊ¼»¯¹ý³Ì
-			³ÉÔ±±äÁ¿³õÊ¼»¯
-				Ä¬ÈÏ
-				ÏÔÊ¾
-				¹¹Ôì·½·¨
+	ï¿½ï¿½ï¿½ï¿½ÖªÊ¶ï¿½ï¿½
+		A:ï¿½Ì³Ð¼ï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½Ïµ
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬»ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½Ê¸ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+		B:ï¿½Ì³Ð¼ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµ
+			ï¿½Í½ï¿½Ô­ï¿½ï¿½
+		C:thisï¿½ï¿½superï¿½ï¿½Ê¹ï¿½ï¿½
+		D:Ò»ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
+				Ä¬ï¿½ï¿½
+				ï¿½ï¿½Ê¾
+				ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
 */
-class Fu{
-	public int num = 10;
-	public Fu(){
-		System.out.println("fu");
-	}
+class Fu {
+    public int num = 10;
+
+    public Fu() {
+        System.out.println("fu");
+    }
 }
-class Zi extends Fu{
-	public int num = 20;
-	public Zi(){
-		System.out.println("zi");
-	}
-	public void show(){
-		int num = 30;
-		System.out.println(num);
-		System.out.println(this.num);
-		System.out.println(super.num);
-	}
+
+class Zi extends Fu {
+    public int num = 20;
+
+    public Zi() {
+        System.out.println("zi");
+    }
+
+    public void show() {
+        int num = 30;
+        System.out.println(num);
+        System.out.println(this.num);
+        System.out.println(super.num);
+    }
 }
+
 class Test2 {
-	public static void main(String[] args) {
-		Zi z = new Zi();  
-		z.show();
-	}
+    public static void main(String[] args) {
+        Zi z = new Zi();
+        z.show();
+    }
 }

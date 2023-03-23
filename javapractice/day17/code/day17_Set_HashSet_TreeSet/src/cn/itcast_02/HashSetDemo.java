@@ -3,18 +3,18 @@ package cn.itcast_02;
 import java.util.HashSet;
 
 /*
- * HashSet£º²»±£Ö¤ set µÄµü´úË³Ðò£¬ÌØ±ðÊÇËü²»±£Ö¤¸ÃË³Ðòºã¾Ã²»±ä¡£
+ * HashSetï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ set ï¿½Äµï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½Ø±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ë³ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ä¡£
  */
 public class HashSetDemo {
-	public static void main(String[] args) {
-		// HashSet´æ´¢×Ö·û´®ÔªËØ
-		HashSet<String> hs = new HashSet<String>();
+    public static void main(String[] args) {
+        // HashSetï¿½æ´¢ï¿½Ö·ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        HashSet<String> hs = new HashSet<String>();
 
-		System.out.println(hs.add("hello"));
-		System.out.println(hs.add("world"));
-		System.out.println(hs.add("java"));
-		System.out.println(hs.add("hello"));
+        System.out.println(hs.add("hello"));
+        System.out.println(hs.add("world"));
+        System.out.println(hs.add("java"));
+        System.out.println(hs.add("hello"));
 
-		System.out.println("hs:" + hs);
-	}
+        System.out.println("hs:" + hs);
+    }
 }

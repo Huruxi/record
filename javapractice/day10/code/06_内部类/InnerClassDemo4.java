@@ -1,26 +1,27 @@
 /*
-	ÄäÃûÄÚ²¿Àà£ºÃ»ÓĞÃû×ÖµÄÄÚ²¿Àà
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½à£ºÃ»ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ú²ï¿½ï¿½ï¿½
 	
-	Ç°Ìá£º´æÔÚÒ»¸öÀà»òÕß½Ó¿Ú
-			ÕâÀïµÄÀà¿ÉÒÔÊÇ¾ßÌåÀàÒ²¿ÉÒÔÊÇ³éÏóÀà¡£
+	Ç°ï¿½á£ºï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß½Ó¿ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½à¡£
 
-	¸ñÊ½£º
-		new ÀàÃû»òÕß½Ó¿ÚÃû() {
-			ÖØĞ´·½·¨;
+	ï¿½ï¿½Ê½ï¿½ï¿½
+		new ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß½Ó¿ï¿½ï¿½ï¿½() {
+			ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½;
 		}
 
-	±¾ÖÊÀí½â£ºÆä±¾ÖÊÊÇÄäÃû×ÓÀà¶ÔÏó
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£ºï¿½ä±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 interface Inter {
-	public abstract void show();
-	public abstract void show2();
+    public abstract void show();
+
+    public abstract void show2();
 }
 
 class Outer {
-	private int num = 100;
+    private int num = 100;
 
-	public void method() {
-		//Ò»¸ö·½·¨
+    public void method() {
+        //Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		/*
 		new Inter() {
 			public void show() {
@@ -29,8 +30,8 @@ class Outer {
 		}.show();
 		*/
 
-		
-		//Á½¸ö·½·¨
+
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		/*
 		new Inter() {
 			public void show() {
@@ -53,25 +54,25 @@ class Outer {
 		}.show2();
 		*/
 
-		//Á½¸ö·½·¨
-		Inter i = new Inter() {
-			public void show() {
-				System.out.println("show");
-			}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Inter i = new Inter() {
+            public void show() {
+                System.out.println("show");
+            }
 
-			public void show2() {
-				System.out.println("show2");
-			}
-		};
+            public void show2() {
+                System.out.println("show2");
+            }
+        };
 
-		i.show();
-		i.show2();
-	}
+        i.show();
+        i.show2();
+    }
 }
 
 class InnerClassDemo4 {
-	public static void main(String[] args) {
-		Outer o = new Outer();
-		o.method();
-	}
+    public static void main(String[] args) {
+        Outer o = new Outer();
+        o.method();
+    }
 }

@@ -4,37 +4,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * List¼¯ºÏµÄÌØÓÐ¹¦ÄÜ£º
- * 		void add(int index,Object obj):ÔÚÖ¸¶¨Ë÷ÒýÎ»ÖÃÌí¼ÓÔªËØ
- *		Object remove(int index):É¾³ýÖ¸¶¨Ë÷ÒýÎ»ÖÃµÄÔªËØ£¬²¢°ÑÉ¾³ýµôµÄÔªËØÖµ·µ»Ø
- *		Object get(int index):¸ù¾Ý¸ø¶¨Ë÷Òý£¬·µ»ØÔªËØ
- *		Object set(int index,E element):ÐÞ¸ÄÖ¸¶¨Ë÷Òý´¦µÄÔªËØÎª¸ø¶¨µÄÔªËØ£¬²¢·µ»Ø±»ÐÞ¸ÄµÄÖµ
+ * Listï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½Ü£ï¿½
+ * 		void add(int index,Object obj):ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+ *		Object remove(int index):É¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ãµï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+ *		Object get(int index):ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+ *		Object set(int index,E element):ï¿½Þ¸ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½Þ¸Äµï¿½Öµ
  */
 public class ListDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
-		// Collection c = new ArrayList();
-		List list = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // Collection c = new ArrayList();
+        List list = new ArrayList();
 
-		// ²âÊÔ¹¦ÄÜ
-		list.add("hello");
-		list.add("world");
-		list.add("java");
+        // ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½
+        list.add("hello");
+        list.add("world");
+        list.add("java");
 
-		// void add(int index,Object obj):ÔÚÖ¸¶¨Ë÷ÒýÎ»ÖÃÌí¼ÓÔªËØ
-		// list.add(1, "android");
-		// list.add(3, "android");
-		// list.add(4, "android"); //ÓÐÎÊÌâ
+        // void add(int index,Object obj):ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        // list.add(1, "android");
+        // list.add(3, "android");
+        // list.add(4, "android"); //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		// Object remove(int index):É¾³ýÖ¸¶¨Ë÷ÒýÎ»ÖÃµÄÔªËØ£¬²¢°ÑÉ¾³ýµôµÄÔªËØÖµ·µ»Ø
-		// System.out.println("remove:" + list.remove(1));
+        // Object remove(int index):É¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½Ãµï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
+        // System.out.println("remove:" + list.remove(1));
 
-		// Object get(int index):¸ù¾Ý¸ø¶¨Ë÷Òý£¬·µ»ØÔªËØ
-		// System.out.println("get:" + list.get(1));
+        // Object get(int index):ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        // System.out.println("get:" + list.get(1));
 
-		// Object set(int index,E element):ÐÞ¸ÄÖ¸¶¨Ë÷Òý´¦µÄÔªËØÎª¸ø¶¨µÄÔªËØ£¬²¢·µ»Ø±»ÐÞ¸ÄµÄÖµ
-		System.out.println("set:" + list.set(1, "android"));
+        // Object set(int index,E element):ï¿½Þ¸ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ï¿½Þ¸Äµï¿½Öµ
+        System.out.println("set:" + list.set(1, "android"));
 
-		System.out.println("list:" + list);
-	}
+        System.out.println("list:" + list);
+    }
 }

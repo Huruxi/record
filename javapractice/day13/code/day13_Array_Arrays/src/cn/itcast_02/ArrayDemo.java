@@ -1,70 +1,70 @@
 package cn.itcast_02;
 
 /*
- * Ñ¡ÔñÅÅÐò£º
+ * Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ArrayDemo {
-	public static void main(String[] args) {
-		// ¶¨ÒåÊý×é
-		int[] arr = { 24, 69, 80, 57, 13 };
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = {24, 69, 80, 57, 13};
 
-		/*
-		 * // µÚÒ»´Î int x = 0; for (int y = x + 1; y < arr.length; y++) { if
-		 * (arr[y] < arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] =
-		 * temp; } } System.out.println("µÚÒ»´Î±È½Ï£º"); // ±éÀúÊý×é printArray(arr);
-		 * 
-		 * // µÚ¶þ´Î x = 1; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
-		 * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
-		 * System.out.println("µÚ¶þ´Î±È½Ï£º"); // ±éÀúÊý×é printArray(arr);
-		 * 
-		 * // µÚÈý´Î x = 2; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
-		 * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
-		 * System.out.println("µÚÈý´Î±È½Ï£º"); // ±éÀúÊý×é printArray(arr);
-		 * 
-		 * // µÚËÄ´Î x = 3; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
-		 * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
-		 * System.out.println("µÚËÄ´Î±È½Ï£º"); // ±éÀúÊý×é printArray(arr);
-		 */
+        /*
+         * // ï¿½ï¿½Ò»ï¿½ï¿½ int x = 0; for (int y = x + 1; y < arr.length; y++) { if
+         * (arr[y] < arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] =
+         * temp; } } System.out.println("ï¿½ï¿½Ò»ï¿½Î±È½Ï£ï¿½"); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ printArray(arr);
+         *
+         * // ï¿½Ú¶ï¿½ï¿½ï¿½ x = 1; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
+         * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
+         * System.out.println("ï¿½Ú¶ï¿½ï¿½Î±È½Ï£ï¿½"); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ printArray(arr);
+         *
+         * // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ x = 2; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
+         * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
+         * System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Î±È½Ï£ï¿½"); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ printArray(arr);
+         *
+         * // ï¿½ï¿½ï¿½Ä´ï¿½ x = 3; for (int y = x + 1; y < arr.length; y++) { if (arr[y] <
+         * arr[x]) { int temp = arr[x]; arr[x] = arr[y]; arr[y] = temp; } }
+         * System.out.println("ï¿½ï¿½ï¿½Ä´Î±È½Ï£ï¿½"); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ printArray(arr);
+         */
 
-		// for (int x = 0; x < arr.length - 1; x++) {
-		// for (int y = x + 1; y < arr.length; y++) {
-		// if (arr[y] < arr[x]) {
-		// int temp = arr[x];
-		// arr[x] = arr[y];
-		// arr[y] = temp;
-		// }
-		// }
-		// }
+        // for (int x = 0; x < arr.length - 1; x++) {
+        // for (int y = x + 1; y < arr.length; y++) {
+        // if (arr[y] < arr[x]) {
+        // int temp = arr[x];
+        // arr[x] = arr[y];
+        // arr[y] = temp;
+        // }
+        // }
+        // }
 
-		// Ñ¡ÔñÅÅÐò
-		selectSort(arr);
-		// ±éÀúÊý×é
-		printArray(arr);
-	}
+        // Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        selectSort(arr);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        printArray(arr);
+    }
 
-	// Ñ¡ÔñÅÅÐò
-	public static void selectSort(int[] arr) {
-		for (int x = 0; x < arr.length - 1; x++) {
-			for (int y = x + 1; y < arr.length; y++) {
-				if (arr[y] < arr[x]) {
-					int temp = arr[x];
-					arr[x] = arr[y];
-					arr[y] = temp;
-				}
-			}
-		}
-	}
+    // Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void selectSort(int[] arr) {
+        for (int x = 0; x < arr.length - 1; x++) {
+            for (int y = x + 1; y < arr.length; y++) {
+                if (arr[y] < arr[x]) {
+                    int temp = arr[x];
+                    arr[x] = arr[y];
+                    arr[y] = temp;
+                }
+            }
+        }
+    }
 
-	// ±éÀúÊý×é
-	public static void printArray(int[] arr) {
-		System.out.print("[");
-		for (int x = 0; x < arr.length; x++) {
-			if (x == arr.length - 1) {
-				System.out.print(arr[x]);
-			} else {
-				System.out.print(arr[x] + ", ");
-			}
-		}
-		System.out.println("]");
-	}
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void printArray(int[] arr) {
+        System.out.print("[");
+        for (int x = 0; x < arr.length; x++) {
+            if (x == arr.length - 1) {
+                System.out.print(arr[x]);
+            } else {
+                System.out.print(arr[x] + ", ");
+            }
+        }
+        System.out.println("]");
+    }
 }

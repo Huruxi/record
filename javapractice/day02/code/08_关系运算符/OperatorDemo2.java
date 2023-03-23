@@ -1,48 +1,48 @@
 /*
-	&&ºÍ&µÄÇø±ð? Ç°ÕßÓÐ¶ÌÂ·Ð§¹û£¬Ö»Òª×ó±ßÊÇfalse£¬ÓÒ±ß²»Ö´ÐÐ¡£¶øºóÕß£¬È«²¿Ö´ÐÐ¡£
-	||ºÍ|µÄÇø±ð? Ç°ÕßÓÐ¶ÌÂ·Ð§¹û£¬Ö»Òª×ó±ßÊÇtrue£¬ÓÒ±ß²»Ö´ÐÐ¡£¶øºóÕß£¬È«²¿Ö´ÐÐ¡£
+	&&ï¿½ï¿½&ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? Ç°ï¿½ï¿½ï¿½Ð¶ï¿½Â·Ð§ï¿½ï¿½ï¿½ï¿½Ö»Òªï¿½ï¿½ï¿½ï¿½ï¿½falseï¿½ï¿½ï¿½Ò±ß²ï¿½Ö´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½È«ï¿½ï¿½Ö´ï¿½Ð¡ï¿½
+	||ï¿½ï¿½|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½? Ç°ï¿½ï¿½ï¿½Ð¶ï¿½Â·Ð§ï¿½ï¿½ï¿½ï¿½Ö»Òªï¿½ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½ï¿½Ò±ß²ï¿½Ö´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½È«ï¿½ï¿½Ö´ï¿½Ð¡ï¿½
 */
 class OperatorDemo2 {
-	public static void main(String[] args) {
-		int a = 10;
-		int b = 20;
-		int c = 30;
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = 30;
 
-		//&:Âß¼­Óë	ÓÐfalseÔòfalse
-		System.out.println(a>b & a>c); //false & false = false
-		System.out.println(a>b & a<c); //false & true = false
-		System.out.println(a<b & a>c); //true & false = false
-		System.out.println(a<b & a<c); //true & true = true
-		System.out.println("--------");
+        //&:ï¿½ß¼ï¿½ï¿½ï¿½	ï¿½ï¿½falseï¿½ï¿½false
+        System.out.println(a > b & a > c); //false & false = false
+        System.out.println(a > b & a < c); //false & true = false
+        System.out.println(a < b & a > c); //true & false = false
+        System.out.println(a < b & a < c); //true & true = true
+        System.out.println("--------");
 
-		//&&:
-		System.out.println(a>b && a>c); //false && false = false
-		System.out.println(a>b && a<c); //false && true = false
-		System.out.println(a<b && a>c); //true && false = false
-		System.out.println(a<b && a<c); //true && true = true
-		System.out.println("--------");
+        //&&:
+        System.out.println(a > b && a > c); //false && false = false
+        System.out.println(a > b && a < c); //false && true = false
+        System.out.println(a < b && a > c); //true && false = false
+        System.out.println(a < b && a < c); //true && true = true
+        System.out.println("--------");
 
-		//|:Âß¼­»ò	ÓÐtrueÔòtrue
-		System.out.println(a>b | a>c); //false | false = false
-		System.out.println(a>b | a<c); //false | true = true
-		System.out.println(a<b | a>c); //true | false = true
-		System.out.println(a<b | a<c); //true | true = true
-		System.out.println("--------");
+        //|:ï¿½ß¼ï¿½ï¿½ï¿½	ï¿½ï¿½trueï¿½ï¿½true
+        System.out.println(a > b | a > c); //false | false = false
+        System.out.println(a > b | a < c); //false | true = true
+        System.out.println(a < b | a > c); //true | false = true
+        System.out.println(a < b | a < c); //true | true = true
+        System.out.println("--------");
 
-		//||:
-		System.out.println(a>b || a>c); //false || false = false
-		System.out.println(a>b || a<c); //false || true = true
-		System.out.println(a<b || a>c); //true || false = true
-		System.out.println(a<b || a<c); //true || true = true
-		System.out.println("--------");
+        //||:
+        System.out.println(a > b || a > c); //false || false = false
+        System.out.println(a > b || a < c); //false || true = true
+        System.out.println(a < b || a > c); //true || false = true
+        System.out.println(a < b || a < c); //true || true = true
+        System.out.println("--------");
 
-		int x = 3;
-		int y = 4;
-		//System.out.println((x++)>3 & (y++)>4); //false & false = false
-		//System.out.println(x);//4
-		//System.out.println(y);//5
-		System.out.println((x++)>3 && (y++)>4);
-		System.out.println(x);//4
-		System.out.println(y);//4
-	}
+        int x = 3;
+        int y = 4;
+        //System.out.println((x++)>3 & (y++)>4); //false & false = false
+        //System.out.println(x);//4
+        //System.out.println(y);//5
+        System.out.println((x++) > 3 && (y++) > 4);
+        System.out.println(x);//4
+        System.out.println(y);//4
+    }
 }

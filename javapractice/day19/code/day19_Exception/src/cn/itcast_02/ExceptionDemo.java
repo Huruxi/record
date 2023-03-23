@@ -1,41 +1,41 @@
 package cn.itcast_02;
 
 /*
- * javaÖÐÎÒÃÇÈçºÎ´¦ÀíÒì³£ÄØ?
- * A:try¡­catch¡­finally
+ * javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½?
+ * A:tryï¿½ï¿½catchï¿½ï¿½finally
  * B:throws
- * 
- * try¡­catch¡­finally¸ñÊ½
+ *
+ * tryï¿½ï¿½catchï¿½ï¿½finallyï¿½ï¿½Ê½
  * try {
- * 		¿ÉÄÜ³öÏÖÎÊÌâµÄ´úÂë
- * }catch(Òì³£ÀàÃû ±äÁ¿) {
- * 		Õë¶ÔÎÊÌâµÄ´¦Àí
+ * 		ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
+ * }catch(ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) {
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
  * }finally {
- * 		ÊÍ·Å×ÊÔ´µÄ´úÂë
+ * 		ï¿½Í·ï¿½ï¿½ï¿½Ô´ï¿½Ä´ï¿½ï¿½ï¿½
  * }
- * 
- * finallyµÈ»áÔÚ½²£¬ËùÒÔ£¬Õâ¸öÊ±ºò£¬ÎÒÃÇÏÈÊ¹ÓÃ¼òµ¥µÄ¸ñÊ½£º
+ *
+ * finallyï¿½È»ï¿½ï¿½Ú½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¼òµ¥µÄ¸ï¿½Ê½ï¿½ï¿½
  * try {
- * 		¿ÉÄÜ³öÏÖÎÊÌâµÄ´úÂë
- * }catch(Òì³£ÀàÃû ±äÁ¿) {
- * 		Õë¶ÔÎÊÌâµÄ´¦Àí
+ * 		ï¿½ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
+ * }catch(ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½) {
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½
  * }
- * 
- * ¾¡¿ÉÄÜµÄ°Ñ¿ÉÄÜ³öÏÖÎÊÌâµÄ´úÂëÓÃtry°üº¬£¬Èç¹ûÄãÅÐ¶Ï²»ÁËÄÄÐ©ÓÐÎÊÌâ£¬¿ÉÒÔ¶à°üº¬Ò»Ð©¡£
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ÜµÄ°Ñ¿ï¿½ï¿½Ü³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½tryï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶Ï²ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½
  */
 public class ExceptionDemo {
-	public static void main(String[] args) {
-		System.out.println("hello");
+    public static void main(String[] args) {
+        System.out.println("hello");
 
-		int a = 10;
-		int b = 0;
-		try {
-			System.out.println(a / b);
-		} catch (ArithmeticException e) {
-			System.out.println("³ýÊý²»ÄÜÎª0");
-			// Êµ¼Ê¿ª·¢µÄÊ±ºò£¬Ó¦¸Ã¸ø³öµÄÊÇÒ³ÃæÐÎÊ½µÄÌáÊ¾
-		}
+        int a = 10;
+        int b = 0;
+        try {
+            System.out.println(a / b);
+        } catch (ArithmeticException e) {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª0");
+            // Êµï¿½Ê¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½Ó¦ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½Ê¾
+        }
 
-		System.out.println("world");
-	}
+        System.out.println("world");
+    }
 }

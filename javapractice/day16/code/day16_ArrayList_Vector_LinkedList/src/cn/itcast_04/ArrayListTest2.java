@@ -4,44 +4,44 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * È¥³ı¼¯ºÏÖĞ×Ö·û´®µÄÖØ¸´Öµ(×Ö·û´®µÄÄÚÈİÏàÍ¬)
- * ¾ÙÀı£º
+ * È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Öµ(ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬)
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		hello,world,java,android,world,java,javaee,java,java,java,android
- * ½á¹û£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		hello,world,java,android,javaee
- * 
- * ºÍÊı×éÅÅĞòµÄÑ¡ÔñÅÅĞòË¼ÏëÒ»Ñù¡£
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
  */
 public class ArrayListTest2 {
-	public static void main(String[] args) {
-		// ¶¨Òå¼¯ºÏ£¬´æ´¢´øÖØ¸´µÄÔªËØ
-		ArrayList array = new ArrayList();
-		array.add("hello");
-		array.add("world");
-		array.add("java");
-		array.add("android");
-		array.add("world");
-		array.add("java");
-		array.add("javaee");
-		array.add("java");
-		array.add("java");
-		array.add("java");
-		array.add("android");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½å¼¯ï¿½Ï£ï¿½ï¿½æ´¢ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        ArrayList array = new ArrayList();
+        array.add("hello");
+        array.add("world");
+        array.add("java");
+        array.add("android");
+        array.add("world");
+        array.add("java");
+        array.add("javaee");
+        array.add("java");
+        array.add("java");
+        array.add("java");
+        array.add("android");
 
-		for (int x = 0; x < array.size() - 1; x++) {
-			for (int y = x + 1; y < array.size(); y++) {
-				if (array.get(y).equals(array.get(x))) {
-					array.remove(y);
-					y--; // °ÑÔªËØÉ¾³ıºó£¬»¹ÒªºÍµ±Ç°Î»ÖÃµÄ±È½ÏÒ»´Î
-				}
-			}
-		}
+        for (int x = 0; x < array.size() - 1; x++) {
+            for (int y = x + 1; y < array.size(); y++) {
+                if (array.get(y).equals(array.get(x))) {
+                    array.remove(y);
+                    y--; // ï¿½ï¿½Ôªï¿½ï¿½É¾ï¿½ï¿½ï¿½ó£¬»ï¿½Òªï¿½Íµï¿½Ç°Î»ï¿½ÃµÄ±È½ï¿½Ò»ï¿½ï¿½
+                }
+            }
+        }
 
-		// ±éÀú¼¯ºÏ
-		Iterator it = array.iterator();
-		while (it.hasNext()) {
-			String s = (String) it.next();
-			System.out.println(s);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Iterator it = array.iterator();
+        while (it.hasNext()) {
+            String s = (String) it.next();
+            System.out.println(s);
+        }
+    }
 }

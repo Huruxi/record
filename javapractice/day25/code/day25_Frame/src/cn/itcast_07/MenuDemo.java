@@ -10,44 +10,44 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 /*
- * Ò»¼¶²Ëµ¥
+ * Ò»ï¿½ï¿½ï¿½Ëµï¿½
  */
 public class MenuDemo {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		final Frame f = new Frame("Ò»¼¶²Ëµ¥");
-		// ÉèÖÃ´°ÌåÊôÐÔ
-		f.setBounds(500, 250, 400, 300);
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        final Frame f = new Frame("Ò»ï¿½ï¿½ï¿½Ëµï¿½");
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setBounds(500, 250, 400, 300);
 
-		// ´´½¨²Ëµ¥À¸
-		MenuBar mb = new MenuBar();
-		// ´´½¨²Ëµ¥
-		Menu m = new Menu("ÎÄ¼þ");
-		// ´´½¨²Ëµ¥Ïî
-		MenuItem mi = new MenuItem("ÍË³öÏµÍ³");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+        MenuBar mb = new MenuBar();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½
+        Menu m = new Menu("ï¿½Ä¼ï¿½");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½
+        MenuItem mi = new MenuItem("ï¿½Ë³ï¿½ÏµÍ³");
 
-		// ²Ëµ¥±¾Éí×éºÏ
-		m.add(mi);
-		mb.add(m);
+        // ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        m.add(mi);
+        mb.add(m);
 
-		// Ìí¼Óµ½´°Ìå
-		f.setMenuBar(mb);
+        // ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        f.setMenuBar(mb);
 
-		// ×¢²áÊÂ¼þ
-		f.addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				System.exit(0);
-			}
-		});
+        // ×¢ï¿½ï¿½ï¿½Â¼ï¿½
+        f.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+        });
 
-		mi.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				System.exit(0);
-			}
-		});
+        mi.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
 
-		f.setVisible(true);
-	}
+        f.setVisible(true);
+    }
 }

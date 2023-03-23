@@ -2,30 +2,30 @@ package cn.itcast_04;
 
 public class SetThread implements Runnable {
 
-	private Student s;
-	private int x = 0;
+    private Student s;
+    private int x = 0;
 
-	public SetThread(Student s) {
-		this.s = s;
-	}
+    public SetThread(Student s) {
+        this.s = s;
+    }
 
-	@Override
-	public void run() {
-		// ..........
-		while (true) {
-			synchronized (s) {
-				if (x % 2 == 0) {
-					s.name = "ÁÖÇàÏ¼"; // Ã»ÓÐÖ´ÐÐÈ¨ÁË¡£
-					s.age = 28;
-				} else {
-					s.name = "ÁõÒâ";
-					s.age = 31;
-				}
-				x++;
-			}
+    @Override
+    public void run() {
+        // ..........
+        while (true) {
+            synchronized (s) {
+                if (x % 2 == 0) {
+                    s.name = "ï¿½ï¿½ï¿½ï¿½Ï¼"; // Ã»ï¿½ï¿½Ö´ï¿½ï¿½È¨ï¿½Ë¡ï¿½
+                    s.age = 28;
+                } else {
+                    s.name = "ï¿½ï¿½ï¿½ï¿½";
+                    s.age = 31;
+                }
+                x++;
+            }
 
-		}
-		// ...........
-	}
+        }
+        // ...........
+    }
 
 }

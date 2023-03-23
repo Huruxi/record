@@ -1,35 +1,35 @@
 package cn.itcast_02;
 
 /*
- * ·ºĞÍÔÚÄ¬ÈÏÇé¿öÏÂ£¬ÊÇObjectÀàĞÍ¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½Objectï¿½ï¿½ï¿½Í¡ï¿½
  */
 public class Tool2Test {
-	public static void main(String[] args) {
-		Student s = new Student();
-		Teacher t = new Teacher();
+    public static void main(String[] args) {
+        Student s = new Student();
+        Teacher t = new Teacher();
 
-		// Tool2 tool = new Tool2();
-		// // ÉèÖÃÎªStudent
-		// tool.setQq(s);
-		// Student ss = (Student) tool.getQq();
-		// ss.love();
-		// // ÉèÖÃÎªTeacher
-		// tool.setQq(t);
-		// Teacher tt = (Teacher) tool.getQq();
-		// tt.love();
-		// Student sss = (Student) tool.getQq();
-		// sss.love();
+        // Tool2 tool = new Tool2();
+        // // ï¿½ï¿½ï¿½ï¿½ÎªStudent
+        // tool.setQq(s);
+        // Student ss = (Student) tool.getQq();
+        // ss.love();
+        // // ï¿½ï¿½ï¿½ï¿½ÎªTeacher
+        // tool.setQq(t);
+        // Teacher tt = (Teacher) tool.getQq();
+        // tt.love();
+        // Student sss = (Student) tool.getQq();
+        // sss.love();
 
-		Tool2<Student> tool = new Tool2<Student>();
-		tool.setQq(s);
-		Student ss = tool.getQq();
-		ss.love();
+        Tool2<Student> tool = new Tool2<Student>();
+        tool.setQq(s);
+        Student ss = tool.getQq();
+        ss.love();
 
-		// tool.setQq(t); // ±àÒëÆÚ¼ä¾Í¸æËßÄã£¬Äã´íÁË£¬ÎÒÒÑ¾­Ã÷È·ÁË£¬StudentÀàĞÍ
+        // tool.setQq(t); // ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½Í¸ï¿½ï¿½ï¿½ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½È·ï¿½Ë£ï¿½Studentï¿½ï¿½ï¿½ï¿½
 
-		Tool2<Teacher> tool2 = new Tool2<Teacher>();
-		tool2.setQq(t);
-		Teacher tt = tool2.getQq();
-		tt.love();
-	}
+        Tool2<Teacher> tool2 = new Tool2<Teacher>();
+        tool2.setQq(t);
+        Teacher tt = tool2.getQq();
+        tt.love();
+    }
 }

@@ -1,13 +1,13 @@
 /*
-	×¢ÊÍµÄ×÷ÓÃ£º
-		A:½âÊÍËµÃ÷³ÌĞò£¬Ìá¸ß³ÌĞòµÄÔÄ¶ÁĞÔ
-		B:¿ÉÒÔ°ïÖúÎÒÃÇµ÷ÊÔ³ÌĞò
+	×¢ï¿½Íµï¿½ï¿½ï¿½ï¿½Ã£ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½Ô°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½Ô³ï¿½ï¿½ï¿½
 */
 class Demo {
-	public static void main(String[] args) {
-		System.out.println("HelloWorld");
-		System.out.println("ÎÒ°®ÁÖÇàÏ¼");
-		System.out.println("ÎÒ°®Java");
-		System.out.println("ÎÒ°®ÕÅè¤");
-	}
+    public static void main(String[] args) {
+        System.out.println("HelloWorld");
+        System.out.println("ï¿½Ò°ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼");
+        System.out.println("ï¿½Ò°ï¿½Java");
+        System.out.println("ï¿½Ò°ï¿½ï¿½ï¿½ï¿½");
+    }
 }

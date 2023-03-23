@@ -4,29 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 /*
- * List¼¯ºÏµÄÌØÓÐ±éÀú£ºÆÕÍ¨forÑ­»·
- * size()·½·¨ºÍget()·½·¨½áºÏÊ¹ÓÃ
+ * Listï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨forÑ­ï¿½ï¿½
+ * size()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½get()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
  */
 public class ListDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		List list = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        List list = new ArrayList();
 
-		// ²âÊÔ¹¦ÄÜ
-		list.add("hello");
-		list.add("world");
-		list.add("java");
+        // ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½
+        list.add("hello");
+        list.add("world");
+        list.add("java");
 
-		// get(int index)
-		// System.out.println(list.get(0));
-		// System.out.println(list.get(1));
-		// System.out.println(list.get(2));
-		// System.out.println(list.get(3)); // IndexOutOfBoundsException
+        // get(int index)
+        // System.out.println(list.get(0));
+        // System.out.println(list.get(1));
+        // System.out.println(list.get(2));
+        // System.out.println(list.get(3)); // IndexOutOfBoundsException
 
-		for (int x = 0; x < list.size(); x++) {
-			// System.out.println(list.get(x));
-			String s = (String) list.get(x);
-			System.out.println(s);
-		}
-	}
+        for (int x = 0; x < list.size(); x++) {
+            // System.out.println(list.get(x));
+            String s = (String) list.get(x);
+            System.out.println(s);
+        }
+    }
 }

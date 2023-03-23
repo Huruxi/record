@@ -1,18 +1,18 @@
 package cn.itcast_02;
 
 /*
- * 泛型类：把泛型定义在类上。
- * 格式：
- * 		class 类名<类型,...> {}
+ * 锟斤拷锟斤拷锟洁：锟窖凤拷锟酵讹拷锟斤拷锟斤拷锟斤拷锟较★拷
+ * 锟斤拷式锟斤拷
+ * 		class 锟斤拷锟斤拷<锟斤拷锟斤拷,...> {}
  */
 public class Tool2<QQ> {
-	private QQ qq;
+    private QQ qq;
 
-	public QQ getQq() {
-		return qq;
-	}
+    public QQ getQq() {
+        return qq;
+    }
 
-	public void setQq(QQ qq) {
-		this.qq = qq;
-	}
+    public void setQq(QQ qq) {
+        this.qq = qq;
+    }
 }

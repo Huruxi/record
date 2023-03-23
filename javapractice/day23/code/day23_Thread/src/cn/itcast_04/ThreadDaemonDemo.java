@@ -1,30 +1,29 @@
 package cn.itcast_04;
 
 /*
- * public final void setDaemon(boolean on):µ±ÕýÔÚÔËÐÐµÄÏß³Ì¶¼ÊÇÊØ»¤Ïß³ÌÊ±£¬Java ÐéÄâ»úÍË³ö¡£ 
- * 
- * ¾ÙÀý£ºÌ¹¿Ë´óÕ½
+ * public final void setDaemon(boolean on):ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ß³Ì¶ï¿½ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ß³ï¿½Ê±ï¿½ï¿½Java ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¹ï¿½Ë´ï¿½Õ½
  */
 public class ThreadDaemonDemo {
-	public static void main(String[] args) {
-		Thread.currentThread().setName("Áõ±¸");
+    public static void main(String[] args) {
+        Thread.currentThread().setName("ï¿½ï¿½ï¿½ï¿½");
 
-		ThreadDaemon td1 = new ThreadDaemon();
-		ThreadDaemon td2 = new ThreadDaemon();
+        ThreadDaemon td1 = new ThreadDaemon();
+        ThreadDaemon td2 = new ThreadDaemon();
 
-		td1.setName("¹ØÓð");
-		td2.setName("ÕÅ·É");
+        td1.setName("ï¿½ï¿½ï¿½ï¿½");
+        td2.setName("ï¿½Å·ï¿½");
 
-		// ÉèÖÃÊØ»¤Ïß³Ì
-		td1.setDaemon(true);
-		td2.setDaemon(true);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ß³ï¿½
+        td1.setDaemon(true);
+        td2.setDaemon(false);
 
-		td1.start();
-		td2.start();
+        td1.start();
+        td2.start();
 
-		for (int x = 0; x < 5; x++) {
-			System.out.println(Thread.currentThread().getName() + ":" + x);
-		}
-
-	}
+        for (int x = 0; x < 5; x++) {
+            System.out.println(Thread.currentThread().getName() + ":" + x);
+        }
+    }
 }

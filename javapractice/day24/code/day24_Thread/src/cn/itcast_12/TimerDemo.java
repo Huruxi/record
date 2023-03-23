@@ -4,43 +4,43 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * ¶¨ÒåÈÎÎñÓÉÁ½¸öÀàÀ´Ò»ÆðÍê³É£º
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½É£ï¿½
  * Timer,TimerTask
- * 
+ *
  * Timer:
- * 		public Timer()´´½¨Ò»¸öÐÂ¼ÆÊ±Æ÷¡£
+ * 		public Timer()ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Â¼ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
  */
 public class TimerDemo {
-	public static void main(String[] args) {
-		// ´´½¨¶¨ÒåÆ÷
-		final Timer t = new Timer();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        final Timer t = new Timer();
 
-		// public void schedule(TimerTask task,long delay):ÔÚdelayºÁÃëºóÍê³ÉtaskµÄÈÎÎñ
-		// t.schedule(new MyTask(t), 3000);
+        // public void schedule(TimerTask task,long delay):ï¿½ï¿½delayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½taskï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // t.schedule(new MyTask(t), 3000);
 
-		// ÄäÃûÄÚ²¿ÀàÊµÏÖ
-		t.schedule(new TimerTask() {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½Êµï¿½ï¿½
+        t.schedule(new TimerTask() {
 
-			@Override
-			public void run() {
-				System.out.println("Õ¨µ¯±¬Õ¨ÁË,duang duang duang");
-				t.cancel();
-			}
+            @Override
+            public void run() {
+                System.out.println("Õ¨ï¿½ï¿½ï¿½ï¿½Õ¨ï¿½ï¿½,duang duang duang");
+                t.cancel();
+            }
 
-		}, 3000);
-	}
+        }, 3000);
+    }
 }
 
 class MyTask extends TimerTask {
-	private Timer t;
+    private Timer t;
 
-	public MyTask(Timer t) {
-		this.t = t;
-	}
+    public MyTask(Timer t) {
+        this.t = t;
+    }
 
-	@Override
-	public void run() {
-		System.out.println("Õ¨µ¯±¬Õ¨ÁË,duang duang duang");
-		t.cancel();
-	}
+    @Override
+    public void run() {
+        System.out.println("Õ¨ï¿½ï¿½ï¿½ï¿½Õ¨ï¿½ï¿½,duang duang duang");
+        t.cancel();
+    }
 }

@@ -1,39 +1,39 @@
-//ÊÖ»úÀàµÄ¶¨Òå
+//ï¿½Ö»ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
 class Phone {
-	//Æ·ÅÆ
-	String brand;
-	//¼Û¸ñ
-	int price;
-	//ÑÕÉ«
-	String color;
+    //Æ·ï¿½ï¿½
+    String brand;
+    //ï¿½Û¸ï¿½
+    int price;
+    //ï¿½ï¿½É«
+    String color;
 
-	//´òµç»°µÄ·½·¨
-	public void call(String name) {
-		System.out.println("¸ø"+name+"´òµç»°");
-	}
+    //ï¿½ï¿½ç»°ï¿½Ä·ï¿½ï¿½ï¿½
+    public void call(String name) {
+        System.out.println("ï¿½ï¿½" + name + "ï¿½ï¿½ç»°");
+    }
 
-	//·¢¶ÌÐÅ
-	public void sendMessage() {
-		System.out.println("Èº·¢¶ÌÐÅ");
-	}
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public void sendMessage() {
+        System.out.println("Èºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class PhoneDemo3 {
-	public static void main(String[] args) {
-		Phone p = new Phone();
-		//³ÉÔ±±äÁ¿¸³Öµ²¢Ê¹ÓÃ²»½²ÁË
-		//·½·¨µ÷ÓÃ²»½²ÁË
+    public static void main(String[] args) {
+        Phone p = new Phone();
+        //ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ê¹ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		Phone p2 = new Phone();
-		//³ÉÔ±±äÁ¿¸³Öµ²¢Ê¹ÓÃ²»½²ÁË
-		//·½·¨µ÷ÓÃ²»½²ÁË
+        Phone p2 = new Phone();
+        //ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ê¹ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã²ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		Phone p3 = p;
-		p3.brand = "÷È×å";
-		p3.price = 1999;
-		p3.color = "°×É«";
-		System.out.println("Æ·ÅÆÊÇ£º"+p.brand);
-		System.out.println("¼Û¸ñÊÇ£º"+p.price);
-		System.out.println("ÑÕÉ«ÊÇ£º"+p.color);
-	}
+        Phone p3 = p;
+        p3.brand = "ï¿½ï¿½ï¿½ï¿½";
+        p3.price = 1999;
+        p3.color = "ï¿½ï¿½É«";
+        System.out.println("Æ·ï¿½ï¿½ï¿½Ç£ï¿½" + p.brand);
+        System.out.println("ï¿½Û¸ï¿½ï¿½Ç£ï¿½" + p.price);
+        System.out.println("ï¿½ï¿½É«ï¿½Ç£ï¿½" + p.color);
+    }
 }

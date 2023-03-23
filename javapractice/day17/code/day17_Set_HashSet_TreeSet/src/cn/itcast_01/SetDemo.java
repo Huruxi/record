@@ -5,23 +5,23 @@ import java.util.Set;
 
 /*
  * Collection:
- * 		List:ÔªËØÓÐÐò(´æ´¢ºÍÈ¡³öË³ÐòÒ»ÖÂ)£¬¿ÉÖØ¸´
- * 		Set:ÔªËØÎÞÐò,Î¨Ò»
+ * 		List:Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½æ´¢ï¿½ï¿½È¡ï¿½ï¿½Ë³ï¿½ï¿½Ò»ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½
+ * 		Set:Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Î¨Ò»
  */
 public class SetDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Set<String> set = new HashSet<String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Set<String> set = new HashSet<String>();
 
-		set.add("hello");
-		set.add("aaaa");
-		set.add("java");
-		set.add("world");
-		set.add("bbbb");
-		set.add("aaaa");
+        set.add("hello");
+        set.add("aaaa");
+        set.add("java");
+        set.add("world");
+        set.add("bbbb");
+        set.add("aaaa");
 
-		for (String s : set) {
-			System.out.println(s);
-		}
-	}
+        for (String s : set) {
+            System.out.println(s);
+        }
+    }
 }

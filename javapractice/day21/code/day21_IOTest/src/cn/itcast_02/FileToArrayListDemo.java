@@ -6,31 +6,31 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /*
- * ´ÓÎÄ±¾ÎÄ¼þÖÐ¶ÁÈ¡Êý¾Ý(Ã¿Ò»ÐÐÎªÒ»¸ö×Ö·û´®Êý¾Ý)µ½¼¯ºÏÖÐ£¬²¢±éÀú¼¯ºÏ
- * 
- * Êý¾ÝÔ´£º
+ * ï¿½ï¿½ï¿½Ä±ï¿½ï¿½Ä¼ï¿½ï¿½Ð¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½(Ã¿Ò»ï¿½ï¿½ÎªÒ»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
  * 		array.txt
- * Ä¿µÄµØ£º
+ * Ä¿ï¿½ÄµØ£ï¿½
  * 		ArrayList
  */
 public class FileToArrayListDemo {
-	public static void main(String[] args) throws IOException {
-		// ·â×°Êý¾ÝÔ´
-		BufferedReader br = new BufferedReader(new FileReader("array.txt"));
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½Ô´
+        BufferedReader br = new BufferedReader(new FileReader("array.txt"));
 
-		// ·â×°Ä¿µÄµØ
-		ArrayList<String> array = new ArrayList<String>();
+        // ï¿½ï¿½×°Ä¿ï¿½Äµï¿½
+        ArrayList<String> array = new ArrayList<String>();
 
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			array.add(line);
-		}
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            array.add(line);
+        }
 
-		br.close();
+        br.close();
 
-		// ±éÀú¼¯ºÏ
-		for (String s : array) {
-			System.out.println(s);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (String s : array) {
+            System.out.println(s);
+        }
+    }
 }

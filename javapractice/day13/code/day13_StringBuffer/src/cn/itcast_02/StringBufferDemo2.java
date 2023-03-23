@@ -1,27 +1,27 @@
 package cn.itcast_02;
 
 /*
- * É¾³ý¹¦ÄÜ£º 
- * public StringBuffer deleteCharAt(int index)£ºÉ¾³ýÖ¸¶¨Î»ÖÃµÄ×Ö·û
- * public StringBuffer delete(int start,int end):É¾³ý´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈÝ
+ * É¾ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½
+ * public StringBuffer deleteCharAt(int index)ï¿½ï¿½É¾ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ãµï¿½ï¿½Ö·ï¿½
+ * public StringBuffer delete(int start,int end):É¾ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã¿ï¿½Ê¼ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class StringBufferDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		StringBuffer buffer = new StringBuffer();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        StringBuffer buffer = new StringBuffer();
 
-		// Ìí¼ÓÊý¾Ý
-		buffer.append("hello");
-		buffer.append("world");
-		buffer.append("java");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        buffer.append("hello");
+        buffer.append("world");
+        buffer.append("java");
 
-		// public StringBuffer deleteCharAt(int index)£ºÉ¾³ýÖ¸¶¨Î»ÖÃµÄ×Ö·û
-		// buffer.deleteCharAt(5);
+        // public StringBuffer deleteCharAt(int index)ï¿½ï¿½É¾ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ãµï¿½ï¿½Ö·ï¿½
+        // buffer.deleteCharAt(5);
 
-		// public StringBuffer delete(int start,int end):É¾³ý´ÓÖ¸¶¨Î»ÖÃ¿ªÊ¼µ½Ö¸¶¨Î»ÖÃ½áÊøµÄÄÚÈÝ
-		// buffer.delete(5, 10);
-		buffer.delete(0, buffer.length());
+        // public StringBuffer delete(int start,int end):É¾ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã¿ï¿½Ê¼ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ã½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // buffer.delete(5, 10);
+        buffer.delete(0, buffer.length());
 
-		System.out.println("buffer:" + buffer);
-	}
+        System.out.println("buffer:" + buffer);
+    }
 }

@@ -1,25 +1,25 @@
 /*
-	ÐèÇó£ºÇëÊä³öÒ»¸ö4ÐÐ5ÁÐµÄÐÇÐÇ(*)Í¼°¸¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½4ï¿½ï¿½5ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½(*)Í¼ï¿½ï¿½ï¿½ï¿½
 
 			*****
 			*****
 			*****
 			*****
 
-	Êä³öÓï¾äµÄÎÊÌâ£º
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£º
 		System.out.println("*");
-			ÔÚµ±Ç°ÐÐÊä³ö*£¬²¢»»ÐÐ¡£
+			ï¿½Úµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½
 
 		System.out.print("*");
-			½ö½öÔÚµ±Ç°ÐÐÊä³ö*
+			ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½*
 
-	Ñ­»·Ç¶Ì×ÖÐ£º
-		ÍâÑ­»·¿ØÖÆÐÐÊý
-		ÄÚÑ­»·¿ØÖÆÁÐÊý
+	Ñ­ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½Ð£ï¿½
+		ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class ForForDemo {
-	public static void main(String[] args) {
-		//·½Ê½Ò»
+    public static void main(String[] args) {
+        //ï¿½ï¿½Ê½Ò»
 		/*
 		System.out.println("*****");
 		System.out.println("*****");
@@ -27,7 +27,7 @@ class ForForDemo {
 		System.out.println("*****");
 		*/
 
-		//·½Ê½¶þ
+        //ï¿½ï¿½Ê½ï¿½ï¿½
 		/*
 		System.out.println("*");
 		System.out.println("*");
@@ -36,7 +36,7 @@ class ForForDemo {
 		System.out.println("*");
 		*/
 
-		//Êä³öÓï¾ä
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		/*
 		System.out.println("*");
 		System.out.println("*");
@@ -54,39 +54,39 @@ class ForForDemo {
 		System.out.print("*");
 		*/
 
-		//ÓÃÑ­»·¸Ä½øÒ»ÐÐÊä³ö5¸ö*
+        //ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ä½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½5ï¿½ï¿½*
 		/*
-		//µÚÒ»ÐÐ
+		//ï¿½ï¿½Ò»ï¿½ï¿½
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		//µÚ¶þÐÐ
+		//ï¿½Ú¶ï¿½ï¿½ï¿½
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		//µÚÈýÐÐ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 
-		//µÚËÄÐÐ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		for(int x=0; x<5; x++) {
 			System.out.print("*");
 		}
 		System.out.println();
 		*/
 
-		//Í¬ÑùµÄÊÂÇé×öÁËºÜ¶à´Î
-		for(int y=0; y<4; y++) {
-			for(int x=0; x<5; x++) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
-	}
+        //Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ËºÜ¶ï¿½ï¿½
+        for (int y = 0; y < 4; y++) {
+            for (int x = 0; x < 5; x++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 }

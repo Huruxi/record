@@ -3,65 +3,65 @@ package cn.itcast_04;
 import java.util.Scanner;
 
 /*
- * Í³¼ÆÒ»¸ö×Ö·û´®ÖÐ´óÐ´×ÖÄ¸×Ö·û£¬Ð¡Ð´×ÖÄ¸×Ö·û£¬Êý×Ö×Ö·û³öÏÖµÄ´ÎÊý¡£(²»¿¼ÂÇÆäËû×Ö·û)
- * ¾ÙÀý£ºHello123World
- * ½á¹û£º
- * 		´óÐ´£º2
- * 		Ð¡Ð´£º8
- * 		Êý×Ö£º3
- * 
- * ·ÖÎö£º
- * 		A:¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
- * 		B:¶¨ÒåÈý¸öÍ³¼Æ±äÁ¿
+ * Í³ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð´ï¿½Ð´ï¿½ï¿½Ä¸ï¿½Ö·ï¿½ï¿½ï¿½Ð¡Ð´ï¿½ï¿½Ä¸ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ÖµÄ´ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½)
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Hello123World
+ * ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½Ð´ï¿½ï¿½2
+ * 		Ð¡Ð´ï¿½ï¿½8
+ * 		ï¿½ï¿½ï¿½Ö£ï¿½3
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½
  * 			int bigCount = 0;
  * 			int smallCount = 0;
  * 			int numberCount = 0;
- * 		C:±éÀú×Ö·û´®£¬µÃµ½Ã¿Ò»¸ö×Ö·û
- * 		D:ÈçºÎÅÐ¶Ï×Ö·ûÊÇ´óÐ´£¬Ð¡Ð´»¹ÊÇÊý×ÖÄØ?
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+ * 		D:ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ö·ï¿½ï¿½Ç´ï¿½Ð´ï¿½ï¿½Ð¡Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
  * 			char ch = ???;
- * 
- * 			ASCIIÂë±í£º
+ *
+ * 			ASCIIï¿½ï¿½ï¿½
  * 				a	97	z=122
  * 				A	65  Z=90
  * 				0	48	9=57
- * 
+ *
  * 				ch>=97 && ch<=122
  * 				...
- * 
+ *
  * 			ch>='a' && ch<='z'
  * 			ch>='A'	&& ch<='Z'
  * 			ch>='0'	&& ch<='9'
- * 		E:Êä³ö½á¹û
+ * 		E:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class StringTest2 {
-	public static void main(String[] args) {
-		// ¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®£º");
-		String s = sc.nextLine();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½");
+        String s = sc.nextLine();
 
-		// ¶¨ÒåÈý¸öÍ³¼Æ±äÁ¿
-		int bigCount = 0;
-		int smallCount = 0;
-		int numberCount = 0;
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½
+        int bigCount = 0;
+        int smallCount = 0;
+        int numberCount = 0;
 
-		// ±éÀú×Ö·û´®£¬µÃµ½Ã¿Ò»¸ö×Ö·û
-		for (int x = 0; x < s.length(); x++) {
-			char ch = s.charAt(x);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+        for (int x = 0; x < s.length(); x++) {
+            char ch = s.charAt(x);
 
-			// ÈçºÎÅÐ¶Ï×Ö·ûÊÇ´óÐ´£¬Ð¡Ð´»¹ÊÇÊý×ÖÄØ?
-			if (ch >= 'A' && ch <= 'Z') {
-				bigCount++;
-			} else if (ch >= 'a' && ch <= 'z') {
-				smallCount++;
-			} else if (ch >= '0' && ch <= '9') {
-				numberCount++;
-			}
-		}
+            // ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Ö·ï¿½ï¿½Ç´ï¿½Ð´ï¿½ï¿½Ð¡Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+            if (ch >= 'A' && ch <= 'Z') {
+                bigCount++;
+            } else if (ch >= 'a' && ch <= 'z') {
+                smallCount++;
+            } else if (ch >= '0' && ch <= '9') {
+                numberCount++;
+            }
+        }
 
-		// Êä³ö½á¹û
-		System.out.println("´óÐ´£º" + bigCount);
-		System.out.println("Ð¡Ð´£º" + smallCount);
-		System.out.println("Êý×Ö£º" + numberCount);
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½Ð´ï¿½ï¿½" + bigCount);
+        System.out.println("Ð¡Ð´ï¿½ï¿½" + smallCount);
+        System.out.println("ï¿½ï¿½ï¿½Ö£ï¿½" + numberCount);
+    }
 }

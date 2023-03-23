@@ -5,36 +5,36 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
- * ÌØÓÐ¹¦ÄÜ£º
+ * ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½Ü£ï¿½
  * BufferedReader:
- * 		public String readLine()£º°üº¬¸ÃÐÐÄÚÈÝµÄ×Ö·û´®£¬²»°üº¬ÈÎºÎÐÐÖÕÖ¹·û£¬Èç¹ûÒÑµ½´ïÁ÷Ä©Î²£¬Ôò·µ»Ø null 
+ * 		public String readLine()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½ï¿½ï¿½ï¿½Ä©Î²ï¿½ï¿½ï¿½ò·µ»ï¿½ null
  * BufferedWriter:
- * 		public void newLine()£ºÐ´Ò»¸ö»»ÐÐ·û
+ * 		public void newLine()ï¿½ï¿½Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ð·ï¿½
  */
 public class BufferedDemo {
-	public static void main(String[] args) throws IOException {
-		// Ð´Êý¾Ý
-		// BufferedWriter bw = new BufferedWriter(new FileWriter("bw.txt"));
-		// for (int x = 0; x < 10; x++) {
-		// bw.write("hello" + x);
-		// bw.newLine();
-		// bw.flush();
-		// }
-		// bw.close();
+    public static void main(String[] args) throws IOException {
+        // Ð´ï¿½ï¿½ï¿½ï¿½
+        // BufferedWriter bw = new BufferedWriter(new FileWriter("bw.txt"));
+        // for (int x = 0; x < 10; x++) {
+        // bw.write("hello" + x);
+        // bw.newLine();
+        // bw.flush();
+        // }
+        // bw.close();
 
-		// ¶ÁÈ¡Êý¾Ý
-		BufferedReader br = new BufferedReader(new FileReader("bw.txt"));
+        // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+        BufferedReader br = new BufferedReader(new FileReader("bw.txt"));
 
-		// String s = br.readLine();
-		// System.out.println(s);
-		// s = br.readLine();
-		// System.out.println(s);
+        // String s = br.readLine();
+        // System.out.println(s);
+        // s = br.readLine();
+        // System.out.println(s);
 
-		String line = null;
-		while ((line = br.readLine()) != null) {
-			System.out.println(line);
-		}
+        String line = null;
+        while ((line = br.readLine()) != null) {
+            System.out.println(line);
+        }
 
-		br.close();
-	}
+        br.close();
+    }
 }

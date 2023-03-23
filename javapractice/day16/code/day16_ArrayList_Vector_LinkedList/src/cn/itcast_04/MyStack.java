@@ -3,25 +3,25 @@ package cn.itcast_04;
 import java.util.LinkedList;
 
 /*
- * ¶¨Òå×Ô¼ºµÄ¼¯ºÏÀà
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class MyStack {
-	private LinkedList link;
+    private LinkedList link;
 
-	public MyStack() {
-		link = new LinkedList();
-	}
+    public MyStack() {
+        link = new LinkedList();
+    }
 
-	public void add(Object obj) {
-		link.addFirst(obj);
-	}
+    public void add(Object obj) {
+        link.addFirst(obj);
+    }
 
-	public Object get() {
-		// return link.getFirst();
-		return link.removeFirst();
-	}
+    public Object get() {
+        // return link.getFirst();
+        return link.removeFirst();
+    }
 
-	public boolean isEmpty() {
-		return link.isEmpty();
-	}
+    public boolean isEmpty() {
+        return link.isEmpty();
+    }
 }

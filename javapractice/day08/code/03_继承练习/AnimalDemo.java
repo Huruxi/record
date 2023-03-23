@@ -1,107 +1,110 @@
 /*
-	Á·Ï°2£ºÇë°ÑÃ¨¹·°¸Àý¸ÄÎª¼Ì³ÐµÄ°æ±¾£¬×Ô¼º·ÖÎö£¬×Ô¼º²âÊÔ¡£µÈ»á½²
+	ï¿½ï¿½Ï°2ï¿½ï¿½ï¿½ï¿½ï¿½Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½Ì³ÐµÄ°æ±¾ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½ï¿½È»á½²
 
-	Ã¨£º
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()£¬show()£¬catchMouse()
-	¹·£º
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()£¬show()£¬lookDoor()
+	Ã¨ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx()ï¿½ï¿½show()ï¿½ï¿½catchMouse()
+	ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx()ï¿½ï¿½show()ï¿½ï¿½lookDoor()
 
-	¶¯Îï£º
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx()£¬show()
+	ï¿½ï¿½ï¿½ï£º
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxx()ï¿½ï¿½show()
 
-	Ã¨£º¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
+	Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
 		catchMouse()
-	¹·£º¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
 		lookDoor()
 
-	²âÊÔÀà£º
+	ï¿½ï¿½ï¿½ï¿½ï¿½à£º
 		main(String[] args):
 */
 class Animal {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Animal() {}
+    public Animal() {
+    }
 
-	public Animal(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void show() {
-		System.out.println(name+"---"+age);
-	}
+    public void show() {
+        System.out.println(name + "---" + age);
+    }
 }
 
 class Cat extends Animal {
-	public Cat() {}
+    public Cat() {
+    }
 
-	public Cat(String name,int age) {
-		super(name,age);
-	}
+    public Cat(String name, int age) {
+        super(name, age);
+    }
 
-	public void catchMouse() {
-		System.out.println("Ã¨×½ÀÏÊó");
-	}
+    public void catchMouse() {
+        System.out.println("Ã¨×½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class Dog extends Animal {
-	public Dog() {}
+    public Dog() {
+    }
 
-	public Dog(String name,int age) {
-		super(name,age);
-	}
+    public Dog(String name, int age) {
+        super(name, age);
+    }
 
-	public void lookDoor() {
-		System.out.println("¹·¿ÉÒÔ¿´ÃÅ");
-	}
+    public void lookDoor() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½");
+    }
 }
 
 class AnimalDemo {
-	public static void main(String[] args) {
-		//Ã¨Àà²âÊÔ
-		Cat c = new Cat();
-		c.setName("¼Ó·ÆÃ¨");
-		c.setAge(3);
-		c.show();
-		c.catchMouse();
-		System.out.println("------------");
-		Cat cc = new Cat("tomÃ¨",6);
-		cc.show();
-		cc.catchMouse();
-		System.out.println("------------");
+    public static void main(String[] args) {
+        //Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½
+        Cat c = new Cat();
+        c.setName("ï¿½Ó·ï¿½Ã¨");
+        c.setAge(3);
+        c.show();
+        c.catchMouse();
+        System.out.println("------------");
+        Cat cc = new Cat("tomÃ¨", 6);
+        cc.show();
+        cc.catchMouse();
+        System.out.println("------------");
 
-		Dog d = new Dog();
-		d.setName("Ð¥Ìì");
-		d.setAge(5);
-		d.show();
-		d.lookDoor();
-		System.out.println("------------");
+        Dog d = new Dog();
+        d.setName("Ð¥ï¿½ï¿½");
+        d.setAge(5);
+        d.show();
+        d.lookDoor();
+        System.out.println("------------");
 
-		Dog dd = new Dog("Íú²Æ",8);
-		dd.show();
-		dd.lookDoor();
-	}
+        Dog dd = new Dog("ï¿½ï¿½ï¿½ï¿½", 8);
+        dd.show();
+        dd.lookDoor();
+    }
 }

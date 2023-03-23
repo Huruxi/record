@@ -5,35 +5,35 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- * JavaÖĞµÄÒì³£±»·ÖÎªÁ½´óÀà£º±àÒëÊ±Òì³£ºÍÔËĞĞÊ±Òì³£¡£ËùÓĞµÄRuntimeExceptionÀà¼°Æä×ÓÀàµÄÊµÀı±»³ÆÎªÔËĞĞÊ±Òì³££¬ÆäËûµÄÒì³£¾ÍÊÇ±àÒëÊ±Òì³£
- *	±àÒëÊ±Òì³£
- *		Java³ÌĞò±ØĞëÏÔÊ¾´¦Àí£¬·ñÔò³ÌĞò¾Í»á·¢Éú´íÎó£¬ÎŞ·¨Í¨¹ı±àÒë
- *	ÔËĞĞÊ±Òì³£
- *		ÎŞĞèÏÔÊ¾´¦Àí£¬Ò²¿ÉÒÔºÍ±àÒëÊ±Òì³£Ò»Ñù´¦Àí
+ * Javaï¿½Ğµï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½à£ºï¿½ï¿½ï¿½ï¿½Ê±ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½RuntimeExceptionï¿½à¼°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ê±ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½Ê±ï¿½ì³£
+ *	ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ì³£
+ *		Javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»á·¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ş·ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *	ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ì³£
+ *		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ÔºÍ±ï¿½ï¿½ï¿½Ê±ï¿½ì³£Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *
- * ´¦ÀíÒì³£µÄ·½Ê½ÌØ±ğµÄ¼òµ¥£º»áµã»÷Êó±ê¼´¿É¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½Ä·ï¿½Ê½ï¿½Ø±ï¿½Ä¼òµ¥£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê¼´ï¿½É¡ï¿½
  */
 public class ExceptionDemo {
-	public static void main(String[] args) {
-		String s = "2015-04-03 10:37:45";
-		// ÇëĞ´¹¦ÄÜÊµÏÖ
-		Date d = null;
-		try {
-			// System.out.println(10/0);
-			d = stringToDate(s);
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		System.out.println(d);
+    public static void main(String[] args) {
+        String s = "2015-04-03 10:37:45";
+        // ï¿½ï¿½Ğ´ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+        Date d = null;
+        try {
+            // System.out.println(10/0);
+            d = stringToDate(s);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        System.out.println(d);
 
-		System.out.println("haha");
+        System.out.println("haha");
 
-		// System.out.println(10/0);
-	}
+        // System.out.println(10/0);
+    }
 
-	public static Date stringToDate(String s) throws ParseException{
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		Date d = sdf.parse(s);
-		return d;
-	}
+    public static Date stringToDate(String s) throws ParseException {
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date d = sdf.parse(s);
+        return d;
+    }
 }

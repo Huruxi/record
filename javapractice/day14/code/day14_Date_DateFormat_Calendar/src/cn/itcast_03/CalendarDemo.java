@@ -3,35 +3,35 @@ package cn.itcast_03;
 import java.util.Calendar;
 
 /*
- * Calendar:°ÑÊ±¼ä·Ö¸î³ÉÁËÒ»¸ö¸öµÄÄê£¬ÔÂ£¬ÈÕ£¬Ê±£¬·Ö£¬ÃëµÈ¡£Èç¹ûÎÒÒªµÃµ½Ò»¸öÍêÕûµÄÄêÔÂÈÕÊ±·ÖÃë£¬ĞèÒªÎÒÃÇ×Ô¼ºÆ´Êı¾İ¡£
- * 
- * ÈÕÀú¶ÔÏó	---		Äê£¬ÔÂ£¬ÈÕ£¬Ê±£¬·Ö£¬Ãë
- * 
- * public int get(int field):·µ»Ø¸ø¶¨ÈÕÀú×Ö¶ÎµÄÖµ¡£
+ * Calendar:ï¿½ï¿½Ê±ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ê£¬ï¿½Â£ï¿½ï¿½Õ£ï¿½Ê±ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ãµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ë£¬ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½Æ´ï¿½ï¿½ï¿½İ¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	---		ï¿½ê£¬ï¿½Â£ï¿½ï¿½Õ£ï¿½Ê±ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ï¿½
+ *
+ * public int get(int field):ï¿½ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶Îµï¿½Öµï¿½ï¿½
  */
 public class CalendarDemo {
-	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		// ÈÕÀú×Ö¶ÎÒÑÓÉµ±Ç°ÈÕÆÚºÍÊ±¼ä³õÊ¼»¯£º
-		Calendar rightNow = Calendar.getInstance(); // ¶àÌ¬
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½Éµï¿½Ç°ï¿½ï¿½ï¿½Úºï¿½Ê±ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½
+        Calendar rightNow = Calendar.getInstance(); // ï¿½ï¿½Ì¬
 
-		// »ñÈ¡Äê
-		int year = rightNow.get(Calendar.YEAR);
-		System.out.println(year);
-		// »ñÈ¡ÔÂ
-		int month = rightNow.get(Calendar.MONTH);
-		System.out.println(month + 1);
-		// »ñÈ¡ÈÕ
-		int date = rightNow.get(Calendar.DATE);
-		System.out.println(date);
-		// »ñÈ¡Ê±
-		int hour = rightNow.get(Calendar.HOUR);
-		System.out.println(hour);
-		// »ñÈ¡·Ö
-		int minute = rightNow.get(Calendar.MINUTE);
-		System.out.println(minute);
-		// »ñÈ¡Ãë
-		int second = rightNow.get(Calendar.SECOND);
-		System.out.println(second);
-	}
+        // ï¿½ï¿½È¡ï¿½ï¿½
+        int year = rightNow.get(Calendar.YEAR);
+        System.out.println(year);
+        // ï¿½ï¿½È¡ï¿½ï¿½
+        int month = rightNow.get(Calendar.MONTH);
+        System.out.println(month + 1);
+        // ï¿½ï¿½È¡ï¿½ï¿½
+        int date = rightNow.get(Calendar.DATE);
+        System.out.println(date);
+        // ï¿½ï¿½È¡Ê±
+        int hour = rightNow.get(Calendar.HOUR);
+        System.out.println(hour);
+        // ï¿½ï¿½È¡ï¿½ï¿½
+        int minute = rightNow.get(Calendar.MINUTE);
+        System.out.println(minute);
+        // ï¿½ï¿½È¡ï¿½ï¿½
+        int second = rightNow.get(Calendar.SECOND);
+        System.out.println(second);
+    }
 }

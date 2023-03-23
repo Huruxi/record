@@ -1,56 +1,57 @@
 /*
-	¶¨ÒåÒ»¸öÀàDemo,ÆäÖĞ¶¨ÒåÒ»¸öÇóÁ½¸öÊı¾İºÍµÄ·½·¨£¬¶¨ÒåÒ»¸ö²âÊÔÁËTest£¬½øĞĞ²âÊÔ¡£
+	ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Demo,ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İºÍµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Testï¿½ï¿½ï¿½ï¿½ï¿½Ğ²ï¿½ï¿½Ô¡ï¿½
 
-	Ê²Ã´Ê±ºò¶¨Òå³ÉÔ±±äÁ¿ÄØ?
-	ÒªÏëÖªµÀÔÚÀàÖĞÊ²Ã´Ê±ºò¶¨Òå³ÉÔ±±äÁ¿£¬¾ÍÓ¦¸ÃÏÈË¼¿¼³ÉÔ±±äÁ¿ºÍÀàµÄ¹ØÏµ?
-	³ÉÔ±±äÁ¿ÊÇÃèÊöÀàµÄ»ù±¾ĞÅÏ¢µÄ¡£
-	Ò²¾ÍÊÇËµ£¬Ö»ÓĞºÍÀàÓĞ¹ØÏµµÄ±äÁ¿²Å¿ÉÒÔ¶¨ÒåÎª³ÉÔ±±äÁ¿¡£
+	Ê²Ã´Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+	Òªï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½Ïµ?
+	ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢ï¿½Ä¡ï¿½
+	Ò²ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½Ö»ï¿½Ğºï¿½ï¿½ï¿½ï¿½Ğ¹ï¿½Ïµï¿½Ä±ï¿½ï¿½ï¿½ï¿½Å¿ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½Îªï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class Demo {
-	private int x;
-	private int y;
+    private int x;
+    private int y;
 
-	public Demo() {}
+    public Demo() {
+    }
 
-	public Demo(int x,int y) {
-		this.x = x;
-		this.y = y;
-	}
+    public Demo(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
-	public void setX(int x) {
-		this.x = x;
-	}
+    public void setX(int x) {
+        this.x = x;
+    }
 
-	public int getX() {
-		return x;
-	}
+    public int getX() {
+        return x;
+    }
 
-	public void setY(int y) {
-		this.y = y;
-	}
+    public void setY(int y) {
+        this.y = y;
+    }
 
-	public int getY() {
-		return y;
-	}
+    public int getY() {
+        return y;
+    }
 
-	//³ÉÔ±±äÁ¿ÒÑ¾­ÓĞx,yÁË¡£ÕâÀï¾ÍÃ»ÓĞ±ØÒªÔÚ¶¨ÒåÁË
+    //ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½x,yï¿½Ë¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ğ±ï¿½Òªï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	/*
 	public int sum(int x,int y) {
 		return x + y;
 	}
 	*/
 
-	public int sum() {
-		return x + y;
-	}
+    public int sum() {
+        return x + y;
+    }
 }
 
 class Test {
-	public static void main(String[] args) {
-		Demo d = new Demo();
-		d.setX(10);
-		d.setY(20);
-		int result = d.sum();
-		System.out.println(result);
-	}
+    public static void main(String[] args) {
+        Demo d = new Demo();
+        d.setX(10);
+        d.setY(20);
+        int result = d.sum();
+        System.out.println(result);
+    }
 }

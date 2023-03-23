@@ -5,45 +5,45 @@ import java.util.Collection;
 
 /*
  * boolean addAll(Collection c)
- * boolean removeAll(Collection c):É¾³ýÒ»¸ö£¬¾ÍÊÇÉ¾³ý£¬·µ»Øtrue
- * boolean containsAll(Collection c):È«²¿°üº¬£¬²ÅÊÇ°üº¬¡£
+ * boolean removeAll(Collection c):É¾ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½true
+ * boolean containsAll(Collection c):È«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½
  * boolean retainAll(Collection c)
  */
 public class CollectionDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ
-		Collection c1 = new ArrayList();
-		c1.add("abc1");
-		c1.add("abc2");
-		c1.add("abc3");
-		c1.add("abc4");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Collection c1 = new ArrayList();
+        c1.add("abc1");
+        c1.add("abc2");
+        c1.add("abc3");
+        c1.add("abc4");
 
-		// ´´½¨¼¯ºÏ
-		Collection c2 = new ArrayList();
-		// c2.add("abc1");
-		// c2.add("abc2");
-		// c2.add("abc3");
-		// c2.add("abc4");
-		c2.add("abc5");
-		c2.add("abc6");
-		c2.add("abc7");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Collection c2 = new ArrayList();
+        // c2.add("abc1");
+        // c2.add("abc2");
+        // c2.add("abc3");
+        // c2.add("abc4");
+        c2.add("abc5");
+        c2.add("abc6");
+        c2.add("abc7");
 
-		// boolean addAll(Collection c)
-		// System.out.println("addAll:" + c1.addAll(c2));
+        // boolean addAll(Collection c)
+        // System.out.println("addAll:" + c1.addAll(c2));
 
-		// boolean removeAll(Collection c)
-		// System.out.println("removeAll:" + c1.removeAll(c2));
+        // boolean removeAll(Collection c)
+        // System.out.println("removeAll:" + c1.removeAll(c2));
 
-		// boolean containsAll(Collection c)
-		// System.out.println("containsAll:" + c1.containsAll(c2));
+        // boolean containsAll(Collection c)
+        // System.out.println("containsAll:" + c1.containsAll(c2));
 
-		// boolean retainAll(Collection c)
-		System.out.println("retainAll:" + c1.retainAll(c2));
-		/*
-		 * Èç¹ûÎÒÓÐÁ½¸ö¼¯ºÏA£¬B¡£ÓÃA¶ÔB×ö½»¼¯ ½»¼¯ÔªËØ´æ´¢ÔÚA¼¯ºÏ£¬B¼¯ºÏ²»·¢Éú¸Ä±ä¡£ ·µ»ØÖµ±í´ïÊÇA¼¯ºÏÊÇ·ñ·¢Éú¹ý¸Ä±ä¡£
-		 */
+        // boolean retainAll(Collection c)
+        System.out.println("retainAll:" + c1.retainAll(c2));
+        /*
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½Bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø´æ´¢ï¿½ï¿½Aï¿½ï¿½ï¿½Ï£ï¿½Bï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ä¡£ ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ä¡£
+         */
 
-		System.out.println("c1:" + c1);
-		System.out.println("c2:" + c2);
-	}
+        System.out.println("c1:" + c1);
+        System.out.println("c2:" + c2);
+    }
 }

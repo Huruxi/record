@@ -4,50 +4,50 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /*
- * ÌØÓÐ¹¦ÄÜ£º
- * 		A:Ìí¼ÓÔªËØ
+ * ï¿½ï¿½ï¿½Ð¹ï¿½ï¿½Ü£ï¿½
+ * 		A:ï¿½ï¿½ï¿½Ôªï¿½ï¿½
  * 			public void addElement(Object obj)		--		add(Object obj)
- * 		B:»ñÈ¡ÔªËØ
+ * 		B:ï¿½ï¿½È¡Ôªï¿½ï¿½
  *			public Object elementAt(int index)		--		get(int index)
  *			public Enumeration elements()			--		Iterator iterator()
  *						hasMoreElements()							hasNext()
  *						nextElement()								next()
  *
- *		JDK°æ±¾Éý¼¶£º
- *			A:°²È«
- *			B:Ð§ÂÊ
- *			C:¼ò»¯ÊéÐ´
+ *		JDKï¿½æ±¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *			A:ï¿½ï¿½È«
+ *			B:Ð§ï¿½ï¿½
+ *			C:ï¿½ï¿½ï¿½ï¿½Ð´
  */
 public class VectorDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		// Collection c = new Vector();
-		// List list = new Vector();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        // Collection c = new Vector();
+        // List list = new Vector();
 
-		Vector v = new Vector();
+        Vector v = new Vector();
 
-		// public void addElement(Object obj)
-		v.addElement("hello");
-		v.addElement("world");
-		v.addElement("java");
+        // public void addElement(Object obj)
+        v.addElement("hello");
+        v.addElement("world");
+        v.addElement("java");
 
-		// public Object elementAt(int index)
-		// System.out.println(v.elementAt(0));
-		// System.out.println(v.elementAt(1));
-		// System.out.println(v.elementAt(2));
-		// ÆÕÍ¨for
-		// for (int x = 0; x < v.size(); x++) {
-		// String s = (String) v.elementAt(x);
-		// System.out.println(s);
-		// }
+        // public Object elementAt(int index)
+        // System.out.println(v.elementAt(0));
+        // System.out.println(v.elementAt(1));
+        // System.out.println(v.elementAt(2));
+        // ï¿½ï¿½Í¨for
+        // for (int x = 0; x < v.size(); x++) {
+        // String s = (String) v.elementAt(x);
+        // System.out.println(s);
+        // }
 
-		// ÀàËÆµü´úÆ÷µÄ·½Ê½
-		Enumeration en = v.elements();
-		while (en.hasMoreElements()) {
-			String s = (String) en.nextElement();
-			System.out.println(s);
-		}
+        // ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½Ê½
+        Enumeration en = v.elements();
+        while (en.hasMoreElements()) {
+            String s = (String) en.nextElement();
+            System.out.println(s);
+        }
 
-		System.out.println("v:" + v);
-	}
+        System.out.println("v:" + v);
+    }
 }

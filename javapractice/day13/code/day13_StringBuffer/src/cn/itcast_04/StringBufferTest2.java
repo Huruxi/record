@@ -1,57 +1,57 @@
 package cn.itcast_04;
 
 /*
- * °Ñ×Ö·û´®·´×ª
+ * ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ª
  */
 public class StringBufferTest2 {
-	public static void main(String[] args) {
-		String s = "Ï¼ÇàÁÖ°®ÎÒ";
+    public static void main(String[] args) {
+        String s = "Ï¼ï¿½ï¿½ï¿½Ö°ï¿½ï¿½ï¿½";
 
-		// ²âÊÔ·½Ê½1
-		// String s2 = reverse(s);
-		// System.out.println(s2);
+        // ï¿½ï¿½ï¿½Ô·ï¿½Ê½1
+        // String s2 = reverse(s);
+        // System.out.println(s2);
 
-		// ²âÊÔ·½Ê½2
-		// String s3 = reverse(s);
-		// System.out.println(s3);
+        // ï¿½ï¿½ï¿½Ô·ï¿½Ê½2
+        // String s3 = reverse(s);
+        // System.out.println(s3);
 
-		// ²âÊÔ·½Ê½3
-		String s4 = reverse(s);
-		System.out.println(s4);
-	}
+        // ï¿½ï¿½ï¿½Ô·ï¿½Ê½3
+        String s4 = reverse(s);
+        System.out.println(s4);
+    }
 
-	// ·½Ê½1
-	// public static String reverse(String str) {
-	// String s = "";
-	//
-	// char[] chs = str.toCharArray();
-	// for (int x = chs.length - 1; x >= 0; x--) {
-	// s += chs[x];
-	// }
-	//
-	// return s;
-	// }
+    // ï¿½ï¿½Ê½1
+    // public static String reverse(String str) {
+    // String s = "";
+    //
+    // char[] chs = str.toCharArray();
+    // for (int x = chs.length - 1; x >= 0; x--) {
+    // s += chs[x];
+    // }
+    //
+    // return s;
+    // }
 
-	// ·½Ê½2
-	// public static String reverse(String str) {
-	// // °Ñ×Ö·û´®×ª³ÉÊı×é
-	// char[] chs = str.toCharArray();
-	// // °ÑÊı×éµÄÔªËØ·´×ª
-	// for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
-	// char temp = chs[start];
-	// chs[start] = chs[end];
-	// chs[end] = temp;
-	// }
-	// // °ÑÊı×é×ª³É×Ö·û´®·µ»Ø
-	// return String.valueOf(chs);
-	// }
+    // ï¿½ï¿½Ê½2
+    // public static String reverse(String str) {
+    // // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // char[] chs = str.toCharArray();
+    // // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø·ï¿½×ª
+    // for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
+    // char temp = chs[start];
+    // chs[start] = chs[end];
+    // chs[end] = temp;
+    // }
+    // // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // return String.valueOf(chs);
+    // }
 
-	// ·½Ê½3
-	public static String reverse(String str) {
-		StringBuffer sb = new StringBuffer(str);
-		sb.reverse();
-		return new String(sb);
-		
-		//return new String(new StringBuffer(str).reverse());
-	}
+    // ï¿½ï¿½Ê½3
+    public static String reverse(String str) {
+        StringBuffer sb = new StringBuffer(str);
+        sb.reverse();
+        return new String(sb);
+
+        //return new String(new StringBuffer(str).reverse());
+    }
 }

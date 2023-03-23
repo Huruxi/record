@@ -1,38 +1,38 @@
 /*
-	ifÓï¾ä×¢ÒâÊÂÏî£º
-		A:¹ØÏµ±í´ïÊ½ÎŞÂÛ¼òµ¥»¹ÊÇ¸´ÔÓ£¬½á¹û±ØĞëÊÇbooleanÀàĞÍ
-		B:ÔÚ×öÅĞ¶ÏµÄÊ±ºò£¬½¨Òé³£Á¿·Å×ó±ß¡£
-		C:ifÓï¾ä¿ØÖÆµÄÓï¾äÌåÈç¹ûÊÇÒ»ÌõÓï¾ä£¬´óÀ¨ºÅ¿ÉÒÔÊ¡ÂÔ£»
-		  Èç¹ûÊÇ¶àÌõÓï¾ä£¬¾Í²»ÄÜÊ¡ÂÔ¡£½¨ÒéÓÀÔ¶²»ÒªÊ¡ÂÔ
-		D:Ò»°ãÀ´Ëµ£ºÓĞ×ó´óÀ¨ºÅ¾ÍÃ»ÓĞ·ÖºÅ£¬ÓĞ·ÖºÅ¾ÍÃ»ÓĞ×ó´óÀ¨ºÅ
+	ifï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½î£º
+		A:ï¿½ï¿½Ïµï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Û¼òµ¥»ï¿½ï¿½Ç¸ï¿½ï¿½Ó£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½booleanï¿½ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶Ïµï¿½Ê±ï¿½ò£¬½ï¿½ï¿½é³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¡ï¿½
+		C:ifï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½Å¿ï¿½ï¿½ï¿½Ê¡ï¿½Ô£ï¿½
+		  ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½Í²ï¿½ï¿½ï¿½Ê¡ï¿½Ô¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ÒªÊ¡ï¿½ï¿½
+		D:Ò»ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¾ï¿½Ã»ï¿½Ğ·ÖºÅ£ï¿½ï¿½Ğ·ÖºÅ¾ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class IfDemo2 {
-	public static void main(String[] args) {
-		int x = 10;
-		int y = 20;
-		int z = 30;
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+        int z = 30;
 
-		if(x > y) {
-			System.out.println("hello");
-		}
+        if (x > y) {
+            System.out.println("hello");
+        }
 
-		//ÕâÀï²»ÊÇbooleanÀàĞÍ
+        //ï¿½ï¿½ï¿½ï²»ï¿½ï¿½booleanï¿½ï¿½ï¿½ï¿½
 		/*
 		if(30) {
 			System.out.println("world");
 		}
 		*/
-		
-		if(true) {
-			System.out.println("java");
-		}
 
-		if(x<y && x<z) {
-			System.out.println("android");
-		}
-		System.out.println("-----------");
+        if (true) {
+            System.out.println("java");
+        }
 
-		boolean flag = false;
+        if (x < y && x < z) {
+            System.out.println("android");
+        }
+        System.out.println("-----------");
+
+        boolean flag = false;
 		/*
 		if(flag == true) {
 			System.out.println("javaweb");
@@ -50,24 +50,24 @@ class IfDemo2 {
 			System.out.println("javaweb");
 		}
 		*/
-		System.out.println("-----------");
+        System.out.println("-----------");
 
-		if(false) {
-			System.out.println("haha");
-			System.out.println("hehe");
-		}
+        if (false) {
+            System.out.println("haha");
+            System.out.println("hehe");
+        }
 
-		System.out.println("heihei");
+        System.out.println("heihei");
 
-		System.out.println("-----------");
+        System.out.println("-----------");
 
-		if(false);
+        if (false) ;
 
-		//´úÂë¿é
-		{
-			System.out.println("111");
-			System.out.println("222");
-		}
-		System.out.println("over");
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½
+        {
+            System.out.println("111");
+            System.out.println("222");
+        }
+        System.out.println("over");
+    }
 }

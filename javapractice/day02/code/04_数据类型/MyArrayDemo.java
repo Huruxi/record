@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
 class MyArrayDemo {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-		System.out.println("ÇëÊäÈëÈý¸öÊý¾Ý£º");
-		int[] arr;
-		int i = 0;
-		arr = new int[3];
-		System.out.println(arr);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int[] arr;
+        int i = 0;
+        arr = new int[3];
+        System.out.println(arr);
 
-		while(true) {
-			arr[i] = sc.nextInt();
-			i++;
-			if (i >= arr.length) {
-				break;
-			}
-		}
+        while (true) {
+            arr[i] = sc.nextInt();
+            i++;
+            if (i >= arr.length) {
+                break;
+            }
+        }
 
 		/*
 		for (i = 0; i<arr.length; i++) {
@@ -25,14 +25,14 @@ class MyArrayDemo {
 		}
 		*/
 
-		for (int j=0; j<arr.length; j++) {
-		System.out.println("arr[" +j +"]=" +arr[j]);
-		}
+        for (int j = 0; j < arr.length; j++) {
+            System.out.println("arr[" + j + "]=" + arr[j]);
+        }
 
-		int temp = 0;
-		for (int j=1; j<arr.length; j++) {
-			temp = arr[j-1]>=arr[j]?arr[j-1]:arr[j];
-		}
-		System.out.println("arrÊý×éÖÐ×î´óÖµÎª£º" +temp);
-	}
+        int temp = 0;
+        for (int j = 1; j < arr.length; j++) {
+            temp = arr[j - 1] >= arr[j] ? arr[j - 1] : arr[j];
+        }
+        System.out.println("arrï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÖµÎªï¿½ï¿½" + temp);
+    }
 }

@@ -1,60 +1,60 @@
 package cn.itcast_05;
 
 /*
- * StringµÄ×ª»»¹¦ÄÜ£º
- * byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊý×é
- * char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊý×é
- * static String valueOf(char[] chs):°Ñ×Ö·ûÊý×é×ª³É×Ö·û´®
- * static String valueOf(int i):°ÑintÀàÐÍµÄÊý¾Ý×ª³É×Ö·û´®
- * 		°ÑÈÎÒâÀàÐÍ×ª»»Îª×Ö·û´®µÄ·½·¨¡£
- * String toLowerCase():°Ñ×Ö·û´®×ªÐ¡Ð´
- * String toUpperCase():°Ñ×Ö·û´®×ª´óÐ´
- * String concat(String str):×Ö·û´®µÄÁ¬½Ó
+ * Stringï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½
+ * byte[] getBytes():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * char[] toCharArray():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * static String valueOf(char[] chs):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * static String valueOf(int i):ï¿½ï¿½intï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * String toLowerCase():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªÐ¡Ð´
+ * String toUpperCase():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Ð´
+ * String concat(String str):ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class StringDemo {
-	public static void main(String[] args) {
-		// ¶¨ÒåÒ»¸ö×Ö·û´®
-		String s = "abcde";
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        String s = "abcde";
 
-		// byte[] getBytes():°Ñ×Ö·û´®×ª»»Îª×Ö½ÚÊý×é
-		byte[] bys = s.getBytes();
-		for (int x = 0; x < bys.length; x++) {
-			System.out.println(bys[x]);
-		}
-		System.out.println("----------------");
+        // byte[] getBytes():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+        byte[] bys = s.getBytes();
+        for (int x = 0; x < bys.length; x++) {
+            System.out.println(bys[x]);
+        }
+        System.out.println("----------------");
 
-		// char[] toCharArray():°Ñ×Ö·û´®×ª»»Îª×Ö·ûÊý×é
-		char[] chs = s.toCharArray();
-		for (int x = 0; x < chs.length; x++) {
-			System.out.println(chs[x]);
-		}
-		System.out.println("----------------");
+        // char[] toCharArray():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        char[] chs = s.toCharArray();
+        for (int x = 0; x < chs.length; x++) {
+            System.out.println(chs[x]);
+        }
+        System.out.println("----------------");
 
-		// static String valueOf(char[] chs):°Ñ×Ö·ûÊý×é×ª³É×Ö·û´®
-		String s2 = String.valueOf(chs);
-		System.out.println("s2:" + s2);
-		System.out.println("----------------");
+        // static String valueOf(char[] chs):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        String s2 = String.valueOf(chs);
+        System.out.println("s2:" + s2);
+        System.out.println("----------------");
 
-		// static String valueOf(int i):°ÑintÀàÐÍµÄÊý¾Ý×ª³É×Ö·û´®
-		int number = 100;
-		String s3 = number + "";
-		String s4 = String.valueOf(number);
-		System.out.println("s3:" + s3);
-		System.out.println("s4:" + s4);
-		System.out.println("----------------");
+        // static String valueOf(int i):ï¿½ï¿½intï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        int number = 100;
+        String s3 = number + "";
+        String s4 = String.valueOf(number);
+        System.out.println("s3:" + s3);
+        System.out.println("s4:" + s4);
+        System.out.println("----------------");
 
-		// String toLowerCase():°Ñ×Ö·û´®×ªÐ¡Ð´
-		// String toUpperCase():°Ñ×Ö·û´®×ª´óÐ´
-		System.out.println("toLowerCase():" + "HelloWorld".toLowerCase());
-		System.out.println("toUpperCase():" + "HelloWorld".toUpperCase());
-		System.out.println("----------------");
+        // String toLowerCase():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªÐ¡Ð´
+        // String toUpperCase():ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Ð´
+        System.out.println("toLowerCase():" + "HelloWorld".toLowerCase());
+        System.out.println("toUpperCase():" + "HelloWorld".toUpperCase());
+        System.out.println("----------------");
 
-		// String concat(String str):×Ö·û´®µÄÁ¬½Ó
-		String s5 = "hello";
-		String s6 = "world";
-		String s7 = s5.concat(s6);
-		String s8 = s5 + s6;
-		System.out.println("s7:" + s7);
-		System.out.println("s8:" + s8);
-	}
+        // String concat(String str):ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        String s5 = "hello";
+        String s6 = "world";
+        String s7 = s5.concat(s6);
+        String s8 = s5 + s6;
+        System.out.println("s7:" + s7);
+        System.out.println("s8:" + s8);
+    }
 }

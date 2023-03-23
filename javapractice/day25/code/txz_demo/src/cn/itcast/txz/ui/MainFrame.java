@@ -12,256 +12,256 @@ import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-//Ìí¼ÓÓÎÏ·ËµÃ÷
-//Ìí¼Ó±êÌâËµÃ÷
-//ÓÎÏ·½áÊø¶Ô»°¿òÍ¼±ê¹ã¸æ
-//ÓÎÏ·½áÊø¶Ô»°¿ò±êÌâ¹ã¸æ´Ê
-//ËùÓĞÇ¶Èë¹ã¸æµÄÇøÓòÄÚÈİ
+//ï¿½ï¿½ï¿½ï¿½ï¿½Ï·Ëµï¿½ï¿½
+//ï¿½ï¿½Ó±ï¿½ï¿½ï¿½Ëµï¿½ï¿½
+//ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 public class MainFrame extends JFrame implements KeyListener {
-	private Container panel;
-	private JLabel player;
-	// ÈËÎïËù´¦ĞĞ
-	private int playerX;
-	// ÈËÎïËù´¦ÁĞ
-	private int playerY;
-	// ÈÎÎñÍê³É¼ÆÊıÆ÷
-	int count = 0;
-	// ÈÎÎñÍê³É×ÜÊı
-	int total = 3;
+    private Container panel;
+    private JLabel player;
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    private int playerX;
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    private int playerY;
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½ï¿½
+    int count = 0;
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    int total = 3;
 
-	public MainFrame() {
-		// Ö÷´°ÌåUI³õÊ¼»¯
-		this.mainFrameBaseUI();
-		// UIÊı¾İ³õÊ¼»¯
-		this.dateInit();
-		// UI³õÊ¼»¯
-		this.dateUI();
-		// ±³¾°µØ°åUI³õÊ¼»¯
-		this.backgroundUI();
-		// ´°ÌåÌí¼Ó¼üÅÌ¼àÌı
-		this.addKeyListener(this);
-		this.setVisible(true);
-	}
+    public MainFrame() {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UIï¿½ï¿½Ê¼ï¿½ï¿½
+        this.mainFrameBaseUI();
+        // UIï¿½ï¿½ï¿½İ³ï¿½Ê¼ï¿½ï¿½
+        this.dateInit();
+        // UIï¿½ï¿½Ê¼ï¿½ï¿½
+        this.dateUI();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ø°ï¿½UIï¿½ï¿½Ê¼ï¿½ï¿½
+        this.backgroundUI();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½ï¿½Ì¼ï¿½ï¿½ï¿½
+        this.addKeyListener(this);
+        this.setVisible(true);
+    }
 
-	private JLabel[][] uis = new JLabel[12][16];
+    private JLabel[][] uis = new JLabel[12][16];
 
-	private void dateUI() {
-		// Ç½³õÊ¼»¯
-		for (int i = 0; i < dates.length; i++) {
-			for (int j = 0; j < dates[i].length; j++) {
-				if (dates[i][j] == 1) {
-					JLabel temp = new JLabel(new ImageIcon("1.png"));
-					temp.setBounds(10 + j * 50, 10 + i * 50, 50, 50);
-					this.panel.add(temp);
-				}
-			}
-		}
-		// ÈËÎï³õÊ¼Î»ÖÃµÚ3ĞĞ£¬µÚ3ÁĞ(´æÔÚµÚ0ĞĞµÚ0ÁĞ)
-		this.playerX = 3;
-		this.playerY = 3;
-		player = new JLabel(new ImageIcon("-10.png"));
-		player.setBounds(10 + playerX * 50, 10 + playerY * 50, 50, 50);
-		this.panel.add(player);
+    private void dateUI() {
+        // Ç½ï¿½ï¿½Ê¼ï¿½ï¿½
+        for (int i = 0; i < dates.length; i++) {
+            for (int j = 0; j < dates[i].length; j++) {
+                if (dates[i][j] == 1) {
+                    JLabel temp = new JLabel(new ImageIcon("1.png"));
+                    temp.setBounds(10 + j * 50, 10 + i * 50, 50, 50);
+                    this.panel.add(temp);
+                }
+            }
+        }
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼Î»ï¿½Ãµï¿½3ï¿½Ğ£ï¿½ï¿½ï¿½3ï¿½ï¿½(ï¿½ï¿½ï¿½Úµï¿½0ï¿½Ğµï¿½0ï¿½ï¿½)
+        this.playerX = 3;
+        this.playerY = 3;
+        player = new JLabel(new ImageIcon("-10.png"));
+        player.setBounds(10 + playerX * 50, 10 + playerY * 50, 50, 50);
+        this.panel.add(player);
 
-		// Ä¿±ê³õÊ¼»¯
-		// ÓëtotalÓĞ¹Ø
-		JLabel tar1 = new JLabel(new ImageIcon("8.png"));
-		tar1.setBounds(10 + 14 * 50, 10 + 5 * 50, 50, 50);
-		this.panel.add(tar1);
-		dates[5][14] = LogicHelper.TARGET;
-		uis[5][14] = tar1;
-		JLabel tar2 = new JLabel(new ImageIcon("8.png"));
-		tar2.setBounds(10 + 14 * 50, 10 + 6 * 50, 50, 50);
-		this.panel.add(tar2);
-		dates[6][14] = LogicHelper.TARGET;
-		uis[6][14] = tar2;
-		JLabel tar3 = new JLabel(new ImageIcon("8.png"));
-		tar3.setBounds(10 + 14 * 50, 10 + 7 * 50, 50, 50);
-		this.panel.add(tar3);
-		dates[7][14] = LogicHelper.TARGET;
-		uis[7][14] = tar3;
+        // Ä¿ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
+        // ï¿½ï¿½totalï¿½Ğ¹ï¿½
+        JLabel tar1 = new JLabel(new ImageIcon("8.png"));
+        tar1.setBounds(10 + 14 * 50, 10 + 5 * 50, 50, 50);
+        this.panel.add(tar1);
+        dates[5][14] = LogicHelper.TARGET;
+        uis[5][14] = tar1;
+        JLabel tar2 = new JLabel(new ImageIcon("8.png"));
+        tar2.setBounds(10 + 14 * 50, 10 + 6 * 50, 50, 50);
+        this.panel.add(tar2);
+        dates[6][14] = LogicHelper.TARGET;
+        uis[6][14] = tar2;
+        JLabel tar3 = new JLabel(new ImageIcon("8.png"));
+        tar3.setBounds(10 + 14 * 50, 10 + 7 * 50, 50, 50);
+        this.panel.add(tar3);
+        dates[7][14] = LogicHelper.TARGET;
+        uis[7][14] = tar3;
 
-		// Ïä×Ó³õÊ¼»¯
-		// ÓëtotalÓĞ¹Ø
-		JLabel box1 = new JLabel(new ImageIcon("4.png"));
-		box1.setBounds(10 + 7 * 50, 10 + 3 * 50, 50, 50);
-		this.panel.add(box1);
-		dates[3][7] = LogicHelper.BOX;
-		uis[3][7] = box1;
-		JLabel box2 = new JLabel(new ImageIcon("4.png"));
-		box2.setBounds(10 + 7 * 50, 10 + 5 * 50, 50, 50);
-		this.panel.add(box2);
-		dates[5][7] = LogicHelper.BOX;
-		uis[5][7] = box2;
-		JLabel box3 = new JLabel(new ImageIcon("4.png"));
-		box3.setBounds(10 + 7 * 50, 10 + 7 * 50, 50, 50);
-		this.panel.add(box3);
-		dates[7][7] = LogicHelper.BOX;
-		uis[7][7] = box3;
+        // ï¿½ï¿½ï¿½Ó³ï¿½Ê¼ï¿½ï¿½
+        // ï¿½ï¿½totalï¿½Ğ¹ï¿½
+        JLabel box1 = new JLabel(new ImageIcon("4.png"));
+        box1.setBounds(10 + 7 * 50, 10 + 3 * 50, 50, 50);
+        this.panel.add(box1);
+        dates[3][7] = LogicHelper.BOX;
+        uis[3][7] = box1;
+        JLabel box2 = new JLabel(new ImageIcon("4.png"));
+        box2.setBounds(10 + 7 * 50, 10 + 5 * 50, 50, 50);
+        this.panel.add(box2);
+        dates[5][7] = LogicHelper.BOX;
+        uis[5][7] = box2;
+        JLabel box3 = new JLabel(new ImageIcon("4.png"));
+        box3.setBounds(10 + 7 * 50, 10 + 7 * 50, 50, 50);
+        this.panel.add(box3);
+        dates[7][7] = LogicHelper.BOX;
+        uis[7][7] = box3;
 
-	}
+    }
 
-	private int[][] dates = new int[12][16];
+    private int[][] dates = new int[12][16];
 
-	private void dateInit() {
-		dates = new int[][] {
-				{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
-				{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
-				{ 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1 },
-				{ 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
-				{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
-				{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, };
-	}
+    private void dateInit() {
+        dates = new int[][]{
+                {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
+                {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                {1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1},
+                {1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1},
+                {1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1},
+                {1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 1},
+                {1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1},
+                {1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1},
+                {1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1},
+                {1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                {1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1},
+                {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},};
+    }
 
-	private void backgroundUI() {
-		// ±³¾°Í¼Æ¬ĞÅÏ¢ÉèÖÃ
-		JLabel floor = new JLabel(new ImageIcon("floor.png"));
-		floor.setBounds(10, 10, 800, 600);
-		this.panel.add(floor);
-	}
+    private void backgroundUI() {
+        // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
+        JLabel floor = new JLabel(new ImageIcon("floor.png"));
+        floor.setBounds(10, 10, 800, 600);
+        this.panel.add(floor);
+    }
 
-	private void mainFrameBaseUI() {
-		this.panel = this.getContentPane();
-		this.setSize(826, 650);
-		this.setLocationRelativeTo(null);
-		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.panel.setLayout(null);
-		// ÉèÖÃ´°Ìå±êÌâÀ¸,Ç¿»¯´«ÖÇ²¥¿ÍÆ·ÅÆÒâÊ¶,Í¬Ê±Ã¿´ÎÉÏ¿Î½áÊø¶¼Òª¶Ô°æ±¾ºÅv1.0½øĞĞµİÔö±ä»¯
-		this.setTitle("ÍÆÏä×Óv1.0 - java.itcast.cn  ´«ÖÇ²¥¿ÍJavaÅàÑµÑ§Ôº£¬È«¹ú×îºÃµÄJavaÅàÑµ£¬¹úÄÚ×î¶¥¼âµÄJavaÅàÑµ¿Î³Ì");
-		this.setResizable(false);
-		this.getContentPane().setLayout(null);
-	}
+    private void mainFrameBaseUI() {
+        this.panel = this.getContentPane();
+        this.setSize(826, 650);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.panel.setLayout(null);
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½Ê¶,Í¬Ê±Ã¿ï¿½ï¿½ï¿½Ï¿Î½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ô°æ±¾ï¿½ï¿½v1.0ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ä»¯
+        this.setTitle("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½v1.0 - java.itcast.cn  ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½Javaï¿½ï¿½ÑµÑ§Ôºï¿½ï¿½È«ï¿½ï¿½ï¿½ï¿½Ãµï¿½Javaï¿½ï¿½Ñµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½î¶¥ï¿½ï¿½ï¿½Javaï¿½ï¿½Ñµï¿½Î³ï¿½");
+        this.setResizable(false);
+        this.getContentPane().setLayout(null);
+    }
 
-	// ÒÆ¶¯¿ØÖÆ£¬»ùÓÚÔ­Ê¼Î»ÖÃ½øĞĞÒÆ¶¯£¬µÚ2²ÎÊı±íÊ¾´¹Ö±·½ÏòÒÆ¶¯£¬¼´ĞĞÒÆ¶¯£¬µÚ3²ÎÊı±íÊ¾Ë®Æ½·½ÏòÒÆ¶¯£¬¼´ÁĞÒÆ¶¯
-	private static void move(JLabel c, int vMoveType, int hMoveType) {
-		c.setLocation(c.getX() - hMoveType * 50, c.getY() - vMoveType * 50);
-	}
+    // ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½Æ£ï¿½ï¿½ï¿½ï¿½ï¿½Ô­Ê¼Î»ï¿½Ã½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
+    private static void move(JLabel c, int vMoveType, int hMoveType) {
+        c.setLocation(c.getX() - hMoveType * 50, c.getY() - vMoveType * 50);
+    }
 
-	public void keyPressed(KeyEvent e) {
-		int keyCode = e.getKeyCode();
-		int x = keyCode % 2 == 0 ? 39 - keyCode : 0;
-		int y = keyCode % 2 == 1 ? 38 - keyCode : 0;
+    public void keyPressed(KeyEvent e) {
+        int keyCode = e.getKeyCode();
+        int x = keyCode % 2 == 0 ? 39 - keyCode : 0;
+        int y = keyCode % 2 == 1 ? 38 - keyCode : 0;
 
-		// ÅöÇ½
-		if (keyCode >= 37 && keyCode <= 40) {
-			// ÈËÎïÍ¼Æ¬ÇĞ»»
-			// ÉÏ10
-			// ÏÂ-10
-			// ×ó01
-			// ÓÒ0-1
-			player.setIcon(new ImageIcon(x + "" + y + ".png"));
-			// ÅöµØ°å¼ì²â,ÅöÄ¿±ê¼ì²â
-			if (dates[playerX - x][playerY - y] == LogicHelper.FLOOR
-					|| dates[playerX - x][playerY - y] == LogicHelper.TARGET) {
-				move(player, x, y);
-				playerX = playerX - x;
-				playerY = playerY - y;
-				return;
-			}
-			// ÅöÏä×Ó¼ì²â
-			if (dates[playerX - x][playerY - y] == LogicHelper.BOX
-					|| dates[playerX - x][playerY - y] == LogicHelper.BOX_AND_TARGET) {
-				// Í¬·½ÏòÊÇ·ñÎª¿ÕµØ°å»òÄ¿±êÎ»ÖÃ
-				// »ñÈ¡Ç°·½ÒÆ¶¯ÕÏ°­ÎïÂë
-				int code1 = dates[playerX - x][playerY - y];
-				int code2 = dates[playerX - x * 2][playerY - y * 2];
-				if (code2 == LogicHelper.FLOOR || code2 == LogicHelper.TARGET) {
-					// Ïä×ÓÒÆ¶¯
-					JLabel box = uis[playerX - x][playerY - y];
-					move(box, x, y);
-					// uisÄ£ĞÍ¸üĞÂ
-					uis[playerX - x * 2][playerY - y * 2] = uis[playerX - x][playerY
-							- y];
-					uis[playerX - x][playerY - y] = null;
+        // ï¿½ï¿½Ç½
+        if (keyCode >= 37 && keyCode <= 40) {
+            // ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½Ğ»ï¿½
+            // ï¿½ï¿½10
+            // ï¿½ï¿½-10
+            // ï¿½ï¿½01
+            // ï¿½ï¿½0-1
+            player.setIcon(new ImageIcon(x + "" + y + ".png"));
+            // ï¿½ï¿½ï¿½Ø°ï¿½ï¿½ï¿½,ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½
+            if (dates[playerX - x][playerY - y] == LogicHelper.FLOOR
+                    || dates[playerX - x][playerY - y] == LogicHelper.TARGET) {
+                move(player, x, y);
+                playerX = playerX - x;
+                playerY = playerY - y;
+                return;
+            }
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ó¼ï¿½ï¿½
+            if (dates[playerX - x][playerY - y] == LogicHelper.BOX
+                    || dates[playerX - x][playerY - y] == LogicHelper.BOX_AND_TARGET) {
+                // Í¬ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Îªï¿½ÕµØ°ï¿½ï¿½Ä¿ï¿½ï¿½Î»ï¿½ï¿½
+                // ï¿½ï¿½È¡Ç°ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ï¿½ï¿½
+                int code1 = dates[playerX - x][playerY - y];
+                int code2 = dates[playerX - x * 2][playerY - y * 2];
+                if (code2 == LogicHelper.FLOOR || code2 == LogicHelper.TARGET) {
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
+                    JLabel box = uis[playerX - x][playerY - y];
+                    move(box, x, y);
+                    // uisÄ£ï¿½Í¸ï¿½ï¿½ï¿½
+                    uis[playerX - x * 2][playerY - y * 2] = uis[playerX - x][playerY
+                            - y];
+                    uis[playerX - x][playerY - y] = null;
 
-					// datesÄ£ĞÍ¸üĞÂ
-					// ´ÓÏä×Óµ½¿ÕµØ
-					if (code1 == LogicHelper.BOX && code2 == LogicHelper.FLOOR) {
-						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX;
-						dates[playerX - x][playerY - y] = LogicHelper.FLOOR;
-					}
-					// ´ÓÏä×Óµ½Ä¿±ê
-					if (code1 == LogicHelper.BOX && code2 == LogicHelper.TARGET) {
-						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX_AND_TARGET;
-						dates[playerX - x][playerY - y] = LogicHelper.FLOOR;
-						// ¸Ä±äÏä×ÓÄ£ĞÍ
-						box.setIcon(new ImageIcon("40.png"));
-						count++;
-					}
-					// ´ÓÏä×ÓÄ¿±êµ½¿ÕµØ
-					if (code1 == LogicHelper.BOX_AND_TARGET
-							&& code2 == LogicHelper.FLOOR) {
-						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX;
-						dates[playerX - x][playerY - y] = LogicHelper.TARGET;
-						// ¸Ä±äÏä×ÓÄ£ĞÍ
-						box.setIcon(new ImageIcon("4.png"));
-						count--;
-					}
-					// ´ÓÏä×ÓÄ¿±êµ½Ä¿±ê
-					if (code1 == LogicHelper.BOX_AND_TARGET
-							&& code2 == LogicHelper.TARGET) {
-						dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX_AND_TARGET;
-						dates[playerX - x][playerY - y] = LogicHelper.TARGET;
-						// ¸Ä±äÏä×ÓÄ£ĞÍ
-						box.setIcon(new ImageIcon("40.png"));
-					}
+                    // datesÄ£ï¿½Í¸ï¿½ï¿½ï¿½
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½Õµï¿½
+                    if (code1 == LogicHelper.BOX && code2 == LogicHelper.FLOOR) {
+                        dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX;
+                        dates[playerX - x][playerY - y] = LogicHelper.FLOOR;
+                    }
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Ä¿ï¿½ï¿½
+                    if (code1 == LogicHelper.BOX && code2 == LogicHelper.TARGET) {
+                        dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX_AND_TARGET;
+                        dates[playerX - x][playerY - y] = LogicHelper.FLOOR;
+                        // ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+                        box.setIcon(new ImageIcon("40.png"));
+                        count++;
+                    }
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½êµ½ï¿½Õµï¿½
+                    if (code1 == LogicHelper.BOX_AND_TARGET
+                            && code2 == LogicHelper.FLOOR) {
+                        dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX;
+                        dates[playerX - x][playerY - y] = LogicHelper.TARGET;
+                        // ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+                        box.setIcon(new ImageIcon("4.png"));
+                        count--;
+                    }
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½êµ½Ä¿ï¿½ï¿½
+                    if (code1 == LogicHelper.BOX_AND_TARGET
+                            && code2 == LogicHelper.TARGET) {
+                        dates[playerX - x * 2][playerY - y * 2] = LogicHelper.BOX_AND_TARGET;
+                        dates[playerX - x][playerY - y] = LogicHelper.TARGET;
+                        // ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+                        box.setIcon(new ImageIcon("40.png"));
+                    }
 
-					// ÈËÎïÄ£ĞÍÒÆ¶¯
-					move(player, x, y);
-					// ÈËÎï×ø±ê¸üĞÂ
-					playerX = playerX - x;
-					playerY = playerY - y;
+                    // ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Æ¶ï¿½
+                    move(player, x, y);
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    playerX = playerX - x;
+                    playerY = playerY - y;
 
-					victory();
-				}
-				return;
-			}
-		}
-	}
+                    victory();
+                }
+                return;
+            }
+        }
+    }
 
-	// Ê¤ÀûÅĞ¶¨
-	private void victory() {
-		if (count == total) {
-			// ÒÆ³ı´°Ìå¼üÅÌÊÂ¼ş£¬±ÜÃâÓÃ»§¶àÓà²Ù×÷
-			this.removeKeyListener(this);
-			// ÒÔÏÂ´úÂëÎª¹ã¸æÖ²Èë£¬ĞèÒªÓëÃÀ¹¤ÅäºÏºó×îÖÕ¶¨¸å
-			JDialog victory = new JDialog(this, "¹§Ï²ÄãÈ¡µÃÁËÊ¤Àû!´«ÖÇ²¥¿Í¡ª¡ªJAVAÅàÑµĞĞÒµÁì¾üÆì½¢",
-					true);
-			victory.setSize(400, 300);
-			victory.setLocationRelativeTo(null);
-			victory.setLayout(null);
+    // Ê¤ï¿½ï¿½ï¿½Ğ¶ï¿½
+    private void victory() {
+        if (count == total) {
+            // ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            this.removeKeyListener(this);
+            // ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ö²ï¿½ë£¬ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïºï¿½ï¿½ï¿½ï¿½Õ¶ï¿½ï¿½ï¿½
+            JDialog victory = new JDialog(this, "ï¿½ï¿½Ï²ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ê¤ï¿½ï¿½!ï¿½ï¿½ï¿½Ç²ï¿½ï¿½Í¡ï¿½ï¿½ï¿½JAVAï¿½ï¿½Ñµï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ì½¢",
+                    true);
+            victory.setSize(400, 300);
+            victory.setLocationRelativeTo(null);
+            victory.setLayout(null);
 
-			JLabel info = new JLabel(new ImageIcon("gg.jpg"));
-			info.setBounds(2, 2, 380, 180);
-			victory.add(info);
+            JLabel info = new JLabel(new ImageIcon("gg.jpg"));
+            info.setBounds(2, 2, 380, 180);
+            victory.add(info);
 
-			JLabel click = new JLabel(new ImageIcon("gg2.jpg"));
-			click.setBounds(2, 182, 380, 88);
-			click.addMouseListener(new MouseAdapter() {
-				public void mousePressed(MouseEvent e) {
-					try {
-						Runtime.getRuntime()
-								.exec("rundll32 url.dll,FileProtocolHandler http://www.itcast.cn");
-					} catch (IOException e1) {
-						e1.printStackTrace();
-					}
-				}
-			});
-			victory.add(click);
-			victory.setVisible(true);
-		}
-	}
+            JLabel click = new JLabel(new ImageIcon("gg2.jpg"));
+            click.setBounds(2, 182, 380, 88);
+            click.addMouseListener(new MouseAdapter() {
+                public void mousePressed(MouseEvent e) {
+                    try {
+                        Runtime.getRuntime()
+                                .exec("rundll32 url.dll,FileProtocolHandler http://www.itcast.cn");
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            });
+            victory.add(click);
+            victory.setVisible(true);
+        }
+    }
 
-	public void keyReleased(KeyEvent e) {
-	}
+    public void keyReleased(KeyEvent e) {
+    }
 
-	public void keyTyped(KeyEvent e) {
-	}
+    public void keyTyped(KeyEvent e) {
+    }
 }

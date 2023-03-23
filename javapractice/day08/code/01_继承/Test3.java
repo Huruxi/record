@@ -1,42 +1,42 @@
 /*
-	»ù´¡ÖªÊ¶£º
-		A:´úÂë¿éµÄÖ´ÐÐË³Ðò£º
-			¾²Ì¬´úÂë¿é --> ¹¹Ôì´úÂë¿é --> ¹¹Ôì·½·¨
-		B:´úÂëµÄÖ´ÐÐÌØµã
-			¾²Ì¬´úÂë¿éÖ»Ö´ÐÐÒ»´Î
-			¹¹Ôì´úÂë¿éÃ¿´Îµ÷ÓÃ¹¹Ôì·½·¨¶¼Ö´ÐÐ
+	ï¿½ï¿½ï¿½ï¿½ÖªÊ¶ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½Ë³ï¿½ï¿½
+			ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ --> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ --> ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½Øµï¿½
+			ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Ö»Ö´ï¿½ï¿½Ò»ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½Îµï¿½ï¿½Ã¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½
 */
 class Fu {
-	static {
-		System.out.println("¾²Ì¬´úÂë¿éFu");
-	}
+    static {
+        System.out.println("ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Fu");
+    }
 
-	{
-		System.out.println("¹¹Ôì´úÂë¿éFu");
-	}
+    {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fu");
+    }
 
-	public Fu() {
-		System.out.println("¹¹Ôì·½·¨Fu");
-	}
+    public Fu() {
+        System.out.println("ï¿½ï¿½ï¿½ì·½ï¿½ï¿½Fu");
+    }
 }
 
 class Zi extends Fu {
-	static {
-		System.out.println("¾²Ì¬´úÂë¿éZi");
-	}
+    static {
+        System.out.println("ï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Zi");
+    }
 
-	{
-		System.out.println("¹¹Ôì´úÂë¿éZi");
-	}
+    {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Zi");
+    }
 
-	public Zi() {
-		System.out.println("¹¹Ôì·½·¨Zi");
-	}
+    public Zi() {
+        System.out.println("ï¿½ï¿½ï¿½ì·½ï¿½ï¿½Zi");
+    }
 }
 
 class Test3 {
-	public static void main(String[] args) {
-		Zi z = new Zi();
-		Zi z2 = new Zi();
-	}
+    public static void main(String[] args) {
+        Zi z = new Zi();
+        Zi z2 = new Zi();
+    }
 }

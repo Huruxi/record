@@ -1,18 +1,18 @@
 package cn.itcast_06;
 
 public class MovieTicket extends Thread {
-	// ¶¨Òå³ÉÔ±±äÁ¿
-	private static int tickets = 100;
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+    private static int tickets = 100;
 
-	@Override
-	public void run() {
-		// ¶¨Òå100ÕÅÆ±
-		// int tickets = 100;
+    @Override
+    public void run() {
+        // ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½Æ±
+        // int tickets = 100;
 
-		while (true) {
-			if (tickets > 0) {
-				System.out.println(getName() + "ÕýÔÚ³öÊÛµÚ" + (tickets--) + "ÕÅÆ±");
-			}
-		}
-	}
+        while (true) {
+            if (tickets > 0) {
+                System.out.println(getName() + "ï¿½ï¿½ï¿½Ú³ï¿½ï¿½Ûµï¿½" + (tickets--) + "ï¿½ï¿½Æ±");
+            }
+        }
+    }
 }

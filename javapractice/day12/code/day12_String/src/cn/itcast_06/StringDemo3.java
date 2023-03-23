@@ -1,17 +1,17 @@
 package cn.itcast_06;
 
 /*
- * °´×ÖµäË³Ðò±È½ÏÁ½¸ö×Ö·û´®  a-z
+ * ï¿½ï¿½ï¿½Öµï¿½Ë³ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½  a-z
  * int compareTo(String str)
- * int compareToIgnoreCase(String str) 
+ * int compareToIgnoreCase(String str)
  */
 public class StringDemo3 {
-	public static void main(String[] args) {
-		String s = "hello";
+    public static void main(String[] args) {
+        String s = "hello";
 
-		System.out.println(s.compareTo("hello")); // 0
-		System.out.println(s.compareTo("Hello")); // 32
-		System.out.println(s.compareTo("mello")); // -5
-		System.out.println(s.compareTo("hgllo"));//µÚÒ»¸ö²»Í¬×ÖÄ¸Ö®²î
-	}
+        System.out.println(s.compareTo("hello")); // 0
+        System.out.println(s.compareTo("Hello")); // 32
+        System.out.println(s.compareTo("mello")); // -5
+        System.out.println(s.compareTo("hgllo"));//ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½Ä¸Ö®ï¿½ï¿½
+    }
 }

@@ -1,163 +1,170 @@
-//ËµÓ¢ÓïµÄ½Ó¿Ú
+//ËµÓ¢ï¿½ï¿½Ä½Ó¿ï¿½
 interface SpeakEnglish {
-	public abstract void speak();
+    public abstract void speak();
 }
 
-//³éÏóÈËÀà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 abstract class People {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public People() {}
+    public People() {
+    }
 
-	public People(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public People(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void sleep() {
-		System.out.println("sleep");
-	}
+    public void sleep() {
+        System.out.println("sleep");
+    }
 
-	public abstract void eat();
+    public abstract void eat();
 }
 
-//³éÏóµÄ½ÌÁ·Àà
+//ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½ï¿½
 abstract class Coach extends People {
-	public Coach() {}
+    public Coach() {
+    }
 
-	public Coach(String name,int age) {
-		super(name,age);
-	}
+    public Coach(String name, int age) {
+        super(name, age);
+    }
 
-	public abstract void teach();
+    public abstract void teach();
 }
 
-//³éÏóµÄÔË¶¯Ô±Àà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±ï¿½ï¿½
 abstract class Player extends People {
-	public Player() {}
+    public Player() {
+    }
 
-	public Player(String name,int age) {
-		super(name,age);
-	}
+    public Player(String name, int age) {
+        super(name, age);
+    }
 
-	public abstract void study();
+    public abstract void study();
 }
 
-//Æ¹ÅÒÇò½ÌÁ·Àà
+//Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class PingPangCoach extends Coach implements SpeakEnglish {
-	public PingPangCoach() {}
+    public PingPangCoach() {
+    }
 
-	public PingPangCoach(String name,int age) {
-		super(name,age);
-	}
+    public PingPangCoach(String name, int age) {
+        super(name, age);
+    }
 
-	public void speak() {
-		System.out.println("Æ¹ÅÒÇò½ÌÁ·Ñ§ËµÓ¢Óï");
-	}
+    public void speak() {
+        System.out.println("Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ§ËµÓ¢ï¿½ï¿½");
+    }
 
-	public void eat() {
-		System.out.println("Æ¹ÅÒÇò½ÌÁ·³Ô°×²Ë¶¹¸¯");
-	}
+    public void eat() {
+        System.out.println("Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô°×²Ë¶ï¿½ï¿½ï¿½");
+    }
 
-	public void teach() {
-		System.out.println("Æ¹ÅÒÇò½ÌÁ·½ÌÈçºÎ·¢ÇòºÍ½ÓÇò");
-	}
+    public void teach() {
+        System.out.println("Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î·ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½");
+    }
 }
 
-//ÀºÇò½ÌÁ·
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 class BasketBallCoach extends Coach {
-	public BasketBallCoach() {}
+    public BasketBallCoach() {
+    }
 
-	public BasketBallCoach(String name,int age) {
-		super(name,age);
-	}
+    public BasketBallCoach(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("ÀºÇò½ÌÁ·³ÔºìÉÕÈâ");
-	}
+    public void eat() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 
-	public void teach() {
-		System.out.println("ÀºÇò½ÌÁ·½ÌÈçºÎ´øÇòºÍÍ¶Àº");
-	}
+    public void teach() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Í¶ï¿½ï¿½");
+    }
 }
 
-//Æ¹ÅÒÇòÔË¶¯Ô±Àà
+//Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±ï¿½ï¿½
 class PingPangPlayer extends Player implements SpeakEnglish {
-	public PingPangPlayer() {}
+    public PingPangPlayer() {
+    }
 
-	public PingPangPlayer(String name,int age) {
-		super(name,age);
-	}
+    public PingPangPlayer(String name, int age) {
+        super(name, age);
+    }
 
-	public void speak() {
-		System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±Ñ§ËµÓ¢Óï");
-	}
+    public void speak() {
+        System.out.println("Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±Ñ§ËµÓ¢ï¿½ï¿½");
+    }
 
-	public void eat() {
-		System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±³ÔÎ÷ºìÊÁ¼¦µ°");
-	}
+    public void eat() {
+        System.out.println("Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 
-	public void study() {
-		System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±Ñ§ÈçºÎ·¢ÇòºÍ½ÓÇò");
-	}
+    public void study() {
+        System.out.println("Æ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±Ñ§ï¿½ï¿½Î·ï¿½ï¿½ï¿½Í½ï¿½ï¿½ï¿½");
+    }
 }
 
-//ÀºÇòÔË¶¯Ô±
+//ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±
 class BasketBallPlayer extends Player {
-	public BasketBallPlayer() {}
+    public BasketBallPlayer() {
+    }
 
-	public BasketBallPlayer(String name,int age) {
-		super(name,age);
-	}
+    public BasketBallPlayer(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("ÀºÇòÔË¶¯Ô±³ÔÅ£Èâ");
-	}
+    public void eat() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±ï¿½ï¿½Å£ï¿½ï¿½");
+    }
 
-	public void study() {
-		System.out.println("ÀºÇòÔË¶¯Ô±Ñ§ÈçºÎ´øÇòºÍÍ¶Àº");
-	}
+    public void study() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ô±Ñ§ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½Í¶ï¿½ï¿½");
+    }
 }
 
 class PeopleDemo {
-	public static void main(String[] args) {
-		//²âÊÔ
-		PingPangCoach ppc = new PingPangCoach("Áõ¹úÁº",50);
-		ppc.eat();
-		ppc.teach();
-		ppc.speak();
-		System.out.println("---------------------------");
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½
+        PingPangCoach ppc = new PingPangCoach("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 50);
+        ppc.eat();
+        ppc.teach();
+        ppc.speak();
+        System.out.println("---------------------------");
 
-		PingPangPlayer ppp = new PingPangPlayer("ÍõºÆ",30);
-		ppp.eat();
-		ppp.study();
-		ppp.speak();
-		System.out.println("---------------------------");
+        PingPangPlayer ppp = new PingPangPlayer("ï¿½ï¿½ï¿½ï¿½", 30);
+        ppp.eat();
+        ppp.study();
+        ppp.speak();
+        System.out.println("---------------------------");
 
-		BasketBallCoach bbc = new BasketBallCoach("ÇÇµ¤",60);
-		bbc.eat();
-		bbc.teach();
-		System.out.println("---------------------------");
+        BasketBallCoach bbc = new BasketBallCoach("ï¿½Çµï¿½", 60);
+        bbc.eat();
+        bbc.teach();
+        System.out.println("---------------------------");
 
-		BasketBallPlayer bbp = new BasketBallPlayer("ÕÅ²®Â×",30);
-		bbp.eat();
-		bbp.study();
-	}
+        BasketBallPlayer bbp = new BasketBallPlayer("ï¿½Å²ï¿½ï¿½ï¿½", 30);
+        bbp.eat();
+        bbp.study();
+    }
 }

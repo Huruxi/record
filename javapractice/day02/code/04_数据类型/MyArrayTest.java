@@ -1,69 +1,70 @@
 /*
-	ÐèÇó£ºÒ»Î¬Êý×éµÄÁ·Ï°
+	ï¿½ï¿½ï¿½ï¿½Ò»Î¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï°
 
-	·ÖÎö£º
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
-class  MyArrayTest {
-	public static void main(String[] args) {
-		int arr = {1,2,3,4,5,6,7,8};
-		String strArray = {"","ÐÇÆÚÒ»","ÐÇÆÚ¶þ","ÐÇÆÚÈý","ÐÇÆÚËÄ","ÐÇÆÚÎå","ÐÇÆÚÁù","ÐÇÆÚÈÕ"};
+class MyArrayTest {
+    public static void main(String[] args) {
+        int arr = {1, 2, 3, 4, 5, 6, 7, 8};
+        String strArray = {"", "ï¿½ï¿½ï¿½ï¿½Ò»", "ï¿½ï¿½ï¿½Ú¶ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"};
 
-		//²é±í·¨
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë²é±í·¨Êý×Ö(1-7)£º");
-		int index = sc.nextInt();
-		System.out.println("ÄãÒª²éÕÒµÄÐÇÆÚÎª£º" +strArray[index]);
-	}
+        //ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(1-7)ï¿½ï¿½");
+        int index = sc.nextInt();
+        System.out.println("ï¿½ï¿½Òªï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½" + strArray[index]);
+    }
 
-	//±éÀú
-	public static void printArray(int[] arr) {
-		System.out.print("[");
-		for (int i=0; i<arr.length; i++) {
-			if (i <= arr.length-1) {
-				System.out.print(arr[i] +", ");
-			}
-			System.out.print(arr[i]);
-		}
-		System.out.println("]");
-	}
+    //ï¿½ï¿½ï¿½ï¿½
+    public static void printArray(int[] arr) {
+        System.out.print("[");
+        for (int i = 0; i < arr.length; i++) {
+            if (i <= arr.length - 1) {
+                System.out.print(arr[i] + ", ");
+            }
+            System.out.print(arr[i]);
+        }
+        System.out.println("]");
+    }
 
-	//×îÖµ
-	public static int getMax(int[] arr) {
-		int max = arr[0];
-		for (int i=0; i<arr.length; i++) {
-			if (arr[i] > max) {
-				max = arr[i];
-			}
-		}
-		return max;
-	}
+    //ï¿½ï¿½Öµ
+    public static int getMax(int[] arr) {
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
 
-	//·´×ª
-	public static void reverse(int[] arr) {
-		for (int start=0,end=arr.length; start<=end; start++,end--) {
-			int temp = arr[start];
-			arr[start] = arr[end];
-			arr[end] = temp;
-		}
-	}
+    //ï¿½ï¿½×ª
+    public static void reverse(int[] arr) {
+        for (int start = 0, end = arr.length; start <= end; start++, end--) {
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+        }
+    }
 
-	//ÔªËØµÚÒ»´Î³öÏÖµÄË÷Òý
-	public static int indexOfArray(int[] arr, int key) {
-		int index = -1;
-		for (int i=0; i<arr.length; i++) {
-			if (key == arr[i]) {
-				index = i;
-				break;
-			}
-		}
-		return index;
-	}
+    //Ôªï¿½Øµï¿½Ò»ï¿½Î³ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½
+    public static int indexOfArray(int[] arr, int key) {
+        int index = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (key == arr[i]) {
+                index = i;
+                break;
+            }
+        }
+        return index;
+    }
 
-	//ÅÅÐò
-	//public static void OrderOfArray(int[] arr) {
+    //ï¿½ï¿½ï¿½ï¿½
+    //public static void OrderOfArray(int[] arr) {
 
-	//}
+    //}
 
 }

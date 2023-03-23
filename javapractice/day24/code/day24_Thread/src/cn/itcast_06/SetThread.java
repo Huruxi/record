@@ -2,23 +2,23 @@ package cn.itcast_06;
 
 public class SetThread implements Runnable {
 
-	private Student s;
-	private int x = 0;
+    private Student s;
+    private int x = 0;
 
-	public SetThread(Student s) {
-		this.s = s;
-	}
+    public SetThread(Student s) {
+        this.s = s;
+    }
 
-	@Override
-	public void run() {
-		while (true) {
-			if (x % 2 == 0) {
-				s.set("ÁÖÇàÏ¼", 28);
-			} else {
-				s.set("ÁõÒâ", 31);
-			}
-			x++;
-		}
-	}
+    @Override
+    public void run() {
+        while (true) {
+            if (x % 2 == 0) {
+                s.set("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+            } else {
+                s.set("ï¿½ï¿½ï¿½ï¿½", 31);
+            }
+            x++;
+        }
+    }
 
 }

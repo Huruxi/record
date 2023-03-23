@@ -1,47 +1,47 @@
 package cn.itcast_08;
 
 /*
- * ÐèÇó£ºÇë×Ô¼ºÐ´Ò»¸ö¹¦ÄÜ£¬±È½ÏÁ½¸ö×Ö·û´®ÊÇ·ñÏàµÈ¡£
- * 
- * ·ÖÎö£º
- * 		A:¸ø³öÁ½¸ö×Ö·û´®
- * 		B:±È½Ï³¤¶ÈÊÇ·ñÏàÍ¬£¬Èç¹û²»Í¬£¬Ôò·µ»Øfalse¡£
- * 		      Èç¹ûÏàÍ¬£¬¾Í¼ÌÐø
- * 		C:°ÑÃ¿¸ö×Ö·û´®×ª»»Îª×Ö·ûÊý×é¡£
- * 		D:±éÀúÁ½¸öÊý×é£¬ÄÃÃ¿Ò»¸öÎ»ÖÃÉÏµÄ×Ö·û½øÐÐ±È½Ï¡£
- * 		  Ò»µ©·¢ÏÖÓÐ²»Í¬µÄ£¬¾Í·µ»Øfalse¡£
- * 		E:·µ»Øtrue¡£
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½È¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * 		B:ï¿½È½Ï³ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½ò·µ»ï¿½falseï¿½ï¿½
+ * 		      ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Í¼ï¿½ï¿½ï¿½
+ * 		C:ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½Ö·ï¿½ï¿½ï¿½ï¿½é¡£
+ * 		D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£¬ï¿½ï¿½Ã¿Ò»ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ïµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð±È½Ï¡ï¿½
+ * 		  Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð²ï¿½Í¬ï¿½Ä£ï¿½ï¿½Í·ï¿½ï¿½ï¿½falseï¿½ï¿½
+ * 		E:ï¿½ï¿½ï¿½ï¿½trueï¿½ï¿½
  */
 public class StringTest {
-	public static void main(String[] args) {
-		System.out.println(compare("admin", "admin"));
-		System.out.println(compare("admin", "Admin"));
-		System.out.println(compare("admin", "hello"));
+    public static void main(String[] args) {
+        System.out.println(compare("admin", "admin"));
+        System.out.println(compare("admin", "Admin"));
+        System.out.println(compare("admin", "hello"));
 
-		System.out.println("admin".equals("admin"));
-	}
+        System.out.println("admin".equals("admin"));
+    }
 
-	// ÕâÊÇ¿ª·¢ÖÐµÄÓÃ·¨
-	// public static boolean compare(String s1, String s2) {
-	// return s1.equals(s2);
-	// }
+    // ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½Ã·ï¿½
+    // public static boolean compare(String s1, String s2) {
+    // return s1.equals(s2);
+    // }
 
-	// ÕâÊÇÃæÊÔÏë¿¼ÄãµÄ
-	public static boolean compare(String s1, String s2) {
-		// ±È½Ï³¤¶ÈÊÇ·ñÏàÍ¬
-		if (s1.length() != s2.length()) {
-			return false;
-		}
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë¿¼ï¿½ï¿½ï¿½
+    public static boolean compare(String s1, String s2) {
+        // ï¿½È½Ï³ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Í¬
+        if (s1.length() != s2.length()) {
+            return false;
+        }
 
-		char[] chs1 = s1.toCharArray();
-		char[] chs2 = s2.toCharArray();
+        char[] chs1 = s1.toCharArray();
+        char[] chs2 = s2.toCharArray();
 
-		for (int x = 0; x < chs1.length; x++) {
-			if (chs1[x] != chs2[x]) {
-				return false;
-			}
-		}
+        for (int x = 0; x < chs1.length; x++) {
+            if (chs1[x] != chs2[x]) {
+                return false;
+            }
+        }
 
-		return true;
-	}
+        return true;
+    }
 }

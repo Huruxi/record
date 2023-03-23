@@ -1,33 +1,33 @@
 package cn.itcast_02;
 
 /*
- * ÓÃObject¿ÉÒÔÈÃÎÒÃÇµÄ³ÌĞòÌá¸ßÀ©Õ¹ĞÔ¡£
- * µ«ÊÇÎÊÌâÊÇ£¬Òşº¬ÁËÀàĞÍ×ª»»Òì³£¡£
- * ËùÒÔ£¬ÕâÖÖ½â¾ö·½°¸²»ÊÇÌØ±ğµÄºÃ¡£
- * Õâ¸öÊ±ºò£¬java¾ÍÌá¹©ÁË·ºĞÍ¼¼Êõ¡£
+ * ï¿½ï¿½Objectï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÇµÄ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½Ô¡ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ì³£ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø±ï¿½ÄºÃ¡ï¿½
+ * ï¿½ï¿½ï¿½Ê±ï¿½ï¿½javaï¿½ï¿½ï¿½á¹©ï¿½Ë·ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ToolTest {
-	public static void main(String[] args) {
-		Student s = new Student();
-		Teacher t = new Teacher();
+    public static void main(String[] args) {
+        Student s = new Student();
+        Teacher t = new Teacher();
 
-		// Tool t = new Tool();
-		// t.setStudent(s);
-		// Student ss = t.getStudent();
-		// ss.love();
+        // Tool t = new Tool();
+        // t.setStudent(s);
+        // Student ss = t.getStudent();
+        // ss.love();
 
-		Tool tool = new Tool();
-		// ÉèÖÃÎªStudent
-		tool.setObj(s);
-		Student ss = (Student) tool.getObj();
-		ss.love();
+        Tool tool = new Tool();
+        // ï¿½ï¿½ï¿½ï¿½ÎªStudent
+        tool.setObj(s);
+        Student ss = (Student) tool.getObj();
+        ss.love();
 
-		// ÉèÖÃÎªTeacher
-		tool.setObj(t);
-		Teacher tt = (Teacher) tool.getObj();
-		tt.love();
+        // ï¿½ï¿½ï¿½ï¿½ÎªTeacher
+        tool.setObj(t);
+        Teacher tt = (Teacher) tool.getObj();
+        tt.love();
 
-		Student sss = (Student) tool.getObj();
-		sss.love();
-	}
+        Student sss = (Student) tool.getObj();
+        sss.love();
+    }
 }

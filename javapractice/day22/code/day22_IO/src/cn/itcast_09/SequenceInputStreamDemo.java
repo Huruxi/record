@@ -10,70 +10,70 @@ import java.util.Enumeration;
 import java.util.Vector;
 
 /*
- * SequenceInputStream ±íÊ¾ÆäËûÊäÈëÁ÷µÄÂß¼­´®Áª¡£Ëü´ÓÊäÈëÁ÷µÄÓÐÐò¼¯ºÏ¿ªÊ¼£¬²¢´ÓµÚÒ»¸öÊäÈëÁ÷¿ªÊ¼¶ÁÈ¡£¬Ö±µ½µ½´ïÎÄ¼þÄ©Î²£¬
- * ½Ó×Å´ÓµÚ¶þ¸öÊäÈëÁ÷¶ÁÈ¡£¬ÒÀ´ÎÀàÍÆ£¬Ö±µ½µ½´ï°üº¬µÄ×îºóÒ»¸öÊäÈëÁ÷µÄÎÄ¼þÄ©Î²ÎªÖ¹¡£ 
- * 
- * ¹¹Ôì·½·¨£º
- * 		SequenceInputStream(InputStream s1, InputStream s2):ºÏ²¢Á½¸öÁ÷¶ÔÏó
- * 		SequenceInputStream(Enumeration e):ºÏ²¢¶à¸öÁ÷¶ÔÏó
+ * SequenceInputStream ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ò¼¯ºÏ¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½È¡ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ä©Î²ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Å´ÓµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ä©Î²ÎªÖ¹ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * 		SequenceInputStream(InputStream s1, InputStream s2):ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		SequenceInputStream(Enumeration e):ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class SequenceInputStreamDemo {
-	public static void main(String[] args) throws IOException {
-		// mergeTwo();
-		mergeMore();
-	}
+    public static void main(String[] args) throws IOException {
+        // mergeTwo();
+        mergeMore();
+    }
 
-	private static void mergeMore() throws IOException {
-		// SequenceInputStream(Enumeration e):ºÏ²¢¶à¸öÁ÷¶ÔÏó
-		// public Enumeration<E> elements()
-		// Vector
+    private static void mergeMore() throws IOException {
+        // SequenceInputStream(Enumeration e):ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // public Enumeration<E> elements()
+        // Vector
 
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Vector<InputStream> v = new Vector<InputStream>();
-		// ´´½¨ÔªËØ¶ÔÏó
-		InputStream s1 = new FileInputStream("MyBufferedReader.java");
-		InputStream s2 = new FileInputStream("MyBufferedReaderDemo.java");
-		InputStream s3 = new FileInputStream("MyLineNumberReader.java");
-		InputStream s4 = new FileInputStream("MyMyLineNumberReaderDemo.java");
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		v.add(s1);
-		v.add(s2);
-		v.add(s3);
-		v.add(s4);
-		// Í¨¹ý¼¯ºÏµÄµ½Enumeration
-		Enumeration<InputStream> en = v.elements();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Vector<InputStream> v = new Vector<InputStream>();
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½
+        InputStream s1 = new FileInputStream("MyBufferedReader.java");
+        InputStream s2 = new FileInputStream("MyBufferedReaderDemo.java");
+        InputStream s3 = new FileInputStream("MyLineNumberReader.java");
+        InputStream s4 = new FileInputStream("MyMyLineNumberReaderDemo.java");
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        v.add(s1);
+        v.add(s2);
+        v.add(s3);
+        v.add(s4);
+        // Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄµï¿½Enumeration
+        Enumeration<InputStream> en = v.elements();
 
-		// ´´½¨ºÏ²¢Á÷¶ÔÏó
-		SequenceInputStream sis = new SequenceInputStream(en);
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream("Copy.java"));
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ï²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        SequenceInputStream sis = new SequenceInputStream(en);
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream("Copy.java"));
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = sis.read(bys)) != -1) {
-			bos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = sis.read(bys)) != -1) {
+            bos.write(bys, 0, len);
+        }
 
-		bos.close();
-		sis.close();
-	}
+        bos.close();
+        sis.close();
+    }
 
-	private static void mergeTwo() throws IOException {
-		// SequenceInputStream(InputStream s1, InputStream s2)
-		InputStream s1 = new FileInputStream("MyBufferedReader.java");
-		InputStream s2 = new FileInputStream("MyBufferedReaderDemo.java");
-		SequenceInputStream sis = new SequenceInputStream(s1, s2);
+    private static void mergeTwo() throws IOException {
+        // SequenceInputStream(InputStream s1, InputStream s2)
+        InputStream s1 = new FileInputStream("MyBufferedReader.java");
+        InputStream s2 = new FileInputStream("MyBufferedReaderDemo.java");
+        SequenceInputStream sis = new SequenceInputStream(s1, s2);
 
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream("Copy.java"));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream("Copy.java"));
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = sis.read(bys)) != -1) {
-			bos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = sis.read(bys)) != -1) {
+            bos.write(bys, 0, len);
+        }
 
-		bos.close();
-		sis.close();
-	}
+        bos.close();
+        sis.close();
+    }
 }

@@ -3,26 +3,26 @@ package cn.itcast_02;
 import java.io.File;
 
 /*
- * public String[] list():返回的是给定目录下的所有文件或者文件夹的名称数组。
- * public File[] listFiles():返回的是给定目录下的所有文件或者文件夹的File数组。
+ * public String[] list():锟斤拷锟截碉拷锟角革拷锟斤拷目录锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷锟斤拷锟侥硷拷锟叫碉拷锟斤拷锟斤拷锟斤拷锟介。
+ * public File[] listFiles():锟斤拷锟截碉拷锟角革拷锟斤拷目录锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷锟斤拷锟侥硷拷锟叫碉拷File锟斤拷锟介。
  */
 public class FileDemo6 {
-	public static void main(String[] args) {
-		// 给定一个目录：d:\\
-		File file = new File("d:\\");
+    public static void main(String[] args) {
+        // 锟斤拷锟斤拷一锟斤拷目录锟斤拷d:\\
+        File file = new File("d:\\");
 
-		// public String[] list():返回的是给定目录下的所有文件或者文件夹的名称数组。
-		String[] strArray = file.list();
-		for (String str : strArray) {
-			System.out.println(str);
-		}
-		System.out.println("-----------------");
+        // public String[] list():锟斤拷锟截碉拷锟角革拷锟斤拷目录锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷锟斤拷锟侥硷拷锟叫碉拷锟斤拷锟斤拷锟斤拷锟介。
+        String[] strArray = file.list();
+        for (String str : strArray) {
+            System.out.println(str);
+        }
+        System.out.println("-----------------");
 
-		// public File[] listFiles():返回的是给定目录下的所有文件或者文件夹的File数组。
-		File[] fileArray = file.listFiles();
-		for (File f : fileArray) {
-			// System.out.println(f);
-			System.out.println(f.getName());
-		}
-	}
+        // public File[] listFiles():锟斤拷锟截碉拷锟角革拷锟斤拷目录锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷锟斤拷锟侥硷拷锟叫碉拷File锟斤拷锟介。
+        File[] fileArray = file.listFiles();
+        for (File f : fileArray) {
+            // System.out.println(f);
+            System.out.println(f.getName());
+        }
+    }
 }

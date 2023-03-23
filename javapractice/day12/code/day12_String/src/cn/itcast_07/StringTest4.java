@@ -1,32 +1,32 @@
 package cn.itcast_07;
 
 public class StringTest4 {
-	public static void main(String[] args) {
-		String maxString = "woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun";
-		String minString = "java";
+    public static void main(String[] args) {
+        String maxString = "woaijavawozhenaijavawozhendeaijavawozhendehenaijavaxinbuxinwoaijavagun";
+        String minString = "java";
 
-		int count = getCount(maxString, minString);
-		System.out.println(count);
-	}
+        int count = getCount(maxString, minString);
+        System.out.println(count);
+    }
 
-	// Ð´¹¦ÄÜÊµÏÖ£º
-	// ÐÎÊ½²ÎÊý:String maxString,String minString;
-	// ·µ»ØÖµÀàÐÍ:int
-	public static int getCount(String maxString, String minString) {
-		// ¶¨ÒåÍ³¼Æ±äÁ¿
-		int count = 0;
+    // Ð´ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½
+    // ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½:String maxString,String minString;
+    // ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½:int
+    public static int getCount(String maxString, String minString) {
+        // ï¿½ï¿½ï¿½ï¿½Í³ï¿½Æ±ï¿½ï¿½ï¿½
+        int count = 0;
 
-		// µÚÒ»´Î²éÕÒ
-		int index = maxString.indexOf(minString);
+        // ï¿½ï¿½Ò»ï¿½Î²ï¿½ï¿½ï¿½
+        int index = maxString.indexOf(minString);
 
-		while (index != -1) {
-			count++;
-			// ½ØÈ¡£¬µÃµ½ÐÂµÄ´ó´®
-			maxString = maxString.substring(index + minString.length());
-			// ¼ÌÐø²éÕÒ
-			index = maxString.indexOf(minString);
-		}
+        while (index != -1) {
+            count++;
+            // ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ãµï¿½ï¿½ÂµÄ´ï¿½
+            maxString = maxString.substring(index + minString.length());
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            index = maxString.indexOf(minString);
+        }
 
-		return count;
-	}
+        return count;
+    }
 }

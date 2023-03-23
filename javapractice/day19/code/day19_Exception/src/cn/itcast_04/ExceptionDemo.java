@@ -1,29 +1,29 @@
 package cn.itcast_04;
 
 /*
- *getMessage():获取异常信息，返回字符串。
- *toString():获取异常类名和异常信息，返回字符串。
- *printStackTrace():获取异常类名和异常信息，以及异常出现在程序中的位置。返回值void。
+ *getMessage():锟斤拷取锟届常锟斤拷息锟斤拷锟斤拷锟斤拷锟街凤拷锟斤拷锟斤拷
+ *toString():锟斤拷取锟届常锟斤拷锟斤拷锟斤拷锟届常锟斤拷息锟斤拷锟斤拷锟斤拷锟街凤拷锟斤拷锟斤拷
+ *printStackTrace():锟斤拷取锟届常锟斤拷锟斤拷锟斤拷锟届常锟斤拷息锟斤拷锟皆硷拷锟届常锟斤拷锟斤拷锟节筹拷锟斤拷锟叫碉拷位锟矫★拷锟斤拷锟斤拷值void锟斤拷
  */
 public class ExceptionDemo {
-	public static void main(String[] args) {
-		int a = 10;
-		int b = 0;
-		try {
-			System.out.println(a / b); // 从哪里产生异常，就会在哪里创建一个异常的对象。new
-										// ArithmeticException();
-										// 然后，拿着该异常对象，到catch里面去匹配。
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 0;
+        try {
+            System.out.println(a / b); // 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷斐ｏ拷锟斤拷突锟斤拷锟斤拷锟斤拷锎达拷锟揭伙拷锟斤拷斐ｏ拷亩锟斤拷锟絥ew
+            // ArithmeticException();
+            // 然锟斤拷锟斤拷锟脚革拷锟届常锟斤拷锟襟，碉拷catch锟斤拷锟斤拷去匹锟戒。
 
-		} catch (ArithmeticException e) { // ArithmeticException e = new
-											// ArithmeticException();
-			// System.out.println(e.toString());
-			// System.out.println("除数不能为0");
+        } catch (ArithmeticException e) { // ArithmeticException e = new
+            // ArithmeticException();
+            // System.out.println(e.toString());
+            // System.out.println("锟斤拷锟斤拷锟斤拷锟斤拷为0");
 
-			// System.out.println(e.getMessage()); // by zero
-			// System.out.println(e.toString());
-			e.printStackTrace();
-		}
+            // System.out.println(e.getMessage()); // by zero
+            // System.out.println(e.toString());
+            e.printStackTrace();
+        }
 
-		System.out.println("over");
-	}
+        System.out.println("over");
+    }
 }

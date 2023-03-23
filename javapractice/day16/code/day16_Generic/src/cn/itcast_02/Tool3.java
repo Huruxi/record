@@ -1,24 +1,24 @@
 package cn.itcast_02;
 
 /*
- * ·ºÐÍ·½·¨£º°Ñ·ºÐÍÌí¼Óµ½·½·¨ÉÏ¡£
- * ¸ñÊ½£º
- * 		public <·ºÐÍÀàÐÍ> ·µ»ØÀàÐÍ ·½·¨Ãû(·ºÐÍÀàÐÍ .)
+ * ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ·ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¡ï¿½
+ * ï¿½ï¿½Ê½ï¿½ï¿½
+ * 		public <ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ .)
  */
 public class Tool3 {
-	// public void print(String s) {
-	// System.out.println(s);
-	// }
-	//
-	// public void print(Integer i) {
-	// System.out.println(i);
-	// }
-	//
-	// public void print(Boolean b) {
-	// System.out.println(b);
-	// }
+    // public void print(String s) {
+    // System.out.println(s);
+    // }
+    //
+    // public void print(Integer i) {
+    // System.out.println(i);
+    // }
+    //
+    // public void print(Boolean b) {
+    // System.out.println(b);
+    // }
 
-	public <BMW> void print(BMW bmw) {
-		System.out.println(bmw);
-	}
+    public <BMW> void print(BMW bmw) {
+        System.out.println(bmw);
+    }
 }

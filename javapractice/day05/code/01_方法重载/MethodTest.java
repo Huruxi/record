@@ -1,18 +1,18 @@
 /*
-	比较两个数据是否相等。参数类型分别为两个byte类型，两个short类型，
-	两个int类型，两个long类型，并在main方法中进行测试
+	锟饺斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角凤拷锟斤拷取锟斤拷锟斤拷锟斤拷锟斤拷头直锟轿拷锟斤拷锟絙yte锟斤拷锟酵ｏ拷锟斤拷锟斤拷short锟斤拷锟酵ｏ拷
+	锟斤拷锟斤拷int锟斤拷锟酵ｏ拷锟斤拷锟斤拷long锟斤拷锟酵ｏ拷锟斤拷锟斤拷main锟斤拷锟斤拷锟叫斤拷锟叫诧拷锟斤拷
 */
 class MethodTest {
-	public static void main(String[] args) {
-		//测试
-		byte a = 10;
-		byte b = 10;
-		System.out.println(compare(a,b));
+    public static void main(String[] args) {
+        //锟斤拷锟斤拷
+        byte a = 10;
+        byte b = 10;
+        System.out.println(compare(a, b));
 
-		System.out.println(compare(10,10));
-	}
+        System.out.println(compare(10, 10));
+    }
 
-	//byte
+    //byte
 	/*
 	public static boolean compare(byte a,byte b) {
 		System.out.println("byte");
@@ -32,9 +32,9 @@ class MethodTest {
 	}
 	*/
 
-	//long 
-	public static boolean compare(long a,long b) {
-		System.out.println("long");
-		return a == b;
-	}
+    //long
+    public static boolean compare(long a, long b) {
+        System.out.println("long");
+        return a == b;
+    }
 }

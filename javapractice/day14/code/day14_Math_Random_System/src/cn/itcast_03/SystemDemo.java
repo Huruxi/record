@@ -1,26 +1,26 @@
 package cn.itcast_03;
 
 /*
- * System:System Àà°üº¬Ò»Ð©ÓÐÓÃµÄÀà×Ö¶ÎºÍ·½·¨¡£Ëü²»ÄÜ±»ÊµÀý»¯¡£ 
- * 	public static void gc():ÔËÐÐÀ¬»ø»ØÊÕÆ÷¡£ 
- * 	public static void exit(int status):ÖÕÖ¹µ±Ç°ÕýÔÚÔËÐÐµÄ Java ÐéÄâ»ú¡£²ÎÊýÓÃ×÷×´Ì¬Âë£»¸ù¾Ý¹ßÀý£¬·Ç 0 µÄ×´Ì¬Âë±íÊ¾Òì³£ÖÕÖ¹¡£ 
- * 	public static long currentTimeMillis():·µ»ØÒÔºÁÃëÎªµ¥Î»µÄµ±Ç°Ê±¼ä
- * 
+ * System:System ï¿½ï¿½ï¿½ï¿½ï¿½Ò»Ð©ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ö¶ÎºÍ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü±ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 	public static void gc():ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 	public static void exit(int status):ï¿½ï¿½Ö¹ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ Java ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ë£»ï¿½ï¿½ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 0 ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½Ê¾ï¿½ì³£ï¿½ï¿½Ö¹ï¿½ï¿½
+ * 	public static long currentTimeMillis():ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½Îªï¿½ï¿½Î»ï¿½Äµï¿½Ç°Ê±ï¿½ï¿½
+ *
  * 	public static void arraycopy(Object src,int srcPos,Object dest,int destPos,int length)
  */
 public class SystemDemo {
-	public static void main(String[] args) {
-		// System.out.println("hello");
-		// System.exit(0);
-		// System.out.println("world");
+    public static void main(String[] args) {
+        // System.out.println("hello");
+        // System.exit(0);
+        // System.out.println("world");
 
-		// System.out.println(System.currentTimeMillis()); // 1427427569016
+        // System.out.println(System.currentTimeMillis()); // 1427427569016
 
-		long start = System.currentTimeMillis();
-		for (int x = 0; x < 1000000; x++) {
-			System.out.println(x);
-		}
-		long end = System.currentTimeMillis();
-		System.out.println("¹²ºÄÊ±£º" + (end - start) + "ºÁÃë");
-	}
+        long start = System.currentTimeMillis();
+        for (int x = 0; x < 1000000; x++) {
+            System.out.println(x);
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½" + (end - start) + "ï¿½ï¿½ï¿½ï¿½");
+    }
 }

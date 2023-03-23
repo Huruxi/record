@@ -1,37 +1,38 @@
 /*
-	ÐèÇó£º¼üÅÌÂ¼ÈëÁ½¸öÊý¾Ý£¬·µ»ØÁ½¸öÊýÖÐµÄ½Ï´óÖµ
+	ï¿½ï¿½ï¿½ó£º¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ½Ï´ï¿½Öµ
 
-	·ÖÎö£º
-		A:¼üÅÌÂ¼ÈëÊý¾Ý£¬ÓÃScannerÊµÏÖ¡£
-		B:Ð´Ò»¸ö¹¦ÄÜÊµÏÖ£¬·µ»ØÁ½¸öÊý¾ÝµÄ½Ï´óÖµ
-		C:µ÷ÓÃ¹¦ÄÜ
-		D:Êä³ö½á¹û
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ScannerÊµï¿½Ö¡ï¿½
+		B:Ð´Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ½Ï´ï¿½Öµ
+		C:ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½
+		D:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
 class MethodTest {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//»ñÈ¡¼üÅÌÂ¼ÈëÊý¾Ý
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊý¾Ý£º");
-		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶þ¸öÊý¾Ý£º");
-		int b = sc.nextInt();
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int a = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½");
+        int b = sc.nextInt();
 
-		//µ÷ÓÃ·½·¨
-		int max = getMax(a,b);
-		System.out.println("´óµÄÖµÊÇ£º"+max);
-	}
+        //ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
+        int max = getMax(a, b);
+        System.out.println("ï¿½ï¿½ï¿½Öµï¿½Ç£ï¿½" + max);
+    }
 
-	/*
-		·µ»ØÁ½¸öÊýÖÐµÄ½Ï´óÖµ
-		Á½¸öÃ÷È·£º
-			·µ»ØÖµ£ºint
-			²ÎÊýÁÐ±í£ºint a,int b
-	*/
-	public static int getMax(int a,int b) {
+    /*
+        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÐµÄ½Ï´ï¿½Öµ
+        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½
+            ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½int
+            ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½int a,int b
+    */
+    public static int getMax(int a, int b) {
 		/*
 		if(a > b) {
 			return a;
@@ -45,6 +46,6 @@ class MethodTest {
 		return m;
 		*/
 
-		return a>b?a:b;
-	}
+        return a > b ? a : b;
+    }
 }

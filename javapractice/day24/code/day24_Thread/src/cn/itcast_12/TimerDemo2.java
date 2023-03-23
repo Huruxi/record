@@ -7,40 +7,40 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * Õ¨µ¯ÒªÁ¬ÐøÕ¨
+ * Õ¨ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½Õ¨
  */
 public class TimerDemo2 {
-	public static void main(String[] args) throws ParseException {
-		// ´´½¨¶¨ÒåÆ÷
-		Timer t = new Timer();
+    public static void main(String[] args) throws ParseException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Timer t = new Timer();
 
-		// Æô¶¯ÈÎÎñ
-		// t.schedule(new TimerTask() {
-		// @Override
-		// public void run() {
-		// System.out.println("ÒªÕ¨ÁË£¬¿ìÅÜ");
-		// }
-		// }, 2000);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // t.schedule(new TimerTask() {
+        // @Override
+        // public void run() {
+        // System.out.println("ÒªÕ¨ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½");
+        // }
+        // }, 2000);
 
-		// public void schedule(TimerTask task,long delay,long
-		// period):µÚÒ»´ÎÊÇdelayºóÆô¶¯£¬ÒÔºóÃ¿´ÎÊÇperiodÆô¶¯
-		// t.schedule(new TimerTask() {
-		// @Override
-		// public void run() {
-		// System.out.println("Õ¨ËÀÄã");
-		// }
-		// }, 3000, 1000);
+        // public void schedule(TimerTask task,long delay,long
+        // period):ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½delayï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½Ã¿ï¿½ï¿½ï¿½ï¿½periodï¿½ï¿½ï¿½ï¿½
+        // t.schedule(new TimerTask() {
+        // @Override
+        // public void run() {
+        // System.out.println("Õ¨ï¿½ï¿½ï¿½ï¿½");
+        // }
+        // }, 3000, 1000);
 
-		// public void schedule(TimerTask task,Date time)
-		String s = "2015-04-12 15:48:20";
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		Date d = sdf.parse(s);
+        // public void schedule(TimerTask task,Date time)
+        String s = "2015-04-12 15:48:20";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date d = sdf.parse(s);
 
-		t.schedule(new TimerTask() {
-			@Override
-			public void run() {
-				System.out.println("Õ¨ËÀÄã");
-			}
-		}, d, 3000);
-	}
+        t.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("Õ¨ï¿½ï¿½ï¿½ï¿½");
+            }
+        }, d, 3000);
+    }
 }

@@ -1,73 +1,73 @@
 package cn.itcast_01;
 
 /*
- * ×Ö·û´®£ºÓÉ¶à¸ö×Ö·û×é³ÉµÄÒ»´®Êý¾Ý¡£
- * 
- * ¹¹Ôì·½·¨£º
- * 		public String():´´½¨String¶ÔÏó
- *		public String(byte[] bytes):°Ñ×Ö½ÚÊý×é×ª³É×Ö·û´®¡£
- *		public String(byte[] bytes,int index,int length):°Ñ×Ö½ÚÊý×éÖÐµÄÒ»²¿·Ö×ª³É×Ö·û´®
- *		public String(char[] value):°Ñ×Ö·ûÊý×é×ª³É×Ö·û´®
- *		public String(char[] value,int index,int count):°Ñ×Ö·ûÊý×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
- * 		public String(String original):°Ñ×Ö·û´®×ª³É×Ö·û´®
- * 
- * ÎÊÌâ£º
- * 		1:Êä³öÓï¾äÊä³öÈÎºÎ¶ÔÏóÃû³ÆµÄÊ±ºò£¬Ä¬ÈÏµ÷ÓÃµÄÊÇ¸Ã¶ÔÏóµÄtoString()·½·¨¡£
- * 		  ¶øtoString()·½·¨Ä¬ÈÏÊä³öµÄÊÇ°üÃû...ÀàÃû@¹þÏ£ÖµµÄÊ®Áù½øÖÆ¡£
- * 		 Èç¹û£¬ÄãÓÃÊä³öÓï¾äÊä³öÒ»¸ö¶ÔÏóÃû³ÆµÄÊ±ºò£¬·¢ÏÖ²»ÊÇÕâ¸ö¸ñÊ½£¬ËµÃ÷ÁË¸ÃÀàÖØÐ´ÁËtoString()·½·¨¡£
- * 		2:·µ»Ø´Ë×Ö·û´®µÄ³¤¶È
+ * ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É¶ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Éµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * 		public String():ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½ï¿½
+ *		public String(byte[] bytes):ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ *		public String(byte[] bytes,int index,int length):ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ *		public String(char[] value):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ *		public String(char[] value,int index,int count):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * 		public String(String original):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½â£º
+ * 		1:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎºÎ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê±ï¿½ï¿½Ä¬ï¿½Ïµï¿½ï¿½Ãµï¿½ï¿½Ç¸Ã¶ï¿½ï¿½ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		  ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½...ï¿½ï¿½ï¿½ï¿½@ï¿½ï¿½Ï£Öµï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½
+ * 		 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê±ï¿½ò£¬·ï¿½ï¿½Ö²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		2:ï¿½ï¿½ï¿½Ø´ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½
  * 		public int length()
- * 	
- * ÃæÊÔÌâ£º
- * 		Êý×éÓÐlength()Âð?StringÓÐlength()Âð£¿
- * 		Ã»ÓÐ¡£
- * 		ÓÐ¡£
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½length()ï¿½ï¿½?Stringï¿½ï¿½length()ï¿½ï¿½
+ * 		Ã»ï¿½Ð¡ï¿½
+ * 		ï¿½Ð¡ï¿½
  */
 public class StringDemo {
-	public static void main(String[] args) {
-		// public String():´´½¨String¶ÔÏó
-		String s1 = new String();
-		System.out.println("s1:" + s1);
-		System.out.println("s1.length():" + s1.length());
-		System.out.println("--------------------------");
+    public static void main(String[] args) {
+        // public String():ï¿½ï¿½ï¿½ï¿½Stringï¿½ï¿½ï¿½ï¿½
+        String s1 = new String();
+        System.out.println("s1:" + s1);
+        System.out.println("s1.length():" + s1.length());
+        System.out.println("--------------------------");
 
-		// public String(byte[] bytes):°Ñ×Ö½ÚÊý×é×ª³É×Ö·û´®¡£
-		byte[] bytes = { 97, 98, 99, 100, 101 };
-		String s2 = new String(bytes); // °ÑÊýÖµ×ª³É¶ÔÓ¦µÄ×Ö·ûÖµ
-		System.out.println("s2:" + s2);
-		System.out.println("s2.length():" + s2.length());
-		System.out.println("--------------------------");
+        // public String(byte[] bytes):ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        byte[] bytes = {97, 98, 99, 100, 101};
+        String s2 = new String(bytes); // ï¿½ï¿½ï¿½ï¿½Öµ×ªï¿½É¶ï¿½Ó¦ï¿½ï¿½ï¿½Ö·ï¿½Öµ
+        System.out.println("s2:" + s2);
+        System.out.println("s2.length():" + s2.length());
+        System.out.println("--------------------------");
 
-		// public String(byte[] bytes,int index,int length):°Ñ×Ö½ÚÊý×éÖÐµÄÒ»²¿·Ö×ª³É×Ö·û´®
-		// String s3 = new String(bytes, 1, 2);
-		String s3 = new String(bytes, 0, bytes.length);
-		System.out.println("s3:" + s3);
-		System.out.println("s3.length():" + s3.length());
-		System.out.println("--------------------------");
+        // public String(byte[] bytes,int index,int length):ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ò»ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        // String s3 = new String(bytes, 1, 2);
+        String s3 = new String(bytes, 0, bytes.length);
+        System.out.println("s3:" + s3);
+        System.out.println("s3.length():" + s3.length());
+        System.out.println("--------------------------");
 
-		// public String(char[] value):°Ñ×Ö·ûÊý×é×ª³É×Ö·û´®
-		char[] chs = { 'a', 'b', 'c', 'd', 'e', 'ÁÖ', 'Çà', 'Ï¼' };
-		String s4 = new String(chs);
-		System.out.println("s4:" + s4);
-		System.out.println("s4.length():" + s4.length());
-		System.out.println("--------------------------");
+        // public String(char[] value):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        char[] chs = {'a', 'b', 'c', 'd', 'e', 'ï¿½ï¿½', 'ï¿½ï¿½', 'Ï¼'};
+        String s4 = new String(chs);
+        System.out.println("s4:" + s4);
+        System.out.println("s4.length():" + s4.length());
+        System.out.println("--------------------------");
 
-		// public String(char[] value,int index,int count):°Ñ×Ö·ûÊý×éµÄÒ»²¿·Ö×ª³É×Ö·û´®
-		// ÐèÇó£ºÎÒÒªÊä³öµÄ×Ö·û´®ÊÇ:deÁÖÇà
-		String s5 = new String(chs, 3, 4);
-		System.out.println("s5:" + s5);
-		System.out.println("s5.length():" + s5.length());
-		System.out.println("--------------------------");
+        // public String(char[] value,int index,int count):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½:deï¿½ï¿½ï¿½ï¿½
+        String s5 = new String(chs, 3, 4);
+        System.out.println("s5:" + s5);
+        System.out.println("s5.length():" + s5.length());
+        System.out.println("--------------------------");
 
-		// public String(String original):°Ñ×Ö·û´®×ª³É×Ö·û´®
-		String s6 = new String("helloworld");
-		System.out.println("s6:" + s6);
-		System.out.println("s6.length():" + s6.length());
-		System.out.println("--------------------------");
+        // public String(String original):ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        String s6 = new String("helloworld");
+        System.out.println("s6:" + s6);
+        System.out.println("s6.length():" + s6.length());
+        System.out.println("--------------------------");
 
-		// Java ³ÌÐòÖÐµÄËùÓÐ×Ö·û´®×ÖÃæÖµ£¨Èç "abc" £©¶¼×÷Îª´ËÀàµÄÊµÀýÊµÏÖ¡£
-		String s7 = "helloworld";
-		System.out.println("s7:" + s7);
-		System.out.println("s7.length():" + s7.length());
-	}
+        // Java ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ "abc" ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Êµï¿½Ö¡ï¿½
+        String s7 = "helloworld";
+        System.out.println("s7:" + s7);
+        System.out.println("s7.length():" + s7.length());
+    }
 }

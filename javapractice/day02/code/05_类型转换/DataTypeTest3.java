@@ -1,23 +1,23 @@
 class DataTypeTest3 {
-	public static void main(String[] args) {
-		byte b = (byte)300;
-		System.out.println(b);
+    public static void main(String[] args) {
+        byte b = (byte) 300;
+        System.out.println(b);
 
 
-		System.out.println((byte)127);
-		System.out.println((byte)128);
-		System.out.println((byte)129);
-		System.out.println((byte)130);
-		System.out.println((byte)131);
-	}
+        System.out.println((byte) 127);
+        System.out.println((byte) 128);
+        System.out.println((byte) 129);
+        System.out.println((byte) 130);
+        System.out.println((byte) 131);
+    }
 }
 
 /*
-	Ê®½øÖÆ£º300
+	Ê®ï¿½ï¿½ï¿½Æ£ï¿½300
 
-	A:°ÑÊ®½øÖÆ×ª»»Îª¶þ½øÖÆ
+	A:ï¿½ï¿½Ê®ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		00000000 00000000 00000001 00101100
 
-	B:½ØÈ¡
+	B:ï¿½ï¿½È¡
 		0 0101100
 */

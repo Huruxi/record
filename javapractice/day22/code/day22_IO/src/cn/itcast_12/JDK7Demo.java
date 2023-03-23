@@ -18,16 +18,16 @@ import java.util.ArrayList;
  *			把集合的数据写到文件。
  */
 public class JDK7Demo {
-	public static void main(String[] args) throws IOException {
-		// public static long copy(Path source, OutputStream out)
-		// Files.copy(Paths.get("a.txt"), new FileOutputStream("b.txt"));
-		// Files.copy(Paths.get("d:\\mn.bmp"), new FileOutputStream("mn.bmp"));
+    public static void main(String[] args) throws IOException {
+        // public static long copy(Path source, OutputStream out)
+        // Files.copy(Paths.get("a.txt"), new FileOutputStream("b.txt"));
+        // Files.copy(Paths.get("d:\\mn.bmp"), new FileOutputStream("mn.bmp"));
 
-		// 把集合数据写到文本文件
-		// ArrayList<String> array = new ArrayList<String>();
-		// array.add("hello");
-		// array.add("world");
-		// array.add("java");
-		// Files.write(Paths.get("array.txt"), array, Charset.forName("GBK"));
-	}
+        // 把集合数据写到文本文件
+        // ArrayList<String> array = new ArrayList<String>();
+        // array.add("hello");
+        // array.add("world");
+        // array.add("java");
+        // Files.write(Paths.get("array.txt"), array, Charset.forName("GBK"));
+    }
 }

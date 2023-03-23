@@ -1,65 +1,65 @@
 package cn.itcast_04;
 
 /*
- * ÅÐ¶ÏÒ»¸ö×Ö·û´®ÊÇ·ñÊÇ¶Ô³Æ×Ö·û´®
- * ÀýÈç"abc"²»ÊÇ¶Ô³Æ×Ö·û´®£¬"aba"¡¢"abba"¡¢"aaa"¡¢"mnanm"ÊÇ¶Ô³Æ×Ö·û´®
+ * ï¿½Ð¶ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ç¶Ô³ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½"abc"ï¿½ï¿½ï¿½Ç¶Ô³ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½"aba"ï¿½ï¿½"abba"ï¿½ï¿½"aaa"ï¿½ï¿½"mnanm"ï¿½Ç¶Ô³ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
  */
 public class StringBufferTest3 {
-	public static void main(String[] args) {
-		String s = "mnanm";
-		// String s = "abcde";
+    public static void main(String[] args) {
+        String s = "mnanm";
+        // String s = "abcde";
 
-		// ·½Ê½1²âÊÔ
-		// boolean b = isDuiCheng(s);
-		// System.out.println(b);
+        // ï¿½ï¿½Ê½1ï¿½ï¿½ï¿½ï¿½
+        // boolean b = isDuiCheng(s);
+        // System.out.println(b);
 
-		// ·½Ê½2²âÊÔ
-		boolean b2 = isDuiCheng(s);
-		System.out.println(b2);
+        // ï¿½ï¿½Ê½2ï¿½ï¿½ï¿½ï¿½
+        boolean b2 = isDuiCheng(s);
+        System.out.println(b2);
 
-	}
+    }
 
-	// ·½Ê½1
-	// public static boolean isDuiCheng(String s) {
-	// // °Ñ×Ö·û´®×ª³ÉÊý×é
-	// char[] chs = s.toCharArray();
-	// // °ÑÊý×éµÄÔªËØ·´×ª
-	// for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
-	// if (chs[start] != chs[end]) {
-	// return false;
-	// }
-	// }
-	// return true;
-	// }
+    // ï¿½ï¿½Ê½1
+    // public static boolean isDuiCheng(String s) {
+    // // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // char[] chs = s.toCharArray();
+    // // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø·ï¿½×ª
+    // for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
+    // if (chs[start] != chs[end]) {
+    // return false;
+    // }
+    // }
+    // return true;
+    // }
 
-	// public static boolean isDuiCheng(String s) {
-	// boolean flag = true;
-	// // °Ñ×Ö·û´®×ª³ÉÊý×é
-	// char[] chs = s.toCharArray();
-	// // °ÑÊý×éµÄÔªËØ·´×ª
-	// for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
-	// if (chs[start] != chs[end]) {
-	// flag = false;
-	// break;
-	// }
-	// }
-	// return flag;
-	// }
+    // public static boolean isDuiCheng(String s) {
+    // boolean flag = true;
+    // // ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    // char[] chs = s.toCharArray();
+    // // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø·ï¿½×ª
+    // for (int start = 0, end = chs.length - 1; start <= end; start++, end--) {
+    // if (chs[start] != chs[end]) {
+    // flag = false;
+    // break;
+    // }
+    // }
+    // return flag;
+    // }
 
-	// ·½Ê½2
-	public static boolean isDuiCheng(String s) {
-		// ·´×ª
-		StringBuffer sb = new StringBuffer(s);
-		sb.reverse();
-		String ss = new String(sb);
-		// if (ss.equals(s)) {
-		// return true;
-		// } else {
-		// return false;
-		// }
-		return ss.equals(s);
+    // ï¿½ï¿½Ê½2
+    public static boolean isDuiCheng(String s) {
+        // ï¿½ï¿½×ª
+        StringBuffer sb = new StringBuffer(s);
+        sb.reverse();
+        String ss = new String(sb);
+        // if (ss.equals(s)) {
+        // return true;
+        // } else {
+        // return false;
+        // }
+        return ss.equals(s);
 
-		// Ò»¾ä»°¸ã¶¨
-		// return new String(new StringBuffer(s).reverse()).equals(s);
-	}
+        // Ò»ï¿½ä»°ï¿½ã¶¨
+        // return new String(new StringBuffer(s).reverse()).equals(s);
+    }
 }

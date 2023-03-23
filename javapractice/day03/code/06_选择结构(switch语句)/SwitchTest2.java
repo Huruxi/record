@@ -1,43 +1,43 @@
 /*
-	Ä£Äâ×öµ¥ÏîÑ¡ÔñÌâ£¬¸ù¾ÝÄãµÄÑ¡Ôñ£¬¸ø³ö¶ÔÓ¦µÄ´ð°¸¡£(±í´ïÊ½ÊÇ×Ö·ûµÄÇé¿ö)
-	¸ù¾Ý¸ø¶¨µÄ×Ö·û´®£¬À´Êä³öÄãÑ¡ÔñµÄ×Ö·û´®ÊÇÊ²Ã´¡£(±í´ïÊ½ÊÇ×Ö·û´®µÄÇé¿ö)
+	Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ñ£¬¸ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½Ä´ð°¸¡ï¿½(ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+	ï¿½ï¿½ï¿½Ý¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½(ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
 */
 class SwitchTest2 {
-	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÑ¡Ïî
-		//±í´ïÊ½ÊÇ×Ö·û
-		char ch = 'B';
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñ¡ï¿½ï¿½
+        //ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½Ö·ï¿½
+        char ch = 'B';
 
-		switch(ch) {
-			case 'A':
-				System.out.println("ÄãÑ¡ÔñÁËA");
-				break;
-			case 'B':
-				System.out.println("ÄãÑ¡ÔñÁËB");
-				break;
-			case 'C':
-				System.out.println("ÄãÑ¡ÔñÁËC");
-				break;
-			case 'D':
-				System.out.println("ÄãÑ¡ÔñÁËD");
-				break;
-		}
+        switch (ch) {
+            case 'A':
+                System.out.println("ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½A");
+                break;
+            case 'B':
+                System.out.println("ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½B");
+                break;
+            case 'C':
+                System.out.println("ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½C");
+                break;
+            case 'D':
+                System.out.println("ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½D");
+                break;
+        }
 
-		//¸ø¶¨×Ö·û´®½øÐÐÅÐ¶Ï
-		String s = "java";
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
+        String s = "java";
 
-		switch(s) {
-			case "hello":
-				System.out.println("hello");
-				break;
-			case "world":
-				System.out.println("world");
-				break;
-			case "java":
-				System.out.println("java");
-				break;
-			default:
-				System.out.println("android");
-		}
-	}
+        switch (s) {
+            case "hello":
+                System.out.println("hello");
+                break;
+            case "world":
+                System.out.println("world");
+                break;
+            case "java":
+                System.out.println("java");
+                break;
+            default:
+                System.out.println("android");
+        }
+    }
 }

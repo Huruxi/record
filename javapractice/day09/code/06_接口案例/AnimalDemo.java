@@ -1,173 +1,178 @@
 /*
-	ÎÒÃÇÔÚ×öÒ»¸ö³ÌÐòÉè¼ÆµÄÊ±ºò£¬Çë´Ó¾ßÌåµÄ¿ªÊ¼·ÖÎö£¬¿´ÓÐÄÄÐ©¹²ÐÔµÄÄÚÈÝ£¬²»¶ÏµÄÏòÉÏ³éÈ¡¡£
-	·ÖÎöµÄ¹ý³Ì£º´Ó¾ßÌåµ½³éÏó¡£
-	ÊµÏÖµÄ¹ý³Ì£º´Ó³éÏóµ½¾ßÌå¡£
-	Ê¹ÓÃµÄÊ±ºò£ºÊ¹ÓÃµÄÊÇ¾ßÌåµÄ¶ÔÏó¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê±ï¿½ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½Ä¿ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ï³ï¿½È¡ï¿½ï¿½
+	ï¿½ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½Ì£ï¿½ï¿½Ó¾ï¿½ï¿½åµ½ï¿½ï¿½ï¿½ï¿½
+	Êµï¿½ÖµÄ¹ï¿½ï¿½Ì£ï¿½ï¿½Ó³ï¿½ï¿½óµ½¾ï¿½ï¿½å¡£
+	Ê¹ï¿½Ãµï¿½Ê±ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½Ç¾ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
 
-	Ã¨¹·°¸Àý,¼ÓÈëÌø¸ßµÄ¶îÍâ¹¦ÄÜ
+	Ã¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµÄ¶ï¿½ï¿½â¹¦ï¿½ï¿½
 
-	ÔË¶¯Ô±£º(½Ó¿Ú)
-		³ÉÔ±·½·¨£ºÌø¸ß¡£
+	ï¿½Ë¶ï¿½Ô±ï¿½ï¿½(ï¿½Ó¿ï¿½)
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß¡ï¿½
 
-	Ã¨£º(¾ßÌåÀà)
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx£¬³Ô·¹£¬Ë¯¾õ
+	Ã¨ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxxï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½Ë¯ï¿½ï¿½
 
-	¹·£º(¾ßÌåÀà)
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx£¬³Ô·¹£¬Ë¯¾õ
+	ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxxï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½Ë¯ï¿½ï¿½
 
-	Ã¨¹·ÓÐºÜ¶à¹²ÐÔµÄÄÚÈÝ£¬ËùÒÔÎÒÃÇÒª½øÐÐÌáÈ¡£º
+	Ã¨ï¿½ï¿½ï¿½ÐºÜ¶à¹²ï¿½Ôµï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½
 	
-	¶¯Îï£º(³éÏóÀà)
-		³ÉÔ±±äÁ¿£ºÐÕÃû£¬ÄêÁä
-		¹¹Ôì·½·¨£ºÎÞ²Î£¬´ø²Î
-		³ÉÔ±·½·¨£ºgetXxx()/setXxx£¬³Ô·¹()£¬Ë¯¾õ(){}
+	ï¿½ï¿½ï¿½ï£º(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²Î£ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½getXxx()/setXxxï¿½ï¿½ï¿½Ô·ï¿½()ï¿½ï¿½Ë¯ï¿½ï¿½(){}
 
-	³éÏóÀà£º
-		¶¯Îï(³éÏóÀà)
-			Ã¨(¾ßÌåÀà)
-				¾ß±¸Ìø¸ß¹¦ÄÜµÄÃ¨(¾ßÌåÀà)
-			¹·(¾ßÌåÀà)
-				¾ß±¸Ìø¸ß¹¦ÄÜµÄ¹·(¾ßÌåÀà)
-		ÔË¶¯Ô±(½Ó¿Ú)
+	ï¿½ï¿½ï¿½ï¿½ï¿½à£º
+		ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+			Ã¨(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+				ï¿½ß±ï¿½ï¿½ï¿½ï¿½ß¹ï¿½ï¿½Üµï¿½Ã¨(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+			ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+				ï¿½ß±ï¿½ï¿½ï¿½ï¿½ß¹ï¿½ï¿½ÜµÄ¹ï¿½(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½)
+		ï¿½Ë¶ï¿½Ô±(ï¿½Ó¿ï¿½)
 
 
-	¶àÌ¬µÄÇ°Ìá£º
-		A:ÓÐ¼Ì³Ð»òÕßÊµÏÖ¹ØÏµ
-		B:ÓÐ·½·¨µÄÖØÐ´
-		C:ÓÐ¸¸Àà»òÕß¸¸½Ó¿ÚÒýÓÃÖ¸Ïò×ÓÀà¶ÔÏó
+	ï¿½ï¿½Ì¬ï¿½ï¿½Ç°ï¿½á£º
+		A:ï¿½Ð¼Ì³Ð»ï¿½ï¿½ï¿½Êµï¿½Ö¹ï¿½Ïµ
+		B:ï¿½Ð·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´
+		C:ï¿½Ð¸ï¿½ï¿½ï¿½ï¿½ï¿½ß¸ï¿½ï¿½Ó¿ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-	¶àÌ¬µÄ±íÏÖÐÎÊ½£º
-		¾ßÌåÀà¶àÌ¬
-		³éÏóÀà¶àÌ¬
-		½Ó¿Ú¶àÌ¬
+	ï¿½ï¿½Ì¬ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¬
+		ï¿½Ó¿Ú¶ï¿½Ì¬
 
-	ÎÒÃÇÄ¿Ç°×î³£ÓÃµÄÊÇ¾ßÌåÀà´´½¨¶ÔÏó²¢Ê¹ÓÃ¡£
+	ï¿½ï¿½ï¿½ï¿½Ä¿Ç°ï¿½î³£ï¿½Ãµï¿½ï¿½Ç¾ï¿½ï¿½ï¿½ï¿½à´´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã¡ï¿½
 */
-//ÔË¶¯Ô±½Ó¿Ú
+//ï¿½Ë¶ï¿½Ô±ï¿½Ó¿ï¿½
 interface Sport {
-	//Ìø¸ß¹¦ÄÜ
-	public abstract void jump();
+    //ï¿½ï¿½ï¿½ß¹ï¿½ï¿½ï¿½
+    public abstract void jump();
 }
 
-//¶¯Îï³éÏóÀà
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 abstract class Animal {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Animal(){}
+    public Animal() {
+    }
 
-	public Animal(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	//Ë¯¾õ
-	public void sleep() {
-		System.out.println("¶¯ÎïÃÇÒªË¯¾õ");
-	}
+    //Ë¯ï¿½ï¿½
+    public void sleep() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªË¯ï¿½ï¿½");
+    }
 
-	//³Ô·¹
-	public abstract void eat();
+    //ï¿½Ô·ï¿½
+    public abstract void eat();
 }
 
 //Ã¨
 class Cat extends Animal {
-	public Cat(){}
+    public Cat() {
+    }
 
-	public Cat(String name,int age) {
-		super(name,age);
-	}
+    public Cat(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("Ã¨³ÔÓã");
-	}
+    public void eat() {
+        System.out.println("Ã¨ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
-//¾ß±¸Ìø¸ß¹¦ÄÜµÄÃ¨
+//ï¿½ß±ï¿½ï¿½ï¿½ï¿½ß¹ï¿½ï¿½Üµï¿½Ã¨
 class JumpCat extends Cat implements Sport {
-	public JumpCat(){}
+    public JumpCat() {
+    }
 
-	public JumpCat(String name,int age) {
-		super(name,age);
-	}
+    public JumpCat(String name, int age) {
+        super(name, age);
+    }
 
-	public void jump() {
-		System.out.println("Ã¨À´ÁËÒ»¸öºó¿Õ·­Ìø¹ýÁËÀ¸¸Ë");
-	}
+    public void jump() {
+        System.out.println("Ã¨ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Õ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
-//¹·
+//ï¿½ï¿½
 class Dog extends Animal {
-	public Dog(){}
+    public Dog() {
+    }
 
-	public Dog(String name,int age) {
-		super(name,age);
-	}
+    public Dog(String name, int age) {
+        super(name, age);
+    }
 
-	public void eat() {
-		System.out.println("¹·³ÔÈâ");
-	}
+    public void eat() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
-//¾ß±¸Ìø¸ß¹¦ÄÜµÄ¹·
+//ï¿½ß±ï¿½ï¿½ï¿½ï¿½ß¹ï¿½ï¿½ÜµÄ¹ï¿½
 class JumpDog extends Dog implements Sport {
-	public JumpDog(){}
+    public JumpDog() {
+    }
 
-	public JumpDog(String name,int age) {
-		super(name,age);
-	}
+    public JumpDog(String name, int age) {
+        super(name, age);
+    }
 
-	public void jump() {
-		System.out.println("¹·ÌÚ¿Õ¶øÆðÔ½¹ýÁËÎ§Ç½");
-	}
+    public void jump() {
+        System.out.println("ï¿½ï¿½ï¿½Ú¿Õ¶ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½ï¿½Î§Ç½");
+    }
 }
 
 class AnimalDemo {
-	public static void main(String[] args) {
-		//Ìø¸ßÃ¨
-		//ÎÞ²Î
-		JumpCat jc = new JumpCat();
-		jc.setName("»úÆ÷Ã¨");
-		jc.setAge(5);
-		System.out.println(jc.getName()+"---"+jc.getAge());
-		jc.sleep();
-		jc.eat();
-		jc.jump();
-		//´ø²Î...
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ã¨
+        //ï¿½Þ²ï¿½
+        JumpCat jc = new JumpCat();
+        jc.setName("ï¿½ï¿½ï¿½ï¿½Ã¨");
+        jc.setAge(5);
+        System.out.println(jc.getName() + "---" + jc.getAge());
+        jc.sleep();
+        jc.eat();
+        jc.jump();
+        //ï¿½ï¿½ï¿½ï¿½...
 
-		//¶àÌ¬
-		Animal a = new JumpCat();
-		a.setName("À¶Ã¨");
-		a.setAge(6);
-		System.out.println(a.getName()+"---"+a.getAge());
-		a.sleep();
-		a.eat();
-		//a.jump();
+        //ï¿½ï¿½Ì¬
+        Animal a = new JumpCat();
+        a.setName("ï¿½ï¿½Ã¨");
+        a.setAge(6);
+        System.out.println(a.getName() + "---" + a.getAge());
+        a.sleep();
+        a.eat();
+        //a.jump();
 
-		//¶àÌ¬
-		Sport s = new JumpCat();
-		s.jump();
-		//s.eat();
-		//s.sleep();
-	}
+        //ï¿½ï¿½Ì¬
+        Sport s = new JumpCat();
+        s.jump();
+        //s.eat();
+        //s.sleep();
+    }
 }

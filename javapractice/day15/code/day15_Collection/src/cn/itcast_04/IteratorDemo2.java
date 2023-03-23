@@ -4,26 +4,26 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class IteratorDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Collection c = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Collection c = new ArrayList();
 
-		// ´´½¨ÔªËØ²¢Ìí¼ÓÔªËØ
-		c.add("hello");
-		c.add("world");
-		c.add("java");
+        // ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø²ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        c.add("hello");
+        c.add("world");
+        c.add("java");
 
-		// ±éÀú
-		// Iterator it = c.iterator();
-		// while (it.hasNext()) {
-		// String s = (String) it.next();
-		// System.out.println(s);
-		// }
+        // ï¿½ï¿½ï¿½ï¿½
+        // Iterator it = c.iterator();
+        // while (it.hasNext()) {
+        // String s = (String) it.next();
+        // System.out.println(s);
+        // }
 
-		// forÑ­»·¸Ä½ø
-		// for (Iterator it = c.iterator(); it.hasNext();) {
-		// String s = (String) it.next();
-		// System.out.println(s);
-		// }
-	}
+        // forÑ­ï¿½ï¿½ï¿½Ä½ï¿½
+        // for (Iterator it = c.iterator(); it.hasNext();) {
+        // String s = (String) it.next();
+        // System.out.println(s);
+        // }
+    }
 }

@@ -3,17 +3,17 @@ package cn.itcast_03;
 import java.io.IOException;
 
 /*
- * Runtime£º
+ * Runtimeï¿½ï¿½
  * 		public static Runtime getRuntime()
- * 
- * Ã»ÓÐ¹¹Ôì£¬·½·¨²»È«ÊÇ¾²Ì¬µÄ¡£
- * ÕâÖÐÀà¿Ï¶¨ÊÇÍ¨¹ý¾²Ì¬µÄ·½·¨·µ»ØÁË¸ÃÀàµÄ¶ÔÏó¡£
+ *
+ * Ã»ï¿½Ð¹ï¿½ï¿½ì£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È«ï¿½Ç¾ï¿½Ì¬ï¿½Ä¡ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Ì¬ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¸ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
  */
 public class RuntimeDemo {
-	public static void main(String[] args) throws IOException {
-		Runtime r = Runtime.getRuntime();
+    public static void main(String[] args) throws IOException {
+        Runtime r = Runtime.getRuntime();
 
-		// r.exec("calc");
-		r.exec("notepad");
-	}
+        r.exec("calc");
+//		r.exec("notepad");
+    }
 }

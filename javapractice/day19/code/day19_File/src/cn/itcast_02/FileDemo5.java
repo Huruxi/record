@@ -5,26 +5,26 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- *public String getAbsolutePath():»ñÈ¡¾ø¶ÔÂ·¾¶
- *public String getPath():»ñÈ¡Ïà¶ÔÂ·¾¶
- *public String getName():»ñÈ¡Ãû³Æ
- *public long length():»ñÈ¡ÎÄ¼þµÄ´óÐ¡
- *public long lastModified():»ñÈ¡×îºóÒ»´ÎÐÞ¸ÄÊ±¼äµÄºÁÃëÖµ
+ *public String getAbsolutePath():ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+ *public String getPath():ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+ *public String getName():ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½
+ *public long length():ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½Ä´ï¿½Ð¡
+ *public long lastModified():ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Þ¸ï¿½Ê±ï¿½ï¿½Äºï¿½ï¿½ï¿½Öµ
  */
 public class FileDemo5 {
-	public static void main(String[] args) {
-		File file = new File("aaa\\bbb\\b.txt");
+    public static void main(String[] args) {
+        File file = new File("aaa\\bbb\\b.txt");
 
-		System.out.println("getAbsolutePath:" + file.getAbsolutePath());
-		System.out.println("getPath:" + file.getPath());
-		System.out.println("getName:" + file.getName());
-		System.out.println("length:" + file.length());
-		System.out.println("lastModified:" + file.lastModified());
+        System.out.println("getAbsolutePath:" + file.getAbsolutePath());
+        System.out.println("getPath:" + file.getPath());
+        System.out.println("getName:" + file.getName());
+        System.out.println("length:" + file.length());
+        System.out.println("lastModified:" + file.lastModified());
 
-		// 1428044959288
-		Date d = new Date(1428044959288L);
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String s = sdf.format(d);
-		System.out.println(s);
-	}
+        // 1428044959288
+        Date d = new Date(1428044959288L);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        String s = sdf.format(d);
+        System.out.println(s);
+    }
 }

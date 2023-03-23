@@ -1,24 +1,25 @@
 /*
-	¼üÅÌÂ¼ÈëÁ½¸öÊı¾İ£¬±È½ÏÕâÁ½¸öÊı¾İÊÇ·ñÏàµÈ
+	ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
 class OperatorTest4 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//»ñÈ¡¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëµÚÒ»¸öÊı¾İ£º");
-		int a = sc.nextInt();
-		System.out.println("ÇëÊäÈëµÚ¶ş¸öÊı¾İ£º");
-		int b = sc.nextInt();
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½");
+        int a = sc.nextInt();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½");
+        int b = sc.nextInt();
 
-		//±È½ÏÊÇ·ñÏàµÈ
-		//boolean flag =  (a==b)?true:false;
-		boolean flag = (a==b);
+        //ï¿½È½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½
+        //boolean flag =  (a==b)?true:false;
+        boolean flag = (a == b);
 
-		//Êä³ö½á¹û
-		System.out.println(flag);
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println(flag);
+    }
 }

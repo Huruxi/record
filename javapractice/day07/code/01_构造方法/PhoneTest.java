@@ -1,55 +1,57 @@
 class Phone {
-	private String brand;
-	private int price;
-	private String color;
+    private String brand;
+    private int price;
+    private String color;
 
-	public Phone() {}
+    public Phone() {
+    }
 
-	public Phone(String brand,int price,String color) {
-		this.brand = brand;
-		this.price = price;
-		this.color = color;
-	}
+    public Phone(String brand, int price, String color) {
+        this.brand = brand;
+        this.price = price;
+        this.color = color;
+    }
 
-	public void setBrand(String brand) {
-		this.brand = brand;
-	}
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
 
-	public String getBrand() {
-		return brand;
-	}
+    public String getBrand() {
+        return brand;
+    }
 
-	public void setPrice(int price) {
-		this.price = price;
-	}
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
-	public int getPrice() {
-		return price;
-	}
+    public int getPrice() {
+        return price;
+    }
 
-	public void setColor(String color) {
-		this.color = color;
-	}
+    public void setColor(String color) {
+        this.color = color;
+    }
 
-	public String getColor() {
-		return color;
-	}
+    public String getColor() {
+        return color;
+    }
 
-	public void show() {
-		System.out.println("ÎÒµÄÊÖ»úÊÇ£º"+brand+",¼Û¸ñÊÇ£º"+price+",ÑÕÉ«ÊÇ£º"+color);
-	}
+    public void show() {
+        System.out.println("ï¿½Òµï¿½ï¿½Ö»ï¿½ï¿½Ç£ï¿½" + brand + ",ï¿½Û¸ï¿½ï¿½Ç£ï¿½" + price + ",ï¿½ï¿½É«ï¿½Ç£ï¿½" + color);
+    }
 }
-class PhoneTest {
-	public static void main(String[] args) {
-		//ÎÞ²Î+setXxx()
-		Phone p = new Phone();
-		p.setBrand("ÈýÐÇ");
-		p.setPrice(1000);
-		p.setColor("ºÚÉ«");
-		p.show();
 
-		//´ø²Î
-		Phone pp = new Phone("»ªÎª",799,"°×É«");
-		pp.show();
-	}
+class PhoneTest {
+    public static void main(String[] args) {
+        //ï¿½Þ²ï¿½+setXxx()
+        Phone p = new Phone();
+        p.setBrand("ï¿½ï¿½ï¿½ï¿½");
+        p.setPrice(1000);
+        p.setColor("ï¿½ï¿½É«");
+        p.show();
+
+        //ï¿½ï¿½ï¿½ï¿½
+        Phone pp = new Phone("ï¿½ï¿½Îª", 799, "ï¿½ï¿½É«");
+        pp.show();
+    }
 }

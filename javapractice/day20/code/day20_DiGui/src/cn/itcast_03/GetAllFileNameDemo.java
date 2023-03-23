@@ -3,51 +3,51 @@ package cn.itcast_03;
 import java.io.File;
 
 /*
- * µÝ¹éÊä³öÄ¿Â¼ÏÂÖ¸¶¨ºó×ºÃû½áÎ²µÄÎÄ¼þ¾ø¶ÔÂ·¾¶ .java
+ * ï¿½Ý¹ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½×ºï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ .java
  * D:\itcast\20150306
- * 
- * ·ÖÎö£º
- * 		A:·â×°Ö¸¶¨Ä¿Â¼
- * 		B:»ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓÐÎÄ¼þ»òÕßÎÄ¼þ¼ÐµÄFileÊý×é
- * 		C:±éÀú¸ÃFileÊý×é£¬»ñÈ¡µÃµ½Ã¿Ò»¸öFile¶ÔÏó
- * 		D:ÅÐ¶Ï¸ÃFile¶ÔÏó
- * 			ÊÇÎÄ¼þ¼Ð£º»Øµ½B(µÝ¹é)
- * 			ÊÇÎÄ¼þ£º
- * 				ÅÐ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄºó×º½áÎ²
- * 					ÊÇ£º¾ÍÊä³ö¸ÃÎÄ¼þµÄ¾ø¶ÔÂ·¾¶
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½×°Ö¸ï¿½ï¿½Ä¿Â¼
+ * 		B:ï¿½ï¿½È¡Ö¸ï¿½ï¿½Ä¿Â¼ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½é£¬ï¿½ï¿½È¡ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 		D:ï¿½Ð¶Ï¸ï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½ï¿½Øµï¿½B(ï¿½Ý¹ï¿½)
+ * 			ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+ * 				ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Äºï¿½×ºï¿½ï¿½Î²
+ * 					ï¿½Ç£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½
  */
 public class GetAllFileNameDemo {
-	public static int count1 = 0;
-	public static int count2 = 0;
+    public static int count1 = 0;
+    public static int count2 = 0;
 
-	public static void main(String[] args) {
-		// ·â×°Ö¸¶¨Ä¿Â¼
-		File srcFolder = new File("D:\\itcast\\20150306");
-		// µÝ¹éÊµÏÖ
-		getAllJavaFilePath(srcFolder);
-		System.out.println("¹²Ñ§Ï°ÁË" + count1 + "¸öjavaÎÄ¼þ");
-		System.out.println("¹²Ñ§Ï°ÁË" + count2 + "¸öaviÎÄ¼þ");
-	}
+    public static void main(String[] args) {
+        // ï¿½ï¿½×°Ö¸ï¿½ï¿½Ä¿Â¼
+        File srcFolder = new File("E:\\work\\record\\javapractice");
+        // ï¿½Ý¹ï¿½Êµï¿½ï¿½
+        getAllJavaFilePath(srcFolder);
+        System.out.println("ï¿½ï¿½Ñ§Ï°ï¿½ï¿½" + count1 + "ï¿½ï¿½javaï¿½Ä¼ï¿½");
+        System.out.println("ï¿½ï¿½Ñ§Ï°ï¿½ï¿½" + count2 + "ï¿½ï¿½aviï¿½Ä¼ï¿½");
+    }
 
-	public static void getAllJavaFilePath(File srcFolder) {
-		// »ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓÐÎÄ¼þ»òÕßÎÄ¼þ¼ÐµÄFileÊý×é
-		File[] fileArray = srcFolder.listFiles();
-		// ±éÀú¸ÃFileÊý×é£¬»ñÈ¡µÃµ½Ã¿Ò»¸öFile¶ÔÏó
-		for (File file : fileArray) {
-			if (file.isDirectory()) {
-				// ÊÇÎÄ¼þ¼Ð£º»Øµ½B(µÝ¹é)
-				getAllJavaFilePath(file);
-			} else {
-				// ÅÐ¶ÏÊÇ·ñÒÔÖ¸¶¨µÄºó×º½áÎ²
-				if (file.getName().endsWith(".java")) {
-					count1++;
-					// ¾ÍÊä³ö¸ÃÎÄ¼þµÄ¾ø¶ÔÂ·¾¶
-					System.out.println(file.getAbsolutePath());
-				}else if(file.getName().endsWith(".avi")){
-					count2++;
-					System.out.println(file.getName());
-				}
-			}
-		}
-	}
+    public static void getAllJavaFilePath(File srcFolder) {
+        // ï¿½ï¿½È¡Ö¸ï¿½ï¿½Ä¿Â¼ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½Fileï¿½ï¿½ï¿½ï¿½
+        File[] fileArray = srcFolder.listFiles();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½é£¬ï¿½ï¿½È¡ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+        for (File file : fileArray) {
+            if (file.isDirectory()) {
+                // ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½ï¿½Øµï¿½B(ï¿½Ý¹ï¿½)
+                getAllJavaFilePath(file);
+            } else {
+                // ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Äºï¿½×ºï¿½ï¿½Î²
+                if (file.getName().endsWith(".java")) {
+                    count1++;
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½Â·ï¿½ï¿½
+                    System.out.println(file.getAbsolutePath());
+                } else if (file.getName().endsWith(".avi")) {
+                    count2++;
+                    System.out.println(file.getName());
+                }
+            }
+        }
+    }
 }

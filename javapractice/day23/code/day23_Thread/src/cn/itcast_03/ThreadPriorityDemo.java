@@ -1,46 +1,49 @@
 package cn.itcast_03;
 
 /*
- * оъЁл╣д╣В╤хё╨а╫жж
- * ╥жй╠╣В╤хдёпм   ф╫╬Ы╥жеД
- * гюу╪й╫╣В╤хдёпм   к╜сеох╪╤╦ък╜охж╢пп
- * java╡исц╣дйггюу╪й╫╣В╤хдёпм║ё
- * 
- * javaйгхГ╨н╩Ях║╨миХжцоъЁл╣дсеох╪╤дь?
- * нрцгожтз╡╒ц╩сп╦ЬЁЖц©╦ЖоъЁл╣дсеох╪╤ё╛╣╚йгё╛кЭр╩яЫ©иртеэ║ёк╣цВакё╛кЭс╕╦цйгспд╛хосеох╪╤║ё
- * public final int getPriority():╥╣╩ьоъЁл╣дсеох╪╤║ё м╗╧Щ╡Бйтё╛нрцгж╙╣юоъЁл╣дд╛хосеох╪╤йг5
- * 
- * public final void setPriority(int newPriority):╦Э╦доъЁл╣дсеох╪╤║ё м╗╧Щ╡И©╢т╢бКё╛нрцгж╙╣юоъЁл╣дсеох╪╤╥╤н╖йгё╨1-10║ёд╛хойг5
- * 
- * оъЁл╣дсеох╪╤╦ъё╛╡╩╢З╠Мр╩╤╗╩Аохж╢ппмЙ╠о║ёж╩сптз╢нйЩль╠П╤Ю╣дгИ©Жобё╛╡едэлЕожЁЖю╢║ё
+ * О©╫ъЁл╣д╣О©╫О©╫хёО©╫О©╫О©╫О©╫О©╫
+ * О©╫О©╫й╠О©╫О©╫О©╫О©╫дёО©╫О©╫   ф╫О©╫О©╫О©╫О©╫О©╫О©╫
+ * О©╫О©╫у╪й╫О©╫О©╫О©╫О©╫дёО©╫О©╫   к╜О©╫О©╫О©╫х╪О©╫О©╫О©╫к╜О©╫О©╫ж╢О©╫О©╫
+ * javaО©╫О©╫О©╫ц╣О©╫О©╫О©╫О©╫О©╫у╪й╫О©╫О©╫О©╫О©╫дёО©╫м║О©╫
+ *
+ * javaО©╫О©╫О©╫О©╫н╩О©╫х║О©╫О©╫О©╫О©╫О©╫О©╫О©╫ъЁл╣О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫?
+ * О©╫О©╫О©╫О©╫О©╫О©╫О©╫з╡О©╫ц╩О©╫п╦О©╫О©╫О©╫ц©О©╫О©╫О©╫ъЁл╣О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫О©╫О©╫О©╫гёО©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫О©╫О©╫э║О©╫к╣О©╫О©╫О©╫кёО©╫О©╫О©╫с╕О©╫О©╫О©╫О©╫О©╫О©╫д╛О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫
+ * public final int getPriority():О©╫О©╫О©╫О©╫О©╫ъЁл╣О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫ м╗О©╫О©╫О©╫О©╫О©╫тёО©╫О©╫О©╫О©╫О©╫ж╙О©╫О©╫О©╫ъЁл╣О©╫д╛О©╫О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫5
+ *
+ * public final void setPriority(int newPriority):О©╫О©╫О©╫О©╫О©╫ъЁл╣О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫ м╗О©╫О©╫О©╫И©╢т╢О©╫Кё╛О©╫О©╫О©╫О©╫ж╙О©╫О©╫О©╫ъЁл╣О©╫О©╫О©╫О©╫х╪О©╫О©╫О©╫н╖О©╫гёО©╫1-10О©╫О©╫д╛О©╫О©╫О©╫О©╫5
+ *
+ * О©╫ъЁл╣О©╫О©╫О©╫О©╫х╪О©╫О©╫ъёО©╫О©╫О©╫О©╫О©╫О©╫О©╫р╩О©╫О©╫О©╫О©╫О©╫О©╫ж╢О©╫О©╫О©╫О©╫о║О©╫ж╩О©╫О©╫О©╫з╢О©╫О©╫О©╫О©╫ь╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫бёО©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫жЁО©╫О©╫О©╫О©╫О©╫
  */
 public class ThreadPriorityDemo {
-	public static void main(String[] args) {
-		// ╢╢╫╗хЩ╦ЖоъЁл╤тоС
-		ThreadPriority tp1 = new ThreadPriority();
-		ThreadPriority tp2 = new ThreadPriority();
-		ThreadPriority tp3 = new ThreadPriority();
+    public static void main(String[] args) {
+        // О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ъЁл╤О©╫О©╫О©╫
+        ThreadPriority tp1 = new ThreadPriority();
+        ThreadPriority tp2 = new ThreadPriority();
+        ThreadPriority tp3 = new ThreadPriority();
 
-		// м╗╧ЩsetName()╥╫╥╗
-		tp1.setName("╤╚╥╫╡╩╟э");
-		tp2.setName("тю╡╩х╨");
-		tp3.setName("ажф╫ж╝");
+        // м╗О©╫О©╫setName()О©╫О©╫О©╫О©╫
+        tp1.setName("О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫");
+        tp2.setName("О©╫О©╫О©╫О©╫х╨");
+        tp3.setName("О©╫О©╫ф╫ж╝");
 
-		// ╩Ях║д╛хосеох╪╤
-		// System.out.println(tp1.getPriority());
-		// System.out.println(tp2.getPriority());
-		// System.out.println(tp3.getPriority());
+        // О©╫О©╫х║д╛О©╫О©╫О©╫О©╫О©╫х╪О©╫
+        // System.out.println(tp1.getPriority());
+        // System.out.println(tp2.getPriority());
+        // System.out.println(tp3.getPriority());
 
-		// иХжцоъЁлсеох╪╤
-		// IllegalArgumentException
-		// tp1.setPriority(1000);
+        // О©╫О©╫О©╫О©╫О©╫ъЁО©╫О©╫О©╫О©╫х╪О©╫
+        // IllegalArgumentException
+        // tp1.setPriority(1000);
+        System.out.println(tp1.getPriority());
+        System.out.println(tp2.getPriority());
+        System.out.println(tp3.getPriority());
 
-		tp1.setPriority(10);
-		tp2.setPriority(1);
+        tp1.setPriority(10);
+        tp2.setPriority(1);
 
-		// фТ╤╞оъЁл
-		tp1.start();
-		tp2.start();
-		tp3.start();
-	}
+        // О©╫О©╫О©╫О©╫О©╫ъЁО©╫
+        tp1.start();
+        tp2.start();
+        tp3.start();
+    }
 }

@@ -1,21 +1,21 @@
 package cn.itcast_03;
 
 /*
- * ·´×ªÊÇStringBufferµÄÌØÓĞ¹¦ÄÜ£¬StringÃ»ÓĞ¡£
- * ¶øStringÒª×ö·´×ª£¬ÉÔÎ¢Âé·³Ò»µã¡£Èç¹ûÄÜ¹»Ê¹ÓÃStringBufferµÄ¹¦ÄÜ¾ÍºÃÁË¡£
- * ÄÇÃ´£¬ÎÒÃÇµ½µ×ÄÜ²»ÄÜÈÃÒ»¸öÀàÈ¥Ê¹ÓÃÁíÒ»¸öÀàµÄ¹¦ÄÜÄØ?¿ÉÒÔ¡£
- * Ç°Ìá£ºÕâÁ½¸öÀàÖ®¼ä¿ÉÒÔÊµÏÖÏà»¥×ª»»¡£
+ * ï¿½ï¿½×ªï¿½ï¿½StringBufferï¿½ï¿½ï¿½ï¿½ï¿½Ğ¹ï¿½ï¿½Ü£ï¿½StringÃ»ï¿½Ğ¡ï¿½
+ * ï¿½ï¿½StringÒªï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Î¢ï¿½é·³Ò»ï¿½ã¡£ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½Ê¹ï¿½ï¿½StringBufferï¿½Ä¹ï¿½ï¿½Ü¾Íºï¿½ï¿½Ë¡ï¿½
+ * ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½ï¿½ï¿½ï¿½Ü²ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È¥Ê¹ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ä¹ï¿½ï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½Ô¡ï¿½
+ * Ç°ï¿½á£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½à»¥×ªï¿½ï¿½ï¿½ï¿½
  */
 public class StringBufferDemo {
-	public static void main(String[] args) {
-		//String -- StringBuffer;
-		//StringBuffer sb = "hello";
-		//StringBuffer(String str) 
-		String s = "hello";
-		StringBuffer sb = new StringBuffer(s);
-		
-		//StringBuffer -- String
-		//String(StringBuffer buffer) 
-		String ss = new String(sb);
-	}
+    public static void main(String[] args) {
+        //String -- StringBuffer;
+        //StringBuffer sb = "hello";
+        //StringBuffer(String str)
+        String s = "hello";
+        StringBuffer sb = new StringBuffer(s);
+
+        //StringBuffer -- String
+        //String(StringBuffer buffer)
+        String ss = new String(sb);
+    }
 }

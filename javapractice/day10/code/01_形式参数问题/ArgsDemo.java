@@ -1,23 +1,23 @@
-//ÐÎÊ½²ÎÊýÈç¹ûÊÇ»ù±¾ÀàÐÍ£¬Ö»ÐèÒª´«µÝ¸Ã»ù±¾ÀàÐÍµÄÖµ¼´¿É¡£
+//ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½Ö»ï¿½ï¿½Òªï¿½ï¿½ï¿½Ý¸Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Öµï¿½ï¿½ï¿½É¡ï¿½
 class Demo {
-	public int sum(int a,int b) {
-		return a + b;
-	}
+    public int sum(int a, int b) {
+        return a + b;
+    }
 }
 
 class ArgsDemo {
-	public static void main(String[] args) {
-		Demo d = new Demo();
+    public static void main(String[] args) {
+        Demo d = new Demo();
 
-		//±äÁ¿
-		int x = 10;
-		int y = 20;
-		int z = d.sum(x,y);
+        //ï¿½ï¿½ï¿½ï¿½
+        int x = 10;
+        int y = 20;
+        int z = d.sum(x, y);
 
-		//³£Á¿
-		int a = d.sum(10,20);
+        //ï¿½ï¿½ï¿½ï¿½
+        int a = d.sum(10, 20);
 
-		System.out.println(z);
-		System.out.println(a);
-	}
+        System.out.println(z);
+        System.out.println(a);
+    }
 }

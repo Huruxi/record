@@ -1,69 +1,70 @@
 /*
-	ÀàµÄ×é³É£º
-		³ÉÔ±±äÁ¿
-		¹¹Ôì·½·¨
-		³ÉÔ±·½·¨
+	ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
+		ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
 
-	¸øÀàµÄ³ÉÔ±±äÁ¿¸³ÖµÓÐ¼¸ÖÖ·½Ê½£º
-		A:setXxx()·½·¨
-		B:´ø²Î¹¹Ôì·½·¨
+	ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ð¼ï¿½ï¿½Ö·ï¿½Ê½ï¿½ï¿½
+		A:setXxx()ï¿½ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½Î¹ï¿½ï¿½ì·½ï¿½ï¿½
 
-	Á·Ï°£º
+	ï¿½ï¿½Ï°ï¿½ï¿½
 		Phone:
-			³ÉÔ±±äÁ¿£ºbrand,price,color
-			¹¹Ôì·½·¨£ºÎÞ²Î,´ø²Î
-			³ÉÔ±·½·¨£ºsetXxx()/getXxx()
+			ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½brand,price,color
+			ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½Þ²ï¿½,ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½setXxx()/getXxx()
 					  show()
 
 		PhoneTest:
 			main
 */
 class Student {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Student() {}
+    public Student() {
+    }
 
-	public Student(String name,int age) {
-		this.name = name;
-		this.age = age;
-	}
+    public Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void show() {
-		System.out.println("ÐÕÃûÊÇ£º"+name+",ÄêÁäÊÇ£º"+age);
-	}
+    public void show() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + name + ",ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + age);
+    }
 }
 
 class StudentTest {
-	public static void main(String[] args) {
-		//ÎÞ²Î+setXxx
-		Student s1 = new Student();
-		s1.setName("ÁÖÇàÏ¼");
-		s1.setAge(28);
-		System.out.println(s1.getName()+"---"+s1.getAge());
-		s1.show();
-		System.out.println("----------------------------");
+    public static void main(String[] args) {
+        //ï¿½Þ²ï¿½+setXxx
+        Student s1 = new Student();
+        s1.setName("ï¿½ï¿½ï¿½ï¿½Ï¼");
+        s1.setAge(28);
+        System.out.println(s1.getName() + "---" + s1.getAge());
+        s1.show();
+        System.out.println("----------------------------");
 
-		//´ø²Î
-		Student s2 = new Student("ÍõÖØÑô",82);
-		System.out.println(s2.getName()+"---"+s2.getAge());
-		s2.show();
-		
-	}
+        //ï¿½ï¿½ï¿½ï¿½
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 82);
+        System.out.println(s2.getName() + "---" + s2.getAge());
+        s2.show();
+
+    }
 }

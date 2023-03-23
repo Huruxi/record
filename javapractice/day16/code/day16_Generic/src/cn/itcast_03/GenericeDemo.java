@@ -4,36 +4,36 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /*
- *·ºÐÍ¸ß¼¶£º
- *·ºÐÍÍ¨Åä·û<?>
- *		ÈÎÒâÀàÐÍ£¬Èç¹ûÃ»ÓÐÃ÷È·£¬ÄÇÃ´¾ÍÊÇObjectÒÔ¼°ÈÎÒâµÄJavaÀàÁË
+ *ï¿½ï¿½ï¿½Í¸ß¼ï¿½ï¿½ï¿½
+ *ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½<?>
+ *		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Objectï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Javaï¿½ï¿½ï¿½ï¿½
  *? extends E
- *		ÏòÏÂÏÞ¶¨£¬E¼°Æä×ÓÀà
+ *		ï¿½ï¿½ï¿½ï¿½ï¿½Þ¶ï¿½ï¿½ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *? super E
- *		ÏòÉÏÏÞ¶¨£¬E¼°Æä¸¸Àà
+ *		ï¿½ï¿½ï¿½ï¿½ï¿½Þ¶ï¿½ï¿½ï¿½Eï¿½ï¿½ï¿½ä¸¸ï¿½ï¿½
  */
 public class GenericeDemo {
-	public static void main(String[] args) {
-		// ·ºÐÍÍ¨Åä·û<?>
-		Collection<?> c1 = new ArrayList<Animal>();
-		Collection<?> c2 = new ArrayList<Dog>();
-		Collection<?> c3 = new ArrayList<Cat>();
-		Collection<?> c4 = new ArrayList<Object>();
-		System.out.println("--------------------");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½<?>
+        Collection<?> c1 = new ArrayList<Animal>();
+        Collection<?> c2 = new ArrayList<Dog>();
+        Collection<?> c3 = new ArrayList<Cat>();
+        Collection<?> c4 = new ArrayList<Object>();
+        System.out.println("--------------------");
 
-		// ? extends E
-		Collection<? extends Animal> c5 = new ArrayList<Animal>();
-		Collection<? extends Animal> c6 = new ArrayList<Dog>();
-		Collection<? extends Animal> c7 = new ArrayList<Cat>();
-		// Collection<? extends Animal> c8 = new ArrayList<Object>();
-		System.out.println("--------------------");
+        // ? extends E
+        Collection<? extends Animal> c5 = new ArrayList<Animal>();
+        Collection<? extends Animal> c6 = new ArrayList<Dog>();
+        Collection<? extends Animal> c7 = new ArrayList<Cat>();
+        // Collection<? extends Animal> c8 = new ArrayList<Object>();
+        System.out.println("--------------------");
 
-		// ? super E
-		Collection<? super Animal> c9 = new ArrayList<Animal>();
-		// Collection<? super Animal> c10 = new ArrayList<Dog>();
-		// Collection<? super Animal> c11 = new ArrayList<Cat>();
-		Collection<? super Animal> c12 = new ArrayList<Object>();
-	}
+        // ? super E
+        Collection<? super Animal> c9 = new ArrayList<Animal>();
+        // Collection<? super Animal> c10 = new ArrayList<Dog>();
+        // Collection<? super Animal> c11 = new ArrayList<Cat>();
+        Collection<? super Animal> c12 = new ArrayList<Object>();
+    }
 }
 
 class Animal {

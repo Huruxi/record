@@ -4,59 +4,59 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 /*
- * RandomAccessFile:´ËÀàµÄÊµÀýÖ§³Ö¶ÔËæ»ú·ÃÎÊÎÄ¼þµÄ¶ÁÈ¡ºÍÐ´Èë¡£
- * RandomAccessFile(String name, String mode) 
- * 
- * public long getFilePointer():·µ»ØÆ«ÒÆÁ¿£¬ÒÔ×Ö½ÚÎªµ¥Î»
- * public void seek(long pos):ÉèÖÃµ½´ËÎÄ¼þ¿ªÍ·²âÁ¿µ½µÄÎÄ¼þÖ¸ÕëÆ«ÒÆÁ¿£¬ÔÚ¸ÃÎ»ÖÃ·¢ÉúÏÂÒ»¸ö¶ÁÈ¡»òÐ´Èë²Ù×÷¡£
+ * RandomAccessFile:ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ö§ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ä¶ï¿½È¡ï¿½ï¿½Ð´ï¿½ë¡£
+ * RandomAccessFile(String name, String mode)
+ *
+ * public long getFilePointer():ï¿½ï¿½ï¿½ï¿½Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½Îªï¿½ï¿½Î»
+ * public void seek(long pos):ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Ö¸ï¿½ï¿½Æ«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½Î»ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class RandomAccessFileDemo {
-	public static void main(String[] args) throws IOException {
-		write();
-		read();
-	}
+    public static void main(String[] args) throws IOException {
+        write();
+        read();
+    }
 
-	private static void read() throws IOException {
-		// ´´½¨¶ÔÏó
-		RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
+    private static void read() throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
 
-		// ¶ÁÊý¾Ý
-		System.out.println(raf.getFilePointer());
-		System.out.println(raf.readInt());
-		System.out.println(raf.getFilePointer());
-		System.out.println(raf.readChar());
-		System.out.println(raf.getFilePointer());
-		System.out.println(raf.readUTF());
-		System.out.println(raf.getFilePointer());
-		System.out.println("------------------");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println(raf.getFilePointer());
+        System.out.println(raf.readInt());
+        System.out.println(raf.getFilePointer());
+        System.out.println(raf.readChar());
+        System.out.println(raf.getFilePointer());
+        System.out.println(raf.readUTF());
+        System.out.println(raf.getFilePointer());
+        System.out.println("------------------");
 
-		// System.out.println(raf.read());
-		// raf.seek(0);
-		// System.out.println(raf.readInt());
-		raf.seek(4);
-		System.out.println(raf.readChar());
+        // System.out.println(raf.read());
+        // raf.seek(0);
+        // System.out.println(raf.readInt());
+        raf.seek(4);
+        System.out.println(raf.readChar());
 
-		raf.seek(1000);
-		System.out.println(raf.readUTF());
+        raf.seek(1000);
+        System.out.println(raf.readUTF());
 
-		// ÊÍ·Å×ÊÔ´
-		raf.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        raf.close();
+    }
 
-	private static void write() throws IOException {
-		// ´´½¨¶ÔÏó
-		RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
+    private static void write() throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        RandomAccessFile raf = new RandomAccessFile("raf.txt", "rw");
 
-		// Ð´Êý¾Ý
-		raf.writeInt(100);
-		raf.writeChar('a');
-		// raf.writeUTF("hello");
-		raf.writeUTF("ÁÖÇàÏ¼");
+        // Ð´ï¿½ï¿½ï¿½ï¿½
+        raf.writeInt(100);
+        raf.writeChar('a');
+        // raf.writeUTF("hello");
+        raf.writeUTF("ï¿½ï¿½ï¿½ï¿½Ï¼");
 
-		raf.seek(1000);
-		raf.writeUTF("¹þ¹þ");
+        raf.seek(1000);
+        raf.writeUTF("ï¿½ï¿½ï¿½ï¿½");
 
-		// ÊÍ·Å×ÊÔ´
-		raf.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        raf.close();
+    }
 }

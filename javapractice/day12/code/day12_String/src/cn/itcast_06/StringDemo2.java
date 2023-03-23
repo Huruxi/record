@@ -1,14 +1,14 @@
 package cn.itcast_06;
 
 /*
- * È¥³ý×Ö·û´®Á½¿Õ¸ñ	
+ * È¥ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¸ï¿½
  * String trim()
  */
 public class StringDemo2 {
-	public static void main(String[] args) {
-		String s = "     hello  world           ";
+    public static void main(String[] args) {
+        String s = "     hello  world           ";
 
-		System.out.println("---" + s + "---");
-		System.out.println("---" + s.trim() + "---");
-	}
+        System.out.println("---" + s + "---");
+        System.out.println("---" + s.trim() + "---");
+    }
 }

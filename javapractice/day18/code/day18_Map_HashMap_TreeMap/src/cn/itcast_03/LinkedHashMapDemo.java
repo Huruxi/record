@@ -4,24 +4,24 @@ import java.util.LinkedHashMap;
 import java.util.Set;
 
 /*
- * Map ½Ó¿ÚµÄ¹şÏ£±íºÍÁ´½ÓÁĞ±íÊµÏÖ£¬¾ßÓĞ¿ÉÔ¤ÖªµÄµü´úË³Ğò¡£
+ * Map ï¿½Ó¿ÚµÄ¹ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½Êµï¿½Ö£ï¿½ï¿½ï¿½ï¿½Ğ¿ï¿½Ô¤Öªï¿½Äµï¿½ï¿½ï¿½Ë³ï¿½ï¿½
  */
 public class LinkedHashMapDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        LinkedHashMap<String, String> map = new LinkedHashMap<String, String>();
 
-		// Ìí¼ÓÔªËØ
-		map.put("ÎÄÕÂ", "ÂíÒÁÀş");
-		map.put("Ğ»öª·æ", "ÕÅ°ØÖ¥");
-		map.put("ÌïÁÁ", "Ò¶Ò»Üç");
-		map.put("Íô·å", "ÕÂ×Óâù");
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        map.put("ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        map.put("Ğ»ï¿½ï¿½ï¿½ï¿½", "ï¿½Å°ï¿½Ö¥");
+        map.put("ï¿½ï¿½ï¿½ï¿½", "Ò¶Ò»ï¿½ï¿½");
+        map.put("ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 
-		// ±éÀú
-		Set<String> set = map.keySet();
-		for (String key : set) {
-			String value = map.get(key);
-			System.out.println(key + "---" + value);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½
+        Set<String> set = map.keySet();
+        for (String key : set) {
+            String value = map.get(key);
+            System.out.println(key + "---" + value);
+        }
+    }
 }

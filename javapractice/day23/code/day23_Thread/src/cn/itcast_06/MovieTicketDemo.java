@@ -1,28 +1,28 @@
 package cn.itcast_06;
 
 /*
- * Ä³µçÓ°ÔºÄ¿Ç°ÕýÔÚÉÏÓ³ºØËê´óÆ¬£¬¹²ÓÐ100ÕÅÆ±£¬¶øËüÓÐ3¸öÊÛÆ±´°¿ÚÊÛÆ±£¬ÇëÉè¼ÆÒ»¸ö³ÌÐòÄ£Äâ¸ÃµçÓ°ÔºÊÛÆ±¡£
- * Í¨¹ýÎÒÃÇµÄÑ§Ï°£¬ÎÒÃÇ´óÌåµÄ¿ÉÒÔ·ÖÎö³öÓ¦¸ÃÓÐÈý¸öÏß³ÌÖ´ÐÐÂôÆ±µÄ¶¯×÷¡£
- * 
- * ÊµÏÖ·½°¸£º
- * 		A:¼Ì³ÐThread
- * 		B:ÊµÏÖRunnable½Ó¿Ú
- * 
- * ¼Ì³ÐThread
+ * Ä³ï¿½ï¿½Ó°ÔºÄ¿Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó³ï¿½ï¿½ï¿½ï¿½ï¿½Æ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½100ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ãµï¿½Ó°Ôºï¿½ï¿½Æ±ï¿½ï¿½
+ * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Ñ§Ï°ï¿½ï¿½ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½Ö´ï¿½ï¿½ï¿½ï¿½Æ±ï¿½Ä¶ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * Êµï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½Ì³ï¿½Thread
+ * 		B:Êµï¿½ï¿½Runnableï¿½Ó¿ï¿½
+ *
+ * ï¿½Ì³ï¿½Thread
  */
 public class MovieTicketDemo {
-	public static void main(String[] args) {
-		// ´´½¨Èý¸öÏß³Ì¶ÔÏó
-		MovieTicket mt1 = new MovieTicket();
-		MovieTicket mt2 = new MovieTicket();
-		MovieTicket mt3 = new MovieTicket();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³Ì¶ï¿½ï¿½ï¿½
+        MovieTicket mt1 = new MovieTicket();
+        MovieTicket mt2 = new MovieTicket();
+        MovieTicket mt3 = new MovieTicket();
 
-		mt1.setName("´°¿Ú1");
-		mt2.setName("´°¿Ú2");
-		mt3.setName("´°¿Ú3");
+        mt1.setName("ï¿½ï¿½ï¿½ï¿½1");
+        mt2.setName("ï¿½ï¿½ï¿½ï¿½2");
+        mt3.setName("ï¿½ï¿½ï¿½ï¿½3");
 
-		mt1.start();
-		mt2.start();
-		mt3.start();
-	}
+        mt1.start();
+        mt2.start();
+        mt3.start();
+    }
 }

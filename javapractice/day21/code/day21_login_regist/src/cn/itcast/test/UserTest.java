@@ -8,75 +8,76 @@ import cn.itcast.game.GuessNumber;
 import cn.itcast.pojo.User;
 
 /*
- * ÕâÊÇ²âÊÔÀà
+ * ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class UserTest {
-	public static void main(String[] args) {
-		wc: while (true) {
-			// »¶Ó­½çÃæ
-			System.out.println("-----------»¶Ó­¹âÁÙ------------");
-			System.out.println("1 µÇÂ¼");
-			System.out.println("2 ×¢²á");
-			System.out.println("3 ÍË³ö");
-			System.out.println("ÇëÑ¡Ôñ£º");
-			// ¼üÅÌÂ¼ÈëÊý¾Ý
-			Scanner sc = new Scanner(System.in);
-			String choiceString = sc.nextLine();
+    public static void main(String[] args) {
+        wc:
+        while (true) {
+            // ï¿½ï¿½Ó­ï¿½ï¿½ï¿½ï¿½
+            System.out.println("-----------ï¿½ï¿½Ó­ï¿½ï¿½ï¿½ï¿½------------");
+            System.out.println("1 ï¿½ï¿½Â¼");
+            System.out.println("2 ×¢ï¿½ï¿½");
+            System.out.println("3 ï¿½Ë³ï¿½");
+            System.out.println("ï¿½ï¿½Ñ¡ï¿½ï¿½");
+            // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            Scanner sc = new Scanner(System.in);
+            String choiceString = sc.nextLine();
 
-			// ¶à´¦Ê¹ÓÃ
-			UserDao ud = new UserDaoImpl();
+            // ï¿½à´¦Ê¹ï¿½ï¿½
+            UserDao ud = new UserDaoImpl();
 
-			switch (choiceString) {
-			case "1":
-				System.out.println("-----------µÇÂ¼½çÃæ------------");
-				// ¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
-				System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
-				String username = sc.nextLine();
-				System.out.println("ÇëÊäÈëÃÜÂë£º");
-				String password = sc.nextLine();
-				// µ÷ÓÃ¹¦ÄÜ
-				// UserDao ud = new UserDaoImpl();
-				boolean flag = ud.isLogin(username, password);
-				if (flag) {
-					System.out.println("µÇÂ¼³É¹¦");
+            switch (choiceString) {
+                case "1":
+                    System.out.println("-----------ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½------------");
+                    // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½");
+                    String username = sc.nextLine();
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£º");
+                    String password = sc.nextLine();
+                    // ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½
+                    // UserDao ud = new UserDaoImpl();
+                    boolean flag = ud.isLogin(username, password);
+                    if (flag) {
+                        System.out.println("ï¿½ï¿½Â¼ï¿½É¹ï¿½");
 
-					String yn;
-					do {
-						// Æô¶¯ÓÎÏ·
-						GuessNumber.start();
-						System.out.println("Äã»¹ÒªÍæÂð?ÊÇÇëÊäÈëy:");
-						yn = sc.nextLine();
-					} while ("y".equals(yn));
+                        String yn;
+                        do {
+                            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·
+                            GuessNumber.start();
+                            System.out.println("ï¿½ã»¹Òªï¿½ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½y:");
+                            yn = sc.nextLine();
+                        } while ("y".equals(yn));
 
-					// break wc;
-				} else {
-					System.out.println("µÇÂ¼Ê§°Ü,»Øµ½Ñ¡Ôñ½çÃæ");
-				}
-				break;
-			case "2":
-				System.out.println("-----------×¢²á½çÃæ------------");
-				// ¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
-				System.out.println("ÇëÊäÈëÓÃ»§Ãû£º");
-				String newUsername = sc.nextLine();
-				System.out.println("ÇëÊäÈëÃÜÂë£º");
-				String newPassword = sc.nextLine();
-				// µ÷ÓÃ¹¦ÄÜ
-				// UserDao ud = new UserDaoImpl();
-				// °ÑÊý¾Ý·â×°µ½¶ÔÏóÖÐ
-				// User user = new User(newUsername, newPassword);
-				User user = new User();
-				user.setUsername(newUsername);
-				user.setPassword(newPassword);
+                        // break wc;
+                    } else {
+                        System.out.println("ï¿½ï¿½Â¼Ê§ï¿½ï¿½,ï¿½Øµï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½");
+                    }
+                    break;
+                case "2":
+                    System.out.println("-----------×¢ï¿½ï¿½ï¿½ï¿½ï¿½------------");
+                    // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½");
+                    String newUsername = sc.nextLine();
+                    System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë£º");
+                    String newPassword = sc.nextLine();
+                    // ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½ï¿½
+                    // UserDao ud = new UserDaoImpl();
+                    // ï¿½ï¿½ï¿½ï¿½ï¿½Ý·ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                    // User user = new User(newUsername, newPassword);
+                    User user = new User();
+                    user.setUsername(newUsername);
+                    user.setPassword(newPassword);
 
-				ud.regist(user);
-				System.out.println("×¢²á³É¹¦,»Øµ½Ñ¡Ôñ½çÃæ");
-				break;
-			case "3":
-			default:
-				System.out.println("Ð»Ð»¹âÁÙ£¬»¶Ó­ÔÙÀ´");
-				System.exit(0);
-				break;
-			}
-		}
-	}
+                    ud.regist(user);
+                    System.out.println("×¢ï¿½ï¿½É¹ï¿½,ï¿½Øµï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½");
+                    break;
+                case "3":
+                default:
+                    System.out.println("Ð»Ð»ï¿½ï¿½ï¿½Ù£ï¿½ï¿½ï¿½Ó­ï¿½ï¿½ï¿½ï¿½");
+                    System.exit(0);
+                    break;
+            }
+        }
+    }
 }

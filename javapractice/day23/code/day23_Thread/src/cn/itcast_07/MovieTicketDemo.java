@@ -1,20 +1,20 @@
 package cn.itcast_07;
 
 /*
- * ÊµÏÖRunnable½Ó¿Ú
+ * Êµï¿½ï¿½Runnableï¿½Ó¿ï¿½
  */
 public class MovieTicketDemo {
-	public static void main(String[] args) {
-		// ´´½¨Ò»¸öÆ±×ÊÔ´
-		MovieTicket mt = new MovieTicket();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Æ±ï¿½ï¿½Ô´
+        MovieTicket mt = new MovieTicket();
 
-		// ´´½¨Èý¸öÏß³Ì
-		Thread t1 = new Thread(mt, "´°¿Ú1");
-		Thread t2 = new Thread(mt, "´°¿Ú2");
-		Thread t3 = new Thread(mt, "´°¿Ú3");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½
+        Thread t1 = new Thread(mt, "ï¿½ï¿½ï¿½ï¿½1");
+        Thread t2 = new Thread(mt, "ï¿½ï¿½ï¿½ï¿½2");
+        Thread t3 = new Thread(mt, "ï¿½ï¿½ï¿½ï¿½3");
 
-		t1.start();
-		t2.start();
-		t3.start();
-	}
+        t1.start();
+        t2.start();
+        t3.start();
+    }
 }

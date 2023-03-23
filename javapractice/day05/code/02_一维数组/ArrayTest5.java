@@ -1,24 +1,24 @@
 /*
-	Êı×éÔªËØ²éÕÒ(²éÕÒÖ¸¶¨ÔªËØµÚÒ»´ÎÔÚÊı×éÖĞ³öÏÖµÄË÷Òı)
+	ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø²ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ôªï¿½Øµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½)
 
-	Ë¼Â·£º
-		´ÓÍ·¿ªÊ¼±éÀú£¬ÒÀ´Î±È½ÏÔªËØ£¬Ö»ÒªÕÒµ½ÁË£¬¾Í·µ»Ø¸Ã´¦µÄË÷Òı¡£
+	Ë¼Â·ï¿½ï¿½
+		ï¿½ï¿½Í·ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î±È½ï¿½Ôªï¿½Ø£ï¿½Ö»Òªï¿½Òµï¿½ï¿½Ë£ï¿½ï¿½Í·ï¿½ï¿½Ø¸Ã´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class ArrayTest5 {
-	public static void main(String[] args) {
-		//¶¨ÒåÒ»¸öÊı×é
-		int[] arr = {12,86,79,43,50};
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int[] arr = {12, 86, 79, 43, 50};
 
-		//Ğ´¹¦ÄÜÊµÏÖ
-		int index = getIndex(arr,79);
-		System.out.println("79ÔÚÊı×éÖĞµÄË÷ÒıÊÇ£º"+index);
-		int index2 = getIndex(arr,179);
-		System.out.println("179ÔÚÊı×éÖĞµÄË÷ÒıÊÇ£º"+index2);
-	}
+        //Ğ´ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
+        int index = getIndex(arr, 79);
+        System.out.println("79ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + index);
+        int index2 = getIndex(arr, 179);
+        System.out.println("179ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + index2);
+    }
 
 	/*
-		·µ»ØÖµÀàĞÍ£ºint
-		²ÎÊıÁĞ±í£ºint[] arr,int key
+		ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Í£ï¿½int
+		ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½int[] arr,int key
 	*/
 
 	/*
@@ -29,22 +29,22 @@ class ArrayTest5 {
 			}
 		}
 
-		//µ±ÔªËØ²»´æÔÚµÄÊ±ºòµÄÖµ
-		return -1; //Ò»°ãÎÒÃÇ¶¼Ğ´-1
+		//ï¿½ï¿½Ôªï¿½Ø²ï¿½ï¿½ï¿½ï¿½Úµï¿½Ê±ï¿½ï¿½ï¿½Öµ
+		return -1; //Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½Ğ´-1
 	}
 	*/
 
-	//ÔÙ»»Ò»ÖÖĞ´·¨
-	public static int getIndex(int[] arr,int key) {
-		int index = -1;
+    //ï¿½Ù»ï¿½Ò»ï¿½ï¿½Ğ´ï¿½ï¿½
+    public static int getIndex(int[] arr, int key) {
+        int index = -1;
 
-		for(int x=0; x<arr.length; x++) {
-			if(arr[x] == key) {
-				index =  x;
-				break;
-			}
-		}
+        for (int x = 0; x < arr.length; x++) {
+            if (arr[x] == key) {
+                index = x;
+                break;
+            }
+        }
 
-		return index;
-	}
+        return index;
+    }
 }

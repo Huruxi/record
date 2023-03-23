@@ -3,28 +3,28 @@ package cn.itcast_11;
 import java.util.Scanner;
 
 public class GuessNumberGame {
-	private GuessNumberGame() {
-	}
+    private GuessNumberGame() {
+    }
 
-	public static void start() {
-		// ÏµÍ³²úÉúÒ»¸öËæ»úÊı
-		int number = (int) (Math.random() * 100) + 1;
+    public static void start() {
+        // ÏµÍ³ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        int number = (int) (Math.random() * 100) + 1;
 
-		while (true) {
-			// ¼üÅÌÂ¼ÈëÊı¾İ£¬²Â
-			Scanner sc = new Scanner(System.in);
-			System.out.println("ÇëÊäÈëÄãÒª²ÂµÄÊı¾İ£º(1-100)");
-			int guessNumber = sc.nextInt();
+        while (true) {
+            // ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½İ£ï¿½ï¿½ï¿½
+            Scanner sc = new Scanner(System.in);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Âµï¿½ï¿½ï¿½ï¿½İ£ï¿½(1-100)");
+            int guessNumber = sc.nextInt();
 
-			// ÅĞ¶Ï
-			if (guessNumber > number) {
-				System.out.println("Äã²ÂµÄÊı¾İ" + guessNumber + "´óÁË");
-			} else if (guessNumber < number) {
-				System.out.println("Äã²ÂµÄÊı¾İ" + guessNumber + "Ğ¡ÁË");
-			} else {
-				System.out.println("¹§Ï²Äã£¬²ÂÖĞÁË");
-				break;
-			}
-		}
-	}
+            // ï¿½Ğ¶ï¿½
+            if (guessNumber > number) {
+                System.out.println("ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½" + guessNumber + "ï¿½ï¿½ï¿½ï¿½");
+            } else if (guessNumber < number) {
+                System.out.println("ï¿½ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½" + guessNumber + "Ğ¡ï¿½ï¿½");
+            } else {
+                System.out.println("ï¿½ï¿½Ï²ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+                break;
+            }
+        }
+    }
 }

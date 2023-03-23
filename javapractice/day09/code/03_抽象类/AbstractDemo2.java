@@ -1,43 +1,45 @@
 /*
-	³éÏóÀàµÄ³ÉÔ±ÌØµã£º
-		A:³ÉÔ±±äÁ¿
-			¿ÉÒÔÊÇ±äÁ¿£¬Ò²¿ÉÒÔÊÇ³£Á¿
-		B:¹¹Ôì·½·¨
-			ÓĞ¹¹Ôì·½·¨¡£µ«ÊÇ²»ÄÜÊµÀı»¯¡£
-			ÎÊÌâ£º¹¹Ôì·½·¨ÓĞÊ²Ã´ÓÃÄØ?
-				ÓÃÓÚ×ÓÀà·ÃÎÊ¸¸ÀàÊı¾İµÄ³õÊ¼»¯
-		C:³ÉÔ±·½·¨
-			¿ÉÊÇÓĞ³éÏó·½·¨£¬Ò²¿ÉÒÔÓĞ·Ç³éÏó·½·¨¡£
-			³éÏó·½·¨£ºÇ¿ÖÆÒªÇó×ÓÀà×öÄ³Ğ©ÊÂÇé¡£
-			·Ç³éÏó·½·¨£ºÓÃÓÚ¸ø×ÓÀàÖ±½ÓÊ¹ÓÃ£¬Ìá¸ßÁË´úÂëµÄ¸´ÓÃĞÔ¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½Øµã£º
+		A:ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
+			ï¿½Ğ¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç²ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½â£ºï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½Ê²Ã´ï¿½ï¿½ï¿½ï¿½?
+				ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµÄ³ï¿½Ê¼ï¿½ï¿½
+		C:ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½Ğ³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½Ğ·Ç³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³Ğ©ï¿½ï¿½ï¿½é¡£
+			ï¿½Ç³ï¿½ï¿½ó·½·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
 */
 abstract class Animal {
-	int num = 10;
-	final int num2 = 20;
+    int num = 10;
+    final int num2 = 20;
 
-	public Animal() {}
+    public Animal() {
+    }
 
-	public void method() {
-		System.out.println("method");
-	}
+    public void method() {
+        System.out.println("method");
+    }
 
-	public abstract void function();
+    public abstract void function();
 }
 
-class Dog extends Animal  {
-	public void show() {
-		num = 100;
-		System.out.println(num);
-		//num2 = 200;
-		System.out.println(num2);
-	}
+class Dog extends Animal {
+    public void show() {
+        num = 100;
+        System.out.println(num);
+        //num2 = 200;
+        System.out.println(num2);
+    }
 
-	public void function() {}
+    public void function() {
+    }
 }
 
 class AbstractDemo2 {
-	public static void main(String[] args) {
-		Dog d = new Dog();
-		d.show();
-	}
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.show();
+    }
 }

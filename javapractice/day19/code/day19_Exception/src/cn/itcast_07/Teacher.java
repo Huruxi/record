@@ -1,11 +1,11 @@
 package cn.itcast_07;
 
 public class Teacher {
-	public void check(int score) throws MyException {
-		if (score < 0 || score > 100) {
-			throw new MyException("·ÖÊý²»ÔÚ0-100Ö®¼ä");
-		} else {
-			System.out.println("·ÖÊýÕý³£");
-		}
-	}
+    public void check(int score) throws MyException {
+        if (score < 0 || score > 100) {
+            throw new MyException("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-100Ö®ï¿½ï¿½");
+        } else {
+            System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        }
+    }
 }

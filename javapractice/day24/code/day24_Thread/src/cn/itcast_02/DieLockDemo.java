@@ -1,22 +1,22 @@
 package cn.itcast_02;
 
 /*
- * ËÀËø£ºÊÇÖ¸Á½¸ö»òÕßÁ½¸öÒÔÉÏµÄÏß³ÌÔÚÖ´ÐÐµÄ¹ý³ÌÖÐ£¬ÒòÕù¶á×ÊÔ´²úÉúµÄÒ»ÖÖ»¥ÏàµÈ´ýÏÖÏó
- * 
- * ¾ÙÀý£º
- * 		ÖÐ¹úÈËºÍÒ»¸öÃÀ¹úÈË³Ô·¹¡£
- * 			ÖÐ¹úÈË£ºÁ½Ö»¿ê×Ó
- * 			ÃÀ¹úÈË£ºµ¶²æ
- * 		ÕæÊµÇé¿ö£º	
- * 			ÖÐ¹úÈË£ºÒ»Ö»¿ê×Ó£¬Ò»°Ñµ¶
- * 			ÃÀ¹úÈË£ºÒ»Ö»¿ê×Ó£¬Ò»°Ñ²æ
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ß³ï¿½ï¿½ï¿½Ö´ï¿½ÐµÄ¹ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Ö»ï¿½ï¿½ï¿½È´ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½Ð¹ï¿½ï¿½Ëºï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë³Ô·ï¿½ï¿½ï¿½
+ * 			ï¿½Ð¹ï¿½ï¿½Ë£ï¿½ï¿½ï¿½Ö»ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½Ð¹ï¿½ï¿½Ë£ï¿½Ò»Ö»ï¿½ï¿½ï¿½Ó£ï¿½Ò»ï¿½Ñµï¿½
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½Ò»Ö»ï¿½ï¿½ï¿½Ó£ï¿½Ò»ï¿½Ñ²ï¿½
  */
 public class DieLockDemo {
-	public static void main(String[] args) {
-		DieLock d1 = new DieLock(true);
-		DieLock d2 = new DieLock(false);
+    public static void main(String[] args) {
+        DieLock d1 = new DieLock(true);
+        DieLock d2 = new DieLock(false);
 
-		d1.start();
-		d2.start();
-	}
+        d1.start();
+        d2.start();
+    }
 }

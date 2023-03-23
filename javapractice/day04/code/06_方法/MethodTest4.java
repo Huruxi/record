@@ -1,35 +1,36 @@
 /*
-	¼üÅÌÂ¼ÈëÒ»¸öÊı¾İn(1<=n<=9)£¬Êä³ö¶ÔÓ¦µÄnn³Ë·¨±í
+	ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½n(1<=n<=9)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½nnï¿½Ë·ï¿½ï¿½ï¿½
 */
+
 import java.util.Scanner;
 
 class MethodTest4 {
-	public static void main(String[] args) {
-		//´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        Scanner sc = new Scanner(System.in);
 
-		//¼üÅÌÂ¼ÈëÊı¾İ
-		System.out.println("ÇëÊäÈëÒ»¸öÕûÊı£º(1~9)");
-		int n = sc.nextInt();
+        //ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(1~9)");
+        int n = sc.nextInt();
 
-		//µ÷ÓÃ¹¦ÄÜ£¬Êä³önn³Ë·¨±í
-		printNN(n);
-	}
+        //ï¿½ï¿½ï¿½Ã¹ï¿½ï¿½Ü£ï¿½ï¿½ï¿½ï¿½nnï¿½Ë·ï¿½ï¿½ï¿½
+        printNN(n);
+    }
 
-	/*
-		Êä³ö¶ÔÓ¦µÄnn³Ë·¨±í
-		
-		·µ»ØÖµÀàĞÍ£º
-			void
-		²ÎÊıÁĞ±í£º
-			int n
-	*/
-	public static void printNN(int n){
-		for(int x=1; x<=n; x++) {
-			for(int y=1; y<=x; y++) {
-				System.out.print(y+"*"+x+"="+x*y+"\t");
-			}
-			System.out.println();
-		}	
-	}
+    /*
+        ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½nnï¿½Ë·ï¿½ï¿½ï¿½
+
+        ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Í£ï¿½
+            void
+        ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½
+            int n
+    */
+    public static void printNN(int n) {
+        for (int x = 1; x <= n; x++) {
+            for (int y = 1; y <= x; y++) {
+                System.out.print(y + "*" + x + "=" + x * y + "\t");
+            }
+            System.out.println();
+        }
+    }
 }

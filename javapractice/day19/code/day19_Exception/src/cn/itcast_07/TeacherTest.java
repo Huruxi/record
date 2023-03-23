@@ -3,18 +3,18 @@ package cn.itcast_07;
 import java.util.Scanner;
 
 public class TeacherTest {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë¿¼ÊÔ³É¼¨£º ");
-		int score = sc.nextInt();
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ë¿¼ï¿½Ô³É¼ï¿½ï¿½ï¿½ ");
+        int score = sc.nextInt();
 
-		Teacher t = new Teacher();
-		try {
-			t.check(score);
-		} catch (MyException e) {
-			// System.out.println(e.toString()); // cn.itcast_07.MyException:
-			// ·ÖÊý²»ÔÚ0-100Ö®¼ä
-			e.printStackTrace();
-		}
-	}
+        Teacher t = new Teacher();
+        try {
+            t.check(score);
+        } catch (MyException e) {
+            // System.out.println(e.toString()); // cn.itcast_07.MyException:
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½0-100Ö®ï¿½ï¿½
+            e.printStackTrace();
+        }
+    }
 }

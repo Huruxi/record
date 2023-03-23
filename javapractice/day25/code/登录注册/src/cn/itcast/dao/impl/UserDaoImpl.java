@@ -7,6 +7,7 @@ package cn.itcast.dao.impl;
 
 import cn.itcast.dao.UserDao;
 import cn.itcast.pojo.User;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -15,7 +16,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- *
  * @author fqy
  */
 public class UserDaoImpl implements UserDao {

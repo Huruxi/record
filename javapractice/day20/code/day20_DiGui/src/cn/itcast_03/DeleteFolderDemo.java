@@ -4,44 +4,44 @@ import java.io.File;
 
 /*
  /*
- * É¾³ý´øÄÚÈÝµÄÄ¿Â¼
+ * É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½Ä¿Â¼
  * D:\demo
  * 
- * ·ÖÎö£º
- * 		A:·â×°Ö¸¶¨Ä¿Â¼
- * 		B:»ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓÐÎÄ¼þ»òÕßÎÄ¼þ¼ÐµÄFileÊý×é
- * 		C:±éÀú¸ÃFileÊý×é£¬»ñÈ¡µÃµ½Ã¿Ò»¸öFile¶ÔÏó
- * 		D:ÅÐ¶Ï¸ÃFile¶ÔÏó
- * 			ÊÇÎÄ¼þ¼Ð£º»Øµ½B(µÝ¹é)
- * 			ÊÇÎÄ¼þ£º	
- * 				Ö±½ÓÉ¾³ý
- * 		E:É¾³ýÎÄ¼þ¼Ð
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½×°Ö¸ï¿½ï¿½Ä¿Â¼
+ * 		B:ï¿½ï¿½È¡Ö¸ï¿½ï¿½Ä¿Â¼ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½é£¬ï¿½ï¿½È¡ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 		D:ï¿½Ð¶Ï¸ï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð£ï¿½ï¿½Øµï¿½B(ï¿½Ý¹ï¿½)
+ * 			ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½	
+ * 				Ö±ï¿½ï¿½É¾ï¿½ï¿½
+ * 		E:É¾ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
  */
 public class DeleteFolderDemo {
-	public static void main(String[] args) {
-		// ·â×°Ö¸¶¨Ä¿Â¼
-		File srcFolder = new File("d:\\demo");
-		// µÝ¹é·½·¨
-		deleteFolder(srcFolder);
-	}
+    public static void main(String[] args) {
+        // ï¿½ï¿½×°Ö¸ï¿½ï¿½Ä¿Â¼
+        File srcFolder = new File("d:\\demo");
+        // ï¿½Ý¹é·½ï¿½ï¿½
+        deleteFolder(srcFolder);
+    }
 
-	public static void deleteFolder(File srcFolder) {
-		// »ñÈ¡Ö¸¶¨Ä¿Â¼ÏÂµÄËùÓÐÎÄ¼þ»òÕßÎÄ¼þ¼ÐµÄFileÊý×é
-		File[] fileArray = srcFolder.listFiles();
+    public static void deleteFolder(File srcFolder) {
+        // ï¿½ï¿½È¡Ö¸ï¿½ï¿½Ä¿Â¼ï¿½Âµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ðµï¿½Fileï¿½ï¿½ï¿½ï¿½
+        File[] fileArray = srcFolder.listFiles();
 
-		// É¾³ý³ýÁËÏµÍ³ÎÄ¼þÒÔÍâµÄÄÚÈÝ£¬ÎÒÃÇÊÇ¿ÉÒÔÊµÏÖ
-		if (fileArray != null) {
-			// ±éÀú¸ÃFileÊý×é£¬»ñÈ¡µÃµ½Ã¿Ò»¸öFile¶ÔÏó
-			for (File file : fileArray) {
-				if (file.isDirectory()) {
-					deleteFolder(file);
-				} else {
-					System.out.println(file.getName() + "---" + file.delete());
-				}
-			}
+        // É¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ï¿½Êµï¿½ï¿½
+        if (fileArray != null) {
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½é£¬ï¿½ï¿½È¡ï¿½Ãµï¿½Ã¿Ò»ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+            for (File file : fileArray) {
+                if (file.isDirectory()) {
+                    deleteFolder(file);
+                } else {
+                    System.out.println(file.getName() + "---" + file.delete());
+                }
+            }
 
-			System.out
-					.println(srcFolder.getName() + "---" + srcFolder.delete());
-		}
-	}
+            System.out
+                    .println(srcFolder.getName() + "---" + srcFolder.delete());
+        }
+    }
 }

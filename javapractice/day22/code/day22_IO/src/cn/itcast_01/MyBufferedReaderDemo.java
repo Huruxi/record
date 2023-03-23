@@ -4,17 +4,17 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /*
- * ÓÃReaderÄ£ÄâBufferedReaderµÄreadLine()¹¦ÄÜ
+ * ï¿½ï¿½ReaderÄ£ï¿½ï¿½BufferedReaderï¿½ï¿½readLine()ï¿½ï¿½ï¿½ï¿½
  */
 public class MyBufferedReaderDemo {
-	public static void main(String[] args) throws IOException {
-		MyBufferedReader mbr = new MyBufferedReader(new FileReader("my.txt"));
+    public static void main(String[] args) throws IOException {
+        MyBufferedReader mbr = new MyBufferedReader(new FileReader("my.txt"));
 
-		String line = null;
-		while ((line = mbr.readLine()) != null) {
-			System.out.println(line);
-		}
+        String line = null;
+        while ((line = mbr.readLine()) != null) {
+            System.out.println(line);
+        }
 
-		mbr.close();
-	}
+        mbr.close();
+    }
 }

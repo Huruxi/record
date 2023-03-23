@@ -4,35 +4,35 @@ import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
 
 /*
- * String s = "ÄãºÃ";
- * 
- * ±àÂë£º
- * 		°ÑÄãÄÜ¹»¿´¶®µÄ±ä³ÉÄã¿´²»¶®
- * ½âÂë£º
- * 		°ÑÄã¿´²»¶®±ä³ÉÄãÄÜ¿´¶®µÄ
- * 
- * µýÕ½Æ¬£ºÇ±·ü,»Ø¼Ò¿´¿´È¥
- * 		½ñÌìÍíÉÏÀÏµØ·½¼û -- 1011110000111  -- Ê®½øÖÆ -- ÕÒ¸öÐ¡±¾×Ó -- ÕÒ×Ö·û
+ * String s = "ï¿½ï¿½ï¿½";
+ *
+ * ï¿½ï¿½ï¿½ë£º
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ã¿´ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ë£º
+ * 		ï¿½ï¿½ï¿½ã¿´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¿ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½Õ½Æ¬ï¿½ï¿½Ç±ï¿½ï¿½,ï¿½Ø¼Ò¿ï¿½ï¿½ï¿½È¥
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµØ·ï¿½ï¿½ï¿½ -- 1011110000111  -- Ê®ï¿½ï¿½ï¿½ï¿½ -- ï¿½Ò¸ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ -- ï¿½ï¿½ï¿½Ö·ï¿½
  */
 public class StringDemo {
-	public static void main(String[] args) throws UnsupportedEncodingException {
-		String s = "ÄãºÃ";
+    public static void main(String[] args) throws UnsupportedEncodingException {
+        String s = "ï¿½ï¿½ï¿½";
 
-		// public byte[] getBytes()
-		// byte[] bys = s.getBytes();
-		// [-60, -29, -70, -61]
-		// public byte[] getBytes(String charsetName)
-		byte[] bys = s.getBytes("GBK");
-		// [-60, -29, -70, -61]
-		// byte[] bys = s.getBytes("UTF-8");
-		// [-28, -67, -96, -27, -91, -67]
-		System.out.println(Arrays.toString(bys));
+        // public byte[] getBytes()
+        // byte[] bys = s.getBytes();
+        // [-60, -29, -70, -61]
+        // public byte[] getBytes(String charsetName)
+        byte[] bys = s.getBytes("GBK");
+        // [-60, -29, -70, -61]
+        // byte[] bys = s.getBytes("UTF-8");
+        // [-28, -67, -96, -27, -91, -67]
+        System.out.println(Arrays.toString(bys));
 
-		// String(byte[] bytes)
-		// String ss = new String(bys);
-		// public String(byte[] bytes, String charsetName)
-		String ss = new String(bys, "GBK");
-		// String ss = new String(bys, "UTF-8");
-		System.out.println(ss);
-	}
+        // String(byte[] bytes)
+        // String ss = new String(bys);
+        // public String(byte[] bytes, String charsetName)
+        String ss = new String(bys, "GBK");
+        // String ss = new String(bys, "UTF-8");
+        System.out.println(ss);
+    }
 }

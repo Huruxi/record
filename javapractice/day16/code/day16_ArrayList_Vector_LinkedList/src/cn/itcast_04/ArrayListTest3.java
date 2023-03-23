@@ -4,58 +4,58 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * È¥³ı¼¯ºÏÖĞ×Ô¶¨Òå¶ÔÏóµÄÖØ¸´Öµ(¶ÔÏóµÄ³ÉÔ±±äÁ¿Öµ¶¼ÏàÍ¬)
+ * È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¸ï¿½Öµ(ï¿½ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Í¬)
  * Student:name,age
- * Í¨¹ı¼òµ¥µÄ·ÖÎö£¬ÎÒÃÇÖªµÀ£¬Ó¦¸ÃÊÇÔÚÅĞ¶ÏÄÄÀï³öÏÖÁËÎÊÌâ¡£
- * ËùÒÔ£¬ÎÒÃÇÓ¦¸ÃÀ´¿´¿´ÊÇÈçºÎ½øĞĞÅĞ¶ÏµÄ¡£
- * ÒªÏëÖªµÀÊÇÈçºÎÅĞ¶ÏµÄ£¬¾Í±ØĞë¿´ÅĞ¶ÏµÄ·½·¨µÄÔ´Âë
- * Í¨¹ı²é¿´Ô´Âë£¬ÎÒÃÇÖªµÀ¼¯ºÏµÄcontains()·½·¨µ×²ãÔ´ÂëÒÀÀµµÄÊÇÔªËØ¶ÔÏóµÄequals()·½·¨
- * ¶øÄ¬ÈÏÇé¿öÏÂ£¬ÔªËØËùÊôµÄÀà¼Ì³ĞÁËObjectÀàµÄequals()·½·¨£¬±È½ÏµÄÊÇµØÖ·Öµ¡£
- * ËùÒÔ£¬ÎÒÃÇÏëÒª±È½Ï¶ÔÏóµÄ³ÉÔ±±äÁ¿ÖµÏàÍ¬£¬¾Í±ØĞëÖØĞ´equals()·½·¨¡£
+ * Í¨ï¿½ï¿½ï¿½òµ¥µÄ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¡£
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½Ğ¶ÏµÄ¡ï¿½
+ * Òªï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¶ÏµÄ£ï¿½ï¿½Í±ï¿½ï¿½ë¿´ï¿½Ğ¶ÏµÄ·ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
+ * Í¨ï¿½ï¿½ï¿½é¿´Ô´ï¿½ë£¬ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½contains()ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½Ô´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø¶ï¿½ï¿½ï¿½ï¿½equals()ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â£ï¿½Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ï¿½ï¿½Objectï¿½ï¿½ï¿½equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½Ïµï¿½ï¿½Çµï¿½Ö·Öµï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½È½Ï¶ï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Í¬ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½ï¿½ï¿½Ğ´equals()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ArrayListTest3 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		ArrayList array = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        ArrayList array = new ArrayList();
 
-		// ´´½¨Ñ§Éú¶ÔÏó
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
-		Student s2 = new Student("Íõ×æÏÍ", 27);
-		Student s3 = new Student("ÑîÃİ", 27);
-		Student s4 = new Student("ÀîÈôÍ®", 25);
-		Student s5 = new Student("ÕÅ»İÃÃ", 40);
-		Student s6 = new Student("ÕÔÑÅÖ¥", 60);
-		Student s7 = new Student("ÁÖÇàÏ¼", 20);
-		Student s8 = new Student("ÁÖÇàÏ¼", 28);
+        // ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 27);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½", 27);
+        Student s4 = new Student("ï¿½ï¿½ï¿½ï¿½Í®", 25);
+        Student s5 = new Student("ï¿½Å»ï¿½ï¿½ï¿½", 40);
+        Student s6 = new Student("ï¿½ï¿½ï¿½ï¿½Ö¥", 60);
+        Student s7 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 20);
+        Student s8 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
 
-		// °ÑÑ§Éú¶ÔÏóÌí¼Óµ½¼¯ºÏÖĞ
-		array.add(s1);
-		array.add(s2);
-		array.add(s3);
-		array.add(s4);
-		array.add(s5);
-		array.add(s6);
-		array.add(s7);
-		array.add(s8);
+        // ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        array.add(s1);
+        array.add(s2);
+        array.add(s3);
+        array.add(s4);
+        array.add(s5);
+        array.add(s6);
+        array.add(s7);
+        array.add(s8);
 
-		// ´´½¨ĞÂ¼¯ºÏ
-		ArrayList newArrayList = new ArrayList();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
+        ArrayList newArrayList = new ArrayList();
 
-		// ±éÀú¾É¼¯ºÏ£¬»ñÈ¡µ½¾É¼¯ºÏÖĞµÄÃ¿Ò»¸öÔªËØ
-		for (int x = 0; x < array.size(); x++) {
-			Student s = (Student) array.get(x);
-			// ÄÇ¾É¼¯ºÏµÄÃ¿Ò»¸öÔªËØµ½ĞÂ¼¯ºÏÖĞÈ¥ÕÒ£¬¿´ÓĞÃ»ÓĞ
-			if (!newArrayList.contains(s)) {
-				// Ä¾ÓĞ£º¾ÍÌí¼Ó
-				newArrayList.add(s);
-			}
-		}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½É¼ï¿½ï¿½Ï£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½É¼ï¿½ï¿½ï¿½ï¿½Ğµï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½ï¿½
+        for (int x = 0; x < array.size(); x++) {
+            Student s = (Student) array.get(x);
+            // ï¿½Ç¾É¼ï¿½ï¿½Ïµï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½Ò£ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½
+            if (!newArrayList.contains(s)) {
+                // Ä¾ï¿½Ğ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+                newArrayList.add(s);
+            }
+        }
 
-		// ±éÀúĞÂ¼¯ºÏ
-		Iterator it = newArrayList.iterator();
-		while (it.hasNext()) {
-			Student s = (Student) it.next();
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½
+        Iterator it = newArrayList.iterator();
+        while (it.hasNext()) {
+            Student s = (Student) it.next();
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

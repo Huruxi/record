@@ -6,26 +6,26 @@ import cn.itcast.dao.UserDao;
 import cn.itcast.pojo.User;
 
 public class UserDaoImpl implements UserDao {
-	private static ArrayList<User> array = new ArrayList<User>();
+    private static ArrayList<User> array = new ArrayList<User>();
 
-	@Override
-	public boolean isLogin(String username, String password) {
-		boolean flag = false;
+    @Override
+    public boolean isLogin(String username, String password) {
+        boolean flag = false;
 
-		for (User user : array) {
-			if (user.getUsername().equals(username)
-					&& user.getPassword().equals(password)) {
-				flag = true;
-				break;
-			}
-		}
+        for (User user : array) {
+            if (user.getUsername().equals(username)
+                    && user.getPassword().equals(password)) {
+                flag = true;
+                break;
+            }
+        }
 
-		return flag;
-	}
+        return flag;
+    }
 
-	@Override
-	public void regist(User user) {
-		array.add(user);
-	}
+    @Override
+    public void regist(User user) {
+        array.add(user);
+    }
 
 }

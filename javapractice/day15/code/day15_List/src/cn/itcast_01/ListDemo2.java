@@ -5,31 +5,31 @@ import java.util.Iterator;
 import java.util.List;
 
 /*
- * Á·Ï°£ºÓÃList¼¯ºÏ´æ´¢×Ô¶¨Òå²¢±éÀú¡£
+ * ï¿½ï¿½Ï°ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½Ï´æ´¢ï¿½Ô¶ï¿½ï¿½å²¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * Student:name,age
  */
 public class ListDemo2 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		List list = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        List list = new ArrayList();
 
-		// ´´½¨Ñ§Éú¶ÔÏó
-		Student s1 = new Student("ÅË½ðÁ«", 18);
-		Student s2 = new Student("Ëï¶þÄï", 19);
-		Student s3 = new Student("ìèÈýÄï", 20);
-		Student s4 = new Student("ÀîÊ¦Ê¦", 21);
+        // ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½Ë½ï¿½ï¿½ï¿½", 18);
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½", 19);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 20);
+        Student s4 = new Student("ï¿½ï¿½Ê¦Ê¦", 21);
 
-		// °ÑÔªËØÌí¼Óµ½¼¯ºÏ
-		list.add(s1);
-		list.add(s2);
-		list.add(s3);
-		list.add(s4);
+        // ï¿½ï¿½Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
+        list.add(s1);
+        list.add(s2);
+        list.add(s3);
+        list.add(s4);
 
-		// ±éÀú¼¯ºÏ
-		Iterator it = list.iterator();
-		while (it.hasNext()) {
-			Student s = (Student) it.next();
-			System.out.println(s.getName() + "---" + s.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            Student s = (Student) it.next();
+            System.out.println(s.getName() + "---" + s.getAge());
+        }
+    }
 }

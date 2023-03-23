@@ -8,56 +8,56 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * 复制单级文件夹中指定文件并修改文件名称
- * 需求：把d:\\java文件夹下的所有java文件复制到d:\\jad目录下，并修改后缀名为jad。
- * 
- * 分析：
- * 		A:封装数据源目录
- * 		B:封装目的地目录
- * 		C:获取数据源目录下的所有文件的File数组
- * 		D:遍历File数组,得到每一个File对象
- * 		E:复制即可
- * 			数据源：d:\\java\\ForDemo.java
- * 			目的地：d:\\jad\\ForDemo.jad
+ * 锟斤拷锟狡碉拷锟斤拷锟侥硷拷锟斤拷锟斤拷指锟斤拷锟侥硷拷锟斤拷锟睫革拷锟侥硷拷锟斤拷锟斤拷
+ * 锟斤拷锟襟：帮拷d:\\java锟侥硷拷锟斤拷锟铰碉拷锟斤拷锟斤拷java锟侥硷拷锟斤拷锟狡碉拷d:\\jad目录锟铰ｏ拷锟斤拷锟睫改猴拷缀锟斤拷为jad锟斤拷
+ *
+ * 锟斤拷锟斤拷锟斤拷
+ * 		A:锟斤拷装锟斤拷锟斤拷源目录
+ * 		B:锟斤拷装目锟侥碉拷目录
+ * 		C:锟斤拷取锟斤拷锟斤拷源目录锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷File锟斤拷锟斤拷
+ * 		D:锟斤拷锟斤拷File锟斤拷锟斤拷,锟矫碉拷每一锟斤拷File锟斤拷锟斤拷
+ * 		E:锟斤拷锟狡硷拷锟斤拷
+ * 			锟斤拷锟斤拷源锟斤拷d:\\java\\ForDemo.java
+ * 			目锟侥地ｏ拷d:\\jad\\ForDemo.jad
  */
 public class ChangeNameDemo {
-	public static void main(String[] args) throws IOException {
-		// 封装数据源目录
-		File srcFolder = new File("d:\\java");
+    public static void main(String[] args) throws IOException {
+        // 锟斤拷装锟斤拷锟斤拷源目录
+        File srcFolder = new File("d:\\java");
 
-		// 封装目的地目录
-		File destFolder = new File("d:\\jad");
-		if (!destFolder.exists()) {
-			destFolder.mkdir();
-		}
+        // 锟斤拷装目锟侥碉拷目录
+        File destFolder = new File("d:\\jad");
+        if (!destFolder.exists()) {
+            destFolder.mkdir();
+        }
 
-		// 获取数据源目录下的所有文件的File数组
-		File[] fileArray = srcFolder.listFiles();
+        // 锟斤拷取锟斤拷锟斤拷源目录锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷File锟斤拷锟斤拷
+        File[] fileArray = srcFolder.listFiles();
 
-		// 遍历File数组,得到每一个File对象
-		for (File file : fileArray) {
-			// System.out.println(file); // d:\java\ForDemo.java
-			String name = file.getName(); // ForDemo.java
-			name = name.replace(".java", ".jad"); // ForDemo.jad
-			File newFile = new File(destFolder, name); // d:\\jad\\ForDemo.jad
+        // 锟斤拷锟斤拷File锟斤拷锟斤拷,锟矫碉拷每一锟斤拷File锟斤拷锟斤拷
+        for (File file : fileArray) {
+            // System.out.println(file); // d:\java\ForDemo.java
+            String name = file.getName(); // ForDemo.java
+            name = name.replace(".java", ".jad"); // ForDemo.jad
+            File newFile = new File(destFolder, name); // d:\\jad\\ForDemo.jad
 
-			copy(file, newFile);
-		}
-	}
+            copy(file, newFile);
+        }
+    }
 
-	private static void copy(File file, File newFile) throws IOException {
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				file));
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream(newFile));
+    private static void copy(File file, File newFile) throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                file));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream(newFile));
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = bis.read(bys)) != -1) {
-			bos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = bis.read(bys)) != -1) {
+            bos.write(bys, 0, len);
+        }
 
-		bos.close();
-		bis.close();
-	}
+        bos.close();
+        bis.close();
+    }
 }

@@ -7,49 +7,49 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * Êý¾ÝÊäÈëÊä³öÁ÷£º°Ñ»ù±¾ÀàÐÍµÄÊý¾ÝÐ´µ½ÎÄ¼þ£¬»¹¿ÉÒÔ´ÓÎÄ¼þ¶ÁÈ¡
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½È¡
  */
 public class DataStreamDemo {
-	public static void main(String[] args) throws IOException {
-		// write();
-		read();
-	}
+    public static void main(String[] args) throws IOException {
+        // write();
+        read();
+    }
 
-	private static void read() throws IOException {
-		// DataInputStream(InputStream in)
-		DataInputStream dis = new DataInputStream(
-				new FileInputStream("dos.txt"));
+    private static void read() throws IOException {
+        // DataInputStream(InputStream in)
+        DataInputStream dis = new DataInputStream(
+                new FileInputStream("dos.txt"));
 
-		// ¶ÁÊý¾Ý
-		System.out.println(dis.readByte());
-		System.out.println(dis.readShort());
-		System.out.println(dis.readInt());
-		System.out.println(dis.readLong());
-		System.out.println(dis.readFloat());
-		System.out.println(dis.readDouble());
-		System.out.println(dis.readChar());
-		System.out.println(dis.readBoolean());
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println(dis.readByte());
+        System.out.println(dis.readShort());
+        System.out.println(dis.readInt());
+        System.out.println(dis.readLong());
+        System.out.println(dis.readFloat());
+        System.out.println(dis.readDouble());
+        System.out.println(dis.readChar());
+        System.out.println(dis.readBoolean());
 
-		// ÊÍ·Å×ÊÔ´
-		dis.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        dis.close();
+    }
 
-	private static void write() throws IOException {
-		// DataOutputStream(OutputStream out)
-		DataOutputStream dos = new DataOutputStream(new FileOutputStream(
-				"dos.txt"));
+    private static void write() throws IOException {
+        // DataOutputStream(OutputStream out)
+        DataOutputStream dos = new DataOutputStream(new FileOutputStream(
+                "dos.txt"));
 
-		// Ð´Êý¾Ý
-		dos.writeByte(1);
-		dos.writeShort(10);
-		dos.writeInt(100);
-		dos.writeLong(1000);
-		dos.writeFloat(1.1f);
-		dos.writeDouble(2.2);
-		dos.writeChar('a');
-		dos.writeBoolean(true);
+        // Ð´ï¿½ï¿½ï¿½ï¿½
+        dos.writeByte(1);
+        dos.writeShort(10);
+        dos.writeInt(100);
+        dos.writeLong(1000);
+        dos.writeFloat(1.1f);
+        dos.writeDouble(2.2);
+        dos.writeChar('a');
+        dos.writeBoolean(true);
 
-		// ÊÍ·Å×ÊÔ´
-		dos.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        dos.close();
+    }
 }

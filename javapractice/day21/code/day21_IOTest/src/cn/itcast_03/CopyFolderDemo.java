@@ -8,59 +8,59 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * 复制单级文件夹
- * 
- * 数据源：
+ * 锟斤拷锟狡碉拷锟斤拷锟侥硷拷锟斤拷
+ *
+ * 锟斤拷锟斤拷源锟斤拷
  * 		d:\\demo
- * 目的地：
+ * 目锟侥地ｏ拷
  * 		demo
- * 
- * 分析：
- * 		A:在目的地创建文件夹
- * 		B:获取数据源文件夹下的所有文件的File数组
- * 		C:遍历File数组，得到每一个File对象
- * 		D:复制该File
- * 			数据源：d:\\demo\\a.txt
- * 			目的地：demo\\a.txt
+ *
+ * 锟斤拷锟斤拷锟斤拷
+ * 		A:锟斤拷目锟侥地达拷锟斤拷锟侥硷拷锟斤拷
+ * 		B:锟斤拷取锟斤拷锟斤拷源锟侥硷拷锟斤拷锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷File锟斤拷锟斤拷
+ * 		C:锟斤拷锟斤拷File锟斤拷锟介，锟矫碉拷每一锟斤拷File锟斤拷锟斤拷
+ * 		D:锟斤拷锟狡革拷File
+ * 			锟斤拷锟斤拷源锟斤拷d:\\demo\\a.txt
+ * 			目锟侥地ｏ拷demo\\a.txt
  */
 public class CopyFolderDemo {
-	public static void main(String[] args) throws IOException {
-		// 封装数据源文件夹
-		File srcFolder = new File("d:\\demo");
+    public static void main(String[] args) throws IOException {
+        // 锟斤拷装锟斤拷锟斤拷源锟侥硷拷锟斤拷
+        File srcFolder = new File("d:\\demo");
 
-		// 在目的地创建文件夹
-		// 封装和数据源一样的文件夹，并判断是否存在，如果不存在，就创建
-		File destFolder = new File(srcFolder.getName());
-		if (!destFolder.exists()) {
-			destFolder.mkdir();
-		}
+        // 锟斤拷目锟侥地达拷锟斤拷锟侥硷拷锟斤拷
+        // 锟斤拷装锟斤拷锟斤拷锟斤拷源一锟斤拷锟斤拷锟侥硷拷锟叫ｏ拷锟斤拷锟叫讹拷锟角凤拷锟斤拷冢锟斤拷锟斤拷锟斤拷锟斤拷锟节ｏ拷锟酵达拷锟斤拷
+        File destFolder = new File(srcFolder.getName());
+        if (!destFolder.exists()) {
+            destFolder.mkdir();
+        }
 
-		// 获取数据源文件夹下的所有文件的File数组
-		File[] fileArray = srcFolder.listFiles();
+        // 锟斤拷取锟斤拷锟斤拷源锟侥硷拷锟斤拷锟铰碉拷锟斤拷锟斤拷锟侥硷拷锟斤拷File锟斤拷锟斤拷
+        File[] fileArray = srcFolder.listFiles();
 
-		// 遍历File数组，得到每一个File对象
-		for (File file : fileArray) {
-			String name = file.getName(); // a.txt
-			File newFile = new File(destFolder, name); // demo\\a.txt
+        // 锟斤拷锟斤拷File锟斤拷锟介，锟矫碉拷每一锟斤拷File锟斤拷锟斤拷
+        for (File file : fileArray) {
+            String name = file.getName(); // a.txt
+            File newFile = new File(destFolder, name); // demo\\a.txt
 
-			copy(file, newFile);
-		}
-	}
+            copy(file, newFile);
+        }
+    }
 
-	private static void copy(File file, File newFile) throws IOException {
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				file));
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream(newFile));
+    private static void copy(File file, File newFile) throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                file));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream(newFile));
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = bis.read(bys)) != -1) {
-			bos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = bis.read(bys)) != -1) {
+            bos.write(bys, 0, len);
+        }
 
-		bos.close();
-		bis.close();
-	}
+        bos.close();
+        bis.close();
+    }
 
 }

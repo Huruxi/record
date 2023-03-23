@@ -1,27 +1,27 @@
-//·µ»ØÖµÀàÐÍÊÇ½Ó¿Ú£¬ÆäÊµ·µ»ØµÄÊÇ½Ó¿ÚµÄÊµÏÖÀà¶ÔÏó
+//ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ç½Ó¿Ú£ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Øµï¿½ï¿½Ç½Ó¿Úµï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 interface Person {
-	public abstract void study();
+    public abstract void study();
 }
 
 class PersonDemo {
-	public Person getPerson() {
-		return new Student();
-	}
+    public Person getPerson() {
+        return new Student();
+    }
 }
 
 class Student implements Person {
-	public void study() {
-		System.out.println("ºÃºÃÑ§Ï°£¬ÌìÌìÏòÉÏ");
-	}
+    public void study() {
+        System.out.println("ï¿½Ãºï¿½Ñ§Ï°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class ReturnDemo3 {
-	public static void main(String[] args) {
-		//PersonDemo pd = new PersonDemo();
-		//Person p = pd.getPerson();
-		//p.study();
-		
-		//Á´Ê½±à³Ì
-		new PersonDemo().getPerson().study();
-	}
+    public static void main(String[] args) {
+        //PersonDemo pd = new PersonDemo();
+        //Person p = pd.getPerson();
+        //p.study();
+
+        //ï¿½ï¿½Ê½ï¿½ï¿½ï¿½
+        new PersonDemo().getPerson().study();
+    }
 }

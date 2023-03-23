@@ -25,128 +25,131 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-public class Client_singleFrame extends JFrame implements ActionListener, KeyListener{
+public class Client_singleFrame extends JFrame implements ActionListener, KeyListener {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	private static JTextArea jta_disMess;
-	private JTextField jtf_inputMess;
-	private JButton jbt_trans;
-	
-	public int userThreadID = 0;
-	
-	private Client client;
-	public Client_singleFrame(Client client, String title) {
-		this.client = client;
-		init(title);
-	}
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private static JTextArea jta_disMess;
+    private JTextField jtf_inputMess;
+    private JButton jbt_trans;
 
-	private void init(String title) {
-		try {
-			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-		} catch (ClassNotFoundException e1) {
-			e1.printStackTrace();
-		} catch (InstantiationException e1) {
-			e1.printStackTrace();
-		} catch (IllegalAccessException e1) {
-			e1.printStackTrace();
-		} catch (UnsupportedLookAndFeelException e1) {
-			e1.printStackTrace();
-		}
-		setIconImage(Toolkit.getDefaultToolkit().getImage("Images/socket.jpg"));
-		WinCenter.center(this);
-		setTitle(title);
-		setSize(400, 400);
-		setResizable(false);
-		setContentPane(createContentPanel());
-		addWindowListener(new WindowAdapter() {
-			@Override
-			public void windowClosing(WindowEvent e) {
-				closeSingleFrame();
-			}
-		});
-	}
+    public int userThreadID = 0;
 
-	private Container createContentPanel() {
-		JPanel jp = new JPanel();
-		jp.setBorder(BorderFactory.createTitledBorder("ÁÄÌìÏûÏ¢"));
-		jp.setLayout(new BorderLayout());
-		jta_disMess = new JTextArea();
-		jta_disMess.setEditable(false);
-		jp.add(BorderLayout.CENTER, new JScrollPane(jta_disMess));
-		jp.add(BorderLayout.SOUTH, createInput());
-		return jp;
-	}
+    private Client client;
 
-	private Component createInput() {
-		JPanel jp = new JPanel();
-		jp.setBorder(BorderFactory.createTitledBorder("·¢ËÍÏûÏ¢"));
-		jp.setLayout(new BorderLayout());
-		jtf_inputMess = new JTextField();
-		jtf_inputMess.addKeyListener(this);
-		jbt_trans = new JButton("·¢ËÍ");
-		jbt_trans.addActionListener(this);
-		jp.add(jtf_inputMess, BorderLayout.CENTER);
-		jp.add(jbt_trans, BorderLayout.EAST);
-		return jp;
-	}
+    public Client_singleFrame(Client client, String title) {
+        this.client = client;
+        init(title);
+    }
 
-	@Override
-	public void keyPressed(KeyEvent arg0) {
-		if(arg0.getKeyCode() == KeyEvent.VK_ENTER){
-			if(arg0.getSource() == jtf_inputMess){
-				jbt_trans.doClick();
-			}
-		}
-	}
+    private void init(String title) {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (ClassNotFoundException e1) {
+            e1.printStackTrace();
+        } catch (InstantiationException e1) {
+            e1.printStackTrace();
+        } catch (IllegalAccessException e1) {
+            e1.printStackTrace();
+        } catch (UnsupportedLookAndFeelException e1) {
+            e1.printStackTrace();
+        }
+        setIconImage(Toolkit.getDefaultToolkit().getImage("Images/socket.jpg"));
+        WinCenter.center(this);
+        setTitle(title);
+        setSize(400, 400);
+        setResizable(false);
+        setContentPane(createContentPanel());
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                closeSingleFrame();
+            }
+        });
+    }
 
-	@Override
-	public void keyReleased(KeyEvent arg0) {}
+    private Container createContentPanel() {
+        JPanel jp = new JPanel();
+        jp.setBorder(BorderFactory.createTitledBorder("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢"));
+        jp.setLayout(new BorderLayout());
+        jta_disMess = new JTextArea();
+        jta_disMess.setEditable(false);
+        jp.add(BorderLayout.CENTER, new JScrollPane(jta_disMess));
+        jp.add(BorderLayout.SOUTH, createInput());
+        return jp;
+    }
 
-	@Override
-	public void keyTyped(KeyEvent arg0) {}
+    private Component createInput() {
+        JPanel jp = new JPanel();
+        jp.setBorder(BorderFactory.createTitledBorder("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢"));
+        jp.setLayout(new BorderLayout());
+        jtf_inputMess = new JTextField();
+        jtf_inputMess.addKeyListener(this);
+        jbt_trans = new JButton("ï¿½ï¿½ï¿½ï¿½");
+        jbt_trans.addActionListener(this);
+        jp.add(jtf_inputMess, BorderLayout.CENTER);
+        jp.add(jbt_trans, BorderLayout.EAST);
+        return jp;
+    }
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		if(e.getSource() == jbt_trans){
-			String str = jtf_inputMess.getText();
-			str.trim();
-			jtf_inputMess.setText("");
-			if(str.equals("")){
-				JOptionPane.showMessageDialog(this, "ÐÅÏ¢²»ÄÜÎª¿Õ");
-			}else{
-				SimpleDateFormat form = new SimpleDateFormat("yyyy-MM-dd  HH:mm");
-				String date = form.format(new Date());
-				String mess = client.username + "  " + date + "\n" + str;
-				jta_disMess.append(mess + "\n");
-				jta_disMess.setCaretPosition(jta_disMess.getText().length());
-				int index = client.username_online.indexOf(this.getTitle());
-				String info = client.username + "@single" + client.getThreadID() + "@single" +
-								(int)client.clientuserid.get(index) + "@single" + 
-								mess + "@single";
-				try {
-					client.dos.writeUTF(info);
-				} catch (IOException e1) {
-					e1.printStackTrace();
-				}
-			}
-		}
-	}
+    @Override
+    public void keyPressed(KeyEvent arg0) {
+        if (arg0.getKeyCode() == KeyEvent.VK_ENTER) {
+            if (arg0.getSource() == jtf_inputMess) {
+                jbt_trans.doClick();
+            }
+        }
+    }
 
-	public void setDisMess(String chat_re) {
-		jta_disMess.append(chat_re + "\n");
-		jta_disMess.setCaretPosition(jta_disMess.getText().length());
-	}
+    @Override
+    public void keyReleased(KeyEvent arg0) {
+    }
 
-	public void closeSingleFrame(){
-		client.c_singleFrames.remove(this.getTitle());
-		setVisible(false);
-	}
+    @Override
+    public void keyTyped(KeyEvent arg0) {
+    }
 
-	public void setExitNotify() {
-		jta_disMess.append(this.getTitle() + "ÒÑÏÂÏß.....");
-		jbt_trans.setEnabled(false);
-	}
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == jbt_trans) {
+            String str = jtf_inputMess.getText();
+            str.trim();
+            jtf_inputMess.setText("");
+            if (str.equals("")) {
+                JOptionPane.showMessageDialog(this, "ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½");
+            } else {
+                SimpleDateFormat form = new SimpleDateFormat("yyyy-MM-dd  HH:mm");
+                String date = form.format(new Date());
+                String mess = client.username + "  " + date + "\n" + str;
+                jta_disMess.append(mess + "\n");
+                jta_disMess.setCaretPosition(jta_disMess.getText().length());
+                int index = client.username_online.indexOf(this.getTitle());
+                String info = client.username + "@single" + client.getThreadID() + "@single" +
+                        (int) client.clientuserid.get(index) + "@single" +
+                        mess + "@single";
+                try {
+                    client.dos.writeUTF(info);
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void setDisMess(String chat_re) {
+        jta_disMess.append(chat_re + "\n");
+        jta_disMess.setCaretPosition(jta_disMess.getText().length());
+    }
+
+    public void closeSingleFrame() {
+        client.c_singleFrames.remove(this.getTitle());
+        setVisible(false);
+    }
+
+    public void setExitNotify() {
+        jta_disMess.append(this.getTitle() + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.....");
+        jbt_trans.setEnabled(false);
+    }
 }

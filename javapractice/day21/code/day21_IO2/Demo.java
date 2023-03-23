@@ -5,29 +5,29 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /*
- * InputStreamReader(InputStream in) 
- * InputStreamReader(InputStream in, String charsetName) 
+ * InputStreamReader(InputStream in)
+ * InputStreamReader(InputStream in, String charsetName)
  */
 public class InputStreamReaderDemo {
-	public static void main(String[] args) throws IOException {
-		// ´´½¨¶ÔÏó
-		InputStreamReader isr = new InputStreamReader(new FileInputStream(
-				"isr.txt"));
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        InputStreamReader isr = new InputStreamReader(new FileInputStream(
+                "isr.txt"));
 
-		// Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·û
-		// int ch = 0;
-		// while ((ch = isr.read()) != -1) {
-		// System.out.print((char) ch);
-		// }
+        // Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½
+        // int ch = 0;
+        // while ((ch = isr.read()) != -1) {
+        // System.out.print((char) ch);
+        // }
 
-		// Ò»´Î¶ÁÈ¡Ò»¸ö×Ö·ûÊý×é
-		char[] chs = new char[1024];
-		int len = 0;
-		while ((len = isr.read(chs)) != -1) {
-			System.out.print(new String(chs, 0, len));
-		}
+        // Ò»ï¿½Î¶ï¿½È¡Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+        char[] chs = new char[1024];
+        int len = 0;
+        while ((len = isr.read(chs)) != -1) {
+            System.out.print(new String(chs, 0, len));
+        }
 
-		// ÊÍ·Å×ÊÔ´
-		isr.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        isr.close();
+    }
 }

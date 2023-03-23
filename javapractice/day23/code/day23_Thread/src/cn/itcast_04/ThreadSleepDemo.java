@@ -1,20 +1,20 @@
 package cn.itcast_04;
 
 /*
- * public static void sleep(long millis):ÉèÖÃÏß³ÌÐÝÃß
+ * public static void sleep(long millis):ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ThreadSleepDemo {
-	public static void main(String[] args) {
-		ThreadSleep ts1 = new ThreadSleep();
-		ThreadSleep ts2 = new ThreadSleep();
-		ThreadSleep ts3 = new ThreadSleep();
+    public static void main(String[] args) {
+        ThreadSleep ts1 = new ThreadSleep();
+        ThreadSleep ts2 = new ThreadSleep();
+        ThreadSleep ts3 = new ThreadSleep();
 
-		ts1.setName("ºÍ«|");
-		ts2.setName("ÇØèí");
-		ts3.setName("¸ßÙ´");
+        ts1.setName("ï¿½Í«|");
+        ts2.setName("ï¿½ï¿½ï¿½ï¿½");
+        ts3.setName("ï¿½ï¿½Ù´");
 
-		ts1.start();
-		ts2.start();
-		ts3.start();
-	}
+        ts1.start();
+        ts2.start();
+        ts3.start();
+    }
 }

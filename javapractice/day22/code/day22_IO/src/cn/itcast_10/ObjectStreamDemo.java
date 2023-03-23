@@ -7,37 +7,37 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 /*
- * ÎªÊ²Ã´ÒªÓÐÐòÁÐ»¯Á÷ÄØ?
- * 		ÎªÁËÈÃ¶ÔÏóÔÚÎÄ¼þÖÐ³Ö¾Ã´æ´¢£¬»òÕßÔÚÍøÂçÖÐ´«Êä¡£
- * 
- * ÐòÁÐ»¯Á÷£ºObjectOutputStream	
+ * ÎªÊ²Ã´Òªï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½?
+ * 		Îªï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð³Ö¾Ã´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ä¡£
+ *
+ * ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ObjectOutputStream
  * 		public final void writeObject(Object obj)
- * ·´ÐòÁÐ»¯Á÷£ºObjectInputStream	(°ÑÁ÷Êý¾ÝµÄ¶ÔÏó»¹Ô­)
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½ObjectInputStream	(ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÝµÄ¶ï¿½ï¿½ï¿½Ô­)
  * 		public final Object readObject()
  */
 public class ObjectStreamDemo {
-	public static void main(String[] args) throws IOException,
-			ClassNotFoundException {
-		// write();
-		read();
-	}
+    public static void main(String[] args) throws IOException,
+            ClassNotFoundException {
+        // write();
+        read();
+    }
 
-	private static void read() throws IOException, ClassNotFoundException {
-		// ObjectInputStream(InputStream is)
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
-				"oos.txt"));
-		Object obj = ois.readObject();
-		ois.close();
+    private static void read() throws IOException, ClassNotFoundException {
+        // ObjectInputStream(InputStream is)
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(
+                "oos.txt"));
+        Object obj = ois.readObject();
+        ois.close();
 
-		System.out.println(obj);
-	}
+        System.out.println(obj);
+    }
 
-	private static void write() throws IOException {
-		// ObjectOutputStream(OutputStream out)
-		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(
-				"oos.txt"));
-		Person p = new Person("ÁÖÇàÏ¼", 28);
-		oos.writeObject(p);
-		oos.close();
-	}
+    private static void write() throws IOException {
+        // ObjectOutputStream(OutputStream out)
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(
+                "oos.txt"));
+        Person p = new Person("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        oos.writeObject(p);
+        oos.close();
+    }
 }

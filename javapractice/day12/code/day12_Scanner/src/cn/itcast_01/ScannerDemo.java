@@ -4,31 +4,31 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 /*
- * Scanner:JDK5ÒÔºó£¬ÓÃÓÚ°ïÖúÎÒÃÇÊµÏÖ¼üÅÌÂ¼ÈëÊı¾İµÄ¡£
- * 
- * ¹¹Ôì·½·¨£º
+ * Scanner:JDK5ï¿½Ôºï¿½ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Ö¼ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½İµÄ¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
  * 		public Scanner(InputStream source)
  */
 public class ScannerDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼üÅÌÂ¼Èë¶ÔÏó
-		// Scanner sc = new Scanner(System.in);
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        // Scanner sc = new Scanner(System.in);
 
-		// public Scanner(InputStream source)
+        // public Scanner(InputStream source)
 
-		// SystemÀàÏÂÓĞÕâÑùµÄÒ»¸ö³ÉÔ±±äÁ¿
-		// public static final InputStream in;
-		// InputStream is = System.in;
+        // Systemï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½
+        // public static final InputStream in;
+        // InputStream is = System.in;
 
-		// ¼ÙÈçDemoÀàÏÂÓĞÒ»¸ö±äÁ¿
-		// public static final int x;
-		// public static final Student s;
-		// int y = Demo.x;
-		// Student student = Demo.s;
+        // ï¿½ï¿½ï¿½ï¿½Demoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // public static final int x;
+        // public static final Student s;
+        // int y = Demo.x;
+        // Student student = Demo.s;
 
-		// InputStream is = System.in; //×ÓÀà¶ÔÏó
-		// Scanner sc = new Scanner(is);
+        // InputStream is = System.in; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // Scanner sc = new Scanner(is);
 
-		Scanner sc = new Scanner(System.in);
-	}
+        Scanner sc = new Scanner(System.in);
+    }
 }

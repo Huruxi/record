@@ -3,23 +3,23 @@ package cn.itcast_03;
 import java.util.LinkedHashSet;
 
 /*
- * LinkedHashSet£ºµ×²ãÊý¾Ý½á¹¹ÊÇ¹þÏ£±íºÍÁ´±í¡£
- * ¹þÏ£±í£ºÄÜ¹»±£Ö¤ÔªËØµÄÎ¨Ò»ÐÔ
- * Á´±í£ºÄÜ¹»±£Ö¤ÔªËØÓÐÐò
+ * LinkedHashSetï¿½ï¿½ï¿½×²ï¿½ï¿½ï¿½ï¿½Ý½á¹¹ï¿½Ç¹ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½Ï£ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½Ö¤Ôªï¿½Øµï¿½Î¨Ò»ï¿½ï¿½
+ * ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½Ö¤Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class LinkedHashSetDemo {
-	public static void main(String[] args) {
-		LinkedHashSet<String> link = new LinkedHashSet<String>();
+    public static void main(String[] args) {
+        LinkedHashSet<String> link = new LinkedHashSet<String>();
 
-		link.add("ccc");
-		link.add("hello");
-		link.add("bbb");
-		link.add("world");
-		link.add("aaa");
-		link.add("java");
-		link.add("aaa");
-		link.add("java");
+        link.add("ccc");
+        link.add("hello");
+        link.add("bbb");
+        link.add("world");
+        link.add("aaa");
+        link.add("java");
+        link.add("aaa");
+        link.add("java");
 
-		System.out.println("link:" + link);
-	}
+        System.out.println("link:" + link);
+    }
 }

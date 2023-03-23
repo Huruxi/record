@@ -1,17 +1,17 @@
 /*
-	Math:×öÊıÑ§ÔËËãµÄÀà
-	ÌØµã£ºÃ»ÓĞ¹¹Ôì·½·¨£¬ÒòÎªËüµÄ³ÉÔ±¶¼ÊÇ¾²Ì¬µÄ¡£
+	Math:ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	ï¿½Øµã£ºÃ»ï¿½Ğ¹ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½Ç¾ï¿½Ì¬ï¿½Ä¡ï¿½
 
-	ĞèÇó1£º»ñÈ¡Ëæ»úÊı
-		public static double random():¸ÃÖµ´óÓÚµÈÓÚ 0.0 ÇÒĞ¡ÓÚ 1.0
+	ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½
+		public static double random():ï¿½ï¿½Öµï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ 0.0 ï¿½ï¿½Ğ¡ï¿½ï¿½ 1.0
 
-	ĞèÇó2£º»ñÈ¡1-100Ö®¼äµÄËæ»úÊı    
+	ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½È¡1-100Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½    
 */
 class MathDemo {
-	public static void main(String[] args) {
-		//»ñÈ¡Ëæ»úÊı
-		//double d = Math.random();
-		//System.out.println(d);
+    public static void main(String[] args) {
+        //ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½
+        //double d = Math.random();
+        //System.out.println(d);
 
 		/*
 		for(int x=0; x<10; x++) {
@@ -20,10 +20,10 @@ class MathDemo {
 		}
 		*/
 
-		//ÎÒÃÇÈçºÎ»ñÈ¡1-100Ö®¼äµÄËæ»úÊıÄØ?
-		for(int x=0; x<100; x++) {
-			int number = (int)(Math.random()*100)+1;
-			System.out.println(number);
-		}
-	}
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½È¡1-100Ö®ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+        for (int x = 0; x < 100; x++) {
+            int number = (int) (Math.random() * 100) + 1;
+            System.out.println(number);
+        }
+    }
 }

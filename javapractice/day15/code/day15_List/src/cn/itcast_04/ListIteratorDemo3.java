@@ -5,66 +5,66 @@ import java.util.List;
 import java.util.ListIterator;
 
 /*
- * ÐèÇó£ºÎÒÓÐÒ»¸ö¼¯ºÏ£¬ÀïÃæÓÐÈý¸öÔªËØ"hello","world","java",ÇëÐ´³ÌÐòÊµÏÖÈçÏÂ²Ù×÷
- * 	         ÅÐ¶ÏÕâ¸ö¼¯ºÏÖÐÓÐÃ»ÓÐÔªËØÎªworldµÄ£¬Èç¹ûÓÐ£¬¾ÍÌí¼ÓÒ»¸öÔªËØAndroid¡£
- * 
- * ·ÖÎö£º
- * 		A:´´½¨Ò»¸ö¼¯ºÏ£¬²¢Ìí¼Ó¶à¸öÔªËØ
- * 		B:±éÀú¼¯ºÏ£¬»ñÈ¡µ½Ã¿Ò»¸öÔªËØ
- * 		C:ÅÐ¶ÏÔªËØÓÐÃ»ÓÐÊÇ"world"µÄ£¬Èç¹ûÓÐ£¬¾ÍÍù¼¯ºÏÖÐÌí¼ÓÒ»¸öÐÂÔªËØandroid
- * 		D:Ö±½ÓÊä³ö¼¯ºÏÃû³Æ
- * 
- * ConcurrentModificationException:²¢·¢ÐÞ¸ÄÒì³£¡£
- * 
- * Ô­Òò£º
- * 		µü´úÆ÷ÊÇÒÀÀµÓÚ¼¯ºÏ¶ø´æÔÚµÄ£¬ÎÒÃÇÓÃµü´úÆ÷±éÀú¼¯ºÏµÄÊ±ºò£¬Èç¹ûÓÐÂú×ãÌõ¼þµÄ£¬
- * 		ÎÒÃÇ¾ÍÍ¨¹ý¼¯ºÏµ÷ÓÃadd()¹¦ÄÜÌí¼ÓÁËÒ»¸öÔªËØ£¬Ò²¾ÍÊÇËµÕâ¸öÊ±ºò£¬¼¯ºÏ·¢ÉúÁË¸Ä±ä£¬
- * 		¶øµü´úÆ÷²¢Ã»ÓÐ·¢Éú¸Ä±ä£¬ÕâÑù¾Í²úÉúÁËÕâ¸öÎÊÌâ¡£
- * 		Õâ¸öÎÊÌâµÄÖ÷ÒªÔ­Òò£ºÍ¨¹ýµü´úÆ÷È¥±éÀú¼¯ºÏµÄÊ±ºò£¬²»ÄÜÔÚÍ¨¹ý¼¯ºÏÈ¥²Ù×÷¡£
- * 
- * ½â¾ö·½°¸£º
- * 		A:²»ÊÇÓÃµü´úÆ÷±éÀú£¬ÓÃÆÕÍ¨forÑ­»·±éÀú
- * 			ÔªËØÌí¼Óµ½ÁË¼¯ºÏµÄÄ©Î²¡£
- * 		B:Ê¹ÓÃÁÐ±íµü´úÆ÷£¬±éÀúÊ¹ÓÃµü´úÆ÷£¬Ìí¼ÓÒ²Ê¹ÓÃµü´úÆ÷
- * 			±éÀúµ½ÄÄÀï£¬ÔªËØ¾ÍÌí¼Óµ½ÄÄÀï
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½"hello","world","java",ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Â²ï¿½ï¿½ï¿½
+ * 	         ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ôªï¿½ï¿½Îªworldï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½Androidï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½Ôªï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½ï¿½
+ * 		C:ï¿½Ð¶ï¿½Ôªï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½"world"ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½android
+ * 		D:Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ConcurrentModificationException:ï¿½ï¿½ï¿½ï¿½ï¿½Þ¸ï¿½ï¿½ì³£ï¿½ï¿½
+ *
+ * Ô­ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½ÚµÄ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½
+ * 		ï¿½ï¿½ï¿½Ç¾ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½add()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½Ø£ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ëµï¿½ï¿½ï¿½Ê±ï¿½ò£¬¼ï¿½ï¿½Ï·ï¿½ï¿½ï¿½ï¿½Ë¸Ä±ä£¬
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð·ï¿½ï¿½ï¿½ï¿½Ä±ä£¬ï¿½ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â¡£
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÔ­ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½Ê±ï¿½ò£¬²ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨forÑ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			Ôªï¿½ï¿½ï¿½ï¿½Óµï¿½ï¿½Ë¼ï¿½ï¿½Ïµï¿½Ä©Î²ï¿½ï¿½
+ * 		B:Ê¹ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²Ê¹ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£¬Ôªï¿½Ø¾ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ListIteratorDemo3 {
-	public static void main(String[] args) {
-		// ´´½¨Ò»¸ö¼¯ºÏ£¬²¢Ìí¼Ó¶à¸öÔªËØ
-		List list = new ArrayList();
-		list.add("hello");
-		list.add("world");
-		list.add("java");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½ï¿½ï¿½Ó¶ï¿½ï¿½Ôªï¿½ï¿½
+        List list = new ArrayList();
+        list.add("hello");
+        list.add("world");
+        list.add("java");
 
-		// ±éÀú¼¯ºÏ£¬»ñÈ¡µ½Ã¿Ò»¸öÔªËØ
-		// Iterator it = list.iterator();
-		// while (it.hasNext()) {
-		// String s = (String) it.next();
-		// // ÅÐ¶ÏÔªËØÓÐÃ»ÓÐÊÇ"world"µÄ£¬Èç¹ûÓÐ£¬¾ÍÍù¼¯ºÏÖÐÌí¼ÓÒ»¸öÐÂÔªËØandroid
-		// if ("world".equals(s)) {
-		// list.add("android");
-		// // it = list.iterator();
-		// }
-		// }
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï£ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ã¿Ò»ï¿½ï¿½Ôªï¿½ï¿½
+        // Iterator it = list.iterator();
+        // while (it.hasNext()) {
+        // String s = (String) it.next();
+        // // ï¿½Ð¶ï¿½Ôªï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½"world"ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½android
+        // if ("world".equals(s)) {
+        // list.add("android");
+        // // it = list.iterator();
+        // }
+        // }
 
-		// ÆÕÍ¨for
-		// for (int x = 0; x < list.size(); x++) {
-		// String s = (String) list.get(x);
-		// if ("world".equals(s)) {
-		// list.add("android");
-		// }
-		// }
+        // ï¿½ï¿½Í¨for
+        // for (int x = 0; x < list.size(); x++) {
+        // String s = (String) list.get(x);
+        // if ("world".equals(s)) {
+        // list.add("android");
+        // }
+        // }
 
-		// Ê¹ÓÃÁÐ±íµü´úÆ÷
-		ListIterator lit = list.listIterator();
-		while (lit.hasNext()) {
-			String s = (String) lit.next();
-			if ("world".equals(s)) {
-				lit.add("android");
-			}
-		}
+        // Ê¹ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ListIterator lit = list.listIterator();
+        while (lit.hasNext()) {
+            String s = (String) lit.next();
+            if ("world".equals(s)) {
+                lit.add("android");
+            }
+        }
 
-		// Ö±½ÓÊä³ö¼¯ºÏÃû³Æ
-		System.out.println("list:" + list);
-	}
+        // Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        System.out.println("list:" + list);
+    }
 }

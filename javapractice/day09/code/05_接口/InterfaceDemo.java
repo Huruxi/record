@@ -1,33 +1,34 @@
 /*
-	接口概述：现在在动物园里面，有些猫可以钻火圈，狗跳高，做计算等东西。
-			  而这些动作，并不是动物天生就就具备的，所以，不适合定义在动物类中。
-			  并且，也不是所有的猫，或者狗具备这些功能，所以直接定义在猫或者狗类中也不合适。
-			  针对这样的一种扩展功能，java就提供了接口来体现。
+	锟接口革拷锟斤拷锟斤拷锟斤拷锟斤拷锟节讹拷锟斤拷园锟斤拷锟芥，锟斤拷些猫锟斤拷锟斤拷锟斤拷锟饺︼拷锟斤拷锟斤拷锟斤拷撸锟斤拷锟斤拷锟斤拷锟饺讹拷锟斤拷锟斤拷
+			  锟斤拷锟斤拷些锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟角讹拷锟斤拷锟斤拷锟斤拷锟酵就具憋拷锟侥ｏ拷锟斤拷锟皆ｏ拷锟斤拷锟绞合讹拷锟斤拷锟节讹拷锟斤拷锟斤拷锟叫★拷
+			  锟斤拷锟揭ｏ拷也锟斤拷锟斤拷锟斤拷锟叫碉拷猫锟斤拷锟斤拷锟竭癸拷锟竭憋拷锟斤拷些锟斤拷锟杰ｏ拷锟斤拷锟斤拷直锟接讹拷锟斤拷锟斤拷猫锟斤拷锟竭癸拷锟斤拷锟斤拷也锟斤拷锟斤拷锟绞★拷
+			  锟斤拷锟斤拷锟斤拷锟斤拷锟揭伙拷锟斤拷锟秸癸拷锟斤拷埽锟絡ava锟斤拷锟结供锟剿接匡拷锟斤拷锟斤拷锟街★拷
 
-	接口的特点：
-		A:接口用关键字interface表示
-			格式：interface 接口名 {}
-		B:类实现接口用implements表示
-			格式：class 类名 implements 接口名 {}
-		C:接口不能实例化
-			接口多态。
-		D:接口的子类
-			a:要么是抽象类
-			b:要么重写接口中的所有的抽象方法
+	锟接口碉拷锟截点：
+		A:锟接匡拷锟矫关硷拷锟斤拷interface锟斤拷示
+			锟斤拷式锟斤拷interface 锟接匡拷锟斤拷 {}
+		B:锟斤拷实锟街接匡拷锟斤拷implements锟斤拷示
+			锟斤拷式锟斤拷class 锟斤拷锟斤拷 implements 锟接匡拷锟斤拷 {}
+		C:锟接口诧拷锟斤拷实锟斤拷锟斤拷
+			锟接口讹拷态锟斤拷
+		D:锟接口碉拷锟斤拷锟斤拷
+			a:要么锟角筹拷锟斤拷锟斤拷
+			b:要么锟斤拷写锟接匡拷锟叫碉拷锟斤拷锟叫的筹拷锟襟方凤拷
 */
 interface Animal {
-	public abstract void show();
+    public abstract void show();
 }
 
 abstract class Dog implements Animal {
 }
 
 class Cat implements Animal {
-	public void show() {}
+    public void show() {
+    }
 }
 
 class InterfaceDemo {
-	public static void main(String[] args) {
-	
-	}
+    public static void main(String[] args) {
+
+    }
 }

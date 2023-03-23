@@ -1,13 +1,13 @@
 package cn.itcast_01;
 
 /*
- * Character ÀàÔÚ¶ÔÏóÖÐ°ü×°Ò»¸ö»ù±¾ÀàÐÍ char µÄÖµ,´ËÍâ£¬¸ÃÀàÌá¹©ÁË¼¸ÖÖ·½·¨£¬ÒÔÈ·¶¨×Ö·ûµÄÀà±ð£¨Ð¡Ð´×ÖÄ¸£¬Êý×Ö£¬µÈµÈ£©£¬²¢½«×Ö·û´Ó´óÐ´×ª»»³ÉÐ¡Ð´£¬·´Ö®ÒàÈ»
+ * Character ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½Ð°ï¿½×°Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ char ï¿½ï¿½Öµ,ï¿½ï¿½ï¿½â£¬ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½Ë¼ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡Ð´ï¿½ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½ï¿½Ö£ï¿½ï¿½ÈµÈ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½Ó´ï¿½Ð´×ªï¿½ï¿½ï¿½ï¿½Ð¡Ð´ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½È»
  */
 public class CharacterDemo {
-	public static void main(String[] args) {
-		// ¹¹Ôì·½·¨
-		// Character(char value)
-		Character ch = new Character('a');
-		System.out.println(ch);
-	}
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ì·½ï¿½ï¿½
+        // Character(char value)
+        Character ch = new Character('a');
+        System.out.println(ch);
+    }
 }

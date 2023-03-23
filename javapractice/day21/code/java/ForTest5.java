@@ -1,29 +1,29 @@
 /*
-	ÐèÇó£ºÇëÔÚ¿ØÖÆÌ¨Êä³öÂú×ãÈçÏÂÌõ¼þµÄÎåÎ»Êý
-			¸öÎ»µÈÓÚÍòÎ»
-			Ê®Î»µÈÓÚÇ§Î»
-			¸öÎ»+Ê®Î»+Ç§Î»+ÍòÎ»=°ÙÎ»
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+			ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»
+			Ê®Î»ï¿½ï¿½ï¿½ï¿½Ç§Î»
+			ï¿½ï¿½Î»+Ê®Î»+Ç§Î»+ï¿½ï¿½Î»=ï¿½ï¿½Î»
 
-	·ÖÎö£º
-		A:ÎåÎ»Êý¸æËßÎÒÃÇ·¶Î§¡£
-		B:»ñÈ¡Ã¿Ò»¸öÎ»ÉÏµÄÊý¾Ý¡£
-		C:Âú×ãÌõ¼þ
-			¸öÎ»µÈÓÚÍòÎ»
-			Ê®Î»µÈÓÚÇ§Î»
-			¸öÎ»+Ê®Î»+Ç§Î»+ÍòÎ»=°ÙÎ»
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Î§ï¿½ï¿½
+		B:ï¿½ï¿½È¡Ã¿Ò»ï¿½ï¿½Î»ï¿½Ïµï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»
+			Ê®Î»ï¿½ï¿½ï¿½ï¿½Ç§Î»
+			ï¿½ï¿½Î»+Ê®Î»+Ç§Î»+ï¿½ï¿½Î»=ï¿½ï¿½Î»
 */
 class ForTest5 {
-	public static void main(String[] args) {
-		for(int x=10000; x<100000; x++) {
-			int ge = x%10;
-			int shi = x/10%10;
-			int bai = x/10/10%10;
-			int qian = x/10/10/10%10;
-			int wan = x/10/10/10/10%10;
+    public static void main(String[] args) {
+        for (int x = 10000; x < 100000; x++) {
+            int ge = x % 10;
+            int shi = x / 10 % 10;
+            int bai = x / 10 / 10 % 10;
+            int qian = x / 10 / 10 / 10 % 10;
+            int wan = x / 10 / 10 / 10 / 10 % 10;
 
-			if((ge == wan) && (shi == qian) && (ge+shi+qian+wan == bai)) {
-				System.out.println(x);
-			}
-		}
-	}
+            if ((ge == wan) && (shi == qian) && (ge + shi + qian + wan == bai)) {
+                System.out.println(x);
+            }
+        }
+    }
 }

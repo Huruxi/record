@@ -3,35 +3,35 @@ package cn.itcast_01;
 import java.awt.Frame;
 
 /*
- * Component£º×é¼þ£¬¾ÍÊÇÒ»¸ö¶ÔÏó¡£
- * 		»ù±¾×é¼þ	Ò»¸ö¾ßÓÐ¶ÀÁ¢¹¦ÄÜµÄ×é¼þ£¬µ«ÊÇÒªÒÀÀµÓÚÈÝÆ÷×é¼þ´æÔÚ
- * 		ÈÝÆ÷×é¼þ	¿ÉÒÔ´æ´¢»ù±¾×é¼þºÍÈÝÆ÷×é¼þµÄ×é¼þ
- * Í¨¹ý¹Û²ìËüµÄ¼Ì³ÐÌåÏµÍ¼£¬ÎÒÃÇÈç¹û°´ÕÕÒÔÇ°µÄÑ§Ï°·½Ê½£¬Ñ§Ï°¶¥²ã£¬Ì«Âé·³ÁË¡£
- * ËùÒÔ£¬ÎÒÃÇ½ñÌìÖ±½ÓÉÏÊÖFrame¼´¿É¡£
- * 
- * ¹¹Ôì·½·¨£º
+ * Componentï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Üµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½ï¿½Ô´æ´¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Í¨ï¿½ï¿½ï¿½Û²ï¿½ï¿½ï¿½ï¿½Ä¼Ì³ï¿½ï¿½ï¿½ÏµÍ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½Ñ§Ï°ï¿½ï¿½Ê½ï¿½ï¿½Ñ§Ï°ï¿½ï¿½ï¿½ã£¬Ì«ï¿½é·³ï¿½Ë¡ï¿½
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Frameï¿½ï¿½ï¿½É¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
  * 		public Frame()
- * 
- * Í¨¹ý¹Û²ì£¬ÎÒÃÇÖªµÀÁËÕâÑùµÄÁ½¸öÐ¡ÎÊÌâ
- * 		A:´°ÌåÔÚÄÚ´æÖÐ´æÔÚÁË£¬Ö»²»¹ýÎÒÃÇÃ»ÓÐ¿´µ½¡£
- * 		B:´´½¨µÄ´æÔÚÒ²ÊÇ¿ªÆôÁËÏß³ÌµÄ¡£
+ *
+ * Í¨ï¿½ï¿½ï¿½Û²ì£¬ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½
+ * 		A:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú´ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½Ë£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð¿ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½Ò²ï¿½Ç¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ÌµÄ¡ï¿½
  */
 public class FrameDemo {
-	public static void main(String[] args) {
-		// ´´½¨´°Ìå¶ÔÏó
-		Frame f = new Frame();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Frame f = new Frame();
 
-		// ÉèÖÃ±êÌâ
-		f.setTitle("°Ù¶ÈÒ»ÏÂ,Äã¾ÍÖªµÀ");
-		// ÉèÖÃ´°Ìå´óÐ¡
-		f.setSize(400, 300);
-		// ÉèÖÃ´°Ìå¿É¼û
-		f.setVisible(true);
+        // ï¿½ï¿½ï¿½Ã±ï¿½ï¿½ï¿½
+        f.setTitle("ï¿½Ù¶ï¿½Ò»ï¿½ï¿½,ï¿½ï¿½ï¿½Öªï¿½ï¿½");
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½ï¿½Ð¡
+        f.setSize(400, 300);
+        // ï¿½ï¿½ï¿½Ã´ï¿½ï¿½ï¿½É¼ï¿½
+        f.setVisible(true);
 
-		// ÉèÖÃÎ»ÖÃ
-		f.setLocation(500, 200);
+        // ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+        f.setLocation(500, 200);
 
-		// f.show();
-		// System.out.println("over");
-	}
+        // f.show();
+        // System.out.println("over");
+    }
 }

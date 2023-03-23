@@ -8,48 +8,48 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 /*
- * ÓÉÓÚÊý×éµÄ·½Ê½Ò»´Î±ÈÒ»¸ö×Ö½ÚµÄ·½Ê½¿ìºÜ¶à£¬ËùÒÔ£¬java±¾ÉíÔÚÉè¼ÆµÄÊ±ºò£¬Ò²¿¼ÂÇµ½ÁË¡£
- * ¾ÍÉè¼Æ³öÁËÄÚÖÃÊý×éµÄ»º³åÇøÁ÷¡£
- * ×Ö½Ú»º³åÊäÈëÁ÷
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½Ê½Ò»ï¿½Î±ï¿½Ò»ï¿½ï¿½ï¿½Ö½ÚµÄ·ï¿½Ê½ï¿½ï¿½Ü¶à£¬ï¿½ï¿½ï¿½Ô£ï¿½javaï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½Ê±ï¿½ï¿½Ò²ï¿½ï¿½ï¿½Çµï¿½ï¿½Ë¡ï¿½
+ * ï¿½ï¿½ï¿½ï¿½Æ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½Ö½Ú»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		BufferedInputStream
- * ×Ö½Ú»º³åÊä³öÁ÷
+ * ï¿½Ö½Ú»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		BufferedOutputStream
- * 
- * Í¨¹ý¿´¹¹Ôì·½·¨£¬ÎÒÃÇ·¢ÏÖ£¬»º³åÁ÷²»ÄÜÖ±½Ó²Ù×÷ÎÄ¼þ¡£
- * ÊÇ½¨Á¢ÔÚ»ù±¾µÄ²Ù×÷Á÷Ö®ÉÏµÄ¡£
- * ËùÒÔ£¬ÕâÖÖÁ÷Ò²±»³ÆÖ®Îª¸ß¼¶Á÷¡£
+ *
+ * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ö£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+ * ï¿½Ç½ï¿½ï¿½ï¿½ï¿½Ú»ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ÏµÄ¡ï¿½
+ * ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Ö®Îªï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class BufferedDemo {
-	public static void main(String[] args) throws IOException {
-		// Ð´Êý¾Ý
-		// BufferedOutputStream(OutputStream out)
-		// OutputStream out = new FileOutputStream("bos.txt");
-		// BufferedOutputStream bos = new BufferedOutputStream(out);
-		// BufferedOutputStream bos = new BufferedOutputStream(
-		// new FileOutputStream("bos.txt"));
-		// bos.write("hello".getBytes());
-		// bos.close();
+    public static void main(String[] args) throws IOException {
+        // Ð´ï¿½ï¿½ï¿½ï¿½
+        // BufferedOutputStream(OutputStream out)
+        // OutputStream out = new FileOutputStream("bos.txt");
+        // BufferedOutputStream bos = new BufferedOutputStream(out);
+        // BufferedOutputStream bos = new BufferedOutputStream(
+        // new FileOutputStream("bos.txt"));
+        // bos.write("hello".getBytes());
+        // bos.close();
 
-		// ¶ÁÊý¾Ý
-		// BufferedInputStream(InputStream is)
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				"bos.txt"));
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // BufferedInputStream(InputStream is)
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                "bos.txt"));
 
-		// ·½Ê½1
-		int by = 0;
-		while ((by = bis.read()) != -1) {
-			System.out.print((char) by);
-		}
-		System.out.println("-----------------------");
+        // ï¿½ï¿½Ê½1
+        int by = 0;
+        while ((by = bis.read()) != -1) {
+            System.out.print((char) by);
+        }
+        System.out.println("-----------------------");
 
-		// ·½Ê½2
-		bis = new BufferedInputStream(new FileInputStream("bos.txt"));
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = bis.read(bys)) != -1) {
-			System.out.print(new String(bys, 0, len));
-		}
+        // ï¿½ï¿½Ê½2
+        bis = new BufferedInputStream(new FileInputStream("bos.txt"));
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = bis.read(bys)) != -1) {
+            System.out.print(new String(bys, 0, len));
+        }
 
-		bis.close();
-	}
+        bis.close();
+    }
 }

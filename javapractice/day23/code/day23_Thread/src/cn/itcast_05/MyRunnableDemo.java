@@ -1,29 +1,29 @@
 package cn.itcast_05;
 
 /*
- * 实现Runnable接口的步骤：
- * A:定义类MyRunnable实现接口Runnable
- * B:重写run()方法
- * C:创建MyRunnable的对象
- * D:创建Thread类的对象，并把C步骤的对象作为构造参数传递
- * E:启动线程
- * 
- * 有了继承Thread类的方式，为什么还要有实现Runnable接口的方式?
- * 原因是因为类是单继承。
+ * 实锟斤拷Runnable锟接口的诧拷锟借：
+ * A:锟斤拷锟斤拷锟斤拷MyRunnable实锟街接匡拷Runnable
+ * B:锟斤拷写run()锟斤拷锟斤拷
+ * C:锟斤拷锟斤拷MyRunnable锟侥讹拷锟斤拷
+ * D:锟斤拷锟斤拷Thread锟斤拷亩锟斤拷螅锟斤拷锟紺锟斤拷锟斤拷亩锟斤拷锟斤拷锟轿拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+ * E:锟斤拷锟斤拷锟竭筹拷
+ *
+ * 锟斤拷锟剿继筹拷Thread锟斤拷姆锟绞斤拷锟轿裁达拷锟揭拷锟绞碉拷锟絉unnable锟接口的凤拷式?
+ * 原锟斤拷锟斤拷锟斤拷为锟斤拷锟角碉拷锟教承★拷
  */
 public class MyRunnableDemo {
-	public static void main(String[] args) {
-		// 创建MyRunnable的对象
-		MyRunnable my = new MyRunnable();
+    public static void main(String[] args) {
+        // 锟斤拷锟斤拷MyRunnable锟侥讹拷锟斤拷
+        MyRunnable my = new MyRunnable();
 
-		// 创建Thread类的对象，并把C步骤的对象作为构造参数传递
-		// Thread(Runnable target)
-		// Thread(Runnable target, String name)
-		Thread t1 = new Thread(my, "孟非");
-		Thread t2 = new Thread(my, "乐嘉");
+        // 锟斤拷锟斤拷Thread锟斤拷亩锟斤拷螅锟斤拷锟紺锟斤拷锟斤拷亩锟斤拷锟斤拷锟轿拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷
+        // Thread(Runnable target)
+        // Thread(Runnable target, String name)
+        Thread t1 = new Thread(my, "锟较凤拷");
+        Thread t2 = new Thread(my, "锟街硷拷");
 
-		// 启动线程
-		t1.start();
-		t2.start();
-	}
+        // 锟斤拷锟斤拷锟竭筹拷
+        t1.start();
+        t2.start();
+    }
 }

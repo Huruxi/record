@@ -5,34 +5,34 @@ import java.util.Set;
 
 /*
  * HashMap<String,Student>
- * ¼ü£ºString		Ñ§ºÅ 	eg:itcast001
- * Öµ£ºStudent	Ñ§Éú¶ÔÏó (ÁÖÇàÏ¼,28)
+ * ï¿½ï¿½ï¿½ï¿½String		Ñ§ï¿½ï¿½ 	eg:itcast001
+ * Öµï¿½ï¿½Student	Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½Ï¼,28)
  * 		name,age
- * ÒªÇó´æ´¢Èý¸öÑ§Éú£¬²¢±éÀú¡£±éÀúµÄ½á¹ûÊÇ£º
- * 		itcast001--ÁÖÇàÏ¼---28
+ * Òªï¿½ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½Ç£ï¿½
+ * 		itcast001--ï¿½ï¿½ï¿½ï¿½Ï¼---28
  * 		...
  */
 public class HashMapDemo3 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		HashMap<String, Student> hm = new HashMap<String, Student>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        HashMap<String, Student> hm = new HashMap<String, Student>();
 
-		// ´´½¨¶ÔÏó
-		Student s1 = new Student("ÁÖÇàÏ¼", 28);
-		Student s2 = new Student("·çÇåÑï", 31);
-		Student s3 = new Student("ÍõÖØÑô", 200);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Student s1 = new Student("ï¿½ï¿½ï¿½ï¿½Ï¼", 28);
+        Student s2 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 31);
+        Student s3 = new Student("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", 200);
 
-		// Ìí¼ÓÔªËØ
-		hm.put("itcast001", s1);
-		hm.put("itcast002", s2);
-		hm.put("itcast003", s3);
+        // ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        hm.put("itcast001", s1);
+        hm.put("itcast002", s2);
+        hm.put("itcast003", s3);
 
-		// ±éÀú
-		Set<String> set = hm.keySet();
-		for (String key : set) {
-			Student value = hm.get(key);
-			System.out.println(key + "---" + value.getName() + "---"
-					+ value.getAge());
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½
+        Set<String> set = hm.keySet();
+        for (String key : set) {
+            Student value = hm.get(key);
+            System.out.println(key + "---" + value.getName() + "---"
+                    + value.getAge());
+        }
+    }
 }

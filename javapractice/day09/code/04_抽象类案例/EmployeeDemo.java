@@ -1,116 +1,119 @@
 /*
-	¼ÙÈçÎÒÃÇÔÚ¿ª·¢Ò»¸öÏµÍ³Ê±ÐèÒª¶ÔÔ±¹¤Àà½øÐÐÉè¼Æ£¬Ô±¹¤°üº¬3¸öÊôÐÔ£ºÐÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê¡£
-	¾­ÀíÒ²ÊÇÔ±¹¤£¬³ýÁËº¬ÓÐÔ±¹¤µÄÊôÐÔÍâ£¬ÁíÎª»¹ÓÐÒ»¸ö½±½ðÊôÐÔ¡£
-	ÇëÊ¹ÓÃ¼Ì³ÐµÄË¼ÏëÉè¼Æ³öÔ±¹¤ÀàºÍ¾­ÀíÀà¡£ÒªÇóÀàÖÐÌá¹©±ØÒªµÄ·½·¨½øÐÐÊôÐÔ·ÃÎÊ¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ÏµÍ³Ê±ï¿½ï¿½Òªï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ê¡ï¿½
+	ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëºï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¡ï¿½
+	ï¿½ï¿½Ê¹ï¿½Ã¼Ì³Ðµï¿½Ë¼ï¿½ï¿½ï¿½ï¿½Æ³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Í¾ï¿½ï¿½ï¿½ï¿½à¡£Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½ï¿½Òªï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½Ê¡ï¿½
 	
-	Ô±¹¤Àà£º
-		ÆÕÍ¨Ô±¹¤£º
-			ÐÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê
-		¾­Àí£º
-			ÐÕÃû¡¢¹¤ºÅÒÔ¼°¹¤×Ê£¬½±½ð
+	Ô±ï¿½ï¿½ï¿½à£º
+		ï¿½ï¿½Í¨Ô±ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½Ê£ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 abstract class Employee {
-	private String name;
-	private String eid;
-	private int salary;
+    private String name;
+    private String eid;
+    private int salary;
 
-	public Employee() {}
+    public Employee() {
+    }
 
-	public Employee(String name,String eid,int salary) { //"°×Ò»í®","10000",500
-		this.name = name; 
-		this.eid = eid;
-		this.salary = salary;
-	}
+    public Employee(String name, String eid, int salary) { //"ï¿½ï¿½Ò»ï¿½","10000",500
+        this.name = name;
+        this.eid = eid;
+        this.salary = salary;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	} 
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setEid(String eid) {
-		this.eid = eid;
-	}
+    public void setEid(String eid) {
+        this.eid = eid;
+    }
 
-	public String getEid() {
-		return eid;
-	}
+    public String getEid() {
+        return eid;
+    }
 
-	public void setSalary(int salary) {
-		this.salary = salary;
-	}
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
 
-	public int getSalary() {
-		return salary;
-	}
+    public int getSalary() {
+        return salary;
+    }
 
-	public void show() {
-		System.out.println(name+"---"+eid+"---"+salary);
-	}
+    public void show() {
+        System.out.println(name + "---" + eid + "---" + salary);
+    }
 
-	public abstract void work();
+    public abstract void work();
 }
 
 class Programmer extends Employee {
-	public Programmer() {}
+    public Programmer() {
+    }
 
-	public Programmer(String name,String eid,int salary) {
-		super(name,eid,salary);
-	}
+    public Programmer(String name, String eid, int salary) {
+        super(name, eid, salary);
+    }
 
-	public void work() {
-		System.out.println("¹¥³ÇÊ¨ÐÁÐÁ¿à¿àÐ´´úÂë");
-	}
+    public void work() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ê¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½");
+    }
 }
 
 class Manager extends Employee {
-	private int bonus;
+    private int bonus;
 
-	public Manager() {}
+    public Manager() {
+    }
 
-	public Manager(String name,String eid,int salary,int bonus) { //"°×Ò»í®","10000",500,10000
-		super(name,eid,salary); //"°×Ò»í®","10000",500
-		this.bonus = bonus;
-	}
+    public Manager(String name, String eid, int salary, int bonus) { //"ï¿½ï¿½Ò»ï¿½","10000",500,10000
+        super(name, eid, salary); //"ï¿½ï¿½Ò»ï¿½","10000",500
+        this.bonus = bonus;
+    }
 
-	public void setBonus(int bonus) {
-		this.bonus = bonus;
-	}
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
+    }
 
-	public int getBonus() {
-		return bonus;
-	}
+    public int getBonus() {
+        return bonus;
+    }
 
-	public void work() {
-		System.out.println("¾­ÀíÐÁÐÁ¿à¿àºÍ¿Í»§Ì¸ÐèÇó");
-	}
+    public void work() {
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¿Í»ï¿½Ì¸ï¿½ï¿½ï¿½ï¿½");
+    }
 
-	public void show() {
-		//System.out.println(getName()+"---"+getEid()+"---"+getSalary()+"---"+bonus);
+    public void show() {
+        //System.out.println(getName()+"---"+getEid()+"---"+getSalary()+"---"+bonus);
 
-		super.show();
-		System.out.println("¾­Àí¶îÍâµÄ½±½ðÊÇ£º"+bonus);
-	}
+        super.show();
+        System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½" + bonus);
+    }
 }
 
 class EmployeeDemo {
-	public static void main(String[] args) {
-		//³ÌÐòÔ±
-		Programmer p = new Programmer();
-		p.setName("Ð»¼Ò½ø");
-		p.setEid("10010");
-		p.setSalary(7700);
-		p.show();
-		p.work();
-		//ÁíÍâÈýÖÖ²»Ð´ÁË¡£
-		System.out.println("---------------------");
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½Ô±
+        Programmer p = new Programmer();
+        p.setName("Ð»ï¿½Ò½ï¿½");
+        p.setEid("10010");
+        p.setSalary(7700);
+        p.show();
+        p.work();
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½Ð´ï¿½Ë¡ï¿½
+        System.out.println("---------------------");
 
-		//¾­ÀíµÄ²âÊÔ
+        //ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½
 		/*
 		Employee e = new Manager();
-		e.setName("ÍõÄÝ");
+		e.setName("ï¿½ï¿½ï¿½ï¿½");
 		e.setEid("10086");
 		e.setSalary(6000);
 		//e.setBonus(2000);
@@ -118,8 +121,8 @@ class EmployeeDemo {
 		e.work();
 		*/
 
-		Employee e = new Manager("°×Ò»í®","10000",500,10000);
-		e.show();
-		e.work();
-	}
+        Employee e = new Manager("ï¿½ï¿½Ò»ï¿½", "10000", 500, 10000);
+        e.show();
+        e.work();
+    }
 }

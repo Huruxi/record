@@ -1,20 +1,20 @@
 package cn.itcast_06;
 
 /*
- * Ìæ»»¹¦ÄÜ
+ * ï¿½æ»»ï¿½ï¿½ï¿½ï¿½
  *	String replace(char old,char new)
  *	String replace(String old,String new)
  */
 public class StringDemo {
-	public static void main(String[] args) {
-		// ¶¨Òå×Ö·û´®
-		String s = "helloworld";
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+        String s = "helloworld";
 
-		String s2 = s.replace('l', 'b');
-		System.out.println("s:" + s);
-		System.out.println("s2:" + s2);
+        String s2 = s.replace('l', 'b');
+        System.out.println("s:" + s);
+        System.out.println("s2:" + s2);
 
-		String s3 = s.replace("owo", "ak47");
-		System.out.println("s3:" + s3);
-	}
+        String s3 = s.replace("owo", "ak47");
+        System.out.println("s3:" + s3);
+    }
 }

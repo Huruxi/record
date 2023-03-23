@@ -1,26 +1,26 @@
 package cn.itcast_04;
 
 /*
- * public final void join():µÈ´ý¸ÃÏß³ÌÖÕÖ¹¡£ 
+ * public final void join():ï¿½È´ï¿½ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½Ö¹ï¿½ï¿½
  */
 public class ThreadJoinDemo {
-	public static void main(String[] args) {
-		ThreadJoin tj1 = new ThreadJoin();
-		ThreadJoin tj2 = new ThreadJoin();
-		ThreadJoin tj3 = new ThreadJoin();
+    public static void main(String[] args) {
+        ThreadJoin tj1 = new ThreadJoin();
+        ThreadJoin tj2 = new ThreadJoin();
+        ThreadJoin tj3 = new ThreadJoin();
 
-		tj1.setName("ÀîÔ¨");
-		tj2.setName("ÀîÊÀÃñ");
-		tj3.setName("ÀîÔª°Ô");
+        tj1.setName("ï¿½ï¿½Ô¨");
+        tj2.setName("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        tj3.setName("ï¿½ï¿½Ôªï¿½ï¿½");
 
-		tj1.start();
-		try {
-			tj1.join();
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+        tj1.start();
+        try {
+            tj1.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
-		tj2.start();
-		tj3.start();
-	}
+        tj2.start();
+        tj3.start();
+    }
 }

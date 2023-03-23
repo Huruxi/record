@@ -1,82 +1,82 @@
 /*
-	ÎªÁË¸üºÃµÄ±í´ïÏÖÊµÊÀ½çµÄÊÂÎï£¬JavaÕë¶Ô²»Í¬µÄÊÂÎïÌá¹©ÁË²»Í¬µÄÊý¾ÝÀàÐÍ¡£
+	Îªï¿½Ë¸ï¿½ï¿½ÃµÄ±ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï£¬Javaï¿½ï¿½Ô²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á¹©ï¿½Ë²ï¿½Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¡ï¿½
 
-	Êý¾ÝÀàÐÍ£º
-		»ù±¾ÀàÐÍ£º4Àà8ÖÖ
-		ÒýÓÃÀàÐÍ£ºÀà£¬½Ó¿Ú£¬Êý×é¡£(ºóÃæ½²)
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½4ï¿½ï¿½8ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½à£¬ï¿½Ó¿Ú£ï¿½ï¿½ï¿½ï¿½é¡£(ï¿½ï¿½ï¿½æ½²)
 
-	»ù±¾ÀàÐÍ:
-		ÕûÊý£º				Õ¼ÓÃµÄÄÚ´æ¿Õ¼ä
-			byte			1×Ö½Ú
+	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½				Õ¼ï¿½Ãµï¿½ï¿½Ú´ï¿½Õ¼ï¿½
+			byte			1ï¿½Ö½ï¿½
 								01111111
-								10000000(1¼È±íÊ¾·ûºÅÎ»£¬ÓÖ±íÊ¾ÊýÖµ -128)
-			short			2×Ö½Ú
-			int				4×Ö½Ú
-			long			8×Ö½Ú
-		¸¡µãÊý£º
-			float			4×Ö½Ú
-			double			8×Ö½Ú
-		×Ö·û£º
-			char			2×Ö½Ú
-		²¼¶û£º
-			boolean			Î´Öª¡£1×Ö½Ú
+								10000000(1ï¿½È±ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½Ö±ï¿½Ê¾ï¿½ï¿½Öµ -128)
+			short			2ï¿½Ö½ï¿½
+			int				4ï¿½Ö½ï¿½
+			long			8ï¿½Ö½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			float			4ï¿½Ö½ï¿½
+			double			8ï¿½Ö½ï¿½
+		ï¿½Ö·ï¿½ï¿½ï¿½
+			char			2ï¿½Ö½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			boolean			Î´Öªï¿½ï¿½1ï¿½Ö½ï¿½
 
-	ÃæÊÔÌâ£º
-		JavaÖÐ×Ö·û¿ÉÒÔ´æ´¢Ò»¸öºº×ÖÂð?
-		¿ÉÒÔ¡£ÒòÎªJavaÓïÑÔ²ÉÓÃµÄÊÇunicode±àÂë£¬
-		¶øunicode±àÂëµÄÃ¿¸ö×Ö·ûÊÇÁ½¸ö×Ö½Ú£¬
-		ËùÒÔ£¬javaÖÐµÄ×Ö·û¿ÉÒÔ´æ´¢Ò»¸öºº×Ö¡£
+	ï¿½ï¿½ï¿½ï¿½ï¿½â£º
+		Javaï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ô´æ´¢Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½?
+		ï¿½ï¿½ï¿½Ô¡ï¿½ï¿½ï¿½ÎªJavaï¿½ï¿½ï¿½Ô²ï¿½ï¿½Ãµï¿½ï¿½ï¿½unicodeï¿½ï¿½ï¿½ë£¬
+		ï¿½ï¿½unicodeï¿½ï¿½ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½
+		ï¿½ï¿½ï¿½Ô£ï¿½javaï¿½Ðµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ô´æ´¢Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ö¡ï¿½
 
 
-	×¢Òâ£º
-		ÕûÊýÄ¬ÈÏÊÇintÀàÐÍ
-		¸¡µãÊýÄ¬ÈÏÊÇdoubleÀàÐÍ
+	×¢ï¿½â£º
+		ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½intï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¬ï¿½ï¿½ï¿½ï¿½doubleï¿½ï¿½ï¿½ï¿½
 
-		longÀàÐÍµÄ±äÁ¿£¬Òª¼Ól»òÕßL¡£
-		floatÀàÐÍµÄ±äÁ¿£¬Òª¼Óf»òÕßF¡£
+		longï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½lï¿½ï¿½ï¿½ï¿½Lï¿½ï¿½
+		floatï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½fï¿½ï¿½ï¿½ï¿½Fï¿½ï¿½
 
-		ÔÚÍ¬Ò»¶Ô{}ÀïÃæ£¬ÊÇ²»ÄÜÓÐÍ¬ÃûµÄ±äÁ¿¡£
+		ï¿½ï¿½Í¬Ò»ï¿½ï¿½{}ï¿½ï¿½ï¿½æ£¬ï¿½Ç²ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 class DataType {
-	public static void main(String[] args) {
-		//¶¨Òå±äÁ¿µÄ¸ñÊ½£º
-		//Êý¾ÝÀàÐÍ ±äÁ¿Ãû = ³õÊ¼»¯Öµ;
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½Ê½ï¿½ï¿½
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ = ï¿½ï¿½Ê¼ï¿½ï¿½Öµ;
 
-		//¶¨ÒåbyteÀàÐÍµÄ±äÁ¿
-		byte b = 1;
-		System.out.println(1);
-		System.out.println(b);
+        //ï¿½ï¿½ï¿½ï¿½byteï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        byte b = 1;
+        System.out.println(1);
+        System.out.println(b);
 
-		//¶¨ÒåshortÀàÐÍµÄ±äÁ¿
-		short s = 100;
-		System.out.println(s);
+        //ï¿½ï¿½ï¿½ï¿½shortï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        short s = 100;
+        System.out.println(s);
 
-		//¶¨ÒåintÀàÐÍµÄ±äÁ¿
-		int i = 100000;
-		System.out.println(i);
+        //ï¿½ï¿½ï¿½ï¿½intï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        int i = 100000;
+        System.out.println(i);
 
-		//±¨´í
-		//int j = 2147483648;
-		//System.out.println(j);
+        //ï¿½ï¿½ï¿½ï¿½
+        //int j = 2147483648;
+        //System.out.println(j);
 
-		//¶¨ÒålongÀàÐÍµÄ±äÁ¿
-		long l = 2147483648L;
-		System.out.println(l);
+        //ï¿½ï¿½ï¿½ï¿½longï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        long l = 2147483648L;
+        System.out.println(l);
 
-		//¶¨ÒåfloatÀàÐÍµÄ±äÁ¿
-		float f = 12.34F;
-		System.out.println(f);
+        //ï¿½ï¿½ï¿½ï¿½floatï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        float f = 12.34F;
+        System.out.println(f);
 
-		//¶¨ÒådoubleÀàÐÍµÄ±äÁ¿
-		double d = 23.56;
-		System.out.println(d);
+        //ï¿½ï¿½ï¿½ï¿½doubleï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        double d = 23.56;
+        System.out.println(d);
 
-		//¶¨ÒåcharÀàÐÍµÄ±äÁ¿
-		char ch = 'a';
-		System.out.println(ch);
+        //ï¿½ï¿½ï¿½ï¿½charï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        char ch = 'a';
+        System.out.println(ch);
 
-		//¶¨ÒåbooleanÀàÐÍµÄ±äÁ¿
-		boolean flag = true;
-		System.out.println(flag);
-	}
+        //ï¿½ï¿½ï¿½ï¿½booleanï¿½ï¿½ï¿½ÍµÄ±ï¿½ï¿½ï¿½
+        boolean flag = true;
+        System.out.println(flag);
+    }
 }

@@ -1,9 +1,9 @@
 package cn.itcast_02;
 
 /*
- * 实现类在实现泛型接口的时候：
- * A:在实现接口的时候，我已经明确了接口的泛型参数类型
- * B:在实现接口的时候，我还不知道接口的泛型参数类型
+ * 实锟斤拷锟斤拷锟斤拷实锟街凤拷锟酵接口碉拷时锟斤拷
+ * A:锟斤拷实锟街接口碉拷时锟斤拷锟斤拷锟窖撅拷锟斤拷确锟剿接口的凤拷锟酵诧拷锟斤拷锟斤拷锟斤拷
+ * B:锟斤拷实锟街接口碉拷时锟斤拷锟揭伙拷锟斤拷知锟斤拷锟接口的凤拷锟酵诧拷锟斤拷锟斤拷锟斤拷
  */
 //public class InterImpl implements Inter<String> {
 //	@Override
@@ -13,10 +13,10 @@ package cn.itcast_02;
 // }
 
 public class InterImpl<YY> implements Inter<YY> {
-	@Override
-	public void show(YY yy) {
-		System.out.println(yy);
-	}
+    @Override
+    public void show(YY yy) {
+        System.out.println(yy);
+    }
 }
 
 // new InterImpl<String>();

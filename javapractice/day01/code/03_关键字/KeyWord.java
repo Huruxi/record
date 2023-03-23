@@ -1,14 +1,14 @@
 /*
-	¹Ø¼ü×Ö£º±»JavaÓïÑÔ¸³ÓèÌØ¶¨º¬ÒåµÄµ¥´Ê
+	ï¿½Ø¼ï¿½ï¿½Ö£ï¿½ï¿½ï¿½Javaï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½ï¿½Ø¶ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½
 
-	¹Ø¼ü×ÖµÄÌØµã£º¹Ø¼ü×Ö¶¼ÊÇÐ¡Ð´µÄ
+	ï¿½Ø¼ï¿½ï¿½Öµï¿½ï¿½Øµã£ºï¿½Ø¼ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½Ð¡Ð´ï¿½ï¿½
 
-	¹Ø¼ü×Ö×¢ÒâÊÂÏî
-		A:gotoºÍconst×÷Îª±£Áô×Ö´æÔÚ,Ä¿Ç°²¢²»Ê¹ÓÃ
-		B:ÀàËÆEditplusÕâÑùµÄ¸ß¼¶¼ÇÊÂ±¾,Õë¶Ô¹Ø¼ü×ÖÓÐÌØÊâµÄÑÕÉ«±ê¼Ç£¬·Ç³£Ö±¹Û
+	ï¿½Ø¼ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		A:gotoï¿½ï¿½constï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½,Ä¿Ç°ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+		B:ï¿½ï¿½ï¿½ï¿½Editplusï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ß¼ï¿½ï¿½ï¿½ï¿½Â±ï¿½,ï¿½ï¿½Ô¹Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½Ç£ï¿½ï¿½Ç³ï¿½Ö±ï¿½ï¿½
 */
 class KeyWord {
-	public static void main(String[] args) {
-		System.out.println("HelloWorld");
-	}
+    public static void main(String[] args) {
+        System.out.println("HelloWorld");
+    }
 }

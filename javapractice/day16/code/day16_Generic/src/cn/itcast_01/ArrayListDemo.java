@@ -4,49 +4,49 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * ÎÊÌâ£º
- * 		1:ÓĞ»ÆÉ«¾¯¸æÏß£¬Ì«ÄÑ¿´¡£
- * 		2:ÆäÊµ»ÆÉ«¾¯¸æÏß¾ÍÊÇ¸æËßÄã£¬¸Ã¼¯ºÏÒşº¬ÁËÒ»¸öÎÊÌâ
- * 		3:Èç¹ûÄã¿´µ½±ğÈËÍù¼¯ºÏÖĞÌí¼ÓÁË»ù±¾ÀàĞÍµÄÔªËØ£¬ÆäÊµÕâÀïÒşº¬ÁË×Ô¶¯×°Ïä£¬Ìí¼ÓµÄÒ²ÊÇÒ»¸ö¶ÔÏó
- * 
- * ½ÓÏÂÀ´£¬ÎÒÃÇ¾ÍÒª½â¾ö»ÆÉ«¾¯¸æÏßÎÊÌâ£¬ÆäÊµ¾ÍÊÇ½â¾ö¼¯ºÏµÄ°²È«ÎÊÌâ?
- * ÈçºÎ½â¾öÄØ?
- * 		ÎÒÃÇ¿ÉÒÔ²ÎÕÕÊı×éÀ´½â¾ö¡£
+ * ï¿½ï¿½ï¿½â£º
+ * 		1:ï¿½Ğ»ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ß£ï¿½Ì«ï¿½Ñ¿ï¿½ï¿½ï¿½
+ * 		2:ï¿½ï¿½Êµï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ß¾ï¿½ï¿½Ç¸ï¿½ï¿½ï¿½ï¿½ã£¬ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		3:ï¿½ï¿½ï¿½ï¿½ã¿´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½Ôªï¿½Ø£ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½×°ï¿½ä£¬ï¿½ï¿½Óµï¿½Ò²ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â£¬ï¿½ï¿½Êµï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÄ°ï¿½È«ï¿½ï¿½ï¿½ï¿½?
+ * ï¿½ï¿½Î½ï¿½ï¿½ï¿½ï¿½?
+ * 		ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  * 		String[] strArray = new String[3];
  *		strArray[0] = "hello";
  *		strArray[1] = "world";
  * 		strArray[2] = 100;
- * 		ÔÚ¶¨ÒåÊı×éµÄÊ±ºò£¬ÎÒ¾ÍÃ÷È·ÁËÊı×éÖĞÔªËØµÄÀàĞÍ£¬ÕâÑùÒÔºóÔÚÌí¼ÓµÄÊ±ºò£¬¾Í²»»á³öÏÖÈÎºÎÎÊÌâ¡£
+ * 		ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ò¾ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½Øµï¿½ï¿½ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½Óµï¿½Ê±ï¿½ò£¬¾Í²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îºï¿½ï¿½ï¿½ï¿½â¡£
  */
 public class ArrayListDemo {
-	public static void main(String[] args) {
-		// ´æ´¢×Ö·û´®²¢±éÀú
-		ArrayList array = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½æ´¢ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ArrayList array = new ArrayList();
 
-		array.add("hello");
-		array.add("world");
-		array.add("java");
-		// array.add(new Integer(100));
-		// array.add(100); // ×Ô¶¯×°Ïä
+        array.add("hello");
+        array.add("world");
+        array.add("java");
+        // array.add(new Integer(100));
+        // array.add(100); // ï¿½Ô¶ï¿½×°ï¿½ï¿½
 
-		Iterator it = array.iterator();
-		while (it.hasNext()) {
-			String s = (String) it.next();
-			System.out.println(s);
-			// Object obj = it.next();
-			// // if (obj instanceof String) {
-			// // String s = (String) obj;
-			// // System.out.println(s);
-			// // } else if (obj instanceof Integer) {
-			// // Integer i = (Integer) obj;
-			// // System.out.println(i);
-			// // }
-			// System.out.println(obj);
-		}
+        Iterator it = array.iterator();
+        while (it.hasNext()) {
+            String s = (String) it.next();
+            System.out.println(s);
+            // Object obj = it.next();
+            // // if (obj instanceof String) {
+            // // String s = (String) obj;
+            // // System.out.println(s);
+            // // } else if (obj instanceof Integer) {
+            // // Integer i = (Integer) obj;
+            // // System.out.println(i);
+            // // }
+            // System.out.println(obj);
+        }
 
 //		String[] strArray = new String[3];
 //		strArray[0] = "hello";
 //		strArray[1] = "world";
 //		strArray[2] = 100;
-	}
+    }
 }

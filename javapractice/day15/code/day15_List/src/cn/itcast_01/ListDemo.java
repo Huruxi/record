@@ -6,25 +6,25 @@ import java.util.List;
 
 /*
  * Collection
- *	 	List:ÔªËØÓÐÐò(´æ´¢Ë³ÐòºÍÈ¡³öË³ÐòÒ»ÖÂ),ÔªËØ¿ÉÖØ¸´¡£
- *		Set:ÔªËØÎÞÐò,ÔªËØÎ¨Ò»
- * ÐèÇó£ºÓÃList¼¯ºÏ´æ´¢×Ö·û´®²¢±éÀú¡£
+ *	 	List:Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½æ´¢Ë³ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ë³ï¿½ï¿½Ò»ï¿½ï¿½),Ôªï¿½Ø¿ï¿½ï¿½Ø¸ï¿½ï¿½ï¿½
+ *		Set:Ôªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,Ôªï¿½ï¿½Î¨Ò»
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Listï¿½ï¿½ï¿½Ï´æ´¢ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class ListDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		List list = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        List list = new ArrayList();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		list.add("Öî¸ðÁÁ");
-		list.add("Ë¾ÂíÜ²");
-		list.add("²Ü²Ù");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        list.add("ï¿½ï¿½ï¿½ï¿½ï¿½");
+        list.add("Ë¾ï¿½ï¿½Ü²");
+        list.add("ï¿½Ü²ï¿½");
 
-		// ±éÀú¼¯ºÏ
-		Iterator it = list.iterator();
-		while (it.hasNext()) {
-			String s = (String) it.next();
-			System.out.println(s);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            String s = (String) it.next();
+            System.out.println(s);
+        }
+    }
 }

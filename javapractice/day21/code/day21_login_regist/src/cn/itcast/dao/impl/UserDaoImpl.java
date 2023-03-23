@@ -12,66 +12,66 @@ import cn.itcast.pojo.User;
 
 public class UserDaoImpl implements UserDao {
 
-	private static File userFile = new File("user.txt");
+    private static File userFile = new File("user.txt");
 
-	static {
-		try {
-			userFile.createNewFile();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+    static {
+        try {
+            userFile.createNewFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
-	@Override
-	public boolean isLogin(String username, String password) {
-		boolean flag = false;
-		BufferedReader br = null;
-		try {
-			br = new BufferedReader(new FileReader(userFile));
-			String line = null;
-			while ((line = br.readLine()) != null) {
-				String[] datas = line.split("=");
-				if (datas[0].equals(username) && datas[1].equals(password)) {
-					flag = true;
-					break;
-				}
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (br != null) {
-				try {
-					br.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
+    @Override
+    public boolean isLogin(String username, String password) {
+        boolean flag = false;
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(userFile));
+            String line = null;
+            while ((line = br.readLine()) != null) {
+                String[] datas = line.split("=");
+                if (datas[0].equals(username) && datas[1].equals(password)) {
+                    flag = true;
+                    break;
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
 
-		return flag;
-	}
+        return flag;
+    }
 
-	@Override
-	public void regist(User user) {
-		// ÎÒÃÇ×îºÃÄÜ¹»ÓÐÒ»¸ö¸ñÊ½£º
-		// username=password
-		BufferedWriter bw = null;
-		try {
-			bw = new BufferedWriter(new FileWriter(userFile, true));
-			bw.write(user.getUsername() + "=" + user.getPassword());
-			bw.newLine();
-			bw.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (bw != null) {
-				try {
-					bw.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-	}
+    @Override
+    public void regist(User user) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½
+        // username=password
+        BufferedWriter bw = null;
+        try {
+            bw = new BufferedWriter(new FileWriter(userFile, true));
+            bw.write(user.getUsername() + "=" + user.getPassword());
+            bw.newLine();
+            bw.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (bw != null) {
+                try {
+                    bw.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
 
 }

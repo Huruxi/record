@@ -1,33 +1,33 @@
 /*
-	¼Ì³Ð¼äµÄ³ÉÔ±·½·¨¹ØÏµ£º
-		²»Í¬Ãû³Æ£º·Ç³£¼òµ¥£¬Ò»¿´¾ÍÖªµÀµ÷ÓÃË­
-		ÏàÍ¬Ãû³Æ£º
-			ÏÈÔÚ×ÓÀàÕÒ
-			ÔÙÔÚ¸¸ÀàÕÒ
+	ï¿½Ì³Ð¼ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½
+		ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Æ£ï¿½ï¿½Ç³ï¿½ï¿½òµ¥£ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë­
+		ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Æ£ï¿½
+			ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½
 			...
-			ÕÒ²»µ½¾Í±¨´í¡£
+			ï¿½Ò²ï¿½ï¿½ï¿½ï¿½Í±ï¿½ï¿½ï¿½
 */
 class Fu {
-	public void show() {
-		System.out.println("show fu");
-	}
+    public void show() {
+        System.out.println("show fu");
+    }
 }
 
-class Zi extends Fu{
-	public void method() {
-		System.out.println("method zi");
-	}
+class Zi extends Fu {
+    public void method() {
+        System.out.println("method zi");
+    }
 
-	public void show() {
-		System.out.println("show zi");
-	}
+    public void show() {
+        System.out.println("show zi");
+    }
 }
 
 class ExtendsDemo6 {
-	public static void main(String[] args) {
-		Zi z = new Zi();
-		z.show();
-		z.method();
-		//z.haha();
-	}
+    public static void main(String[] args) {
+        Zi z = new Zi();
+        z.show();
+        z.method();
+        //z.haha();
+    }
 }

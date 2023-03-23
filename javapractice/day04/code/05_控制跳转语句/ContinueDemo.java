@@ -1,34 +1,36 @@
 /*
-	continueµÄÊ¹ÓÃ³¡¾°£º
-		ÔÚÑ­»·Óï¾äÖÐ
-		Àë¿ªÊ¹ÓÃ³¡¾°µÄ´æÔÚÊÇÃ»ÓÐÒâÒåµÄ
+	continueï¿½ï¿½Ê¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		ï¿½ë¿ªÊ¹ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	
-	continueµÄ×÷ÓÃ£º
-		A:µ¥²ãÑ­»·¶Ô±Èbreak£¬È»ºó×Ü½áÁ½¸öµÄÇø±ð
-			break  ÍË³öµ±Ç°Ñ­»·
-			continue  ÍË³ö±¾´ÎÑ­»·
-		B:Ò²¿ÉÒÔ´ø±êÇ©µÄÊ¹ÓÃ
+	continueï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½
+		A:ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½Ô±ï¿½breakï¿½ï¿½È»ï¿½ï¿½ï¿½Ü½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			break  ï¿½Ë³ï¿½ï¿½ï¿½Ç°Ñ­ï¿½ï¿½
+			continue  ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½
+		B:Ò²ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½Ç©ï¿½ï¿½Ê¹ï¿½ï¿½
 
 */
 class ContinueDemo {
-	public static void main(String[] args) {
-		//continue;
+    public static void main(String[] args) {
+        //continue;
 
-		for(int x=0; x<10; x++) {
-			if(x%2==0) {
-				//break;  //½áÊøµ±Ç°Ñ­»·
-				continue; //½áÊø±¾´ÎÑ­»·²Ù×÷£¬½øÈëÏÂÒ»´Î²Ù×÷
-			}
-			System.out.println(x);
-		}
+        for (int x = 0; x < 10; x++) {
+            if (x % 2 == 0) {
+                //break;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ñ­ï¿½ï¿½
+                continue; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½Î²ï¿½ï¿½ï¿½
+            }
+            System.out.println(x);
+        }
 
 
-		wc:for(int x=0; x<3; x++) {
-			nc:for(int y=0; y<4; y++) {
-				System.out.print("*");
-				continue wc;
-			}
-			System.out.println();
-		}
-	}
+        wc:
+        for (int x = 0; x < 3; x++) {
+            nc:
+            for (int y = 0; y < 4; y++) {
+                System.out.print("*");
+                continue wc;
+            }
+            System.out.println();
+        }
+    }
 }

@@ -6,24 +6,24 @@ import java.util.ListIterator;
 
 /*
  * ListIterator listIterator()
- * Í¨¹ý²é¿´API£¬ÎÒÃÇÖªµÀÁÐ±íµü´úÆ÷¼Ì³Ð×Ôµü´úÆ÷£¬ËùÒÔ£¬Ëü¾Í¾ßÓÐhasNext()·½·¨ºÍnext()·½·¨
+ * Í¨ï¿½ï¿½ï¿½é¿´APIï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öªï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ï¿½Ôµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½Í¾ï¿½ï¿½ï¿½hasNext()ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½next()ï¿½ï¿½ï¿½ï¿½
  */
 public class ListIteratorDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		List list = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        List list = new ArrayList();
 
-		// ²âÊÔ¹¦ÄÜ
-		list.add("hello");
-		list.add("world");
-		list.add("java");
+        // ï¿½ï¿½ï¿½Ô¹ï¿½ï¿½ï¿½
+        list.add("hello");
+        list.add("world");
+        list.add("java");
 
-		// Ê¹ÓÃ·½·¨
-		// ListIterator listIterator()
-		ListIterator lit = list.listIterator(); // ¶àÌ¬
-		while (lit.hasNext()) {
-			String s = (String) lit.next();
-			System.out.println(s);
-		}
-	}
+        // Ê¹ï¿½Ã·ï¿½ï¿½ï¿½
+        // ListIterator listIterator()
+        ListIterator lit = list.listIterator(); // ï¿½ï¿½Ì¬
+        while (lit.hasNext()) {
+            String s = (String) lit.next();
+            System.out.println(s);
+        }
+    }
 }

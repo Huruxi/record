@@ -4,28 +4,28 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 /*
- * Object[] toArray():°Ñ¼¯ºÏ×ª³É¶ÔÏóÊý×é
- * 
- * Á·Ï°£ºÓÃ¼¯ºÏ´æ´¢Èý¸öÑ§Éú¶ÔÏó£¬²¢±éÀú¡£
+ * Object[] toArray():ï¿½Ñ¼ï¿½ï¿½ï¿½×ªï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½Ï°ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½Ï´æ´¢ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class CollectionDemo3 {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Collection c = new ArrayList();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Collection c = new ArrayList();
 
-		// Íù¼¯ºÏÖÐÌí¼ÓÔªËØ
-		// String s = "hello";
-		c.add("hello");
-		c.add("world");
-		c.add("java");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        // String s = "hello";
+        c.add("hello");
+        c.add("world");
+        c.add("java");
 
-		// Object[] toArray():°Ñ¼¯ºÏ×ª³É¶ÔÏóÊý×é
-		Object[] objs = c.toArray();
-		// ±éÀúÊý×é
-		for (int x = 0; x < objs.length; x++) {
-			// System.out.println(objs[x]);
-			String s = (String) objs[x];
-			System.out.println(s);
-		}
-	}
+        // Object[] toArray():ï¿½Ñ¼ï¿½ï¿½ï¿½×ªï¿½É¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Object[] objs = c.toArray();
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        for (int x = 0; x < objs.length; x++) {
+            // System.out.println(objs[x]);
+            String s = (String) objs[x];
+            System.out.println(s);
+        }
+    }
 }

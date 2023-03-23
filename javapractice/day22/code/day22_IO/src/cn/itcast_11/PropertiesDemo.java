@@ -4,25 +4,25 @@ import java.util.Properties;
 import java.util.Set;
 
 /*
- * Properties Àà±íÊ¾ÁËÒ»¸ö³Ö¾ÃµÄÊôÐÔ¼¯¡£Properties ¿É±£´æÔÚÁ÷ÖÐ»ò´ÓÁ÷ÖÐ¼ÓÔØ¡£ÊôÐÔÁÐ±íÖÐÃ¿¸ö¼ü¼°Æä¶ÔÓ¦Öµ¶¼ÊÇÒ»¸ö×Ö·û´®¡£ 
- * 
- * Properties×÷ÎªMap¼¯ºÏµÄÊ¹ÓÃ
+ * Properties ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö¾Ãµï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½Properties ï¿½É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½Ø¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦Öµï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½
+ *
+ * Propertiesï¿½ï¿½ÎªMapï¿½ï¿½ï¿½Ïµï¿½Ê¹ï¿½ï¿½
  */
 public class PropertiesDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		Properties prop = new Properties();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        Properties prop = new Properties();
 
-		// Ìí¼ÓÊý¾Ý
-		prop.put(1, "java");
-		prop.put(2, "c#");
-		prop.put(3, "php");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        prop.put(1, "java");
+        prop.put(2, "c#");
+        prop.put(3, "php");
 
-		// ±éÀú¼¯ºÏ
-		Set<Object> set = prop.keySet();
-		for (Object key : set) {
-			Object value = prop.get(key);
-			System.out.println(key + "---" + value);
-		}
-	}
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Set<Object> set = prop.keySet();
+        for (Object key : set) {
+            Object value = prop.get(key);
+            System.out.println(key + "---" + value);
+        }
+    }
 }

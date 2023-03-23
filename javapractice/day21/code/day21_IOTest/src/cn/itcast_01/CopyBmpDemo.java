@@ -8,82 +8,82 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 /*
- * ¸´ÖÆÍ¼Æ¬(4ÖÖ)
- * A:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú
- * B:»ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é
- * C:¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú
- * D:¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é
+ * ï¿½ï¿½ï¿½ï¿½Í¼Æ¬(4ï¿½ï¿½)
+ * A:ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+ * B:ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * C:ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+ * D:ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class CopyBmpDemo {
-	public static void main(String[] args) throws IOException {
-		File srcFile = new File("c:\\ÁÖÇàÏ¼.bmp");
-		File destFile = new File("d:\\mn.bmp");
+    public static void main(String[] args) throws IOException {
+        File srcFile = new File("c:\\ï¿½ï¿½ï¿½ï¿½Ï¼.bmp");
+        File destFile = new File("d:\\mn.bmp");
 
-		// method1(srcFile, destFile);
-		// method2(srcFile, destFile);
-		// method3(srcFile, destFile);
-		method4(srcFile, destFile);
-	}
+        // method1(srcFile, destFile);
+        // method2(srcFile, destFile);
+        // method3(srcFile, destFile);
+        method4(srcFile, destFile);
+    }
 
-	// ¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é
-	public static void method4(File srcFile, File destFile) throws IOException {
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				srcFile));
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream(destFile));
+    // ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void method4(File srcFile, File destFile) throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                srcFile));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream(destFile));
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = bis.read(bys)) != -1) {
-			bos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = bis.read(bys)) != -1) {
+            bos.write(bys, 0, len);
+        }
 
-		bos.close();
-		bis.close();
-	}
+        bos.close();
+        bis.close();
+    }
 
-	// ¸ßÐ§×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú
-	public static void method3(File srcFile, File destFile) throws IOException {
-		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
-				srcFile));
-		BufferedOutputStream bos = new BufferedOutputStream(
-				new FileOutputStream(destFile));
+    // ï¿½ï¿½Ð§ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+    public static void method3(File srcFile, File destFile) throws IOException {
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(
+                srcFile));
+        BufferedOutputStream bos = new BufferedOutputStream(
+                new FileOutputStream(destFile));
 
-		int by = 0;
-		while ((by = bis.read()) != -1) {
-			bos.write(by);
-		}
+        int by = 0;
+        while ((by = bis.read()) != -1) {
+            bos.write(by);
+        }
 
-		bos.close();
-		bis.close();
-	}
+        bos.close();
+        bis.close();
+    }
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½ÚÊý×é
-	public static void method2(File srcFile, File destFile) throws IOException {
-		FileInputStream fis = new FileInputStream(srcFile);
-		FileOutputStream fos = new FileOutputStream(destFile);
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½
+    public static void method2(File srcFile, File destFile) throws IOException {
+        FileInputStream fis = new FileInputStream(srcFile);
+        FileOutputStream fos = new FileOutputStream(destFile);
 
-		byte[] bys = new byte[1024];
-		int len = 0;
-		while ((len = fis.read(bys)) != -1) {
-			fos.write(bys, 0, len);
-		}
+        byte[] bys = new byte[1024];
+        int len = 0;
+        while ((len = fis.read(bys)) != -1) {
+            fos.write(bys, 0, len);
+        }
 
-		fos.close();
-		fis.close();
-	}
+        fos.close();
+        fis.close();
+    }
 
-	// »ù±¾×Ö½ÚÁ÷Ò»´Î¶ÁÐ´Ò»¸ö×Ö½Ú
-	public static void method1(File srcFile, File destFile) throws IOException {
-		FileInputStream fis = new FileInputStream(srcFile);
-		FileOutputStream fos = new FileOutputStream(destFile);
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Ö½ï¿½ï¿½ï¿½Ò»ï¿½Î¶ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö½ï¿½
+    public static void method1(File srcFile, File destFile) throws IOException {
+        FileInputStream fis = new FileInputStream(srcFile);
+        FileOutputStream fos = new FileOutputStream(destFile);
 
-		int by = 0;
-		while ((by = fis.read()) != -1) {
-			fos.write(by);
-		}
+        int by = 0;
+        while ((by = fis.read()) != -1) {
+            fos.write(by);
+        }
 
-		fos.close();
-		fis.close();
-	}
+        fos.close();
+        fis.close();
+    }
 }

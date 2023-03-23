@@ -4,34 +4,34 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /*
- * ´òÓ¡Á÷£º
- * 		×Ö½ÚÁ÷´òÓ¡Á÷	PrintStream
- * 		×Ö·û´òÓ¡Á÷		PrintWriter
- * 
- * ÌØµã£º
- * 		A:Ö»ÄÜ²Ù×÷Ä¿µÄµØ£¬²»ÄÜ²Ù×÷Êý¾ÝÔ´¡£
- * 		B:¿ÉÒÔ²Ù×÷ÈÎÒâÀàÐÍµÄÊý¾Ý¡£
- * 		C:Èç¹ûÆô¶¯ÁË×Ô¶¯Ë¢ÐÂ£¬ÄÜ¹»×Ô¶¯Ë¢ÐÂ¡£
- * 		D:¿ÉÒÔ²Ù×÷ÎÄ¼þµÄÁ÷	
- * 			ÄÄÐ©Á÷¿ÉÒÔÖ±½Ó²Ù×÷ÎÄ¼þÄØ? FileInputStream,FileOutputStream,FileReader,FileWriter,PrintStream,PrintWriter
- * 			¿´¹¹Ôì·½·¨£ºÈç¹ûÍ¬Ê±¿ÉÒÔ½ÓÊÕFileºÍStringÀàÐÍµÄ¹¹Ôì²ÎÊý£¬¾ÍÊÇ¿ÉÒÔµÄ¡£
+ * ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½
+ * 		ï¿½Ö½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½	PrintStream
+ * 		ï¿½Ö·ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½		PrintWriter
+ *
+ * ï¿½Øµã£º
+ * 		A:Ö»ï¿½Ü²ï¿½ï¿½ï¿½Ä¿ï¿½ÄµØ£ï¿½ï¿½ï¿½ï¿½Ü²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½
+ * 		B:ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
+ * 		C:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½Ë¢ï¿½Â£ï¿½ï¿½Ü¹ï¿½ï¿½Ô¶ï¿½Ë¢ï¿½Â¡ï¿½
+ * 		D:ï¿½ï¿½ï¿½Ô²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 			ï¿½ï¿½Ð©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö±ï¿½Ó²ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½? FileInputStream,FileOutputStream,FileReader,FileWriter,PrintStream,PrintWriter
+ * 			ï¿½ï¿½ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬Ê±ï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Fileï¿½ï¿½Stringï¿½ï¿½ï¿½ÍµÄ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½ÔµÄ¡ï¿½
  */
 public class PrintWriterDemo {
-	public static void main(String[] args) throws IOException {
-		// ´òÓ¡Á÷×÷ÎªWriterµÄ×ÓÀàµÄÊ¹ÓÃ
-		PrintWriter pw = new PrintWriter("pw.txt");
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ÎªWriterï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½
+        PrintWriter pw = new PrintWriter("pw.txt");
 
-		pw.write("hello");
-		pw.write("\r\n");
-		pw.flush();
-		pw.write("world");
-		pw.write("\r\n");
-		pw.flush();
-		pw.write("java");
-		pw.write("\r\n");
-		pw.flush();
+        pw.write("hello");
+        pw.write("\r\n");
+        pw.flush();
+        pw.write("world");
+        pw.write("\r\n");
+        pw.flush();
+        pw.write("java");
+        pw.write("\r\n");
+        pw.flush();
 
-		// ÊÍ·Å×ÊÔ´
-		pw.close();
-	}
+        // ï¿½Í·ï¿½ï¿½ï¿½Ô´
+        pw.close();
+    }
 }

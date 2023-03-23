@@ -1,12 +1,12 @@
-//ÄäÃûÄÚ²¿ÀàÔÚ¿ª·¢ÖÐµÄÊ¹ÓÃ
+//ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ê¹ï¿½ï¿½
 interface Person {
-	public abstract void show();
+    public abstract void show();
 }
 
 class PersonDemo {
-	public void method(Person p) {
-		p.show();
-	}
+    public void method(Person p) {
+        p.show();
+    }
 }
 
 /*
@@ -18,28 +18,28 @@ class Student implements Person {
 */
 
 class InnerClassTest2 {
-	public static void main(String[] args) {
-		//ÐèÇó£ºÇëµ÷ÓÃPersonDemoÀàµÄmethod·½·¨
+    public static void main(String[] args) {
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PersonDemoï¿½ï¿½ï¿½methodï¿½ï¿½ï¿½ï¿½
 		/*
 		PersonDemo pd = new PersonDemo();
 		Person p = new Student();
 		pd.method(p);
 		*/
 
-		//ÄäÃû¶ÔÏó×ö·¨
-		//new PersonDemo().method(new Student());
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        //new PersonDemo().method(new Student());
 
-		//ÄäÃûÄÚ²¿Àà×ö·¨
-		new PersonDemo().method(new Person(){
-			public void show() {
-				System.out.println("show student");
-			}
-		});
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        new PersonDemo().method(new Person() {
+            public void show() {
+                System.out.println("show student");
+            }
+        });
 
-		new PersonDemo().method(new Person(){
-			public void show() {
-				System.out.println("show teacher");
-			}
-		});
-	}
+        new PersonDemo().method(new Person() {
+            public void show() {
+                System.out.println("show teacher");
+            }
+        });
+    }
 }

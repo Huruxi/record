@@ -3,25 +3,25 @@ package cn.itcast_01;
 import java.io.File;
 
 /*
- * File:ÎÄ¼þºÍÄ¿Â¼Â·¾¶ÃûµÄ³éÏó±íÊ¾ÐÎÊ½
- * Àí½â£º²»´ú±íÕâ¸öÎÄ¼þ»òÕßÄ¿Â¼Ò»¶¨´æÔÚ¡£
- * 
- * ¹¹Ôì·½·¨£º
- * 		File(String pathname)£ºÍ¨¹ýÒ»¸öÂ·¾¶Ãû´´½¨File¶ÔÏó
- * 		File(String parent, String child)£º Í¨¹ý¸¸Â·¾¶ºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
- * 		File(File parent, String child)£ºÍ¨¹ý¸¸Â·¾¶File¶ÔÏóºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
+ * File:ï¿½Ä¼ï¿½ï¿½ï¿½Ä¿Â¼Â·ï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ê½
+ * ï¿½ï¿½â£ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½
+ *
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * 		File(String pathname)ï¿½ï¿½Í¨ï¿½ï¿½Ò»ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 		File(String parent, String child)ï¿½ï¿½ Í¨ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+ * 		File(File parent, String child)ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
  */
 public class FileDemo {
-	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		// File(String pathname)£ºÍ¨¹ýÒ»¸öÂ·¾¶Ãû´´½¨File¶ÔÏó
-		File file = new File("d:\\demo\\a.txt");
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // File(String pathname)ï¿½ï¿½Í¨ï¿½ï¿½Ò»ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+        File file = new File("d:\\demo\\a.txt");
 
-		// File(String parent, String child)£º Í¨¹ý¸¸Â·¾¶ºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
-		File file2 = new File("d:\\demo", "a.txt");
+        // File(String parent, String child)ï¿½ï¿½ Í¨ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+        File file2 = new File("d:\\demo", "a.txt");
 
-		// File(File parent, String child)£ºÍ¨¹ý¸¸Â·¾¶File¶ÔÏóºÍ×ÓÂ·¾¶Ãû´´½¨File¶ÔÏó
-		File file3 = new File("d:\\demo");
-		File file4 = new File(file3, "a.txt");
-	}
+        // File(File parent, String child)ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Fileï¿½ï¿½ï¿½ï¿½
+        File file3 = new File("d:\\demo");
+        File file4 = new File(file3, "a.txt");
+    }
 }

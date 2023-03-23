@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 /*
- * ¼¯ºÏ¶ÔÏóµÄtoString()ÊÇÈçºÎÊµÏÖµÄ
+ * ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½ï¿½toString()ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Öµï¿½
  */
 public class ArrayListDemo {
-	public static void main(String[] args) {
-		ArrayList<String> array = new ArrayList<String>();
+    public static void main(String[] args) {
+        ArrayList<String> array = new ArrayList<String>();
 
-		array.add("hello");
-		array.add("world");
-		array.add("java");
+        array.add("hello");
+        array.add("world");
+        array.add("java");
 
-		System.out.println(array.toString()); // [hello, world, java]
-	}
+        System.out.println(array.toString()); // [hello, world, java]
+    }
 }
 /*
 public String toString() {

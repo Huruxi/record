@@ -4,18 +4,18 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
- * public static <T> List<T> asList(T... a):返回一个受指定数组支持的固定大小的列表
+ * public static <T> List<T> asList(T... a):锟斤拷锟斤拷一锟斤拷锟斤拷指锟斤拷锟斤拷锟斤拷支锟街的固讹拷锟斤拷小锟斤拷锟叫憋拷
  */
 public class ArraysDemo {
-	public static void main(String[] args) {
-		List<String> list = Arrays.asList("hello", "world", "java");
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList("hello", "world", "java");
 
-		// list.add("haha"); // UnsupportedOperationException
-		// list.remove(1);
-		list.set(1, "haha");
+        // list.add("haha"); // UnsupportedOperationException
+        // list.remove(1);
+        list.set(1, "haha");
 
-		for (String s : list) {
-			System.out.println(s);
-		}
-	}
+        for (String s : list) {
+            System.out.println(s);
+        }
+    }
 }

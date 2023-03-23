@@ -3,45 +3,45 @@ package cn.itcast_01;
 import java.util.Date;
 
 /*
- * Àà Date ±íÊ¾ÌØ¶¨µÄË²¼ä£¬¾«È·µ½ºÁÃë¡£ 
- * 
- * ¹¹Ôì·½·¨£º
- * 		public Date():Ä¬ÈÏ¾ÍÊÇµ±Ç°Ê±¼ä
- *		public Date(long date):°Ñ¸ø¶¨µÄºÁÃëÖµ¸³Öµ¸øÈÕÆÚ¶ÔÏó
+ * ï¿½ï¿½ Date ï¿½ï¿½Ê¾ï¿½Ø¶ï¿½ï¿½ï¿½Ë²ï¿½ä£¬ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½ï¿½ë¡£
  *
- * ³ÉÔ±·½·¨£º
- * 		public long getTime()£º»ñÈ¡ºÁÃëÖµ
- *		public void setTime(long time):°ÑºÁÃëÖµ×÷Îª²ÎÊý´«µÝ
+ * ï¿½ï¿½ï¿½ì·½ï¿½ï¿½ï¿½ï¿½
+ * 		public Date():Ä¬ï¿½Ï¾ï¿½ï¿½Çµï¿½Ç°Ê±ï¿½ï¿½
+ *		public Date(long date):ï¿½Ñ¸ï¿½ï¿½ï¿½ï¿½Äºï¿½ï¿½ï¿½Öµï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * 		public long getTime()ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµ
+ *		public void setTime(long time):ï¿½Ñºï¿½ï¿½ï¿½Öµï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class DateDemo {
-	public static void main(String[] args) {
-		// ´´½¨¶ÔÏó
-		Date d = new Date();
-		System.out.println("d:" + d);
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        Date d = new Date();
+        System.out.println("d:" + d);
 
-		// try {
-		// Thread.sleep(1000);
-		// } catch (InterruptedException e) {
-		// e.printStackTrace();
-		// }
+        // try {
+        // Thread.sleep(1000);
+        // } catch (InterruptedException e) {
+        // e.printStackTrace();
+        // }
 
-		long time = System.currentTimeMillis(); // »ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
-		Date d2 = new Date(time);// °ÑºÁÃëÖµ×ª»»ÎªÈÕÆÚ±íÊ¾
-		System.out.println("d2:" + d2);
+        long time = System.currentTimeMillis(); // ï¿½ï¿½È¡ï¿½ï¿½Ç°Ê±ï¿½ï¿½Äºï¿½ï¿½ï¿½Öµ
+        Date d2 = new Date(time);// ï¿½Ñºï¿½ï¿½ï¿½Öµ×ªï¿½ï¿½Îªï¿½ï¿½ï¿½Ú±ï¿½Ê¾
+        System.out.println("d2:" + d2);
 
-		Date d3 = new Date(3600000);
-		// 3600000/1000/60/60 = 1¸öÐ¡Ê±
-		System.out.println("d3:" + d3);
-		System.out.println("--------------------");
+        Date d3 = new Date(3600000);
+        // 3600000/1000/60/60 = 1ï¿½ï¿½Ð¡Ê±
+        System.out.println("d3:" + d3);
+        System.out.println("--------------------");
 
-		Date d4 = new Date();
-		// long t = d4.getTime();
-		// long t2 = System.currentTimeMillis();
-		// System.out.println(t);
-		// System.out.println(t2);
+        Date d4 = new Date();
+        // long t = d4.getTime();
+        // long t2 = System.currentTimeMillis();
+        // System.out.println(t);
+        // System.out.println(t2);
 
-		d4.setTime(36000000);
-		System.out.println("d4:" + d4);
+        d4.setTime(36000000);
+        System.out.println("d4:" + d4);
 
-	}
+    }
 }

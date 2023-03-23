@@ -6,36 +6,36 @@ import java.util.Set;
 
 /*
  * HashMap<String,String>
- * ¼ü£ºÑ§ÉúÐÕÃû
- * Öµ£ºµØÖ·
- * ´æ´¢Èý¸öÔªËØ£¬È»ºó±éÀú¡£
+ * ï¿½ï¿½ï¿½ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * Öµï¿½ï¿½ï¿½ï¿½Ö·
+ * ï¿½æ´¢ï¿½ï¿½ï¿½ï¿½Ôªï¿½Ø£ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class HashMapDemo {
-	public static void main(String[] args) {
-		// ´´½¨¼¯ºÏ¶ÔÏó
-		HashMap<String, String> hm = new HashMap<String, String>();
+    public static void main(String[] args) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¶ï¿½ï¿½ï¿½
+        HashMap<String, String> hm = new HashMap<String, String>();
 
-		// ´´½¨²¢Ìí¼ÓÔªËØ
-		hm.put("ÕÔÞ±", "°²»Õ");
-		hm.put("Àî±ù±ù", "ºÚÁú½­");
-		hm.put("·¶±ù±ù", "É½¶«");
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôªï¿½ï¿½
+        hm.put("ï¿½ï¿½Þ±", "ï¿½ï¿½ï¿½ï¿½");
+        hm.put("ï¿½ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
+        hm.put("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", "É½ï¿½ï¿½");
 
-		// ±éÀú
-		// ·½Ê½1
-		Set<String> keySet = hm.keySet();
-		for (String key : keySet) {
-			String value = hm.get(key);
-			System.out.println(key + "---" + value);
-		}
-		System.out.println("---------------------");
+        // ï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½Ê½1
+        Set<String> keySet = hm.keySet();
+        for (String key : keySet) {
+            String value = hm.get(key);
+            System.out.println(key + "---" + value);
+        }
+        System.out.println("---------------------");
 
-		// ·½Ê½2
-		// Set<Map.Entry<String, String>> entrySet = hm.entrySet();
-		// for (Map.Entry<String, String> me : entrySet) {
-		// String key = me.getKey();
-		// String value = me.getValue();
-		// System.out.println(key + "---" + value);
-		// }
+        // ï¿½ï¿½Ê½2
+        // Set<Map.Entry<String, String>> entrySet = hm.entrySet();
+        // for (Map.Entry<String, String> me : entrySet) {
+        // String key = me.getKey();
+        // String value = me.getValue();
+        // System.out.println(key + "---" + value);
+        // }
 
 //		Set<Entry<String, String>> entrySet = hm.entrySet();
 //		for (Entry<String, String> me : entrySet) {
@@ -43,5 +43,5 @@ public class HashMapDemo {
 //			String value = me.getValue();
 //			System.out.println(key + "---" + value);
 //		}
-	}
+    }
 }

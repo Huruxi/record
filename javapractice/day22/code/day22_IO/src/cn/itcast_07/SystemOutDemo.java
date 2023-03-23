@@ -4,45 +4,45 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /*
- * public static final PrintStream out:±ê×¼Êä³öÁ÷	¿ØÖÆÌ¨Êä³ö
- * 
- * ¼üÅÌÂ¼Èë£ºBufferedReader br = new BufferedReader(new InputStreamReader(System.in));
- * ¿ØÖÆÌ¨Êä³ö£ºBufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+ * public static final PrintStream out:ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½
+ *
+ * ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ë£ºBufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+ * ï¿½ï¿½ï¿½ï¿½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
  */
 public class SystemOutDemo {
-	public static void main(String[] args) throws IOException {
-		// ±ê×¼ÊäÈëÁ÷
-		// PrintStream ps = System.out;
-		// OutputStream os = ps;
-		// OutputStream os = System.out; // PrintStream,¶àÌ¬
-		// System.out.println(os);
+    public static void main(String[] args) throws IOException {
+        // ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // PrintStream ps = System.out;
+        // OutputStream os = ps;
+        // OutputStream os = System.out; // PrintStream,ï¿½ï¿½Ì¬
+        // System.out.println(os);
 
-		// os.write("hello\r\n".getBytes());
-		// os.write("world\r\n".getBytes());
-		// os.write("java\r\n".getBytes());
+        // os.write("hello\r\n".getBytes());
+        // os.write("world\r\n".getBytes());
+        // os.write("java\r\n".getBytes());
 
-		// Ð´Êý¾ÝµÄÊ±ºò£¬Ã¿´Î²»ÄÜÐ´Ò»¸ö×Ö·û´®£¬±È½ÏÂé·³£¬ËùÒÔÎÒÃÇ¿¼ÂÇ¸Ä½ø
-		// BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
-		// System.out));
-		// bw.write("hello");
-		// bw.newLine();
-		// bw.flush();
-		// bw.write("world");
-		// bw.newLine();
-		// bw.flush();
+        // Ð´ï¿½ï¿½ï¿½Ýµï¿½Ê±ï¿½ï¿½Ã¿ï¿½Î²ï¿½ï¿½ï¿½Ð´Ò»ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½ï¿½é·³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¿ï¿½ï¿½Ç¸Ä½ï¿½
+        // BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+        // System.out));
+        // bw.write("hello");
+        // bw.newLine();
+        // bw.flush();
+        // bw.write("world");
+        // bw.newLine();
+        // bw.flush();
 
-		// bw.close();
+        // bw.close();
 
-		// ±ê×¼Êä³öÁ÷
-		// PrintStream ps = System.out;
-		// ps.print(100);
-		// ps.print(true);
-		// ps.println(100);
-		// ps.println(true);
+        // ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½
+        // PrintStream ps = System.out;
+        // ps.print(100);
+        // ps.print(true);
+        // ps.println(100);
+        // ps.println(true);
 
-		System.out.println(100);
-		System.out.println(true);
-		System.out.println();
-		// System.out.print();
-	}
+        System.out.println(100);
+        System.out.println(true);
+        System.out.println();
+        // System.out.print();
+    }
 }

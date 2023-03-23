@@ -1,14 +1,14 @@
 package cn.itcast_02;
 
 /*
- * 字符串是常量,它的值在创建之后不能更改
- * 看内存图解
+ * 锟街凤拷锟斤拷锟角筹拷锟斤拷,锟斤拷锟斤拷值锟节达拷锟斤拷之锟斤拷锟杰革拷锟斤拷
+ * 锟斤拷锟节达拷图锟斤拷
  */
 
 public class StringDemo {
-	public static void main(String[] args) {
-		String s = "hello";
-		s += "world";
-		System.out.println(s);
-	}
+    public static void main(String[] args) {
+        String s = "hello";
+        s += "world";
+        System.out.println(s);
+    }
 }

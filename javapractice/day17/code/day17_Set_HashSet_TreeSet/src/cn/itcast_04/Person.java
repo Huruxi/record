@@ -1,53 +1,53 @@
 package cn.itcast_04;
 
 /*
- * Èç¹ûÎÒÃÇÏë¶ÔÏó½øĞĞ×ÔÈ»ÅÅĞò£¬ÎÒÃÇ¾ÍÓ¦¸ÃÈÃ¶ÔÏóËùÊôµÄÀàÊµÏÖ×ÔÈ»ÅÅĞò½Ó¿ÚComparable
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¾ï¿½Ó¦ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½ï¿½ï¿½Ó¿ï¿½Comparable
  */
 public class Person implements Comparable<Person> {
-	private String name;
-	private int age;
+    private String name;
+    private int age;
 
-	public Person() {
-		super();
-	}
+    public Person() {
+        super();
+    }
 
-	public Person(String name, int age) {
-		super();
-		this.name = name;
-		this.age = age;
-	}
+    public Person(String name, int age) {
+        super();
+        this.name = name;
+        this.age = age;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public int getAge() {
-		return age;
-	}
+    public int getAge() {
+        return age;
+    }
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+    public void setAge(int age) {
+        this.age = age;
+    }
 
-	@Override
-	public int compareTo(Person p) {
-		// ×öÕâÖÖÌâÄ¿µÄÄÑµãÊÇ×Ô¼ºÒªÃ÷È·±È½ÏµÄ´ÎÒªÌõ¼ş
-		// Ö÷ÒªÌõ¼ş£º°´ÕÕÄêÁä±È½Ï
-		// ´ÎÒªÌõ¼ş£ºµ±ÄêÁäÏàÍ¬£¬±È½ÏĞÕÃû£¬ÕâÊÇÒª×Ô¼ºÄÜ¹»·ÖÎö³öÀ´µÄ
+    @Override
+    public int compareTo(Person p) {
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ñµï¿½ï¿½ï¿½ï¿½Ô¼ï¿½Òªï¿½ï¿½È·ï¿½È½ÏµÄ´ï¿½Òªï¿½ï¿½ï¿½ï¿½
+        // ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È½ï¿½
+        // ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½È½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ô¼ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-		// this
-		// p
-		// ÉıĞò
-		int num = this.age - p.age;
-		// µ¹Ğò
-		// int num = p.age - this.age;
+        // this
+        // p
+        // ï¿½ï¿½ï¿½ï¿½
+        int num = this.age - p.age;
+        // ï¿½ï¿½ï¿½ï¿½
+        // int num = p.age - this.age;
 
-		int num2 = (num == 0) ? (this.name.compareTo(p.name)) : num;
+        int num2 = (num == 0) ? (this.name.compareTo(p.name)) : num;
 
-		return num2;
-	}
+        return num2;
+    }
 }
