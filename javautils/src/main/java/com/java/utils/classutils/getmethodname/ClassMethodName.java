@@ -18,31 +18,21 @@ public class ClassMethodName {
 
     public static void main(String[] args) {
         SerializedLambda resolve = resolve(ClassMethodName::testMethodName);
-        System.out.println(resolve);
+        System.out.println(resolve.getImplMethodName());
     }
-
 
     public static void testMethodName(){
-
     }
 
-    @FunctionalInterface
-    public interface FunctionFieldName {
-        void getFieldName();
-    }
-
+    /**
+     * 获取
+     * @param lambda
+     * @return
+     */
     public static SerializedLambda resolve(FunctionFieldName lambda) {
         if (!lambda.getClass().isSynthetic()) {
             throw new RuntimeException("该方法仅能传入 lambda 表达式产生的合成类");
         }
-        try {
-            Method writeReplace = lambda.getClass().getDeclaredMethod("writeReplace");
-            writeReplace.setAccessible(true);
-            return (SerializedLambda)writeReplace.invoke(lambda);
-        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
-            e.printStackTrace();
-        }
-
 
         try {
             ObjectInputStream objIn = new ObjectInputStream(new ByteArrayInputStream(serialize(lambda))) {
@@ -60,6 +50,25 @@ public class ClassMethodName {
             throw new RuntimeException("This is impossible to happen", e);
         }
 
+    }
+
+    /**
+     * 反射获取
+     * @param lambda
+     * @return
+     */
+    public java.lang.invoke.SerializedLambda reflectMethodName(FunctionFieldName lambda){
+
+        try {
+            Method writeReplace = lambda.getClass().getDeclaredMethod("writeReplace");
+            writeReplace.setAccessible(true);
+            return (java.lang.invoke.SerializedLambda)writeReplace.invoke(lambda);
+
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
     public static byte[] serialize(Object object) {
